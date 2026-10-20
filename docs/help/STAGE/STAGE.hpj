@@ -1,0 +1,48 @@
+[OPTIONS]
+TITLE=Stage
+CONTENTS=QGFYFC
+COPYRIGHT=Copyright © 1997-98 LEO Electron Microscopy Ltd.
+LCID=0x809 0x0 0x0
+CNT=STAGE.CNT
+COMPRESS=0
+
+[WINDOWS]
+main="Stage",(51,51,922,922),,,(255,255,128)
+
+[FILES]
+STAGE.rtf
+
+[MAP]
+Centre_Point 52
+Activate_Backlash 4
+Save_Coordinate_File 7
+QGFYFC 0
+Stage_Scan_Status_Information 6
+Stage_Map 55
+Stage_Control_Overview 21
+Record_Stage_Positions 1
+Centre_Feature 53
+Stage_Initialise 51
+Stage_Points_List_Delete 60
+Centre_Point___Feature_Settings 2
+Stage_Scan_End_here 49
+Stage_Points_List_File 19
+Stage_Points_List_Goto 61
+Stage_Scan 54
+1MHKPV_ 31
+Stage_Recall_Dialog 25
+Defining_the_Stage_Scan_Area 33
+Select_Scan_Area 46
+Stage_Close_Map 26
+139NVAW 50
+Stage_Scan_Buttons 8
+Stage_Points_List_ADD 59
+Stage_Points_List_Box 58
+Stage_Scan_Commands 34
+Stage_Calculate_Scan 48
+Stage_Scan_Start_here 47
+Stage_Scan_Fields 5
+Stage_Limits 17
+Stage_Points_List_On_Goto 57
+Stage_Points_List_Search 62
+

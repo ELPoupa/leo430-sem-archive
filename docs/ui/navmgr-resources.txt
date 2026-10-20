@@ -1,0 +1,44 @@
+﻿=== MENU 204 (lang 0809)
+  []
+  32769  &Quit Map
+  32771  &Stage Points List Dialog
+=== DIALOG 1 "About Navigation Manager" (4 controls)
+  -1  STATIC  "#1"
+  201  STATIC  "Version inserted by software"
+  -1  STATIC  "Copyright © 1997-1999,  LEO Electron Microscopy Ltd"
+  1  BUTTON  "OK"
+=== DIALOG 100 "" (0 controls)
+=== DIALOG 205 "Survey Mode Settings" (29 controls)
+  202  BUTTON  "Lowest Mag"
+  203  BUTTON  "Mag --->"
+  204  EDIT  ""
+  205  BUTTON  "Get Current"
+  4294967295  STATIC  "WD"
+  206  EDIT  ""
+  207  BUTTON  "Get Current"
+  4294967295  BUTTON  "Survey Mode"
+  4294967295  STATIC  "Mag"
+  210  EDIT  ""
+  211  BUTTON  "Get Current"
+  4294967295  STATIC  "WD"
+  212  EDIT  ""
+  213  BUTTON  "Get Current"
+  4294967295  BUTTON  "Resolution Imaging"
+  214  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  217  BUTTON  "Remember Changes"
+  218  BUTTON  "Auto Focus"
+  219  BUTTON  "Auto Focus"
+  220  STATIC  ""
+  223  COMBOBOX  ""
+  224  COMBOBOX  ""
+  225  BUTTON  "Macro"
+  226  BUTTON  "Macro"
+  4294967295  BUTTON  "Exit Survey Mode"
+  227  BUTTON  "Macro"
+  228  COMBOBOX  ""
+  229  BUTTON  "Load"
+  230  BUTTON  "Save"
+=== DIALOG 207 "Save Settings: Enter Filename" (3 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  231  EDIT  ""

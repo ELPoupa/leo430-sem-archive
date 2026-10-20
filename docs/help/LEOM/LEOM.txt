@@ -1,0 +1,1024 @@
+﻿$#KAbout dialog
+This dialog displays the version and copyright information for the Macro Editor
+$#KAdding your own functionality
+
+You may add your own functionality by executing programs you have written yourself, either in Visual C++ or in Visual Basic.
+
+Use  the Execute Program1KGATAT instruction to call your program.
+
+You may pass arguments in the command line.
+
+Those who have access to the LEOAPI may obtain (or set) values of parameters such as the Flag VariablesFlag_Variables__Semaphores_ to communicate with the program.
+$#KAllowing user response in macro
+If you need to get a response from the user to determine the execution sequence to be followed use the following technique
+
+
+YesNo MessageMessage: Flag 2 :Do you want to continue?
+If  : Flag 2Flag_Variables__Semaphores_ = 0     Is True
+End The MacroEnd_The_Macro
+EndIf Statement
+continue execution from here.....
+$#Analogue Pair dialog
+This dialog is used to define a co-ordinate pair of parameters and the values to be set.
+
+Select the required parameter (only the X parameters are listed) from the drop down list
+
+If this is a new instruction the current XY values appear in the value boxes, if editing an existing instruction the previously defined values will appear.
+
+Edit the values as required.
+ 
+$#KSpecial Function: Request Annotation Text
+This special functionSpecial_Functions creates a new annotation text object
+
+$#Special Function:Annotation Toolbar Off
+This functionSpecial_Functions switches off the User Interface Annotation/measurement Toolbar.
+See also Annotation Toolbar OnAnnotation_Toolbar_on
+$#KSpecial Function:Annotation Toolbar On
+This functionSpecial_Functions switches on the User Interface Annotation/measurement Toolbar.
+See also Annotation Toolbar OffAnnotation_Toolbar_Off
+$#Application conditions
+This Editor function is part of the Macro Generator which is used to save SEM Conditions.
+This function inserts a sequence of macro instructionsMacro_Instructions to establish the application conditions.
+$#KAttaching macros to keys
+Macros may be attached to Special Function KeysSpecial_Function_Keys
+
+This is achieved by naming the macro with the key name,
+e.g. name the macro F5 or Shift F5 (Note only a single space between shift and the key name)
+
+Note that if there is not a macro for the key in the library a Beep is sounded when the key is pressed.
+
+Note also that the macro may not be initiated again until it has completed, attempting to do so will result in a Beep
+
+See also Common MacrosCommon_Macros
+$#Special Function: BMP Export Dialog
+This special functionSpecial_Functions displays the BMP Export dialog.
+Note the the digital state USER is set to BUSY until the user closes the dialog.
+$#KMacro Instruction:Call Macro
+This instruction calls another macro.in the library.Macro_Library or a Macro File (see search orderSearch_Order_for_macro_execution) Note that calls are permitted to nest 10 deep, attempting to exceed this will result in an error message.
+$#KSpecial Function:CentrePoint
+This functionSpecial_Functions initiates the centre point function.
+Note the the digital state USER is set to BUSY until the user completes or cancels the function.
+$#Special Function:Centre feature
+This functionSpecial_Functions initiates the centre feature function.
+Note the the digital state USER is set to BUSY until the user completes or cancels the function.
+$#Clear Editor
+This Editor function deletes the contents of the Macro Editor WindowEditor_Window.
+Any edits made are lost.
+$#KClipboard
+This Editor function copies the macro in the Editor WindowEditor_Window to the Clipboard in text Format from where it may be pasted into documents.
+$#Special Function:Clipboard
+This functionSpecial_Functions displays the Clipboard Copy/Paste dialog.
+Note the the digital state USER is set to BUSY until the user closes the dialog.
+$#KCommand/Panel Dialog
+This dialog is used to define/Edit the following macro instructions (See caption for current use)
+
+Select command : 	Select the required command from the drop down list
+Select Panel		Select the required panel from the drop down list
+Select control Tab	Select the required control panel tab from the drop down list
+
+ 
+$#Macro Instruction:Comment
+This provides the user with the ability to annotate the macro. 
+When executed performs no action except to step to the next instruction.
+$#KComment dialog
+This dialog is used to enter/edit a string for the comment instructionComment
+$#Common Macros
+If you have a  macro which you wish to be shared with other users then save it using File SaveAs CommonSaveAs_Common
+The search orderSearch_Order_for_macro_execution for executing macros means that they may then be executed without having to insert them in each current Macro Library.
+$#KConfiguration Conditions
+This Editor function is part of the Macro Generator which is used to save SEM Conditions.
+This function generates a sequence of ConfirmConfirm_Configuration Instructions for those options which are present of the SEM.
+$#Macro Instruction:Confirm Configuration
+This instruction checks if the configuration defined is true.
+If the state is true execution steps to the next instruction.
+If the state is false the user is requested to state if the sequence should continue or stop.
+$#KConfirm State dialog
+This dialog is displayed by the Confirm Configuration instructionConfirm_Configuration when it detects that the configuration is incorrect.
+
+The dialog displays the current and required state.
+
+Press Continue to continue with execution of the macro or Quit to stop the macro
+$#Contents
+
+OverviewMacros___Overview
+
+Macro EditorMacro_Editor
+Macro InstructionsMacro_Instructions
+
+Attaching macros to keysAttaching_macros_to_keys
+
+Restore ConditionsRestore_Conditions
+Standard ConditionsStandard_Conditions
+
+Customising default filesCustomising_default_files
+
+Flag Variables (Semaphores)Flag_Variables__Semaphores_
+
+Customising the Hard PanelCustomising_the_Hard_Panel
+
+Search Order for macro executionSearch_Order_for_macro_execution
+
+Hints and TipsHints_and_Tips
+
+
+ 
+$#KContinue
+This editor function causes execution of the macro to continue from the currently highlighted instructionMacro_Instructions.
+When running in the editor windowEditor_Window execution is slowed down to permit the sequence to be observed.
+The currently executing instruction is highlighted.
+The current status is displayed in the Status BarEditor_Status_Bar.
+This function may also be achieved by pressing F7
+$#Macro Instructions: Control Structures
+There are two types of control structure provided:
+
+If Then ConstructIf_Then_Constructs
+While ConstructWhile_construct
+$#KStatus Bar:Current Line
+This indicates the line number of the current insertion point/Program Counter.
+$#Editor Status Bar: Current Status
+This displays the current action of the macro,  some examples of this are:
+
+"Editing", "Executing line number nn", "Paused at line number nn" etc
+
+
+
+$#KSpecial Function: Cursor Off Screen
+This special functionSpecial_Functions moves the cursor off screen (to the right edge, half way down).
+The cursor may be brought back by moving the mouse to the left.
+
+Useful if dumping the video screen image to a printer.
+See also
+Annotation Toolbar OnAnnotation_Toolbar_on
+Hide Control PanelHide_Control_Panel
+Hide PanelsHide_Panels
+Full screen mode OnFull_screen_mode_On
+$#Customising the Hard Panel
+If your SEM is fitted with a Hard Panel (Mark 2) it may be configured for your use.
+[Applies to Leo 1500 only]
+This is achieved by two facilities.
+
+Hard Panel Buttons.
+When one of the buttons on the Hard Panel is pressed (excluding the Stage axis control buttons) an associated macro is executed.
+Pressing Button M1 executes the Macro M1, pressing Button M2 executes the Macro M2,  pressing Button M3 executes the Macro M3.
+Default versions of these macros are supplied in the ...\LEO32\DISTRIB .directory. See Search orderSearch_Order_for_macro_execution on how to override these macros
+
+Knob Assignment
+There is a macro Instruction KnobKnob which is used to disable or assign a parameter to a knob.
+
+Macros may therefore be constructed which assign complementary functions to the Hard Panel Knobs and to the Mouse.
+These macros may be called from Toolbar Icons (Use Toolbar EditorContents@tooledit.hlp), Special function keysAttaching_macros_to_keys, or Hard Panel Buttons
+
+
+$#KSpecial Function: Datazone Off
+This special functionSpecial_Functions switches off the User Interface Datazone
+$#Special Function: Datazone On
+This special functionSpecial_Functions switches off the User Interface Datazone
+$#KMacro Instruction:Delay
+This instruction waits the specified number of seconds before stepping to the next instruction.
+$#Delay Dialog
+This dialog is used to define the delay period (in seconds) for the Delay InstructionDelay.
+$#KDelete Item
+This Editor function will delete the macro instruction currently highlighted in the Editor WindowEditor_Window.
+This function may also be achieved by pressing the DEL key
+$#Delete macro
+This Editor function displays a list of the macros in the current libraryMacro_Library. 
+The selected macro is deleted from the library.
+$#Edit Item
+This Editor function will edit the Macro Instruction currently highlighted in the Editor windowEditor_Window
+This may also be achieved by double clicking on the macro instruction.
+$#Edit Macro
+This Editor  function displays a list of macros in the current LibraryMacro_Library
+The selected macro will be loaded into the Editor WindowEditor_Window for editing.
+$#Macro Editor Caption
+The caption bar displays the path and name of the current Macro LibraryMacro_Library
+$#Editor Menu bar
+The following menu groups are provided:
+	
+FileEditor_Menu__File	EditEditor_Menu__Edit	ViewEditor_Menu__View	InsertEditor_Menu__Insert	LibraryEditor_Menu__Library 	DebugEditor_Menu__Debug		GeneratorEditor_Menu__Generator
+
+
+$#Editor Menu: Debug
+
+	RunRun
+	StepStep
+	ContinueContinue
+	StopStop
+	Stop All MacrosStop_All_Macros
+$#Editor Menu: Edit
+
+	UndoUndo
+	Edit ItemEdit_Item
+	Delete ItemDelete_Item
+	ClipboardClipboard
+	TimeoutEdit_Timeout
+$#Editor Menu: File
+
+	New MacroNew_Macro
+	Edit MacroEdit_Macro
+	Delete macroDelete_macro
+	Clear EditorClear_Editor
+
+	Save macro To LibrarySave_macro_To_Library
+	SaveAs Macro To LibrarySaveAs_Macro_To_Library
+
+	Load Macro FileLoad_Macro_File
+	Save Macro To FileSave_Macro_To_File
+	SaveAs Macro To FileSaveAs_Macro_To_File
+	SaveAs CommonSaveAs_Common
+	Macro LocationsMacro_Locations
+
+	Rename macroRename_macro
+	Print Print_Macro
+	Print SetupPrint_Setup
+	ExitExit
+$#Editor Menu: Generator
+
+Save System ConditionsSave_System_Conditions
+$#Editor Menu: Insert
+
+These Editor Functions insert Macro InstructionsMacro_Instructions  after the currently highlighted instruction (or at the end of the macro if highlight is not present)
+
+There are four special functions provided which insert multiple instructions as part of the Macro Generator used in saving system conditions. These are
+
+Configuration ConditionsConfiguration_Conditions
+Gun ConditionsGun_Conditions
+Set up ConditionsSet_up_Conditions
+Application conditionsApplication_conditions
+
+$#Editor Menu: Library
+
+	Load User LibraryLoad_User_Library
+	Merge LibrariesMerge_Libraries
+	Load Standard LibraryLoad_Standard_Library
+	Merge Standard LibraryMerge_Standard_Library
+	Save Library AsSave_Library_As
+$#Editor Menu: View
+
+	Toolbar
+	Status Bar
+
+These Menu functions toggle on/off the ToolbarEditor_Toolbar and Status BarEditor_Status_Bar respectively.
+$#Editor Status Bar
+The Status bar contains three panes which indicate the status of the macro in the editor windowEditor_Window
+
+Current LineCurrent_Line
+Current StatusCurrent_Status
+Last ErrorLast_Error:
+$#Editor Toolbar
+The toolbar privides Icons for commonly required Editor Functions.
+Use Shift F1 help for more information on individual icons.
+$#Editor Window
+The editor window is used to edit and debug the currently displayed macro.
+The macro name and version are displayed at the start of the macro in green.
+Double clicking on the name/version will perform the renameRename_macro function.
+
+Each macro instructionMacro_Instructions occupies one line
+
+The selected (highlighted) instruction indicates the insertion point and Program Counter
+Clicking on an instruction will select it.
+
+Double clicking on an instruction will enable editing of the instruction.
+
+Inserting a new instruction will cause the instruction to be inserted AFTER the selected instruction and the new instruction will be selected as insertion point. If no instruction is selected insertion will be at the end of the macro.
+
+The macro may be executed using Run or F5Run, stopped by pressing ESCStop
+Execution may be continued by pressing F7Continue
+For debugging you may step (F10)Step through the macro.
+
+Progress of the macro is indicated by the Status BarEditor_Status_Bar.
+
+$#Macro Instruction: Else
+This statement is part of the If Then construcIf_Then_Constructsts and used to indicate the start of the Else Clause
+$#Macro Instruction: End If
+This statement is part of the  If Then constructsIf_Then_Constructs and identifies the end of the conditional sequence.
+$#Macro Instruction: End A Macro
+Executing this instruction terminates the macro specified
+$#Macro Instruction:End While
+This is part of the While constructWhile_construct.
+
+When this function is executed it resets the statement counter to the corresponding WhileWhile statement.
+$#Macro Instruction:Execute Command
+This Macro InstructionMacro_Instructions executes the specified SEM Command. 
+Does not step on to the next instruction if the command is currently disabled.
+See Timeout1280J7M
+$#Macro Instruction: Execute Program
+This macro InstructionMacro_Instructions executes the defined command line to run the specified program.
+If an error is encountered a message box is displayed notifying the user of the error and the Macro is aborted.
+
+This facility may be used in conjunction with the FTP Remote Archiving Utility_1ZQP_@imgarc.hlp 
+ e.g. Command Line  c:\program files\leo\leo32\imgarc.exe  /e  for archive at end of session. 
+See Archiving Modes of Operation12OXYHK@imgarc.hlp.
+$#Execute Program Dialog
+This dialog is used to define the command line for the Execute Program1KGATAT Macro Instruction.
+
+Either enter the command line manually or use the Browse Button to locate the Program you wish to execute.
+$#Exit
+This editor function hides the macro editor. Any macro executing in the editor will continue to run.
+$#Flag Variables (Semaphores)
+The state variables Flag0 through Flag7 are provided for use as semaphores between macros.
+
+i.e. one macro may be written such that it's behaviour is determined by the state of Flag0, a second macro, probably attachedAttaching_macros_to_keys to a Special Function key can modify the state of Flag0.
+
+Flag Variables may also be used in Yes/No MessageMessage Instructions
+$#Special Function: Full screen mode Off
+This Special FunctionSpecial_Functions  switches off Full screen mode. (Equivalent to pressing the Shift F3 key).
+See also Full screen mode onFull_screen_mode_On
+$#Special Function: Full screen mode On
+This Special FunctionSpecial_Functions  switches on Full screen mode. (Equivalent to pressing the Shift F3 key).
+The condition may be reversed by the Full screen mode OffFull_screen_mode_Off function.
+$#Gun Conditions
+This Editor function is part of the Macro Generator which is used to save SEM Conditions.
+This function generates macro instructions for Stigmation correction and optionally the Aperture alignment and Gun alignment settings for all apertures.
+
+The alignment option is found in the User Interface under Tools-User Preferences and selecting the SEM Conditions tab.
+$#Special Function: HRRU (Photo) Dialog
+This special functionSpecial_Functions displays the High Resolution Record Unit dialog.
+Note the the digital state USER is set to BUSY until the user closes the dialog.
+$#Macro Instruction: Hide Control Panel
+This is a predefined Special Function which hides the SEM Control Panel.
+$#Macro Instruction:Hide Panel
+Hides the selected panel dialog and steps to the next instruction
+$#Macro Instruction: Hide Panels
+This is a predefined Special Function which hides all currently displayed panels.
+See also Show PanelsShow_Panels
+$#Hints and Tips
+This section will be expanded as a result of feedback from users.
+Please refer to your Leo Applications Specialist.
+
+Uncluttered image for video printingUncluttered_image_for_video_printing.
+Allowing user response in macroAllowing_user_response_in_macro
+Adding your own functionalityAdding_your_own_functionality
+Start MacroStart_Macro
+Common MacrosCommon_Macros
+
+$#Macro Instruction: If Then
+This statement is part of the if constructsIf_Then_Constructs 
+
+If the condition is true (or optionally false) execution continues at the statement after the IF.THEN
+
+otherwise  execution continues after the  ELSEElse statement if one exists, or after the  END IFEnd_If if there is no ELSE clause.
+$#If Then Constructs
+These are of the form:
+
+If <condition>   thenIf_Then
+
+other statements
+
+optional  elseElse 
+
+other statements for else clause
+
+End ifEnd_If
+$#If Then Dialog
+This dialog is used to define an If Then InstructionIf_Then
+
+Select the required parameter from the drop down list.
+
+The lower drop down list displays the possible state values for the parameter.
+
+If this is a new instruction the current state value will be displayed, if editing an existing instruction the state value will be that previously defined.
+
+A Radio button is used to define if the condition should be TRUE or FALSE for execution to continue at the next instruction.
+$#Special Function: JPEG Export Dialog
+This special functionSpecial_Functions displays the JPEG Export dialog.
+Note the the digital state USER is set to BUSY until the user closes the dialog.
+$#Macro Instruction: Knob
+This Macro instruction is used to assign functions to the Knobs on the 1500 Hard Panel (Mark 2)
+Select the parameter required or  Disabled
+Check the Right checkbox if the Right hand knob is to be assigned, leave unchecked if the Left knob is to be assigned.
+Note: Brightness/Contrast control is only available for the InLens and SE2 detectors
+$#Editor Status Bar: Last Error
+This displays the error state as a result of executing the last macro instruction. 
+$#Library Name dialog
+This dialog is is used to define the name of a macro libraryMacro_Library file to be saved in the User Directory.
+
+A macro library file will be given the extension .MLL, do not define an extension
+
+$#Load Macro File
+This Editor function loads a macro file (.MLF) or condition file (.MLC) into the Editor WindowEditor_Window where it may be edited or saved into the LibraryMacro_Library.
+Note that macros may be loaded from any directory.
+$#Load Standard Library
+This editor function deletes the current macro libraryMacro_Library and replaces it with the System standard library which contains macros for the default toolbar etc.
+$#Load User Library
+This editor function loads a user selected library file (*.MLL) and replaces the current macro libraryMacro_Library
+The current macro library is deleted.
+Note that the library file loaded will be updated if macros in the library are modified/deleted
+
+
+$#Macro Editor
+The Macro editor is used to create/Edit macros and to debug them.
+The Macro Editor also provides facilities to manage macro Libraries.
+
+The Macro Editor is initiated from the SEM User Interface (Tools-Macro Editor) and comprises
+
+CaptionEditor_Caption
+Menu barEditor_Menu_bar
+ToolbarEditor_Toolbar
+Macro WindowEditor_Window
+Status BarEditor_Status_Bar
+
+
+See also
+Macro - ContentsContents
+Macro - OverviewMacros___Overview
+$#Macro Instructions
+
+A macro is a set of macro instructions which are executed in sequence (except for control structuresControl_Structures). If the macro is displayed in the macro window the instruction currently being executed is highlighted. If an instruction fails to execute it will repeatedly attempt to execute until either stop is pressed or it times out.
+
+The following macro instructions are provided:
+
+Call MacroCall_Macro
+CommentComment
+Confirm ConfigurationConfirm_Configuration
+DelayDelay
+ElseElse
+End IfEnd_If
+End a MacroEnd_The_Macro
+End WhileEnd_While
+Execute CommandExecute_Command
+Execute Program1KGATAT
+Hide Control PanelHide_Control_Panel
+Hide PanelHide_Panel
+Hide PanelsHide_Panels
+If ThenIf_Then
+KnobKnob
+Look up Table FunctionsLook_up_Table_Functions
+MessageMessage
+Mouse AssignmentMouse_Assignment
+PausePause
+Set Analogue PairSet_Analogue_Pair
+Set Analogue ParameterSet_Analogue_Parameter
+Set Digital StateSet_Digital_State
+Show Control PanelShow_Control_Panel
+Show Control TabShow_Control_Tab
+Show PanelShow_Panel
+Show PanelsShow_Panels
+Special FunctionsSpecial_Functions
+Stage Goto First PointStage_Goto_First_Point
+Stage Goto LabelStage_Goto_Label
+Stage Goto Next PointStage_Goto_Next_Point
+Stage Goto XYStage_Goto_XY
+Stage Mark PointStage_Mark_Point
+Stage save position in currentKVIFXB
+Stage Scan Next FieldStage_Scan_Next_Field
+Stage Scan StartStage_Scan_Start
+Stage While not at end of listStage_While_not_at_end_of_list
+Stage While Stage scan not at endStage_While_Stage_scan_not_at_end
+Wait For Stage IdleWait_For_Stage_Idle
+Wait For StateWait_For_State
+WhileWhile
+
+$#Macro Library
+A Macro Library is a collection of macros held in memory ready for execution.
+The macro library is loaded from a library file (.MLL) in the User Directory.
+
+When macros are deleted or saved in memory the Library file is also updated.
+
+If the User Directory is changed the Macro Library is loaded from the File in the new User D|irectory and any currently executing macros are terminated.
+
+If the User Directory does not contain a macro library file then a new one is created (CURRENT.MLL) from a Standard Macro Library in ..\Leo32\Distrib\Default.MLL
+
+The Standard Macro Library contains all the Standard Macros required,  for the Standard Toolbar etc.
+
+All macro libraries must contain these standard macros. This may be achieved either by Loading the Standard Library (Library-Load Standard Library) or by merging the Standard Library with the current Library (Library-Merge Standard Library)
+$#Macro Name dialog
+This dialog is used to define the name and version of a macro.
+
+Note that the macro name may be used as a filename hence normal filename conventions should be applied.
+
+The version is any string of text.
+$#Macro Rename dialog
+This dialog is used to define the new name and/or version of a macro.
+
+Note that the macro name may be used as a filename hence normal filename conventions should be applied.
+$#Macros - Overview
+A macro is a sequence of Macro Instructions which are executed on user request to achieve a specific result.  Each macro is identified by a macro name.
+
+Macros are collected together into a Macro Library from which they may be executed.
+
+There is a macro Library per User Directory. Changing to a different User Directory changes to a different Macro Library. Note that any executing macros are aborted on change of macro library.
+
+If a Macro Library does not exist when a User Directory is selected a Default Macro Library is loaded.
+
+Macro execution may be initiated from the User Interface, Special Function keys, Macro buttons on dialogs, Toolbar Icons and by the Macro Editor.
+
+Any number of macros may run simultaneously, however only one copy of a macro may be executed at a time. Attempting to run a macro which is already executing will result in a Beep
+
+One use of a macro is to restore machine conditions. This is achieved by a macro generator which is invoked either on shutdown when the user requests save conditions or by requesting save stateI6NCK5@sem.hlp this inspects the current machine conditions and generates a macro to re-establish them.
+The conditions are therefore achieved by loading and executing the saved macro from file.
+
+Macros may be created or edited using the Macro editorMacro_Editor 
+
+See also Macro - ContentsContents
+
+$#Macros dialog
+This dialog offers for choice the list of macros in the current macro libraryMacro_Library
+$#Merge Dialog
+This dialog is used when a library file is being merged with the current libraryMacro_Library  and a macro name conflict is detected.
+
+Both the macro in the current library and the macro in the file being loaded are displayed on this dialog.
+
+Select which macro is to be used in the current library.
+$#Merge Libraries
+This editor function reads a User selected Library file (*.MLL) and checks each macro name in the library file against the names of macros in the current libraryMacro_Library. If a macro from the file would overwrite an existing macro the user is requested to indicate which macro is required.
+$#Merge Standard Library
+This editor function merges the system Standard Library with the current libraryMacro_Library.
+Any macro in the library file unconditionally replaces one in the library with the same name.
+$#Macro Instruction:Message
+This instruction displays a dialog box containing the defined text.
+
+The message box may just contain an OK button or Yes/No buttons
+
+If the Message type0JPV9B is Yes/No then a defined flag variableFlag_Variables__Semaphores_ will be set to 0 if No is pressed or set to 1 if Yes is pressed.
+
+ Execution is suspended until a button  is clicked.
+$#Message dialog
+This dialog is used to define/edit a  Message InstructionMessage
+
+If a simple Message box is required (displays an OK button and the defined message text) then the YesNo Box checkbox should be unchecked.
+
+If the YesNo Box checkbox is checked then the message box will have Yes and No buttons.
+In this case select one of the Flag VariablesFlag_Variables__Semaphores_ which will be set according to the button pressed by the user.
+No pressed sets variable = 0
+Yes pressed sets variable = 1
+$#Macro Instruction: Mouse Assignment
+This instruction assigns parameters for mouse adjustment.
+Either or Both of the Left/Middle buttons may be assigned.
+$#Mouse assignment dialog
+This dialog is used to define the parameters for the mouse assignment instructionMouse_Assignment
+
+Select either Left Button Only or Both Buttons  as required.
+
+Select the required parameters for assignment from the drop down lists.
+
+Note that parameters which are XY co-ordinate pairs only require the selection of the X parameter.
+$#New Macro
+This Editor function clears the Editor windowEditor_Window and requests the macro name and version.
+
+The name may comprise any sequence of ASCII characters, and the name must not already exist in the library.
+
+The version is any sequence of ASCII characters.
+
+These entries will be displayed in Green in the Editor window.
+
+Only when these entries are defined may a macro be created.
+$#Panels
+The following instructions may be used 
+Hide Control PanelHide_Control_Panel
+Hide PanelHide_Panel
+Hide PanelsHide_Panels
+Show Control PanelShow_Control_Panel
+Show Control TabShow_Control_Tab
+Show PanelShow_Panel
+Show PanelsShow_Panels
+$#Macro Instruction:Pause
+This instruction causes the execution of the macro to be temporarily suspended.
+
+Pressing the pause key will cause execution to resume.
+$#Special Function: Create Point to Point Object
+This special functionSpecial_Functions creates a new Point to Point Measurement Object
+$#Position Labels
+Position labels are part of the Co-ordinate Store and Recall licenced function.
+Labels which start with a $ character are global labels which are independant of User Directory
+Other labels are User Directory Specific.
+These positions may be used with the Goto LabelStage_Goto_Label macro instruction.
+$#Special Function: Print Image Dialog
+This special functionSpecial_Functions displays thePrint Image dialog.
+Note the the digital state USER is set to BUSY until the user closes the dialog.
+$#Print
+This editor function will print the contents of the Editor WindowEditor_Window
+$#Print Setup
+This Editor function displays the printer setup dialog
+$#Rename macro
+This Editor function renames the macro currently in the Editor WindowEditor_Window.
+Note that this will save the macro to the library and delete the macro from the libraryMacro_Library having the old name if you reply 'Yes' to the confirmation message.
+$#Restore Conditions
+
+When a RestoreConditions command is issued by the User Interface the Macro Engine looks for a file RESTOREn.MLC  in the User Directory.
+[n is selected according to the filament type in use, On a Leo 1500 this value is 4, On a Leo 400 this value is 0 for Tungsten or 1 for LaB6]
+
+This is the file generated when the User Interface 
+is closed and you request Save Conditions.
+
+If the file is not found the Standard ConditionsStandard_Conditions function is executed.
+$#Run
+This editor function starts the execution of the macro from the first instruction.
+When running in the editor windowEditor_Window execution is slowed down to permit the sequence to be observed.
+The currently executing instruction is highlighted.
+The current status is displayed in the Status BarEditor_Status_Bar.
+This function may also be achieved by pressing F5
+$#Special Function: SEM Status Window Off
+This special functionSpecial_Functions hides the SEM Status Window
+$#Special Function: SEM Status Window On
+This special functionSpecial_Functions displays the SEM Status Window
+$#Save Library As
+This editor function saves the current macro libraryMacro_Library to a user defined file name in the current User Directory
+$#Save Macro To File
+This Editor function saves the macro currently in the Editor WindowEditor_Window to the current User Directory with the same file name that was used to load it to the Editor window.
+$#Save State dialog
+This dialog is used to select which of the macro generator sections are to be inserted in the saved state.
+
+Configuration ConditionsConfiguration_Conditions
+Gun ConditionsGun_Conditions
+Set up ConditionsSet_up_Conditions
+Application conditionsApplication_conditions
+
+
+the resulting macro is saved to a user defined filename (*.MLC) in the User Directory.
+
+$#Save System Conditions
+This editor function is equivalent to the Save State function in the User Interface.
+A Dialog is displayed allowing selection of the Macro Generator sections to be generated
+
+Configuration ConditionsConfiguration_Conditions
+Gun ConditionsGun_Conditions
+Set up ConditionsSet_up_Conditions
+Application conditionsApplication_conditions
+
+
+the resulting macro is saved to a user defined filename (*.MLC) in the User Directory.
+
+$#Save macro To Library
+This Editor function saves the macro from the Editor WindowEditor_Window into the current LibraryMacro_Library.
+If a macro of the same name already exists, confirmation will be requested.
+$#Save macro file dialog
+This dialog is used to define the filename when saving a macro to file.
+
+An extension .MLF will be appended
+
+The file will be saved in the User Directory
+
+$#SaveAs Macro To File
+This editor function saves the macro currently in the Editor WindowEditor_Window to a file in the Current User Directory.
+A New name for the file is requested.
+$#SaveAs Macro To Library
+This editor function saves the macro currently in the Editor windowEditor_Window to the libraryMacro_Library.
+A new name and version are requested.
+The name must not already exist in the library.
+$#Search Order for macro execution
+When a macro is requested for execution the Macro Engine first tries to locate the macro in the current macro Library.
+
+If the macro is not found in the libary it will try to execute it as a macro file MacroName.MLF in the current User Directory.
+
+If this also fails it will then try to execute a macro file  ...\LEO32\User\MacroName.MLF
+
+If this also fails it will try to execute a macro file  ...\LEO32\Distrib\MacroName.MLF.
+
+A number of standard macros are located in the Distribution directory.
+To override them create new macros in the macro library or macro files in the \USER directory.
+
+See Customising Default FilesCustomising_default_files and Macro LocationsMacro_Locations
+$#Select label dialog
+This dialog is used to select a position labelPosition_Labels for use with the Stage Goto LabelStage_Goto_Label instruction.
+
+Click on the required label and press OK
+$#Macro Instruction:Set Analogue Pair
+Sets the specified co-ordinate pair of parameters to the defined values.
+Does  not step on to the next instruction if either are currently disabled.
+See Timeout1280J7M
+$#Macro Instruction:Set Analogue Parameter
+Sets the specified analogue parameter to the defined value.
+Does  not step on to the next instruction if currently disabled.
+See Timeout1280J7M
+
+On insertion or editing a dialogGH_CLU is displayed.
+$#Set Analogue dialog
+
+This dialog is used to define the analogue parameter and the value required.
+
+Select the required parameter
+
+If this is a new instruction the current value appears in the value box, if editing an existing instruction the previously defined value appears in the box.
+
+Modify the value as required.
+
+
+$#Macro Instruction:Set Digital State
+A digital state is a parameter with a limited number of settings, e.g. On/Off
+This instruction sets the specified digital parameter to the defined state.
+Does  not step on to the next instruction if currently disabled.
+See Timeout1280J7M
+$#Set Digital dialog
+This dialog is used to define the Set Digital StateSet_Digital_State instruction
+
+Select the required digital parameter from the drop down list.
+
+The possible states for the parameter are displayed in the lower drop down list.
+
+If this is a new instruction the state will be the current state. If an instruction is being edited the state will be the previously defined state.
+
+$#Set up Conditions
+This Editor function is part of the Macro Generator which is used to save SEM Conditions.
+This function generates a sequence of macro instructionsMacro_Instructions to define the set up conditions for Detectors in Single zone (Normal/Reduced Raster\Emission) and dual zone (Split/Dual Mag) operation.
+
+$#Macro Instruction: Show Control Panel
+This is a predefined Special Function which displays the SEM Control panel previously hidden using the Hide Control panelHide_Panel instruction. The active tab is not changed.
+$#Macro Instruction:Show Control Tab
+Displays the defined Control Panel Tab and steps to the next instruction.
+$#Macro Instruction:Show Panel
+Displays the selected panel dialog and steps to the next instruction.
+$#Macro Instruction: Show Panels
+This is a predefined Special Function which displays the panels hidden by the Hide PanelsHide_Panels instruction..
+$#Special Function Keys
+The following may be used for macros (with and without Shift Key)
+F5, F6, F7, F8, F11
+$#Macro Instruction : Special Functions
+There are the following Special Functions which may be requested with this instruction:
+Note that as soon as the function is initiated the macro steps to the next instruction, it does not wait for the function to complete. If required insert the appropriate instructions to wait for completion.
+
+Annotation Toolbar OffAnnotation_Toolbar_Off
+Annotation Toolbar OnAnnotation_Toolbar_on
+BMP Export DialogBMP_Export_Dialog
+Centre featureCentre_feature
+Centre PointCentre_Point
+Clipboard dialogClipboard_dialog
+Create Point to Point ObjectPoint_to_Point
+Cursor Off ScreenCursor_Off_Screen
+Datazone OffDatazone_Off
+Datazone OnDatazone_on
+Full screen mode OffFull_screen_mode_Off
+Full screen mode OnFull_screen_mode_On
+Hide Control PanelHide_Control_Panel
+Hide PanelsHide_Panels
+HRRU (photo) dialogHRRU__photo__dialog
+JPEG Export DialogJPEG_Export_Dialog
+Print Image DialogPrint_Image_Dialog
+Request Annotation TextAnnotation_Text
+Save Stage position in CurrentKVIFXB
+SEM Status Window OffSEM_Status_Window_Off
+SEM Status Window OnSEM_Status_Window_On
+Set Mouse to CoarseSet_Mouse_to_Coarse
+Set Mouse to FineSet_Mouse_to_Fine
+Show Control PanelShow_Control_Panel
+Show PanelsShow_Panels
+Signal EventSignal_Event
+Stage Goto First PointStage_Goto_First_Point
+Stage Goto Next PointStage_Goto_Next_Point
+Stage Mark Current PositionStage_Mark_Point
+Step Up WDStep_Up_Down_WD
+Step Down WDStep_Up_Down_WD
+TIFF Export DialogTIFF_Export_Dialog
+TIFF Import DialogTIFF_Import_Dialog
+Toggle Mouse Coarse/FineToggle_Mouse_Coarse_Fine
+User Toolbar OffUser_Toolbar_Off
+User Toolbar OnUser_Toolbar_On
+$#Special function dialog
+This dialog is used to select one of the special user interface functionsSpecial_Functions.
+
+Select the required function from the drop down list.
+
+$#Macro Instruction:Special Function:Stage Goto First Point
+This macro instruction Issues a command to the Stage Co-ordinate Store/Recall software to move to the first pointLHXS1D@tabmgr.hlp in the list
+
+Note that it is necessary to wait for stage movement to ceaseWait_For_Stage_Idle before issueing a new stage movement command.
+
+If the Stage is not initialised the macro does not step to the next instruction.
+$#Macro Instruction :Stage Goto Label
+This instruction will move the stage to the position defined by the selected Position LabelPosition_Labels and step to the next instruction.
+
+If the Label is indefined an error message will be given and the macro stops with an error status.
+
+If the Stage is not initialised the instruction will not execute.
+
+Note that if the stage is already moving this will override the movement.
+Use the Wait For Stage IdleWait_For_Stage_Idle instruction if necessary.
+$#Macro Instruction:Special Function:Stage Goto Next Point
+This macro instruction Issues a command to the Stage Co-ordinate Store/Recall software to move to the next pointE9SIP1@tabmgr.hlp in the list
+
+Note that it is necessary to wait for stage movement to ceaseWait_For_Stage_Idle before issueing a new stage movement command.
+
+If the current point is the last in the list the digital parameter Points List will be set to At End. 
+For a loop use While Not at end listStage_While_not_at_end_of_list.
+$#Macro Instruction: Stage Goto XY
+This instruction will move the stage to the co-ordinates defined and step to the next instruction.
+If the Stage is not initialised the instruction will not execute.
+
+Note that if the stage is already moving this will override the movement.
+Use the Wait For Stage IdleWait_For_Stage_Idle instruction if necessary.
+$#Macro Instruction: Special Function: Stage Mark Point
+This special function adds an entry4F62PF@tabmgr.hlp to the points list as part of the Stage Co-ordinate Store/Recall Option 
+
+$#Macro Instruction: Special Function: Stage Save Position in "Current"
+This macro instruction Special FunctionSpecial_Functions saves the current stage position in a label "Current" in the Stage Co-ordinate Store & Recall Option points list. If label "Current" does not exist it is created.
+
+This function is useful in circumstances where it is necessary to periodically move the stage (e.g. to the position of a Faraday Cage to confirm probe current) and then return to the original position using the Stage Goto LabelStage_Goto_Label Current.
+
+If the Stage is not initialised the macro does not step to the next instruction.
+$#Macro Instruction: Stage Scan Next Field
+This is a predefined Macro CommandExecute_Command which steps to the next field of a predefined stage scan4YI0_85@dialgmgr.hlp pattern.
+If at end of scan the digital state Stage Scanning is set to At End.
+For a loop use While Stage scan not at endStage_While_Stage_scan_not_at_end
+$#Macro Instruction: Stage Scan Start
+This is a predefined Macro CommandExecute_Command which initiates a predefined stage scan4YI0_85@dialgmgr.hlp pattern.
+$#Macro Instruction: Stage While Stage scan not at end
+This is a predefined WhileWhile Instruction used to control the Stage Scan4YI0_85@dialgmgr.hlp loop.
+$#Macro Instruction: Stage While not at end of list
+
+This is a predefined case of the WhileWhile Instruction which will loop until the end of the Stage Scan pattern is reached.
+$#Standard Conditions
+This function is executed on request from the User Interface or if Restore ConditionsRestore_Conditions fails.
+
+The action is as follows
+
+1. Execute the macro STANDARD if it exists in the current macro library. 
+2. Otherwise load and execute the file STANDARD.MLC if it exists in the User Directory.
+3. Otherwise load and execute the file ..\LEO32\USER\STANDARD.MLC if it exists
+4. Otherwise load and execute the file ..\LEO32\DISTRIB\STANDARD.MLC.
+
+The default behaviour is therefore to execute the file in the Distribution directory (case 4).
+
+An alternative file may be created and placed in \LEO32\USER this will therefore be executed when any new user directory is created and conditions restored (case 3)
+
+NOTE: The macro in file STANDARD.MLC must be named Standard
+$#Start Macro
+When the SEM User Interface is started it runs a macro called Start if it exists.
+This macro may be used to set up user conditions if required.
+$#Step
+This editor function executes the currently selected (highlighted) instructionMacro_Instructions in the Editor WindowEditor_Window
+The next instruction to be executed becomes highlighted.
+This function may also be achieved by pressing F10
+$#Stop
+This editor function stops execution of the macro in the Editor windowEditor_Window
+Pressing ESC also performs this function.
+$#Special Function: TIFF Export Dialog
+This special functionSpecial_Functions displays theTIFF Export dialog.
+Note the the digital state USER is set to BUSY until the user closes the dialog.
+$#Special Function: TIFF Import Dialog
+This special functionSpecial_Functions displays theTIFF Import dialog.
+Note the the digital state USER is set to BUSY until the user closes the dialog.
+$#Uncluttered image for video printing
+The following special functions may be used
+
+Annotation Toolbar OffAnnotation_Toolbar_Off
+Cursor Off ScreenCursor_Off_Screen
+Datazone OnDatazone_on
+Full screen mode OnFull_screen_mode_On
+Hide Control PanelHide_Control_Panel
+Hide PanelsHide_Panels
+SEM Status Window OffSEM_Status_Window_Off
+
+
+See also attaching macros to KeysAttaching_macros_to_keys
+$#Undo
+If the macro in the Editor WindowEditor_Window has been edited, this Editor function will replace it with an unmodified copy from the LibraryMacro_Library.
+$#Special Function: User Toolbar Off
+This special functionSpecial_Functions hides the SEM User Toolbar
+$#Special Function: User Toolbar On
+This special functionSpecial_Functions displays the SEM User Toolbar
+$#Wait For Stage Idle
+This is a predefined case of the Wait For StateWait_For_State Instruction which will wait for the stage status to become idle.
+$#Macro Instruction:Wait For State
+This instruction waits for the specified digital parameter to be the defined state or until the timeout period expires. 
+
+Steps to the next instruction when the required state is achieved.
+
+If the instruction times out the macro stops with an error state (default action) or optionally continues with the next instruction.
+
+The option to continue on timeout is provided so that alternative action may be taken on timeout (e.g. an IF statement following the waitfor can check if the condition has not been met)
+
+$#Wait For dialog
+This dialog is used to define a Wait For instructionWait_For_State
+
+Select the required parameter from the drop down list.
+
+The lower drop down list displays the possible state values for the parameter.
+
+If this is a new instruction the current state value will be displayed, if editing an existing instruction the state value will be that previously defined.
+
+A timeout value (in seconds) defines how long the instruction will wait.
+
+There is a checkbox which defines the action on Timeout. If you wish the macro to halt on timeout (the default action) then check the box.
+If you uncheck the box the next instruction in sequence will be executed.
+$#Macro Instruction:While
+This is part of the While constructWhile_construct.
+
+If the condition defined is true (or optionally false) then the next instruction in sequence is executed,
+
+otherwise execution continues after the associated EndWhile statement.
+$#While construct
+
+This is of the form:
+
+WhileWhile <condition>  
+
+
+other statements
+
+End WhileEnd_While
+
+other statements
+$#While dialog
+This dialog is used to define a while instructionWhile
+
+Select the required parameter from the drop down list.
+
+The lower drop down list displays the possible state values for the parameter.
+
+If this is a new instruction the current state value will be displayed, if editing an existing instruction the state value will be that previously defined.
+
+A Radio button is used to define if the condition should be TRUE or FALSE for execution to continue at the next instruction.
+$#Editor Menu: File: SaveAs Common
+This command saves the current macro as ..\leo32\user\common.mlc for use as a common macro.Common_Macros
+$#Editor Menu: Edit Timeout
+This command displays the edit timeout dialog which enables the Instruction Timeout1280J7M value to be changed
+$#Instruction Timeout
+If an attempt is made to set a digital parameterSet_Digital_State, set an Analogue parameter Set_Analogue_Parameteror execute a commandExecute_Command which is disabled then the instruction is repeatedly executed without stepping on to the next instruction.
+
+If after a timeout period the instruction still cannot proceed a message box is displayed notifying the user.
+
+The user may choose:
+{bmc bm0.bmp}	To stop the Macro
+{bmc bm0.bmp}	To skip the instruction
+{bmc bm0.bmp}	To wait a further timeout period
+
+The default timeout period is 10 seconds.
+The period may be changed from the menu using Edit - timeout.
+$#Customising default files
+There are default files installed during Leo-32 installation, these are found in the ...\LEO32\DISTRIB directory.
+
+These files provide default behaviour and may be modified as required and installed in your own user directory (hence only apply when the specific user directory is in use) or savedSaveAs_Common as common filesCommon_Macros (hence will apply to all users). (see Search OrderSearch_Order_for_macro_execution and Macro LocationsMacro_Locations)
+
+These files are:
+
+Standard.MLC
+Sets standard conditions, see StandardStandard_Conditions
+
+Specimen Change.MLF (Leo 1500 only)
+Executed from Specimen Exchange button on Airlock Panel.
+See comments in macro and How ToContents@how_to.hlp : automating specimen exchange
+
+Video Print
+Executed when Video Printer is selected as output device.
+Provides an uncluttered imageUncluttered_image_for_video_printing for 15 seconds to permit the user to make a video print.
+
+Resume Exchange.MLF (Leo 1500 only)
+Executed from Resume Exchange button on Airlock Panel.
+See comments in macro and How ToContents@how_to.hlp : automating specimen exchange
+
+HV_DETECTOR.MLF (Leo 435VP and 438VP only)
+Detector selection.
+Executed when switching into HV mode. Not used if VPSE Detector fitted.
+
+VP_DETECTOR.MLF (Leo 435VP and 438VP only)
+Detector selection.
+Executed when switching into VP mode. Not used if VPSE Detector fitted.
+
+Mouse Stigmation.MLF
+Executed when the Stigmation button on the SEM Control Apertures295DOW3@tabmgr.hlp tab is pressed.
+By default selects the Stigmation X and Y parameters to the Left Mouse button for two dimensional adjustment.
+Alternatively may select the Stig X Only and Stig Y only parameters to the left and middle buttonsa repectively to permit individual adjustment.
+
+Mouse Aperture Align.MLF (Leo 1500 only)
+Executed when the Aperture Align button on the SEM Control Apertures295DOW3@tabmgr.hlp tab is pressed.
+By default selects the Aperture Align X and Y parameters to the Left Mouse button for two dimensional adjustment.
+Alternatively may select the Aper Align X Only and Aper Align Y only parameters to the left and middle buttonsa repectively to permit individual adjustment.
+
+Toolbar
+In addition many of the toolbar icons call macros, or they may be modified to call macros. These macros may also be saved in your own macro library or saved as common macros. See Standard Toolbar functions4AX50PD@sem.hlp and toolbar editorContents@tooledit.hlp
+
+
+See Also
+Macro - contentsContents
+Macro - OverviewMacros___Overview
+$#Special Function:Set Mouse to Coarse
+This special functionSpecial_Functions  Sets the mouse adjustment to Coarse Mode
+$#Special Function:Set Mouse to Fine
+This special functionSpecial_Functions  Sets the mouse adjustment to Fine Mode
+$#Special Function:Toggle Mouse Coarse/Fine
+This special functionSpecial_Functions  Toggles the mouse adjustment mode between Coarse/Fine Mode
+$#Look up Table Functions
+The following Look Up Tabe Macro InstructionsMacro_Instructions are provided.
+
+Display LUT EditorDisplay_LUT_Editor
+Display LUT ResetDisplay_LUT_Reset
+Input LUT EditorInput_LUT_Editor
+Input LUT ResetInput_LUT_Reset
+Load LUT from FileLoad_LUT_from_File
+$#KMacro Instruction:Display LUT Editor
+This Macro InstructionMacro_Instructions displays the LUT EditorContents@lutmgr.hlp which may be used to create User Display LUT Profiles
+$#KMacro Instruction:Input LUT Editor
+This Macro InstructionMacro_Instructions displays the LUT EditorContents@lutmgr.hlp which may be used to create User Input LUT Profiles
+$#Macro Instruction: Display LUT Reset
+This Macro InstructionMacro_Instructions resets the Display LUT to a Linear Grey
+$#Macro Instruction: Input LUT Reset
+This Macro InstructionMacro_Instructions resets the Input LUT to transparent
+$#KMacro Instruction: Load LUT from File
+This Macro InstructionMacro_Instructions loads a selected LUT file.
+The LUT file may be either a Display LUT File (*.OLT, *.DLU) or an Input LUT File (*.ULU)
+
+These LUT files may be created using the LUT EditorContents@lutmgr.hlp
+
+See also LUT Editor File Types2ZB2NX@lutmgr.hlp
+$#KMacro Locations
+This menu function displays a list box containing all the macros which are accessible and where they are located.
+
+This is particularly useful when you wish to determine how the search pathSearch_Order_for_macro_execution functions to select a macro.
+$#Special Function:Signal Event
+This special functionSpecial_Functions  generates a Macro Event with the associated data code.
+The event is fired in the Leo Parameter Manager OCX used in special applications.
+$#Stop All Macros
+This menu command stops all currently executing macros.
+$#KSpecial Function: Step Up/Down WD
+These two special functions Step the Working distance up/down by an amount which is magnification compensated. The amount is also affected by the Coarse/Fine state.
+
+These instructions are provided so that they may be used in macros attached to special function keysAttaching_macros_to_keys hence permitting more precise control of Working Distance than using the mouse.

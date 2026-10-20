@@ -1,0 +1,7 @@
+﻿"Message","Kind","Id","Menu","Handler","Function","ServerCalls","Imports","Text"
+"PM_PARAMETER_NOTIFY","registered","","","0x10019462","FUN_10019462","","",""
+"WM_TIMER","","","","0x10019493","FUN_10019493","","",""
+"WM_HELP","","","","0x10033C6A","FUN_10033c6a","","",""
+"WM_HELPHITTEST","","","","0x10033D20","FUN_10033d20","","",""
+"0x0366","","","","0x10033D2F","FUN_10033d2f","","",""
+"WM_COMMAND","command","200","","0x100321F0","FUN_100321f0","","",""

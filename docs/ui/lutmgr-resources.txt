@@ -1,0 +1,94 @@
+﻿=== MENU 213 (lang 0809)
+  [&Utilities]
+  [Edit Mode]
+    206  Move
+    207  &Add/Delete
+  [LUT Functions]
+    208  &Reset LUT
+    209  &Invert LUT
+    [Step LUT]
+      210  Step
+      211  Settings...
+    212  Brightness && Contrast
+    213  Gamma
+    214  Level
+    215  Colour Selection
+    216  Grey Wedge
+  ----
+  202  Show &Toolbar
+  203  &Hide Toolbar
+  ----
+  204  &Open LUT
+  205  &Save LUT As
+  ----
+  201  &Undo
+=== DIALOG 1 "About LUT Manager" (4 controls)
+  -1  STATIC  "#1"
+  201  STATIC  "Version inserted by software"
+  -1  STATIC  "Copyright © 1997-1998,  LEO Electron Microscopy Ltd"
+  1  BUTTON  "OK"
+=== DIALOG 211 "" (0 controls)
+=== DIALOG 216 "LUT Step Settings" (14 controls)
+  266  msctls_trackbar32  "Slider1"
+  4294967295  BUTTON  "Amplitude"
+  267  msctls_trackbar32  "Slider1"
+  4294967295  BUTTON  "Period"
+  268  msctls_trackbar32  "Slider1"
+  4294967295  BUTTON  "Offset"
+  4294967295  BUTTON  "Control"
+  269  BUTTON  "Apply Directly to Current LUT"
+  4294967295  STATIC  "Max"
+  4294967295  STATIC  "Max"
+  4294967295  STATIC  "Min"
+  4294967295  STATIC  "Min"
+  4294967295  STATIC  "Max"
+  4294967295  STATIC  "Min"
+=== DIALOG 217 "Adjust LUT" (8 controls)
+  270  msctls_trackbar32  "Slider1"
+  273  msctls_trackbar32  "Slider1"
+  4294967295  STATIC  "Max"
+  4294967295  STATIC  "Min"
+  4294967295  STATIC  "Max"
+  4294967295  STATIC  "Min"
+  4294967295  BUTTON  "Brightness"
+  4294967295  BUTTON  "Contrast"
+=== DIALOG 218 "Colour" (25 controls)
+  -1  STATIC  "&Basic colours:"
+  720  STATIC  ""
+  -1  STATIC  "&Solid colours:"
+  721  STATIC  ""
+  3  BUTTON  "From Image"
+  1  BUTTON  "OK"
+  2  BUTTON  "Close"
+  710  STATIC  ""
+  702  STATIC  ""
+  709  STATIC  ""
+  713  BUTTON  "&o"
+  730  STATIC  "Color"
+  731  STATIC  "|S&olid"
+  723  STATIC  "Hu&e:"
+  703  EDIT  ""
+  724  STATIC  "&Sat:"
+  704  EDIT  ""
+  725  STATIC  "&Lum:"
+  705  EDIT  ""
+  726  STATIC  "&Red:"
+  706  EDIT  ""
+  727  STATIC  "&Green:"
+  707  EDIT  ""
+  728  STATIC  "Bl&ue:"
+  708  EDIT  ""
+=== DIALOG 219 "Adjust LUT" (6 controls)
+  -1  BUTTON  "Level"
+  274  msctls_trackbar32  "Slider1"
+  -1  STATIC  "100%"
+  -1  STATIC  "0%"
+  -1  STATIC  "50%"
+  218  STATIC  ""
+=== DIALOG 220 "Adjust LUT" (4 controls)
+  -1  BUTTON  "Gamma"
+  275  msctls_trackbar32  "Slider1"
+  -1  STATIC  "Max"
+  -1  STATIC  "Min"
+=== DIALOG 221 "" (1 controls)
+  349  BUTTON  "Save Points as ASCII (Text)"

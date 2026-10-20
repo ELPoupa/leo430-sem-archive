@@ -1,0 +1,1680 @@
+﻿$#Acquire command error
+
+This error is given when a signal acquisition  command fails.
+
+Code numbers greater than 40 indicate the failure of an internal consistency check.  Contact LEO2JJ8T6_
+
+CodKe numbers  less than 40 indicate that there is a failure in the communication to the DSP subsystem.
+Report problemP8W0Q0
+
+The code number given identifies the failing command as follows:
+
+1 SET_ZONE_K1_CMD           
+2 SET_ZONE_K2_CMD          
+3 SET_ZONE_ALPHA_CMD       
+4 SET_ZONE_BETA_CMD        
+5 SET_ZONE_SUB_CMD          
+6 SET_ZONE_PORT_CMD        
+7 SET_ZONE_OFFSET_CMD      
+8 SET_ZONE_GAIN_CMD        
+9 SET_ZONE_INVERT_CMD      
+A CREATE_IDENTITY_LUT       
+B CREATE_GAMMA_LUT          
+C CREATE_INVERT_LUT         
+D CREATE_USER_LUT           
+E COMBINE_USER_LUTS         
+F ENABLE_WINDOW_PLANE       
+10 SET_DETECTOR_MIXING       
+11 SET_FAVE_NOISE_REDN       
+12 SET_LINT_NOISE_REDN       
+13 SET_FINT_NOISE_REDN       
+14 SET_WINDOW_SEL            
+15 SET_FREEZE_CMD            
+16 COPY_USER_LUT            
+17 SEE_LUT                   
+18 DEFINE_WINDOW             
+$#Airlock Gate valve position incorrect 
+
+The gate valve on the airlock is in the incorrect position
+.e.g valve open and vent requested..
+$#Brightness RLM failed to initialise
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#Brightness RLM failed to load
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#CONFIG FILE READ ERROR - using default 
+This error is given when a file error is detected on reading the configuration file CONFIG.LEO 
+or when a format error is detected.
+This file contains the configuration data (options etc) for the Right Hand Side of the SEM (electronics).
+When this error occurs a default minimum configuration is assumed.
+$#CONFIG FILE WRITE ERROR 
+This error is given when a file error is detected on writing the configuration file CONFIG.LEO.
+
+This file contains the configuration data (options etc) for the Right Hand Side of the SEM (electronics).
+The most likely cause of error is inadequate disk space.
+$#Cannot print colour TIFF
+
+This error is given when an attempt is made to print a TIFF file which contains a real colour image.
+
+The printer can only print Grey or binary files.
+
+$#Chamber column valve position incorrect 
+The valve between the column and chamber is in the incorrect position.
+(e.g.. valve closed while system pumping with no column pumping).
+$#
+Clipboard - bitmap data error
+
+This error indicates that the data in the bitmap is corrupt.
+$#
+Clipboard - get context failed
+
+This error indicates that a display context could not be obtained. 
+Inadequate resources. Close other applications.
+
+$#
+Clipboard - unknown bitmap type
+
+The clipboard contains a bitmap of a type which cannot be handled by the LEO software.
+$#
+Clipboard bitmap create error
+
+This failure is given when cutting an image to clipboard.
+This is typically caused by inadequate PC memory (or disk swap file).  Close any other applications
+$#
+Clipboard conversion memory error
+
+This failure is given when cutting an image to clipboard.
+This is typically caused by inadequate PC memory (or disk swap file).  Close any other applications
+or free up space on hard disk. (N.B. swap file must be contiguous space).
+
+$#
+Clipboard fetch failed
+
+This failure is given when pasting an image from clipboard.
+The call to the clipboard returned a failure.
+$#DEFAULT.VAC FILE USED
+Configuration and calibration information relating to the column is saved in Non Volatile RAM. 
+Due to a problem reading the NVRAM an attempt has been made to use the standby DATA.VAC file and either the data is corrupt, an incompatible version or the file could not be found. The file DEFAULT.VAC has been used which contains a default set of data. Any calibration data has therefore been lost.
+
+Report problemP8W0Q0
+
+$#Default Printer: General print error
+A fault has been detected on the selected printer. Paper out or jammed?
+$#Default Printer: Not configured
+
+The printer is not configured correctly. Refer to printer documentation.
+$#Default Printer: Out of disk space
+There is insufficient disk space available. Delete unwanted files to create more space.
+$#Default Printer: Out of memory
+There is insufficient memory available. Close one or more applications to free some memory.
+$#Disk space is critical - free some space immediately
+This message is given when the available space on drive C: has fallen below 10MB. You are advised to delete/archive  any redundant files immediately.
+Failure to create more working space may result in loss of critical files and in extreme cases could lock up the system
+
+ The LOG file  may be growing too large and require archiving. 
+$#Disk space is low - housekeeping required
+
+This message is given when the available space on drive C: has fallen below 20MB. You are advised to delete/archive  any redundant files. The LOG file may be growing too large and require archiving 
+$#EDX system window position incorrect 
+ (e.g.EDX detector window open and vent requested).
+$#EHT - Filament Blown
+This message indicates that the filament has blown and should be replaced. 
+Note that an incorrectly seated firing unit  or dirty contacts may also give this error.
+$#EHT - Inhibited by Vac System
+
+The EHT supplies are inhibited by the Vacuum system state.
+This is typically a warning.
+$#EHT - Set Tripped 
+This error indicates a trip of the EHT set. 
+This is typically caused by :
+ 1. Dirty firing unit 
+ 2. Incorrectly fitted filament (i.e. too close to aperture)
+ 3. Broken or cracked filament base
+ 4. Inadequate vacuum especially when high KV is used
+$#EHT - Spurious Reset
+EHT set has been reset  for an unknown reason (i.e. not by system software).
+
+$#EHT SPURIOUS STATUS 
+A spurious status code has been received from the EHT set.
+Report problemP8W0Q0
+$#EHT Set Errors
+
+EHT comms failed to open/close MFH15K
+EHT - Filament Blown2MVVPI4
+EHT - Set Tripped BKOIXC 
+EHT - Inhibited by Vac System14MJVEJ
+EHT - Spurious Reset5.G55L
+Invalid Parameter received by EHT set4DMBS_
+Parameter range error from EHT set17PTZWG
+EHT set internal fault3N1XOO
+EHT set comms timeout28WYE4
+Unknown command received by EHT setJAZKYL
+EHT Set spurious status 10I1GBI
+$#EHT comms failed to open/close 
+This error is given when there is a failure in the communications to the EHT set. A Status code is given which will enable details of the fault to be determined.
+
+Report problemP8W0Q0
+$#EHT set comms timeout
+
+The EHT set has failed to respond within a reasonable period.
+
+Report problemP8W0Q0
+$#EHT set internal fault
+
+The EHT set has reported an internal error.
+
+Report problemP8W0Q0
+$#FAILED TO ACTIVATE ACQ. PROCESS
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#FAILED TO ACTIVATE DSP PROCESS 
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#FAILED TO ACTIVATE EHT PROCESS
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#FAILED TO ACTIVATE EO PROCESS
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#FAILED TO ACTIVATE STAGE PROCESS
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#FAILED TO ACTIVATE VAC PROCESS
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#FAILED TO LOAD ACQUIRE RLM
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#FAILED TO LOAD DSP RLM 
+
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#FAILED TO LOAD EHT RLM
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#FAILED TO LOAD EO RLM
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#FAILED TO LOAD IMEX RLM
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#FAILED TO LOAD OVERLAY MANAGER
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#FAILED TO LOAD STAGE RLM
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#FAILED TO LOAD VAC RLM
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+
+$#FAILED TO WRITE DATA.VAC 
+DATA.VAC is the standby file containing the configuration and calibration for the column.
+An attempt has been made to update this file and has failed. This is typically due to lack of disk space.
+Please check free space on disk and discard or archive files as necessary.
+
+$#FAILED TO WRITE NVRAM 
+Configuration and calibration information relating to the column is saved in Non Volatile RAM.
+An attempt has been made to update this information which has failed. The information will have been saved in the standby file DATA.VAC
+
+Report problemP8W0Q0
+
+$#Failed to write NVRAM and data.vac
+Configuration and calibration information relating to the column is saved in Non Volatile RAM.
+An attempt has been made to update this information which has failed.
+
+DATA.VAC is the standby file containing the configuration and calibration for the column.
+An attempt has been made to update this file and has failed. This is typically due to lack of disk space.
+
+BOTH COPIES OF DATA HAVE THEREFORE BEEN LOST.
+
+Report problemP8W0Q0
+$#Gun Valve position incorrect 
+The valve between the gun and the chamber is in the incorrect position.
+(e.g. valve closed while system pumping, no column pumping)
+$#Errors in Variable Pressure system (LEO 435VP and 438 VP only)
+
+Error code numbers refer to the HPAPP error status.
+
+(1)	HPApp failed to start 75KVF7
+(2)	HPApp Response Error25R4NUA
+(3)	HPApp Closed Unexpectedly25KK_KU
+(4)	HPApp Hung Up ErrorSHPKP2
+(5)	VP Control Spurious ResetE4FN7B
+(6)	VP Control Comms Error_EB3C7
+(7)	VP Turbo Isolation Valve Error 15PATT2
+(8)	VP Turbo Isolation Valve Opening Timeout5PATT3
+(9)	VP Turbo Isolation Valve Closing Timeout5PATT4
+(10)	VP Turbo Isolation Valve Error 45PATT5
+(11)	VP Foreline Valve Error 180KJJX
+(12)	VP Foreline Valve Opening Timeout80KJJY
+(13)	VP Foreline Valve Closing Timeout80KJJZ
+(14)	VP Foreline Valve Error 41GM8INP
+(15)	VP Target Pressure Timeout0S4245
+(16)	VP Monitor Fault 1WZ.7CU
+(17)	VP Monitor Fault 2WZ.7CV
+(18)	VP Mode Transition Timeout1FICIBF
+(19)	VP Pirani gauge ErrorMHYR74
+(20)	VP Hardware Reverse ErrorHKK6HB
+(22)	VP Control Unknown Error1SYAR.P
+$#HPApp Closed Unexpectedly
+The Variable pressure control software has closed unexpectedly. Further Variable Pressure operation will not be available. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$#HPApp Hung Up Error
+The Variable pressure control software has stopped responding to LEO. Further Variable Pressure operation will not be available. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$#HPApp Response Error
+The Variable pressure control software has failed to respond to a command. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$#HPApp failed to start
+LEO was unable to start the Variable Pressure Control software. Variable Pressure operation will not be available. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$#HRRU command error
+This error is given when a  command to the HRRU fails.
+
+Code numbers greater than 40 indicate the failure of an internal consistency check.  Contact LEO2JJ8T6_
+
+Code numbers  less than 40 indicate that there is a failure in the communication to the DSP subsystem.
+Report problemP8W0Q0
+
+The code number given identifies the failing command as follows:
+
+1 HRRU_FITTED               
+2 TAKE_LEFT_STORED_PHOTO   
+3 TAKE_RIGHT_STORED_PHOTO   
+4 TAKE_LIVE_PHOTO           
+5 GAMMA_OVERLAY_HRRU_LUT    
+6 GAMMA_HRRU_LUT            
+7 SET_FILM_SPEED            
+8 SET_LIVE_REPEAT           
+9 SET_CAMERA_TYPE           
+A SET_HRRU_FOCUS           
+B SET_HRRU_BRIGHTNESS      
+C SET_HRRU_CONTRAST        
+D SAVE_HRRU_CONFIG         
+$#INVALID DEFAULT.VAC FILE 
+Configuration and calibration information relating to the column is saved in Non Volatile RAM.  The file containing the initial default data is corrupt, an incompatible version or not found.
+
+Report problemP8W0Q0
+
+
+$#INVALID STATE VALUE
+This error occurs when the user interface attempts to set a system parameter in the Master DLL
+to an incorrect state. Contact LEO2JJ8T6_
+$#Imex failed to initialise
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$#Image Import/Export errors
+
+Write TIFF header ErrorET1S8P 
+Write TIFF Directory Error2VBYPO 
+Write TIFF Image ErrorWrite_TIFF_Image_Error 
+Read TIFF header Error4ARKPH0 
+Read TIFF directory Error43GCOW 
+Read TIFF image ErrorRead_TIFF_image_Error 
+TIFF file errorTIFF_file_error 
+TIFF image select errorimage_select_error 
+TIFF annotation memory lock error1WPKHZH 
+
+Clipboard conversion memory errormemory_error 
+Clipboard bitmap create errorbitmap_create_error 
+Open clipboard errorOpen_clipboard_error 
+No bitmap in clipboardXRAA30 
+Clipboard fetch failedClipboard_fetch_failed 
+Clipboard - unknown bitmap typeunknown_bitmap_type 
+Clipboard - get context failed0UKEVX 
+Cannot Print Colour TIFF18XJ6YQ 
+
+HRRU command error5_BOHH
+
+Default Printer: Out of memory2X0S_KN
+Default Printer: General print error21.HDHW
+Default Printer: Out of disk space2MG2_IK
+Default Printer: Not configured18HKBTI
+$#Incorrect ident code 
+This error occurs when the user interface attempts to access a system parameter in the Master DLL
+using an incorrect identification code. Contact LEO2JJ8T6_
+$#Invalid Parameter received by EHT set
+
+This error is given when the EHT set receives a command with invalid parameter(s).
+
+This may be symptomatic of a communications error.
+
+Report problemP8W0Q0
+$#Invalid Stage Command
+
+This error is given when a command is issued to move the stage to an invalid position (i.e. beyond the limits). This may be due to defining an invalid stage scan pattern which would result in limit violation.
+$#NV RAM data inconsistent with config file 
+Configuration and calibration information relating to the column is saved in Non Volatile RAM.
+
+The config file contains the configuration data (options etc) for the Right Hand Side of the SEM (electronics).
+
+This message indicates that an inconsistency has been found.  A default configuration is assumed.
+This message should only occur where hardware changes have taken place (e.g. new board installed).
+
+If necessary report problemP8W0Q0
+$#NVRAM / DATA.VAC Errors 
+
+INVALID DEFAULT.VAC FILE 7C0A0GY
+FAILED TO WRITE NVRAM PGN9G8
+FAILED TO WRITE DATA.VAC 7D.21P
+Failed to write NVRAM and data.vacN0XSA
+CONFIG FILE READ ERROR - using default 2_2X3X6
+CONFIG FILE WRITE ERROR1KL.SH 
+NV RAM data inconsistent with config file 4KQLZR  
+NVRAM data faulty, read from data.vac 2OU7B9K  
+DEFAULT.VAC FILE USED 153IGVQ
+
+$#
+NVRAM data faulty, read from data.vac 
+Configuration and calibration information relating to the column is saved in Non Volatile RAM. 
+
+This data could not be read correctly.  The standby copy of this data held in file DATA.VAC  has been used. 
+If the format of NVRAM data has been altered (check release notes) then on first startup of the system this error will be given. 
+
+NOTE
+The NVRAM contains the user licences, hence if the NVRAM cannot be read for any reason all licences will be disabled. It will therefore be necessary to reload all user licences with the Licence install program.
+
+ If this is not the first use after an upgrade Report problemP8W0Q0
+
+
+
+$#
+No bitmap in clipboard
+
+This failure is given when pasting an image from clipboard.
+The clipboard does not contain a bitmap.
+$#
+Open clipboard error
+
+This failure is given when cutting /pasting an image to/from clipboard.
+
+$#Parameter or state currently disabled
+This error occurs when an attempt is made to access a parameter or state which is currently disabled 
+by the operational rules.
+$#Parameter range error from EHT set
+This error is given when the EHT set receives a command with parameter value(s) out of valid range.
+
+This may be symptomatic of a communications error.
+
+Report problemP8W0Q0
+$#
+Read TIFF directory Error
+
+This error is given when reading a TIFF file. 
+The error occurred when reading the TIFF file internal image directory.
+The file is corrupted. 
+This is typically due to  a partially written file, truncated due to inadequate disk space.
+$#
+Read TIFF header Error
+
+This error is given when reading a TIFF file. 
+The error occurred when reading the TIFF header.
+This error may be given if an attempt is made to read a TIFF file (e.g. to determine it's header information) while the file is being printed.
+
+Alternatively the file may have been corrupted. 
+This is typically due to  a partially written file, truncated due to inadequate disk space.
+$#Read TIFF image Error
+
+This error is given when reading a TIFF file. 
+The error occurred when reading a TIFF  image structure.
+The file is corrupted. 
+This is typically due to  a partially written file, truncated due to inadequate disk space.
+
+$#Service  problems.
+Please report problem   to  your local service centre, or if necessary to:
+
+Leo 400 Series
+Customer Care,
+LEO Electron Microscopy Ltd,
+Clifton Road,
+Cambridge, CB1 3QH
+England.
+
+Telephone (+44) 1223 - 414166
+Fax            (+44) 1223 - 211497
+
+Leo 1500 Series
+Leo Elektronenmikroskopie GmbH,
+D-73446
+Oberkochen
+Germany
+Telephone(+49) 73-64-20-61-37
+Fax            (+49) 73-64-20-48-51
+
+Please include Software version number, System serial number together with a full description of the
+symptoms, error messages and circumstances leading to the problem.
+
+
+$#Reporting Software problems.
+Please report problem   to :
+
+Customer Care,
+LEO Electron Microscopy Ltd,
+Clifton Road,
+Cambridge, CB1 3QH
+England.
+
+Telephone (+44) 1223 - 414166
+Fax            (+44) 1223 - 211497
+
+Please include Software version number, System serial number together with a full description of the
+symptoms and circumstances leading to the error.
+
+
+$#Stage Command Error
+
+This error is given when a stage command fails.
+
+Code numbers greater than 40 indicate the failure of an internal consistency check/queueing.  Contact LEO2JJ8T6_
+
+Code numbers  less than 40 indicate that there is a failure in the communication to the stage/vac subsystem.
+Report problemP8W0Q0
+
+The code number given identifies the failing command as follows:
+
+1 SET_UP_STAGE_REQ          
+2 MANUAL_INIT_REQ           
+3 AUTO_INIT_REQ             
+4 LOWER_USER_LIMITS_REQ     
+5 UPPER_USER_LIMITS_REQ     
+6 TIGA_TIMER_TICK_REQ       
+7 SPEED_MOVE_REQ            
+8 STAGE_POSITION_REQ        
+9 BACKLASH_REQ              
+A MOVE_MODE_REQ             
+B ABORT_REQ                 
+C STAGE_PARAMS_V_START      
+D STAGE_PARAMS_V_INC        
+E STAGE_PARAMS_T_STEP       
+F STAGE_PARAMS_BACKLASH_SPD 
+10 STAGE_PARAMS_BACKLASH_DST 
+11 STAGE_PARAMS_MAXIMUM_SPD  
+12 GET_ERROR_STATUS          
+13 CHECK_STAGE_PSU           
+
+
+$#Stage Errors
+
+Stage Touching1ZNL0_0
+Invalid Stage CommandEW0YW. 
+Stage Command ErrorL4T69Y
+
+Stage X -15V failed3004_7E 
+Stage X +15V failedG8HT38
+Stage Y -15V failedGNN6K5
+Stage Y +15V failedHG.KN_ 
+Stage Z -15V failed3.WFWBO
+Stage Z +15V failed1.4.BUR
+Stage Tilt -15V failed1PBM4H.  
+Stage Tilt +15V failedASNJGO  
+Stage Rotate -15V failed1MP0E_2  
+Stage Rotate +15V failed4BBXXGO 
+
+Stage X axis low outer limit hitGBH_HR
+Stage X axis low inner limit hitG.A7HR
+Stage X axis low user limit hitGHEYU
+Stage X axis high user limit hit1K0DC4O
+Stage X axis high inner limit hit0YJACD
+Stage X axis high outer limit hit2.PJF3I
+
+Stage Y axis low outer limit hit432677
+Stage Y axis low inner limit hitQ66ZNG
+Stage Y axis low user limit hit212SMC1
+Stage Y axis high user limit hitELM.6O
+Stage Y axis high inner limit hit3_HKKPP
+Stage Y axis high outer limit hit1.2YS5K
+
+Stage Z axis low outer limit hit_WRY.W
+Stage Z axis low inner limit hit_QKS.W
+Stage Z axis low user limit hit1_NYVON
+Stage Z axis high user limit hit2_74P4
+Stage Z axis high inner limit hitXCBYO2
+Stage Z axis high outer limit hitXIJ4O2 
+
+Stage T axis low outer limit hit_9R1I8 
+Stage T axis low inner limit hit_3JVI8 
+Stage T axis low user limit hit52UMJM 
+Stage T axis high user limit hitNSB7HP 
+Stage T axis high inner limit hitWKR0GB 
+Stage T axis high outer limit hit71OD.BQ 
+
+$#Stage Limits
+
+The motorised stage has six limits per axis:
+
+Low Outer
+Low Inner
+Low User
+
+Normal working range
+
+High User
+High Inner
+High Outer
+.
+The user limits are defined by the user, by default they are set at the outer limits.
+
+If an inner limit is detected the stage slows down and does not lose position.
+If an outer limit is detected the stage stops immediately and position is lost.
+Note that an outer limit should not be detected except in hardware error conditions (e.g. dirty track/contact on stage limit PCB failing to detect inner limit).
+
+
+$#Stage R +15V failed
+Report problemP8W0Q0
+$#Stage R -15V failed
+Report problemP8W0Q0
+$#Stage T +15V failed
+Report problemP8W0Q0
+$#Stage T -15V failed
+Report problemP8W0Q0
+$#Stage T axis high inner limit hit 
+The T axis has detected a high inner limitStage_Limits 
+$#Stage T axis high outer limit hit 
+The T axis has detected a high outer limitStage_Limits 
+$#Stage T axis high user limit hit 
+The T axis has detected a high user limitStage_Limits 
+$#Stage T axis low inner limit hit 
+The T axis has detected a low inner limitStage_Limits 
+$#Stage T axis low outer limit hit 
+The T axis has detected a low outer limitStage_Limits 
+$#Stage T axis low user limit hit 
+The T axis has detected a low user limitStage_Limits 
+$#Stage Touching 
+
+The stage, specimen or specimen mounting is touching the chamber or final lens.
+$#Stage X +15V failed
+Report problemP8W0Q0
+$#Stage X -15V failed
+Report problemP8W0Q0
+$#Stage X axis high inner limit hit 
+The X axis has detected a high inner limitStage_Limits 
+$#Stage X axis high outer limit hit 
+The X axis has detected a high outer limitStage_Limits 
+$#Stage X axis high user limit hit 
+The X axis has detected a high user limitStage_Limits 
+$#Stage X axis low inner limit hit 
+The X axis has detected a low inner limitStage_Limits 
+$#Stage X axis low outer limit hit 
+The X axis has detected a low outer limitStage_Limits 
+$#Stage X axis low user limit hit 
+The X axis has detected a low user limitStage_Limits 
+$#Stage Y +15V failed
+Report problemP8W0Q0
+$#Stage Y -15V failed
+Report problemP8W0Q0
+$#Stage Y axis high inner limit hit 
+The Y axis has detected a high inner limitStage_Limits 
+$#Stage Y axis high outer limit hit 
+The Y axis has detected a high outer limitStage_Limits 
+$#Stage Y axis high user limit hit 
+The Y axis has detected a high user limitStage_Limits 
+$#Stage Y axis low inner limit hit 
+The Y axis has detected a low inner limitStage_Limits 
+$#Stage Y axis low outer limit hit 
+The Y axis has detected a low outer limitStage_Limits 
+$#Stage Y axis low user limit hit 
+The Y axis has detected a low user limitStage_Limits 
+$#Stage Z +15V failed
+Report problemP8W0Q0
+$#Stage Z -15V failed
+Report problemP8W0Q0
+$#Stage Z axis high inner limit hit 
+The Z axis has detected a high inner limitStage_Limits 
+$#Stage Z axis high outer limit hit 
+The Z axis has detected a high outer limitStage_Limits 
+$#Stage Z axis high user limit hit 
+The Z axis has detected a high user limitStage_Limits 
+$#Stage Z axis low inner limit hit 
+The Z axis has detected a low inner limitStage_Limits 
+$#Stage Z axis low outer limit hit 
+The Z axis has detected a low outer limitStage_Limits 
+$#Stage Z axis low user limit hit 
+The Z axis has detected a low user limitStage_Limits 
+$#System Errors
+
+Acquire command error1KZ.VCK
+Imex failed to initialise06X3.6
+
+
+ Incorrect ident code0OPROX 
+ INVALID STATE VALUE1ZDSJ6H 
+ Parameter or state currently disabled3WNE.UX
+
+
+FAILED TO LOAD OVERLAY MANAGERSIM83X
+FAILED TO LOAD VAC RLMGMHA1Z
+FAILED TO LOAD STAGE RLM2EHXGV8
+FAILED TO LOAD ACQUIRE RLM JQU7B3
+FAILED TO LOAD EO RLM12BK.2J 
+FAILED TO LOAD EHT RLM20SX_WR
+FAILED TO ACTIVATE VAC PROCESS 36WJZXT 
+FAILED TO ACTIVATE STAGE PROCESS1NLGGFU
+FAILED TO ACTIVATE ACQ. PROCESSB47CUM
+FAILED TO ACTIVATE EO PROCESSMVWMGJ
+FAILED TO ACTIVATE EHT PROCESS450M5L  
+FAILED TO LOAD DSP RLM 27HSMTD 
+FAILED TO ACTIVATE DSP PROCESSG_VT5T
+FAILED TO LOAD IMEX RLM1739T1
+Brightness RLM failed to loadJLE45S
+Brightness RLM failed to initialiseD353I3
+
+$#
+TIFF annotation memory lock error
+
+This error is given when attempting to lock in memory the image annotation associated with a worksheet.
+This is typically caused by inadequate PC memory (or disk swap file).  Close any other applications
+or free up space on hard disk. (N.B. swap file must be contiguous space).
+$#
+TIFF file error
+
+This error is given when reading a TIFF file. 
+Either the file could not be found or error in reading first block.
+
+$#
+TIFF image select error
+
+This error is given when an inconsistent  image selection is defined (e.g. no image selected).
+$#Unknown command received by EHT set
+
+This error is given when the EHT set receives a command it does not understand. This may be symptomatic of a communications error.
+
+
+Report problemP8W0Q0
+$#VP Control Comms Error
+A communications failure has occurred between LEO and the Variable Pressure control hardware. Further Variable Pressure operation will be unavailable. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$#VP Control Spurious Reset
+LEO has detected an unexpected reset of the Variable pressure control hardware. The SEM has been set to High Vacuum mode. It the problem recurs please contact LEO2JJ8T6_.
+$#VP Control Unknown Error
+An unknown error occurred in the Variable Pressure control system. Variable Pressure mode will be unavailable. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$#VP Foreline Valve Closing Timeout
+An error has been detected in the operation of the VP Foreline Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+
+$#VP Foreline Valve Error 1
+An error has been detected in the operation of the VP Foreline Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+
+$#VP Foreline Valve Error 4
+An error has been detected in the operation of the VP Foreline Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+$#VP Foreline Valve Opening Timeout
+An error has been detected in the operation of the VP Foreline Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+
+$#VP Hardware Reverse Error
+A serious error has ocurred in the Variable Pressure control hardware. Please shutdown the SEM and contact LEO2JJ8T6_.
+$#VP Mode Transition Timeout
+A timeout occurred during transition between vacuum modes. This may be due to excessive outgassing of the sample, a vacuum leak, or an error in the Variable pressure control system. If the problem persists with non-outgassing samples please contact LEO2JJ8T6_.
+$#VP Monitor Fault 1
+An error has occurred in the Variable pressure monitoring. Further Variable Pressure operation will be unavailable. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$#VP Monitor Fault 2
+An error has occurred in the Variable pressure monitoring. Further Variable Pressure operation will be unavailable. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$#VP Pirani gauge Error
+An error has ocurred in reading the chamber pressure from the Pirani gauge. Please contact LEO2JJ8T6_.
+
+$#VP Target Pressure Timeout
+The Variable pressure control system is unable to achieve the requested target pressure. This may be due to excessive outgassing of the sample, a vacuum leak, or an error in the Variable pressure control system. If the problem persists with non-outgassing samples please contact LEO2JJ8T6_.
+$#VP Turbo Isolation Valve Closing Timeout
+An error has been detected in the operation of the VP Turbo Isolation Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+$#VP Turbo Isolation Valve Error 1
+An error has been detected in the operation of the VP Turbo Isolation Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+$#VP Turbo Isolation Valve Error 4
+An error has been detected in the operation of the VP Turbo Isolation Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+$#VP Turbo Isolation Valve Opening Timeout
+An error has been detected in the operation of the VP Turbo Isolation Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+$#Vac system Penning gauge failure.
+
+Report problemP8W0Q0
+
+$#Vacuum Board +12V failed
+Report problemP8W0Q0
+$#Vacuum Board +5V failed
+Report problemP8W0Q0
+$#Vacuum Board -12V failed
+
+Report problemP8W0Q0
+$#Vacuum Board -5V failed
+Report problemP8W0Q0
+$#Vacuum Command error
+
+This error is given when a vacuum command fails.
+
+Code numbers greater than 40 indicate the failure of an internal consistency check.  Contact LEO2JJ8T6_
+
+Code numbers  less than 40 indicate that there is a failure in the communication to the stage/vac subsystem.
+Report problemP8W0Q0
+
+The code number given identifies the failing command as follows:
+
+ 1  CONFIGURE_FRONT_PANEL_REQ 
+ 2 SYSTEM_PUMPING_REQ                       
+ 3 CONFIG_VIEWING_WINDOW_REQ     
+ 4 CONFIG_COLUMN_PUMPING_REQ     
+ 5 COLUMN_PUMPING_REQ                     
+ 6 COLUMN_ISOLN_REPLY_REQ              
+ 7 EDX_CONFIGURE_REQ                         
+ 8 WDX_CONFIGURE_REQ                        
+ 9 FILAMENT_THRESH_REQ                     
+A EDX_THRESH_REQ                               
+B SET_4QBSD_QUADRANT_REQ            
+C SET_4QBSD_VISIBILITY_REQ            
+D SET_4QBSD_GAIN_REQ                       
+E  SET_SCM_RANGE_REQ
+F  SCM_READINGS_REQUIRED_REQ  
+10  VACUUM_TIMER_ROUTINE_REQ
+11 WRITE_VACUUM_DATA_REQ     
+12 READ_VACUUM_DATA_REQ      
+13 OPER_WDX_GATE_VALVE_REQ   
+14 AIRLOCK_CONFIGURE_REQ     
+15 SET_TILT0                 
+16 SET_TOUCH_ALARM_OFF       
+17 GET_VACUUM_ERRORS         
+18 GET_COMMS_PSU 
+19 Specimen Current Monitor measurement error 
+
+The following errors refer to failures in the communications with the Vacuum subsystem
+
+21 Comms timeout
+22 Comms overrun
+23 Unknown command
+24 Invalid parameter
+25 Out of range parameter
+26 command failed
+27 Bad reply
+28 Put Queue error
+29 Get Queue error
+2A Wrong parameter
+2B Space error 
+2C Reply parameter error
+          
+$#Vacuum System Errors
+
+Vacuum Command error1WGWYTQ
+
+Vacuum Board -12V failed6N3VE1
+Vacuum Board +12V failed5J0W.W8 
+Vacuum Board -5V failed1WBL2IJ 
+Vacuum Board +5V failed937G9Z
+
+Vacuum System leak 1QQL5IK
+Vac System Penning gauge failure 33RB0CP 
+Gun Valve position incorrectK1P7IP
+Chamber column valve position incorrectZDI21X
+EDX system window position incorrect1C2H.TK
+Airlock Gate valve position incorrectKHICLS
+EDX system gate valve position incorrect.1JHA6
+
+$#Vacuum System leak 
+This error is given when the turbo pump takes an excessive time to reach  its maximum speed, which is indicative of a vacuum system leak or poor sample preparation.
+$#WDX system gate valve position incorrect 
+The gate valve on the WDX system is in the incorrect position.
+(e.g. valve open and vent requested ).
+$#
+Write TIFF Directory Error
+
+This error is given when writing a TIFF file. 
+ An error occurred while writing the directory portion of the TIFF file.
+This is typically due to inadequate disk capacity.  Delete excess files.
+
+$#
+Write TIFF Image Error
+
+This error is given when writing a TIFF file. 
+ An error occurred while writing the image portion of the TIFF file.
+This is typically due to inadequate disk capacity.  Delete excess files.
+$#Write TIFF header Error
+
+This error is given when writing a TIFF file. 
+Either the file cannot be created or an error occurred when writing the TIFF header.
+This is typically due to inadequate disk capacity.  Delete excess files.
+$Acquire command error
+
+This error is given when a signal acquisition  command fails.
+
+Code numbers greater than 40 indicate the failure of an internal consistency check.  Contact LEO2JJ8T6_
+
+Code numbers  less than 40 indicate that there is a failure in the communication to the DSP subsystem.
+Report problemP8W0Q0
+
+The code number given identifies the failing command as follows:
+
+1 SET_ZONE_K1_CMD           
+2 SET_ZONE_K2_CMD          
+3 SET_ZONE_ALPHA_CMD       
+4 SET_ZONE_BETA_CMD        
+5 SET_ZONE_SUB_CMD          
+6 SET_ZONE_PORT_CMD        
+7 SET_ZONE_OFFSET_CMD      
+8 SET_ZONE_GAIN_CMD        
+9 SET_ZONE_INVERT_CMD      
+A CREATE_IDENTITY_LUT       
+B CREATE_GAMMA_LUT          
+C CREATE_INVERT_LUT         
+D CREATE_USER_LUT           
+E COMBINE_USER_LUTS         
+F ENABLE_WINDOW_PLANE       
+10 SET_DETECTOR_MIXING       
+11 SET_FAVE_NOISE_REDN       
+12 SET_LINT_NOISE_REDN       
+13 SET_FINT_NOISE_REDN       
+14 SET_WINDOW_SEL            
+15 SET_FREEZE_CMD            
+16 COPY_USER_LUT            
+17 SEE_LUT                   
+18 DEFINE_WINDOW             
+$Airlock Gate valve position incorrect 
+
+The gate valve on the airlock is in the incorrect position
+.e.g valve open and vent requested..
+$Brightness RLM failed to initialise
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$Brightness RLM failed to load
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$CONFIG FILE READ ERROR - using default 
+This error is given when a file error is detected on reading the configuration file CONFIG.LEO 
+or when a format error is detected.
+This file contains the configuration data (options etc) for the Right Hand Side of the SEM (electronics).
+When this error occurs a default minimum configuration is assumed.
+$CONFIG FILE WRITE ERROR 
+This error is given when a file error is detected on writing the configuration file CONFIG.LEO.
+
+This file contains the configuration data (options etc) for the Right Hand Side of the SEM (electronics).
+The most likely cause of error is inadequate disk space.
+$Cannot print colour TIFF
+
+This error is given when an attempt is made to print a TIFF file which contains a real colour image.
+
+The printer can only print Grey or binary files.
+
+$Chamber column valve position incorrect 
+The valve between the column and chamber is in the incorrect position.
+(e.g.. valve closed while system pumping with no column pumping).
+$
+Clipboard - bitmap data error
+
+This error indicates that the data in the bitmap is corrupt.
+$
+Clipboard - get context failed
+
+This error indicates that a display context could not be obtained. 
+Inadequate resources. Close other applications.
+
+$
+Clipboard - unknown bitmap type
+
+The clipboard contains a bitmap of a type which cannot be handled by the LEO software.
+$
+Clipboard bitmap create error
+
+This failure is given when cutting an image to clipboard.
+This is typically caused by inadequate PC memory (or disk swap file).  Close any other applications
+$
+Clipboard conversion memory error
+
+This failure is given when cutting an image to clipboard.
+This is typically caused by inadequate PC memory (or disk swap file).  Close any other applications
+or free up space on hard disk. (N.B. swap file must be contiguous space).
+
+$
+Clipboard fetch failed
+
+This failure is given when pasting an image from clipboard.
+The call to the clipboard returned a failure.
+$DEFAULT.VAC FILE USED
+Configuration and calibration information relating to the column is saved in Non Volatile RAM. 
+Due to a problem reading the NVRAM an attempt has been made to use the standby DATA.VAC file and either the data is corrupt, an incompatible version or the file could not be found. The file DEFAULT.VAC has been used which contains a default set of data. Any calibration data has therefore been lost.
+
+Report problemP8W0Q0
+
+$Default Printer: General print error
+A fault has been detected on the selected printer. Paper out or jammed?
+$Default Printer: Not configured
+
+The printer is not configured correctly. Refer to printer documentation.
+$Default Printer: Out of disk space
+There is insufficient disk space available. Delete unwanted files to create more space.
+$Default Printer: Out of memory
+There is insufficient memory available. Close one or more applications to free some memory.
+$Disk space is critical - free some space immediately
+This message is given when the available space on drive C: has fallen below 10MB. You are advised to delete/archive  any redundant files immediately.
+Failure to create more working space may result in loss of critical files and in extreme cases could lock up the system
+
+ The LOG file  may be growing too large and require archiving. 
+$Disk space is low - housekeeping required
+
+This message is given when the available space on drive C: has fallen below 20MB. You are advised to delete/archive  any redundant files. The LOG file may be growing too large and require archiving 
+$EDX system window position incorrect 
+ (e.g.EDX detector window open and vent requested).
+$EHT - Filament Blown
+This message indicates that the filament has blown and should be replaced. 
+Note that an incorrectly seated firing unit  or dirty contacts may also give this error.
+$EHT - Inhibited by Vac System
+
+The EHT supplies are inhibited by the Vacuum system state.
+This is typically a warning.
+$EHT - Set Tripped 
+This error indicates a trip of the EHT set. 
+This is typically caused by :
+ 1. Dirty firing unit 
+ 2. Incorrectly fitted filament (i.e. too close to aperture)
+ 3. Broken or cracked filament base
+ 4. Inadequate vacuum especially when high KV is used
+$EHT - Spurious Reset
+EHT set has been reset  for an unknown reason (i.e. not by system software).
+
+$EHT SPURIOUS STATUS 
+A spurious status code has been received from the EHT set.
+Report problemP8W0Q0
+$EHT Set Errors
+
+EHT comms failed to open/close MFH15K
+EHT - Filament Blown2MVVPI4
+EHT - Set Tripped BKOIXC 
+EHT - Inhibited by Vac System14MJVEJ
+EHT - Spurious Reset5.G55L
+Invalid Parameter received by EHT set4DMBS_
+Parameter range error from EHT set17PTZWG
+EHT set internal fault3N1XOO
+EHT set comms timeout28WYE4
+Unknown command received by EHT setJAZKYL
+EHT Set spurious status 10I1GBI
+$EHT comms failed to open/close 
+This error is given when there is a failure in the communications to the EHT set. A Status code is given which will enable details of the fault to be determined.
+
+Report problemP8W0Q0
+$EHT set comms timeout
+
+The EHT set has failed to respond within a reasonable period.
+
+Report problemP8W0Q0
+$EHT set internal fault
+
+The EHT set has reported an internal error.
+
+Report problemP8W0Q0
+$FAILED TO ACTIVATE ACQ. PROCESS
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$FAILED TO ACTIVATE DSP PROCESS 
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$FAILED TO ACTIVATE EHT PROCESS
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$FAILED TO ACTIVATE EO PROCESS
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$FAILED TO ACTIVATE STAGE PROCESS
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$FAILED TO ACTIVATE VAC PROCESS
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$FAILED TO LOAD ACQUIRE RLM
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$FAILED TO LOAD DSP RLM 
+
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$FAILED TO LOAD EHT RLM
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$FAILED TO LOAD EO RLM
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$FAILED TO LOAD IMEX RLM
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$FAILED TO LOAD OVERLAY MANAGER
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$FAILED TO LOAD STAGE RLM
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$FAILED TO LOAD VAC RLM
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+
+$FAILED TO WRITE DATA.VAC 
+DATA.VAC is the standby file containing the configuration and calibration for the column.
+An attempt has been made to update this file and has failed. This is typically due to lack of disk space.
+Please check free space on disk and discard or archive files as necessary.
+
+$FAILED TO WRITE NVRAM 
+Configuration and calibration information relating to the column is saved in Non Volatile RAM.
+An attempt has been made to update this information which has failed. The information will have been saved in the standby file DATA.VAC
+
+Report problemP8W0Q0
+
+$Failed to write NVRAM and data.vac
+Configuration and calibration information relating to the column is saved in Non Volatile RAM.
+An attempt has been made to update this information which has failed.
+
+DATA.VAC is the standby file containing the configuration and calibration for the column.
+An attempt has been made to update this file and has failed. This is typically due to lack of disk space.
+
+BOTH COPIES OF DATA HAVE THEREFORE BEEN LOST.
+
+Report problemP8W0Q0
+$Gun Valve position incorrect 
+The valve between the gun and the chamber is in the incorrect position.
+(e.g. valve closed while system pumping, no column pumping)
+$Errors in Variable Pressure system (LEO 435VP and 438 VP only)
+
+Error code numbers refer to the HPAPP error status.
+
+(1)	HPApp failed to start 75KVF7
+(2)	HPApp Response Error25R4NUA
+(3)	HPApp Closed Unexpectedly25KK_KU
+(4)	HPApp Hung Up ErrorSHPKP2
+(5)	VP Control Spurious ResetE4FN7B
+(6)	VP Control Comms Error_EB3C7
+(7)	VP Turbo Isolation Valve Error 15PATT2
+(8)	VP Turbo Isolation Valve Opening Timeout5PATT3
+(9)	VP Turbo Isolation Valve Closing Timeout5PATT4
+(10)	VP Turbo Isolation Valve Error 45PATT5
+(11)	VP Foreline Valve Error 180KJJX
+(12)	VP Foreline Valve Opening Timeout80KJJY
+(13)	VP Foreline Valve Closing Timeout80KJJZ
+(14)	VP Foreline Valve Error 41GM8INP
+(15)	VP Target Pressure Timeout0S4245
+(16)	VP Monitor Fault 1WZ.7CU
+(17)	VP Monitor Fault 2WZ.7CV
+(18)	VP Mode Transition Timeout1FICIBF
+(19)	VP Pirani gauge ErrorMHYR74
+(20)	VP Hardware Reverse ErrorHKK6HB
+(22)	VP Control Unknown Error1SYAR.P
+$HPApp Closed Unexpectedly
+The Variable pressure control software has closed unexpectedly. Further Variable Pressure operation will not be available. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$HPApp Hung Up Error
+The Variable pressure control software has stopped responding to LEO. Further Variable Pressure operation will not be available. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$HPApp Response Error
+The Variable pressure control software has failed to respond to a command. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$HPApp failed to start
+LEO was unable to start the Variable Pressure Control software. Variable Pressure operation will not be available. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$HRRU command error
+This error is given when a  command to the HRRU fails.
+
+Code numbers greater than 40 indicate the failure of an internal consistency check.  Contact LEO2JJ8T6_
+
+Code numbers  less than 40 indicate that there is a failure in the communication to the DSP subsystem.
+Report problemP8W0Q0
+
+The code number given identifies the failing command as follows:
+
+1 HRRU_FITTED               
+2 TAKE_LEFT_STORED_PHOTO   
+3 TAKE_RIGHT_STORED_PHOTO   
+4 TAKE_LIVE_PHOTO           
+5 GAMMA_OVERLAY_HRRU_LUT    
+6 GAMMA_HRRU_LUT            
+7 SET_FILM_SPEED            
+8 SET_LIVE_REPEAT           
+9 SET_CAMERA_TYPE           
+A SET_HRRU_FOCUS           
+B SET_HRRU_BRIGHTNESS      
+C SET_HRRU_CONTRAST        
+D SAVE_HRRU_CONFIG         
+$INVALID DEFAULT.VAC FILE 
+Configuration and calibration information relating to the column is saved in Non Volatile RAM.  The file containing the initial default data is corrupt, an incompatible version or not found.
+
+Report problemP8W0Q0
+
+
+$INVALID STATE VALUE
+This error occurs when the user interface attempts to set a system parameter in the Master DLL
+to an incorrect state. Contact LEO2JJ8T6_
+$Imex failed to initialise
+This is an internal software error which should not occur.
+If the fault should occur please  contact LEO2JJ8T6_
+
+$KImage Import/Export errors
+
+Write TIFF header ErrorET1S8P 
+Write TIFF Directory Error2VBYPO 
+Write TIFF Image ErrorWrite_TIFF_Image_Error 
+Read TIFF header Error4ARKPH0 
+Read TIFF directory Error43GCOW 
+Read TIFF image ErrorRead_TIFF_image_Error 
+TIFF file errorTIFF_file_error 
+TIFF image select errorimage_select_error 
+TIFF annotation memory lock error1WPKHZH 
+
+Clipboard conversion memory errormemory_error 
+Clipboard bitmap create errorbitmap_create_error 
+Open clipboard errorOpen_clipboard_error 
+No bitmap in clipboardXRAA30 
+Clipboard fetch failedClipboard_fetch_failed 
+Clipboard - unknown bitmap typeunknown_bitmap_type 
+Clipboard - get context failed0UKEVX 
+Cannot Print Colour TIFF18XJ6YQ 
+
+HRRU command error5_BOHH
+
+Default Printer: Out of memory2X0S_KN
+Default Printer: General print error21.HDHW
+Default Printer: Out of disk space2MG2_IK
+Default Printer: Not configured18HKBTI
+$Incorrect ident code 
+This error occurs when the user interface attempts to access a system parameter in the Master DLL
+using an incorrect identification code. Contact LEO2JJ8T6_
+$Invalid Parameter received by EHT set
+
+This error is given when the EHT set receives a command with invalid parameter(s).
+
+This may be symptomatic of a communications error.
+
+Report problemP8W0Q0
+$Invalid Stage Command
+
+This error is given when a command is issued to move the stage to an invalid position (i.e. beyond the limits). This may be due to defining an invalid stage scan pattern which would result in limit violation.
+$NV RAM data inconsistent with config file 
+Configuration and calibration information relating to the column is saved in Non Volatile RAM.
+
+The config file contains the configuration data (options etc) for the Right Hand Side of the SEM (electronics).
+
+This message indicates that an inconsistency has been found.  A default configuration is assumed.
+This message should only occur where hardware changes have taken place (e.g. new board installed).
+
+If necessary report problemP8W0Q0
+$KNVRAM / DATA.VAC Errors 
+
+INVALID DEFAULT.VAC FILE 7C0A0GY
+FAILED TO WRITE NVRAM PGN9G8
+FAILED TO WRITE DATA.VAC 7D.21P
+Failed to write NVRAM and data.vacN0XSA
+CONFIG FILE READ ERROR - using default 2_2X3X6
+CONFIG FILE WRITE ERROR1KL.SH 
+NV RAM data inconsistent with config file 4KQLZR  
+NVRAM data faulty, read from data.vac 2OU7B9K  
+DEFAULT.VAC FILE USED 153IGVQ
+
+$
+NVRAM data faulty, read from data.vac 
+Configuration and calibration information relating to the column is saved in Non Volatile RAM. 
+
+This data could not be read correctly.  The standby copy of this data held in file DATA.VAC  has been used. 
+If the format of NVRAM data has been altered (check release notes) then on first startup of the system this error will be given. 
+
+NOTE
+The NVRAM contains the user licences, hence if the NVRAM cannot be read for any reason all licences will be disabled. It will therefore be necessary to reload all user licences with the Licence install program.
+
+ If this is not the first use after an upgrade Report problemP8W0Q0
+
+
+
+$
+No bitmap in clipboard
+
+This failure is given when pasting an image from clipboard.
+The clipboard does not contain a bitmap.
+$
+Open clipboard error
+
+This failure is given when cutting /pasting an image to/from clipboard.
+
+$Parameter or state currently disabled
+This error occurs when an attempt is made to access a parameter or state which is currently disabled 
+by the operational rules.
+$Parameter range error from EHT set
+This error is given when the EHT set receives a command with parameter value(s) out of valid range.
+
+This may be symptomatic of a communications error.
+
+Report problemP8W0Q0
+$
+Read TIFF directory Error
+
+This error is given when reading a TIFF file. 
+The error occurred when reading the TIFF file internal image directory.
+The file is corrupted. 
+This is typically due to  a partially written file, truncated due to inadequate disk space.
+$
+Read TIFF header Error
+
+This error is given when reading a TIFF file. 
+The error occurred when reading the TIFF header.
+This error may be given if an attempt is made to read a TIFF file (e.g. to determine it's header information) while the file is being printed.
+
+Alternatively the file may have been corrupted. 
+This is typically due to  a partially written file, truncated due to inadequate disk space.
+$Read TIFF image Error
+
+This error is given when reading a TIFF file. 
+The error occurred when reading a TIFF  image structure.
+The file is corrupted. 
+This is typically due to  a partially written file, truncated due to inadequate disk space.
+
+$KService  problems.
+Please report problem   to  your local service centre, or if necessary to:
+
+Leo 400 Series
+Customer Care,
+LEO Electron Microscopy Ltd,
+Clifton Road,
+Cambridge, CB1 3QH
+England.
+
+Telephone (+44) 1223 - 414166
+Fax            (+44) 1223 - 211497
+
+Leo 1500 Series
+Leo Elektronenmikroskopie GmbH,
+D-73446
+Oberkochen
+Germany
+Telephone(+49) 73-64-20-61-37
+Fax            (+49) 73-64-20-48-51
+
+Please include Software version number, System serial number together with a full description of the
+symptoms, error messages and circumstances leading to the problem.
+
+
+$KReporting Software problems.
+Please report problem   to :
+
+Customer Care,
+LEO Electron Microscopy Ltd,
+Clifton Road,
+Cambridge, CB1 3QH
+England.
+
+Telephone (+44) 1223 - 414166
+Fax            (+44) 1223 - 211497
+
+Please include Software version number, System serial number together with a full description of the
+symptoms and circumstances leading to the error.
+
+
+$Stage Command Error
+
+This error is given when a stage command fails.
+
+Code numbers greater than 40 indicate the failure of an internal consistency check/queueing.  Contact LEO2JJ8T6_
+
+Code numbers  less than 40 indicate that there is a failure in the communication to the stage/vac subsystem.
+Report problemP8W0Q0
+
+The code number given identifies the failing command as follows:
+
+1 SET_UP_STAGE_REQ          
+2 MANUAL_INIT_REQ           
+3 AUTO_INIT_REQ             
+4 LOWER_USER_LIMITS_REQ     
+5 UPPER_USER_LIMITS_REQ     
+6 TIGA_TIMER_TICK_REQ       
+7 SPEED_MOVE_REQ            
+8 STAGE_POSITION_REQ        
+9 BACKLASH_REQ              
+A MOVE_MODE_REQ             
+B ABORT_REQ                 
+C STAGE_PARAMS_V_START      
+D STAGE_PARAMS_V_INC        
+E STAGE_PARAMS_T_STEP       
+F STAGE_PARAMS_BACKLASH_SPD 
+10 STAGE_PARAMS_BACKLASH_DST 
+11 STAGE_PARAMS_MAXIMUM_SPD  
+12 GET_ERROR_STATUS          
+13 CHECK_STAGE_PSU           
+
+
+$Stage Errors
+
+Stage Touching1ZNL0_0
+Invalid Stage CommandEW0YW. 
+Stage Command ErrorL4T69Y
+
+Stage X -15V failed3004_7E 
+Stage X +15V failedG8HT38
+Stage Y -15V failedGNN6K5
+Stage Y +15V failedHG.KN_ 
+Stage Z -15V failed3.WFWBO
+Stage Z +15V failed1.4.BUR
+Stage Tilt -15V failed1PBM4H.  
+Stage Tilt +15V failedASNJGO  
+Stage Rotate -15V failed1MP0E_2  
+Stage Rotate +15V failed4BBXXGO 
+
+Stage X axis low outer limit hitGBH_HR
+Stage X axis low inner limit hitG.A7HR
+Stage X axis low user limit hitGHEYU
+Stage X axis high user limit hit1K0DC4O
+Stage X axis high inner limit hit0YJACD
+Stage X axis high outer limit hit2.PJF3I
+
+Stage Y axis low outer limit hit432677
+Stage Y axis low inner limit hitQ66ZNG
+Stage Y axis low user limit hit212SMC1
+Stage Y axis high user limit hitELM.6O
+Stage Y axis high inner limit hit3_HKKPP
+Stage Y axis high outer limit hit1.2YS5K
+
+Stage Z axis low outer limit hit_WRY.W
+Stage Z axis low inner limit hit_QKS.W
+Stage Z axis low user limit hit1_NYVON
+Stage Z axis high user limit hit2_74P4
+Stage Z axis high inner limit hitXCBYO2
+Stage Z axis high outer limit hitXIJ4O2 
+
+Stage T axis low outer limit hit_9R1I8 
+Stage T axis low inner limit hit_3JVI8 
+Stage T axis low user limit hit52UMJM 
+Stage T axis high user limit hitNSB7HP 
+Stage T axis high inner limit hitWKR0GB 
+Stage T axis high outer limit hit71OD.BQ 
+
+$Stage Limits
+
+The motorised stage has six limits per axis:
+
+Low Outer
+Low Inner
+Low User
+
+Normal working range
+
+High User
+High Inner
+High Outer
+.
+The user limits are defined by the user, by default they are set at the outer limits.
+
+If an inner limit is detected the stage slows down and does not lose position.
+If an outer limit is detected the stage stops immediately and position is lost.
+Note that an outer limit should not be detected except in hardware error conditions (e.g. dirty track/contact on stage limit PCB failing to detect inner limit).
+
+
+$Stage R +15V failed
+Report problemP8W0Q0
+$Stage R -15V failed
+Report problemP8W0Q0
+$Stage T +15V failed
+Report problemP8W0Q0
+$Stage T -15V failed
+Report problemP8W0Q0
+$Stage T axis high inner limit hit 
+The T axis has detected a high inner limitStage_Limits 
+$Stage T axis high outer limit hit 
+The T axis has detected a high outer limitStage_Limits 
+$Stage T axis high user limit hit 
+The T axis has detected a high user limitStage_Limits 
+$Stage T axis low inner limit hit 
+The T axis has detected a low inner limitStage_Limits 
+$Stage T axis low outer limit hit 
+The T axis has detected a low outer limitStage_Limits 
+$Stage T axis low user limit hit 
+The T axis has detected a low user limitStage_Limits 
+$Stage Touching 
+
+The stage, specimen or specimen mounting is touching the chamber or final lens.
+$Stage X +15V failed
+Report problemP8W0Q0
+$Stage X -15V failed
+Report problemP8W0Q0
+$Stage X axis high inner limit hit 
+The X axis has detected a high inner limitStage_Limits 
+$Stage X axis high outer limit hit 
+The X axis has detected a high outer limitStage_Limits 
+$Stage X axis high user limit hit 
+The X axis has detected a high user limitStage_Limits 
+$Stage X axis low inner limit hit 
+The X axis has detected a low inner limitStage_Limits 
+$Stage X axis low outer limit hit 
+The X axis has detected a low outer limitStage_Limits 
+$Stage X axis low user limit hit 
+The X axis has detected a low user limitStage_Limits 
+$Stage Y +15V failed
+Report problemP8W0Q0
+$Stage Y -15V failed
+Report problemP8W0Q0
+$Stage Y axis high inner limit hit 
+The Y axis has detected a high inner limitStage_Limits 
+$Stage Y axis high outer limit hit 
+The Y axis has detected a high outer limitStage_Limits 
+$Stage Y axis high user limit hit 
+The Y axis has detected a high user limitStage_Limits 
+$Stage Y axis low inner limit hit 
+The Y axis has detected a low inner limitStage_Limits 
+$Stage Y axis low outer limit hit 
+The Y axis has detected a low outer limitStage_Limits 
+$Stage Y axis low user limit hit 
+The Y axis has detected a low user limitStage_Limits 
+$Stage Z +15V failed
+Report problemP8W0Q0
+$Stage Z -15V failed
+Report problemP8W0Q0
+$Stage Z axis high inner limit hit 
+The Z axis has detected a high inner limitStage_Limits 
+$Stage Z axis high outer limit hit 
+The Z axis has detected a high outer limitStage_Limits 
+$Stage Z axis high user limit hit 
+The Z axis has detected a high user limitStage_Limits 
+$Stage Z axis low inner limit hit 
+The Z axis has detected a low inner limitStage_Limits 
+$Stage Z axis low outer limit hit 
+The Z axis has detected a low outer limitStage_Limits 
+$Stage Z axis low user limit hit 
+The Z axis has detected a low user limitStage_Limits 
+$KSystem Errors
+
+Acquire command error1KZ.VCK
+Imex failed to initialise06X3.6
+
+
+ Incorrect ident code0OPROX 
+ INVALID STATE VALUE1ZDSJ6H 
+ Parameter or state currently disabled3WNE.UX
+
+
+FAILED TO LOAD OVERLAY MANAGERSIM83X
+FAILED TO LOAD VAC RLMGMHA1Z
+FAILED TO LOAD STAGE RLM2EHXGV8
+FAILED TO LOAD ACQUIRE RLM JQU7B3
+FAILED TO LOAD EO RLM12BK.2J 
+FAILED TO LOAD EHT RLM20SX_WR
+FAILED TO ACTIVATE VAC PROCESS 36WJZXT 
+FAILED TO ACTIVATE STAGE PROCESS1NLGGFU
+FAILED TO ACTIVATE ACQ. PROCESSB47CUM
+FAILED TO ACTIVATE EO PROCESSMVWMGJ
+FAILED TO ACTIVATE EHT PROCESS450M5L  
+FAILED TO LOAD DSP RLM 27HSMTD 
+FAILED TO ACTIVATE DSP PROCESSG_VT5T
+FAILED TO LOAD IMEX RLM1739T1
+Brightness RLM failed to loadJLE45S
+Brightness RLM failed to initialiseD353I3
+
+$
+TIFF annotation memory lock error
+
+This error is given when attempting to lock in memory the image annotation associated with a worksheet.
+This is typically caused by inadequate PC memory (or disk swap file).  Close any other applications
+or free up space on hard disk. (N.B. swap file must be contiguous space).
+$
+TIFF file error
+
+This error is given when reading a TIFF file. 
+Either the file could not be found or error in reading first block.
+
+$
+TIFF image select error
+
+This error is given when an inconsistent  image selection is defined (e.g. no image selected).
+$Unknown command received by EHT set
+
+This error is given when the EHT set receives a command it does not understand. This may be symptomatic of a communications error.
+
+
+Report problemP8W0Q0
+$VP Control Comms Error
+A communications failure has occurred between LEO and the Variable Pressure control hardware. Further Variable Pressure operation will be unavailable. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$VP Control Spurious Reset
+LEO has detected an unexpected reset of the Variable pressure control hardware. The SEM has been set to High Vacuum mode. It the problem recurs please contact LEO2JJ8T6_.
+$VP Control Unknown Error
+An unknown error occurred in the Variable Pressure control system. Variable Pressure mode will be unavailable. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$VP Foreline Valve Closing Timeout
+An error has been detected in the operation of the VP Foreline Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+
+$VP Foreline Valve Error 1
+An error has been detected in the operation of the VP Foreline Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+
+$VP Foreline Valve Error 4
+An error has been detected in the operation of the VP Foreline Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+$VP Foreline Valve Opening Timeout
+An error has been detected in the operation of the VP Foreline Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+
+$VP Hardware Reverse Error
+A serious error has ocurred in the Variable Pressure control hardware. Please shutdown the SEM and contact LEO2JJ8T6_.
+$VP Mode Transition Timeout
+A timeout occurred during transition between vacuum modes. This may be due to excessive outgassing of the sample, a vacuum leak, or an error in the Variable pressure control system. If the problem persists with non-outgassing samples please contact LEO2JJ8T6_.
+$VP Monitor Fault 1
+An error has occurred in the Variable pressure monitoring. Further Variable Pressure operation will be unavailable. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$VP Monitor Fault 2
+An error has occurred in the Variable pressure monitoring. Further Variable Pressure operation will be unavailable. If the problem persists after rebooting the machine, please contact LEO2JJ8T6_.
+$VP Pirani gauge Error
+An error has ocurred in reading the chamber pressure from the Pirani gauge. Please contact LEO2JJ8T6_.
+
+$VP Target Pressure Timeout
+The Variable pressure control system is unable to achieve the requested target pressure. This may be due to excessive outgassing of the sample, a vacuum leak, or an error in the Variable pressure control system. If the problem persists with non-outgassing samples please contact LEO2JJ8T6_.
+$VP Turbo Isolation Valve Closing Timeout
+An error has been detected in the operation of the VP Turbo Isolation Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+$VP Turbo Isolation Valve Error 1
+An error has been detected in the operation of the VP Turbo Isolation Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+$VP Turbo Isolation Valve Error 4
+An error has been detected in the operation of the VP Turbo Isolation Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+$VP Turbo Isolation Valve Opening Timeout
+An error has been detected in the operation of the VP Turbo Isolation Valve. Please shut down the microscope and contact LEO2JJ8T6_.
+$Vac system Penning gauge failure.
+
+Report problemP8W0Q0
+
+$Vacuum Board +12V failed
+Report problemP8W0Q0
+$Vacuum Board +5V failed
+Report problemP8W0Q0
+$Vacuum Board -12V failed
+
+Report problemP8W0Q0
+$Vacuum Board -5V failed
+Report problemP8W0Q0
+$Vacuum Command error
+
+This error is given when a vacuum command fails.
+
+Code numbers greater than 40 indicate the failure of an internal consistency check.  Contact LEO2JJ8T6_
+
+Code numbers  less than 40 indicate that there is a failure in the communication to the stage/vac subsystem.
+Report problemP8W0Q0
+
+The code number given identifies the failing command as follows:
+
+ 1  CONFIGURE_FRONT_PANEL_REQ 
+ 2 SYSTEM_PUMPING_REQ                       
+ 3 CONFIG_VIEWING_WINDOW_REQ     
+ 4 CONFIG_COLUMN_PUMPING_REQ     
+ 5 COLUMN_PUMPING_REQ                     
+ 6 COLUMN_ISOLN_REPLY_REQ              
+ 7 EDX_CONFIGURE_REQ                         
+ 8 WDX_CONFIGURE_REQ                        
+ 9 FILAMENT_THRESH_REQ                     
+A EDX_THRESH_REQ                               
+B SET_4QBSD_QUADRANT_REQ            
+C SET_4QBSD_VISIBILITY_REQ            
+D SET_4QBSD_GAIN_REQ                       
+E  SET_SCM_RANGE_REQ
+F  SCM_READINGS_REQUIRED_REQ  
+10  VACUUM_TIMER_ROUTINE_REQ
+11 WRITE_VACUUM_DATA_REQ     
+12 READ_VACUUM_DATA_REQ      
+13 OPER_WDX_GATE_VALVE_REQ   
+14 AIRLOCK_CONFIGURE_REQ     
+15 SET_TILT0                 
+16 SET_TOUCH_ALARM_OFF       
+17 GET_VACUUM_ERRORS         
+18 GET_COMMS_PSU 
+19 Specimen Current Monitor measurement error 
+
+The following errors refer to failures in the communications with the Vacuum subsystem
+
+21 Comms timeout
+22 Comms overrun
+23 Unknown command
+24 Invalid parameter
+25 Out of range parameter
+26 command failed
+27 Bad reply
+28 Put Queue error
+29 Get Queue error
+2A Wrong parameter
+2B Space error 
+2C Reply parameter error
+          
+$Vacuum System Errors
+
+Vacuum Command error1WGWYTQ
+
+Vacuum Board -12V failed6N3VE1
+Vacuum Board +12V failed5J0W.W8 
+Vacuum Board -5V failed1WBL2IJ 
+Vacuum Board +5V failed937G9Z
+
+Vacuum System leak 1QQL5IK
+Vac System Penning gauge failure 33RB0CP 
+Gun Valve position incorrectK1P7IP
+Chamber column valve position incorrectZDI21X
+EDX system window position incorrect1C2H.TK
+Airlock Gate valve position incorrectKHICLS
+EDX system gate valve position incorrect.1JHA6
+
+$Vacuum System leak 
+This error is given when the turbo pump takes an excessive time to reach  its maximum speed, which is indicative of a vacuum system leak or poor sample preparation.
+$WDX system gate valve position incorrect 
+The gate valve on the WDX system is in the incorrect position.
+(e.g. valve open and vent requested ).
+$
+Write TIFF Directory Error
+
+This error is given when writing a TIFF file. 
+ An error occurred while writing the directory portion of the TIFF file.
+This is typically due to inadequate disk capacity.  Delete excess files.
+
+$
+Write TIFF Image Error
+
+This error is given when writing a TIFF file. 
+ An error occurred while writing the image portion of the TIFF file.
+This is typically due to inadequate disk capacity.  Delete excess files.
+$Write TIFF header Error
+
+This error is given when writing a TIFF file. 
+Either the file cannot be created or an error occurred when writing the TIFF header.
+This is typically due to inadequate disk capacity.  Delete excess files.

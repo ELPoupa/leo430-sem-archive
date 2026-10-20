@@ -1,0 +1,13 @@
+﻿=== MENU 111 (lang 0809)
+  [_POPUP_]
+  32775  &Open Port
+  32776  &Settings...
+  ----
+  2000  Echo On
+  141  Local Mode
+  ----
+  143  Clear Terminal
+=== DIALOG 131 "RemCon32 - Transferring File..." (3 controls)
+  2  BUTTON  "Cancel"
+  1081  STATIC  ""
+  1082  STATIC  "Static"

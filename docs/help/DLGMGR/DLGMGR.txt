@@ -1,0 +1,682 @@
+﻿$#>K4QBSD Bias
+
+Each segment can be set to one ofK three bias states.
+
+	Normal	The signal is added to the total signal.
+
+	Off		The signal is not used.
+
+	Inverted	The signal is inverted before being added to the total signal.
+
+{bmc bm0.bmp} Open the Drop-down ListXYVXW3@Sem.HLP and clickCLICK@Sem.HLP on the bias setKting of your choice.
+$#>4 Quadrant Back Scattered Detector Dialog
+
+This panel is used to control the 4 Quadrant Back Scatter Detector (4QBSD).
+
+Each detector segment can be set up individually or by using one of the Predefined Settings4QBSD_Predefined_Settings.  In the Quadrants group, each quadrant can be configured. See BSD Bias4QBSD_Bias.  The Mode group allows predefined settings for the 4 segments to be set up.  Topo should be used when configuring the detector for Topographical imaging Compo should be used when configuring the detector for Compositional (or Atomic Contrast) imaging.  The BSD Gain, Auto Range and Fast fields control aspects of the BSD signal amplifier. 		{bmc bm1.bmp}	
+
+If the BSD Auto Range is checked {bmc bm2.bmp} the Gain is automatically set by the signal contrast level.
+For more precise setting of BSD contrast, deselect BSD Auto Range and select a Gain setting suitable for the sample. Contrast adjustment range now covers the selected gain range.
+
+The BSD Fast field is manually set and should be set {bmc bm3.bmp} when searching for an area of interest using fast scan rates, and disabled when imaging at slow scan rates and also for photo recordings.
+
+Defining Topo settings
+To change the configuration set the individual segment settings as required and press BSD: Set TOPO. 
+These settings will be remembered and used whenever the TOPO command is given.
+
+See also Mounting of  Back Scattered DetectorMounting_of__Back_Scattered_Detector and Operation Principle of Backscattered DetectorOperation_Principle_of_Backscattered_Detector and Parameters4QBSD_Parameters
+
+
+$#>K4QBSD Parameters
+
+The data and comments below shall provide for optimal adjustment of all parameters.
+
+Working Distance  The detector has a maximum sensitivity for the back scattered electrons at a working distance of 6 mm if the 10 mm diode pack is fitted or a range of 12 to 20mm if the 25mm diode pack is fitted. At shorter working distance many electrons travel through the central bore  in the detector and at long working distances more and more electrons pass by the sensitive area of the detector diode.  	 	
+Tilt Angle  When the surface is oriented normal to the primary electron beam the signal level is the highest and it decreases as the tilt angle increases.  Therefore no strong signal can be expected from a highly tilted specimen surface because the electrons are scattered in forward direction and do not reach the detector anymore. 	{bmc bm4.wmf} 	
+High Voltage  The higher the energy of the backscattered electrons the better the collection efficiency.  There is a low KV limit of about 3 to 5 kV below which the detector will not detect backscattered electrons 	 	
+In order to obtain the best signal the highest voltage should be selected which the specimen will withstand consistent with good imaging.  Therefore the optimal setting must be considered for each application.
+$#>4QBSD Predefined Settings
+
+There are two predefined settings for the 4QBSD, Topo and Compo.
+
+The 4 segments are configured in the following way :
+
+		{bmc bm5.wmf}
+
+Composition mode is designed to produce images showing the atomic contrast of the specimen.
+
+Topography mode is designed to produce images showing the surface detail of the specimen.
+
+Note that the settings for topography shown here are an example. Other settings may be defined.
+
+{bmc bm0.bmp} Open the Drop-down ListXYVXW3@Sem.HLP and clickCLICK@Sem.HLP on the bias setting4QBSD_Bias of your choice.
+$#>KAbout Box
+
+The Dialog Manager handles all user interface dialogs. 
+
+The copyright information for this piece of software and it's revision status is given in the About Box.
+$#>Absorbed Specimen Current Measurement
+
+Principle of Absorbed Specimen Current Measurement:
+
+When the primary electron beam (PE) hits the specimen, a number of different signals are generated from the specimen:  SE: Secondary electrons of low energy BSE: Back scattered electrons of higher energy TE: Transmitted electrons from thin specimens  Some electrons are absorbed in the specimen and must be conducted to ground potential. If the specimen is insulated from ground these electrons can be measured as specimen current (SC) by an amplifier connected between the specimen and the chamber ground.  An equilibrium of charge is built on the specimen giving the following relation of electron currents:    IPE = ISE + IBSE + ITE + ISC  and thus    ISC = IPE - ISE - IBSE - ITE 	  {bmc bm6.wmf}	
+
+$#>KAdd
+
+This function combines the current Stage Position and Beam Shift to produce a composite position.
+
+This position together with the magnification and Working Distance1YCGPIR@Sem.HLP (WD) is stored in the Points List with a User Defined LabelUser_Defined_Label
+If the label already exists in the list a warning is given.
+
+See also Stage Points List ADDA.WPGL@Stage.HLP.
+$#>Backlash On
+
+This menu lets you switch Stage BacklashBacklash_On@TabMgr.HLP ON. or OFF
+$#>KBeam Current Measurement
+
+The primary beam current can be measured with a Faraday cage.
+
+A hole is drilled into the base material of the receptor (1) which has the inner walls painted with carbon to obtain high absorption of electrons. The hole is covered with a diaphragm (2) which is fastened with a spring ring (3).  The primary electron beam (4) is centered into the bore of the diaphragm (2) allowing the electrons to enter the hole (1). There the electrons are being absorbed. Electrons which are reflected (5) cannot leave the Faraday cage and get absorbed on its walls as well.   Thus all electrons are conducted through the Specimen Current Measuring System (6) and are measured there. 	 {bmc bm7.wmf}	
+
+For Beam Current Measurement use the Faraday Cup accessory.
+$#>Beam Only
+
+This function performs Beam OnlyBeam_Only@TabMgr.HLP
+$#>KBeam Shift Dialog
+
+This panel allows to shift the beam which results in a fine shift of the raster on the specimen.
+
+For additional information see Beam ShiftQD.RV_@Sem.HLP.
+$#>Calibrate Output Device Magnification
+   
+{bmc bm8.bmp} Select the Calibration Mode from the upper Drop-down ListXYVXW3@Sem.HLP as Output Device. Two cursor lines with handlesK6O1DR@Sem.HLP appear.  {bmc bm8.bmp} Select the output device to be Display/File or HRRU. (The default printer does not require calibration - the printer driver provides the calibration information).   {bmc bm8.bmp} If the output device selected is the HRRU a Print button will appear. ClickCLICK@Sem.HLP on it to take photograph.  {bmc bm8.bmp} Measure the distance between the cursor lines on the photo or the display.  {bmc bm8.bmp} Click on the parameter Output Dev cal Actual and enter the measured distance in mm.  {bmc bm8.bmp} Click OK or Cancel to  close the input dialog.  {bmc bm8.bmp} Click OK or Cancel to  accept or neglect the device calibration  {bmc bm8.bmp} Close the panel with {bmc bm9.bmp}.	{bmc bm10.bmp}  {bmc bm11.bmp}	
+	
+$#KCalibrate Stage Centre
+It is a pre-requisite for all compucentric functions that the centre of the stage rotation is accurately known.
+
+This will normally only need to be performed once each time the stage is serviced. However to achieve the ultimate accuracy it may be necessary to recalibrate the rotation centre each time the stage is initialised.
+
+This dialog provides the Calibrate Stage Centre Wizard.
+
+Instructions are displayed describing the operator actions required.
+Press Next when the action is completed.
+Press Back button to return to the previous step.
+Press Cancel to abort the sequence - stage will return to original position.
+Press OK to accept the currently computed centre position at any point in the iteration.
+
+The sequence is described below. 
+Entries labeled STEP are operator actions, those labeled NEXT are the wizard actions taken when Next is pressed
+
+Step 1 Insert a suitable sample (e.g. calibration grid) into a single stub holder. The sample must be mounted centrally on the stub.
+		Optionally switch on backlash correction.
+		It is possible at this point to manually enter the Co-ordinates of the Rotation Centre and click OK
+Next	Save stage position.
+Move the stage to previously saved calibrated position or to nominal centre of stage travel. 
+Magnification set to 30 X. 
+Crosshairs On
+
+Step 2 Using Centre Point (Ctrl Tab) or the joystick position a distinguishable mark at centre screen
+If required the Load Defaults button may be used to position the stage at the default centre of rotation for the current stage type.
+Next	The stage is moved back to it's position at the start of step 2
+
+Step3 Instructs the user to watch the mark movement
+Next	Rotates the stage by 180 degrees
+
+Step 4 Using Centre Point (Ctrl Tab) or the joystick position a distinguishable mark at centre screen
+Next	The new centre position is computed.
+
+Step 5 At this point you must decide if the calibration is sufficiently accurate (press OK) or if cycle is to be repeated at a higher magnification (press Next)
+
+Next	Stage is moved to newly computed centre position
+Magnification is increased
+Go To Step 2
+OK 	Save new calibrated centre position.
+Crosshairs off
+Move stage to original position
+
+See also
+Stage Control TabKH.ZCT@tabmgr.hlp
+Compucentric Stage Control10F6FNP@stage.hlp
+Compucentric setup4YI0_83
+Horizontal Stage Alignment4YI0_84
+$#>Calibrate Stigmation Dialog
+
+This dialog is only available when the Access Level is set to Service.
+It should not be used by the user but only by service.
+$#>KCalibrate User Magnification
+   
+{bmc bm8.bmp} Select the Calibration Mode from the upper Drop-down ListXYVXW3@Sem.HLP as User Magnification. Two cursor lines with handlesK6O1DR@Sem.HLP appear.  {bmc bm8.bmp} Set the cursors by draggingDRAG@Sem.HLP them with the mouse to a feature in the image whose dimensions are exactly known.  {bmc bm8.bmp} ClickCLICK@Sem.HLP on the parameter field Mag Cal Actual Width and enter the actual width of the feature in Micrometers. · {bmc bm8.bmp} Click OK or Cancel to  close the input dialog.  {bmc bm8.bmp} Click OK or Cancel to  accept or neglect the device calibration.  {bmc bm8.bmp} Close the panel with {bmc bm9.bmp}.  Using The User Magnification CalibrationUsing_The_User_Magnification_Calibration     	{bmc bm12.bmp}  {bmc bm13.bmp}	
+	
+$#>Clear List
+
+The function deletes the contents of the Stage Points List.
+$#KCompucentric Setup (Sample Height)
+It is a pre-requisite for compucentric tilt that the sample height (surface of sample relative to point of tilt rotation) is accurately known.
+
+This will  need to be performed when the sample is changed.
+
+This dialog provides the Calibrate Sample Height Wizard (Centre of Stage Rotation Calibration must have already been performed).
+
+The first part of the calibration (steps 1 - 7) compute a sample height based on a 2 degree tilt. This is used in steps 8 onward to perform a more accurate calibration of the height for increasing tilt angles.
+You may terminate the calibration at the maximum tilt angle you will be using.
+
+Instructions are displayed describing the operator actions required.
+Press Next when the action is completed.
+Press Back button to return to the previous step.
+Press Cancel to abort the sequence - stage will return to original position.
+Press OK to accept the currently computed Height.
+
+The sequence is described below. 
+Entries labeled STEP are operator actions, those labeled NEXT are the wizard actions taken when Next is pressed
+
+NOTE 1: How to centre the feature in steps 2 and 3.
+Centre point is restricted to move the stage in X direction only.
+If joystick is used you must move in X (horizonal) direction only.
+To achieve Y positioning use the stage rotation.
+
+NOTE 2: How to centre the feature in steps 5 and 6
+Centre point is restricted to move the stage in the Y direction only.
+If joystick is used you must move in the Y (vertical) direction only.
+Ignore X positioning at this time.
+
+Note 3: How to centre the feature in steps 8 onwards
+Centre point is restricted to move the stage in the Y direction only.
+If joystick is used you must move in the Y (vertical) direction only.
+X positioning may be adjusted by using the Tilt error scroll bar
+
+
+Step 1 If required the sample height may be entered manually and OK clicked
+Next 	The Stage is moved to the centre of rotation (Y axis only)  and the tilt set to zero degrees
+Magnification is set to 30X
+
+Step 2 Select a point on the X axis (horizontal centre line). 
+Centre the selected point See Note 1 above
+Next 	Magnification is increased to 500X
+
+Step 3 Position the selected point more accurately.See Note 1 above
+Next	Notify the user that stage will be tilted
+
+Step 4 No action
+Next	Tilt the Stage 2 degrees
+Set Magnification to 30X
+
+Step 5 Centre the point . N.B. adjust Y direction only. See note 2 above
+Next	Set Magnification to 500X
+
+Step 6 Centre the point more accurately. N.B. adjust Y direction only. See note 2 above
+Next	Compute the sample height
+
+Step 7 Press OK to terminate calibration here
+Next	Perform Compucentric tilt of 8 degrees, Mag = 500X
+
+Step 8 Centre the feature. See Note 3 above
+Next	Compute the sample height
+
+Step 9 Press OK to terminate calibration here
+Next	Perform Compucentric tilt of 15 degrees, Mag = 500X
+
+Step 10 Centre the feature. See Note 3 above.
+Next	Compute the sample height
+
+Step 11 Press OK to terminate calibration here
+Next	Perform Compucentric tilt of 30 degrees, Mag = 500X
+
+Step 12 Centre the feature. See Note 3 above.
+Next	Compute the sample height
+
+Step 13 Press OK to terminate calibration here
+Next	Perform Compucentric tilt of 45 degrees, Mag = 500X
+
+Step 14 Centre the feature. See Note 3 above.
+Next	Compute the sample height
+
+Step 15 Press OK to finish
+
+
+See also
+Stage Control TabKH.ZCT@tabmgr.hlp
+Compucentric Stage Control10F6FNP@stage.hlp
+Calibrate stage centre of rotation4YI0_82
+Horizontal Stage Alignment4YI0_84
+$#>KDelete
+
+This function deletes the currently selected entry in the Stage Points List.
+
+For additional information see also Stage Points List Delete2YZN0PD@Stage.HLP
+$#>KDo Backlash
+
+ Do BacklashDo_Backlash@TabMgr.HLP causes the stage to execute a backlash correction operation
+$#Edit Points Dialog
+
+This dialog displays the data saved for a Label. The data may be edited if required  Note that Data in a Registration list has User defined Units, and that in this case Tilt and Rotate may not be edited.	{bmc bm14.bmp}	
+
+$#>KExternal Scan Control Dialog
+
+This dialog is used to switch scan control from internal LEO 32 Software controlled scan operation to external scan control.
+
+{bmc bm15.bmp}	Call Tools from the Menu Bar and then {bmc bm16.bmp} select Goto Panel and Ext Scan Control panel:
+
+{bmc bm8.bmp} ClickCLICK@Sem.HLP on Ext On to hand over the scan control to the external device. The status window shows Ext. Scan Control = On.  {bmc bm8.bmp} Click on Ext Off to take scan control back to the SEM software. The status window shows Ext. Scan Control = Off.		{bmc bm17.bmp}	
+
+{bmc bm8.bmp}	Close the window by clicking on {bmc bm18.bmp}.
+
+The Ext On and Ext Off buttons call macrosLXYOJZ@Stage.HLP ‘Ext On’ and ‘Ext Off’ respectively. These macros may be edited to add other actions if required.
+$#>Go To First
+
+This function causes the stage to move to the position defined by the first (chronological) entry in the Stage Points List.
+ Global labelsY4A8CN@Stage.HLP are ignored for this function.
+The point label in the list box is selected.
+The beam shift is reset to 0,0.
+The state Points List is set to At Start.
+
+If selected the Magnification and /or Working Distance are set to the values associated with the entry.
+$#>KGo To Next
+
+This function causes the stage to move to the position defined by the next chronological entry in the Stage Points List. 
+ Global labelsY4A8CN@Stage.HLP are ignored for this function.
+The beam shift is reset to 0,0.
+The point label in the list box is selected.
+The state Points List is set to In List or,if appropriate, At End.
+
+If selected the Magnification and /or Working Distance are set to the values associated with the entry.
+$#>Go To Previous
+
+This function causes the stage to move to the position defined by the previous chronological entry in the Stage Points List.
+ Global labelsY4A8CN@Stage.HLP are ignored for this function.
+The beam shift is reset to 0,0.
+The point label in the list box is selected.
+The state Points List is set to In List or,if appropriate, At Start.
+
+If selected the Magnification and /or Working Distance are set to the values associated with the entry.
+$#>KGo To Selected
+
+This function causes the stage to move to the position defined by the highlighted entry in the Stage Points List.
+The beam shift is reset to 0,0.
+The state Points List is set to In List or,if appropriate, At Start.
+
+If selected the Magnification and /or Working Distance are set to the values associated with the entry.
+$#Hold Airlock Vacuum
+This command is only available on some makes of airlock.
+It's purpose is to hold the airlock vacuum with the pumping switched off.
+$#>KInput LUT Dialog
+
+The Input Look Up Table (LUT) controls the transformation of the input signal before it reaches the store. Four different transformations can be applied:
+
+Transparent: The input LUT is set to linear so that the signal passes through the LUT unchanged. Gamma: Gamma correction changes the LUT relationship between the input signal and the output signal. It can be used to expand the contrast in an image if much of the image detail is contained in a small number of grey levels. The input LUT is set according to the gamma parameter. Select the parameter with the Scroll Bar2HOSDE@Sem.HLP below.  Inverse: The input LUT is set to inverted linear so that the signal passes through the LUT with inverted contrast. User: Uses the user defined Input LUT.  {bmc bm8.bmp} Select the mode by clickingCLICK@Sem.HLP on one of the Radio Buttons2R6X4F@Sem.HLP	 	 {bmc bm19.bmp}	
+
+For addition information see Look Up Table EditorQGFYFC@LutMgr.HLP functions.
+$#>Label Position
+
+This function combines the current Stage Position and Beam Shift to produce a composite positionLabel_Position@TabMgr.HLP.
+$#>KLoad
+
+{bmc bm16.bmp}	ClickCLICK@Sem.HLP on Load to enter the standard loading dialog to load a list from the User Directory. 
+
+This function loads the Coordinate List from a previously saved file. The current list of position data is deleted.
+
+From the Select Coordinate File dialog select the file name from the User Directory. The extension is *.XYZ.
+$#>Magnification Calibration Dialog
+
+This dialog is used to calibrate the magnification readout on devices and also to calibrate internal magnification..
+
+{bmc bm15.bmp}	Call Tools from the Menu Bar and then {bmc bm16.bmp} select Goto Panel and Magnification Calibration panel:
+
+Each output device (HRRU, video printer, etc) is calibrated and the magnification relates to the selected output device. So the magnification on a video printer is larger than on a HRRU (because the print is larger). This also applies to the monitor size for observing images by the user.  {bmc bm8.bmp} Select the Calibration Mode from the upper Drop-down ListXYVXW3@Sem.HLP from    {bmc bm20.bmp} Calibrate Output Device MagnificationCalibrate_Output_Device_Magnification  or    {bmc bm20.bmp} Calibrate User MagnificationCalibrate_User_Magnification.  	{bmc bm21.bmp} 	
+$#>KStage Points List Menu
+
+The list may be saved to file or the contents of the listStage_Points_List_Dialog replaced from a file using the load function.
+
+{bmc bm16.bmp} ClickCLICK@Sem.HLP on File to open the menu.  {bmc bm8.bmp} Select LoadLoad to enter the standard loading dialog to load a list from the User Directory.  {bmc bm8.bmp} Select SaveSave to save the list back to it's original file {bmc bm8.bmp} Select Save AsSave_As to save the active list to the User Directory. {bmc bm8.bmp} Click on Clear ListClear_List to empty the actual Stage Points List. Text File FormatPoints_list_Text_File_Format		 {bmc bm22.bmp}	
+
+The current base magnification is saved whenever an entry is made into the position list.
+
+The current working distance is saved whenever an entry is made into the position list. 
+When the stage is moved from the stage points list you can select whether Working Distance and Magnification are to be changed accordingly..
+
+{bmc bm16.bmp} Click on On Goto to open the menu. {bmc bm8.bmp} Select Set MagnificationOn_Goto_Set_Magnification to set the magnification to the stored value when the stage is moved. {bmc bm8.bmp} Select  Set Working DistanceOn_Goto_Set_Working_Distance to set the working distance  to the stored value when the stage is moved. {bmc bm8.bmp} Select Move XY OnlyOn_Goto_Move_XY_Only if other axes to be unchanged		  {bmc bm23.bmp}	
+
+$#Mounting of  Back Scattered Detector
+   
+The detector diode (1) is mounted underneath the final lens (2). The primary electron beam (PE) travels through the final lens and hits the specimen (3) where it releases back scattered electrons. These reach the detector (1) and generate an electrical signal there.   The signal is taken out from the specimen chamber to the preamplifier (5) through the adjustment rod (4). The adjustment rod is used to slide the detector in and out.  The adjustment of the 4 detector segments is done in the 4QBSD Control Panel4QBSD_Dialog and brightness and contrast are adjusted from the Detectors SEM Control Panel1WE3854@TabMgr.HLP.	  {bmc bm24.wmf}	
+
+$#KOn Goto Move XY Only
+If this menu item is selected {bmc bm25.bmp} in the Stage Points List dialog
+ only the XY co-ordinates are used when moving to a labelled position.
+
+This does not apply to Global LabelsY4A8CN@Stage.HLP
+$#>On Goto Set Magnification
+
+If Set Magnification is selected {bmc bm26.bmp} then whenever the stage is moved to a saved position the magnification is set to the stored value.
+$#>KOn Goto Set Working Distance
+
+ If Set Working Distance is selected {bmc bm26.bmp} then whenever the stage is moved to a saved position the working distance is set to the stored value.
+$#>Operation Principle of Backscattered Detector
+   
+While secondary electrons are most often used to display topography contrast the backscattered electrons are used to display the materials contrast because the backscatter coefficient is dependent on the mean atomic number of the material under investigation.   Depth Information Those electrons which form the back scattered image stem from deeper regions of the specimen. The sketches on the right show the principle: The primary electron beam (PE) penetrates under the surface of the specimen because of its high energy. There the electrons interact with the material and are scattered back to the surface (BSE). The mid grey area in the sketch on the left shows approximately the region in which the primary beam is scattered. The real size of the scattering area varies with material and high voltage and serves here as a model only.   On the left a cut an polished specimen is sketched where a dense phase (mid gray) is embedded in a light matrix (white). On the left side the edge of the phase runs perpendicular to the specimen surface, on the right side the edge is inclined. Although the phase is under the specimen surface where the primary electron beam (PE) hits the surface back scattered electrons (BSE) travel to the surface and add to the image. This defocuses the edge more the further the beam travels to the right. On the real image below this effect can be seen at the right edge of the particle very clearly.  Unsharp edges and fuzzy particles are due to the depth effect. Also the problems generated for stereometric evaluation can be seen since the dimensions of the phase can not be identified correctly.   Image: Mineral particle embedded in resin, cut and polished and coated with carbon.	 {bmc bm27.wmf}  {bmc bm28.wmf}  {bmc bm29.bmp}	
+
+$#Registration Algorithm
+The algorithm used is two point registration which requires the locations of 2 marks at the extremities of the specimen co-ordinate system to be defined in terms of the stage absolute co-ordinate system.
+This algorithm assumes that the user co-ordinate system has the same units in both X and Y directions.
+
+If the user co-ordinate system has different units in X and Y (e.g. rows and columns of structures) then 3 point alignment3_point_alignment may be selected.
+
+For a given registration the Rotation and Tilt axes are constant and the relationship between the XY  co-ordinate systems computed from the positions of the two points in each system
+
+$#Registration sequence
+
+1. Choose two points (registration marks) on the sample having known positions in the sample co-ordinate system. These rwo points should be (as near as possible) at the origin and the extremity of the co-ordinate system
+2. At low magnification use the joystick to navigate over the specimen to ensure both registration points may be located. Adjust rotate and tilt as necessary.
+3.For best accuracy switch on Stage Backlash Correction
+4. Display the Stage Registration DialogStage_Registration_Dialog
+5. Select the Stage List required (e.g. Reg 1)
+6. Enter the registration name and units.
+7. Position the first registration mark at the centre of the screen (Use centre point if required) increasing the magnification and centering again until a magnification is reached suitable for the conditions of inspection required. Press Record Stage Position : First Point. You may be asked to confirm that the Rotate and Tilt values should be updated. Reply Yes
+8. Enter the sample co-ordinates for this point in First Registration Point : Mapped Position
+9. At low magnification use the joystick to locate the second registration mark.
+10. Position the second registration mark at the centre of the screen (Use centre point if required) increasing the magnification and centering again until a magnification is reached suitable for the conditions of inspection required. Press Record Stage Position : Second Point. If you are asked to confirm that the Rotate and Tilt values should be updated you have accidently changed the rotate or tilt, Reply NO and use Move Axis Tilt/Rotate to move the stage to the correct tilt/rotation, reposition the mark to centre and record again.
+11. Enter the sample co-ordinates for this point in Second Registration Point : Mapped Position
+12. If required confirm positioning by using Go To Absolute position First Point/Second Point to confirm correct locations are recorded.
+13. Press Register
+14. Save registration data to file 
+
+
+Note: If registration data is available from file and the sample position on the stage is similar the the previous occasion load the file and use the Move Axis Tilt/Rotate to set stage to registration values and use Go To Absolute position First Point/Second Point to position the stage roughly at the registration mark positions.
+$#>Rotate/Tilt Dialog
+
+Dynamic Focus, Scan Rotation and Tilt Correction can be performed.
+
+For additional information see Rotate / Tilt Panel8AC6K1@Sem.HLP.
+$#>SEM Control Dialogs
+
+{bmc bm15.bmp}	Select Tools then {bmc bm16.bmp} point to Goto Panel and clickCLICK@Leo_1500.HLP with the left mouse button.
+
+The List of available SEM Control dialogs opens.
+
+{bmc bm8.bmp} Select a dialog e.g. Beam Shift (use Scroll Bar2HOSDE@Sem.HLP to view all dialogs).  {bmc bm8.bmp} Select <OK> to display the dialog.  {bmc bm8.bmp} Select <Cancel> or click on {bmc bm18.bmp} to terminate without displaying the dialog.  Available dialogs are:		{bmc bm30.bmp}	
+
+	4QBSD Dialog4QBSD_Dialog 		Aperture DataAperture_Data	Beam Shift DialogBeam_Shift_Dialog		External Scan Control DialogExternal_Scan_Control_Dialog
+	Input LUT DialogInput_LUT_Dialog	Magnification Calibration DialogMagnification_Calibration_Dialog	Rotate/Tilt DialogRotate_Tilt_Dialog		Signal Adjust DialogSignal_Adjust_Dialog
+	  Specimen Current MonitorSpecimen_Current_Monitor 	Stage Limits DialogStage_Limits_Dialog	Stage Points List DialogStage_Points_List_Dialog
+	Stage Registration DialogStage_Registration_Dialog		Stage Registered Movement DialogStage_Registered_Movement_Dialog
+	Stage Scan DialogStage_Scan_Dialog			Stigmation DialogStigmation_Dialog		 Static/Semi Dyn StereoStatic_Semi_Dynamic_stereo
+	Vaccum StatusVacuum_Status			Specimen ChangeSpecimen_Change_Dialog
+	Calibrate Stage Centre4YI0_82		Compucentric Setup4YI0_83	Stage Horizontal alignment4YI0_84
+		 
+
+Service Dialogs:
+	 		 Calibrate Stigmation DialogCalibrate_Stigmation_Dialog 
+$#Save
+This function saves the current contents of the Points List back to the  User defined Points List FileUser_defined_Points_List_File from which it was loaded
+$#>Save As
+
+This function saves the current contents of the Points List to a User defined Points List FileUser_defined_Points_List_File in the current User Directory
+$#>Search String
+
+At the lower edge of the Stage Points List is a text entry window, characters typed here will be matched to the entries in the list box and the nearest match highlighted.
+$#>Signal Adjust Dialog
+
+The detector can be selected and the signal levels adjusted. See Image Signal Adjust3RDW8F@Sem.HLP
+
+$#>Stage And Beam
+
+This function performs Stage And BeamStage_And_Beam@TabMgr.HLP
+$#Stage Horizontal alignment
+This Wizard is used to move the stage such that a linear feature on the sample, identified by two points, is horizontal with the second of the two points visible on screen.
+
+The Stage Centre must be calibrated4YI0_82 for this function to be used.
+
+Instructions are displayed describing the operator actions required.
+Press Next when the action is completed.
+Press Back button to return to the previous step.
+Press Cancel to abort the sequence - stage will return to original position.
+
+The sequence is described below. 
+Entries labeled STEP are operator actions, those labeled NEXT are the wizard actions taken when Next is pressed
+
+Step 1  Using Centre Point (Ctrl Tab), or the joystick, position the first point at centre screen
+Next	Record the first stage position.
+
+Step 2  Using Centre Point (Ctrl Tab), or the joystick, position the sercond point at centre screen
+Next	Compute the rotation required and perform compucentric rotation
+
+Finish Close the dialog
+
+
+See also
+Stage Control TabKH.ZCT@tabmgr.hlp
+Compucentric Stage Control10F6FNP@stage.hlp
+Calibrate stage centre of rotation4YI0_82
+$#>Stage Limits Dialog
+
+This panel allows to limit the range of travel for each motorised axis of the stage individually.
+
+ For additional information see Stage LimitsHE_C4L@Stage.HLP   {bmc bm31.bmp} If you try to enter a value outside the physical range of a stage travel a warning is displayed and no action is taken.		{bmc bm32.bmp}	
+{bmc bm31.bmp}  Although it is possible to operate the Stage with the Joystick or Hard Panel controls while it is not initialised it is STRONGLY RECOMMENDED that the stage is initialised as soon as possible to obtain full protection of the high limits which are only applicable after initialisation.
+$#>Stage Only
+
+This function performs Stage OnlyStage_Only@TabMgr.HLP
+$#Stage Points List Dialog
+   
+This function displays the Points List Dialog139NVAW@Stage.HLP.  The list box displays the labels of the current points in the Points List.  Double ClickingCLICK@Sem.HLP an entry in the list box will execute a Go To Selected. Labels of the form M_nnn are points inserted by the Mark Point function. For additional information about the Points List Dialog see:   MenuMenu  AddAdd  DeleteDelete         EditEdit_Points_Dialog   Go To FirstGo_To_First  Go To NextGo_To_Next  Go To PreviousGo_To_Previous Go To SelectedGo_To_Selected Undo Stage GotoIDQXIJ@tabmgr.hlp  Search StringSearch_String  If using Registration data1JD4XS8@stage.hlp it may be advisable to use On Goto Move XY OnlyOn_Goto_Move_XY_Only	{bmc bm33.bmp}	
+		
+
+$#Stage Registered Movement Dialog
+This dialog is part of the Stage Registration1JD4XS8@stage.hlp Option.
+
+Click on the elements of the dialog to display their function  See also: Registration DialogStage_Registration_Dialog	{bmc bm34.shg}	
+
+$#Stage Registration Dialog
+This dialog is part of the Stage Registration1JD4XS8@stage.hlp Option.
+
+Click on the elements of the dialog for a description of their function  Registration sequenceRegistration_sequence   Registration AlgorithmRegistration_Algorithm  Stage Registration move dialogStage_Registered_Movement_Dialog  Points List dialogStage_Points_List_Dialog	{bmc bm35.shg}	
+
+$#>Stage Scan Dialog
+
+This panel is used to control the Stage Scan5PRL_G3@Stage.HLP.
+$#>Stigmation Dialog
+
+This panel allows to correct astigmatism in the image.
+
+For operating information see Stigmation1Q3WXC@Sem.HLP.
+
+See also SEM Control Apertures295DOW3@tabmgr.hlp and Astigmatism Correction7TVA0H0@sem.hlp
+$#>User Defined Label
+
+This dialog is used to define the label for an entry in the Stage Points List.
+The label may be any string of characters.
+
+Global labelsY4A8CN@stage.hlp start with $.
+
+Labels starting M_ are not permitted.
+A warning will be given if the label already exists.
+
+See also Stage Points List ADDA.WPGL@Stage.HLP for additional information on labels.
+$#>User defined Points List File
+
+This dialog is used to define the name of a Points List File. 
+The file will be saved in the current User Directory with the extension *.XYZ.
+$#>Using The User Magnification Calibration
+
+
+{bmc bm8.bmp} The mode may be switched on/off by the pop up menu which is displayed by a right clickCLICK@Sem.HLP on the Image WindowGIRNF0@Sem.HLP.  {bmc bm8.bmp} Click on User Calibration Enable to switch the function ON ({bmc bm26.bmp}) or OFF  While User Magnification Calibration is switched on this will be indicated by an asterisk on the micron marker 	{bmc bm36.bmp}  {bmc bm37.bmp}	
+
+$#First Point absolute XY position
+These fields display the position of the first registration point in absolute stage co-ordinates.
+#Registration State
+This indicates the current registration state
+No		No registration data and not registered
+Yes		Registered
+Invalid	Registration data has been loaded from file but registration not yet confirmed
+#Stage List
+This selects which points list is currently in use.
+Stage List = Stage indicates that the current list is in absolute Stage Co-ordinates
+Stage List = Reg 1 indicates that the current list is in a User Defined Co-ordinate system (Registration list 1)
+$#Sample At X/Y
+These fields display the current stage position in terms of the registered co-ordinate system
+#Constant axes
+For a given registration the Tilt and Rotate Axes are constant.
+The current values are displayed in these fields.
+$#Coarse Relative Movement
+Click on the outer arrows to move the stage by ten units in the users co-ordinate system. The movement will be in the X or Y direction of the registered co-ordinate system
+$#Fine Relative Movement
+Click on the inner arrows to move the stage by  one unit in the users co-ordinate system. The movement will be in the X or Y direction of the registered co-ordinate system
+$#First Registration point mapped position
+Enter in these fields the co-ordinates of the first registration point in User Co-ordinate units.
+$#Go To Absolute Position
+Pressing the First Point / Second Point / Third Point buttons will move the stage to the currently stored registration mark location
+$#Registration : Load from file
+Pressing this button will display the Load Registration dialog.
+Registration data files have the extension SRD
+$#Move Axis
+Pressing these buttons will move the Tilt/Rotate axis to the registration value (Constant axis value)
+#Registration Name
+This is an optional text string which may be used to identify the registration data set
+$#Record Stage Position
+Press First Point / Second Point / Third Point  to record the current stage position as the location of the First / Second / Third Registration mark.
+Note that this corresponds to the centre of the screen.
+$#Register
+This button computes the co-ordinate translation information from the registration data.
+If successful the registration status = Yes
+$#Sample Goto X/Y
+Click on these fields to enter the required stage position in terms of the registered co-ordinate system
+$#Registration : Save to file
+Pressing this button will display the Save Registration dialog.
+Registration data files have the extension SRD
+
+Note this saves only the registration data, not the points list.
+$#Second Point absolute XY position
+These fields display the position of the second registration point in absolute stage co-ordinates.
+$#Second Registration point mapped position
+Enter in these fields the co-ordinates of the second registration point in User Co-ordinate units.
+#Registration Units
+This field describes the units of the Co-ordinate system.
+It may be any text string (e.g. cells, inches)
+If 3 point alignment3_point_alignment is used different units may be specified for X and Y
+$#>Aperture Data Dialog
+This dialog displays the information about the apertures fitted to the SEM
+
+  {bmc bm8.bmp} Select Aperture with radio button {bmc bm8.bmp} Size may be edited if replacement aperture is of different size {bmc bm8.bmp} Position of apertures may be recorded if required. {bmc bm8.bmp}   Press OK to accept the size/selection changed   Optibeam will indicate the optimum Aperture for the current electron optical conditions.	{bmc bm38.bmp}	
+ 		
+{bmc bm39.bmp}  Warning: If the aperture selected in the software is not the one actually in use in the SEM the optimum conditions may not be achieved 	
+$#>Static/Semi Dynamic stereo
+This dialog provides access to the Stereo functions
+For details see:
+Static StereoN6.C9U Semi Dynamic Stereo38VO_SM Static Stereo Depth measurementStatic_Stereo_Depth    Sa1 is depth of point of interest at zero tilt  Sa2 is depth of point of interest at tilt angle  Sb is angle of tilt  See diagramStatic_Stereo_theory	{bmc bm40.bmp}	
+
+$#>Vacuum Status
+
+This dialog displays the system vacuum and Vacuum Status
+The Specimen change button display the Specimen ChangeSpecimen_Change_Dialog dialog	{bmc bm41.bmp}	
+
+$#>Specimen Change Dialog
+This dialog  may be used for specimen exchange
+{bmc bm8.bmp}  Click on Beam State - select Shutdown {bmc bm8.bmp}  Wait for beam to be shutdown {bmc bm8.bmp}  Click on Vac Status - select Vent {bmc bm8.bmp}  When the chamber is at atmospheric pressure pull the door open carefully. {bmc bm8.bmp}  Exchange the specimen {bmc bm8.bmp}  Close the Chamber door {bmc bm8.bmp}  Click on Vac Status - select Pump {bmc bm8.bmp}  Wait for vac Status to be Ready {bmc bm8.bmp}  Click on Beam State - select Beam On	{bmc bm42.bmp}	
+
+#Static Stereo
+The Static Stereo function enables the user to combine two stored images to form a stereo image in the image store.
+
+The left hand image of a static stereo image can be loaded into the image store.
+This can be copied to the off screen area using the A to B button.
+The right hand image of a static stereo image can be loaded into the image store.
+Press the Static Stereo radio button to combine the two images.
+#Semi Dynamic Stereo
+The Semi Dynamic Stereo function enables the user to combine one stored image and one live image to form a stereo image in the image store. 
+
+Set the sample to one position, press the Semi Dyn. Stereo radio button, this will freeze the blue portion of the Semi Dynamic Stereo image, leaving the red portion live.
+Tilt the sample to produce a stereo effect.
+
+$#Static Stereo Depth Measurement
+
+The depth of a point from the height of a reference point can be calculated by measuring the distance from the point of interest to a reference point on the tilt axis, tilting the sample and measuring the new distance from the point of interest to the reference point. The reference point must not move hence must be on the tilt axis.
+
+Using the Point to Point Cursors place the P1R cursor and the P2R cursor on the reference point on the tilt axis.
+Place the P1 cursor on the point of interest.
+Tilt the sample by a known number of degrees. The reference point should not move.
+Place the P2 cursor on the point of interest (It should have moved ).  
+The angle the sample has been tilted can be entered into the St. Stereo Angle parameter.
+Press the Calc Static Stereo Depth button.
+The  Respective depths as shown on the diagramStatic_Stereo_theory are calculated.
+
+
+$#Static Stereo theory
+{bmc bm43.bmp}
+$#>Specimen Current Monitor
+
+This dialog is used to run the Specimen Current Monitor.
+
+{bmc bm15.bmp}	Call Tools from the Menu Bar and then {bmc bm16.bmp} select Goto Panel and Specimen Current Monitor panel:
+
+The SCM is both an Imagingspecimen_current_Imaging device and measurement device.
+
+Measurement:
+{bmc bm8.bmp} ClickCLICK@Sem.HLP on SCM Measure to switch the Specimen Current Monitor to Measurement Mode  {bmc bm8.bmp} Click on Spot {bmc bm3.bmp} to stop the scan and put the beam on a spot.  {bmc bm8.bmp} DragDRAG@Sem.HLP the Spot to the required position.  {bmc bm8.bmp} Close the window by clicking on {bmc bm18.bmp}.	{bmc bm44.bmp}	 {bmc bm45.bmp}	
+
+The bottom line displays the Specimen Current .
+
+
+See also Absorbed Specimen Current MeasurementAbsorbed_Specimen_Current_Measurement and Beam Current MeasurementBeam_Current_Measurement
+$#specimen current Imaging
+The Specimen Current Monitor may be used as an imaging device.
+Image Mode
+1.	Select the Specimen CurrentSpecimen_Current_Monitor  panel (Tools - Go To Panel and select Specimen Current Monitor)
+2.	Obtain a secondary electron image and bring it to focus.
+3.	Select SCM from the Detection -  Detectors menu.
+4.	Select SCM Image from the Specimen Current panel, set Brightness to 50% and adjust Contrast until an image is seen. Then adjust Brightness and Contrast to obtain the required image.
+
+At low probe currents i.e. on SCM ranges lower than 1nA full scale, the image can become degraded by mains field effects and other forms of interference. Also, on these ranges, the signal bandwidth is very low. The use of long scan times will overcome the bandwidth restrictions and will also help to reduce interference effects, but image quality may not be perfect under these conditions.
+$#Backlash Warning
+When stage movement or registration is requested a warning will be given if Stage Backlash correction is not switched on. Unchecking this checkbox will suppress the warning
+$#Third Point absolute XY position
+These fields display the position of the second registration point in absolute stage co-ordinates.
+$#Third Registration point mapped position
+These fields display the co-ordinates of the third registration point in User Co-ordinate units.
+These fields are automatically filled when 3 point alignment is selected and are derived from the first and second point co-ordinates as defined by the X2,Y1 checkbox.
+$#Three Point Alignment
+If the 3 Point Alignment checkbox is ticked then 3 alignment points are used which permits the algorithm to handle different units in the X and Y direction
+ (e.g. the X dimension may be a horizontal count of rectangular structures and the Y dimension a vertical count of the structures).
+
+The first 2 points (User Co-ordinates X1, Y1 and X2, Y2) are as for 2 point alignment.
+{bmc bm46.bmp}
+The third point may be at X1, Y2 or at X2, Y1 as specified by the X2,Y1 checkbox.
+$#>KPoints list Text File Format
+The stage points list may be saved /loaded as a text file, e.g. for importing into an Excel spreadsheet.
+
+The data is in comma separated format as shown in the following example
+
+Leo Points List
+Absolute
+Label,X,Y,Z,T,R,M,Mag,WD
+2
+here,0.01000000,0.01000000,0.00000000,-1.00000000,0.00000000,0.00000000,100.000000,0.00500000
+there,0.01500000,0.01500000,0.00500000,0.00000000,0.00000000,0.00000000,100.000000,0.00500000
+
+
+Line 1 is fixed header Leo Points List to define type of data
+Line 2 is either Absolute or Relative (relative if stage registration is used)
+Line 3 is column headings (content ignored on loading but line must be present)
+Line 4 is count of point data entries which follow
+
+X,Y,Z,M are positions in Metres.
+T,R as positions in degrees.
+Working distance is in Metres.
+
+
+If preparing a file to be loaded please note that lines 1 through 4 are mandatory.
+
+Example Importing into Excel:
+ File saved as Example.TXT
+{bmc bm8.bmp}	Start Excel
+{bmc bm8.bmp}	File Open
+{bmc bm8.bmp}	Select file type = Text Files
+{bmc bm8.bmp}	Select File name = Example.TXT
+{bmc bm8.bmp}	Select Delimited and Next
+{bmc bm8.bmp}	Select Comma and Next
+{bmc bm8.bmp}	Select General and Finish
+
+Example Exporting from Excel
+In Excel:
+{bmc bm8.bmp}	Select Table including header information as described above (lines 1 through 4)
+{bmc bm8.bmp}	Select Menu item File - SaveAs
+{bmc bm8.bmp}	Select SaveAs type CSV (comma delimited) and Save (e.g. Example.CSV)
+
+

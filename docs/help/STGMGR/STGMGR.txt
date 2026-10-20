@@ -1,0 +1,355 @@
+﻿$#>Contents of Stage Manager
+
+{bmc bm0.bmp}	Type <ALT + g> to open Stage on the the Menu Bar8ZP0K4@Sem.HLP then point to Stage Control and clickCLICK@Sem.HLP with the left mouse button.
+
+The Stage Manager panel opens.  The following tabs allow setting of stage parameters  NavigationStgMgr_Navigation Stage StatusStgMgr_Stage_Status Points ListStgMgr_Points_List PropertiesStgMgr_Properties Stage ScanningStgMgr_Stage_Scanning SurveyStgMgr_Survey   {bmc bm1.bmp} A panel is selected by clicking on the tab which brings the panel to the front.   To learn more about how the stage works, go to the Stage3N4BA@Stage.hlp help menu.     {bmc bm2.bmp} Close the Stage Manager panel by clicking on {bmc bm3.bmp}	{bmc bm4.bmp}	
+
++$#>Stage Manager Navigation tab
+The Navigation tab gives a visual display of the position of the stage sample holder with the specimen stubs. N.B See PropertiesStgMgr_Properties and sample holder settingsSample_Holder_Settings
+   
+The Navigation tab shows two views of the stage sample holder: a side-on view and a perpendicular view.   The side-on view This view shows the selected stage sample holder and is side-on to the holder. The horizontal line shows the sample height parameter. The vertical line shows the path of the electron beam. The secondary electron detector is at the right side of sample holder. Blue grid lines show the user-set limits in the Y- and Z-direction.   The perpendicular view This view shows a perpendicular view to the sample holder. The crossed grid lines indicate the position of the electron beam. The horizontal grid line only shows when Stage Tilt = 0°. The secondary electron detector is situated on top. Blue grid lines show the user-set limits in the X- and Y-direction.  A thick blue line indicates the position of the chamber door. Moving the stage You can move the stage so that a desired part of the sample holder lies under the electron beam.  {bmc bm2.bmp} {bmc bm5.bmp} Double click the left mouse button on a point of interest on the sample holder. The stage will move (XY) it under the beam. {bmc bm2.bmp} {bmc bm6.bmp} Double-click the middle mouse button on a point of interest on the sample holder. The stage will move it (rotate) under the beam    Show stage scan fields If you have set up a stage scan pattern, you can show this pattern on the perpendicular view. Setting up a stage scan pattern can be done from the Stage ScanningStgMgr_Stage_Scanning tab {bmc bm2.bmp} Tick the Show Fields check box. A red grid will appear on the view: {bmc bm7.bmp}  {bmc bm8.bmp} Note: The scan field grid shows the positions of the centre of the stage, at the bottom right corner of each grid field. It does not show the positions on the sample holder of the actual fields that will be visible to the user.   {bmc bm2.bmp} Select another tab or close Stage Manager with {bmc bm9.bmp}	{bmc bm10.shg} {bmc bm8.bmp} Note: if the option Sample Holder = none is selected in the Properties StgMgr_Propertiespage, then only a grey cross is shown	
+
++$#>Stage Manager Status tab
+The Stage Status panel  is used to display and control the position of the motorised stage
+
+Stage Movement {bmc bm11.bmp} ClickCLICK@Sem.HLP on the Go To X or Y field to open an input box to enter XY coordinates. {bmc bm1.bmp} Click on any other active Go To field to open a normal input value box and to enter the coordinate.  {bmc bm8.bmp} Note The Stage Stop button will abort stage movement.  This may also be achieved by pressing F12. The Undo Goto button will undo the requested movement.   Field MovementField_movement_arrow_buttons {bmc bm2.bmp} Use the Arrow buttons to move one screen up, down, left or right {bmc bm2.bmp} If the Move using Stage Scanning fields option is checked, and a scan pattern is defined, then the Up button moves to the first field in the Scan Pattern, the Left button to the previous field, the right button to the next field. The Down button is unassigned The Pause button is not assigned yet.  Further options  Right-Click on the other elements of the Stage Status Tab for more information {bmc bm12.bmp} Click on the tab background with the right mouse button to open the Status Popup MenuStatus_Popup_Menu. {bmc bm2.bmp} Select another tab or close Stage Manager with {bmc bm9.bmp}	{bmc bm13.shg} When the cursor changes from {bmc bm14.bmp}to {bmc bm15.bmp}help is available. Click to present the information.	
+
++$#>Stage Manager Points List tab
+This Tab displays the user-defined points on the stage. It performs the same functions as the Stage_Points_List_dialog139NVAW@Stage.hlp. 
+   
+A list of stage positions may be maintained in memory. The entries are shown in the Stage Points List. Initially this list is empty. The data saved is the current position of the stage. If beam shift is being applied the XY stage position is modified by the Beam Offset distance to give a stage XY position with zero beam shift. Also saved are the current working distance and magnification. When moving to a stored position the beam shift is set to zero and optionally either or both of the magnification/working distance are set to the saved values.  For additional information point to the item of interest on the picture to the right.   When the cursor changes from {bmc bm14.bmp}to {bmc bm15.bmp}help is available. Click to present the information.  {bmc bm16.bmp}Right-click on the Tab area to show the Points List Popup menuPoints_List_Popup_Menu    {bmc bm2.bmp} Select another tab or close Stage Manager with {bmc bm9.bmp}	{bmc bm17.shg}	
+
++$#>Stage Manager Properties tab
+Various properties of the Stage can be set from this dialog tab
+
+General Z move on VentZ_move_on_Vent Track ZTrack_Z Stage BacklachBacklash_On Do Stage BacklashDo_Backlash Stage XY + ZStage_XY_Z Protected ZProtected_Z Joystick disableJoystick_Disable  Sample Holder and sample Select the typeSample_Holder of sample holder and define the settingsSample_Holder_Settings Centre Point Select the type of Centre PointN9YIPC@Stage.hlp operation. Limits Displays whether the Low or High user limits have been hit. Pressing Set Limits brings up the set Limits dialog boxHE_C4L@Stage.hlp  {bmc bm2.bmp} Right-Click on the other elements of the Properties Tab for more information  When the cursor changes from {bmc bm14.bmp}to {bmc bm15.bmp}help is available. Click to present the information. {bmc bm2.bmp} Select another tab or close Stage Manager with {bmc bm9.bmp}	{bmc bm18.shg} 	
+
++$#>Stage Manager Stage Scanning tab
+Stage scan provides the facility of using the motorised stage to inspect an area of the specimen as a series of fields.
+   
+Setting up a scan area and scan fields {bmc bm2.bmp} Press the Setup WizardScan_Field_Setup_Wizard button and go through the different steps of selecting the Scan area and creating the scan fields.  {bmc bm2.bmp} Alternatively, select the Advance button. The Stage Scan dialog5PRL_G3@Stage.hlp appears.  {bmc bm2.bmp} When the Scan pattern area is correctly set up, the fields will appear in the Scan FieldsScan_Fields window  Selecting a scan pattern {bmc bm2.bmp} Select one of the Stage Scan PatternStage_Scan_Pattern buttons to determine in which pattern the fields are scanned.  Navigation {bmc bm19.bmp} Go to first field {bmc bm20.bmp} Go to previous field {bmc bm21.bmp} Go to next field {bmc bm22.bmp} Go to last field  {bmc bm2.bmp} Select another tab or close Stage Manager with {bmc bm9.bmp} 	{bmc bm23.shg}	
+
++$#>Stage Manager Survey tab
+Survey ModeSurvey_Overview provides the facility to enter a defined state [Survey Mode StateSurvey_Mode_State] (typically a long Working Distance and low magnification to achieve a wide field of view) in which the Specimen may be reviewed for features of interest.
+   
+Setting up Survey Mode This dialog is used to set up conditions for Survey Mode StateSurvey_Mode_State and for Resolution Mode StateResolution_Mode_State.   {bmc bm2.bmp} Ensure that the Stage Z High and Low user limitsHE_C4L@dlgmgr.hlp are correctly set for the specimen to be reviewed, in particular the High limit to prevent collision with the Final lens. (Select the Stage Manager Properties tabStgMgr_Properties and press the Set Limits button).  {bmc bm2.bmp} Obtain a focussed image under your normal (Survey Mode OFF) conditions.  {bmc bm2.bmp} If required you can also define the Exit Macro.  {bmc bm8.bmp}Note: Survey Mode may only be used when the Stage is initialised.    {bmc bm2.bmp} For details of each control on the panel click on the control.  {bmc bm2.bmp} Select another tab or close Stage Manager with {bmc bm9.bmp}	{bmc bm24.shg}	
+
+$#>KAuto Initialise Stage
+
+
+{bmc bm25.bmp}	ClickCLICK@Sem.HLP on this function to start the stage initialisation. 
+
+		{bmc bm26.bmp}
+
+Accept with Yes
+
+The stage will then perform it's initialisation sequenceStage_initialisation_sequence
+
+Now the stage coordinates are referenced.
+
+With No you terminate without initialising the stage.
+
+{bmc bm8.bmp} NOTE: If the Stage is not initialised the actual Stage co-ordinates are unknown, hence the stage cannot be instructed to go to specific co-ordinates
+$#>Backlash On
+This menu lets you switch Stage Backlash ON. or OFF.
+
+{bmc bm27.bmp}	If you clickCLICK@Sem.HLP ON it is marked with {bmc bm28.bmp}. Backlash correction is then performed after each stage movement.
+
+Backlash correction is defined in Preference Selection Stage3TQY_S@leoserv.HLP tab.
+$#KCompucentric Mode
+This Combo box is used to select if compucentric rotation and/or Tilt is to be performed when goto tilt or rotation values are entered.
+See also: Compucentric MovementCompucentric_Movement
+
+$#Compucentric Movement
+If a Compucentric modeCompucentric_Mode is selected and a Rotate/Tilt movement is requested via the GotoStage_goto or DeltaStage_Delta functions the software calculates and executes the compensating movements for the other axes to maintain the sample position in the field of view.
+
+Note that calibrations are required. 
+See Calibrate Stage Centre4YI0_82@dlgmgr.hlp and  Compucentric Setup4YI0_83@dlgmgr.hlp
+
+See Also Stage Horizontal Alignment4YI0_84@dlgmgr.hlp and Compucentric Stage ControlGP9BLC@stage.hlp
+$#>Do Backlash
+{bmc bm29.bmp}	ClickingCLICK@Sem.HLP on Do Backlash causes the stage to execute a backlash correction operation.
+
+Backlash correction is defined in Preference Selection Stage3TQY_S@leoserv.HLP tab.
+$#>Exit Survey Mode
+On leaving Survey Mode StateSurvey_Mode_State the Magnification, Working Distance, 
+Brightness and Stage Z are restored to the values which existed when 
+Survey ModeSurvey_Overview was switched On.
+
+If selected the Exit Survey Mode Macro will be executed when the stage 
+movement is completed.
+
+See Stage Manager Survey tabStgMgr_Survey
+$#>Field Movement Arrow buttons
+The field movement arrow buttons can be used in two ways: Screen movement or Scan Field movement
+
+{bmc bm2.bmp} Use the Arrow buttons to move one screen up, down, left or right. The screen movement is enabled when the Move using Stage Scanning fields option is unchecked 		{bmc bm30.bmp}	
+{bmc bm2.bmp} If the Move using Stage Scanning fields option is checked, and a scan pattern is defined, then the Up button moves to the first field in the Scan Pattern, the Left button to the previous field, the Right button to the next field. The Down button is unassigned 		{bmc bm31.bmp}	
+The Pause button is not assigned yet.
+$#KJoystick Disable
+
+
+$#Limits
+Pressing this button displays the Stage Limits0QFIZJ@dlgmgr.hlp panel
+$#KMove XY Only
+If Move XY only is selected {bmc bm32.bmp} then whenever the stage is moved 
+to a saved position only the XY co-ordinates are used.
+This does not apply to Global position labels
+#>Points List Navigation
+To go to a specific point in the Points List do either of the following:
+{bmc bm2.bmp}	Select a point by left-clicking on the Point in the list. Press the Go to selected point button.
+or:
+{bmc bm2.bmp}	Double-click on the Point you want to go to
+or:
+{bmc bm2.bmp}	Use the navigation buttons:
+	{bmc bm19.bmp}	Goto the first point in the list	
+	{bmc bm20.bmp}	Go to the previous point	
+	{bmc bm21.bmp}	Go to the next point	
+	{bmc bm22.bmp}	Go to the last point	
+{bmc bm2.bmp}	Click the Undo Stage GotoUndo_Stage_Goto button to go back to the last position.
+$#>Points List Popup Menu
+This popup menu appears after Right-clicking on the Tab area of the Stage Manager Points List TabStgMgr_Points_List
+
+{bmc bm2.bmp} Load Points List... brings up the Select co-ordinate file dialog. You can select a Points List from a previously saved file. The current list of position data is deleted. The extension is *.XYZ. {bmc bm2.bmp} Select Save to store the current Points List in the user Directory {bmc bm2.bmp} Select Save As48L1N6@Stage.hlp to store the Points List under a new name.  {bmc bm2.bmp} Click on Clear List to empty the actual Stage Points List.  Data may also be saved/loaded in Text Format_XTMIN@dlgmgr.hlp {bmc bm2.bmp} If Set Mag is selected {bmc bm33.bmp} then whenever the stage is moved to a saved position the magnification is set to the stored value. {bmc bm2.bmp} If Set WD is selected {bmc bm34.bmp} then whenever the stage is moved to a saved position the working distance1YCGPIR@Sem.hlp is set to the stored value. {bmc bm2.bmp} If Move XY Only is selected {bmc bm35.bmp} then whenever the stage is moved to a saved position all axes except XY remain unchanged. NOTE: This setting is ignored for global labelsY4A8CN@Stage.hlp  {bmc bm2.bmp} Click on Stage Registration1JD4XS8@Stage.hlp to create a User Defined Co-ordinate system. It brings up the Stage Registration dialog4PYQ9J@dlgmgr.hlp.  {bmc bm2.bmp} Click on Stage Reg'd Move5M9CCK@dlgmgr.hlp to show the stage position in the User Defined Co-ordinate system	{bmc bm36.bmp}	
+
+$#Protected Z
+
+This SEM parameter controls the behaviour of the stage when a multi axis move is performed (e.g. Go To a position label).
+
+Parameter not Set.
+All relevent axes move simultaneously to the desired position.
+Backlash correction performed if required.
+
+Parameter Set
+The move to the desired position is performed in phases to minimise the risk of collision.
+The parameter Safe Z defines the maximum Z position to be used while moving in XY. Set this according to the tallest sample you have mounted.
+
+The movement sequence is:
+
+If either the desired Z or Safe Z is lower than the current Z then this axis is moved to whichever is the lowest position.
+If the desired Tilt is lower than the current Tilt then this axis is moved to the desired position
+The X,Y,R,M axes are moved simultaneously to their desired positions
+If The desired Tilt position is not yet achieved move Tilt to the desired position
+If the desired Z position is not yet achieved move Z to the desired position.
+
+The Protected Z parameter may only be changed with Supervisor PrivilegeXTAC5O@admin32.hlp.
+#>Resolution Mode Auto Focus
+If this option is checked a Fine Auto Focus is actioned on completion 
+of stage movement when entering Resolution Mode StateResolution_Mode_State.
+$#>Resolution Mode get Current Magnification
+This button reads the current Magnification and enters it as the condition for Resolution Mode StateResolution_Mode_State
+$#>Resolution Mode get Current Working Distance
+This button reads the current Working Distance and enters it as the condition for Resolution Mode StateResolution_Mode_State
+
+Note: This value may be modified in use by the Minimum achievable WD for the conditions and by the Stage Z Upper User Limit. 
+
+See Preparations for using Survey Mode.
+$#>Resolution Mode Macro
+The Drop Down Combo Box offers a choice of all the currently available macros.
+
+Select a macro from the list and check the checkbox if you wish this macro to be executed on entering Resolution Mode StateResolution_Mode_State (i.e. Performing Centre Point or Centre Feature while in survey mode stateSurvey_Mode_State mode).
+
+The macro will be executed when the Auto Focus finishes, unless Auto Focus is not selected, in which case it is executed when the Stage motion is completed.
+$#>Resolution Mode Magnification
+Enter the magnification you require on switching to Resolution Mode StateResolution_Mode_State by requesting Centre PointN9YIPC@stage.hlp.
+
+Note: if you change output device this value will change but will maintain the same pixel size (i.e. will not change the size of the displayed image).
+$#>KResolution Mode State
+Resolution Mode state is entered when Centre PointN9YIPC@stage.hlp or Centre FeatureT2YJNK@stage.hlp is executed while in Survey Mode  StateSurvey_Mode_State.
+
+On entry to Resolution Mode State from Survey Mode state the current Magnification and  Working Distance replace the Survey Mode settings if the 'Save Settings' is checked on the Stage Manager Survey tabStgMgr_Survey
+
+On entering Resolution mode state the Magnification is set to the defined magnification (Centre Point) or to the required magnification for the Centre feature function. The working distance is set to the defined Working Distance (constrained to the Minimum achievable Working Distance and the High User Z limit ).
+
+The brightness is set to the value last used in Resolution Mode State.
+
+If required a Fine Auto Focus is next executed followed by the Resolution  Mode Macro if defined.
+
+To Exit from  Resolution Mode State press  <F4> 
+
+See also: Survey OverviewSurvey_Overview
+$#>Resolution Mode Working Distance.
+Enter the Working distance you wish to use when in Resolution Mode StateResolution_Mode_State.
+This is typically a short Working Distance for best resolution.
+
+When going to this Working Distance the Stage Z will be increased to maintain focus.
+It is therefore essential that the Stage High User LimitHE_C4L@dlgmgr.hlp is correctly set to avoid collision with the final lens.
+If the target Working Distance would cause the stage to contravene the High User Limit then the Working distance is correspondingly increased.
+
+#>Sample Holder
+Set the type of sample holder that is fitted on the stage. 
+<None> will display a cross on the navigation page
+<Single> will display a single stub stage holder
+<Multi> will display a 8 stub stage holder
+#>Sample Holder Offset
+Brings up the parameter edit box:
+{bmc bm37.bmp}
+Set the sample holder rotational offset 
+(in degrees) and click OK
+#>Scan Field Setup Wizard
+A dedicated Wizard that leads you through the steps of:
+
+{bmc bm2.bmp}	Selecting an Area
+{bmc bm2.bmp}	Allow for manually typing the co-ordinates
+{bmc bm2.bmp}	Determine the Field Size
+{bmc bm2.bmp}	Determine the Field Overlap
+
+From these parameters, the number of fields is calculated. 
+#>Scan Fields
+The Scan Fields windos shows the selected scan area with the fields drawn into it. If an overlap has been selected then that will be shown too.  The current field position is drawn in light gray, the others in darker gray.  The status line displays the current status.  {bmc bm2.bmp} Move the mouse pointer to the field you want to go to.  {bmc bm1.bmp} Left double click to move the stage to that field. The new position will be highlighted	
+
+$#Stage At
+These fields display the current stage position
+$#Stage Delta
+Stage relative movement may be achieved using the Delta buttons on the Stage StatusStgMgr_Stage_Status Tab
+Entering a Value into the delta parameter (positive or negative values may be used)  adds it  to the current Stage position  and initiates a GoTo for the appropriate axis or axes.
+$#Stage goto
+{bmc bm38.bmp}	Click on any  active Go To field to open a normal input value box and to enter the coordinate.
+
+If a Compucentric ModeCompucentric_Mode is selected a compucentric move will be performed on the rotate and/or tilt movement.
+
+$#KStage initialisation sequence
+{bmc bm2.bmp}	If M (Main Z) axis is present move until lower limit reached
+{bmc bm2.bmp}	if Z axis is  present move until lower limit is reached
+{bmc bm2.bmp}	If T (Tilt) axis is present move until lower limit is reached
+{bmc bm2.bmp}	Move X axis until lower limit is reached
+{bmc bm2.bmp}	Move Y axis until lower limit is reached
+{bmc bm2.bmp}	If R (rotate) axis is fitted and the stage is configured with a rotate limit switch then move until limit is reached
+{bmc bm2.bmp}	If R (rotate) axis is fitted and the stage is configured without a rotate limit switch the current position is assumed to be 0 degrees
+{bmc bm2.bmp}	Move in X and Y to mid travel positions
+#>Stage Points List Search
+At the lower edge of the Stage Points List is a text entry window, 
+characters typed here will be matched to the entries in the list box 
+and the nearest match highlighted.
+#>Stage Position List
+The user can choose from ten different stage position lists. Each list can contain user defined points on the stage. The default list, which most users will use, is called "Stage". The points are set up in reference to the standard co-ordinate system with units in mm. 
+
+The user can set up other co-ordinate systems and enter the stage points accordingly. Go to the Stage Registration1JD4XS8@Stage.hlp help topic to find out more about this option. 
+$#>Stage Scan Pattern
+Press one of the Stage Scan Pattern buttons to select the way to move 
+through the scan fields: 
+{bmc bm39.bmp}
+There is a choice of four different field patterns, for this example assume 
+there are 9 fields numbered 1 through 9. The order of scanning will be:
+
+X Boustrophodon	X Raster	Y Boustrophodon	Y Raster	
+1  2  3	1  2  3	1  6  7	1  4  7	
+6  5  4	4  5  6	2  5  8	2  5  8	
+7  8  9	7  8  9	3  4  9	3  6  9	
+
+$#Stage Status
+This field  displays the status of the stage (e.g. Stage Is = Idle).
+$#Stage Stop
+Pressing this button will abort stage movement
+$#>Status Popup Menu
+
+{bmc bm40.bmp}	This pop up menu is displayed when the right mouse button is clickedCLICK@Sem.HLP on background of the Stage Status Tab
+It provides following features for selection and adjustment:
+
+Auto Initialise StageAuto_Initialise_Stage Calibrate Stage centre4YI0_82@dlgmgr.hlp Compucentric Setup4YI0_83@dlgmgr.hlp Horizontal Alignment4YI0_84@dlgmgr.hlp 	{bmc bm41.bmp}	
+
+$#>Survey Mode Exit Macro
+The Drop Down Combo Box offers a choice of all the currently available macros.
+
+Select a macro from the list and check the checkbox if you wish this macro to be executed on exit from Survey Mode (by unchecking the Survey Mode checkbox). 
+
+The macro will be executed when the Stage motion completes. (Stage Z moves back to the value which existed when Survey mode was switched on).
+$#>Survey Mode Auto Focus
+If this is checked a Fine Auto Focus is actioned on completion of stage movement when entering Survey Mode StateSurvey_Mode_State
+$#>Survey Mode Checkbox
+This checkbox is used to switch On or Off Survey ModeSurvey_Overview
+
+The checkbox is disabled if :
+{bmc bm2.bmp}	The Stage is not Initialised
+{bmc bm2.bmp}	The Stage is not moving
+
+On switching On Survey Mode StateSurvey_Mode_State will be entered.
+
+On Switching Off the Exit Survey ModeExit_Survey_Mode sequence will be executed.
+$#>Survey Mode Get Current Magnification
+This button reads the current Magnification and enters it as the condition for Survey Mode StateSurvey_Mode_State.
+$#>Survey Mode Get Current Working Distance
+This button reads the current Working Distance and enters it as the condition for Survey Mode StateSurvey_Mode_State
+
+Note: This value may be modified in use by the Maximum achievable WD for the conditions and by the Stage Z Lower User Limit. 
+$#>Survey Mode Lowest Magnification.
+If this radio button is selected the lowest achievable magnification for the current conditions will be used in Survey Mode StateSurvey_Mode_State.
+$#>Survey Mode Macro
+The Drop Down Combo Box offers a choice of all the currently available macros.
+
+Select a macro from the list and check the checkbox if you wish this macro to be executed on entering Survey Mode State (i.e. Checking the Survey Mode checkbox or returning to Survey Mode State from Resolution Mode State by pressing <F4>).
+
+The macro will be executed when the Auto Focus finishes, unless Auto Focus is not selected, in which case it is executed when the Stage motion is completed.
+$#>Survey Mode Magnification
+Enter the magnification required when in Survey Mode StateSurvey_Mode_State.
+Typically this will be a low magnification .
+
+Note: if you change output device this value will change but will maintain the same pixel size (i.e. will not change the size of the displayed image).
+
+This magnification will only be used if the Radio Button adjacent to it is selected.
+$#>Survey Mode Remember changes
+When switching to Survey Mode StateSurvey_Mode_State, especially for the first time, it may be necessary to adjust focus.
+If Remember changes is checked the new Working Distance as a result of focussing will replace the Target WD in the Settings.
+$#>Survey Mode State
+Survey Mode state is first entered when Survey Mode is switched On (either via the Stage Manager Survey tabStgMgr_Survey) or by switching the Survey Mode Parameter.
+
+It is also entered from Resolution Mode StateResolution_Mode_State when <F4> is pressed
+
+On entry to Survey Mode State from the OFF state the current Magnification, Working Distance, Stage Z and Brightness are saved for use when Survey Mode is switched off.
+
+On entering Survey mode state the Magnification is set either to the defined magnification or to the lowest achievable magnification for the conditions. The working distance is set to the defined Working Distance (constrained to the Maximum achievable Working Distance and the Low User Z limit ).
+
+The brightness is set to the value last used in Survey Mode State.
+
+If required a Fine Auto Focus is next executed followed by the Survey Mode Macro if defined.
+
+See also: Survey OverviewSurvey_Overview
+$#>Survey Mode Status
+This field displays the current Survey Mode status.
+{bmc bm2.bmp}	OFF
+{bmc bm2.bmp}	Survey Mode StateSurvey_Mode_State
+{bmc bm2.bmp}	Resolution Mode StateResolution_Mode_State
+{bmc bm2.bmp}	Leaving Survey ModeExit_Survey_Mode.
+$#Survey Mode Working Distance
+Enter the Working distance you wish to use when in Survey Mode StateSurvey_Mode_State.
+This is typically a long Working Distance for widest field of view.
+
+When going to this Working Distance the Stage Z will be decreased to maintain focus.
+It is therefore essential that the Stage Low User LimitHE_C4L@dlgmgr.hlp is correctly set for the sample in use.
+If the target Working Distance would cause the stage to contravene the Low User Limit then the Working distance is correspondingly decreased.
+$#>Survey Overview
+Survey Mode provides the facility to enter a defined state [Survey Mode StateSurvey_Mode_State] (typically a long Working Distance and low magnification to achieve a wide field of view) in which the Specimen may be reviewed for features of interest.
+
+While in Survey Mode State if a Centre PointN9YIPC@stage.hlp function is executed the software, in addition to moving the selected point to centre screen, switches to another defined state [Resolution Mode stateResolution_Mode_State] (typically a short working distance and higher magnification for better resolution) for examination of the point of interest.
+
+Similarly if a Centre FeatureT2YJNK@stage.hlp function is executed while in Survey Mode State the software, in addition to moving the area selected to the centre of the screen and increasing magnification to fill the image, switches to Resolution Mode state.
+
+If in Resolution State the Key <F4> will return to Survey Mode state.
+
+Switching off Survey Mode returns to the conditions which existed when Survey Mode was switched On.
+
+To set up conditions for Survey Mode State and Resolution Mode State display the Stage Manager Survey tabStgMgr_Survey from the Interface Main Menu Stage - Survey Mode - Settings or directly from the Stage Manager Control panel
+$#>Load Survey Settings
+This button allows the user to select a survey Settings file (*.SRV) for loading.
+$#>Save Survey Settings
+This button allows the user to save the current survey settings to a file (*.SRV) in the user Directory.
+$#Track Z
+If this option is selected then when the Stage Z is moved the Working Distance is changed to attempt to keep the image in focus.
+This is not precise but will keep the working distance close to the required setting.
+$#Undo Stage Goto
+When a stage goto is requested the stage position is saved before execution.
+Pressing the Undo Stage Goto button will move the stage back to the saved position.
+The function is only enabled when a stored value is available.
+Note that Stage movements other than Go To are not included in this function (e.g. movements via the joystick)
+$#Z move on Vent
+If this option is selected  Z is moved down when the chamber is ventilated to clear the stage from the pole piece.
+
+This may only be modified with Supervisor privilegeXTAC5O@admin32.hlp.
+$#>Sample Holder Settings
+Brings up the settings edit box:
+ {bmc bm2.bmp} Set the Spacer Thickness (in mm). The optional spacer block is manually fitted under the stage ZTR Module to reduce the height between the sample and the final lens.  Note: The spacer thickness is not auto - detectable by software!  {bmc bm2.bmp} Set the Sample Holder rotational Offset (in degrees). The sample holder connects to the ZTR Module via a dovetail mounting. Depending on machine/stage type the sample holder is rotated. This correction offset allows the sample holder graphic to be more accurately displayed.  {bmc bm2.bmp} Set the Specimen Height (in mm). This displays a dotted line above the top of the specimen holder(s). This value represents the distance between the surface of the sample holder and the top of the specimen. 	{bmc bm42.bmp}  Use the sliders to change values. You can also double-click to enter values manually.	
+
+$#KStage XY+Z
+
+If this checkbox is checked the Z axis is moved when the stage is moved in the direction of the tilt axis.
+The amount of the Z Movement is determined by the Tilt Correction8AC6K1@sem.hlp angle.

@@ -1,0 +1,658 @@
+﻿$#>Contents: How To...
+The following are easy to follow, step by step guides to frequently-used operation sequences of the SEM. 
+HOW TO ...
+Restore/Save the System ConditionsHow_to_Restore_Save_the_System_Conditions
+Exchange the SpecimenHow_to_Exchange_the_Specimen__No_Airlock_ 
+Use Stage FunctionsContents@stage.hlp
+
+Run up the Electron Beam81WA4R@operation.hlpColumn_Pumping@operation.hlp
+
+Align the Electron BeamHow_to_Align_the_Electron_Beam
+Change Anode Spacer1KHCK3U@operation.hlp
+Change the filament2MRA_.K@operation.hlp 
+ 
+Select MagnificationHow_to_Select_Magnification
+Adjust FocusHow_to_Adjust_Focus
+
+Correct for AstigmatismHow_to_Correct_for_Astigmatism
+Select the DetectorHow_to_Select_the_Detector
+Adjust the Detector SignalHow_to_Adjust_the_Detector_Signal
+Optimise the ImageHow_to_Optimise_the_Image
+Noise Reduce and Freeze the ImageHow_to_Noise_Reduce_and_Freeze_the_Image
+Annotate the ImageHow_to_Annotate_the_Image
+Make Measurements from the ImageHow_to_Make_Measurements_from_the_Image
+Edit the Display Look-up TableHow_to_Edit_the_Display_Look_Up_Table
+Store or Load an ImageHow_to_Store_or_Load_an_Image
+Take a Micrograph or PrintHow_to_Take_a_Micrograph_or_print
+Install HRRU Camera13XGJKI@operation.hlp
+Switch off the Electron BeamHow_to_Switch_off_the_Electron_Beam
+
+Investigate a Vacuum LeakHow_to_Investigate_a_Vacuum_Leak
+Edit the datazoneHow_To_Edit_the_Datazone or Create DatazoneHow_To_Create_Datazone
+Save/Load User DatazonesHow_To_save_load_User_Datazones
+Set Up a Common ToolbarSet_Up_a_Common_Toolbar
+$#How To Create a new DatazoneJ3NDYE@imgmgr.hlp
+To create a datazone from scratch
+
+{bmc bm0.bmp}	Call the annotation tool bar with <CTRL + A>
+{bmc bm0.bmp}	Create a Sticky Panel object by clicking on the icon {bmc bm1.bmp}  then Click and Drag on the image to create the required size and position of rectangle.
+{bmc bm0.bmp}	Change the properties of the panel by right clicking on it while selected and selecting the Properties required 
+{bmc bm0.bmp}	Create the objects you want on the Datazone, e.g. Parameters by clicking on {bmc bm2.bmp} then clicking on the image
+{bmc bm0.bmp}	Drag the objects onto the Sticky Panel to the required positions
+{bmc bm0.bmp}	Lock the panel by selecting it, right button click on it, select Properties - Lock this panel
+{bmc bm0.bmp}	Convert Panel to be the Current Datazone by selecting it, right button click on it, select Properties - Make Current Datazone
+
+Note 1: You may create several Sticky Panels as datazones by using the Property Make Panel A Datazone, these will all be hidden/shown by the macro special function Datazone Off/On, however there is only One Current Datazone which is automatically loaded and controlled by  <CTRL + D> , this is the one that is designated by Make Current Datazone
+Note 2: You may always revert to the default datazone (which destroys your modified datazone) using the Top Menu Function View - Datazone - Display Default Datazone
+Note 3: If you require a selection of different datazones see Save/Load datazonesHow_To_save_load_User_Datazones
+Note 3: Datazone objects will not be saved when saving annotation to file, if you wish to save them to a file you must first select the property Don't make Panel a Datazone
+
+
+Annotating the ImageB7ZV5W@ImgMgr.hlp
+
+How to edit the DatazoneHow_To_Edit_the_Datazone
+$#How To Edit the DatazoneJ3NDYE@imgmgr.hlp 
+{bmc bm0.bmp}	Call the annotation tool bar with <CTRL + A>
+{bmc bm0.bmp}	If the Datazone is not on display then display it with <CTRL + D>
+{bmc bm0.bmp}	Select the Datazone by clicking on it. Blue handlesK6O1DR@ImgMgr.hlp will be displayed.
+{bmc bm0.bmp}	Unlock the datazone by clicking on it with the right mouse button and selecting Properties - Unlock this panel
+
+You can now modify the datazone by 
+{bmc bm3.bmp}	Changing the position/size of the datazone (drag the datazone or it's handles)
+{bmc bm3.bmp}	Dragging objects off the Datazone or to new positions on the datazone
+{bmc bm3.bmp}	Edit objects on the datazone by selecting them and altering their properties (Right button click on them)
+{bmc bm3.bmp}	Creating new Objects and dragging them onto the datazone
+
+When you have completed your modifications
+{bmc bm0.bmp}	Lock the datazone by selecting it, clicking on it with the right mouse button and selecting Properties - Lock this panel
+
+
+How to create a datazoneHow_To_Create_Datazone
+Saving/Loading DatazonesHow_To_save_load_User_Datazones
+Annotating the ImageB7ZV5W@ImgMgr.hlp
+$#How to Set Up a Common Toolbar
+Follow these steps to set up a Common Toolbar5XXH_AL@tooledit.hlp
+
+{bmc bm0.bmp}	Using the Toolbar EditorContents@tooledit.hlp (Top Menu - Edit - Toolbar) create the toolbar with the required functionality.
+
+{bmc bm0.bmp}	Save the toolbar file using the SaveAs Common button on the first tab of the editor (Note - this button is only available if you have Supervisor privilegeXTAC5O@admin32.hlp).
+
+{bmc bm0.bmp}	Using the AdministratorContents@admin32.hlp (Start - Programs - Leo32 - Administrator) set the Use Common Toolbar attribute for each User required. (Double Click on the Username to access the User Profile)
+
+NOTE: All the Macros required for the Toolbar must be accessible to each User. If necessary provide them as Common MacrosHBU_9D@leom.hlp.
+$#>KHow to Adjust Focus
+
+Focus is adjusted in order to obtain a sharp image revealing small detail if present in the specimen. Optimum focus may be obstructed through presence of noise so that noise reductionHow_to_Noise_Reduce_and_Freeze_the_Image must be applied. AstigmatismHow_to_Correct_for_Astigmatism may also distort the image and must be corrected.
+
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm4.bmp} to switch mouse operation to magnification and Working Distance1YCGPIR@SEM.HLP (C3-lens) adjustment.
+{bmc bm0.bmp}	With the left mouse button adjust a suitable magnification. A suitable magnification is set when larger details in the image can be seen but smaller details are unsharp. Begin from low magnification upwards.
+{bmc bm0.bmp}	With the middle mouse button adjust Working Distance to bring the focus plane to the specimen surface which results in a sharper image.
+{bmc bm0.bmp}	Repeat the above two steps at higher magnification if necessary. For an optimum setting adjust focus at a magnification of 5 to 10 times higher than the final magnification in the micrograph will be.
+{bmc bm0.bmp}	If astigmatism7TVA0H0@SEM.HLP shows up correct for astigmatism.How_to_Correct_for_Astigmatism
+
+
+{bmc bm5.bmp}	Focus Adjustment14WB9QP@SEM.HLP
+	Focusing on the Specimen21C3A5V@SEM.HLP
+	Mag/Focus Mode13FWPVG@SEM.HLP
+	Moving the Specimen to FocusPlane1HZD_OA@SEM.HLP
+	Auto Focus11EGDP8@SEM.HLP
+$#How to Adjust the Detector Signal
+
+The most frequently used functions are control of brightness and contrast of a detector. The setting can be manual or automatic. Additional settings are available.
+
+Manual Control:
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm6.bmp} with the left button to switch mouse adjustment to contrast and brightness control {bmc bm7.bmp}.
+{bmc bm0.bmp}	Select sensitivity of the mouse adjustment by clicking on {bmc bm8.bmp} and {bmc bm9.bmp} or use 
+	<Tab> {bmc bm10.bmp}.
+{bmc bm0.bmp}	Adjust brightness by moving the mouse with the left mouse button pressed.
+{bmc bm0.bmp}	Adjust contrast by moving the mouse with the middle mouse button pressed.
+
+
+Collector adjustment of  Secondary electron detector:
+The collector of the  detector can be adjusted to select the ratio of secondary electrons to back scattered electrons to display topography contrast.
+{bmc bm0.bmp}	Type <Ctrl + G> The SEM Control panel opens.
+{bmc bm0.bmp}	Click on the Detectors tab to bring it forward.
+{bmc bm0.bmp}	Adjust Collector Bias from negative to positive bias voltage:
+	Negative: 	SE suppressed, only BSE.
+	Positive	SE collected in addition to BSE.
+
+Input Look-up Table:
+Note: Manipulating the Input LUT changes linearity of the signal as it is collected into the frame store. In cannot be undone on a saved image.
+{bmc bm0.bmp}	Type <Ctrl + G> The SEM Control panel opens.
+{bmc bm0.bmp}	Click on the Detectors tab to bring it forward.
+{bmc bm0.bmp}	Select Input LUT ModeV4.G6Q@TabMgr.HLP by clicking on the respective Radio Button2R6X4F@SEM.HLP.
+{bmc bm0.bmp}	Select Transparent: Input LUT has no effect on signal.
+{bmc bm0.bmp}	Select Gamma: Non linear GammaGAMMA@SEM.HLP function. Adjust Gamma value with the Gamma Scroll Bar2HOSDE@SEM.HLP.
+{bmc bm0.bmp}	Select Inverse for inverted signal (black and white exchanged).
+{bmc bm0.bmp}	Select User to generate your own LUT with the LUT Editor19GOXJ.@LutMgr.HLP. 
+
+{bmc bm5.bmp}	How to Select the DetectorHow_to_Select_the_Detector
+	Special Contrast SettingsHGA06L@SEM.HLP
+	Detector Signal Adjust3LS9I3@SEM.HLP
+	Menu Image Signal Adjust3RDW8F@SEM.HLP
+	Contrast/Brightness ModeGZ1LTV@SEM.HLP
+	SEM Control Detectors1WE3854@TabMgr.HLP
+$#>KHow to Align the Electron Beam
+
+The electron beam must be aligned onto the electron optical axis of the column to achieve good performance.
+
+
+
+See Setting Filament current and aligning the beamS5.G0D@operation.hlp
+$#>How to Annotate the Image
+
+Annotation provides a comprehensive means of putting additional information on the SEM image. Text, SEM Parameter Data, and even bitmaps (like logos etc.) can easily be added to the image.
+
+{bmc bm0.bmp}	Call the annotation tool bar with <CTRL + A>
+
+Text annotation
+{bmc bm0.bmp}	Text annotation can be directly called with <CTRL + T>
+{bmc bm0.bmp}	Alternatively call text annotation from the annotation tool bar by clickingCLICK@SEM.HLP on {bmc bm11.bmp} and then click on the location in the Image WindowGIRNF0@SEM.HLP where you want to position the text.. An input panel opens. 
+{bmc bm0.bmp}	Type in the text and quit the panel with OK.
+{bmc bm0.bmp}	DragDRAG@SEM.HLP the text to the required position.
+{bmc bm0.bmp}	Scale the text using handlesK6O1DR@SEM.HLP.
+{bmc bm0.bmp}	Click in text with the right mouse button to open the properties menu7BRJ3O@ImgMgr.HLP to change font, style, colour etc. of text.
+
+Other annotation
+{bmc bm0.bmp}	Include any parameter14QG3AV@ImgMgr.HLP of the SEM in the annotation overlay by clicking on {bmc bm2.bmp} in the annotation tool bar.
+{bmc bm0.bmp}	You can insert any bitmap or metafile19QS57O@ImgMgr.HLP as an annotation object by clicking on {bmc bm12.bmp} in the annotation tool bar. These files are created either elsewhere and imported on disk or within the system (MSPaint in the Accessories group in Program Manager) and are useful to display for example a company logo.
+{bmc bm0.bmp}	Include graphic elements like line419OYZ4@ImgMgr.HLP, rectangle13W0ZTH@ImgMgr.HLP and ellipse24SJ0EV@ImgMgr.HLP in the annotation overlay by clicking on {bmc bm13.bmp} or {bmc bm14.bmp} or {bmc bm15.bmp} in the annotation toolbar and dragDRAG@SEM.HLP them to size.
+{bmc bm0.bmp}	Add a rectangle to the overlay plane onto which annotation objects can be "stuck". The Sticky Panel4NWQ1Q@ImgMgr.HLP can be transparent or filled with a pattern. Click on {bmc bm1.bmp} to call a panel.
+{bmc bm0.bmp}	Add data from loaded TIFF images9UC_0J@ImgMgr.HLP to the annotation plane by clicking on {bmc bm16.bmp}.
+
+Data Zone:
+The data zoneJ3NDYE@ImgMgr.HLP is a special group of annotation objects which are used to display current parameters, including if required a micron marker showing the base magnification. 
+{bmc bm0.bmp}	Toggle data zone ON or OFF using <CTRL + D>.
+{bmc bm0.bmp}	DragDRAG@SEM.HLP the data zone to position and size it.
+{bmc bm0.bmp}	If the data zone is unlocked33GKLP@ImgMgr.HLP you may also drag elements of the data zone to position inside the panel.
+
+Saving and loading annotation:
+Blocks of annotation may be saved to disk1DH0V85@ImgMgr.HLP and loaded from disk140Z.Q@ImgMgr.HLP (like logos etc.)
+{bmc bm0.bmp}	Click on {bmc bm17.bmp} to save the marked annotation data under a file name of your choice.
+{bmc bm0.bmp}	Click on {bmc bm18.bmp} and select a file to restore the annotation data stored in it.
+Note: All annotation objects created on screen can be saved or printed with the image by selecting the Overlay plane ON from the Export TIFFB35SJQ@ImgMgr.HLP Setup menu.
+
+{bmc bm5.bmp}	Annotation and MeasurementContents@ImgMgr.HLP
+	Calling the Annotation ToolbarY5GFYX@ImgMgr.HLP
+	Annotating the ImageB7ZV5W@ImgMgr.HLP
+		Text Annotation1_B.06Q@ImgMgr.HLP
+		Parameter Annotation14QG3AV@ImgMgr.HLP
+		Insert User Bitmap or Metafile19QS57O@ImgMgr.HLP
+		Line Annotation419OYZ4@ImgMgr.HLP
+		Rectangle Annotation13W0ZTH@ImgMgr.HLP
+		Ellipse Annotation24SJ0EV@ImgMgr.HLP
+		Sticky Panel Annotation4NWQ1Q@ImgMgr.HLP
+		TIFF Data Annotation9UC_0J@ImgMgr.HLP
+	Data ZoneJ3NDYE@ImgMgr.HLP general
+	Data ZoneJ3NDYE@SEM.HLP functions
+	Saving Annotation1DH0V85@ImgMgr.HLP
+	Loading Annotation140Z.Q@ImgMgr.HLP
+	Object Properties5TRRS5@ImgMgr.HLP
+$#>How to Correct for Astigmatism
+
+High resolution images can only be obtained after correct adjustment of astigmatism. Astigmatism (non-roundness of the beam) is caused by either charging of the specimen and applying an asymmetric field that affects the focus of the beam usually in one direction or by a misaligned aperture. 
+
+NOTE It is a good idea to check filament current13HR49B@operation.hlp, align the beam1LKD_PL@operation.hlp and align the final aperture334XEAC@operation.hlp correctly before adjusting stigmation. 
+
+{bmc bm0.bmp}	Select Reduced RasterBFKLC0@SEM.HLP by clickingCLICK@SEM.HLP on {bmc bm19.bmp}.
+{bmc bm0.bmp}	Choose a suitable field of view at about 5 kX to 10 kX magnificationHow_to_Select_Magnification containing preferably round features.
+
+{bmc bm0.bmp}	Click on {bmc bm20.bmp} to switch mouse adjustment to stigmation control.
+{bmc bm0.bmp}	Focus to optimum focus with the middle mouse button so that the feature does not "smear" in any direction.
+{bmc bm0.bmp}	Adjust for best focus using the left mouse button. 
+	Note: Adjusting X and Y direction separately is easier than both together.
+{bmc bm0.bmp}	Repeat the last two steps as necessary.
+
+{bmc bm5.bmp}	 Astigmatism Correction7TVA0H0@SEM.HLP (Principle)
+	 Astigmatism Correction7TVA0H0@TabMgr.HLP (SEM Control operation)
+	 How to Select the DetectorHow_to_Select_the_Detector
+
+
+ 
+	 How to Adjust filament current13HR49B@operation.hlp
+	 How to align the beam1LKD_PL@operation.hlp
+	 How to adjust the final aperture334XEAC@operation.hlp
+$#>How to Edit the Display Look-up Table
+
+The appearance of the image display can be enhanced by using the display look up table editorRKSRH1@LutMgr.HLP, which can be used to change the grey level or colour of any particular grey level in the image. 
+Further instructions may be obtained by displaying the Display LUTGD50DR@LutMgr.HLP window and requesting HELP from the menu , however the following guide will be useful for both live and stored images :
+
+Switching on the LUT editor:
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on Edit in the Menu Bar8ZP0K4@SEM.HLP and select Display LUT... to call the Toolbar10WSDWG@LutMgr.HLP together with the LUT Editor WindowOIJ5TA@LutMgr.HLP.
+{bmc bm0.bmp}	If the Toolbar is not visible click in the LUT Editor Window with the right mouse button and select Show Toolbar
+
+Load a previously saved look up table:
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm21.bmp} and from the Open LUTF86ZW_@LutMgr.HLP dialog box choose the required file (extension *.OLT).The new look up table is applied and the LUT window and the tool box can be canceled by clicking on {bmc bm22.bmp}.
+
+Save a look up table:
+{bmc bm0.bmp}	Click on {bmc bm23.bmp} for Save LUT As.8WIUO@LutMgr.HLP.The default file name will be displayed, eg Current.olt
+{bmc bm0.bmp}	Delete CURRENT and insert the new file name.
+{bmc bm0.bmp}	Click on OK button. The new look up table has been saved for future recall
+Note: This look up table is still active and can be removed by selecting ResetJYVFXN@LutMgr.HLP
+
+Get Help:
+{bmc bm0.bmp}	For additional information on how to set the LUT clickCLICK@SEM.HLP on the HELP button in the LUT Editor WindowOIJ5TA@LutMgr.HLP or use Context Sensitive Help4X_H_GQ@SEM.HLP with <F1>.
+
+{bmc bm5.bmp}	What is the LUT EditorRKSRH1@LutMgr.HLP
+	Starting and Terminating the LUT Editor1U7F1DK@LutMgr.HLP
+	Show Toolbar10WSDWG@LutMgr.HLP
+	LUT Editor WindowOIJ5TA@LutMgr.HLP
+	Open LUTF86ZW_@LutMgr.HLP
+	Save LUT As.8WIUO@LutMgr.HLP
+	Display LUT Functions1IQ.6MH@LutMgr.HLP
+
+$#>KHow to Exchange the Specimen 
+
+Before accessing the specimen chamber, the chamber must first be brought to atmospheric pressure and the stage moved down to avoid interference with the final lens.
+
+N.B. For a more detailed description please consult Changing the Specimen3WFJ_A.@operation.hlp.
+
+{bmc bm0.bmp}	Move the stage to the specimen change position: Use the joystick or alternatively if the Store/recall option is installed and exchange position set up this can be done automatically
+{bmc bm0.bmp}	From the Menu Bar8ZP0K4@SEM.HLP select Stage.
+{bmc bm0.bmp}	From the drop down Menu select Store/Recall...
+{bmc bm0.bmp}	From the Stage Points List1JKVBGQ@dlgmgr.hlp select
+	$Exchange (The label for the exchange position)
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on Goto Selected.
+	The stage will move to the exchange position.
+
+{bmc bm0.bmp}	Click on {bmc bm24.bmp} to ventilate the chamber. When the chamber is at atmospheric pressure, the door can be pulled open.
+{bmc bm0.bmp}	Remove the previous specimen, if there is one, by loosening the small locating screw holding the specimen stub in position. Note, any one of a variety of specimen holders may be in use - however, they are all held in position with a small locating screw. To loosen the screw, use the smaller of the two ball-ended drivers provided.
+{bmc bm0.bmp}	Insert the new specimen and tighten the locating screw.
+{bmc bm0.bmp}	Close the chamber door.
+{bmc bm0.bmp}	Click on {bmc bm24.bmp} The pumps should now start. when the vacuum status has reached Ready it is indicated in the status bar by Vac:{bmc bm25.bmp}.
+{bmc bm0.bmp}	Resume specimen examination by clicking on EHT:{bmc bm26.bmp} and switch theBeam or EHT on {bmc bm25.bmp}.
+
+Note: some stage movement may be required to locate the specimen area requiring examination.
+
+{bmc bm5.bmp}	Stage Store/Recall139NVAW@Stage.HLP
+	Exchanging the SpecimenK7LJFM@SEM.HLP
+	Mounting the SpecimenFC0THI@SEM.HLP
+	Switch Beam ON1CCTGX@SEM.HLP
+	Switch EHT OFF4D_L0BE@SEM.HLP
+
+$#>KHow to Investigate a Vacuum Leak
+
+A few simple rules:
+
+1.	Before looking for a vacuum leak give the vacuum system time to pump. If you have just changed a specimen in a very humid atmosphere the pump down may take longer. If the specimen is wet it may take several minutes If the stage has been left open for long periods it will take longer to pump.
+
+2.	Vacuum leaks rarely happen by themselves; they are often caused. If you have just done anything to the chamber then that is the most likely cause of the leak. If the specimen has just been changed, check the stage door 'O' ring.
+
+3.	The most frequent cause of leaks is dust or fibers on 'O' rings. 'O' rings may be cleaned with a fluff free tissue. 'O' ring grease should never be used. Grease traps fibers and may cause leaks.
+
+4.	Do not use any metal tools to remove 'O' rings from their grooves. A small scratch in the bottom of a groove causes a big leak.
+
+Checking vacuum levels:
+The control of the vacuum system is automatic and software controlled. Actual state of system and high vacuum are displayed on a tab in the SEM Control windowC9V9DR@TabMgr.HLP: 
+
+
+{bmc bm0.bmp}	Type <Ctrl + G> to display the SEM Control panel, select Vacuum TabC9V9DR@tabmgr.hlp
+{bmc bm0.bmp}	Check the vacuum levels and the status of the vacuum system
+{bmc bm5.bmp}
+
+SEM Control VacuumC9V9DR@TabMgr.HLPairlock@DlgMgr.HLP
+
+Getting a VacuumCVEOUF@operation.hlp
+$#>How to Make Measurements from the Image
+
+There is a wide range of measuring image features.
+{bmc bm0.bmp}	Call the annotation tool bar with <CTRL + A>
+
+Magnification and micron markers:
+Zone Magnification and Micron will display the correct magnification and micron marker bar for the zone of the image in which they are positioned, even if the zone has been frozen.
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm27.bmp} to switch the Zone Magnification3MD42KU@ImgMgr.HLP function ON and click to the zone for which you want to show magnification.
+{bmc bm0.bmp}	Click on {bmc bm28.bmp} to switch the variable Micron Marker6A8V0Z@ImgMgr.HLP function ON and click to the zone for which you want to show the marker.
+{bmc bm0.bmp}	Click on {bmc bm29.bmp} to switch the Fixed Micron Bar36ZDQY@ImgMgr.HLP function ON and click to the zone for which you want to show the marker.
+
+Width and height measurements:
+Line Width displays a box which can be positioned over a feature, such as a semiconductor line, and the width and breadth of the box displayed.
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm30.bmp} to switch Line Width696WT5@ImgMgr.HLP mode ON.
+{bmc bm0.bmp}	Point to the zone in which you want to place the Line Width rectangle and click.
+{bmc bm0.bmp}	Click on the box and dragDRAG@SEM.HLP the handlesK6O1DR@SEM.HLP as required.
+Width Measurement can be made between a related pair of vertical lines:
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm31.bmp} to switch Width MeasurementNQ.CYT@ImgMgr.HLP ON.
+{bmc bm0.bmp}	Point to the zone in which you want to place the measuring lines and click.
+{bmc bm0.bmp}	Click on the lines, pick the handlesK6O1DR@SEM.HLP and dragDRAG@SEM.HLP them.
+Adjustable Width Measurement is similar but also allows to adjust the lines vertically too.
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm32.bmp} to switch Adjustable Width MeasurementG4QYQ5@ImgMgr.HLP ON.
+{bmc bm0.bmp}	Point to the zone in which you want to place the measuring lines and click.
+{bmc bm0.bmp}	Click on the lines, pick the handlesK6O1DR@SEM.HLP and dragDRAG@SEM.HLP them.
+Height Measurement can be made between a related pair of vertical lines:
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm33.bmp} to switch Height Measurement1KIQST5@ImgMgr.HLP ON.
+{bmc bm0.bmp}	Point to the zone in which you want to place the measuring lines and click.
+{bmc bm0.bmp}	Click on the lines, pick the handlesK6O1DR@SEM.HLP and dragDRAG@SEM.HLP them.
+Adjustable Height Measurement is similar but also allows to adjust the lines horizontally too.
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm34.bmp} to switch Adjustable Height Measurement25MKEKI@ImgMgr.HLP ON.
+{bmc bm0.bmp}	Point to the zone in which you want to place the measuring lines and click.
+{bmc bm0.bmp}	Click on the lines, pick the handlesK6O1DR@SEM.HLP and dragDRAG@SEM.HLP them.
+
+Other dimensional measurements:
+Point to Point displays a pair of pointers which can be positioned against features of the image and the distance displayed. The rotational difference will also be displayed.
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm35.bmp} to switch Point to Point5QGH.F@ImgMgr.HLP ON.
+{bmc bm0.bmp}	Point to the zone in which you want to place the Point to Point marker and click.
+{bmc bm0.bmp}	Click on the line, pick the handlesK6O1DR@SEM.HLP and dragDRAG@SEM.HLP them.
+The Angular Measurement facility comprises a related pair of measurement lines which may be adjusted in length, angle and position.
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm36.bmp} to switch Angular Measurement.J1WF7@ImgMgr.HLP ON.
+{bmc bm0.bmp}	Point to the zone in which you want to place the Angular Measurement markers and click.
+{bmc bm0.bmp}	Click on the lines, pick the handlesK6O1DR@SEM.HLP and dragDRAG@SEM.HLP them.
+The Radial Measurement facility is a circle which may be adjusted in diameter.
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm37.bmp} to switch Radial Measurement3BI2_Y0@ImgMgr.HLP  ON.
+{bmc bm0.bmp}	Point to the zone in which you want to place the Radial Measurement circle and click.
+{bmc bm0.bmp}	Click on the circle, pick the handlesK6O1DR@SEM.HLP and dragDRAG@SEM.HLP them.
+The Stored Vector Profile function brings up the profile display along a measurement line on the stored image.
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm38.bmp} to switch Stored Vector Profile1NSP15O@ImgMgr.HLP ON.
+{bmc bm0.bmp}	Draw a line and dragDRAG@SEM.HLP the line with the handlesK6O1DR@SEM.HLP into position. The grey level profile along the line will be shown.
+The Stored Data Histogram function displays a histogram of the stored image.
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm39.bmp} to switch the Stored Data HistogramHYW4LM@ImgMgr.HLP function ON.
+{bmc bm0.bmp}	Draw a rectangle around the area in the image for which you want to show the histogram.
+
+Note: All measurement objects created on screen can be saved or printed with the image by selecting the Overlay plane ON from the Export TIFFB35SJQ@ImgMgr.HLP Setup menu.
+
+{bmc bm5.bmp}	Zone Magnification3MD42KU@ImgMgr.HLP
+	Micron Marker6A8V0Z@ImgMgr.HLP
+	Fixed Micron Bar36ZDQY@ImgMgr.HLP
+
+	Line Width696WT5@ImgMgr.HLP
+	Width MeasurementNQ.CYT@ImgMgr.HLP
+	Adjustable Width MeasurementG4QYQ5@ImgMgr.HLP
+	Height Measurement1KIQST5@ImgMgr.HLP
+	Adjustable Height Measurement25MKEKI@ImgMgr.HLP
+
+	Point to Point5QGH.F@ImgMgr.HLP
+	Angular Measurement.J1WF7@ImgMgr.HLP
+	Radial Measurement3BI2_Y0@ImgMgr.HLP
+	Stored Vector Profile1NSP15O@ImgMgr.HLP
+	Stored Data HistogramHYW4LM@ImgMgr.HLP
+
+	Precision AdjustmentALPNEX@ImgMgr.HLP
+	Object Properties5TRRS5@ImgMgr.HLP
+$#>How to Noise Reduce and Freeze the Image
+
+Comprehensive noise reduction facilities are provided on the instrument, and these are very valuable both as an aid to image optimisation in low signal conditions and as a way of reviewing the image prior to saving or hard-copy.
+Three methods of noise reduction are used: Frame Integration,Frame Averaging and Line Averaging.
+
+{bmc bm3.bmp}	Frame Integration is useful when applied to beam sensitive materials, since the image can be obtained while the beam remains scanning quickly and not allowed to dwell too long on any point of the specimen. In this mode the image formed as the average of a number of successive framesEQNXF7@TabMgr.HLP .
+{bmc bm3.bmp}	In Frame Averaging mode frames are scanned continuously and the image formed as the average of a number of successive frames117K7K3@tabmgr.hlpContinuous_Average_Mode@TabMgr.HLPPixel_Average_mode@TabMgr.HLP
+
+{bmc bm3.bmp}	Line Averaging is useful when the result of the noise reduction needs to be seen without waiting for the cycle to complete. The image is built up by averaging a number of linesPHG8LG@tabmgr.hlp
+
+
+{bmc bm0.bmp}	Use {bmc bm40.bmp} for Frame averaging - (Icon DefinitionZYLMCP@sem.hlp)
+{bmc bm0.bmp}	Use {bmc bm41.bmp} for Frame Integration (Icon DefinitionZYLMFM@sem.hlp)
+{bmc bm0.bmp}	Use {bmc bm42.bmp} for Line averaging (Icon DefinitionZYLMFR@sem.hlp)
+
+Selecting the Scan Speed
+{bmc bm0.bmp}	Click on {bmc bm43.bmp} to scan slower
+{bmc bm0.bmp}	Click on {bmc bm44.bmp} to scan faster
+{bmc bm0.bmp}	Click on menu Scanning - Scan rate to select a specific scan rate
+
+
+Freezing
+To capture an image for storage or printing, the image store must first be frozen2G1LTFP@SEM.HLP. Two methods of freezing are provided which are set in the SEM Control ScanningR5KU.@TabMgr.HLP panel under 
+Freeze on = 
+
+	END FRAME freezes the image at the end of the frame and effectively converts the noise reduction from averaging to integration.
+
+	COMMAND freezes the image when you click on {bmc bm45.bmp} instantly.
+A frozen zone is marked with a blue dot {bmc bm46.bmp} in the lower right corner.
+
+{bmc bm0.bmp}	To resume live imaging, click on the pause icon {bmc bm45.bmp} again. The selected mode of noise reduction will resume.
+
+Note: When used with split or quad screen mode, the above freezing method will selectively freeze the half of the image containing the {bmc bm47.bmp} icon. The icon can be draggedDRAG@SEM.HLP to the zone which shall be frozen.
+If the icon is {bmc bm48.bmp} both halves will be frozen. Double-clicking the anchor icon will change between the two states, i.e. single zone and both zones.
+
+{bmc bm5.bmp}	Use of Different Scan ModesH97GF1@SEM.HLP
+	Scanning Speed Adjustment2M1I0XH@SEM.HLP
+	Scan Mode AdjustmentX.NRMH@SEM.HLP
+	SEM Control ScanningR5KU.@TabMgr.HLP
+	Scanning Speed Selection PanelJVGF.0@SEM.HLP
+	Special Scan Modes1PC3RUV@SEM.HLP
+	Noise Reduction Principle69SN_VZ@SEM.HLP
+	Noise Reduction2ME28UE@TabMgr.HLP
+	Standard Tool Bar Functions4AX50PD@SEM.HLP
+$#>How to Optimise the Image
+
+
+
+{bmc bm3.bmp}	Is the Filament saturated and Gun AlignedS5.G0D@operation.hlp? If not, a loss of signal and resolution will be seen.
+{bmc bm3.bmp}	Is the aperture aligned334XEAC@operation.hlp?. Misalignment prevents good resolution and causes astigmatism
+{bmc bm3.bmp}	Is the stigmation adjusted7TVA0H0@sem.hlp correctly? Incorrect adjustment will show in the image as a directional "smearing" of focus.
+{bmc bm3.bmp}	Is the correct detectorHow_to_Select_the_Detector selected? Information content3LPLSPE@sem.hlp of the image is strongly influenced by the type of detector in use.
+{bmc bm3.bmp}	Is the signal of the detectorHow_to_Adjust_the_Detector_Signal adjusted? Contrast and Brightness play an important part in image appearance. Too much contrast may enhance noise content, not enough contrast makes the image "flat".
+{bmc bm3.bmp}	Is the collector adjustmentHow_to_Adjust_the_Detector_Signal of the secondary detector correct? Incorrect adjustment may result in loss of signal.
+{bmc bm3.bmp}	is the correct scan speedHow_to_Noise_Reduce_and_Freeze_the_Image selected? Lower scan speed reduces noise and enhances representation of small detail.
+
+If none of the above see Advanced Operation18GQS0@operation.hlp
+$#>How to Restore/Save the System Conditions
+
+{bmc bm0.bmp} 	ClickCLICK@SEM.HLP on {bmc bm49.bmp} to restore the system to the conditions as they were when the system was shut down (user specific).
+
+{bmc bm0.bmp}	You may wish to install conditions from a previously stored file. From the File menu, select Load State - you will then see a list of saved state files in your directory (*.MLC). If the required file is in another directory or on a floppy disk, you will need to select the directory as appropriate from the menu. Having highlighted the file, press OK - the conditions will now be installed. 
+	Remember, if any part of the system configuration has changed since the file was saved, you will be asked whether to proceed with the run up or not. It is also a good idea to check the gun alignment.How_to_Align_the_Electron_Beam
+{bmc bm0.bmp}	Save the system conditions for restore without closing interface
+{bmc bm0.bmp}	In the Menu Bar8ZP0K4@SEM.HLP click on File6XNXVL@SEM.HLP.
+{bmc bm0.bmp}	Click on Save for Restore
+
+{bmc bm0.bmp}	Save the system conditions when you Log Off7N1CWQ@SEM.HLP or ExitYDV_M4@SEM.HLP:
+{bmc bm0.bmp}	In the Menu Bar8ZP0K4@SEM.HLP click on File6XNXVL@SEM.HLP.
+{bmc bm0.bmp}	Click on Log OFF or
+{bmc bm0.bmp}	Click on Exit
+{bmc bm0.bmp}	Click on YES when you are asked if you want to save the SEM conditions.
+
+{bmc bm5.bmp}	Store / Restore System Conditions2U782Q@SEM.HLP
+	Standard ConditionsZ1JVVC@LEOM.HLP
+$#>How to Run up the Electron Beam
+
+Note: Only when the operating vacuum is obtained can the high voltage be activated. The high voltage is switched off automatically when the chamber is ventilated (safety interlock). The high voltage is also switched off with poor vacuum in the gun.
+
+There are three main ways to run up the electron beam automatically. Additionally, the beam may be run up manually :
+
+1.	The easiest and most convenient method is simply to clickCLICK@SEM.HLP {bmc bm49.bmp} with the left mouse button. This runs up the beam to exactly the last conditions used in your directory (from the macro file RESTORE0.MLC). 
+
+2.	You may wish to install conditions from a previously stored file. From Menu File6XNXVL@SEM.HLP menu, select Load State2ICG_3B@SEM.HLP - you will then see a list of saved state files in your directory. If the required file is in another directory or on a floppy disk, you will need to select the directory as appropriate from the menu. Having highlighted the file, press OK - the conditions will now be installed. It is also a good idea to check the electron beam alignmentHow_to_Align_the_Electron_Beam. 
+
+3.	If you are unsure what conditions to use, a useful facility is provided in Menu File6XNXVL@SEM.HLP, called StandardI3EDZI@SEM.HLP. Selection of Standard executes a default run up from which the conditions may be further adjusted. 
+
+If any part of the system configuration has changed since the file was saved, you will be asked whether to proceed with the run up or not.
+
+Manually: On the Status BarRDJHU5@SEM.HLP click on EHT and select Beam On {bmc bm50.bmp}  The gun will be run up to {bmc bm25.bmp}. To adjust parameters you may use Menu Tools6V_3A4@SEM.HLP, Goto Control Panel1XGV9QP@SEM.HLP, SEM Control Gun5_0HOO@TabMgr.HLP. 
+
+{bmc bm5.bmp}	Switching the Electron Beam124_W53@sem.hlp
+
+	Menu Beam6XJTKT@SEM.HLP
+
+
+	Status BarRDJHU5@SEM.HLP
+	Status Bar Parameter ControlT3KQVM@SEM.HLP
+	SEM Control Gun5_0HOO@TabMgr.HLP
+
+$#>KHow to Select Magnification
+
+Magnification can be adjusted with the mouse, selected from the magnification table, selected from a predefined list, or typed in with the keyboard:
+
+Mouse selection:
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on {bmc bm4.bmp} with the left mouse button
+{bmc bm0.bmp}	Adjust magnification moving the mouse and holding down the left mouse button.
+{bmc bm0.bmp}	Sensitivity of mouse action can be selected in the Status BarRDJHU5@SEM.HLP clicking on {bmc bm8.bmp} and {bmc bm9.bmp} or using <Tab> {bmc bm51.bmp}.
+{bmc bm0.bmp}	Magnification is displayed in the Status Bar when the mouse is in Mag/Focus mode.
+
+Magnification table:
+{bmc bm0.bmp}	With function key <F4> you may toggle through the set of magnifications as set in Preference Selection / Magnification Table.1_WKN3Z@LEOServ.HLP
+{bmc bm0.bmp}	Function keys <Shift + F4> reset to the original magnification before you pressed <F4> the first time.
+
+Predefined list:
+{bmc bm0.bmp}	Click on {bmc bm52.bmp} MAG-field with the right mouse button. The list of predefined magnifications opens.
+{bmc bm0.bmp}	Click on a value to select it.
+{bmc bm0.bmp}	Click on Close button to close the list.
+
+Keyboard input:
+{bmc bm0.bmp}	Click on {bmc bm52.bmp} MAG-field with the left mouse button. The parameter input panel opens.
+{bmc bm0.bmp}	Enter the magnification value.
+{bmc bm0.bmp}	Close the panel clicking on OK button.
+
+{bmc bm5.bmp}	
+	Magnification TableFWN3HJ@SEM.HLP
+	Magnification Table Setup1_WKN3Z@LEOServ.HLP
+	Predefined List6WI9IQ@SEM.HLP
+	Status Bar Parameter ControlT3KQVM@SEM.HLP
+$#>KHow to Select the Detector
+
+Which detector to use depends on the imaging characteristics of the individual detector.
+
+Changing the detector channel:
+{bmc bm0.bmp}	Select the Detection / Detectors menu and clickCLICK@SEM.HLP on the title of the desired detector from the list displayed.
+{bmc bm0.bmp}	Adjust contrast and brightnessHow_to_Adjust_the_Detector_Signal as necessary in the normal way
+	Note: Contrast and brightness settings for each detector will be recalled on switching
+
+
+Split screen image in different signals:
+{bmc bm0.bmp}	Click on {bmc bm53.bmp} to switch to split mode.
+	Note: Any previous detector and/or LUT selections for each half will be recalled
+{bmc bm0.bmp}	Drag the {bmc bm47.bmp} icon to the half intended to display the new signal.
+{bmc bm0.bmp}	Select the Detection / Detectors menu and clickCLICK@SEM.HLP on the title of the desired detector from the list displayed.
+{bmc bm0.bmp}	Repeat for other half as required
+Note: Freeze and Contrast and Brightness can be adjusted specifically for the half containing the anchor. Gamma, Invert, and Mixing, apply to both zones in common.
+
+Signal Mixing
+Mixing is used to mix the proportions of signals from two detectors.
+{bmc bm0.bmp}	Type <Ctrl + G>  to display the SEM Control Panel
+{bmc bm0.bmp}	Select the Detectors1WE3854@tabmgr.hlp tab to bring it forward. Proceed as above except now Signal B can be assigned to any of the installed detectors.
+{bmc bm0.bmp}	Select Mixing {bmc bm54.bmp}.
+{bmc bm0.bmp}	Use the Signal scroll bar2HOSDE@SEM.HLP to vary the ratio of Signal (A) to Signal (B).
+	Note: Having set this up, it can all be saved through the Save StateI6NCK5@SEM.HLP function.
+
+{bmc bm5.bmp}	
+
+	How to Adjust the Detector SignalHow_to_Adjust_the_Detector_Signal
+	Signal PathM6O594@SEM.HLP
+	Split Mode1QEXFRQ@SEM.HLP
+	Store / Restore System Conditions2U782Q@SEM.HLP
+	Menu File Save StateI6NCK5@SEM.HLP
+
+$#>KHow to Store or Load an Image
+
+After finding an area of interest on the specimen, fully optimising the imageHow_to_Optimise_the_Image and freezingHow_to_Noise_Reduce_and_Freeze_the_Image it, it may then be stored to disk for future use. 
+Stored images can be loaded back into the image store for further processing.
+
+Save the image:
+{bmc bm0.bmp}	Click with the Right button on the image and select  Export TIFFB35SJQ@ImgMgr.HLP 
+{bmc bm0.bmp}	Click CLICK@SEM.HLPon the Save8BP7F1@ImgMgr.HLP tab to bring it forward.
+{bmc bm0.bmp}	Select the parameters for saving:
+{bmc bm0.bmp}	Select the areaUKJGL_@ImgMgr.HLP to save
+{bmc bm0.bmp}	Select what to mergeFFGUZT@ImgMgr.HLP into the image
+{bmc bm0.bmp}	Input file name (see also settings1M2_ZSF@ImgMgr.HLP)
+{bmc bm0.bmp}	Input user text8CBB8D@ImgMgr.HLP
+{bmc bm0.bmp}	Select the Settings1M2_ZSF@ImgMgr.HLP tab to bring it forward.
+{bmc bm0.bmp}	Select grey or colour radio button2R6X4F@SEM.HLP
+{bmc bm0.bmp}	Select As Seen if the image pixels are to be transformed by the Look Up Table before exporting
+{bmc bm0.bmp}	Select Palette if the palette is to be saved in the file (recommended)
+{bmc bm0.bmp}	Select the amount of spatial reduction to be performed on the exported image
+{bmc bm0.bmp}	Select the Filename FormatF7ZT7A@ImgMgr.HLP
+{bmc bm0.bmp}	Select the Data8BA7CX@ImgMgr.HLP tab to bring it forward. This tab allows you to select parameter data to be saved in Leo Reserved Tag fields embedded in the TIFF file.
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP ADD to select a parameter to be added to the list
+{bmc bm0.bmp}	Select a parameter in the list and click REMOVE to remove it from the list
+{bmc bm0.bmp}	Click CLICK@SEM.HLPon the Save8BP7F1@ImgMgr.HLP tab to bring it forward again
+{bmc bm0.bmp}	Save the file by pressing the SAVE button
+
+Load an image:
+{bmc bm0.bmp}	Call the Import TIFF1JWFSX0@ImgMgr.HLP menu with <CTRL + O>
+{bmc bm0.bmp}	Select the Load6LG1R4@ImgMgr.HLP tab to bring it forward. The list box displays the current files in the image directory.
+{bmc bm0.bmp}	Click on GALLERY button in the Load tab to display the Image GalleryContents@Gallery.HLP for a quick pictorial overview.
+{bmc bm0.bmp}	Select a file in the list box of the Load tab to display it's information and user text8CBB8D@ImgMgr.HLP
+{bmc bm0.bmp}	Select the amount of spatial reduction required
+{bmc bm0.bmp}	Select where to loadCTB1BD@ImgMgr.HLP the image
+{bmc bm0.bmp}	ClickCLICK@SEM.HLP on Standard Data_ZA_P9@ImgMgr.HLP tab to inspect the data which were stored with the image
+{bmc bm0.bmp}	Click on User Data19Z7CGA@ImgMgr.HLP tab to inspect the data which were selected by the user to be stored with the image
+
+Selecting the directory:
+This is done via the Change Directory  button on the Load/Save Tab
+This function permits the Image Directory11JZ0YM@LEOServ.HLP to be selected or changed.
+
+{bmc bm5.bmp}	Export TIFFB35SJQ@ImgMgr.HLP
+		Export TIFF Save8BP7F1@ImgMgr.HLP
+		Export Tiff Settings1M2_ZSF@ImgMgr.HLP
+		Export Tiff Data8BA7CX@ImgMgr.HLP
+
+	Import TIFF1JWFSX0@ImgMgr.HLP
+		Import Tiff Load6LG1R4@ImgMgr.HLP
+		Import Tiff Standard Data_ZA_P9@ImgMgr.HLP
+		Import Tiff User Data19Z7CGA@ImgMgr.HLP
+		Image GalleryContents@Gallery.HLP
+$#>How to Switch off the Electron Beam
+
+
+
+
+After completing a specimen study, and the microscope is to be left for a while, it is advisable to switch off the Electron Beam
+
+{bmc bm0.bmp}	In the Status Bar click on EHT:
+{bmc bm0.bmp}	Select Shutdown from {bmc bm55.bmp}. The gun is run down, the indicator changes to {bmc bm26.bmp}.
+
+
+
+{bmc bm5.bmp}	Switching the Electron Beam124_W53@SEM.HLPSwitch_EHT_OFF@SEM.HLPSwitch_Gun_OFF@SEM.HLPStandby_Beam_State@operation.hlp
+	SEM Control Gun5_0HOO@TabMgr.HLP
+
+
+$#>KHow to Take a Micrograph or print
+
+Whether you can take a micrograph or print will depend on the configuration of the microscope, i.e. whether a  printer or the High Resolution Recording Unit (HRRU), or both, have been installed.
+
+Preparation:
+{bmc bm0.bmp}	Optimise the imageHow_to_Optimise_the_Image area to be printed, including focusHow_to_Adjust_Focus and stigmationHow_to_Correct_for_Astigmatism
+{bmc bm0.bmp}	Optimise contrast and brightnessHow_to_Adjust_the_Detector_Signal
+{bmc bm0.bmp}	Apply noise reductionHow_to_Noise_Reduce_and_Freeze_the_Image, as necessary, then freeze the image
+
+Print on the default Windows Printer:
+ If necessary
+{bmc bm0.bmp}	From the Task Bar select Start - Settings - Printers 
+{bmc bm0.bmp}	Double click on the required printer icon
+{bmc bm0.bmp}	From the Printer Window menu select Printer - Set As Default (if this is not already selected)
+
+{bmc bm0.bmp}	On the image click the right mouse button and select Send To - Printer
+{bmc bm0.bmp}	Select which settingsFFGUZT@ImgMgr.HLP should be merged and printed.
+{bmc bm0.bmp}	Select size and position of the print on the page
+{bmc bm0.bmp}	Click on Print button to start the printout
+
+Print On CP750 Printer:
+{bmc bm0.bmp}	Click on {bmc bm56.bmp} to clear the screen ready for printing
+{bmc bm0.bmp}	Initiate the print on the CP750
+{bmc bm0.bmp}	Type <Shift + F3> to restore User Interface
+
+Photographic print:
+{bmc bm0.bmp}	With the right mouse button clickCLICK@SEM.HLP in the Image WindowGIRNF0@SEM.HLP
+{bmc bm0.bmp}	Select Send to and HRRUHRRU@SEM.HLP, the Photo panel opens.
+{bmc bm0.bmp}	If you have used the HRRU in this session before and you want to use the same settings click on the PhotoXYH.74@ImgMgr.HLP button to start the exposure.
+{bmc bm0.bmp}	If you have not used the HRRU in this session or if you want to change parameters then set it up:
+{bmc bm0.bmp}	Click on Settings12O7D55@ImgMgr.HLP tab to bring the panel forward.
+{bmc bm0.bmp}	Select the parameters from the drop-down listsXYVXW3@SEM.HLP (film speed, camera type, GammaGAMMA@SEM.HLP, exposure time and mode)
+{bmc bm0.bmp}	Click on Selection16QR3DO@ImgMgr.HLP tab to bring the panel forward.
+{bmc bm0.bmp}	Select camera image source from the drop-down listXYVXW3@SEM.HLP, overlay, annotation and set brightness and contrast of the exposure with the scroll bars2HOSDE@SEM.HLP.
+{bmc bm0.bmp}	Click on PhotoXYH.74@ImgMgr.HLP tab to bring it forward.
+{bmc bm0.bmp}	Click on Photo button to start the exposure. The progress bar indicates how far an individual exposure has progressed. Completion of the photo is indicated by Camera status = Idle.
+{bmc bm0.bmp}	Develop the print and make any further adjustments as necessary.
+{bmc bm0.bmp}	If you use direct developing film the Photo Development TimerHWQ376@ImgMgr.HLP.helps for proper timing.
+
+{bmc bm5.bmp}	Export to the System PrinterNW65H_@ImgMgr.HLP (Setup)
+	Print Setup DialogDVXXAS@ImgMgr.HLP
+		Standard Printer Dialog4_OSSI@ImgMgr.HLP
+
+	Export to the HRRU Device67JV59@ImgMgr.HLP
+		HRRU PhotoXYH.74@ImgMgr.HLP
+		Photo Selection Dialog16QR3DO@ImgMgr.HLP
+		Photo Settings Dialog12O7D55@ImgMgr.HLP
+		Photo Development TimerHWQ376@ImgMgr.HLP
+$#How to For Stages
+$#How To save/load User DatazonesJ3NDYE@imgmgr.hlp
+You may create multiple datazones, perhaps for different types of applications.
+
+{bmc bm0.bmp}	Call the annotation tool bar with <CTRL + A>
+{bmc bm0.bmp}	Create a Sticky Panel object by clicking on the icon {bmc bm1.bmp}  then Click and Drag on the image to create the required size and position of rectangle.
+{bmc bm0.bmp}	Change the properties of the panel by right clicking on it while selected and selecting the Properties required 
+{bmc bm0.bmp}	Create the objects you want on the Datazone, e.g. Parameters by clicking on {bmc bm2.bmp} then clicking on the image
+{bmc bm0.bmp}	Drag the objects onto the Sticky Panel to the required positions
+{bmc bm0.bmp}	Lock the panel by selecting it, right button click on it, select Properties - Lock this panel
+{bmc bm0.bmp}	Select the panel, right button click on it, select Save As User Datazone. You will be asked to specify a filename.
+This function does not affect the current Datazone.
+
+To load your Datazone use the Interface main menu View - Datazones - Load User Datazone

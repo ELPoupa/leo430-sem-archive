@@ -1,0 +1,32 @@
+[OPTIONS]
+TITLE=LEO Parachute
+CONTENTS=About LEO Parachute
+COPYRIGHT=Copyright 1999 - LEO Electron Microscopy Inc.
+LCID=0x409 0x0 0x0
+CNT=parachute.cnt
+COMPRESS=12
+
+[WINDOWS]
+main="LEO Parachute Help",(127,49,732,713),20736,(255,255,226),(192,192,192),f3
+
+[FILES]
+PARACHUTE.rtf
+
+[MAP]
+Saving a LEO User Directory 12
+Restoring from Removable Media 8
+Viewing Comments 14
+Backup and Restore History 15
+Copy Files to a Removable Disk 4
+Copy Files to a Network Drive 5
+Adding Comments to a Backup 10
+Close all LEO Programs 1
+Restoring a LEO User Directory 13
+The Restore Function 7
+About LEO Parachute 0
+Copy Files to the Local Hard Drive 3
+Restoring from a Network Drive 9
+User Names and Passwords 11
+Mapping a Network Drive 6
+Log On 2
+

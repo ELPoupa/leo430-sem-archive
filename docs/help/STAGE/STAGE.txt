@@ -1,0 +1,480 @@
+﻿$#K$Exchange
+This globalGlobal_Labels  label is conventionally used to hold the specimen exchange position.
+
+Note: When the stage is positioned near the $Exchange positionK the Touch AlarmTouch_Alarm is suppressed
+
+See also
+Points List Dialog1JKVBGQ@dlgmgr.hlp
+How to automate Specimen Exchange6BJV_NJ@how_to.hlp
+$#>Activate Backlash
+
+This menu lets you switch Stage Backlash88HTWS@Sem.HLP ON. or OFF.
+
+{bmc bm0.bmp}	If you clickCLICK@Sem.HLP ON it is marked with {bmc bm1.bmp}. Backlash correction is then performed after each stage movement.
+
+{bmc bm0.bmp}	Clicking on Do Backlash causes the stage to execute a backlash correction operation.
+
+Backlash correction is defined in Preference Selection Stage3TQY_S@Errors.HLP tab.
+$#KCentre Feature
+This function enables the user to select an area of the image with the mouse. This area will be positioned in the centre of the image area by moving the stage and/or the beam in the appropriate direction. The magnification is increased so that the area fills the field of view.
+
+{bmc bm2.bmp}	Call Stage from the Menu Bar8ZP0K4@Sem.HLP with <ALT + G> and clickCLICK@Sem.HLP on Centre Feature .
+{bmc bm3.bmp}	Use <CTRL + SHIFT + TAB> from the keyboard to activate the function.
+
+{bmc bm4.bmp} When the function is activated, the cursor is changed to a cross. Point to the top left corner of the feature field and dragDRAG@LEO_1500.HLP a rectangle around the feature.   When the mouse button is released the feature area will be moved to the centre, the magnification is increased and the function terminates.   The cursor is switched back to it's normal appearance.  To abort the function click the right mouse button.		{bmc bm5.bmp}	
+
+The range of centration and its accuracy is determined by the Centre Point / Feature SettingsCentre_Point___Feature_Settings.
+If Survey Mode4_DGYJ5@tabmgr.hlp is active Centre Feature will also switch to Resolution ModeJZNOU8@tabmgr.hlp
+{bmc bm6.bmp}	The accuracy of the stage positioning for high magnification may require that stage backlash correctionActivate_Backlash is on and even this may not be adequate for very high magnification.
+
+{bmc bm7.bmp}	When this function is performed the initial magnification is saved, and may be restored by pressing <F4>.  If Survey ModeSurvey_Mode@tabmgr.hlp was active when Centre Feature was performed <F4> also switches from Resolution ModeJZNOU8@tabmgr.hlp to Survey Mode
+	{bmc bm8.bmp} Note that subsequent presses of <F4> perform Mag Table functions (until another Centre Feature function is performed).
+$#Centre Point
+
+This function allows the user to indicate a point on the image which will be moved into the centre of the image by moving the stage and/or the beam in the appropriate direction. 
+For immediate operation hold down the Shift key {bmc bm9.bmp} and double click {bmc bm10.bmp} on the feature to be centered.
+
+{bmc bm2.bmp}	Call Stage from the Menu Bar8ZP0K4@Sem.HLP with <ALT + G> and click on Centre Point .
+
+{bmc bm3.bmp}	Use <CTRL + TAB> from the keyboard to activate the function.
+
+{bmc bm4.bmp} While the function is activated, the cursor is changed to a cross. Point to the feature to be centered and clickCLICK@Sem.HLP.   The feature will be moved to the centre and the function terminates.   The cursor is switched back to it's normal appearance.  To abort the function click with the right mouse button.		{bmc bm11.bmp}	
+
+The range of centralisation and its accuracy is determined by the Centre Point / Feature SettingsCentre_Point___Feature_Settings.
+If Survey Mode4_DGYJ5@tabmgr.hlp is active Centre point will also switch to Resolution ModeJZNOU8@tabmgr.hlp
+
+{bmc bm6.bmp}	The accuracy of the stage positioning for high magnification may require that stage backlash correctionActivate_Backlash is on and even this may not be adequate for very high magnification.
+
+$#>KCentre Point / Feature Settings
+
+The method used to centre the image may be selected to one of the following:
+
+Stage and Beam
+The software will attempt to use the beam shift to move the point to the centre of the screen. If the movement is outside the range of the beam shift then a stage movement will be used, with the positioning such that following the move the beam shift will be zero.
+
+Stage Only
+The stage is moved to position the point at the centre. The beam shift remains unchanged.
+
+Beam Only
+The software attempts to use beam shift to move the point to the centre. If the movement is outside the range of the beam shift then an error message is given and the position remains unchanged.
+
+{bmc bm0.bmp}	Click on the SEM Control StageKH.ZCT@TabMgr.HLP tab with the right button, then select Centre Point / Feature from the menu.
+
+{bmc bm4.bmp}	Click on the method to be activated which is then marked with {bmc bm1.bmp}
+
+{bmc bm7.bmp}	Use Stage Only for low magnifications, Stage and Beam for medium magnifications, and Beam Only for high magnifications.
+$#Compucentric Rotation
+When the  stage is rotated, there is an offset in the X and Y axes (unless the beam is positioned on the mechanical centre of rotation).
+ If the stage is at a non zero tilt angle there will also be an offset in the Z axis.
+
+Compucentric rotation makes these offsets to the X, Y and Z axes in response to a change of the rotation angle.
+
+Available on Cartesian 95, Macro and Fjeld Stages
+
+Note: On the Cartesian 95 stage use of compucentric rotation mode when the stage is tilted requires that the sample height calibration has been performed.
+$#KCompucentric Tilt
+When a cartesian 95 stage is tilted there is an offset in the Y and Z axes.
+
+Compucentric tilt makes these offsets to the Y and Z axes in response to a change of the tilt angle.
+
+This function is only available with the Cartesian 95 stage.
+$#>Defining the Stage Scan Area
+   
+You can define the stage scan area in a number of ways:  {bmc bm12.bmp}  Manually enter the Start Coordinates and End Coordinates   (clickCLICK@Sem.HLP on the parameter field) and then use Stage Calculate ScanStage_Calculate_Scan.  {bmc bm12.bmp}  Manually enter the  Stage Scan Start PositionStage_Scan_Fields , Field Size and the number of Fields.  {bmc bm12.bmp} Position the stage at the location where the scan is to start (using the Joystick, SEM Control StageKH.ZCT@TabMgr.HLP tab or Centre PointCentre_Point ) then press Stage Scan Start HereStage_Scan_Start_here.   Then position the stage at the location where the scan is to end and press Stage Scan ends hereStage_Scan_End_here.  {bmc bm12.bmp}  Where the whole area to be scanned can be viewed at a suitable low magnification use Select AreaSelect_Scan_Area. Then set the magnification to the required value for scanning and press Stage calc scan. 	 {bmc bm13.bmp}	
+{bmc bm8.bmp}	Note that the stage position represents the position of the centre of the image.
+
+$#KGlobal Labels
+Global labels are labels which apply to all lists regardless of User.
+A global label starts with the $ character.
+Only a user with Supervisor privilege may create / modify /delete a global label
+$#>Record Stage Positions
+
+Position List:
+A list of stage positions called Stage Points List139NVAW  may be maintained in memory.
+The data saved will be the position of each stage axis, the working distance, the magnification and the beam shift distance (i.e. beam offset distance).
+
+Mark:
+This function causes the current stage position and associated data to be entered into the Stage Points List but without a label. 
+The label is M_ is entered with an automatically incremented number.
+{bmc bm8.bmp} Note that this function is also available as a special Macro1815F7K@leom.hlp function.
+
+Label:
+This function brings up a Label Request Dialog box into which the user may type any string of text to identify the current stage position. 
+OK will enter the position and label into the list. 
+Cancel will remove the Label Request Dialog box without action.
+
+Goto:
+The stage may be moved to positions in the list using the First, Next and Previous functions.
+
+On Goto:
+When moving to a stored position the working distance and magnification may be optionally set to the values stored at that point by marking these functions in the menu line {bmc bm1.bmp}.
+
+Move XY Only. If this is selected {bmc bm1.bmp}. only the XY co-ordinates of a point are used for the move.  This does not apply to Global LabelsGlobal_Labels
+
+
+$#>Save Coordinate File
+
+This function saves the current list of stored position and associated data to a user defined file with the extension *:XYZ
+   
+{bmc bm14.bmp} ClickCLICK@Sem.HLP on Save As in the File Menu.  {bmc bm14.bmp} Enter the file name without extension. The extension is automatically added.  {bmc bm14.bmp} OK saves the file in the User Directory.  {bmc bm14.bmp} Cancel terminates without saving.  {bmc bm14.bmp} The window is closed with {bmc bm15.bmp} (equals Cancel).		 {bmc bm16.bmp}	
+.
+$#>Select Scan Area
+
+This function is used to set the Stage Scan Start PositionStage_Scan_Fields and  Stage Scan End positionStage_Scan_Fields  when the whole of the area to be scanned is visible at a suitable low magnification.
+
+It is used as follows:
+   
+ {bmc bm4.bmp} When the function is activated, the cursor is changed to a cross. Point to the top left corner of the scan area field and  dragDRAG@Sem.HLP a rectangle around the scan area.    The cursor is switched back to it's normal appearance.		{bmc bm5.bmp}	
+
+$#>Stage Calculate Scan
+
+This function performs the following calculation.
+
+The field of view is determined from the current magnification (i.e. the physical dimensions on the specimen of the image in normal mode)
+
+The field of view is used with the Field Overlap to determine the Field Offset
+
+Using the Stage Scan Start Position, the Stage Scan End position and the Field Offset the Number of Fields is determined.
+
+See also Stage Scan FieldsStage_Scan_Fields
+$#>Stage Close Map
+
+This function removes the stage map.
+
+{bmc bm0.bmp}	ClickCLICK@Sem.HLP with the right mouse button to open the pop up menu {bmc bm17.bmp}.
+
+{bmc bm14.bmp} Select Quit Map  <Q> to terminate the Stage Map function.
+
+{bmc bm8.bmp}	Note that any positions recorded are preserved and may be saved/used by the Store / Recall139NVAW functions.
+
+$#KStage Compucentric control
+The optional licenced Compucentric Control Software is designed to allow eucentric tilt and rotation stage movements by  computed corrections for the movements of the relevant axes.
+
+Functions provided are:
+Compucentric RotationCompucentric_Rotation
+Compucentric TiltCompucentric_Tilt
+Stage Horizontal alignmentStage_Horizontal_alignment
+
+Compucentric movement is performed using the SEM Control Stage TabKH.ZCT@tabmgr.hlp, selecting the Compucentric mode required.
+
+Before compucentric functions can be used calibration is required.
+
+Calibration is divided into two parts. First the rotation centre must be found which is sufficient for compucentric rotation and Stage Horizontal Alignment (stage tilt = 0). This will normally only need to be performed once each time the stage is serviced. However to achieve the ultimate accuracy it may be necessary to recalibrate the rotation centre each time the stage is initialised.
+
+
+To allow compucentric tilt (or compucentric rotate with a tilted stage) it is necessary to determine the specimen thickness, which is performed by the Compucentric Setup Wizard. Clearly this must be done each time the specimen is changed for one which has a different thickness.
+
+See Also 
+Calibrate Stage centre of rotation4YI0_82@dlgmgr.hlp 
+Compucentric Setup4YI0_83@dlgmgr.hlp.
+Stage Horizontal Alignment dialog4YI0_84@dlgmgr.hlp
+$#Stage Control Overview
+
+The stage is controlled either via the joystickQGFYFC@joystick.hlp  or by ARROW Keys1ABTKON@Sem.HLP.
+
+Initially the stage is in Joystick mode, Arrow Key Mode is only possible when the stage has been initialisedStage_Initialise.
+Centre PointCentre_Point  provides an alternative method of moving the stage to position a feature in the centre of the image.
+
+Centre FeatureCentre_Feature moves a selected area into the centre of the field of view and increases the magnification so that it fills the image area.
+
+Store / Recall139NVAW functions are provided which administer a memory list of stage positions which may also be saved to or loaded from file.
+
+Stage LimitsStage_Limits may be set by the user.
+
+Stage RegistrationStage_Registration User defined co-ordinate systems
+Stage Compucentric controlStage_Compucentric_control 
+Survey Mode4_DGYJ5@tabmgr.hlp
+Stage ScanStage_Scan moves the stage in a preselected raster.
+Stage MapStage_Map moves the stage to preselected positions.
+
+Other stage related settings available on the SEM Control Stage TabKH.ZCT@tabmgr.hlp are:
+Protected ZK8LPPZ@tabmgr.hlp
+Z Move on Vent109ZUMH@tabmgr.hlp
+Track Z4PA8YV@tabmgr.hlpjoystick_disable@tabmgr.hlp
+
+
+$#KStage Horizontal alignment
+
+This function enables the user to identify two points on a linear feature of the specimen and will rotate the stage to make the feature horizontal and maintains visibility of the second point.
+$#Stage Initialise
+
+Stage initialisation is the process by which the stage control system identifies the current position of the stage relative to its limits. Therefore any function requiring absolute stage movement is disabled until the stage has been initialised. 
+
+{bmc bm2.bmp}	From the Menu Bar8ZP0K4@Sem.HLP call Stage with <ALT + G> and then Stage Initialise with <I>.
+
+The stage will then be driven until it reaches its limits which is at a known position. 
+Detailed Sequence_.YOE.@tabmgr.hlp
+$#KStage Limits
+
+This panel allows to limit the range of travel for each motorised axis of the stage individually.
+
+{bmc bm2.bmp}	Select Tools with <ALT + T> from the Menu Bar8ZP0K4@Sem.HLP , then clickCLICK@Sem.HLP on Goto Panel and select Stage Limits panel from the list.
+
+{bmc bm0.bmp}	Click on the SEM Control StageKH.ZCT@TabMgr.HLP tab with the right button, then select Stage Limits from the menu.
+   
+{bmc bm4.bmp} Click on a Limit field to open the parameter input dialog.  {bmc bm0.bmp} Click on a Limit field with the right mouse button to open a  Predefined List6WI9IQ@Sem.HLP dialog.  For additional information on see Parameter Control Analogue129F2JR@Sem.HLP  {bmc bm6.bmp} If you try to enter a value outside the physical range of a stage travel a warning is displayed and no action is taken. 		 {bmc bm18.bmp}	
+See also Stage Limits OverviewStage_Limits_Overview
+$#>Stage Limits Overview
+
+Each axis (with the exception of the Rotate Axis) has the following limits.
+
+Physical limits:
+
+{bmc bm12.bmp}	Low Outer limit - a physical limit switch - hitting this loses stage position
+
+{bmc bm12.bmp}	Low Inner limit - a physical limit switch - hitting this should not lose stage position (depends on speed of travel on impact)
+
+{bmc bm12.bmp}	High Inner limit - a physical limit switch or soft limit defining extent of travel - no loss of stage position on impact
+
+{bmc bm12.bmp}	High Outer limit - a physical limit switch - loses position on impact
+
+The Rotate axis optionally has a limit switch. This is only used during initialisation to register position. For all other purposes the limit is not used and the rotation is continuous.
+
+User set limits:
+
+{bmc bm12.bmp}	Low User limit  - a user defined limit to avoid specimen collisions- no loss of stage position on impact
+
+{bmc bm12.bmp}	High User limit - a User defined limit to avoid specimen collisions - no loss of stage position on impact
+$#Stage Map
+
+The Stage Map function enables a frozen image in zone 0 to be used as a map for selecting stage positions.
+
+{bmc bm2.bmp}	Call Stage from the Menu Bar8ZP0K4@Sem.HLP with <ALT + G> and then call Stage Map with <A>.
+
+To use this function :
+
+{bmc bm14.bmp} Select Scanning with <ALT + S> and then Split Mode1QEXFRQ@Sem.HLP with <P> form the Menu Bar.
+
+{bmc bm14.bmp} Adjust the stage position and a low magnification such that the required area of the specimen is wholly displayed.
+
+{bmc bm14.bmp} Freeze Zone 0.
+
+{bmc bm14.bmp} Select Stage Map from the Menu Bar or Recall DialogStage_Recall_Dialog from the pop up menu when pressing the right mouse button in the image window when Stage Map is active..
+
+This will cause the current stage position and magnification to be saved for the map.
+
+{bmc bm14.bmp} The magnification may now be increased and the other live zone used to observe features of interest.
+
+{bmc bm14.bmp} The mouse may be used to select a point on the 'map' and the stage (and hence live image) moved to the required position.
+
+{bmc bm14.bmp} The Store / Recall139NVAW functions may be used to save and recall positions.
+
+{bmc bm14.bmp} The map is removed using Stage Close MapStage_Close_Map
+$#>Stage Overview
+Only applicable to systems with motorised Stages
+For additional Information see Stage Manager Tabbed DialogQGFYFC@stgmgr.hlp and the following topics
+		Touch AlarmTouch_Alarm
+
+
+
+		Joystick ControlQGFYFC@joystick.hlp Explains about the dual Joystick
+		Stage InitializeStage_Initialise explains how to initialise the stage to set it to precise starting positions.
+		Force Initialise.4EJU@tabmgr.hlp Explains Emergency initialisation.
+		Stage ControlStage_Control_Overview shows ways to drive the stage directly.
+		Stage Navigation.QDRS7@stgmgr.hlp shows graphically the side and perpendicular views of the sample holder
+		Store / Recall139NVAW of stage positions for quick inspection on distinct specimen locations.
+		Stage RegistrationStage_Registration User defined co-ordinate systems
+		Stage Compucentric controlStage_Compucentric_control 
+		Survey Mode4_DGYJ5@tabmgr.hlp
+		Centre PointCentre_Point moves a selected point in the image window to the screen centre.
+		Centre FeatureCentre_Feature moves a selected area in the image window to the centre and increases the view to full size.
+
+		Stage ScanStage_Scan moves the stage in a preselected raster.
+		Stage MapStage_Map uses half of split screen as map to move the stage to selected positions.
+
+		Preference Selection Stage3TQY_S@leoserv.HLP sets special parameters for the stage (backlash88HTWS@Sem.HLP etc.).
+{bmc bm3.bmp}		Key F12 aborts the stage movement
+
+{bmc bm6.bmp}  Although it is possible to operate the Stage with the Joystick while it is not initialised it is STRONGLY RECOMMENDED that the stage is initialised as soon as possible to obtain full protection of the high limits which are only applicable after initialisation.
+$#KStage Points List ADD
+   
+{bmc bm14.bmp} Type any string of text to identify the current stage position.   {bmc bm14.bmp} OK will enter the position and label into the Stage Points List.  {bmc bm14.bmp} Cancel will remove the Label Request box without action.  {bmc bm14.bmp} Close the Label Request box with {bmc bm15.bmp} (same as Cancel).		{bmc bm19.bmp}	
+
+{bmc bm6.bmp} Labels starting with M_ are not permitted. Labels of the form M_nnn are points inserted by the Mark Point1BLW1GC@TabMgr.HLP function.
+
+If you have the Supervisor Privilege you may add the stage position as Global Label. Precede your string of text with a $.
+This Global Label position will the be added to list of points which is independent of the Users Directory. So this position becomes available to all users. 
+If you do not have the privilege an error warning pops up:
+
+		{bmc bm20.bmp}
+$#Stage Points List Box
+
+A list box displays (in alphanumeric order) the currently stored position labels.
+
+To indicate if the stage is currently positioned at the highlighted entry the legend actioned! will be displayed next to the text entry window when this is the case.
+
+Global Labels may have been set which will list the stage position in all individual stage points lists. The label is starting with $. 
+They may be used for such things as  the specimen exchange position. These Global Labels will therefore be listed in addition to the users specific stage points.
+
+The current points list in memory will be saved in the current User Directory on Log Off or if the user directory is changed. 
+When a User Directory is selected the current points list file in that User Directory is loaded.
+
+There is a Global Points List maintained which is independent of the User Directory.
+
+Global Labels ($...) may only be created/modified/deleted by users with Supervisor privilege.
+ 
+$#Stage Points List Delete
+
+This function deletes the currently highlighted list box entry from the Stage Points List.
+
+If you have the Supervisor Privilege you may delete stage points with Global Labels. They are preceded with a $-character.
+This Global Label position is independent of the Users Directory. So this position is available to all users. 
+If you do not have the privilege an error warning pops up:
+
+		{bmc bm20.bmp}
+
+{bmc bm6.bmp}  If you delete a Global Label you delete it for all users.
+
+{bmc bm8.bmp}	Deleting a label M_nnn will cause other labels M_nnn following to be renumbered.
+$#KStage Points List File
+
+The list may be saved to file or the contents of the list replaced from a file using the load function.
+   
+{bmc bm4.bmp} ClickCLICK@Sem.HLP on File to open the menu.  {bmc bm14.bmp} Select Load to enter the standard loading dialog to load a list from the User Directory. This function loads the Coordinate List from a previously saved file. The current list of position data is deleted.  From the Select Coordinate File dialog select the file name from the User Directory. The extension is *.XYZ.  {bmc bm14.bmp} Select Save AsSave_Coordinate_File to save the active list to the User Directory.		   {bmc bm21.bmp}	
+
+{bmc bm14.bmp} Click on Clear List to empty the actual Stage Points List.
+
+The current base magnification is saved whenever an entry is made into the position list.
+
+The current working distance is saved whenever an entry is made into the position list. 
+$#Stage Points List Goto
+
+In the Goto frame 4 different buttons to move the stage are shown:
+
+First: This function causes the stage to move to the position defined by the first entry in the Stage Points List.
+
+Next: This function causes the stage to move to the position defined by the next entry in the Stage Points List.
+
+Previous: This function causes the stage to move to the position defined by the previous entry in the Stage Points List.
+
+Selected: This function causes the stage to move to the position defined by the highlighted entry in the Stage Points List.
+
+Undo Stage GotoIDQXIJ@tabmgr.hlp
+
+{bmc bm7.bmp}	Since Global Labels are not part of the user's list they are ignored in  Goto First, Next and Previous.
+
+{bmc bm8.bmp} First, Next and Previous: These apply to the chronological order in which they were generated, not to the alphabetical order in which the points are listed.
+$#KStage Points List On Goto
+
+When the stage is moved from the stage points list you can select whether Working Distance and Magnification are to be changed accordingly..
+   
+{bmc bm4.bmp} ClickCLICK@Sem.HLP on On Goto to open the menu.  {bmc bm14.bmp} If Set Magnification is selected {bmc bm1.bmp} then whenever the stage is moved to a saved position the magnification is set to the stored value.  {bmc bm14.bmp} If Set Working Distance is selected {bmc bm1.bmp} then whenever the stage is moved to a saved position the working distance1YCGPIR@Sem.HLP is set to the stored value.  {bmc bm14.bmp} If Move XY Only is selected {bmc bm1.bmp} then whenever the stage is moved to a saved position all axes except XY remain unchanged. NOTE: This setting is ignored for global labelsGlobal_Labels 		   {bmc bm22.bmp}	
+
+$#Stage Points List Search
+
+At the lower edge of the Stage Points List is a text entry window, characters typed here will be matched to the entries in the list box and the nearest match highlighted.
+$#>Stage Recall Dialog
+
+This function causes the current stage position and magnification to be saved for the map.
+
+{bmc bm8.bmp}	The Stage Map ConditionsStage_Map should have previously been setup
+
+{bmc bm14.bmp} The magnification may now be increased and the other live zone used to observe features of interest.
+
+{bmc bm14.bmp} The mouse may be used to select a point on the 'map' and the stage (and hence live image) moved to the required position.
+
+{bmc bm14.bmp} Plot Positions displays a black dot on the stage window for each position stored in the list.
+
+{bmc bm14.bmp} Hide Positions hides the dots marked by Plot Positions.
+
+{bmc bm14.bmp} The Store / Recall139NVAW functions may be used to save and recall positions.
+$#Stage Registration
+This Software option provides the ability to set up  User Defined Co-ordinate systems.
+
+The default Co-ordinate system is that of the Stage, and the Co-ordinate Store/Recall option provides for lists of points in these co-ordinates
+This is indicated on the Points List Dialog1JKVBGQ@dlgmgr.hlp by Stage List = Stage 
+
+An Alternative Stage list may be selected (e.g.Stage List = Reg 1) which defines points in terms of a different co-ordinate system.
+
+A User Defined Co-ordinate System is set up with the Stage Registration Dialog4PYQ9J@dlgmgr.hlp using a 2 point or 3 point registration algorithm9GO4AM@dlgmgr.hlp 
+Once the Co-ordinate system is registered points saved in this points list will be in the registered co-ordinate system.
+
+If such a points list is saved to file, and on a subsequent occasion the sample inserted at a different position, performing the registration sequence will re-establish the correct relationship, enabling you to go to the position labels previously saved.
+
+Similarly, while registration is valid, the Stage Registered Movement Dialog5M9CCK@dlgmgr.hlp displays the position in the User Co-ordinate system while the Joystick is used to navigate the sample. Additionally co-ordinates may be typed in to move the stage to the required Co-ordinates.
+$#KStage Scan
+
+{bmc bm2.bmp}	Call Stage from the Menu Bar8ZP0K4@Sem.HLP with <ALT + G> and then call Stage Scan with <N>.
+
+
+Stage scan provides the facility of using the motorised stage to inspect an area of the specimen as a series of fields. This may be achieved using the Stage Manager1UF1_ZG@stgmgr.hlp (recommended) or using the facilities below for the advanced user.
+
+There is a choice of four different field patterns, for this example assume there are 9 fields numbered 1 through 9.
+
+  X Boustrophodon	X Raster		   Y Boustrophodon	Y Raster
+	1  2  3			1  2  3				1  6  7			1  4  7
+	6  5  4			4  5  6				2  5  8			2  5  8
+	7  8  9			7  8  9				3  4  9			3  6  9
+   
+{bmc bm14.bmp} Select the Stage Scan type from the Drop-down ListXYVXW3@Sem:HLP  There are several methods of Defining the Stage Scan AreaDefining_the_Stage_Scan_Area which include manually defining Stage Scan Parameters1MHKPV_ .  {bmc bm14.bmp} Once the scan pattern is defined Stage Scan CommandsStage_Scan_Commands may be used to step through the fields.   The stage scan window also provides Stage Scan ButtonsStage_Scan_Buttons    	{bmc bm13.bmp}	
+
+$#>Stage Scan Buttons
+   
+The following buttons are provided:   Stage Scan Start hereStage_Scan_Start_here   Stage Scan End hereStage_Scan_End_here   Select AreaSelect_Scan_Area   Stage Calculate ScanStage_Calculate_Scan  Stage Scan CommandsStage_Scan_Commands:   Stage Start Scan   Stage Previous Field  Stage Next Field  	{bmc bm13.bmp}	
+
+$#>Stage Scan Commands
+
+There are three commands provided:
+
+Start Stage Scan 
+This moves the stage to the start position and sets the scan status to at field.
+You can also use the cursor key labelled {bmc bm23.bmp} together with the Shift key {bmc bm9.bmp}.
+
+Stage Next Field 
+This moves to the next field in the scan pattern. If the current field is the last field in the pattern the stage is not moved but the scan status is set to end scan.
+You can also use the cursor key labelled {bmc bm24.bmp} together with the Shift key {bmc bm9.bmp}.
+
+Stage Previous Field 
+This moves to the previous field in the scan pattern. If the current field is the first field in the pattern the stage is not moved but the scan status is set to end scan.
+You can also use the cursor key labelled {bmc bm25.bmp} together with the Shift key {bmc bm9.bmp}.
+
+{bmc bm8.bmp} Note that commands may be included in macros2D05Z_N@LeoM.HLP.
+$#>Stage Scan End here
+
+Executing this command will set the Stage Scan End positionStage_Scan_Fields to the current stage position.
+$#KStage Scan Fields
+
+Stage Scan Start Position
+These are the X, Y and Z positions at which the stage scan will start.
+The stage will move to this position on execution of the Stage Start scan command.
+The values may be defined manually (clickCLICK@Sem.HLP on the parameter field), by the Select AreaSelect_Scan_Area button or by the Stage Scan Start hereStage_Scan_Start_here button,
+
+Field Offset (Field Size)
+The X and Y field Offset parameters define the distance the stage will step between fields.
+The values may be defined manually, or will be entered by the Stage Calculate ScanStage_Calculate_Scan function.
+
+Fields
+The X and Y fields parameters define the number of fields the stage will step in the appropriate direction for the scan pattern
+The values may be defined manually, or will be entered by the Stage Calculate Scan function.
+   
+Stage Scan End coordinates This is the X Y position which will be used in the Stage Calculate Scan function and defines the position at which the stage scan will end. The values may be defined manually, by the Select area button or by the Stage Scan End hereStage_Scan_End_here button,  Field Overlap  This parameter may be set  manually and is used in the Stage Calculate Scan function to determine the amount of overlap between fields. A field overlap of 0% will result in a set of fields which butt together.		{bmc bm26.wmf}	
+
+$#>Stage Scan Parameters
+   
+The following data are displayed on the stage scan window:  Definitions of the Stage Scan FieldsStage_Scan_Fields  Readout of Stage Scan Status InformationStage_Scan_Status_Information  Stage XY + Z If this box is checked {bmc bm27.bmp} the Z axis is moved when the stage is moved in the direction of the tilt axis. The amount of movement is defined by the Tilt Correction1.GULFU@Sem.HLP angle.  {bmc bm8.bmp} Note that this function is only provided on some types of stages.  Stage Backlash88HTWS@Sem.HLP If this box is checked {bmc bm27.bmp} backlash correction will be performed on each stage step.	{bmc bm13.bmp}	
+
+$#Stage Scan Start here
+
+Executing this command will set the Stage Scan Start PositionStage_Scan_Fields to the current stage position.
+$#Stage Scan Status Information
+   
+At Field The X and Y At Field parameters define at which field the stage is currently positioned. These parameters may be used as annotation so that the correct field identity may be identified in saved images.  Stage Scan Invalid This indicates if the current stage scan pattern is invalid or not. The scan will be invalid if the combination of scan parameters would take the stage beyond the user defined stage limitsStage_Limits (in X, Y or Z)  Stage scanning This parameter indicates the current state of stage scanning. Idle  Stage scan has not been started At Field  Stage is positioned at a field in the scan pattern Moving  The stage is in motion as a result of a Next Field or Previous Field command. At End  The scan pattern has been completed.	 {bmc bm13.bmp}	
+
+	
+$#>KStore / Recall
+
+A list of stage positions may be maintained in memory. The entries are shown in the Stage Points List. Initially this list is empty. The data saved is the current position of the stage. If beam shift is being applied the XY stage position is modified by the Beam Offset distance to give a stage XY position with zero beam shift. Also saved are the current working distance and magnification. When moving to a stored position the beam shift is set to zero and optionally either or both of the magnification/working distance are set to the saved values.
+ The list can be called by:  {bmc bm2.bmp} From the Menu Bar8ZP0K4@Sem.HLP call Stage with <ALT + G> and then Store / Recall with <R>  or  {bmc bm2.bmp} From the Menu Bar call Tools with <ALT + T> and then clickCLICK@Sem.HLP on Goto Panel. From the Drop-down ListXYVXW3@Sem.HLP select Stage Points List.  Stage positions may be used in macros5XK5S7@LeoM.HLP.  {bmc bm14.bmp} Close the panel with {bmc bm15.bmp}.  Positions with the prefix $ are Global Positions and are common for all users (example $Exchange_Exchange). For additional information point to the item of interest on the picture to the right. 		{bmc bm28.shg} When the cursor changes from {bmc bm29.bmp}to {bmc bm30.bmp}help is available. Click to present the information.	
+
+$#Survey Mode
+$#>Touch Alarm
+If the stage touches the chamber, detectors etc an audible warning and on-screen message is given. 
+Movement is stopped and is only possible in the reverse direction until the alarm is cleared.
+
+It is advisable to use protected ZK8LPPZ@tabmgr.hlp mode to minimise the risk of a touch.
+
+Note: When the stage is near the $Exchange_Exchange position the touch alarm is disabled.
+
+
+
+$#Stage Manager

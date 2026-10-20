@@ -1,0 +1,787 @@
+﻿$#KContents
+
+
+Release V02.04Release_V02.04
+RKelease V02.03Release_V02.03
+Release V02.02Release_V02.02
+Release V02.01Release_V02.01
+Release V02.00Release_V02.00
+
+Release V01.01Release_V01.01
+Release V01.00Release_V01.00
+$#Linescan colour and Xray Linescan channel select
+
+When a linescan profile window is on display right click to show popup menu.
+The colour of the trace may be selected.
+
+When an X-Ray linescan profile window is on display right click to show popup menu.
+The colour of the trace may be selected.
+The X-Ray Linescan channel may be selected.
+$#Point to point reduced format
+For a Point to Point measurement object there are associated two results parameters, the distance and the angle.
+These results are displayed in the results panel.
+This may be modified as follows
+	Select the line between the point to point markers
+	Right mouse button click to display pop up menu
+	Select Properties - Results
+
+Alternatively double click on the results panel.
+
+With the resulting dialog you may select any combination of the results parameters required.
+
+If no parameters are selected the Point to Point object will display in reduced format.
+
+i.e.	 No labels to identify the object.
+	The value only of the distance is displayed near the centre of the dotted line.
+$#Relative Stage Movement
+The parameters Stage Delta X, Stage Delta Y, Stage Delta Z, Stage Delta T, Stage Delta R, Stage Delta M 
+have been added. Setting any of them to a value (positive or negative) will add this delta value to the current axis position
+and perform a GoTo for the axis. These parameters may be used in macros.
+
+In addition on the Stage tab of the SEM Control panel are a set of Delta buttons which when pressed will allow entry of the above parameter values.
+$#Release V01.00
+March 1998
+
+This is the first production release of the LEO-32 Software for the LEO 1500 Series microscopes and replaces earlier Beta releases.
+
+New since Beta3 releaseV01.00_New.
+Changes Since Beta3 releaseV01.00_Changes
+Hardware requirementsV01.00_Hardware_requirements
+Restrictions and known problemsV01.00_Restrictions
+
+User Actions if updating from Beta3V01.00_User_Actions
+
+$#Release V01.01
+
+September 1998
+
+Actions required when Upgrading from earlier versionsV01.01_Required_Actions_on_upgrade
+
+New since V01.00V01.01_New
+Changes since V01.00V01.01_Changes
+Major Bugs fixed in this releaseV01.01_Bugs_Fixed
+Hardware requirementsV01.01_Hardware_Requirements
+
+RestrictionsV01.01_Restrictions
+
+
+$#V01.00
+$#V01.00 changes since Beta3
+
+1.Toolbars are no longer available in Full Screen Mode (Shift F3).
+2.Revised Specimen Change Macro to handle case where the Gun is Off
+3.Macro files generated for Save Conditions now include statements to initialise the stage on request.
+4.The datazone and parameters now freeze if the image is frozen. (This means both halves in split mode must be frozen)
+5. On the SEM Control Apertures tab the Gun Align button is disabled in Novice Mode.
+$#V01.00 Hardware requirements
+
+The LEO 1530, 1550, 1560 must be fitted with the following versions or later of firmware
+
+EO Board		348224-8318.020
+Hard panel		348224-8320.010	(option)
+Scan Generator	348224-8321.020
+Vacuum Board	348224-8326.021
+Stage Board		876006 V03.00	(1530)
+			876007 V03.00	(1550)
+			876008 V03.00	(1560)
+$#V01.00 New (since Beta3)
+
+1. New dialog added for Water Flow/Temperature status
+2. New Gun Monitor Utility (Service Use only)
+3. Enhancement to Image GalleryContents@gallery.hlp to allow printing of multiple images on a page (ctrl click for multiple selection) 
+4. All main sections of Help included, support for F1 and shift F1 help added.
+5. New macro special function to save stage position in label "Current"
+6. New Macro special functions to switch full screen mode on/off (equivalent to Shift F3)
+7. New Macro special function to move cursor off screen
+8. Macro Message instruction extended to permit Yes/No selection
+9. New Macro Instruction to execute a program
+10. Standard ConditionsZ1JVVC@leom.hlp function added to Macro Engine
+11. Stage Co-ordinate store/recall points list data may now be viewed and edited.
+12. New parameters added for Relative Stage MovementN9DA_
+13. Point to point reduced formatPoint_to_point_reduced_format
+14. Linescan colour and Xray Linescan channel selectLinescan_colour_and_Xray_Linescan_channel_selec
+15. Image Gallery now has a Delete file Facility.
+16. Trial version of Stage Registration functions included(Note a licence is required for use).
+$#V01.00 Restrictions and known problems
+
+The following restrictions/problems apply to this release:
+1.	X-Ray line scanning and dotmaps are not fully tested.
+2.	Certain sections of the on-line help are not complete.
+3.	Support for the French and German language is only partially supported.
+4	On systems upgraded from Beta releases switching on User Magnification calibration without first performing a calibration results in an erroneous magnification.
+$#V01.00 User Actions
+The Standard Macro Library has changed since Beta3
+
+The Specimen Change Macro is now version 2
+
+To use this latest version 
+Display the Macro Editor (Tools - Macro Editor)
+Select Library-Merge Standard
+
+This must be done for each User Directory
+$#V01.01 Major Bugs Fixed
+
+1. Resource problem associated with running macros from User Interface fixed.
+2. Fix problem which could sometimes result in burnt spot on sample.
+$#V01.01 Changes
+
+1. Annotation merge for TIFF files now adapts colour according to background
+2. Annotation text is now created as it is typed in the dialog.
+3. Image gallery. Right button click displays pop up menu.
+4. Profile line now has cursor indicators
+5. Rotate Backlash added to User Preferences
+6. Save Conditions now includes Auto Brightness/Contrast  settings and Stage User Limits
+7. The automatic selection of mouse adjustment parameters associated with the SEM Control Panel has been discontinued.
+8. Macro Buttons display macro progress
+9. User Preferences directory selection improved.
+10. The key F12 is no longer used for macros. It now aborts stage movement.
+11. The Vent command is now disabled until EHT is off 
+$#V01.01 Hardware Requirements
+The LEO 1530, 1550, 1560 must be fitted with the following versions or later of firmware
+
+	Essential	Preferred	
+EO Board	348224-8318.020	348224-8318.030	
+Scan Generator	348224-8321.020		
+Vacuum Board	348224-8326.023		
+Hard panel	348224-8320.020	348224-8320.030	
+Stage Board (1530)	876006 V03.00	876006 V04.00	
+Stage Board (1550)	876007 V03.00	876007 V04.00	
+Stage Board (1560)	876008 V03.00	876008 V04.00	
+
+$#V01.01 New
+1. User Accounting2.G16KP@admin32.hlp Introduced
+2. Support for Integrated X-Ray Manager introduced.
+4. Ctrl C now copies data from the currently selected Measurement Objects to the clipboard1IGA0_U@imgmgr.hlp.
+5. Histogram now has bin cursors
+6. Supervisor may now define maximum EHT selectable157UFWM@tabmgr.hlp (Right click on SEM Control Gun Tab)
+7. Undo Stage GotoKH.ZCT@tabmgr.hlp added to SEM Control Panel Stage Tab
+8. Macro instruction to assign functions to Hard Panel (Mark2) Knobs99ABXK@leom.hlp
+9. Macro 'Start' will be executed on User Interface start up if the macro exists.
+10. Hold Airlock Vacuum command added to Airlock panel
+11. "How ToContents@how_to.hlp" section added to Help
+12. "Getting StartedContents@getstart.hlp" section added to Help
+13. Facility for Common MacrosHBU_9D@leom.hlp added
+14. Area Parameter added for Radial and Linewidth measurement objects.
+15  Annotation and Measurement - additional preferences for action on object creation.(Return To Select Mode15HWEH_@imgmgr.hlp and Select on create689UHW@imgmgr.hlp)
+16. Reduced format1.9L0.J@imgmgr.hlp(no labels, adjacent floating single value) for Angular, Height, Width, adjustable Height, adjustable Width measurement objects
+17. Export Image in BMP Format9K5T59@imgmgr.hlp
+18. Export Image in JPEG Format8PJKNY@imgmgr.hlp
+19 Joystick disable0ILNKA@tabmgr.hlp parameter added to stage Tab
+20 Protected ZK8LPPZ@tabmgr.hlp mode for stage added to stage Tab
+21 Compucentric functions GP9BLC@stage.hlp added.( Tilt, Rotate and Sample Horizontal alignment).
+22. Image Import6LG1R4@imgmgr.hlp now has Fit to Image option and Change directory Option
+23. Image Export8BP7F1@imgmgr.hlp now has Change directory option
+24 New User Attribute Gun Align Privilege3T35GP@admin32.hlp
+25.Facility for a Common Toolbar5XXH_AL@tooledit.hlp added
+26.New parameter Image Pixel Size (store pixel size) added to complement Pixel size (display pixel size)
+27 Addition of Compact User Database4FMQ7H@admin32.hlp, Repair User Database1AZ3ZX.@admin32.hlp functions to Administrator
+28.EHT Off @ Log OffABHFR7@tabmgr.hlp setting added
+29 Wide File List option added to Import6LG1R4@imgmgr.hlp and Export8BP7F1@imgmgr.hlp File Dialogs
+30.Reset Display LUT added to Image Window popup menu
+$#V01.01 Restrictions and known problems
+The following restrictions/problems apply to this release:
+
+1.	Dotmap functionality has not been exhaustively tested.
+2.	Certain sections of the on-line help are not complete.
+3.	Support for the French and German language is only partially supported.
+$#V01.01 Required Actions on upgrade
+The following actions are required when upgrading from an earlier version.
+
+Service action
+Recalibration of display Mix Delay and Window Position offsets
+
+User Action
+There are modified macros in the standard macro library which must be merged into all user macro libraries. 
+Therefore the following must be done for each User Directory (typically this means that each user who logs on after the upgrade should perform these actions)
+{bmc bm0.bmp}	Select Tools - Macro Editor
+{bmc bm0.bmp}	From the Macro Editor menu select Library - Merge Standard
+$#Release V02.00
+
+November 1998
+
+Purpose of release:
+To fix bugs found in V01.01
+
+To support the LEO 420/430/435VP and 438VP Microscopes under Windows98
+
+
+Bugs fixedV02.00_Bugs_fixed
+New FunctionalityV02.00_New
+ChangesV02.00_Changes
+Actions required on InstallationV02.00_Actions_required_on_Installation
+LEO 1500 Hardware requirementsV02.00_Leo_1500_Hardware_requirements
+LEO  400 Hardware RequirementsV02.00_Leo__400_Hardware_Requirements
+RestrictionsV02.00_Restrictions
+
+CompatabilityCompatability
+$#V02.00 Bugs fixed since V01.01
+{bmc bm1.bmp}	Results panel attributes were lost when reloading annotation from file
+{bmc bm1.bmp}	Switching from Normal mode to emission caused temporary image disturbance (1500 only)
+{bmc bm1.bmp}	Undefined help context identifier when F1 on User interface window or selecting LEO-32 help from menu
+{bmc bm1.bmp}	Accuracy of centre point and centre feature affected by which output device was selected
+{bmc bm1.bmp}	loading state which contained disabled instructions caused lock up when loaded for a second time
+{bmc bm1.bmp}	Selecting snap to grid for a point to point object caused cursor to disappear.
+{bmc bm1.bmp}	Macro instruction to Run Application failed if command line arguments supplied
+{bmc bm1.bmp}	Adjusting Gamma parameter was not disabled when not in gamma mode.
+$#V02.00 New functionality
+Note: If running this help from the CD the links below will fail.
+
+1. Clicking the Pressure readout on the SEM Control Vacuum tab changes units.
+2. Macro instructions now have timeout1280J7M>main@leom.hlp facility
+3. Supervisor function in macro Editor to save Common macros5H6LYA>main@leom.hlp.
+4. Supervisor function in toolbar editor to save common toolbar5XXH_AL>main@tooledit.hlp
+5. Ability for User to define own Icon bitmaps7BKWFD>main@tooledit.hlp.
+6. Alternative parameters for Stigmation correction (Stig X only, Stig Y only) and on 1500 for aperture alignment (Aper Align X only, Aper Align Y only) permitting independant mouse adjustment of X and Y parameters. See Customising default filesN31_RN@leom.hlp.
+7.BSD Auto ranging may be switched off in the BSD Control panel22PD_35@dlgmgr.hlp to permit more controlled setting of contrast level
+8 Access to Image Capture mode28QMYW@sem.hlp is now available.
+9.Limited duration keycode protected functions added for Service Use
+10. The Administrator may be started from the UIF Menu (Tools - Admin)
+$#V02.00 LEO 1500 Hardware requirements
+The LEO 1530, 1550, 1560 must be fitted with the following versions or later of firmware
+
+	Essential	Preferred	
+EO Board	348224-8318.030	348224-8318.040	
+Scan Generator	348224-8321.040	348224-8321.040	
+Vacuum Board	348224-8326.023	348224-8321.040	
+Hard panel	348224-8320.020	348224-8320.040	
+Stage Board (1530)	876006 V04.00	876006 V04.00	
+Stage Board (1550)	876007 V04.00	876007 V04.00	
+Stage Board (1560)	876008 V04.00	876008 V04.00	
+
+$#V02.00 Restrictions
+The following restrictions/problems apply to this release:
+
+General
+Support for the French and German language is only partially supported.
+
+LEO 1500
+None
+
+LEO 400
+LEO 440 not currently supported
+The following functions that were available in earlier versions of LEO 400 software are no longer supported:
+{bmc bm1.bmp}	Y Modulation display
+{bmc bm1.bmp}	Video Printer support
+{bmc bm1.bmp}	Window Mode
+{bmc bm1.bmp}	Live Histograms and Live Line Profiles
+$#V02.00 Changes relative to V01.01
+Note: If running this help from the CD the links below will fail.
+
+1.	The Specimen Change and Resume Exchange Macros are no longer part of the standard macro library. Default files are provided in ..\leo32\distrib. See Customising default FilesN31_RN@leom.hlp.
+2.	In Administrator the service menu functions are now available to the User on a read only basis.
+$#LEO 400 Series Hardware Requirements
+This software will run on any LEO 420, 430, 435VP or 438VP which has been delivered with Windows95, or has been upgraded with the factory supplied Windows95 upgrade kit.
+$#Compatability
+All essential files are automatically upgraded to the latest format. Once installed the system files are not backwards compatible.
+$#Actions required on Installation
+Service Action
+If upgrading from Y01.01B or earlier (i.e. prior to V01.01), calibration of Mix delay and scan position is required. If this is not carried out the image will not be displayed or will be out of synch.
+
+User Action.
+To ensure that the latest macros are installed:
+For each existing User Directory:
+{bmc bm1.bmp}	Select 'Tools' - 'Macro Editor'
+{bmc bm1.bmp}	In Macro editor menu select 'Library' - 'Merge Standard'
+$#Release V02.01
+
+March 1999
+
+Purpose of release:
+To fix bugs found in V02.00
+
+To support the LEO 1500 Microscopes under Windows98 and Windows NT 4.0
+To support the LEO 440 Microscope under Windows95 and Windows98
+
+Bugs fixedV02.01_Bugs_fixed
+New FunctionalityV02.01_New_Functionality
+ChangesV02.01_Changes
+Actions required on InstallationV02.01_Actions_required_on_Installation
+LEO 1500 Hardware requirementsV02.01_Leo_1500_Hardware_requirements
+LEO  400 Hardware RequirementsV02.01_Leo__400_Hardware_Requirements
+RestrictionsV02.01_Restrictions
+
+CompatabilityCompatability
+
+Software Requirements for Second Image Window FunctionsSoftware_Requirements_for_Second_Image_Window_Functions
+$#V02.01 Bugs fixed since V02.00
+
+1. Loss of Keyboard focus on Log On under Windows98
+2  The 400 Administrator prevented DDE Access changes
+3. (400 only) Centre point/feature failed if initial beamshift was non zero.
+4. Image processing filter corrupted image
+5. Printing/saving images with annotation failed to fully release system resources.
+6. User accounting crashed if review by owner was selected when no owners are defined.
+7. (400 only) Stage rotate failed to take shortest route.
+8. Image Gallery failed to display files starting with numeric character
+9. F2 now toggles toolbar on/off
+10.(1500 only). The Filament age value now includes periods when the Gun is on and the PC is off
+11. SEM Control Stage tab: Goto M now functions correctly.
+$#V02.01 New Functionality
+NOTE: If accessed from the installation CD the Links below will fail.
+1. Cancel added to Log On Dialog
+2. Stage user limits saved/restored on Log Off/Log On
+3  Stage Survey Mode4_DGYJ5@tabmgr.hlp added.
+4  User Interface menu 'File - Save For Restore22SW0AT@sem.hlp' added.
+5. User Interface menu 'View - datazone - load User Datazone1FH8QBC@sem.hlp'  added.
+6. Annotation 'sticky panel' properties now has 'Save datazoneGUT3JV@imgmgr.hlp' function.
+7. Second Image Window4AHWGBN@leoserv.hlp functions. Load or drop files into it for Pan and Zoom.
+8. Can now drop TIF or BMP files onto UIF Image Window to load into store. Drag and Drop1NJSYVQ@sem.hlp
+9. Can drop ANN and DZ files onto UIF Image Window to load annotation and datazones
+10. Can now Drag files from Image gallery1NJSYVQ@gallery.hlp to drop on other Windows
+11. Support added for Makro MK2 and Fjeld 5" Stages (1500 only).
+12. Optional FTP Remote Archiving Utility_1ZQP_@imgarc.hlp added
+13. Macro Instructions for LUT functionsE2.9EW@leom.hlp added
+14. Macro Editor now has Macro Locations6SDUCB@leom.hlp function
+$#V02.01 Actions required on Installation
+Service Action - LEO 1500 Series only
+If upgrading from Y01.01B or earlier (i.e. prior to V01.01), calibration of Mix delay and scan position is required. If this is not carried out the image will not be displayed or will be out of synch.
+
+If upgrading from V02.00 to V02.01 recalibration of Display Overlay position will be required.
+Upgrading from V01.01 to V02.01 does not require recalibration of display position.
+
+User Action.
+To ensure that the latest macros are installed:
+For each existing User Directory:
+{bmc bm1.bmp}	Select 'Tools' - 'Macro Editor'
+{bmc bm1.bmp}	In Macro editor menu select 'Library' - 'Merge Standard'
+$#V02.01 LEO 1500 Hardware requirements
+The LEO 1530, 1550, 1560 must be fitted with the following versions or later of firmware
+
+	Essential	Preferred	
+EO Board	348224-8318.030	348224-8318.040	
+Scan Generator	348224-8321.040	348224-8321.040	
+Vacuum Board	348224-8326.023	348224-8321.040	
+Hard panel	348224-8320.020	348224-8320.040	
+Stage Board (1530)	876006 V04.00	876006 V04.00	
+Stage Board (1550)	876007 V04.00	876007 V04.00	
+Stage Board (1560)	876008 V04.00	876008 V04.00	
+
+$#V02.01 LEO  400 Hardware Requirements
+This software will run on any LEO 420, 430, 435VP,  438VP and 440  which has been delivered with Windows95, or has been upgraded with the factory supplied Windows95 upgrade kit.
+Note that only the Cartesian 95 stage is supported.
+$#V02.01 Restrictions
+The following restrictions/problems apply to this release:
+
+General
+Support for the French and German language is only partially supported.
+
+LEO 1500
+Saving/Printing images while the chamberscope is switched on are restricted to the fixed chamberscope display area.
+
+LEO 400
+The following functions that were available in earlier versions of LEO 400 software are no longer supported:
+{bmc bm1.bmp}	Y Modulation display
+{bmc bm1.bmp}	Video Printer support
+{bmc bm1.bmp}	Window Mode
+{bmc bm1.bmp}	Live Histograms and Live Line Profiles
+{bmc bm1.bmp}	
+$#Software Requirements for Second Image Window Functions
+The Second Image Window4AHWGBN@leoserv.hlp functions utilise the Imaging for Windows Controls.
+These may not have been installed or may not be available on the current Operating System.
+
+Windows 98 and Windows NT 4.0 include Imaging for Windows, if this is not installed:
+	Start - Settings - Control Panel
+	Double click on Add/Remove Programs
+	Select the Windows Setup tab.
+	Under Accessories select Imaging.
+
+
+Windows 95
+This requires installation of Imaging for Windows 95 and Internet Explorer 4.01 SP1 
+For convenience these are included on the LEO-32 CD
+
+To perform Installation (NB must be in this order)
+	Close all running programs
+	Insert LEO-32 CD
+	Browse the CD
+	Double Click on  \Imaging\Setup.exe - follow the installation instructions
+	Double Click on  \IE4SP1\IE4Setup.exe - follow the installation instructions
+$#V02.01 Changes
+NOTE: If accessed from the installation CD the Links below will fail.
+
+1.	 Stage User limits now saved/restored on User Log Off/Log On
+2.	 LUT editor now always displays toolbar when editor window displayed
+3.	 LEO 1500 macros: Brightness/contrast Icon middle button now selects Offset/Gain instead of Gain/Offset for ABCC control
+4.	 Reset LUT button provided on Image processing Threshold page
+5.	The User Directory is now included in the Macro Search path2.QK0XE@leom.hlp
+6.	The inhibit on vent when the stage is not within the safe area may now be overridden
+7.	LEO 1500 Only. The positions of EHT Target and Extractor Voltage Target have been changed on the SEM Control Gun5_0HOO@tabmgr.hlp tab to prevent accidental change of extractor voltage
+$#Release V02.02
+July 1999
+
+Purpose of release:
+To fix bugs found in V02.01
+
+To support the LEO 1400 Series
+To support the Fjeld 5" stage
+
+Bugs fixedV02.02_Bugs_fixed
+New FunctionalityV02.02_New_Functionality
+Changes in operationV02.02_Changes
+Actions required on InstallationV02.02_Actions_required_on_Installation
+
+LEO 1400 hardware requirementsV02.02_LEO_1400_hardware_requirements
+LEO 1500 hardware requirementsV02.02_LEO_1500_hardware_requirements
+LEO 400 hardware requirementsV02.02_LEO_400_hardware_requirements
+
+RestrictionsV02.02_Restrictions
+
+
+CompatabilityCompatability
+
+Software Requirements for Second Image Window FunctionsSoftware_Requirements_for_Second_Image_Window_Functions
+
+$#V02.02 Bugs fixed since V02.1
+1.	Macro While statement did not always function correctly if the state value was non zero
+2.	If a macro calls another macro which has EndIf or WhileEnd as the last instruction it fails to release the calling macro.
+3.	Lock up when iXRF Iridium EDS Manager Multiple area spectrum aquisition function used.
+4.	Bug in save tiff colour merge permitted user to omit saving pallette.
+5.	On NT Only. Macro Editor - insert Panel function: list of available dialogs displayed rubbish.
+6.	Image save/reload (montage) displacement bug fixed.
+7.	400 Series only. Cartesian 95 stage. If at rotate 350 deg. and requested goto > 30 deg. stage stops at 22.8 deg
+8.	1500 Series only. EHT Off causing lockup problem which affected some machines is resolved.
+$#V02.02 New Functionality
+NOTE: If accessed from the installation CD the Links below will fail.
+1.	New Stage Initialise privilege. [On installation all users having supervisor privilege are granted stage initialise privilege] 
+2.	Introduction of Advanced Stage ControlContents@stgmgr.hlp.[Top menu Stage - Stage Control]
+3.	Annotation/measurement propertiesEAWNYE@imgmgr.hlp restructured [Right button click on annotation/measurement objects].
+4.	LEO 1500 Series only. X-Ray Linescan amplitude control. [Right button click on X-Ray linescan window]
+5.	User preference to fix magnification to reference Polaroid 54532AVUYD@leoserv.hlp
+6.	New keyboard shortcut <Ctrl + 2> to toggle second image window
+$#V02.02 Changes
+1.	The Macro Instruction WaitFor now optionally continues on timeout.
+2.	On 1500 Series only. The aperture selection is saved/restored on UserName basis.
+3.	Improvements to Compucentric height calibration.
+4.	On Tiff export dialog 'As Seen' and 'save Pallette' are now mutually exclusive
+5.	The touch alarm is disabled when the stage is at the $Exchange position.
+6.	All annotation/measurement objects (excluding TIFF data) may be selected and copied to the clipboard using <Ctrl + C> for pasting into other applications (e.g. word, Excel). The parameter information now includes the parameter name as well as value.
+7.	Stage registered movement now increments in 1 or 10 user registered units instead of proportions of image width
+8.	The keyboard shortcut for 'Find Image' is now <Ctrl + *>
+9.	Enabled image capture via DDE (with and without annotation)
+10.	On 1500 Series only: Crosshairs are no longer availble in emission mode
+11.	On TIFF load the ENTER key will load the selected file and selection steps to the next file in the list
+12.	On TIFF Save the ENTER Key now causes the file to be saved.
+$#V02.02 Actions required on Installation
+No specific actions if upgrading from V02.01
+
+If upgrading from earlier version see V02.01 actionsV02.01_Actions_required_on_Installation
+$#V02.02 LEO 1500 hardware requirements
+The LEO 1530, 1550, 1560 must be fitted with the following versions or later of firmware
+
+	Essential	Preferred	
+EO Board	348224-8318.030	348224-8318.050	
+Scan Generator	348224-8321.040	348224-8321.040	
+Vacuum Board	348224-8326.023	348224-8321.040	
+Hard panel	348224-8320.020	348224-8320.040	
+Stage Board (1530)	876006 V04.00	876006 V05.00	
+Stage Board (1550)	876007 V04.00	876007 V05.00	
+Stage Board (1560)	876008 V04.00	876008 V05.00	
+
+$#V02.02 LEO 400 hardware requirements
+This software will run on any LEO 420, 430, 435VP,  438VP and 440  which has been delivered with Windows95, or has been upgraded with the factory supplied Windows95 or Windows 98 upgrade kit.
+Note that only the Cartesian 95 stage is supported.
+$#V02.02 Restrictions
+The following restrictions/problems apply to this release:
+
+General
+Support for the French and German language is only partially supported.
+Stage Manager graphical display does not yet support all types of sample holders.
+
+DDE Image Capture does not work in Office 97 when running under Windows 98. Use clipboard copy/paste as an alternative.
+
+LEO 1400
+The help is incomplete in some areas
+
+LEO 1500
+None
+
+LEO 400
+The following functions that were available in earlier versions of LEO 400 software are no longer supported:
+{bmc bm1.bmp}	Y Modulation display
+{bmc bm1.bmp}	Video Printer support
+{bmc bm1.bmp}	Window Mode
+{bmc bm1.bmp}	Live Histograms and Live Line Profiles
+$#Release V02.03
+December 1999
+
+Purpose of release:
+To fix bugs found in V02.02
+To support the LEO 1455, 1455VP and 1525 microscopes.
+To support the Column Pumping/LaB6 option on LEO 1400 and 1400VP microscopes.
+
+Bugs FixedV02.03_Bugs_Fixed
+New FunctionalityV02.03_New_Functionality
+Changes in OperationV02.03_Changes
+
+Actions required on installationV02.03_Actions_required_on_installation
+
+LEO 400 Series hardware requirementsV02.03_LEO_400_Series_hardware_requirements
+LEO 1400 Series hardware requirementsV02.03_LEO_1400_Series_hardware_requirements
+LEO 1500 Series hardware requirementsV02.03_LEO_1500_Series_hardware_requirements
+
+RestrictionsV02.03_Restrictions
+
+CompatabilityCompatability
+
+Software Requirements for Second Image Window FunctionsSoftware_Requirements_for_Second_Image_Window_Functions
+
+$#V02.03 Bugs Fixed since V02.02
+1.	 LEO 1450 only. Unable to configure QBSD, SCM, TRANS detectors.
+2.	 Crash on image load. 
+3.	 Stage Control graphic - direction of rotation corrected.
+4.	 'Start' Macro failed to execute under NT
+5.	 RemCon32 failed to handle $CSOF command
+6.	 Macro editor allowed selection of some invalid state values.
+7.	 RemCon failed to save Comms settings.
+8.	If windows focus on SEM Control,Stage Control or dialogs some shortcuts were lost.
+9.	Clipboard paste failed under NT.
+10.	LEO 400 Series with cartesian 95 stage. Under some circumstances the joystick would only drive the stage very slowly.
+11.	LEO 1400VP Series only: Saving state altered VPSE Collector Bias if SE1 had different collector Bias setting.
+12.	if Tiff files are saved after the Import Tiff dialog has been displayed then they do not appear in the file list when the import Tiff dialog is redisplayed unless an alternative tab is selected on the Import Tiff dialog.
+$#V02.03 New Functionality
+NOTE: If accessed from the installation CD the Links below will fail.
+
+1.	 New File No.,Print No. and HRRU No. parameters which increment with each output. These are in addition to Photo No. which increments for any output. See Counting parametersDMR0HE@imgmgr.hlp
+2.	 File save filename formatF7ZT7A@imgmgr.hlp now includes 7 digit file Number.
+3.	 Print Setup dialogDVXXAS@imgmgr.hlp now includes Print No.
+4.	 HRRU Settings12O7D55@imgmgr.hlp now includes HRRU No.
+5.	 Users may now define (on the annotation properties General tabFZXMV@imgmgr.hlp) whether to display results to 3,4 or 5 significant figures
+6.	 New string parameters6K4IZJ@imgmgr.hlp - File Name, User Name, Operator, User Text for use with annotation.
+7.	Stage Administrator added for Service use only.
+8.	Stage Control (navigation).QDRS7@stgmgr.hlp now indicates position of Stage door
+9.	Stage Control (navigation) Middle button click on sample graphic brings point to centre using rotation.
+10.	LEO 1400 and 1400VP Series: Auto Saturation2JVZZU3@dlgmgr.hlp for Tungsten Filaments.
+11.	The Macro Editor now contains a menu function (Debug - stop all macros) which may be used to abort all currently running macros.
+12.	The macro instruction End Macro has been extended so that it may abort macros other than itself. This has been used in the default Resume Exchange airlock macro for the 1500 Series to abort the Specimen Change macro as a means of allowing the user to change his mind once specimen exchange has started. Users who have customised the macro may wish to add this instruction.
+13.	Users with the Advanced Measurement Licence now have two additional Radial Measurement3BI2_Y0@imgmgr.hlp objects.
+$#V02.03 Changes 
+1.	The Dual Joystick and Hard Panel may now both be used. N.B. if a dual Joystick is fitted it will be necessary to select it in the Administrator Configuration Stage Tab.
+2.	Image load. Load area indicator is switched off after load unless step frame is active.
+3.	Improved performance of Image Gallery
+4.	Stage Type and stage motorisation parameters now require supervisor privilege.
+5.	Save/Load Tiff dialogs: User text box now has scroll bar.
+6.	On 1500 Series only: Crosshairs are now optionally available in emission mode(see User Preferences).
+7.	On 1500 Series only: New Filament setting is now a Service only function. After selecting New Filament the gun operation is disabled until Data from Tip Data Sheet has been entered.
+8.	Radial Measurement objects now have a centre mark.
+$#V02.03 Actions required on installation
+Service Action (1400 and 1500 series only).
+The dual joystick and Hard Panel may now both be used.
+In the Leo-32 Administrator Configuration Stage tab there is now a checkbox to indicate if the dual joystick is present.
+In earlier versions the setting of Hard Panel = Absent was used to infer that a Joystick was present, this is no longer the case, hence if a dual joystick is fitted and the checkbox remains unchecked then the joystick will cease to function.
+
+User Action.
+To ensure that the latest macros are installed:
+For each existing User Directory:
+{bmc bm1.bmp}	Select 'Tools' - 'Macro Editor'
+{bmc bm1.bmp}	In Macro editor menu select 'Library' - 'Merge Standard'
+
+NOTE: A reminder will be given when logging on if this is not done.
+
+If upgrading from a version earlier than V02.02 see V02.01 installation actionsV02.01_Actions_required_on_Installation.
+$#V02.03 LEO 400 Series hardware requirements
+This software will run on any LEO 420, 430, 435VP,  438VP and 440  which has been delivered with Windows95, or has been upgraded with the factory supplied Windows95 upgrade kit.
+
+Note that unless a Cartesian 95 stage is fitted that a Trackerball option is required for motorised stage control.
+$#V02.03 LEO 1400 Series hardware requirements
+The LEO 1400 and 1400VP Series must be fitted with the following versions or later of firmware
+
+
+	Part Number	Version	
+EO Board	347924-6018.020	2	
+Scan Generator	348224-8321.040	040	
+Vacuum Board (1400)	347924-6026.000	1	
+Vacuum Board (1400VP)	347924-6026.100	1	
+Vacuum Board(1400+Column Pumping)	347924-6026.200	1	
+Vacuum Board(1400VP+Column Pumping)	347924-6026.300	1	
+Hard panel	348224-8320.040	4	
+Stage Board (5 axis)	348224-6034.050	1/0F	
+
+$#V02.03 LEO 1500 Series hardware requirements
+The LEO 1500 series must be fitted with the following versions or later of firmware
+
+	Part Number	Version	
+EO Board	348224-8318.060	6	
+Scan Generator	348224-8321.040	040	
+Vacuum Board	348224-8326.032	3.2	
+Hard panel	348224-8320.040	4	
+Stage Board (1530)	876006 V05.00	1/F	
+Stage Board (1550)	876007 V05.00	1/F	
+Stage Board (1560)	876008 V05.00	1/F	
+
+$#V02.03 Restrictions
+The following restrictions/problems apply to this release:
+
+General
+{bmc bm1.bmp}	Support for the French and German language is only partially supported.
+{bmc bm1.bmp}	Stage Control Manager navigation graphical display does not yet support all types of sample holders.
+{bmc bm1.bmp}	DDE Image Capture does not work in Office 97 when running under Windows 98. Use clipboard copy/paste as an alternative.
+{bmc bm1.bmp}	In the Administrator on the Configuration Stage Tab there are now check boxes to enable/disable individual stage axes. These will only be effective if this function is supported by the version of stage firmware fitted.
+{bmc bm1.bmp}	On LEO 1400 and 1500 Series using 3072 x 2304 image resolution the following problems when saving image files are unresolved:
+¡	If in reduced raster mode the image saved has some regions misplaced.
+¡	If the image is frozen and other image files loaded to form a montage and the displayed image subsequently saved some of the regions are misplaced in the output file.
+
+LEO 1400
+None
+
+LEO 1500
+None
+
+LEO 400
+The following functions that were available in earlier versions of LEO 400 software are no longer supported:
+{bmc bm1.bmp}	Y Modulation display
+{bmc bm1.bmp}	Video Printer support
+{bmc bm1.bmp}	Window Mode
+{bmc bm1.bmp}	Live Histograms and Live Line Profiles
+$#V02.02 LEO 1400 hardware requirements
+The LEO 1400 and 1400VP Series must be fitted with the following versions or later of firmware
+
+
+	Version	
+EO Board	347924-6018.020	
+Scan Generator	348224-8321.040	
+Vacuum Board (1400)	347924-6026.000	
+Vacuum Board (1400VP)	347924-6026.100	
+Hard panel	348224-8320.040	
+Stage Board (5 axis)	348224-6034.050	
+
+$#Release V02.04
+June 2001
+
+Purpose of release:
+To fix bugs found in V02.03
+To provide extensions in functionality
+
+This release is targetted for those systems for which an upgrade to V03.00 is not available, i.e.
+{bmc bm1.bmp}	LEO 400 Series
+{bmc bm1.bmp}	LEO 1500 Series running Windows 95
+
+ LEO 1500 Series running Windows NT and the LEO 1400 Series should be upgraded to V03.00.
+
+Bugs FixedV02.04_Bugs_Fixed
+New FunctionalityV02.04_New_Functionality
+Actions required on installationV02.04_Actions_required_on_installation
+
+Hardware Requirements - LEO 400 SeriesV02.04_Hardware_Requirements___LEO_400_Series
+Hardware Requirements - LEO 1400 SeriesV02.04_Hardware_Requirements___LEO_1400_Series
+Hardware Requirements - LEO 1500 SeriesV02.04_Hardware_Requirements___LEO_1500_Series
+
+RestrictionsV02.04_Restrictions
+
+CompatabilityCompatability
+
+Software Requirements for Second Image Window FunctionsSoftware_Requirements_for_Second_Image_Window_Functions
+
+$#V02.04 Bugs Fixed since V02.03
+1.	LEO 1400VP only: Fixes problem where on switching from VP to HV mode.the beam sometimes fails to turn on.
+2.	Fixes problem with RemCon32 where the STG? command is sometimes not recognised.
+3.	At very high magnifications the pixel size was reported as 0 nm.
+4.	Increases accuracy of displayed measurement values when in nm range.
+5.	Fixes problem when trying to copy string variable annotation parameters (e.g. UserName) to clipboard
+6.	Fixes problem with Cartesian 95/98 stage causing it to hang on initialisation if rotate limit not fitted.
+7.	Fixes problem in RemCon32 where 4 character commands are not recognised unless followed by a separator.
+8.	Fixes problem with Stage Navigation graphical display where Cartesian 95/98 stage has incorrect centre of rotation on 1400/1400VP Series.
+9.	Fixes problem where XRay linescan scaling was used for Linescan.
+10.	User Accounting review data presentation corrected and revised.
+11.	Fjeld Stage (Leo 1560) M axis initialisation speed problem fixed
+12.	Modifications to LEOAPI Object control for use with SIS Software.
+13.	Modification for Administrator User Privileges on LEO 1525 systems.
+14.	Fixes problem where auto file numbering could get out of step when requesting file export from icon then from dialog.
+15.	Fixes problem where a temporary file sometimes remained undeleted.
+16.	Fixes problem on LEO 400 Series where EHT Off / Beam On sequence doesn't restore beam
+17.	Fixes problem of Z step size on LEO 400 Series Eucentric stage.
+$#V02.04 New Functionality
+NOTE: If accessed from the installation CD the Links below will fail.
+
+{bmc bm1.bmp}	Provides Support for Particle Scan software on LEO 400 and LEO 1500 Series.
+{bmc bm1.bmp}	Support provided for multiple instances of RemCon321MX9.C1@remcon32.hlp.
+{bmc bm1.bmp}	Installation may now be made to other drives if required.
+{bmc bm1.bmp}	The Time parameter now displays seconds.
+{bmc bm1.bmp}	New Parameters - Version and Serial Number.
+{bmc bm1.bmp}	Supports EBBU (Electrostatic Beam Blanking Unit) on 1400 and 1400VP systems.
+{bmc bm1.bmp}	On LEO1400/1400VP/400 (excluding 420) systems the aperture table now provides the ability to record aperture positions.
+{bmc bm1.bmp}	An additional output device type 'Video PrinterRDMM6C@imgmgr.hlp' is provided. See also CustomisationN31_RN@leom.hlp.
+{bmc bm1.bmp}	A User Preference to Reset the display LUT on Unfreeze4P9TGFP@leoserv.hlp has been added.
+{bmc bm1.bmp}	Leo CoolStage now has on line help
+{bmc bm1.bmp}	Save/Load Stage Co-ordinate lists to/from comma separated text file.
+{bmc bm1.bmp}	Stage Registration. 3 point alignment added.
+{bmc bm1.bmp}	Parachute archive/restore utility added. Select Parachute help from task menu for details.
+{bmc bm1.bmp}	User Interface French and German translation included.
+{bmc bm1.bmp}	LEO1400/1400VP Series: Enhanced depth of field at low magnifications.
+{bmc bm1.bmp}	Special Macro instructions to step up/down Working Distance.Q2NZX@leom.hlp
+{bmc bm1.bmp}	Protected ZK8LPPZ@stgmgr.hlp function has been extended by the addition of Safe Z position. (Not available on LEO 400 Series)
+{bmc bm1.bmp}	Support added for Fjeld 6" Mk 2 Stage (LEO 1500 series only - revised ball screw pitch) 
+$#V02.04 Actions required on installation
+LEO 400 Series: There are no specific actions if upgrading from V02.03
+LEO 1500 Series:  LEO Service must recalibrate the Gun Alignment.
+
+If upgrading from V02.02 or earlier see V02.03 actions requiredV02.03_Actions_required_on_installation.
+$#V02.04 Hardware Requirements - LEO 400 Series
+This software will run on any LEO 420, 430, 435VP,  438VP and 440  which has been delivered with Windows95/Windows98, or has been upgraded with the factory supplied Windows95/98 upgrade kit.
+
+Note that unless a Cartesian 95 stage is fitted that a Trackerball option is required for motorised stage control.
+$#V02.04 Hardware Requirements - LEO 1400 Series
+The LEO 1400 and 1400VP Series must be fitted with the following versions or later of firmware
+
+
+	Part Number	Version	
+EO Board	347924-6018.020	2	
+Scan Generator	348224-8321.040	040	
+Vacuum Board (1400)	347924-6026.000	1	
+Vacuum Board (1400VP)	347924-6026.100	1	
+Vacuum Board(1400+Column Pumping)	347924-6026.200	1	
+Vacuum Board(1400VP+Column Pumping)	347924-6026.300	1	
+Hard panel	348224-8320.040	4	
+Stage Board (5 axis)	348224-6034.050	1/10	
+
+
+
+$#V02.04 Hardware Requirements - LEO 1500 Series
+The LEO 1500 series must be fitted with the following versions or later of firmware
+
+	Part Number	Version	
+EO Board	348224-8318.060	6	
+Scan Generator	348224-8321.040	040	
+Vacuum Board	348224-8326.032	3.2	
+Hard panel	348224-8320.040	4	
+Stage Board (1530)	876006 V06.00	1/10	
+Stage Board (1550)	876007 V06.00	1/10	
+Stage Board (1560)	876008 V06.00	1/10	
+
+$#V02.04 Restrictions
+The following restrictions/problems apply to this release:
+
+General
+{bmc bm1.bmp}	Support for the French and German language is only partially supported.
+{bmc bm1.bmp}	Stage Control Manager navigation graphical display does not yet support all types of sample holders.
+{bmc bm1.bmp}	DDE Image Capture does not work in Office 97 when running under Windows 98. Use clipboard copy/paste as an alternative.
+{bmc bm1.bmp}	In the Administrator on the Configuration Stage Tab there are now check boxes to enable/disable individual stage axes. These will only be effective if this function is supported by the version of stage firmware fitted.
+{bmc bm1.bmp}	On LEO 1400 and 1500 Series using 3072 x 2304 image resolution the following problems when saving image files are unresolved:
+¡	If in reduced raster mode the image saved has some regions misplaced.
+¡	If the image is frozen and other image files loaded to form a montage and the displayed image subsequently saved some of the regions are misplaced in the output file.
+
+LEO 1400
+None
+
+LEO 1500
+None
+
+LEO 400
+The following functions that were available in earlier versions of LEO 400 software are no longer supported:
+{bmc bm1.bmp}	Y Modulation display
+{bmc bm1.bmp}	Video Printer support
+{bmc bm1.bmp}	Window Mode
+{bmc bm1.bmp}	Live Histograms and Live Line Profiles
+$#KNew Tungsten filament types
+Following the introduction of a new filament type in the LEO 1400/1400VP series after serial No. -03-00 two additional filament type parameters have been added.
+ 
+If you have a 1400/1400VP series instrument and use filaments with LEO part number 340602-8106.000 then select either Tungsten or W(Zeiss).
+If you have a 1400/1400VP and use Agar filaments LEO part no 102079 then select W(Agar).
+$#Tungsten filament types
+Provides support for  new tungsten filament types introduced with the LEO 1400/1400VP Series after serial No. -03-00.
+
+Three additional filament type parameters have been added. 
+
+{bmc bm0.bmp}	If you have a 1400/1400VP Series instrument and use filaments with LEO part No. 340602-8106.000 then select either Tungsten or W (Zeiss).
+{bmc bm0.bmp}	If you have a 1400/1400VP and use Agar filaments LEO part No 102079 then select W (Agar A054).
+{bmc bm0.bmp}	If you have a 1400/1400VP and use Agar filaments LEO part No. 5000190 then select W (Agar A054-L)
+

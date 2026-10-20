@@ -1,0 +1,290 @@
+﻿# current.mll: format 1, 476 strings after the first
+
+MACRO Ext off (Version 1)
+  Comment  Switch off external scan control
+  Digital  DP_EXT_SCAN_CONTROL%0
+
+MACRO Ext On (Version 1)
+  Comment  Switch on external scan control
+  Digital  DP_EXT_SCAN_CONTROL%1
+
+MACRO Freeze At End (Version 1)
+  Comment  Freeze image at end of frame
+  Digital  DP_FREEZE_ON%0
+  Command  CMD_FREEZE_ZONE
+
+MACRO Freeze Now (Version 1)
+  Comment  Freeze image immediately
+  Digital  DP_FREEZE_ON%2
+  Command  CMD_FREEZE_ZONE
+
+MACRO Photo (Version 1)
+  Digital  DP_HRRU_CAMERA%2
+  Command  CMD_HRRU
+  Delay  2
+  IfThen  DP_FROZEN%1%0
+    Digital  DP_HRRU_SOURCE%0
+  EndIf
+  IfThen  DP_FROZEN%0%0
+    Digital  DP_HRRU_SOURCE%1
+  EndIf
+  Digital  DP_HRRU_FAST%0
+  Digital  DP_HRRU_SPEED%1
+  Delay  1
+  Special  26
+  Command  CMD_TAKE_PHOTO
+  Delay  25
+  Analogue  AP_DEVELOP_TIME%4.500000e+004
+  Message  %#XXXXXXXXPhoto is finished. Withdraw film packet then select 'OK'.
+  Command  CMD_START_DEVELOP_TIMER
+  Delay  40
+  Special  35
+  Message  %#XXXXXXXXDeveloping Completed.
+
+MACRO F7 (Version 1.0)
+  Comment  Sets a 'Live image' mode.
+  Command  CMD_SCANRATE2
+  Command  CMD_FRAME_AVERAGE
+  Command  CMD_UNFREEZE_ZONE
+  Analogue  AP_FRAME_AVERAGE_COUNT%1.000000e+000
+  Digital  DP_FLAG6%0
+
+MACRO Change detector (Version 1)
+  Comment  Used for Default Toolbar- Detector ICON.
+  Comment  Toggles between Secondary and Backscatter detectors.
+  IfThen  DP_DETECTOR_CHANNEL%SE1%0
+    Digital  DP_DETECTOR_CHANNEL%QBSD
+    Mouse  AP_BRIGHTNESS AP_CONTRAST
+  Else
+    Mouse  AP_BRIGHTNESS AP_CONTRAST
+    Digital  DP_DETECTOR_CHANNEL%SE1
+  EndIf
+
+MACRO Frame Avg Toggle (Version 1)
+  Comment  Used for Default Toolbar-Frame Avgerage ICON.
+  Comment  Toggles between 2 frame average and Live Macro.
+  IfThen  DP_FLAG6%0%0
+    Command  CMD_FRAME_AVERAGE
+    Analogue  AP_FRAME_AVERAGE_COUNT%2.000000e+000
+    Digital  DP_FLAG6%1
+  Else
+    Call  Live
+  EndIf
+
+MACRO Frame Int Toggle (Version 1)
+  Comment  Used for Default Toolbar-Frame Integrate ICON.
+  Comment  Toggles between Frame Integrate Mode and Live Macro.
+  IfThen  DP_FLAG6%0%0
+    Command  CMD_FRAME_AVERAGE
+    Analogue  AP_FRAME_AVERAGE_COUNT%2.500000e+001
+    Digital  DP_FREEZE_ON%0
+    Command  CMD_FREEZE_ZONE
+    Digital  DP_FLAG6%2
+  Else
+    Call  Live
+  EndIf
+
+MACRO Line Integrate Toggl (Version 1)
+  Comment  Used for Default Toolbar-Line Integrate ICON.
+  Comment  Toggles between Line Integrate Mode and Live Macro.
+  IfThen  DP_FLAG6%0%0
+    Command  CMD_LINE_AVG
+    Analogue  AP_LINE_AVERAGE_COUNT%2.500000e+001
+    Digital  DP_FREEZE_ON%0
+    Command  CMD_FREEZE_ZONE
+    Digital  DP_FLAG6%3
+  Else
+    Call  Live
+  EndIf
+
+MACRO Scan Faster (Version 1)
+  Comment  Used for Default Toolbar-Scan Faster ICON.
+  Comment  Increments Scan speed +, indicates when fastest scan reached.
+  IfThen  DP_SCANRATE%0%0
+    Message  %#XXXXXXXXFastest Scan rate reached.
+  EndIf
+  Command  CMD_SCANRATEUP
+
+MACRO Scan Slower (Version 1)
+  Comment  Used for Default Toolbar-Scan Slower ICON.
+  Comment  Increments Scan Speed (-) , limits to Scan Speed 7, indicates when scan speed 7 has been reached.
+  IfThen  DP_SCANRATE%7%0
+    Message  %#XXXXXXXXSlowest Scan rate reached.
+    Halt
+  EndIf
+  Command  CMD_SCANRATEDOWN
+
+MACRO Splittogl (Version 1.0)
+  Comment  Used for Default Toolbar- Split Screen ICON.
+  Comment  Toggles between split screen and normal .
+  IfThen  DP_OPERATING_MODE%1%1
+    Command  CMD_MODE_SPLIT
+  Else
+    Command  CMD_MODE_NORMAL
+  EndIf
+
+MACRO CP750 Print (Version 1)
+  Comment  Used for Default Toolbar- Printer ICON.
+  Comment  Prepare Screen display for printing to CP750 Printer.
+  Command  CMD_DISPLAY
+  Special  38
+  Special  40
+  Special  35
+  Special  32
+  Special  20
+  Special  33
+  Halt
+
+MACRO Annotate and Measure (Version 1)
+  Comment  Used for Default Toolbar- Annotate ICON.
+  Special  19
+
+MACRO Save Image to File (Version 1)
+  Comment  Used for Default Toolbar-Save to Disk ICON.
+  Comment  Saves image to user Dir.& Drive.
+  Command  CMD_DISPLAY
+  Special  11
+
+MACRO Sample Change Toggle (Version 1)
+  Comment  Used for Default Toolbar-Sample Change ICON
+  Comment  Toggles between macros Vent and Pump dependent on current vac status.
+  IfThen  DP_VACSTATUS%0%1
+    Message  %#DP_FLAG0Do You Want to VENT?
+    IfThen  DP_FLAG0%1%0
+      Call  VENT
+    Else
+      Halt
+    EndIf
+  Else
+    Call  Pump
+  EndIf
+
+MACRO KV / I Probe (Version 1)
+  Comment  Used for Default Toolbar-EHT(kV) ICON.
+  Comment  Set KV 
+  Mouse  AP_ACTUALKV ***
+
+MACRO Filament Adjust (Version 1)
+  Comment  Used for Default Toolbar-Filament ICON.
+  Comment  Assigns Fil I to Middle Mouse with Warning.
+  Message  %#DP_FLAG0Filament Current Adjustment will be assigned to the MIDDLE Mouse button. Do you want to do this now?
+  IfThen  DP_FLAG0%1%0
+    Mouse  AP_MAG AP_ACTUALCURRENT
+  Else
+    Halt
+  EndIf
+
+MACRO VP Control (Version 1)
+  Comment  Used for Default Toolbar-VP Control ICON.
+  Comment  Displays VP Control Panrl.
+  Special  43
+
+MACRO Mag/Focus (Version 1)
+  Comment  Used for Mag/Focus Icon in toolbar
+  IfThen  DP_OPTIBEAM%1%0
+    Mouse  AP_MAG AP_WD
+  Else
+    Mouse  AP_MAG AP_C3
+  EndIf
+
+MACRO Redtogl (Version 2.0)
+  Comment  Used for Default Toolbar- Reduced Raster ICON.
+  Comment  Toggles between Reduced (Small) Raster and Normal Full Raster Modes.
+  IfThen  DP_OPERATING_MODE%5%0
+    Command  CMD_MODE_NORMAL
+    Call  Live
+  Else
+    IfThen  DP_OPERATING_MODE%4%0
+      Command  CMD_MODE_NORMAL
+      Call  Live
+    Else
+      Command  CMD_MODE_REDUCED
+    EndIf
+  EndIf
+
+MACRO Live (Version 2.0)
+  Comment  Used for Default Tolbar -MACROS-Frame Avg, Frame Int, Line Int.
+  Comment  Sets a 'Live image' mode.
+  Comment  Set fastest rate for current conditions
+  IfThen  DP_MAX_RATE%0%0
+    Command  CMD_SCANRATE0
+  EndIf
+  IfThen  DP_MAX_RATE%1%0
+    Command  CMD_SCANRATE1
+  EndIf
+  IfThen  DP_MAX_RATE%2%0
+    Command  CMD_SCANRATE2
+  EndIf
+  IfThen  DP_MAX_RATE%3%0
+    Command  CMD_SCANRATE3
+  EndIf
+  IfThen  DP_MAX_RATE%4%0
+    Command  CMD_SCANRATE4
+  EndIf
+  Command  CMD_FRAME_AVERAGE
+  Command  CMD_UNFREEZE_ZONE
+  Analogue  AP_FRAME_AVERAGE_COUNT%1.000000e+000
+  Digital  DP_FLAG6%0
+
+MACRO Pump (Version 2)
+  Comment  Used for Default Toolbar-Macro Sample Change Toggle
+  Comment  Starts Pumping, Displays Vac Status,at Vac Ready, Hide Vac Status, Restore Beam.
+  Command  CMD_PUMP
+  Panel  0%1%3
+  WaitForTimeout  DP_VACSTATUS%1%2000
+  Panel  1%1%3
+  IfThen  DP_RUNUPSTATE%1%1
+    IfThen  DP_RUNUPSTATE%10%0
+      Command  CMD_BEAM_ON
+    EndIf
+    IfThen  DP_RUNUPSTATE%0%0
+      Command  CMD_MANUAL
+    EndIf
+    WaitForTimeout  DP_RUNUPSTATE%1%60
+  EndIf
+
+MACRO VENT (Version 2)
+  Comment  Used for Default Toolbar-Macro Sample Change Toggle
+  Comment  Ensures system is safe to VENT and then VENTS. 
+  Comment  Ensure EHT is off
+  IfThen  DP_RUNUPSTATE%0%1
+    IfThen  DP_RUNUPSTATE%10%1
+      Command  CMD_EHT_OFF
+      WaitForTimeout  DP_RUNUPSTATE%10%60
+    EndIf
+  EndIf
+  Comment  Ensure stage is initialised
+  IfThen  DP_STAGE_MOTOR%1%0
+    IfThen  DP_STAGE_INIT%0%0
+      Message  %#DP_FLAG0Stage is NOT initialized and may not allow safe operation. Do you want to initialize now?
+      IfThen  DP_FLAG0%1%0
+        Command  CMD_STAGE_INIT
+      Else
+        Halt
+      EndIf
+    EndIf
+    Comment  move stage to safe position
+    Analogue  AP_STAGE_GOTO_Z%1.000000e-003
+    WaitForTimeout  DP_STAGE_IS%0%60
+    Analogue  AP_STAGE_GOTO_X%5.000000e-002
+    WaitForTimeout  DP_STAGE_IS%0%60
+    Analogue  AP_STAGE_GOTO_Y%5.000000e-002
+    WaitForTimeout  DP_STAGE_IS%0%60
+  EndIf
+  Comment  and finally vent
+  Comment  Flag 0 indicates if sequence OK (=0) or to be aborted (=1)
+  Digital  DP_FLAG0%1
+  While  DP_FLAG0%0%1
+    IfThen  DP_VENT_INVALID_REASON%0%0
+      Command  CMD_VENT
+      Digital  DP_FLAG0%0
+      Halt
+    Else
+      Comment  Wait until valid or aborted
+      Panel  0%0%3
+      Message  %#DP_FLAG1Venting is inhibited. See Vacuum tab for reason. Remove cause of inhibit and press YES to try again or press NO to abort  
+      IfThen  DP_FLAG1%0%0
+        Halt
+      EndIf
+    EndIf
+  EndWhile

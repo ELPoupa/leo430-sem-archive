@@ -1,0 +1,365 @@
+﻿=== MENU 113 (lang 0809)
+  [&Toolbars]
+  32942  &User
+  149  Hard Front Panel Status
+  150  TrackerBall X and Y Axes Parameters
+  ----
+  59393  &Status
+=== MENU 128 (lang 0809)
+  [&File]
+    32785  &Restore
+    33116  Save For Restore
+    32786  &Standard
+    32788  &Load State...
+    32789  S&ave State...
+    ----
+    32890  L&oad Image...	Ctrl+O
+    32871  Sav&e Image...	Ctrl+E
+    33071  &Print Image	Ctrl+P
+    57606  Pr&int Setup...
+    ----
+    32938  Load Annotation
+    32939  Save Annotation
+    ----
+    32897  Lo&g Off
+    ----
+    57665  E&xit
+  [&Edit]
+    32792  &Input LUT...
+    32791  &Display LUT...
+    32794  &Toolbar...
+    32931  &Annotation...	Ctrl+A
+    33050  Insert Annotation Text...	Ctrl+T
+    33070  Insert Point to Point Marker...	Ctrl+M
+    32797  &Clipboard...
+  [&View]
+    32775  &Toolbars...	Ctrl+B
+    [&Data Zone]
+      32933  Toggle Data Zone	Ctrl+D
+      32940  Display &Default Data Zone
+      ----
+      32934  &Hide Data Zone(s)
+      32937  &Unhide Data Zone(s)
+      ----
+      33117  Load User Data Zone...
+    ----
+    32171  Toggle Visible Dialogs	F3
+    32909  Toggle Full Screen Image	Shift+F3
+    ----
+    32801  &Crosshairs
+    32802  &Graticule
+    32803  Graticule &Spacing...
+    ----
+    32170  S&EM Status...	Ctrl+I
+    [&Hide Annotation]
+      32900  Hide &All
+      32901  Hide Text/Bitmap/Line A&nnotaion
+      32902  Hide &Measurement Annotation
+      33124  Hide Measurement &Results Panels
+      33126  Hide Annotation &Selection Handles
+    [&Unhide Annotation]
+    32903  Unhide &All
+    32904  Unhide Text/Bitmap/Line  A&nnotation
+    32905  Unhide &Measurement Annotation
+    33125  Unhide Measurement &Results Panels
+    33127  Unhide Annotation &Selection Handles
+  [&Beam]
+    32804  EHT &On
+    32906  &EHT Off
+    32807  &Gun Setup...
+    ----
+    32907  &Emission
+    ----
+    32932  Accelerating &Voltage...
+    32813  &Apertures...
+    32814  S&tigmation...
+    32908  Beam Shi&ft...
+  [&Detection]
+    [D&etectors]
+      32910  SE1
+      32911  SE2
+      32912  BSD
+      32913  SCM
+    32914  &Mixing
+    [&TV Inputs]
+      32916  TV1
+      32917  TV2
+      32918  TV3
+    32915  &X-Ray...
+  [&Image]
+    32819  &Signal Adjust...
+    32820  &Noise Reduction...
+    ----
+    32823  &Freeze
+    ----
+    32919  Image &Processing...
+    [Second Image &Window]
+      33112  Load From &Display ...	Ctrl+2
+      33111  Load From &File ...
+      ----
+      33118  Toggle Second Image
+    ----
+    33074  Find &Image
+    ----
+    33128  Image &Gallery
+  [&Scanning]
+    32831  &Speeds
+    32832  &Normal
+    32833  &Reduced
+    32834  S&plit
+    32920  &Dual Mag
+    32841  Sp&ot
+    32921  &Line Scan
+    32840  &X-Ray Line Scan
+    ----
+    32842  Rotate / &Tilt...
+    32843  Dynamic &Focus...
+    ----
+    [Store Resol&ution]
+    32893  512 * 384
+    32892  1024 * 768 
+    32894  2048 * 1536
+    32895  3072 * 2304
+  [Sta&ge]
+    32926  Stage &Initialise...
+    ----
+    33106  Stage Control...
+    32923  Store / &Recall...
+    32927  Centre Point	Ctrl+Tab
+    32928  Centre Feature	Ctrl+Shift+Tab
+    32929  Stage Sca&n...
+    32930  Stage M&ap
+    [Survey]
+    33113  Settings ...
+    33115  Survey Mode
+  [Va&cuum]
+    32924  Vacuum &Status...
+    32925  Specimen &Change...
+  [&Tools]
+    32854  &Run A Macro
+    32865  Macro &Editor...
+    32781  &Goto Control Panel...	Ctrl+G
+    33042  Goto &Panel ...
+    ----
+    32872  Image Capture Mode
+    32873  Capture Now...
+    33103  Image Capture Frequency...
+    ----
+    32870  &User Preferences...
+    ----
+    33122  Administrator
+    33130  Parachute Archiving
+  [&Help]
+  57668  &Help On Help
+  57667  Search ...
+  32863  &Release Notes
+  ----
+  57670  &LEO Help	F1
+  33105  Getting Started...
+  33104  How To...
+  32862  &Keys Help	F9
+  33131  Parachute
+  ----
+  57664  &About LEO-32...
+  32778  About &Dialog Manager...
+  32782  About &Image Manager...
+  33041  About &Tabbed-Dialog Manager...
+  33123  About &Stage Manager
+=== MENU 167 (lang 0809)
+  [Macro]
+  32779  &Run A Macro
+  ----
+  32780  &View Currently Executing Macro(s)
+=== MENU 181 (lang 0809)
+  [VACSTATUS]
+  32953  Command10
+  32952  Command9
+  32951  Command8
+  32950  Command7
+  32949  Command6
+  32948  Command5
+  32947  Command4
+  32946  Command3
+  32945  Command2
+  32944  Command1
+=== MENU 182 (lang 0809)
+  [BEAMSTATUS]
+  32963  Command10
+  32962  Command9
+  32961  Command8
+  32960  Command7
+  32959  Command6
+  32958  Command5
+  32957  Command4
+  32956  Command3
+  32955  Command2
+  32954  Command1
+=== MENU 188 (lang 0809)
+  33049  &Toolbar...	Ctrl+X
+=== MENU 193 (lang 0809)
+  33079  Beam &On
+  33080  Beam O&ff
+  32906  Sta&ndby
+  33081  &Probe Current
+  33120  Spot Size
+  33082  &Gun Setup...
+  32907  &Emission
+  33119  Gun Align ...
+  ----
+  33083  OptiBeam &Auto Resolution
+  33084  Optibeam &Depth Mode
+  33085  Optibeam &Setup...
+  ----
+  33086  A&pertures...
+  33087  S&tigmation...
+  33088  Bea&m Shift...
+=== MENU 194 (lang 0809)
+  [Detectors]
+    33092  Detector1
+    33093  Detector2
+    33094  Detector3
+    33095  Detector4
+    33096  Detector5
+    33097  Detector6
+    33098  Detector7
+  32914  &Mixing
+  33091  &X-Ray
+=== MENU 197 (lang 0809)
+  33100  &Quad
+=== MENU 198 (lang 0809)
+  33101  &VP Control...
+=== MENU 199 (lang 0809)
+  33102  VP Service
+=== MENU 204 (lang 0809)
+  33129  Toolbar
+=== DIALOG 100 "About LEO-32" (15 controls)
+  4294967295  STATIC  "#147"
+  4294967295  STATIC  "#148"
+  1000  STATIC  "(LEO Version)"
+  1001  STATIC  "(LEO Copyright)"
+  4294967295  STATIC  "Physical Memory :"
+  4294967295  STATIC  "Disk Space :"
+  1019  STATIC  "(Avail Mem)"
+  1020  STATIC  "(Disk Space)"
+  4294967295  STATIC  "Portions Copyright © 1994-98 Microsoft Corporation"
+  4294967295  STATIC  "This computer program is protected by copyright law and international treaties. Unauthorised reproduction or distribution of this program, or any portion of it, will result in severe civil and criminal penalties and will be prosecuted to "
+  4294967295  STATIC  ""
+  4294967295  STATIC  ""
+  1002  STATIC  "(LEO SEM Serial Number)"
+  4294967295  STATIC  "the maximum extent possible under law"
+  4294967295  STATIC  "The JPEG functionality in this software is based in part on the work of the Independant JPEG Group"
+=== DIALOG 121 "Left Mouse Click Button Assignments" (18 controls)
+  1037  SysTreeView32  "Generic3"
+  1010  SysTreeView32  "Generic3"
+  1031  EDIT  ""
+  1012  SysTreeView32  "Generic3"
+  1032  EDIT  ""
+  1029  BUTTON  "Locked"
+  1030  BUTTON  "Unlocked"
+  1015  EDIT  ""
+  1056  BUTTON  ""
+  -1  BUTTON  "User Toolbar Buttons:"
+  -1  BUTTON  "Select Button Action:"
+  -1  BUTTON  "Middle Mouse Button Adjustment"
+  1033  COMBOBOX  ""
+  -1  BUTTON  "ToolTip"
+  -1  STATIC  "Source:"
+  -1  STATIC  "TipText:"
+  1040  EDIT  ""
+  1041  EDIT  ""
+=== DIALOG 125 "Display" (1 controls)
+  1020  LISTBOX  ""
+=== DIALOG 132 "Select" (3 controls)
+  1025  SysTreeView32  "Generic3"
+  1022  STATIC  "Static"
+  1023  EDIT  ""
+=== DIALOG 136 "File" (3 controls)
+  1024  BUTTON  "&Load"
+  1023  BUTTON  "&Save As"
+  1011  BUTTON  "&Clear Display"
+=== DIALOG 149 "Toolbar Views" (9 controls)
+  1  BUTTON  "OK"
+  -1  BUTTON  "Toolbars"
+  1007  BUTTON  "&User Toolbar"
+  1009  BUTTON  "&Status Bar"
+  -1  BUTTON  "Tool Tips"
+  1005  BUTTON  "&Show"
+  1008  BUTTON  "&Hide"
+  1010  BUTTON  "H&FP Status"
+  1011  BUTTON  "&TKB Status"
+=== DIALOG 151 "User Toolbar" (14 controls)
+  1012  SysTreeView32  "Generic3"
+  1013  BUTTON  "Add"
+  1014  BUTTON  "Remove"
+  1011  SysTreeView32  "Generic3"
+  1015  BUTTON  "Move &Up"
+  1016  BUTTON  "Move &Down"
+  -1  STATIC  "Available Button Images:"
+  -1  STATIC  "User  Toolbar Buttons:"
+  1017  BUTTON  "D&efault"
+  1018  BUTTON  "&Load"
+  1019  BUTTON  "&Save As"
+  1035  BUTTON  "Default Fixed"
+  1065  BUTTON  "Save As Common"
+  1066  BUTTON  "Examples"
+=== DIALOG 166 "Macro Control Panel" (10 controls)
+  1007  BUTTON  "Stop"
+  1008  BUTTON  "Pause"
+  1009  BUTTON  "Continue"
+  1005  EDIT  ""
+  1006  EDIT  ""
+  1010  BUTTON  "Step"
+  1011  EDIT  ""
+  -1  STATIC  "Macro:"
+  -1  STATIC  "Status:"
+  -1  STATIC  "Error:"
+=== DIALOG 169 "Currently Executing Macros" (3 controls)
+  1015  COMBOBOX  ""
+  2  BUTTON  "Cancel"
+  1  BUTTON  "OK"
+=== DIALOG 171 "Select a Macro to Execute" (3 controls)
+  1020  COMBOBOX  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+=== DIALOG 172 "Save The ToolBar" (4 controls)
+  1036  EDIT  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  BUTTON  "Enter a File Name"
+=== DIALOG 173 "Middle Mouse Click Button Assignments" (12 controls)
+  1043  SysTreeView32  "Generic3"
+  1044  SysTreeView32  "Generic3"
+  1048  EDIT  ""
+  1045  SysTreeView32  "Generic3"
+  1049  EDIT  ""
+  1050  BUTTON  "Locked"
+  1051  BUTTON  "Unlocked"
+  -1  BUTTON  "User Toolbar Buttons:"
+  -1  BUTTON  "Select Button Action:"
+  -1  BUTTON  "Middle Mouse Button Adjustment"
+  1046  EDIT  ""
+  1047  EDIT  ""
+=== DIALOG 174 "Save Status Display" (4 controls)
+  1057  EDIT  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  BUTTON  "Enter a File Name"
+=== DIALOG 190 "" (2 controls)
+  1060  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  1062  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+=== DIALOG 200 "" (2 controls)
+  1063  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  1064  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+=== DIALOG 201 "Example Toolbars" (4 controls)
+  1067  LISTBOX  ""
+  1068  BUTTON  "Information"
+  1069  BUTTON  "Install"
+  1070  BUTTON  "Help"
+=== DIALOG 262 "Image Update Frequency" (7 controls)
+  382  EDIT  ""
+  381  msctls_updown32  "Spin2"
+  4294967295  BUTTON  "Update"
+  4294967295  STATIC  "Interval (ms)"
+  383  BUTTON  "Enabled"
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"

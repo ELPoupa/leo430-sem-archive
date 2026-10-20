@@ -1,0 +1,309 @@
+﻿=== MENU 128 (lang 0809)
+  [&File]
+    32795  &New Macro
+    ----
+    32796  &Edit Macro
+    32802  &Delete Macro
+    32859  &Clear Editor
+    ----
+    32798  &Save Macro To Library
+    32821  Save &As Macro To Library
+    ----
+    32797  &Load Macro File
+    32813  Save &Macro To File
+    32879  Save As Macro &To File
+    32889  Save As Macro to Common File
+    32895  Macro Locations...
+    ----
+    32818  &Rename Macro
+    ----
+    57607  &Print...	Ctrl+P
+    57606  Pr&int Setup...
+    ----
+    32858  E&xit
+  [&Edit]
+    32810  &Undo	Ctrl+Z
+    ----
+    32800  &Edit Item	Ctrl+E
+    32809  &Delete Item	Ctrl+D
+    ----
+    32811  Clip&board
+    ----
+    32888  Timeout ...
+  [&View]
+    59392  &Toolbar
+    59393  &Status Bar
+  [&Insert]
+    [Decision &Structure]
+      32777  &If Then
+      32778  E&lse
+      32779  &End If
+      ----
+      32780  &While
+      32781  En&d While
+    [&Digital Parameter]
+      32782  Set Digital State
+      32783  Confirm Configuration
+      32784  Wait For State - Timeout
+    [&Analogue Parameter]
+      32786  Set Analogue Parameter
+      32788  Set Analogue Pair
+    32775  C&ommand
+    [Stage]
+      32862  Goto XY
+      32861  Go To Label
+      32880  Save position in "Current"
+      32863  Wait for Stage Idle
+      ----
+      32864  Mark Point
+      32865  Go To First Point
+      32866  Go To Next Point
+      32867  While not at End List
+      ----
+      32868  Stage Scan Start
+      32869  Stage Scan Next Field
+      32870  While Stage Scan Not at End
+    [Panels]
+      32872  Hide Panel
+      32873  Show panel
+      32874  Show Control Tab
+      32887  Hide VP Control Panel
+      32883  Show VP Control Panel
+      ----
+      32875  Hide Control Panel
+      32876  Show Control Panel
+      32877  Hide Panels
+      32878  Show Panels
+    32789  &Call Macro
+    32790  Display &Message
+    32791  Special &UIF Function
+    32822  Mous&e
+    32882  Knob
+    [Trackerball]
+      32884  Show Dialog
+      32885  Hide Dialog
+      32886  Assign parameters
+    32848  &End A Macro
+    32833  &Pause
+    32834  Dela&y
+    32776  Commen&t
+    32881  Execute Program
+    [Look Up Table]
+      [Display LUT]
+        32890  Editor
+        32891  Reset
+      [Input LUT]
+        32892  Editor
+        32893  Reset
+      32894  Load From File
+    ----
+    32854  Configuration Conditions
+    32855  Gun Conditions
+    32856  Setup Conditions
+    32857  Application Conditions
+  [&Library]
+    32792  &Load User Library
+    32801  &Merge Libraries
+    ----
+    32814  L&oad Standard Library
+    32815  M&erge Standard Library
+    ----
+    32816  &Save Library As
+    ----
+  [&Debug]
+    32803  &Run	F5
+    32804  &Step	F10
+    32806  &Continue	F7
+    32805  S&top	ESC
+    32896  Stop All Macros
+  [&Generator]
+    32852  &Save System Conditions
+  [&Help]
+  57667  &Help Topics
+  ----
+  57664  &About LEOM...
+=== DIALOG 100 "About LEOM" (4 controls)
+  -1  STATIC  "#128"
+  -1  STATIC  "LEOM Version 2.1"
+  -1  STATIC  "Copyright © Leo Electron Microscopy Ltd 1997-99"
+  1  BUTTON  "OK"
+=== DIALOG 130 "Select a Command" (3 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  1000  COMBOBOX  ""
+=== DIALOG 131 "Available Macros" (4 controls)
+  1001  COMBOBOX  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  1041  BUTTON  "Select A Macro"
+=== DIALOG 136 "New Macro" (6 controls)
+  1004  EDIT  ""
+  1005  EDIT  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  BUTTON  "Enter A Macro Name"
+  -1  BUTTON  "Enter A Macro Version Number"
+=== DIALOG 137 "Merge Macro Libraries" (7 controls)
+  1  BUTTON  "Keep This Macro"
+  2  BUTTON  "Keep This Macro"
+  1006  LISTBOX  ""
+  1007  LISTBOX  ""
+  -1  BUTTON  "Select The Macro Which Will Be Kept"
+  1046  STATIC  "Static"
+  1047  STATIC  "Static"
+=== DIALOG 138 "Library Name" (4 controls)
+  1008  EDIT  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  BUTTON  "Enter New Library Name"
+=== DIALOG 139 "Change Macro Name And Version" (6 controls)
+  1008  EDIT  ""
+  1009  EDIT  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  BUTTON  "Enter New Name"
+  -1  BUTTON  "Enter New Version"
+=== DIALOG 140 "Co-Ordinate Pairs" (10 controls)
+  1010  COMBOBOX  ""
+  1011  EDIT  ""
+  1012  EDIT  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  BUTTON  "Select A Parameter And Enter It's New Values"
+  -1  STATIC  "Parameter"
+  -1  STATIC  "X"
+  -1  STATIC  "Y"
+  1050  STATIC  "Static"
+=== DIALOG 141 "Analogue Parameters" (8 controls)
+  1013  COMBOBOX  ""
+  1014  EDIT  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  BUTTON  "Select An Analogue Parameter And Enter It's Value"
+  -1  STATIC  "Parameter"
+  -1  STATIC  "Value"
+  1040  STATIC  "Static"
+=== DIALOG 142 "Digital Parameters" (7 controls)
+  1015  COMBOBOX  ""
+  1016  COMBOBOX  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  BUTTON  "Select A Digital Parameter And Select A State"
+  -1  STATIC  "Parameter"
+  -1  STATIC  "State"
+=== DIALOG 143 "Comment" (4 controls)
+  1017  EDIT  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  BUTTON  "Enter A Comment"
+=== DIALOG 144 "Message" (6 controls)
+  1018  EDIT  ""
+  1  BUTTON  "OK"
+  -1  BUTTON  "Enter A Message"
+  2  BUTTON  "CANCEL"
+  1055  BUTTON  "Yes No Box"
+  1056  COMBOBOX  ""
+=== DIALOG 145 "Mouse Adjustment Parameters" (10 controls)
+  1019  COMBOBOX  ""
+  1048  BUTTON  "Left Button Only"
+  1049  BUTTON  "Both Buttons"
+  1021  COMBOBOX  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  BUTTON  "Select Left Button Parameter"
+  -1  BUTTON  "Select Middle Button Parameter"
+  -1  STATIC  "Select Parameter"
+  -1  STATIC  "Select Parameter"
+=== DIALOG 147 "Confirm State" (6 controls)
+  1  BUTTON  "CONTINUE"
+  2  BUTTON  "QUIT"
+  1023  EDIT  ""
+  1024  EDIT  ""
+  -1  STATIC  "Would You Like To Continue With The Macro?"
+  -1  BUTTON  "State - Please Confirm"
+=== DIALOG 148 "Wait For State" (10 controls)
+  1026  COMBOBOX  ""
+  1027  COMBOBOX  ""
+  1033  EDIT  ""
+  1034  msctls_updown32  "Spin4"
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  4294967295  STATIC  "Parameter"
+  4294967295  STATIC  "State"
+  4294967295  STATIC  "Timeout In Seconds"
+  1066  BUTTON  "Halt macro on timeout"
+=== DIALOG 149 "Save System Conditions" (7 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  BUTTON  "Select conditions To Save"
+  1035  BUTTON  "Save Configuration"
+  1036  BUTTON  "Save Gun Conditions"
+  1037  BUTTON  "Save Setup Conditions"
+  1038  BUTTON  "Save Application Conditions"
+=== DIALOG 150 "Delay" (4 controls)
+  1008  EDIT  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  STATIC  "Please Enter The Required Delay In Seconds"
+=== DIALOG 152 "Save Macro To File" (4 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  STATIC  "Enter A File Name"
+  1008  EDIT  ""
+=== DIALOG 153 "Parameters For While Statement" (8 controls)
+  1015  COMBOBOX  ""
+  1016  COMBOBOX  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  1043  BUTTON  "Select For NOT While"
+  -1  BUTTON  "Select A Digital Parameter And Select A State"
+  -1  STATIC  "Parameter"
+  -1  STATIC  "State"
+=== DIALOG 154 "Digital Parameters For 'IF' Statement" (8 controls)
+  1015  COMBOBOX  ""
+  1016  COMBOBOX  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  1044  BUTTON  "Select For 'IF NOT' "
+  -1  BUTTON  "Select A Digital Parameter And Select A State"
+  -1  STATIC  "Parameter"
+  -1  STATIC  "State"
+=== DIALOG 155 "Special Functions" (6 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  BUTTON  "Select A Function"
+  1045  COMBOBOX  ""
+  1008  EDIT  ""
+  -1  STATIC  "Data"
+=== DIALOG 156 "Select Label For Go To" (3 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  1006  LISTBOX  ""
+=== DIALOG 158 "Select Program to Execute" (4 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  1008  EDIT  ""
+  1057  BUTTON  "Browse ..."
+=== DIALOG 159 "Knob Function Selection" (4 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  1058  COMBOBOX  ""
+  1059  BUTTON  "Right Knob"
+=== DIALOG 160 "Trackerball parameters" (10 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  BUTTON  "X Parameter"
+  -1  BUTTON  "Y Parameter"
+  1060  COMBOBOX  ""
+  1061  COMBOBOX  ""
+  -1  BUTTON  "Button"
+  1062  BUTTON  "Left"
+  1063  BUTTON  "Middle"
+  1064  BUTTON  "Right"
+=== DIALOG 161 "Instruction Timeout" (4 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  1065  EDIT  ""
+  -1  STATIC  "Seconds"
+=== DIALOG 162 "Macro Locations" (1 controls)
+  1006  LISTBOX  ""

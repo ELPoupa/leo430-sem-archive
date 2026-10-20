@@ -1,0 +1,226 @@
+﻿$#>K2D Filters
+
+This Tab allows you to apply 2-dimensional filter operations to the displayed image or the image store.
+
+{bmc bm0.bmp} Select the 2D Filters Tab in the SEM Image Processing Control panel.  {bmc bm0.bmp} Select Source from the Drop-down ListXYVXW3@Sem.HLP (Buffer A = displayed image, Buffer B = stored image)  {bmc bm0.bmp} Select Filter from the Drop-down List. See Filter TypesFilter_Types for detail.  {bmc bm0.bmp} ClickCLICK@Sem.HLP on Execute button to apply the filter to the image.  {bmc bm0.bmp} Click on Undo button to cancel the previous filter application.  {bmc bm0.bmp} Click on {bmc bm1.bmp} to close the control panel and leave the application.	{bmc bm2.bmp}	
+
+$#>Area Fraction Calculation
+
+{bmc bm3.bmp}  ClickingCLICK@Sem.HLP on the Update button initiates an area fraction calculation.
+
+The calculation is based on the detected areaThreshold_Range defined by the Image Detect State and the Black and White thresholds.
+
+The result  is displayed as a percentage of the image store area.
+$#>KBlack Level Detection
+Any pixel in the image store with a value less than the black threshold will be coloured RED.
+$#>Contents of Image Processing
+
+The Image Processing option enables the contents of the image store to be manipulated using a Convolution KernelConvolution_Kernel>main, addition and subtraction of images, detection of image levels, area fraction measurement, and histogram equalisation.
+
+This option requires the Image Processing LicenseVDOITB@Sem.HLP.
+
+{bmc bm4.bmp} The program is called from the Menu Bar8ZP0K4@Sem.HLP with menu ImageSTFOS6@Sem.HLP and sub menu Image Processing4MZO91S@Sem.HLP
+
+{bmc bm5.bmp} Type <ALT + I> to open menu Image and then <P> to open the Image Processing sub menu
+
+The SEM Image Processing Control panel opens. 
+
+Select from
+
+2D Filters2D_Filters>main  applies 2-dimensional filter operations to the displayed image or the image store 	Image MathematicsImage_Mathematics>main performs arithmetical operations on the displayed image and the image store	
+ThresholdThreshold>main allows you to highlight a range of pixel grey scale values in the image being displayed and to determine the area fraction of the range.	Histogram EqualisationHistogram_Equalisation>main  {bmc bm6.bmp} to equalise the image store histogram {bmc bm6.bmp} to equalise the Look Up Table histogram {bmc bm6.bmp} to reset the Look Up Table	
+
+$#>KConvolution Kernel
+
+The pre-defined filter masks are as follows:
+
+SmoothFilter_Type_Smooth  {bmc bm7.wmf} 	SharpenFilter_Type_Sharpen  {bmc bm8.wmf} 	Sharpen 2Filter_Type_Sharpen_2  {bmc bm9.wmf} 	
+Horizontal EdgeFilter_Type_Horizontal_Edge  {bmc bm10.wmf} 	Vertical EdgeFilter_Type_Vertical_Edge  {bmc bm11.wmf} 	Edge DetectFilter_Type_Edge_Detect {bmc bm12.wmf} 	
+Edge Detect 2Filter_Type_Edge_Detect_2 {bmc bm13.wmf} 	LaplacianFilter_Type_Laplacian  {bmc bm14.wmf} 	Laplacian 2Filter_Type_Laplacian_2  {bmc bm15.wmf} 	
+
+See also User Defined FilterUser_Defined_Filter	Design a FilterDesign_a_Filter	Filter TypesFilter_Types
+$#>Design a Filter
+
+A panel to enter the  Convolution KernelConvolution_Kernel is opened.
+
+{bmc bm0.bmp} Enter a name in the Filter Name input box.  {bmc bm0.bmp} Enter the coefficients into the Filter Kernel Matrix   {bmc bm0.bmp} Enter the Division Factor as a scaling factor  The example shows a 3 x 3 averaging kernel.  {bmc bm0.bmp} ClickCLICK@Sem.HLP on the OK button to enter the filter into the filter list.  {bmc bm0.bmp} Select Cancel button or close the panel with {bmc bm1.bmp} to break the action OFF without changing anything.  {bmc bm0.bmp} Select Help to display this help.  See also User Defined FilterUser_Defined_Filter	{bmc bm16.bmp}	
+
+$#>KFilter Type Edge Detect
+
+Detects both horizontal and vertical edges in the image.
+
+For kernel type see Convolution KernelsConvolution_Kernel
+$#>Filter Type Edge Detect 2
+
+Detects both horizontal and vertical edges in the image.
+
+For kernel type see Convolution KernelsConvolution_Kernel
+$#>KFilter Type Horizontal Edge
+
+Detects horizontal edges in the image.
+
+For kernel type see Convolution KernelsConvolution_Kernel
+$#>Filter Type Laplacian
+
+Detects edges in the image by performing a Laplace transform using the 4 neighbouring pixels. 
+Laplace transforms are second order gradient functions.
+
+For kernel type see Convolution KernelsConvolution_Kernel
+$#>KFilter Type Laplacian 2
+
+Detects edges in the image by performing a Laplace transform using the 8 neighbouring pixels. 
+Laplace transforms are second order gradient functions.
+
+For kernel type see Convolution KernelsConvolution_Kernel
+
+$#>Filter Type Sharpen
+
+Sharpens the image by combining a LaplacianFilter_Type_Laplacian edge detection with the original image.
+
+For kernel type see Convolution KernelsConvolution_Kernel
+$#>KFilter Type Sharpen 2
+
+Sharpens the image by combining a Laplacian 2Filter_Type_Laplacian_2 edge detection with the original image.
+
+For kernel type see Convolution KernelsConvolution_Kernel
+$#>Filter Type Smooth
+
+Smoothes the image by using a symmetrical kernel.
+
+For kernel type see Convolution KernelsConvolution_Kernel
+$#>KFilter Type Vertical Edge
+
+Detects vertical edges in the image.
+
+For kernel type see Convolution KernelsConvolution_Kernel
+$#>Filter Types
+
+This function defines which of the Convolution KernelsConvolution_Kernel is to be swept across the image store producing a result for each pixel. The result is then normalised to the range 0..255. 
+
+All the Kernels are a 3 by 3 matrix of signed integers. (User defined filters may have up to 5 by 5 matrices)
+
+The following types of filters may be used to transform the image:
+
+	{bmc bm6.bmp}	User Defined...User_Defined_Filter
+
+	{bmc bm6.bmp}	SmoothFilter_Type_Smooth
+
+	{bmc bm6.bmp}	SharpenFilter_Type_Sharpen.
+
+	{bmc bm6.bmp}	Sharpen 2Filter_Type_Sharpen_2.
+
+	{bmc bm6.bmp}	Horizontal Edge DetectionFilter_Type_Horizontal_Edge
+.
+	{bmc bm6.bmp}	Vertical Edge DetectionFilter_Type_Vertical_Edge.
+
+	{bmc bm6.bmp}	Edge DetectionFilter_Type_Edge_Detect
+
+	{bmc bm6.bmp}	Edge Detection 2Filter_Type_Edge_Detect_2
+
+	{bmc bm6.bmp}	LaplacianFilter_Type_Laplacian.
+
+	{bmc bm6.bmp}	Laplacian 2Filter_Type_Laplacian_2.
+$#>KGrey Level Detection
+Any pixel in the image store with a value greater than the black threshold and with a value less than the white threshold will be coloured RED.
+$#>Histogram Equalisation
+
+The histogram equalisation uses the contents of the image store to calculate a Look Up Table1QUPBH3@Sem.HLP to transform the image to stretch the contrast of the image.
+
+{bmc bm0.bmp} Select the Histogram Equalisation Tab in the SEM Image Processing Control panel.  {bmc bm0.bmp} ClickCLICK@Sem.HLP on Histogram Equalisation StoreHistogram_Equalisation_Store button to equalise the image store.  {bmc bm0.bmp} Click on Histogram Equalisation LUTHistogram_Equalisation_LUT button to equalise the output LUT.  {bmc bm0.bmp} ClickCLICK@Sem.HLP on Reset LUT button to reset the LUT to standard values.  {bmc bm0.bmp} Click on {bmc bm1.bmp} to close the control panel and leave the application.	{bmc bm17.bmp}	
+
+$#>KHistogram Equalisation LUT
+
+The image transformation is performed using the Display Look Up Table1QUPBH3@Sem.HLP, this allows the image to still be live.
+
+See also Signal PathM6O594@Sem.HLP
+$#>Histogram Equalisation Store
+
+The image transformation is performed by converting the contents of the image store. The image store therefore has to be frozen.VTT19@Sem.HLP.
+$#>KImage Mathematics
+
+This Tab allows you to manipulate the displayed image or the image store.
+
+{bmc bm0.bmp} Select the Image Maths Tab in the SEM Image Processing Control panel.  {bmc bm0.bmp} Select Source from the Drop-down ListXYVXW3@Sem.HLP (Buffer A = displayed image, Buffer B = stored image)  {bmc bm0.bmp} Select Destination from the Drop-down List (Buffer A = displayed image, Buffer B = stored image)  {bmc bm0.bmp} Select Operation from the Drop-down List. See Image Maths OperationsImage_Maths_Operations for detail.  {bmc bm0.bmp} ClickCLICK@Sem.HLP on Execute button to apply the operation to the image.  {bmc bm0.bmp} Click on Undo button to cancel the previous operation.  {bmc bm0.bmp} Click on {bmc bm1.bmp} to close the control panel and leave the application.	{bmc bm18.bmp}	
+
+$#>Image Maths Add
+
+Adds the Source image to the Destination image and displays the result
+
+{bmc bm0.bmp} Select Source from the Drop-down ListXYVXW3@Sem.HLP (Buffer A = displayed image, Buffer B = stored image)  {bmc bm0.bmp} Select Destination from the Drop-down List (Buffer A = displayed image, Buffer B = stored image)  For this operation source and destination must be different. Otherwise the warning on the right is displayed.	  {bmc bm19.bmp}	
+
+If the result is greater than 255 (white) the reult is truncated to 255.
+$#>KImage Maths Copy To
+
+Copies the image form Source to Destination
+
+{bmc bm0.bmp} Select Source from the Drop-down ListXYVXW3@Sem.HLP (Buffer A = displayed image, Buffer B = stored image)  {bmc bm0.bmp} Select Destination from the Drop-down List (Buffer A = displayed image, Buffer B = stored image)  For this operation source and destination must be different. Otherwise the warning on the right is displayed.	  {bmc bm19.bmp}	
+
+
+$#>Image Maths Exchange With
+
+Swaps the Source and Destination images
+
+{bmc bm0.bmp} Select Source from the Drop-down ListXYVXW3@Sem.HLP (Buffer A = displayed image, Buffer B = stored image)  {bmc bm0.bmp} Select Destination from the Drop-down List (Buffer A = displayed image, Buffer B = stored image)  For this operation source and destination must be different. Otherwise the warning on the right is displayed.	  {bmc bm19.bmp}	
+
+
+$#>KImage Maths Max
+
+Displays the maximum value in either the Source or Destination image
+
+{bmc bm0.bmp} Select Source from the Drop-down ListXYVXW3@Sem.HLP (Buffer A = displayed image, Buffer B = stored image)  {bmc bm0.bmp} Select Destination from the Drop-down List (Buffer A = displayed image, Buffer B = stored image)  For this operation source and destination must be different. Otherwise the warning on the right is displayed.	  {bmc bm19.bmp}	
+
+$#>Image Maths Min
+
+Displays the minimum value in either the Source or Destination image
+
+{bmc bm0.bmp} Select Source from the Drop-down ListXYVXW3@Sem.HLP (Buffer A = displayed image, Buffer B = stored image)  {bmc bm0.bmp} Select Destination from the Drop-down List (Buffer A = displayed image, Buffer B = stored image)  For this operation source and destination must be different. Otherwise the warning on the right is displayed.	  {bmc bm19.bmp}	
+
+$#>KImage Maths Operations
+
+The operations consist of 
+
+	{bmc bm6.bmp}	Copy ToImage_Maths_Copy_To: Copy image form Source to Destination
+
+	{bmc bm6.bmp}	Exchange WithImage_Maths_Exchange_With: Swap the Source and Destination images
+
+	{bmc bm6.bmp}	AddImage_Maths_Add: Add the Source image to the Destination image and display the result
+
+	{bmc bm6.bmp}	SubtractImage_Maths_Subtract: Subtract the Destination image from the Source image and display the result
+
+	{bmc bm6.bmp}	MinImage_Maths_Min: Display the minimum value in either the Source or Destination image
+
+	{bmc bm6.bmp}	MaxImage_Maths_Max: Display the maximum value in either the Source or Destination image
+
+If one of the buffers contains no image the warning 
+
+	{bmc bm20.bmp}
+pops up.
+$#>Image Maths Subtract
+
+Subtracts the Destination image from the Source image and displays the result
+
+{bmc bm0.bmp} Select Source from the Drop-down ListXYVXW3@Sem.HLP (Buffer A = displayed image, Buffer B = stored image)  {bmc bm0.bmp} Select Destination from the Drop-down List (Buffer A = displayed image, Buffer B = stored image)  For this operation source and destination must be different. Otherwise the warning on the right is displayed.	  {bmc bm19.bmp}	
+
+If the result is less than 0 (black) the result is truncated to 0.
+$#>KThreshold
+
+This Tab allows you to select a range of pixel grey scale values in the image being displayed and to determine the area fraction of this range.
+
+{bmc bm0.bmp} Select the Threshold Tab in the SEM Image Processing Control panel.  {bmc bm0.bmp} Set Black Threshold with the Scroll Bar2HOSDE@Sem.HLP   {bmc bm0.bmp} Set White Threshold with the Scroll Bar   {bmc bm0.bmp} Select the Threshold RangeThreshold_Range from the Drop-down ListXYVXW3@Sem.HLP (Black, Grey, White)  {bmc bm0.bmp} ClickCLICK@Sem.HLP on Update button to calculate the Area FractionArea_Fraction_Calculation of the selected threshold range.  {bmc bm0.bmp} Click on {bmc bm1.bmp} to close the control panel and leave the application.	{bmc bm21.bmp}	
+
+$#>Threshold Range
+The following types of image detection may be used on an image, the detected area is coloured RED.
+
+	{bmc bm6.bmp}	 Black Level DetectionBlack_Level_Detection
+
+	{bmc bm6.bmp}	White Level DetectionWhite_Level_Detection
+
+	{bmc bm6.bmp}	 Grey Level DetectionGrey_Level_Detection
+$#>KUser Defined Filter
+   
+When User Defined Filter is selected but no filters have yet been designed a warning is displayed.  {bmc bm0.bmp} ClickCLICK@Sem.HLP on OK button to proceed. 	{bmc bm22.bmp}	
+The list of the current user-defined 2-dimensional filters will be displayed.   {bmc bm0.bmp} Select New button to Design a FilterDesign_a_Filter  {bmc bm0.bmp} Select OK button to apply the filter to the chosen buffer.  {bmc bm0.bmp} Select Edit button to change the Convolution Kernel of an existing filter.  {bmc bm0.bmp} Select Delete button to delete a filter from the list.  {bmc bm0.bmp} Select Help to display this help. 	{bmc bm23.bmp}	
+{bmc bm0.bmp} Select Cancel button or close the panel with {bmc bm1.bmp} to break the action OFF without changing anything.  If you try to apply a filter but have not selected one a warning is given: 	{bmc bm24.bmp}	
+
+$#>White Level Detection
+Any pixel in the image store with a value greater than the white threshold will be coloured RED.

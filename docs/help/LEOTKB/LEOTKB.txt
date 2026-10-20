@@ -1,0 +1,55 @@
+﻿$#KContents - Leo Trackerball
+
+OverviewOverview
+
+InstallationInstallation
+
+ToolbarTrackerball_Toolbar
+
+Selection KDialogSelection_Dialog
+
+Macro InterfaceSelection_via_Macro
+$#Overview
+The trackerball option provides an alternative method of adjustment of some parameters to provide a 'two handed' operation of the SEM
+
+The trackerball comprises a ball which may be moved in two dimensions to control one or two parameters. The parameter adjustment is non linear, spinning the ball results in accelerated adjustment.
+
+The trackerball also has three buttons, pressing each button selects predefined parameters for adjustment.
+
+The current parameters being controlled are displayed in the Trackerball ToolbarTrackerball_Toolbar 
+
+
+See also InstallationInstallation
+$#KInstallation
+On installation of the trackerball it is essential to define the Serial Port to be used for the trackerball, this is done in the Administrator - configuration form.
+
+The Trackerball toolbar is displayed by selecting View - Toolbars and checking the TKB checkbox.
+
+Unless the Port is defined, is successfully configured, and the Trackerball licence is present the TKB checkbox will not appear or will not be enabled.
+$#Trackerball Toolbar
+
+The Trackerball toolbar displays the parameters currently being controlled by the Trackerball. To display the toolbar see installationInstallation  To change the parameters assigned to each button double click on the parameter in the toolbar to display the Selection DialogSelection_Dialog	{bmc bm0.bmp}	
+
+$#Selection Dialog
+
+This dialog comprises four tabs  Left Button AssignmentLeft_Button_Assignment Middle Button AssignmentMiddle_Button_Assignment Right Button AssignmentRight_Button_Assignment  General PropertiesGeneral_Properties	{bmc bm1.bmp}	
+
+$#Left Button Assignment
+
+This tab defines the parameters to be assigned to the X and Y axes when the left trackerball button is pressed.  Select the parameter required from the drop down list for each axis  Selecting Disabled will prevent movement in the selected axis from having any effect.  See also  Selection via MacroSelection_via_Macro  OverviewOverview	{bmc bm1.bmp}	
+
+$#Selection via Macro
+The selection and assignment of parameters to the Trackerball may also be performed in macros.
+See Menu item Insert - Trackerball in the Macro EditorContents@leom.hlp
+$#KMiddle Button Assignment
+   
+This tab defines the parameters to be assigned to the X and Y axes when the middle trackerball button is pressed.  Select the parameter required from the drop down list for each axis  Selecting Disabled will prevent movement in the selected axis from having any effect.  See also  Selection via MacroSelection_via_Macro  OverviewOverview	{bmc bm2.bmp}	
+
+$#KRight Button Assignment
+
+This tab defines the parameters to be assigned to the X and Y axes when the right trackerball button is pressed.  Select the parameter required from the drop down list for each axis  Selecting Disabled will prevent movement in the selected axis from having any effect.  See also  Selection via MacroSelection_via_Macro OverviewOverview	{bmc bm3.bmp}	
+
+$#General Properties
+
+This tab provides general settings for the trackerball  If Auto Y axis assignment is checked then the associated Y parameter of an XY pair is automatically assigned to the Y axis if the X parameter is assigned to the X axis  The Invert Axes settings may be used for some types of trackerball where the sense of rotation is reversed.  See also OverviewOverview	{bmc bm4.bmp}	
+

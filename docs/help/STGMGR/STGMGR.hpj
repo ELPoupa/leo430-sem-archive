@@ -1,0 +1,145 @@
+[OPTIONS]
+TITLE=Stage Manager
+CONTENTS=Contents
+COPYRIGHT=Copyright © LEO Electron Microscopy Ltd.
+LCID=0x809 0x0 0x0
+CNT=STGMGR.CNT
+COMPRESS=0
+
+[WINDOWS]
+main="SEM Control",(51,51,922,922),,,(255,255,128)
+
+[CONFIG]
+BrowseButtons()
+
+[ALIAS]
+EI334A=17R.5HZ
+4O6Z_J1=17R.5HZ
+StgMgr_Navigation=17R.5HZ
+StgMgr_Stage_Status=4P6Z_J1
+DQR567=CC.BB_
+4Q6Z_J1=CC.BB_
+OHA1S7=CC.BB_
+StgMgr_Points_List=CC.BB_
+4R6Z_J1=StgMgr_Properties
+StgMgr_Stage_Scanning=EI2X1J
+4S6Z_J1=EI2X1J
+4T6Z_J1=StgMgr_Survey
+Auto_Initialise_Stage=TKXDWU
+1042DWR=FL8YXE
+IQXPYZ=FL8YXE
+2MX2BK5=FL8YXE
+2P.29RD=FL8YXE
+UQENVC=FL8YXE
+X5HEVY=FL8YXE
+1JQ..O3=FL8YXE
+Points_List_Popup_Menu=FL8YXE
+_1R.8O=FL8YXE
+32BMJD7=FL8YXE
+2VS_05N=2US_05N
+2WS_05N=2US_05N
+2XS_05N=2US_05N
+Scan_Field_Setup_Wizard=2US_05N
+12PRE4G=1OQIERJ
+2H9L9SP=1OQIERJ
+296SO1=1OQIERJ
+Status_Popup_Menu=1OQIERJ
+Sample_Holder_Settings=14IHIM4
+1K61_WI=14IHIM4
+
+[FILES]
+STGMGR.rtf
+
+[MAP]
+CC.BB_ 131278
+survey_settings_load 47
+survey_settings_save 48
+FL8YXE 98323
+Points_List_Navigation 6
+Backlash_On 98306
+StgMgr_Properties 131277
+1OQIERJ 98313
+CC.BB_ 131390
+Stage_Status 20
+EI2X1J 131281
+Exit_Survey_Mode 51
+resolution_mode_mag 38
+StgMgr_Survey 131282
+Contents 131173
+Stage_Position_List 24
+Track_Z 14
+2US_05N 131175
+survey_mode_remember_changes 29
+Do_Backlash 98307
+4P6Z_J1 25
+TKXDWU 98309
+2US_05N 131176
+CC.BB_ 26
+FL8YXE 98321
+2US_05N 131177
+2US_05N 131178
+Survey_Overview 35
+survey_mode_auto_focus 36
+Joystick_Disable 18
+FL8YXE 98325
+FL8YXE 98314
+14IHIM4 131404
+FL8YXE 54
+survey_mode_mag 33
+17R.5HZ 4
+Move_XY_Only 7
+FL8YXE 98324
+survey_mode_checkbox 45
+Stage_initialisation_sequence 5
+1OQIERJ 0
+ZZ1QWP 8
+TKXDWU 98304
+Stage_goto 23
+Stage_Stop 19
+2US_05N 55
+FL8YXE 98319
+Stage_Scan_Pattern 56
+Resolution_Mode_Macro 43
+Resolution_Mode_State 50
+1OQIERJ 98310
+1OQIERJ 98311
+Survey_Mode_Lowest_Mag 34
+14IHIM4 131401
+survey_mode_wd 31
+Stage_At 22
+Compucentric_Movement 17
+CC.BB_ 131392
+survey_mode_macro 37
+Survey_Mode_State 49
+Stage_Delta 15
+CC.BB_ 131391
+17R.5HZ 65825
+EI2X1J 65809
+17R.5HZ 65824
+survey_mode_status 46
+EI2X1J 10
+1OQIERJ 131396
+FL8YXE 98317
+FL8YXE 131397
+Z_move_on_Vent 13
+Compucentric_Mode 21
+survey_exit_macro 44
+Undo_Stage_Goto 16
+Survey_Mode_get_current_wd 30
+FL8YXE 98322
+resolution_mode_get_current_mag 39
+Field_movement_arrow_buttons 27
+StgMgr_Survey 28
+StgMgr_Properties 52
+resolution_mode_get_current_wd 41
+Scan_Fields 53
+Protected_Z 3
+resolution_mode_auto_focus 42
+survey_mode_get_current_mag 32
+17R.5HZ 131275
+Sample_Holder 9
+FL8YXE 98320
+Limits 98308
+resolution_mode_wd 40
+4P6Z_J1 131276
+

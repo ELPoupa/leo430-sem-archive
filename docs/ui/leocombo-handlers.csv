@@ -1,0 +1,6 @@
+﻿"Message","Kind","Id","Menu","Handler","Function","ServerCalls","Imports","Text"
+"WM_RBUTTONDOWN","","","","0x100051B0","FUN_100051b0","","",""
+"0xBD11","","","","0x10005200","FUN_10005200","","",""
+"PM_PARAMETER_NOTIFY","registered","","","0x10004940","FUN_10004940","","",""
+"PM_USER_PREFERENCES_CHANGED","registered","","","0x10004990","FUN_10004990","","",""
+"PM_SEM_CLOSE","registered","","","0x10004900","FUN_10004900","","",""

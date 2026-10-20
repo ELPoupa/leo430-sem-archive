@@ -1,0 +1,14 @@
+[OPTIONS]
+TITLE=SEM Operation
+CONTENTS=Contents
+COPYRIGHT=Copyright ©1997-1998 Leo Electron Microscopy Ltd
+LCID=0x409 0x0 0x0
+CNT=HOW_TO.CNT
+COMPRESS=0
+
+[WINDOWS]
+main="SEM Operation",(666,113,348,850),,,,1
+
+[FILES]
+HOW_TO.rtf
+

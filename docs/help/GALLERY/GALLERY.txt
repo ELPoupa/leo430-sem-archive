@@ -1,0 +1,111 @@
+﻿$#KImage Gallery Contents
+
+Overview1375BLH
+
+Gallery FiKleGallery_File
+
+Main Menu Functions:
+	FiKlterOHXACJ
+	PropertiesCX.Z7
+	PrintPrinting_multiple_images
+	RefreshRefresh
+	DeleteDelete
+
+
+Popup Menu FunctionsPop_up_menu
+
+Drag and DropDrag_and_Drop
+$#Delete
+This function deletes the selected image file.
+$#Filename filter
+
+The files displayed in the gallery are subjected to a filename filter, default *.TIF
+
+You may modify this using the Menu function File - Filter, which displays the filter dialog.
+
+Use the wildcards * and ? to define the required filter.
+e.g. File??? or File*
+
+Note: The extension  .TIF. is always added to the filter you supply.
+$#Gallery File
+A Gallery file is a cache of thumbnail images18H9TRS.
+When the Gallery is opened the program attempts to open a gallery file Gallery.Gal in the image directory.
+The Gallery file may not be present for two reasons:
+1. This is the first time the Image Gallery has been used. A Gallery file will be created when the Gallery is closed.
+2. The Image Directory may be read only (e.g. it may be on a CD-ROM). If this is the case a Gallery file may have been created in the User Directory.
+
+If images have been created/Deleted since the Gallery was opened refreshRefresh the display.
+$#Gallery Load Image
+
+An Image may be loaded from the Gallery by double clicking on it.
+Alternatively Load may be selected from the popup menuPop_up_menu or Drag and dropDrag_and_Drop may be used
+$#Multiple selection
+Multiple images may be selected by holding down the Ctrl key while selecting the image.
+
+Up to 6 images may be selected in this manner.
+
+Multiple images may be printedPrinting_multiple_images.
+
+See also Drag and dropDrag_and_Drop
+$#Image Gallery Overview
+
+The Image Gallery presents the user with a display of thumbnail representations18H9TRS of the images in the current image directory.
+
+A Gallery FileGallery_File is used to speed up display of thumbnail images.
+
+True colour images are excluded from the Gallery.
+
+The files displayed may be subjected to a filename filterOHXACJ.
+
+An Image may be selectedSelect_File and it's properties displayed.
+
+Double click on an image for Image import load
+
+MultipleMultiple_selection images may be selected for printingPrinting_multiple_images on a single sheet
+
+Right Mouse click on a thumbnail for pop up menuPop_up_menu
+
+Files may be draggedDrag_and_Drop to other windows
+$#Gallery pop up menu
+Right mouse button click displays the menu {bmc bm0.bmp} and selects the thumbnail
+
+PropertyCX.Z7
+Print will print the image on the Default Windows Printer
+Load will load the selected image
+Delete will delete the selected file
+$#Printing multiple images
+The menu function File - Print will print the currently selected images (from 1 to 6 images) to the default printer.
+
+All the images are printed on the same page.
+
+The size and layout of the images depends on the number of images selected. All images are normalised to the same size such that they fit a single page in Landscape/Portrait.
+
+Note that each image printed is a spatially reduced version of the TIFF file, there are no changes to magnification values to reflect the actual printed image size.
+$#Properties
+The properties of the selectedSelect_File file may be displayed using the menu function File - Properties. 
+The properties displayed are 
+	Height
+	Width
+	Date/Time
+	Filesize
+	User text
+$#Refresh
+This menu function (File - Refresh) of the Image gallery refreshes the Gallery fileGallery_File by comparing it's contents with the image directory.
+Any files which have been deleted are removed and any files which have changed are replaced with new thumbnails18H9TRS.
+$#Select File
+To select a file position the cursor over the thumbnail18H9TRS required and click the left mouse button. 
+A Border is drawn around the selected image.
+
+The propertiesCX.Z7 of the selected file may be displayed.
+$#Thumbnail 
+A Thumbnail representation of an image is the image file spatially reduced to fit within a 128 * 96 pixel area for display in the Gallery.
+The file name is displayed below the thumbnail.
+$#KDrag and Drop
+Files in the Image Gallery may be dragged and dropped onto other Windows, including those of other applications. See Drag and DropDrag_and_Drop@sem.hlp.
+
+To drag an image select the Thumbnail required by holding the left mouse button down on it and drag it to its destination (e.g. The SEM Image Window)  then release the mouse button. The image will be loaded to the image store.
+
+Other Drop targets are the Second Image Window4AHWGBN@tabmgr.hlp, Microsoft Word document windows and Windows Explorer (Directory).
+
+Note: if dropping into the Explorer the files will be Moved, unless the <Ctrl> Key is held down before the drop.
+Note: If Multiple files are to be dragged then drag the last selected thumbnail. 

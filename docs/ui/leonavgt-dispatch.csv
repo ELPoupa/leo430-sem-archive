@@ -1,0 +1,8 @@
+﻿"Map","Name","DispId","Kind","ReturnVt","Params","MethodOrGet","Set"
+"0x1000C790","xLargeChange","-1","property","float","","FUN_100066f0","FUN_10006700"
+"0x1000C790","xSmallChange","-1","property","float","","FUN_10006760","FUN_10006770"
+"0x1000C790","ySmallChange","-1","property","float","","FUN_100067d0","FUN_100067e0"
+"0x1000C790","yLargeChange","-1","property","float","","FUN_10006840","FUN_10006850"
+"0x1000C790","UserInitialise","-1","method","long","long, long, long","FUN_100068f0",""
+"0x1000C790","Enabled","-514","property","BOOL","","FUN_1000a894","FUN_1000a88e"
+"0x1000C790","AboutBox","-552","method","void","","FUN_10004a50",""

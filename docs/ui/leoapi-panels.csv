@@ -1,0 +1,3 @@
+﻿"Class","Dialog","Title","Vtable","Parameters","Functions","NameId","Licence","UserLevels","MachineTypes"
+"CApiPropPage","","","0x1000AC6C","CMD_FREEZE_ALL CMD_UNFREEZE_ALL","FUN_10002da0","","","",""
+"CParamMgr","","","0x1000AEC0","CMD_FREEZE_CHANNEL CMD_UNFREEZE_CHANNEL AP_STAGE_AT_X AP_STAGE_AT_Y AP_STAGE_AT_Z AP_STAGE_AT_T AP_STAGE_AT_R AP_STAGE_GOTO_R","FUN_100044a0 FUN_10004800 FUN_100049b0","","","",""

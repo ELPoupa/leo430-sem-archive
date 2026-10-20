@@ -1,0 +1,4 @@
+﻿"Message","Kind","Id","Menu","Handler","Function","ServerCalls","Imports","Text"
+"PM_PARAMETER_NOTIFY","registered","","","0x10004910","FUN_10004910","","",""
+"PM_USER_PREFERENCES_CHANGED","registered","","","0x10004970","FUN_10004970","","",""
+"PM_SEM_CLOSE","registered","","","0x10004990","FUN_10004990","","",""

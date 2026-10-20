@@ -1,0 +1,380 @@
+{\rtf1\ansi\deff1
+{\fonttbl{\f0\fnil MS Sans Serif;}{\f1\fswiss Arial;}{\f2\fnil Times New Roman;}{\f3\fswiss Wingdings;}}
+{\colortbl;\red0\green0\blue255;}
+{\stylesheet{\fs28 \snext0 Normal;}
+}\pard\plain
+{\up $}{\footnote\pard\plain{\up $} Contents}
+{\up #}{\footnote\pard\plain{\up #} Contents}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Rotation Centre Override;Step Size}
+\b\fs28\cf1 Contents
+\par \pard 
+\par \uldb \plain\b\uldb\fs24 Overview\plain\b\fs24 {\v Overview}
+\par \uldb KeyCode{\up K}{\footnote\pard\plain{\up K} Maximum Speed}
+ access\plain\b\fs24 {\v Keycode_access}
+\par \uldb Main {\up K}{\footnote\pard\plain{\up K} Power Down}
+Window\plain\b\fs24 {\v Main_Window}
+\par \uldb Stage Attributes\plain\b\fs24 {\v Stage_Attributes}
+\par \uldb Axis {\up K}{\footnote\pard\plain{\up K} Protected Z Priority}
+Attributes\plain\b\fs24 {\v Axis_attributes}
+\par \uldb Creating a new stage t{\up K}{\footnote\pard\plain{\up K} Overview}
+ype\plain\b\fs24 {\v Creating_a_new_stage_type}
+\par \uldb Editing a stage type\plain\b\fs24 {\v Editing_a_stage_type}
+\par \uldb Custom Stage\plain\b\fs24 {\v custom_stage}\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Overview}
+{\up #}{\footnote\pard\plain{\up #} Overview}
+\pard\keepn \b\fs28\cf1 Overview
+\par \pard \plain\fs24 The Stage Administrator is a utility for creating, editing and selecting new stage types.
+\par The Leo-32 database contains the definitions of existing stage types. These definitions may be used as the basis to create new stage types.
+\par 
+\par Access to the Stage Administator is controlled by Logon and is restricted as follows:
+\par 
+\par \b Development\plain\fs24 
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab Unrestricted access, but may not edit predefined stage types.
+\par \pard\tx355 
+\par \pard\tx355 \b Users with Supervisor privilege\plain\fs24 
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab May inspect data
+\par \pard\tx355 
+\par \pard\tx355 \b Users with Calibration Privilege\plain\fs24 
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab May inspect data
+\par \f3 \{bmc bm0.bmp\}\f1 \tab May select alternative, already created, stage types as the custom stage type.
+\par \f3 \{bmc bm0.bmp\}\f1 \tab May be granted, for a limited duration, ability to create/edit new stage types. See \uldb \b Keycode access\plain\b\fs24 {\v Keycode_access}\plain\fs24 
+\par \pard\tx355 
+\par \pard\tx355 \b Other Users\plain\fs24 
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab No access
+\par \pard\tx355 
+\par \pard\tx355 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Keycode access}
+{\up #}{\footnote\pard\plain{\up #} Keycode_access}
+\pard\keepn \b\fs28\cf1 Keycode access
+\par \pard \plain\fs24 A User with Calibration privilege may be granted the ability to create and edit stage data by means of a \b KeyCode\plain\fs24 .
+\par 
+\par A \b KeyCode\plain\fs24  is a unique, date sensitive, serial number specific code which is granted to an engineer by the LEO Engineering Department. 
+\par 
+\par To enter the \b KeyCode\plain\fs24  select the menu item \b Edit\plain\fs24  - \b Enter KeyCode\plain\fs24 .
+\par In the dialog enter the Keycode, the number of days duration and select \b OK\plain\fs24 .
+\par 
+\par Following successful entry of the keyCode editing rights are granted for the duration defined.
+\par \pard On subsequent logons on to the Stage Administrator you will be reminded of the unexpired days or notified if the period has expired.
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Main Window}
+{\up #}{\footnote\pard\plain{\up #} Main_Window}
+\pard\keepn \b\fs28\cf1 Main Window
+\par \pard \plain\fs24 This window displays:
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab \uldb \b Stage Attributes\plain\b\fs24 {\v Stage_Attributes}\plain\fs24  of the stage type currently selected for editing.
+\par \f3 \{bmc bm0.bmp\}\f1 \tab The currently selected Custom Stage.
+\par \f3 \{bmc bm0.bmp\}\f1 \tab The stage type currently in use.
+\par \pard\tx355 
+\par \pard\tx355 
+\par \pard\tx355 From the Edit Menu it is possible to:
+\par \pard\tx355 \uldb \b Create a New Stage Type\plain\b\fs24 {\v Creating_a_new_stage_type}\plain\fs24 
+\par \pard\tx355 \uldb \b Delete a Stage Type\plain\b\fs24 {\v Delete_a_stage_type}\plain\fs24 
+\par \pard\tx355 \uldb \b Add an axis\plain\b\fs24 {\v add_a_new_axis}\plain\fs24  to a stage
+\par \pard\tx355 \uldb \b Delete an axis\plain\b\fs24 {\v Delete_an_axis}\plain\fs24  from a stage
+\par \pard\tx355 
+\par \pard\tx355 \uldb \b Override the default centre of rotation\plain\b\fs24 {\v Rotation_Centre_Override}\plain\fs24 
+\par \pard\tx355 
+\par \pard\tx355 To display \uldb \b axis data\plain\b\fs24 {\v Axis_attributes}\plain\fs24  press the axis data button
+\par \pard\tx355 
+\par \pard\tx355 When a new stage type has been created it will appear in the list of custom stage types.
+\par \pard\tx355 
+\par \pard\tx355 When a \uldb \b custom stage\plain\b\fs24 {\v custom_stage}\plain\fs24  is selected it's name appears in the list of stage types.
+\par \pard\tx355 
+\par \pard\tx355 See also \uldb \b Overview\plain\b\fs24 {\v Overview}\plain\fs24 
+\par \pard\tx355 
+\par \pard\tx355 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Attributes}
+{\up #}{\footnote\pard\plain{\up #} Stage_Attributes}
+\pard\keepn \b\fs28\cf1 Stage Attributes
+\par \pard \plain\fs24 A stage has the following attributes:
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab \b Name\tab \tab \plain\fs24 see Add New Stage Type
+\par \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Cartesian\plain\b\fs24 {\v Cartesian}\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Side Tilt\plain\b\fs24 {\v Side_Tilt}\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Power Down\plain\b\fs24 {\v Power_Down}\plain\fs24 
+\par \f3\b \{bmc bm0.bmp\}\plain\fs24 \tab \ul \b\ul SnapBack\plain\b\fs24 {\v SnapBack}
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Centre of rotation\plain\b\fs24 {\v Centre_of_rotation}
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Axes,\plain\fs24  displayed on the main form is an area per axis. \b 
+\par \pard\tx355 \plain\fs24 The following axis data is displayed on the main form
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Initialisation Order\plain\b\fs24 {\v Initialisation_Order}\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Protected Z Priority\plain\b\fs24 {\v Protected_Z_Priority}\plain\fs24 
+\par \pard\tx355 
+\par \pard\tx355 The other \uldb \b axis attributes\plain\b\fs24 {\v Axis_attributes}\plain\fs24  may be displayed by pressing the Axis Data button.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Cartesian}
+{\up #}{\footnote\pard\plain{\up #} Cartesian}
+\pard \b\fs28\cf1 Cartesian \uldb Stage Attribute\plain\b\fs28\cf1 {\v Stage_Attributes}
+\par 
+\par \plain\fs24 If checked, the stage is cartesian; if unchecked the stage is Eucentric
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Side Tilt}
+{\up #}{\footnote\pard\plain{\up #} Side_Tilt}
+\pard \b\fs28\cf1 Side Tilt \uldb stage attribute\plain\b\fs28\cf1 {\v Stage_Attributes}
+\par 
+\par \plain\fs24 This attribute is checked if the stage tilts in the X direction and is unchecked if the stage tilts in the Y direction.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Power Down}
+{\up #}{\footnote\pard\plain{\up #} Power_Down}
+\pard \b\fs28\cf1 Power Down \uldb stage attribute\plain\b\fs28\cf1 {\v Stage_Attributes}.
+\par \plain\fs24 
+\par This attribute describes the behaviour of the stage motors when they become idle.
+\par 
+\par This attribute will only take effect if supported by the version of stage firmware fitted.
+\par 
+\par Earlier versions of firmware not supporting this function operate with\b  LowMag 1/4: HighMag 1/2\plain\fs24 
+\par 
+\par The transition point for LowMag:HighMag is 50 nanometres per pixel
+\par 
+\par Choices are:
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab 1/4 power (the default operation)
+\par \f3 \{bmc bm0.bmp\}\f1 \tab 1/2 power
+\par \f3 \{bmc bm0.bmp\}\f1 \tab LowMag 1/4 power, HighMag 1/4 power
+\par \f3 \{bmc bm0.bmp\}\f1 \tab LowMag 1/4 power, HighMag 1/2 power
+\par \page
+{\up $}{\footnote\pard\plain{\up $} SnapBack}
+{\up #}{\footnote\pard\plain{\up #} SnapBack}
+\pard \b\fs28\cf1 SnapBack \uldb stage attribute\plain\b\fs28\cf1 {\v Stage_Attributes}
+\par \plain\fs24 
+\par SnapBack is where, on completion of each move, the motor is moved back 3 microsteps to minimise drift.
+\par 
+\par If attribute is checked this function is implemented.
+\par 
+\par Note that the ability to turn this function off  may not be supported by the version of firmware fitted.
+\par 
+\par Earlier versions of firmware always have this function selected.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Centre of rotation}
+{\up #}{\footnote\pard\plain{\up #} Centre_of_rotation}
+\pard {\up K}{\footnote\pard\plain{\up K} Backlash distance}
+\b\fs28\cf1 Centre of rotation \uldb stage attribute\plain\b\fs28\cf1 {\v Stage_Attributes}
+\par \plain\fs24 
+\par This defines (in millimetres) the default centre of rotation of the stage.
+\par Note that this value may be \uldb overriden\plain\fs24 {\v Rotation_Centre_Override}.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Axis attributes}
+{\up #}{\footnote\pard\plain{\up #} Axis_attributes}
+\pard\keepn \b\fs28\cf1 Axis attributes
+\par \pard \plain\fs24 The following attributes are defined for each axis.
+\par 
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Initialisation order\plain\b\fs24 {\v Initialisation_Order}\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Protected Z Priority\plain\b\fs24 {\v Protected_Z_Priority}\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Step Size\plain\b\fs24 {\v Step_Size}\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Start speed\plain\b\fs24 {\v Start_speed}\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Acceleration\plain\b\fs24 {\v Acceleration}\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Maximum Speed\plain\b\fs24 {\v Maximum_Speed}\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Range\plain\b\fs24 {\v Range}\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Mid Point\plain\b\fs24 {\v Mid_Point}\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Initial Position\plain\b\fs24 {\v Initial_Position}\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Backlash distance\plain\b\fs24 {\v Backlash_distance}\plain\fs24 
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Backlash speed\plain\b\fs24 {\v Backlash_speed}\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab \ul \b\ul Safe Area\plain\b\fs24 {\v Safe_Area}\plain\fs24 
+\par \pard\tx355 
+\par \pard\tx355 See also \uldb \b Range Override\plain\b\fs24 {\v Range_Override}\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Initialisation Order}
+{\up #}{\footnote\pard\plain{\up #} Initialisation_Order}
+\pard \b\fs28\cf1 Initialisation Order
+\par \plain\fs24 This \uldb \b axis attribute\plain\b\fs24 {\v Axis_attributes}\plain\fs24  is displayed for each axis in the main window.
+\par 
+\par The attribute is the numeric order in which the axes are initialised.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Protected Z Priority}
+{\up #}{\footnote\pard\plain{\up #} Protected_Z_Priority}
+\pard \b\fs28\cf1 Protected Z Priority
+\par \plain\fs24 This \uldb \b axis attribute\plain\b\fs24 {\v Axis_attributes}\plain\fs24  is displayed for each axis in the main window.
+\par 
+\par The attribute is the priority used to define the order of moves when protected Z mode is switched on.
+\par 
+\par The priority is a number in the range 1 through 3.
+\par 
+\par When performing a protected Z move the action is:
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab Move down all axes with priority 1 if applicable.
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Move down all axes with priority 2 if applicable.
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Move all axes with priority 3 if applicable.
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Move up all axes with priority 2 if applicable.
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Move up all axes with priority 1 if applicable.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Step Size}
+{\up #}{\footnote\pard\plain{\up #} Step_Size}
+\pard \b\fs28\cf1 Step Size \uldb Axis attribute\plain\b\fs28\cf1 {\v Axis_attributes}
+\par 
+\par \plain\fs24 This parameter defines the step size for the axis in pico metres/step or nano degrees/step
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Start speed}
+{\up #}{\footnote\pard\plain{\up #} Start_speed}
+\pard \b\fs28\cf1 Start speed \uldb axis attribute\plain\b\fs28\cf1 {\v Axis_attributes}
+\par \plain\fs24 
+\par This parameter defines for the axis the start speed in steps/sec.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Acceleration}
+{\up #}{\footnote\pard\plain{\up #} Acceleration}
+\pard {\up K}{\footnote\pard\plain{\up K} Acceleration;add a new axis}
+\b\fs28\cf1 Acceleration \uldb axis attribute\plain\b\fs28\cf1 {\v Axis_attributes}
+\par \plain\fs24 
+\par This parameter defines the acceleration rate for the axis in steps/sec/sec
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Maximum Speed}
+{\up #}{\footnote\pard\plain{\up #} Maximum_Speed}
+\pard \b\fs28\cf1 Maximum Speed \uldb axis attribute\plain\b\fs28\cf1 {\v Axis_attributes}
+\par \plain\fs24 
+\par This parameter defines the maximum speed of the axis in steps/sec
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Range}
+{\up #}{\footnote\pard\plain{\up #} Range}
+\pard \b\fs28\cf1 Range \uldb axis attribute\plain\b\fs28\cf1 {\v Axis_attributes}
+\par \plain\fs24 
+\par These two parameters define the lower and upper range of the axis in milli metres or degrees
+\par 
+\par Note that the upper range parameter may be \uldb \b overridden\plain\b\fs24 {\v Range_Override}\plain\fs24  under some configurations.
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Range Override}
+{\up #}{\footnote\pard\plain{\up #} Range_Override}
+\pard\keepn \b\fs28\cf1 Range Override
+\par \pard \plain\fs24 The high limit of travel for an axis may need to be modified when the stage is fitted to a particular configuration.
+\par 
+\par This is achieved using the Range Conditions button on the axis data window.
+\par This botton displays the Range Conditions window in which rules may be defined to determine the axis high limit.
+\par 
+\par Rules may be based either on a column type or a machine type.
+\par 
+\par The rule also takes into account whether a WDX is fitted or not.
+\par 
+\par To Add a rule
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab If no rules are currently defined, select column or machine
+\par \f3 \{bmc bm0.bmp\}\f1 \tab From the appropriate drop down box select the column type or machine type
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Uncheck the WDX box 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Enter the range value which applies under these conditions
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Select \b Add\plain\fs24  to add this rule
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Check the WDX box
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Enter the range value which applies under these conditions
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Select \b Add\plain\fs24  to add the rule
+\par \pard\tx355 
+\par \pard\tx355 When the stage is configured the rules will be scanned in turn to check if they apply, if they do the range value is overriden with the value supplied.
+\par \pard\tx355 
+\par \pard\tx355 Remove a rule by selecting it and pressing \b Remove\plain\fs24  or double click it
+\par \pard\tx355 Column/Machine selection may only be changed if no rules are defined.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Mid Point}
+{\up #}{\footnote\pard\plain{\up #} Mid_Point}
+\pard \b\fs28\cf1 Mid Point \uldb axis attribute\plain\b\fs28\cf1 {\v Axis_attributes}
+\par \plain\fs24 
+\par This parameter defines the mid point of travel for the axis in milli metres or degrees.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Initial Position}
+{\up #}{\footnote\pard\plain{\up #} Initial_Position}
+\pard \b\fs28\cf1 Initial Position \uldb axis attribute\plain\b\fs28\cf1 {\v Axis_attributes}
+\par \plain\fs24 
+\par This parameter defines the position, in milli metres or degrees, to which the axis is driven on completion of initialisation.
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Backlash distance}
+{\up #}{\footnote\pard\plain{\up #} Backlash_distance}
+\pard \b\fs28\cf1 Backlash distance \uldb axis attribute\plain\b\fs28\cf1 {\v Axis_attributes}
+\par \plain\fs24 
+\par This parameter defines the backlash distance for the axis, in milli metres or degrees.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Backlash speed}
+{\up #}{\footnote\pard\plain{\up #} Backlash_speed}
+\pard {\up K}{\footnote\pard\plain{\up K} Axis attributes}
+\b\fs28\cf1 Backlash speed \uldb axis attribute\plain\b\fs28\cf1 {\v Axis_attributes}
+\par \plain\fs24 
+\par This parameter defines the axis backlash speed in steps/sec
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Safe Area}
+{\up #}{\footnote\pard\plain{\up #} Safe_Area}
+\pard \b\fs28\cf1 Safe Area \uldb axis attribute\plain\b\fs28\cf1 {\v Axis_attributes}
+\par \plain\fs24 
+\par These parameters define the boundaries of the safe position within which the axis must lie when venting the system. If both these parameters are zero a safe area is not applied. 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Creating a new stage type}
+{\up #}{\footnote\pard\plain{\up #} Creating_a_new_stage_type}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Backlash speed}
+\b\fs28\cf1 Creating a new stage type
+\par \pard \plain\fs24 To create a new stage type follow this procedure:
+\par 
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab Select the menu item \b Edit \plain\fs24 - \b Add\plain\fs24  - \b New Stage Type\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Enter a name for the new stage type
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Select from the drop down list an existing stage type which most closely resembles the stage you wish to create
+\par \f3 \{bmc bm0.bmp\}\f1 \tab press \b OK\plain\fs24 
+\par \f3 \{bmc bm0.bmp\}\f1 \tab The new stage type is created and displayed in the main window
+\par 
+\par The data for the stage may now be edited
+\par 
+\par If required \uldb \b add a new axis\plain\b\fs24 {\v add_a_new_axis}\plain\fs24 
+\par \pard\li355\fi-355\tx355 If required \uldb \b delete an axis\plain\b\fs24 {\v Delete_an_axis}\plain\fs24 
+\par modify the \uldb \b stage attributes\plain\b\fs24 {\v Stage_Attributes}\plain\fs24  as required
+\par modify the \uldb \b axis attributes\plain\b\fs24 {\v Axis_attributes}\plain\fs24  as required
+\par 
+\par \pard\tx355 Note any changes to the stage data are not actually performed on the database until either you exit the Stage Administrator with OK or you select the menu item \b Edit\plain\fs24  - \b Apply changes. \plain\fs24 To discard the edits made select the menu item \b Edit\plain\fs24  - \b discard changes\plain\fs24 .
+\par \pard\tx355 
+\par \pard\tx355 Note that until changes are applied or discarded the selected stage type may not be changed.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} add a new axis}
+{\up #}{\footnote\pard\plain{\up #} add_a_new_axis}
+\pard\keepn \b\fs28\cf1 add a new axis
+\par \pard \plain\fs24 To add an axis to a stage type select the menu item\b  Edit\plain\fs24  - \b Add\plain\fs24  - \b ? Axis\plain\fs24 
+\par This will display a dialog which permits you to add an axis by copying one from the current stage type or from other stage types in the database.
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Delete an axis}
+{\up #}{\footnote\pard\plain{\up #} Delete_an_axis}
+\pard\keepn \b\fs28\cf1 delete an axis
+\par \pard \plain\fs24 To delete an axis select the menu item \b Edit\plain\fs24  - \b Delete\plain\fs24  - \b ? Axis\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Editing a stage type}
+{\up #}{\footnote\pard\plain{\up #} Editing_a_stage_type}
+\pard\keepn \b\fs28\cf1 Editing a stage type
+\par \pard \plain\fs24 The currently selected stage type may be edited, providing the appropriate permissions have been granted.
+\par Note - pre-defined stage types may not be edited.
+\par 
+\par Data may be edited as follows:
+\par \uldb \b Add an axis\plain\b\fs24 {\v add_a_new_axis}\plain\fs24 
+\par \uldb \b Delete an axis\plain\b\fs24 {\v Delete_an_axis}\plain\fs24 
+\par Edit \uldb \b stage attributes\plain\b\fs24 {\v Stage_Attributes}\plain\fs24 
+\par Edit \uldb \b axis attributes\plain\b\fs24 {\v Axis_attributes}\plain\fs24 
+\par \uldb \b Delete a stage type\plain\b\fs24 {\v Delete_a_stage_type}\plain\fs24 
+\par 
+\par Note any changes to the stage data are not actually performed on the database until either you exit the Stage Administrator with OK or you select the menu item \b Edit\plain\fs24  - \b Apply changes. \plain\fs24 To discard the edits made select the menu item \b Edit\plain\fs24  - \b discard changes\plain\fs24 .
+\par \pard 
+\par Note that until changes are applied or discarded the selected stage type may not be changed.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Delete a stage type}
+{\up #}{\footnote\pard\plain{\up #} Delete_a_stage_type}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Cartesian;Centre of rotation;Contents;Creating a new stage type;custom stage;Delete a stage type;delete an axis}
+\b\fs28\cf1 Delete a stage type
+\par \pard \plain\fs24 The current stage type may be deleted if it is not a pre-defined stage type and if it is not selected as the \uldb \b custom stage\plain\b\fs24 {\v custom_stage}\plain\fs24 .
+\par \page
+{\up $}{\footnote\pard\plain{\up $} custom stage}
+{\up #}{\footnote\pard\plain{\up #} custom_stage}
+\pard\keepn \b\fs28\cf1 custom stage
+\par \pard \plain\fs24 Created stage types are added to the list of custom stages.
+\par 
+\par One of these stage types may be selected as the Custom Stage by pressing the \b Set Custom Stage \plain\fs24 button which registers the data with the server and adds the stage type to the list of installed stage types.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Rotation Centre Override}
+{\up #}{\footnote\pard\plain{\up #} Rotation_Centre_Override}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Editing a stage type;Initial Position;Initialisation Order;Keycode access}
+\b\fs28\cf1 Rotation Centre Override
+\par \pard \plain\fs24 The Rotation centre may need to be modified when the stage is fitted to a particular configuration.
+\par 
+\par This is achieved using the \b Override X\plain\fs24  or \b Override Y\plain\fs24  buttons on the main window.
+\par This button displays the Centre override Conditions window in which rules may be defined to determine the appropriate centre of rotation.
+\par 
+\par Rules may be based either on a column type or a machine type.
+\par 
+\par To Add a rule
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab If no rules are currently defined, select column or machine
+\par \f3 \{bmc bm0.bmp\}\f1 \tab From the appropriate drop down box select the column type or machine type
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Enter the centre value which applies under these conditions
+\par \f3 \{bmc bm0.bmp\}\f1 \tab Select \b Add\plain\fs24  to add this rule
+\par \f3 \{bmc bm0.bmp\}\f1 \tab 
+\par \pard\tx355 When the stage is configured the rules will be scanned in turn to check if they apply, if they do the default value is overriden with the value supplied.
+\par \pard\tx355 
+\par \pard\tx355 Remove a rule by selecting it and pressing \b Remove\plain\fs24  or double click it
+\par \pard\tx355 Column/Machine selection may only be changed if no rules are defined.
+\par \page
+}

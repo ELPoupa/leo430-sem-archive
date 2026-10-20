@@ -1,0 +1,23 @@
+[OPTIONS]
+TITLE=Stage Administrator
+CONTENTS=Contents
+COPYRIGHT=Copyright ©Leo Electron Microscopy Ltd 1999
+LCID=0x409 0x0 0x0
+COMPRESS=0
+
+[WINDOWS]
+main=,,,,
+
+[FILES]
+STAGEADMIN.rtf
+
+[MAP]
+Creating_a_new_stage_type 45
+Axis_attributes 42
+Range_Override 43
+add_a_new_axis 41
+Main_Window 40
+Overview 39
+Keycode_access 44
+Rotation_Centre_Override 100
+

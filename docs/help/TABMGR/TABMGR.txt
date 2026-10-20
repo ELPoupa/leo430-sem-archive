@@ -1,0 +1,647 @@
+﻿$#>KAstigmatism Correction
+
+This panel allows you to correct astigmatismAstigmatism_Correction@sem.hlp in the image. The astigmatism correction parameters are stored and recalled each time you select Stigmation again. 
+ {bmc bm0.bmp} ClickCLICK@Sem.HLP on Stigmation button.  {bmc bm0.bmp} Adjust stigmation correction to remove Astigmatism in image: {bmc bm1.bmp} DragDRAG@Sem.HLP with the left mouse button in the Image Window to adjust stigmation in x and y. or {bmc bm0.bmp} Pick up and drag the red point or {bmc bm0.bmp} use the Scroll Bars2HOSDE@Sem.HLP to adjust x/y  {bmc bm0.bmp} Click Mag/Focus to activate the mouse to magnification and focus setting in the image plane.  {bmc bm0.bmp} Select another tab or close SEM Control with {bmc bm2.bmp}  For further information about parameter adjustment refer to Navigation Box23WW_9K@Sem.HLP		{bmc bm3.bmp}	
+
+{bmc bm4.bmp}	 When adjusting stigmation it is generally considered easier to adjust one axis at a time using the navigation box scroll bars, rather than attempting to adjust X and Y stigmation simultaneously which requires more experience.
+
+For additional information see Stigmation ModeK5RRU4@Sem.HLP and  How to correct astigmatismAstigmatism_Correction@sem.hlp 
+$#>Auto Initialise Stage
+
+
+{bmc bm1.bmp}	ClickCLICK@Sem.HLP on this function to start the stage initialisation. 
+
+		{bmc bm5.bmp}
+
+Accept with Yes
+
+The stage will then perform it's initialisation sequenceStage_initialisation_sequence
+
+Now the stage coordinates are referenced.
+
+With No you terminate without initialising the stage.
+
+{bmc bm6.bmp} NOTE: If the Stage is not initialised the actual Stage co-ordinates are unknown, hence the stage cannot be instructed to go to specific co-ordinates
+$#>KBacklash On
+
+This menu lets you switch Stage Backlash ON. or OFF.
+
+{bmc bm1.bmp}	If you clickCLICK@Sem.HLP ON it is marked with {bmc bm7.bmp}. Backlash correction is then performed after each stage movement.
+
+Backlash correction is defined in Preference Selection Stage3TQY_S@leoserv.HLP tab.
+$#>Beam Only
+
+The software attempts to use beam shift to move the point to the centre. If the movement is outside the range of the beam shift then an error message is given and the position remains unchanged.
+
+{bmc bm1.bmp}	ClickCLICK@Sem.HLP on the method to be activated which is then marked with {bmc bm7.bmp}
+#Beam State Combo Box
+
+The states displayed are:
+Shutdown:	The Gun is Off
+EHT Off:	The Gun is on (the filament is heated and the extractor voltage is on) but EHT is Off
+Beam On:	The Gun is On and the EHT is On ready for operation
+
+
+When clicked the drop down list displays currently available commands.
+
+Commands are:
+Shutdown	Go to Shutdown state 
+Beam On	Ramp up Filament current (if required)  then set EHT to the required value in EHT On state
+EHT On	Ramp EHT to the required value in EHT On state
+EHT Off	Switch off EHT and go to EHT Off state
+
+$#KCompucentric Mode
+This Combo box is used to select if compucentric rotation and/or Tilt is to be performed when goto tilt or rotation values are entered.
+
+$#Compucentric Movement
+If a Compucentric modeCompucentric_Mode is selected and a Rotate/Tilt movement is requested via the GotoStage_goto or DeltaStage_Delta functions the software calculates and executes the compensating movements for the other axes to maintain the sample position in the field of view.
+
+Note that calibrations are required. 
+See Calibrate Stage Centre4YI0_82@dlgmgr.hlp and  Compucentric Setup4YI0_83@dlgmgr.hlp
+
+See Also Stage Horizontal Alignment4YI0_84@dlgmgr.hlp and Compucentric Stage ControlGP9BLC@stage.hlp
+$#>KContents of SEM Control
+
+{bmc bm8.bmp}	Type <CTRL + G> as a short cut to open the SEM Control panel.
+
+{bmc bm9.bmp}	Type <ALT + T> to open Tools the Menu Bar8ZP0K4@Sem.HLP then type <G> or point to Goto Control Panel and clickCLICK@Sem.HLP with the left mouse button.
+
+The SEM Control Panel opens.  The following tabs allow setting of SEM parameters  AperturesSEM_Control_Apertures DetectorsSEM_Control_Detectors GunSEM_Control_Gun ScanningSEM_Control_Scanning SignalSEM_Control_Signal StageSEM_Control_Stage VacuumSEM_Control_Vacuum   X-RaySEM_Control_X_Ray  {bmc bm10.bmp} A panel is selected by clicking on the tab which brings the panel to the front.   {bmc bm0.bmp} Close the SEM Control panel by clicking on {bmc bm2.bmp}	{bmc bm11.bmp}	
+
+$#>Do Backlash
+
+{bmc bm1.bmp}	ClickingCLICK@Sem.HLP on Do Backlash causes the stage to execute a backlash correction operation.
+
+Backlash correction is defined in Preference Selection Stage3TQY_S@leoserv.HLP tab.
+$#KEHT Off @ Log Off
+If this Checkbox on the SEM Control Gun TabSEM_Control_Gun is checked the EHT will automatically be switched off when the User Logs Off.
+This setting requires Supervisor Privilege3CNN77@admin32.hlp.
+$#EHT User Maximum
+This is a Supervisor3CNN77@admin32.hlp only setting accessed by a Right Mouse Button Click on the SEM Control GunSEM_Control_Gun Tab background.
+This value limits the maximum EHT that the user may request.
+$#KForce Stage Initialise
+This function, which requires supervisor privilegeXTAC5O@admin32.hlp, is provided for emergency use only.
+It will set the stage to the initialised state without moving the stage.
+Each axis will be assumed to be at it's mid point of travel regardless of actual position.
+
+This will allow the joystick to move the stage.
+Use with caution as in some types of stage there are no mechanical upper limits.
+
+To Access this function, ensure that User Level is set to SERVICE (see user preferences)
+Using the SEM Status Window select for display the Command Force Stage Init
+Clicking on the command will execute it immediately and unconditionally.
+$#KFrame Integrate Mode 
+In this mode the image formed as the average of a number of successive frames. 
+The image is frozen at the end of the required number of frames.
+
+The scan speedscan_speed defines the time to complete a frame and the Noise reduction parameter N defines the number of frames to integrate.
+$#>Go To Next Position
+This function moves the stage to the next position in the Points List.
+The beam shift is reset to 0,0.
+The state Points List is set to In List or,if appropriate, At End
+
+If selected the magnification and /or Working Distance are set to 
+the values associated with the entry.
+$#>KGo To Previous Position
+This function moves the stage to the previous position in the Points List.
+The beam shift is reset to 0,0.
+The state Points List is set to In List or,if appropriate, At Start
+
+If selected the magnification and /or Working Distance are set to the 
+values associated with the entry.
+$#>Goto First Position
+This function moves the stage to the first position in the Points List.
+The beam shift is reset to 0,0.
+The state Points List is set to At Start
+
+If selected the magnification and /or Working Distance are set to 
+the values associated with the entry.
+$#>KInput LUT
+
+This Input Look Up Table (LUT) controls the transformation of the input signal before it reaches the store. Four different transformations can be applied:
+
+Transparent:
+The input LUT is set to linear so that the signal passes through the LUT unchanged.
+
+Gamma:
+Gamma correction changes the LUT relationship between the input signal and the output signal. It can be used to expand the contrast in an image if much of the image detail is contained in a small number of grey levels.
+The input LUT is set according to the gamma parameter. Select the parameter with the Scroll Bar2HOSDE@Sem.HLP below. 
+For parameter input see also Parameter Control Analogue129F2JR@Sem.HLP.
+
+Inverse:
+The input LUT is set to inverted linear so that the signal passes through the LUT with inverted contrast.
+
+User:
+The User setting changes the LUT relationship between the input signal and the output signal. It can be used to expand the contrast in an image if much of the image detail is contained in a small number of grey levels.  A LUT Editor Panel opens and allows to setup a user designed LUT.  For further information see Look Up Table EditorContents@LutMgr.HLP.		{bmc bm12.bmp} 	
+$#Joystick Disable
+
+This function is not available on this SEM
+$#>KLabel Position
+This function combines the current Stage Position and Beam Shift to produce a composite position.
+This position together with the magnification and Working Distance (WD) is stored in the Points List
+with a User Defined LabelUser_Defined_Label. If the Label already exists in the list a Warning is given.
+$#Limits
+This menu item displays the Stage Limits0QFIZJ@dlgmgr.hlp panel
+$#>KList Clear
+The function deletes the contents of the Points List.
+$#>List Load
+This function loads the Points List from a User Selected Points File.
+The previous contents of the Points List is destroyed.
+$#>KList Save As
+This function saves the current contents of the Points List 
+to a User defined Points List FileUser_defined_Points_List_File in the current User Directory.
+$#>Mark Position
+This function combines the current Stage Position and Beam Shift to produce a composite position.
+This position together with the magnification and Working Distance (WD) is stored in the Points List1JKVBGQ@dlgmgr.HLP 
+with a label constructed as M_nnnn where nnnn is the position in the list.
+$#KMove XY Only
+If Move XY only is selected {bmc bm7.bmp} then whenever the stage is moved 
+to a saved position only the XY co-ordinates are used.
+This does not apply to Global position labels
+$#>Noise Reduction
+The fundamental noise reduction is chosen by selecting an appropriate Scan Speedscan_speed which defines the basic dwell time of the beam on a pixel
+
+  {bmc bm0.bmp} Select Noise Reduction mode between Frame AverageFrame_Average_Mode, Frame IntegrateFrame_Integrate_Mode, and Line AverageLine_Average_Mode from the Drop-down ListXYVXW3@Sem.HLP.  {bmc bm0.bmp} Select Freeze Mode from the Drop-down List as Command which causes an immediate freeze of the current zone (the whole image in normal mode) when the Freeze button is pressed  or  End Frame causes the zone to freeze at the end of the current frame.  {bmc bm0.bmp} Unfreeze is used to reset the noise reduction cycle and resume image acquisition.  {bmc bm0.bmp} Scan + button increases scan speed (faster, lower scan speed numbers) and Scan - button decreases scan speed (slower, higher scan speed numbers) 	 {bmc bm13.bmp}	
+
+$#>Position List
+This functions displays the Points List Dialog139NVAW@Stage.HLP.
+$#Protected Z
+
+This SEM parameter controls the behaviour of the stage when a multi axis move is performed (e.g. Go To a position label).
+
+Parameter not Set.
+All relevent axes move simultaneously to the desired position.
+Backlash correction performed if required.
+
+Parameter Set
+The move to the desired position is performed in phases to minimise the risk of collision.
+The parameter Safe Z defines the maximum Z position to be used while moving in XY. Set this according to the tallest sample you have mounted.
+
+The movement sequence is:
+
+If either the desired Z or Safe Z is lower than the current Z then this axis is moved to whichever is the lowest position.
+If the desired Tilt is lower than the current Tilt then this axis is moved to the desired position
+The X,Y,R,M axes are moved simultaneously to their desired positions
+If The desired Tilt position is not yet achieved move Tilt to the desired position
+If the desired Z position is not yet achieved move Z to the desired position.
+
+
+The Protected Z parameter may only be changed with Supervisor PrivilegeXTAC5O@admin32.hlp.
+$#>Record
+
+These functions apply to the Co-ordinate Store & Recall139NVAW@Stage.HLP functions.
+
+There is a Points List maintained for each User Directory.
+
+The functions available are:
+
+ 	List ClearList_Clear 		List LoadList_Load 		List Save AsList_Save_As 	Mark PositionMark_Position 	Label PositionLabel_Position 	Position ListPosition_List
+
+The list may also be saved/loaded in Text format_XTMIN@dlgmgr.hlp
+
+.	Goto First PositionGoto_First_Position		Go To Next PositionGo_To_Next_Position 		Go To Previous PositionGo_To_Previous_Point
+
+On Stage Goto
+
+		 Set MagnificationSet_Magnification		 Set Working DistanceSet_Working_Distance		Move XY OnlyMove_XY_Only
+$#>SEM Control Apertures
+   
+  {bmc bm14.bmp}  Click on the dialog background with the Right mouse button to display the  Aperture Table5RX8_RQ@dlgmgr.hlp     {bmc bm0.bmp} Check {bmc bm15.bmp} Focus wobble to perform Aperture Alignment334XEAC@operation.hlp  {bmc bm0.bmp} Perform Astigmatism CorrectionAstigmatism_Correction   See Aperture Table5RX8_RQ@dlgmgr.hlp Adjusting Apertures334XEAC@operation.hlp OptibeamOptibeam     {bmc bm0.bmp} Select another tab or close SEM Control with {bmc bm2.bmp}	{bmc bm3.bmp}	
+{bmc bm16.bmp}  Warning: If the aperture selected in the software is not the one actually in use in the SEM the optimum conditions may not be achieved 	
+ 	
+$#>SEM Control Detectors
+
+Selection and setup of detectors and signal path are provided. For information about signal routing see Signal PathAP1DLP@sem.hlp.
+{bmc bm0.bmp} Select Signal A from the Drop-down ListXYVXW3@Sem.HLP.   {bmc bm0.bmp} Select Signal B from the Drop-down List.  {bmc bm0.bmp} For the Secondary Electron Detector  set Collector Bias with the Scroll Bar2HOSDE@Sem.HLP.   {bmc bm0.bmp} If you want to mix the two signals check Mixing {bmc bm15.bmp} and adjust SignalB6F4IK with the Scroll Bar. {bmc bm0.bmp} If you want to use the DerivativeDerivative function adjust differentiate with the Scroll Bar. {bmc bm0.bmp} Select Signal Adjust mode from the Drop-down list.   {bmc bm0.bmp} If Auto-Brightness is Off adjust Brightness with the Scroll Bar.  {bmc bm0.bmp} If Auto-Contrast is Off adjust Contrast with the Scroll Bar.  Auto Brightness controls are on the SignalSEM_Control_Signal Tab  {bmc bm0.bmp} Select Input LUTInput_LUT Mode  {bmc bm0.bmp} If Input LUT is Gamma set Gamma with the Scroll Bar.  {bmc bm0.bmp} Select another tab or close SEM Control with {bmc bm2.bmp}	{bmc bm11.bmp}	
+
+For parameter input see also Parameter Control Analogue129F2JR@Sem.HLP.
+
+
+$#SEM Control Gun
+Status and control of the gun are provided. See Filament SaturationFilament_Saturation and Beam AlignmentJPA890@operation.hlpBeam_alignment@operation.hlp
+ The first 3 parameters show the actual state of the Acceleration Voltage (EHT), Filament Current (Fil I) and Beam State.  {bmc bm0.bmp} Check {bmc bm15.bmp}New Filament if filament has just been replaced {bmc bm0.bmp} Select Beam StateAEAWGC from the Drop-down ListXYVXW3@Sem.HLP.: {bmc bm0.bmp} Check {bmc bm15.bmp} Low KV SpacerLow_KV_Anode if fitted  {bmc bm0.bmp} Check {bmc bm15.bmp} EHT Off @ Log OffEHT_Off___Log_Off if required {bmc bm0.bmp} Click on Beam Current to change value {bmc bm0.bmp} Click on I Probe to change required Probe Current115R0I@operation.hlpspot_size@operation.hlp  {bmc bm0.bmp} Select Filament Current Target with Scroll Bar2HOSDE@Sem.HLP. The gun will ramp to the adjusted value.  {bmc bm0.bmp} Select High Voltage Target with Scroll Bar. The gun will ramp to the adjusted value.   For parameter input see also Parameter Control Analogue129F2JR@Sem.HLP.  {bmc bm0.bmp} Right Mouse Click on the tab background to access EHT User MaximumEHT_User_Maximum  {bmc bm0.bmp} Select another tab or close SEM Control with {bmc bm2.bmp}	{bmc bm17.bmp}	
+
+{bmc bm18.bmp}	Warning:   It is important to ensure that the state of the anode spacer parameter reflects the state of the machine.
+
+$#>SEM Control Scanning
+
+Selection and setup of scan modes are provided. For general information see Use of Different ScansH97GF1@Sem.HLP
+
+{bmc bm0.bmp} Select Operating Mode from the Drop-down ListXYVXW3@Sem.HLP.    {bmc bm0.bmp} Select Scan Speed from the Drop-down List.  {bmc bm0.bmp} If you want to show signal levels along a line check Line Scan {bmc bm15.bmp}..  {bmc bm0.bmp} If you want to show X-ray concentration profiles along a line check Xray Line Scan {bmc bm15.bmp} .  {bmc bm0.bmp} If you want to keep the electron beam on a spot on the specimen for X-ray measurements check Spot {bmc bm15.bmp}..  {bmc bm0.bmp} To use Dual magnification check Dual mag {bmc bm15.bmp}. The Zoom Factor is the amount that the right image is magnified relative to the left image   For additional information about special scans see Special Scan Modes1PC3RUV@Sem.HLP.  See also Noise ReductionNoise_Reduction for additional setup  {bmc bm0.bmp} Select another tab or close SEM Control with {bmc bm2.bmp}	{bmc bm13.bmp}	
+
+For parameter input see also Parameter Control Analogue129F2JR@Sem.HLP.
+
+$#>SEM Control Stage
+
+This function displays the Stage Control panel used to display and control the position of the motorised stage
+.For general information about the stage see Stage OverviewContents@Stage.HLP.
+{bmc bm1.bmp} ClickCLICK@Sem.HLP on the Go To X or Y field to open an input box to enter XY coordinates. {bmc bm1.bmp} Click on any other active Go To field to open a normal input value box and to enter the coordinate.  Click on the elements of the dialog for more information {bmc bm6.bmp} Note The Stage Stop button will abort stage movement.  This may also be achieved by pressing F12  {bmc bm19.bmp} Click on the tab background with the right mouse button to open the Stage Popup MenuStage_Popup_Menu.  {bmc bm0.bmp} Select another tab or close SEM Control with {bmc bm2.bmp}  For parameter input see also Parameter Control Analogue129F2JR@Sem.HLP.  See also Compucentric MovementCompucentric_Movement  		 {bmc bm20.shg} {bmc bm6.bmp} Note: Non motorised drives are greyed.	
+
+$#>SEM Control Vacuum
+
+This panel displays the status of the vacuum system.Pressure units can be selected from the Preference Selection PanelL2NQES@leoserv.HLP or by clicking on the Vacuum display
+
+The following status fields appear for readout: System Vacuum: The vacuum in the chamber.  Vent inhibit:If Venting is inhibited this defines the reason. Vacuum Status:The status of the vacuum system, e.g. At Air, Pumping, etc.  EHT Vac ready:The vacuum level interlock for enabling the high voltage for the electron beam.  {bmc bm0.bmp} For changing the specimen press the Vent button. {bmc bm0.bmp} Press the Pump button to evacuate the specimen chamber to get the system ready.          {bmc bm0.bmp} Select another tab or close SEM Control with {bmc bm2.bmp}  		{bmc bm21.bmp}  	
+
+$#>SEM Control X-Ray
+
+This window provides set up and control for X-Ray dot map input
+ X-Ray dot map inputs are connected to X-Ray ports. At installation these ports are given identifiers consistent with the X-Ray system in use, these identifiers appear on the left of the window (e.g. WIN1 toWIN7). They may be edited by the user. Each port supplies the count pulses for a selected energy window. These pulses are accumulated on a pixel basis and used as source information for the Dot Map function. On entry to the X-Ray setup window the normal mode display LUT contents are stored and the display LUT switched into X-Ray mode.  There are three parts to the dot map function: {bmc bm22.bmp} setup of the required functionX_Ray_Dot_Map__Function_Setup, {bmc bm22.bmp} data acquisitionX_Ray_Dot_Map__Start_Acquisition  {bmc bm22.bmp} colour coding of the display LUTX_Ray_Dot_Map__Energy_Window_Setup.  Closing the X-Ray window will give an X-Ray ResetX_Ray_Dot_Map__Reset   {bmc bm23.bmp} Registration of X-Ray data with image:  Different X-Ray systems may have different internal timings which may give rise to a slight mismatch in registration between the X-Ray data and the image. If this is found to be the case reducing the data acquisition scan rate will reduce the mismatch. It may be necessary to experiment to find the fastest acquisition rate which gives a suitable registration where high accuracy is required. 	 To obtain additional information point to the area in the picture. When the cursor changes from {bmc bm24.bmp}to {bmc bm25.bmp}clickCLICK@Sem.HLP to present the additional information. {bmc bm26.shg}	
+
+$#>Set Magnification
+If Set Magnification is selected {bmc bm7.bmp} then whenever the stage is moved 
+to a saved position the magnification is set to the stored value.
+$#>Set Working Distance
+If Set Working Distance is selected {bmc bm7.bmp} then whenever the stage is moved 
+to a saved position the working distance is set to the stored value.
+#Signal proportions
+The parameter Signal detrmines the proportions of Signal A and Signal B which are mixed together.
+
+A value of 1.0 means that all of Signal A and none of Signal B is used.
+
+A value of 0.0 means that none of Signal A and all of Signal B is used.
+$#>Stage And Beam
+
+The software will attempt to use the beam shift to move the point to the centre of the screen. If the movement is outside the range of the beam shift then a stage movement will be used, with the positioning such that following the move the beam shift will be zero.
+
+{bmc bm1.bmp}	ClickCLICK@Sem.HLP on the method to be activated which is then marked with {bmc bm7.bmp}
+$#Stage At
+These fields display the current stage position
+$#Stage Delta
+Stage relative movement may be achieved using the Delta buttons on the SEM Control StageSEM_Control_Stage Tab
+Entering a Value into the delta parameter (positive or negative values may be used)  adds it  to the current Stage position  and initiates a GoTo for the appropriate axis or axes.
+$#>Stage Only
+
+The stage is moved to position the point at the centre. The beam shift remains unchanged.
+
+{bmc bm1.bmp}	ClickCLICK@Sem.HLP on the method to be activated which is then marked with {bmc bm7.bmp}
+$#>Stage Popup Menu
+
+{bmc bm19.bmp}	This pop up menu is displayed when the right mouse button is clickedCLICK@Sem.HLP on background of the Stage Tab
+It provides following features for selection and adjustment:
+
+Auto Initialise StageAuto_Initialise_Stage  Backlash has two commands:Backlash OnBacklash_On and Do BacklashDo_Backlash  Limits0QFIZJ@dlgmgr.hlp  Centre Point/Feature has three selections:     Stage And BeamStage_And_Beam     Stage OnlyStage_Only     Beam OnlyBeam_Only Calibrate Stage centreIKVY3Z@dlgmgr.hlp Compucentric SetupQEAV2O@dlgmgr.hlp Horizontal Alignment1UPFXD@dlgmgr.hlp  RecordRecord	    {bmc bm27.bmp}	
+{bmc bm4.bmp}	Use Stage Only for low magnifications, Stage and Beam for medium magnifications, and Beam Only for high magnifications.
+
+$#Stage Status
+This field  displays the status of the stage (e.g. Stage Is = Idle).
+$#Stage Stop
+Pressing this button will abort stage movement
+$#Stage goto
+{bmc bm1.bmp}	Click on any  active Go To field to open a normal input value box and to enter the coordinate.
+
+If a Compucentric ModeCompucentric_Mode is selected a compucentric move will be performed on the rotate and/or tilt movement.
+
+$#Stage initialisation sequence
+{bmc bm0.bmp}	If M (Main Z) axis is present move until lower limit reached
+{bmc bm0.bmp}	if Z axis is  present move until lower limit is reached
+{bmc bm0.bmp}	If T (Tilt) axis is present move until lower limit is reached
+{bmc bm0.bmp}	Move X axis until lower limit is reached
+{bmc bm0.bmp}	Move Y axis until lower limit is reached
+{bmc bm0.bmp}	If R (rotate) axis is fitted and the stage is configured with a rotate limit switch then move until limit is reached
+{bmc bm0.bmp}	If R (rotate) axis is fitted and the stage is configured without a rotate limit switch the current position is assumed to be 0 degrees
+{bmc bm0.bmp}	Move in X and Y to mid travel positions
+$#Track Z
+
+If this option is selected then when the Stage Z is moved the Working Distance is changed to attempt to keep the image in focus.
+This is not precise but will keep the working distance close to the required setting.
+$#Undo Stage Goto
+When a stage goto is requested the stage position is saved before execution.
+Pressing the Undo Stage Goto button will move the stage back to the saved position.
+The function is only enabled when a stored value is available.
+Note that Stage movements other than Go To are not included in this function (e.g. movements via the joystick)
+$#>User Defined Label
+This Dialog is used to enter the Label for an entry in the Points List.
+The Label may be any string of characters.
+{bmc bm23.bmp}	Labels starting M_ are not permitted.
+A Warning will be given if the label already exists.
+
+See also Store / Recall139NVAW@Stage.HLP
+$#>User defined Points List File
+This dialog is used to define the name of a Points List File. 
+The file will be saved in the current User Directory with the extension .XYZ
+$#>X-Ray Dot Map: Clear
+
+{bmc bm1.bmp} The dot maps so far acquired are cleared when clickingCLICK@Sem.HLP on the Clear button.
+$#>X-Ray Dot Map: Default Setup
+
+{bmc bm1.bmp} The Element Window Setup and the Element Priority is set to Default by clickingCLICK@Sem.HLP on the Default button.
+$#>X-Ray Dot Map: Element Priority
+
+In this mode X-Ray counts are accumulated on each X-Ray port (energy window) for each pixel. If the count is non zero then the associated bit in the image store pixel is set, making a pixel DOT of the selected colour.
+
+When a pixel contains non zero counts on two or more ports (energy windows) then the one displayed is determined by the presence priority which may be altered as required.
+
+The Element Priority window is a box containing all the identities of the data sources. This window determines the priority of the presence dot when two or more occur in the same pixel. The top of the box is the highest priority. 
+
+{bmc bm1.bmp} The priority may be changed by selecting an entry with the mouse and the moving it with the buttons Move Up and Move Down to the required priority position.
+
+{bmc bm4.bmp} Once the data has been collected the priority may be rearranged interactively to see the effect on the display. This is non destructive to the X-Ray data.
+$#>X-Ray Dot Map: Energy Window Setup
+
+{bmc bm1.bmp} Select the energy window by clickingCLICK@Sem.HLP on the check box {bmc bm15.bmp}.		{bmc bm28.bmp}
+
+{bmc bm8.bmp} Enter the identifier text into the edit box (replace WIN1 etc.). Just click the cursor in the edit box and the text may be edited in the normal way (e.g. enter the chemical symbol). This new description will be actioned when the mouse is clicked anywhere else in the X-Ray panel.
+
+Each X-Ray Port's data may be displayed in one of a number of colours. The colour is shown in the field next to the label. The colour may be changed by clicking on {bmc bm29.bmp} or clicking the coloured area and selecting the preferred colour from the colour selection panel.
+
+{bmc bm4.bmp} Advice
+It is important to choose the correct colours for dot maps if they are to be output to monochrome video printers, Grey TIFF files (as seen) or clipboard 
+
+Recommended colours are:
+
+One map 	white
+Two maps 	white, dark red.
+Three maps	white, orange, green
+Four maps	white, dark red, magenta, dark green
+$#>X-Ray Dot Map: Function Setup
+
+{bmc bm6.bmp} Note: This may only be performed if X-Ray data is not being acquired.
+
+The counts are collected from all energy windows which are defined and selected by the check box {bmc bm15.bmp}.
+If there is a count in any window then the pixel is designated as a dot and replaces the image pixel,
+ if there are no counts the pixel is black.
+
+{bmc bm0.bmp}	Select the windows in the Energy Window SetupX_Ray_Dot_Map__Energy_Window_Setup field.
+
+{bmc bm0.bmp}	Set the priority of the dots in the Element PriorityX_Ray_Dot_Map__Element_Priority field.
+
+or
+
+{bmc bm0.bmp}	Load the setup by clicking on the LoadX_Ray_Dot_Map__Load_Setup button.
+
+{bmc bm0.bmp}	You are now ready to start the acquisitionX_Ray_Dot_Map__Start_Acquisition of the Dot Map.
+$#>X-Ray Dot Map: Load Setup
+
+{bmc bm1.bmp} The parameters for the Element Window Setup and the Element Priority are loaded from the User Directory from a selected file with the extension .XRS by clickingCLICK@Sem.HLP on the Load button.
+$#>X-Ray Dot Map: Reset
+
+This command is issued when the X-Ray tab is changed or the SEM Control window is closed with {bmc bm2.bmp}. 
+
+If the acquisition is active it will be stopped.
+
+The Display LUT1QUPBH3@Sem.HLP is restored to Normal Mode.
+$#>X-Ray Dot Map: Save Setup
+
+{bmc bm1.bmp} The parameters for the Element Window Setup and the Element Priority are saved to the User Directory under a filename given by the user with the extension .XRS by clickingCLICK@Sem.HLP on the Save button.
+$#X-Ray Dot Map: Start Acquisition
+
+{bmc bm1.bmp} The data acquisition is started clickingCLICK@Sem.HLP on the Start button.
+
+If the setup is not complete you will get the warning {bmc bm30.bmp}.
+
+{bmc bm23.bmp} While acquisition is in progress settings may not be changed otherwise a reset will occur.
+$#>X-Ray Dot Map: Stop Acquisition
+
+{bmc bm1.bmp} The data acquisition scan may be stopped by clickingCLICK@Sem.HLP on the Stop button.
+
+Acquisition will also be stopped when the X-Ray tab is changed or the SEM Control window is closed with {bmc bm2.bmp}.
+$#Z move on Vent
+If this option is selected  Z is moved down when the chamber is ventilated to clear the stage from the pole piece.
+
+This may only be modified with Supervisor privilegeXTAC5O@admin32.hlp.
+$#limit hit
+ If the stage reaches a limit then a messageLimit Hit is displayed here (usually greyed)
+$#>Derivative
+This option allows an image to be enhanced by mixing it with the derivative of itself. This has the effect of highlighting vertical surface detail and edges within the image.
+
+The derivative value is adjusted by a scroll bar on the SEM Control DetectorsSEM_Control_Detectors tab.
+$#>SEM Control Signal
+This tab provides the Auto signal level functions
+Brightness and contrast can also be controlled directly from this panel using the slider bars labelled accordingly.  There are two types of auto signal level function which each operate in two ways. The auto signal level function will either control the Mean signal level or the Peak signal level. The mean signal level is defined as being the average brightness of all the pixels in the image, while the peak level is defined as the brightness of the brightest part of the image.  Peak and mean signal level controls each operate in two ways. The Find function is a single shot activation which sets the peak or mean to the level defined in the associated Auto Video slider bar. The Keep function activates the auto video function to maintain the video level (peak or mean) of the image at the time of selection. Typically the Find function will be used to set the required video level if the image is a long way from the required brightness. The Keep function is useful when the content of the image is likely to change, for example if the stage is being moved across a specimen with distinct light and dark phases, or if the probe current is being adjusted. Auto video control can be disabled at any time by selecting the  Off buttons.	{bmc bm31.bmp}	
+
+$#>scan speed
+The scan speed is the fundamental noise reduction parameter which defines how long the beam dwells on a pixel. 
+
+Scan Speed	Dwell time	
+0	67 ns	
+1	133 ns	
+2	267 ns	
+3	533 ns	
+4	1.067 µs	
+5	2.133 µs	
+6	4.267 µs	
+7	8.533 µs	
+8	17.067 µs	
+9	34.133 µs	
+10	68.267 µs	
+11	136.533 µs	
+12	273.067 µs	
+13	546.133 µs	
+14	1092.267 µs	
+15	2184.533 µs	
+
+
+$#>Frame Average Mode
+
+When frame average is selected the live signal is proportionally mixed with the store signal so that the image reflects the average of the recent frames. 
+
+ The proportion of live to stored can be adjusted with the parameter N which represents the number of frames to be averaged. 
+
+ Frame average can be selected with any scan speedscan_speed , but is generally most useful at the faster speeds  where a larger amount of noise reduction can be obtained without introducing a long cycle time.
+
+There is one important difference between line and frame average. In line average mode the same noise reduction is applied to all the active zones. But for frame average it is possible to set different frame counts for each zone.
+$#>Line Average Mode
+
+Selecting the line average causes each line to be scanned a number of times before the scan moves on.  The average line signal is stored and displayed.
+
+The Noise reduction parameter N defines the number of times a line is to be averaged before moving to the next line
+
+Line average is used when the result of the noise reduction needs to be seen without waiting for the cycle to complete.  
+
+There is one important difference between line and frame average. In line average mode the same noise reduction is applied to all the active zones. But for frame average it is possible to set different frame counts for each zone.
+$#>Low KV Anode
+The acceleration voltage range of the SEM is 300V to 30kV. Although the instrument may be operated over the entire acceleration voltage range with the normal high kV anode installed, better gun geometry and brightness and hence better instrument performance is usually obtained with the anode lifted towards the grid whenever an acceleration voltage of 3kV or less is selected. 
+This is achieved using the low kV anode, as follows:-
+{bmc bm32.bmp}	Admit air to the gun. 
+{bmc bm32.bmp}	 Open the gun.
+{bmc bm32.bmp}	 Lift out the anode.
+{bmc bm32.bmp}	 Fit the low kV anode.
+{bmc bm32.bmp}	 Select Low kV spacer in the SEM Control Gun panel - This will automatically restrict the accelerating voltage
+{bmc bm32.bmp}	 Close the gun, pump down, select the desired low voltage and obtain an image.
+{bmc bm32.bmp}	
+{bmc bm18.bmp}	Warning: The SEM  should not be used at an acceleration voltage higher than 3kV with the low kV anode fitted.  It is important to ensure that the state of the anode spacer parameter reflects the state of the machine.
+$#>Filament Saturation
+The setting of the filament current will have a large effect on the brightness and stability of the image, as well as influencing the lifetime of the filament. As the filament current is increased the brightness of the signal increases until a small plateau is reached, this is known as the "first peak" (see Figure), increasing the filament further will again cause the signal brightness to increase until another plateau is reached, further increase of the filament current will not improve the signal brightness, this is referred to as the fully saturated condition. The lifetime of the filament decreases as the filament current increases, there is no advantage in increasing the filament current above the just saturated condition. 
+
+{bmc bm33.wmf}
+The filament should be operated at one of two conditions, either at the first peak setting or where the filament has become just fully saturated.  These two positions will provide conditions for stable brightness operation. Operating at the first peak setting will give a long filament life, but is not satisfactory for high resolution imaging, while the fully saturated condition will give the brightest signal and allow the best resolution images to be obtained, but the lifetime of the filament will be reduced.
+
+The filament current may be varied by using the associated scroll bar within the SEM Control GunSEM_Control_Gun tab, either by SLOWLY dragging the slider in the appropriate direction, or by clicking over the arrow at the appropriate end of the scroll bar while observing the points at which maximum brightness occurs.  The two peaks of maximum brightness correspond to the two saturation peaks.
+
+This procedure should be carried out in conjunction with Beam AlignmentBeam_Alignment  if the optimum settings are to be achieved
+$#>Beam Alignment
+The beam is correctly aligned down the column when the brightness level of the signal cannot be increased any further (ensuring the system is switched to MANUAL brightness control) by any adjustment of the gun align screws.  These are moved as opposite pairs where one is slackened and the other screwed in.  Both pairs should be adjusted against each other until the signal brightness is at a maximum.  This adjustment should be carried out in conjunction with the filament current adjustmentFilament_Saturation, if the optimum settings are to be achieved.
+$#>KOptibeam
+The Optibeam program takes the requirements for probe current, working distance, etc. and determines the optimum lens settings to achieve the best performance from the column. Usually the best performance is defined as the highest resolution, but Optibeam can be set to other modes as described below.
+
+Optibeam On
+If enabled Optibeam is On, which means that the lens currents will be calculated to give the best performance after each change to the operating conditions. When disabled the lenses can be controlled manually. The instrument is normally operated with Optibeam On.
+
+Optibeam Depth Mode
+If this is enabled Optibeam automatically adjusts the lenses to obtain the largest depth of field for the operating conditions being used. If disabled, Optibeam automatically adjusts the lenses for optimum resolution performance for the prevailing operating conditions.
+
+Optibeam Auto Resolution Mode 
+If this is selected Optibeam automatically controls the probe current115R0I@operation.hlp (I Probe) to give operating conditions consistent with the magnification so that the resolution is not compromised by the spot size being too large.
+
+Optibeam Conjugate mode
+This is a special mode used when Electrostatic Beam Blanking is fitted. For operation see the EBBU documentation
+
+
+
+Depth mode is not available in conjugate mode.
+$#>Survey Overview
+Survey Mode provides the facility to enter a defined state [Survey Mode StateSurvey_Mode] (typically a long Working Distance and low magnification to achieve a wide field of view) in which the Specimen may be reviewed for features of interest.
+
+While in Survey Mode State if a Centre PointN9YIPC@stage.hlp function is executed the software, in addition to moving the selected point to centre screen, switches to another defined state [Resolution Mode stateResolution_Mode] (typically a short working distance and higher magnification for better resolution) for examination of the point of interest.
+
+Similarly if a Centre FeatureT2YJNK@stage.hlp function is executed while in Survey Mode State the software, in addition to moving the area selected to the centre of the screen and increasing magnification to fill the image, switches to Resolution Mode state.
+
+If in Resolution State the Key <F4> will return to Survey Mode state.
+
+Switching off Survey Mode returns to the conditions which existed when Survey Mode was switched On.
+
+To set up conditions for Survey Mode State and Resolution Mode State display the Survey Settings DialogSurvey_Settings_Dialog from the Interface Main Menu Stage - Survey Mode - Settings
+
+See also Preparations for using Survey ModePreparations_for_using_Survey_Mode
+$#>Survey Settings Dialog
+
+This dialog is used to set up conditions for Survey Mode StateSurvey_Mode and for Resolution Mode StateResolution_Mode.  See Preparations for using Survey ModePreparations_for_using_Survey_Mode.  For details of each control on the panel click on the control.	{bmc bm34.shg}	
+
+$#>Survey Mode Lowest Magnification.
+If this radio button is selected the lowest achievable magnification for the current conditions will be used in Survey Mode StateSurvey_Mode.
+$#>Survey Mode Magnification
+Enter the magnification required when in Survey Mode StateSurvey_Mode.
+Typically this will be a low magnification .
+
+Note: if you change output device this value will change but will maintain the same pixel size (i.e. will not change the size of the displayed image).
+
+This magnification will only be used if the Radio Button adjacent to it is selected.
+$#>Survey Mode Get Current Magnification
+This button reads the current Magnification and enters it as the condition for Survey Mode StateSurvey_Mode.
+$#Survey Mode Working Distance
+Enter the Working distance you wish to use when in Survey Mode StateSurvey_Mode.
+This is typically a long Working Distance for widest field of view.
+
+When going to this Working Distance the Stage Z will be decreased to maintain focus.
+It is therefore essential that the Stage Low User LimitHE_C4L@dlgmgr.hlp is correctly set for the sample in use.
+If the target Working Distance would cause the stage to contravene the Low User Limit then the Working distance is correspondingly decreased.
+$#>Survey Mode Get Current Working Distance
+This button reads the current Working Distance and enters it as the condition for Survey Mode StateSurvey_Mode
+
+Note: This value may be modified in use by the Maximum achievable WD for the conditions and by the Stage Z Lower User Limit. 
+
+See Preparations for using Survey ModePreparations_for_using_Survey_Mode.
+$#>Survey Mode Remember changes
+When switching to Survey Mode StateSurvey_Mode, especially for the first time, it may be necessary to adjust focus.
+If Remember changes is checked the new Working Distance as a result of focussing will replace the Target WD in the Settings.
+$#>Survey Mode Auto Focus
+If this is checked a Fine Auto Focus is actioned on completion of stage movement when entering Survey Mode StateSurvey_Mode
+$#>Survey Mode Macro
+The Drop Down Combo Box offers a choice of all the currently available macros.
+
+Select a macro from the list and check the checkbox if you wish this macro to be executed on entering Survey Mode State (i.e. Checking the Survey Mode checkbox or returning to Survey Mode State from Resolution Mode State by pressing <F4>).
+
+The macro will be executed when the Auto Focus finishes, unless Auto Focus is not selected, in which case it is executed when the Stage motion is completed.
+$#>Resolution Mode Magnification
+Enter the magnification you require on switching to Resolution Mode StateResolution_Mode by requesting Centre PointN9YIPC@stage.hlp.
+
+Note: if you change output device this value will change but will maintain the same pixel size (i.e. will not change the size of the displayed image).
+$#>Resolution Mode get Current Magnification
+This button reads the current Magnification and enters it as the condition for Resolution Mode StateResolution_Mode
+$#>Resolution Mode Working Distance.
+Enter the Working distance you wish to use when in Resolution Mode StateResolution_Mode.
+This is typically a short Working Distance for best resolution.
+
+When going to this Working Distance the Stage Z will be increased to maintain focus.
+It is therefore essential that the Stage High User LimitHE_C4L@dlgmgr.hlp is correctly set to avoid collision with the final lens.
+If the target Working Distance would cause the stage to contravene the High User Limit then the Working distance is correspondingly increased.
+
+$#>Resolution Mode get Current Working Distance
+This button reads the current Working Distance and enters it as the condition for Resolution Mode StateResolution_Mode
+
+Note: This value may be modified in use by the Minimum achievable WD for the conditions and by the Stage Z Upper User Limit. 
+
+See Preparations for using Survey ModePreparations_for_using_Survey_Mode.
+$#>Resolution Mode Auto Focus
+If this is checked a Fine Auto Focus is actioned on completion of stage movement when entering Resolution Mode StateResolution_Mode
+$#>Resolution Mode Macro
+The Drop Down Combo Box offers a choice of all the currently available macros.
+
+Select a macro from the list and check the checkbox if you wish this macro to be executed on entering Resolution Mode StateResolution_Mode (i.e. Performing Centre Point or Centre Feature while in survey mode stateSurvey_Mode mode).
+
+The macro will be executed when the Auto Focus finishes, unless Auto Focus is not selected, in which case it is executed when the Stage motion is completed.
+$#>Survey Mode Exit Macro
+The Drop Down Combo Box offers a choice of all the currently available macros.
+
+Select a macro from the list and check the checkbox if you wish this macro to be executed on exit from Survey Mode (i.e. unchecking the Survey Mode checkbox).
+
+The macro will be executed when the Stage motion completes. (Stage Z moves back to the value which existed when Survey mode was switched on).
+$#>Survey Mode Checkbox
+This checkbox is used to switch On or Off Survey ModeSurvey_Overview
+
+The checkbox is disabled if :
+{bmc bm0.bmp}	The Stage is not initialised
+{bmc bm0.bmp}	The Stage is moving
+{bmc bm0.bmp}	Optibeam is switched off (See SEM Control AperturesSEM_Control_Apertures tab).
+
+On switching On Survey Mode StateSurvey_Mode will be entered.
+
+On Switching Off the Exit Survey ModeExit_Survey_Mode sequence will be executed.
+$#>Survey Mode Status
+This field displays the current Survey Mode status.
+
+{bmc bm0.bmp}	OFF
+{bmc bm0.bmp}	Survey Mode StateSurvey_Mode
+{bmc bm0.bmp}	Resolution Mode StateResolution_Mode
+{bmc bm0.bmp}	Leaving Survey ModeExit_Survey_Mode.
+$#>Load Survey Settings
+This button allows the user to select a survey Settings file (*.SRV) for loading.
+$#>Save Survey Settings
+This button allows the user to save the current survey settings to a file (*.SRV) in the user Directory.
+$#>Survey Mode State
+Survey Mode state is first entered when Survey Mode is switched On (either via the Settings DialogSurvey_Settings_Dialog) or by switching the Survey Mode Parameter.
+
+It is also entered from Resolution Mode StateResolution_Mode when <F4> is pressed
+
+On entry to Survey Mode State from the OFF state the current Magnification, Working Distance, Stage Z and Brightness are saved for use when Survey Mode is switched off.
+
+On entering Survey mode state the Magnification is set either to the defined magnification or to the lowest achievable magnification for the conditions. The working distance is set to the defined Working Distance (constrained to the Maximum achievable Working Distance and the Low User Z limit ).
+
+The brightness is set to the value last used in Survey Mode State.
+
+If required a Fine Auto Focus is next executed followed by the Survey Mode Macro if defined.
+
+$#>Resolution Mode State
+Resolution Mode state is entered when Centre PointN9YIPC@stage.hlp or Centre FeatureT2YJNK@stage.hlp is executed while in Survey Mode  StateSurvey_Mode.
+
+On entry to Resolution Mode State from Survey Mode state the current Magnification and  Working Distance replace the Survey Mode settings if the 'Save Settings' is checked on the Settings DialogSurvey_Settings_Dialog
+
+On entering Resolution mode state the Magnification is set to the defined magnification (Centre Point) or to the required magnification for the Centre feature function. The working distance is set to the defined Working Distance (constrained to the Minimum achievable Working Distance and the High User Z limit ).
+
+The brightness is set to the value last used in Resolution Mode State.
+
+If required a Fine Auto Focus is next executed followed by the Resolution  Mode Macro if defined.
+
+To Exit from  Resolution Mode State press  <F4> 
+$#>Exit Survey Mode
+On leaving Survey Mode StateSurvey_Mode the Magnification, Working Distance, Brightness and Stage Z are restored to the values which existed when Survey ModeSurvey_Overview was switched On.
+
+If selected the Exit Survey Mode Macro will be executed when the stage movement is completed.
+
+See Settings DialogSurvey_Settings_Dialog
+$#>KPreparations for using Survey Mode.
+
+Survey Mode may only be used when the Stage is initialised and Optibeam is switched on. 
+See SEM Control AperturesSEM_Control_Apertures.
+
+Using the Settings dialogSurvey_Settings_Dialog define the conditions for Survey Mode StateSurvey_Mode, Resolution Mode StateResolution_Mode and, if required, the Exit Macro.
+
+Ensure that the Stage Z High and Low user limitsHE_C4L@dlgmgr.hlp are correctly set for the specimen to be reviewed, in particular the High limit to prevent collision with the Final lens. (Right button click on the background of the SEM Control StageSEM_Control_Stage Tab and select Limits...).
+
+Obtain a focussed image under your normal (Survey Mode OFF) conditions.
+$#>Frame Integrate Mode
+
+The scan speedscan_speed defines the time to complete a frame and the Noise reduction parameter N defines the number of frames to integrate.
+
+The image automatically freezes at the end of the integration cycle.

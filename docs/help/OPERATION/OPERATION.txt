@@ -1,0 +1,687 @@
+﻿$#KContents - Operation
+
+Specimen Handling and KVacuum Control BE9429
+
+Changing the filamentChanging_the_filament
+Installing the low KV AnodeInstalling_the_low_KV_Anode
+Getting a VacuumGetting_a_Vacuum
+Stage ControlStage_Control
+Setting Filament current and aligning the beamSetting_Filament_current_and_aligning_the_beam 
+Setting EHT and Probe CurrentSetting_EHT_and_probe_Current 
+
+Adjusting the variable apertureAdjusting_the_variable_aperture
+Setting Focus, Stigmation and MagnificationSetting_Focus__Stigmation_and_Magnification
+Beam ShiftBeam_Shift
+
+Signal level, Input LUT, Zones and DetectorsSignal_level__Input_LUT_Zones_and_Detectors
+Scan Rate and Noise ReductionScan_Rate_and_Noise_Reduction
+Scan ModesScan_Modes
+Annotation and measurementContents@imgmgr.hlp
+Saving Images3ZRH_VY@sem.hlp
+Printing ImagesPrinting_Images@sem.hlp
+Photographs on the HRRU67JV59@imgmgr.hlp
+Installing HRRU CameraInstalling_HRRU_Camera
+Loading Images.30.9Z@sem.hlpUsing_LaB6_and_Column_Pumping
+ 
+
+
+Advanced OperationAdvanced_Operation
+
+Trouble ShootingTrouble_Shooting
+$#Specimen Handling and Vacuum Control
+The routines described below are required to get the specimen into the chamber, under the appropriate vacuum conditions and in the right position to be scanned by the beam. 
+
+
+
+
+Changing the SpecimenChanging_the_Specimen
+Specimen HandlingSpecimen_Handling
+
+$#Changing the Specimen
+
+The beam must be switched off before opening the chamber for a specimen change. Proceed as follows:-
+{bmc bm0.bmp}	Click on Fil I: EHT: in the status bar.which will display the list of permitted actions. - select Shutdown 
+
+Before loading a specimen into the specimen chamber, the chamber must first be brought to atmospheric pressure by selecting Vent  in the status bar. Safety interlocking of high voltage supplies results in the Vent command being disabled unless the beam is first switched off. 
+The chamber can only be vented if the stage is in a ‘safe’ area. If it is outside of this area the stage can be automatically set safe before venting 
+
+To open the chamber and change the specimen:-
+{bmc bm0.bmp}	Ensure that the beam is off (indicated in the status bar). If it is not, switch it off using the previous routine.
+{bmc bm0.bmp}	Vent the chamber by clicking on VAC:.in the status bar which will display the permitted actions - select Vent
+{bmc bm0.bmp}	 When the chamber is at atmospheric pressure, the door can be carefully pulled open.
+{bmc bm0.bmp}	 Remove the previous specimen, if there is one, by loosening the small locating screw holding the specimen stub in position. Any one of a variety of specimen holders may be in use - however, they are all held in position with a small locating screw. To loosen the screw, use the smaller of the two ball-ended drivers provided.
+{bmc bm0.bmp}	Insert the new specimen and tighten the locating screw.
+{bmc bm0.bmp}	
+{bmc bm0.bmp}	Close the chamber door.
+{bmc bm0.bmp}	
+{bmc bm0.bmp}	Select Pump from the drop down box in the toolbar. The pumps should now start and take the system to the desired vacuum conditions.
+{bmc bm0.bmp}	Within 3 minutes, depending on the specimen and the length of time the chamber was left open, the vacuum status should reach Ready. This is indicated both in the status bar and in the vacuum tab . If vacuum is not achieved within this time, see Getting a VacuumGetting_a_Vacuum.
+{bmc bm0.bmp}	Resume specimen examination by selecting Beam On. (Click on Fil I: EHT: in the status bar.which will display the list of permitted actions. - select Beam On , this will restore the beam conditions). 
+{bmc bm0.bmp}	Some stage movement may be required to locate the specimen area requiring examination
+
+For a simpler specimen exchange where conditions and vacuum mode remain unchanged click on the Specimen ChangePX0A3N@sem.hlp icon {bmc bm1.bmp} which will perform Shutdown + Vent or Pump + Beam On according to the current vacuum state
+$#Getting a Vacuum
+If the vacuum ready state is not achieved after several minutes of pumping, the following guidelines provide an ordered approach to diagnosing the problem.
+
+Investigating a vacuum leak, few simple rules:-
+1.	Before looking for a vacuum leak give the vacuum system time to pump.  If you have just changed a specimen in a very humid atmosphere the pump down may take longer.  If the specimen is wet it may take several minutes (up to 1 hour with a very large, very wet specimen has been known.)  If the stage has been left open for long periods it will take longer to pump.  If the column or chamber have been washed with solvents then it may take several hours to achieve a good vacuum.
+2.	Vacuum leaks rarely happen by themselves; they are often caused.  If you have just done anything to the column or chamber then that is the most likely cause of the leak.  If the specimen has just been changed, check the stage door 'O' ring.  Similarly if the filament has been changed check the gun 'O' ring.
+3.	The most frequent cause of leaks is dust or fibres on 'O' rings.  'O' rings may be cleaned with a fluff free tissue.  'O' ring grease should never be used. Grease traps fibres and may cause leaks.
+4.	Do not use any metal tools to remove 'O' rings from their grooves.  A small scratch in the bottom of a groove causes a big leak.
+5.	If the pump down is slow, check the air admittance drier and renew the desiccant2LVYB4@maint.hlp before looking for a leak.
+If none of the above point to the cause of the leak, refer to  Looking for Vacuum Leaks8BZ417@maint.hlp.
+$#Specimen Handling
+   
+Where possible samples that have any oil or grease on them must first be cleaned with solvent, preferably using an ultra-sonic bath.  Samples should be handled using lint free gloves to avoid contaminating it with finger grease	
+
+Specimens should normally be fixed to a stub prior to loading onto the stage within the chamber.  The sample can be fixed down into the stub by the use of conductive glue, either carbon or silver.  It is also possible to use conductive double sided sticky tape.  If this type of tape is used there is the possibility that the sample may move very slightly during examination, this may become apparent at high magnifications or if the sample is heavier than normal.
+
+
+The ideal sample is one that is electrically conductive as no other preparation is required.  However if the sample is non-conductive such as plastic or a biological sample the operator must decide whether or not to coat the sample with a conductive layer.  The subject of specimen preparation and the selection of operating conditions is covered in Advanced OperationAdvanced_Operation.
+$#Changing the filament
+Whenever the filament blows, or is otherwise open-circuit, a message is displayed on the screen to inform the operator that the filament has blown. 
+When a new filament is installed the New Filament checkbox  must be checked.  This is shown in the SEM Control Gun tab5_0HOO@tabmgr.hlp
+To change the filament:-: 
+{bmc bm0.bmp}	Admit air to the column and chamber and open the gun. Using clean gloves remove the emitter assembly3GEM_PY@maint.hlp by loosening the three locating screws holding the emitter assembly in place, close the gun and pump down the system.
+{bmc bm0.bmp}	Take the emitter assembly to a clean area for cleaning and reassembly.
+{bmc bm0.bmp}	Place the assembly on a clean sheet of paper with the grid aperture downward.  Using the flat metal key unscrew the height adjusting ring.  As this is done the filament will move away from the grid.
+{bmc bm0.bmp}	Grip the filament pins with the tweezers provided and lift the filament assembly out of the grid cap.
+{bmc bm0.bmp}	Release the filament clamp screws (visible in the four large holes) and, using the tweezers, lift out the filament.
+{bmc bm0.bmp}	If the cathode assembly or grid aperture is not excessively contaminated a new filament can be fitted.  If any contamination is present, dismantle the unit and clean the components, paying particular attention to the inside of the grid aperture. This must be free of all contamination and particles. See also Routine Column Cleaning7_ZQKU@maint.hlp
+{bmc bm0.bmp}	Using the tweezers, put the new filament into the filament holder, first ensuring that the pins are clean.  Align the filament legs with the marks and ensure the ceramic is centralised when tightening the filament clamp screws.  Do not overtighten as this can cause the ceramic to crack when the filament becomes hot.
+{bmc bm0.bmp}	Replace the filament assembly in the grid cap. Replace the height adjusting ring and screw it down until it touches the sleeve.
+{bmc bm0.bmp}	Adjust the filament height and centralising as described below.
+To adjust the tip position:-
+{bmc bm0.bmp}	Using a low power magnifier and a good source of illumination, ideally a stereo zoom microscope, look through the grid aperture hole and locate the filament tip. It may be necessary to adjust the height adjusting ring to move the filament forward so that the tip can be seen.  Do not move the tip forward so that it touches the grid.
+{bmc bm0.bmp}	As soon as the tip can be seen through the grid aperture hole, adjust the filament centralising screws to centre the tip in the grid hole. Set the height adjusting ring so that the tip of the filament is level with the front face of the grid aperture.
+{bmc bm0.bmp}	When in this position the tip is inside the hole in the grid, so care must be taken to ensure that the tip is correctly centred before adjusting its height.
+{bmc bm0.bmp}	Now turn the height adjusting ring back one and a quarter turns anticlockwise, as viewed from the adjusting ring end of the assembly.  The filament height is now correct at 0.6mm.
+
+{bmc bm0.bmp}	
+
+The gun will require re-aligningBeam_alignment after running up again because the tip will not be in exactly the same position of the previous one.
+
+$#Installing the low KV Anode
+The acceleration voltage range is 300V to 30kV. Although the instrument may be operated over the entire acceleration voltage range with the normal high kV anode installed, better gun geometry and brightness and hence better instrument performance is usually obtained with the anode lifted towards the grid whenever an acceleration voltage of 3kV or less is selected. This is achieved using the low kV anode, as follows:-
+1.	Admit air to the gun.  Open the gun.
+2.	Lift out the anode.  See anode supportDU4P7_@maint.hlp
+3.	Fit the low kV anode 
+4.	Check Low KV Spacer in the SEM Control Gun5_0HOO@tabmgr.hlp tab
+5.	 Close the gun, pump down, select the desired low voltage and obtain an image.
+6.	
+The SEM should not be used at an acceleration voltage higher than 3kV with the low kV anode fitted.  It is important to ensure that the state of the Low KV Spacer checkbox reflects the state of the machine.
+$#Stage Control
+The correct type of stage and extent of motorisation should have been set up in the AdministratorContents@admin32.hlp.
+
+Initialisation
+Stage initialisation is the process by which the system determines the actual position of the stage axes relative to the limit switches, until the stage is initialised, it is not possible to move it from either the dual joystick controller or the software. The position of the stage is retained, once initialised.
+
+To initialise the stage select Stage Initialise from the Stage drop down menu.
+
+The motorised stage is controlled using the JoystickContents@joystick.hlp
+For a more detailed review of stage functionality see Stage FunctionsContents@stage.hlp
+$#Setting Filament current and aligning the beam
+
+Filament settingFilament_Current_setting
+Tips to increase filament lifeTips_to_increase_filament_Life
+Beam alignmentBeam_alignment
+$#Filament Current setting
+Optimum performance of the SEM is achieved only after saturation and alignment of the electron gun. The gun runup function sets the filament current at the value it was last set, so it is important to keep a check on this as the filament ages, and after large changes in accelerating voltage, so that its working life is maximised.
+The above conditions can be achieved by slowly increasing and decreasing the filament current (having selected manual brightness control) while observing the points at which maximum brightness occurs.  The two peaks of maximum brightness correspond to the two saturation peaks.
+
+The arrows at each end of the Target Filament current scroll-bar on the SEM Control Gun5_0HOO@tabmgr.hlp tab, can be used to adjust the current. The saturation point (or second peak, see below) usually occurs at about  2.8A for a new filament. If "first peak" operation is required, reduce the filament current to about  2.35A . Operation at this point gives slightly reduced resolution but much longer lifetimeTips_to_increase_filament_Life.
+
+
+{bmc bm2.wmf}
+
+
+$#Tips to increase filament Life
+
+1.	Try setting the beam current to 300uA (SEM Control Gun5_0HOO@tabmgr.hlp tab), this may give as good resolution for less filament usage.
+2.	Do not move the filament forward in the gun as this does not improve resolution but in fact significantly shortens filament life.Use 1¼ turns back from the front of the grid aperture (0.6 mm).
+3.	If time allows, run new filaments at first peak at low kV for about 2 hours to allow stabilisation.
+4.	When running at second peak for the first time a new filament may saturate near 2.90 Amps. This will reduce over the first 3 hours of operation the to about 2.8 Amps where it will stabilise. It is important that the filament saturation is monitored during this period. Over running the filament will quickly cause failure.
+5.	Check the gun saturation when the EHT is at the operating value, as the filament current required for saturation changes with EHT demand. i.e. at 5kV the filament saturation current may be lower than at 25kV.
+6.	Check filament saturation about once a day. 
+
+If the filament current is increased beyond 2nd peak saturation, no advantage is gained but the life will be considerably shortened (the emission profile also does not change for currents higher than saturation point).
+
+
+$#Beam alignment
+The beam is correctly aligned down the column when the brightness level of the signal cannot be increased any further (ensuring the system is switched to manual brightness control on the SEM Control Signal1OTG14F@tabmgr.hlp Tab) by an adjustment of the gun align screws.  These are moved as opposite pairs where one is slackened and the other screwed in. Both pairs should be adjusted against each other until the signal brightness is at a maximum.  It may be necessary to check the filament currentFilament_Current_setting after this adjustment.
+
+
+
+
+$#Setting EHT and probe Current
+The accelerating voltage and probe current can be set from the SEM Control Gun5_0HOO@tabmgr.hlp Tab and the optibeam settings can be set from the SEM Control Apertures295DOW3@tabmgr.hlp tab.
+
+ Whenever the accelerating voltage is changed it is important to check that the beam and the final aperture are correctly aligned. (See Beam alignmentBeam_alignment and variable aperture alignmentAdjusting_the_variable_aperture)
+
+Setting Accelerating VoltageSetting_Accelerating_Voltage
+Probe CurrentProbe_Current
+OptibeamOptibeam
+$#Setting Accelerating Voltage
+Whenever the accelerating voltage is changed it is important to check that the beam and the final aperture are correctly aligned.
+The accelerating voltage must be set for the type of specimen under examination:-
+{bmc bm0.bmp}		For low atomic number or beam sensitive specimens, choose a voltage between 1kV to 5kV
+{bmc bm0.bmp}		For high atomic number specimens, a voltage of 25kV to 30kV is normal
+{bmc bm0.bmp}		For atomic numbers in between (say 20 to 50), a voltage of 10kV to 20kV is best
+{bmc bm0.bmp}		For X-Ray analysis, the voltage is dictated by the elements under analysis
+The subject of selecting appropriate operating conditions for the specimens is explored further in Advanced OperationAdvanced_Operation
+$#Probe Current
+The probe current effectively controls the spot size of the beam on the specimen. Optibeam Auto Resolution mode  sets the probe current to give the best resolution. If auto resolution is left on then changes in magnification will result in changes of probe current, so it is advisable to enable auto brightness.
+
+X-Ray analysis should not be undertaken when running in Auto resolution mode.
+$#Optibeam
+The Optibeam program takes the requirements for probe current, working distance, etc. and determines the optimum lens settings to achieve the best performance from the column. Usually the best performance is defined as the highest resolution, but Optibeam can be told to optimise for the greatest depth of focus instead. This is done by selecting Depth Mode on the SEM Control Apertures295DOW3@tabmgr.hlp tab.
+
+
+
+$#Adjusting the variable aperture
+
+Optimum imaging can sometimes depend on the correct choice of aperture size. The internal software model, Optibeam, continually calculates the best setup for the selected aperture, however it will sometimes recommend using a different aperture. This is indicated on the SEM Control Apertures295DOW3@tabmgr.hlp tab by the parameter Best Aperture = NO.
+The apertures installed (sizes as displayed in the Apertures tab) are all located on the Y axis of the aperture changer mechanism. To reach another aperture, simply rotate the Y control either clockwise or counter-clockwise according to the direction of the required aperture.
+
+As the control is rotated, the signal will disappear as the current aperture moves out of position. The signal returns as the next aperture moves into position, however there will either be much less or much more signal according to the relative change in aperture size. For this reason, it is sometimes easier if auto brightness is enabled during the change.
+
+Having located the aperture in position, select the correct new current aperture on the Apertures tab This ensures that Optibeam will continue to achieve the best column performance.
+Finally, it is necessary to make a fine adjustment to the aperture position to ensure that it lies exactly on the electron optical axis. Select a focused field of view at about 1000x and switch on focus Wobble . The speed and amplitude of the wobble can be adjusted, and should be adjusted so that the change of focus of the image can be easily followed. This requires a fast scan speed, and preferably reduced raster.
+Reduced mode can be automatically enabled with focus wobble in the User Preferences6T9R6I@leoserv.hlp under Tools.
+
+Carefully adjust both X and Y controls until no lateral movement of the image can be seen during the focus wobble. Switch off focus wobble.
+If adjusted carefully, preferably just after gun alignment, further aperture alignment adjustments can be avoided except when large changes in either probe current, working distance or accelerating voltage are made.
+$#Setting Focus, Stigmation and Magnification
+
+FocusFocus
+Auto FocusAuto_Focus
+StigmationStigmation
+Auto StigmationAuto_Stigmation
+MagnificationMagnification
+$#Focus
+The focus can be controlled by clicking on the Mag/Focus icon {bmc bm3.bmp} . 
+
+ This will assign focus control to the centre mouse button.  Alternatively it can be set directly by double clicking on the WD =  display in the status bar {bmc bm4.bmp}.
+
+In some places the focus value is displayed as the Working Distance, these two parameters describe the same thing.
+
+Optibeam uses the working distance value to set the lens currents to achieve the required focusing. If Optibeam is not active the focus is adjusted by controlling the C3 lens current directly.
+$#Auto Focus
+Auto Focus can be initiated from the keyboard using <Ctrl + F> The algorithm uses a portion of the image to select the best focus. 
+
+<Ctrl + F>		 Fine Auto Focus
+<Ctrl + Shift + F> 	Coarse Auto Focus
+<Ctrl + Shift + S>	Auto Stigmation + Auto Focus Fine
+
+For more details see Leo Keys11KLBH@sem.hlp
+
+If a large change in working distance is made, then it is recommended that the Remove Hysteresis function <Shift +F2> is used to ensure the accuracy of the magnification and probe current values.
+$#Stigmation
+High resolution images can only be obtained after correct adjustment of the Stigmators. Astigmatism (non-roundness of the beam) is caused by microscopic contamination within the column charging up and applying an asymmetric field that affects the focus of the beam, usually in one direction.
+If not too serious it can be corrected7TVA0H0@sem.hlp
+$#Auto Stigmation
+Initiated by keys:
+
+<Ctrl + S>		performs auto Astigmatism Correction
+<Ctrl + Shift + S>	performs auto Astigmatism Correction and Auto Focus
+$#Magnification
+Before describing how to adjust the magnification, it is important to understand the precise definition used on the SEM.  Each output device (HRRU, video printer, etc.) is calibrated and the magnification relates to the selected output device.  So the magnification for a video printer is larger than that for an HRRU (because the print is larger). 
+
+Calibrating an output device is achieved using the Magnification calibration DialogK20CQ2@dlgmgr.hlp
+You may also calibrate magnification against your own standard using the  Magnification calibration DialogK20CQ2@dlgmgr.hlp
+
+
+Select {bmc bm3.bmp} to control Magnification and Working distance using the mouse.
+
+
+{bmc bm4.bmp}
+
+Double click on the Status Bar MAG field (green, left) to enter a value via the keyboard
+See Magnification TableFWN3HJ@sem.hlp and Predefined List6WI9IQ@sem.hlp
+$#Beam Shift
+Beam shift appears as a function on the Stigmation panelBeam_Shift@sem.hlp selected from the Beam drop down Menu. Selecting it allows the beam shift to be controlled from the navigation box on the panel. The beam shift function allows a small amount of movement across the specimen and can be used at high magnifications where it is difficult to position the specimen with the stage.
+The beam shifts are also used in the Centre PointN9YIPC@stage.hlp and Centre FeatureT2YJNK@stage.hlp Functions on the Stage menu.  
+The beam shifts can be zeroed by selecting the Home key on the keyboard.
+$#Signal level, Input LUT, Zones and Detectors
+
+Adjusting Signal LevelAdjusting_Signal_Level
+Input LUTInput_LUT
+ZonesZones
+Detector ControlDetector_Control
+$#Adjusting Signal Level
+Signal level can be adjusted manually or automatically. 
+
+Manual
+The signal level can be adjusted using the brightness and contrast controls assigned to the mouse with the signal level icon {bmc bm5.bmp} or the sliders on the SEM Control Detectors1WE3854@tabmgr.hlp tab. If more than one zoneZones is displayed, then the detector controlled is the detector assigned to the current zone (which is indicated by the anchorZones symbol). 
+
+Auto Signal Level
+The SEM Control Signal tab1OTG14F@tabmgr.hlp provides the controls for the auto signal level functions. Brightness and contrast can also be controlled directly from this panel using the slider bars labelled accordingly.
+$#Zones
+The basic concept underlying all the display and scanning modes it that of a ZONE. A zone is an area of image store which can be mapped onto part of the image window. In normal imaging only one zone is used, but for split or quad modes two or more zones are required.
+
+Inputs
+Associated with each zone are two input signals A and B which can be selected from the list of detectors configured on the system. The full chain of processing is shown below
+{bmc bm6.wmf}
+
+The signal mixing and Input LUT1WE3854@tabmgr.hlp can be adjusted by the user if the appropriate software option has been purchased, otherwise the default settings will apply (no mixing, LUT output = LUT input).
+
+The Anchor Symbol
+When working in a display mode with multiple visible zones the anchor symbol {bmc bm7.bmp} will appear.
+
+It signifies which zone on the display is the current zone. This is important because many operations act on the current zone, these include:-
+{bmc bm8.bmp}	Detector selection
+{bmc bm8.bmp}	Frame averaging
+{bmc bm8.bmp}	Freeze and unfreeze
+In addition to these, the signal level controls adjust the settings of the detector assigned to the current zone.
+
+It is easy to select a new zone to be the current zone. Select the anchor symbol with the mouse and drag it to the new zone. Thus whichever zone the anchor is in is by definition the current zone.
+Double clicking on the anchor symbol will select 'All Zones' (denoted by red flukes on the anchor).{bmc bm9.bmp}  When 'All Zones' is selected any zone specific function will apply to all the zones on the display.
+$#Detector Control
+The detector controlled by the brightness and contrast functionsAdjusting_Signal_Level is determined by the detector assignment to the current zoneZones. A detector is assigned to a zone using the Select Signal A field in the SEM Control Detectors1WE3854@tabmgr.hlp tab. Selecting this field displays a list of the available detectors from which the required detector can be selected.
+
+Each zone has its individual detector assignment, so in quad mode as many as four different detectors could be displayed. The detector controlled by the signal level functions is determined by the current zone, although if that detector is assigned to more than one zone then more than one part of the quad image may be affected. 
+
+It is possible to set up different auto signal level controls for different zones. If there is a conflict between two zones which have the same detector assigned to them, then the first zone with that detector will take precedence
+
+Secondary Electron Collector Bias
+The Collector Bias can be assigned to mouse control from the option in the SEM Control Detectors1WE3854@tabmgr.hlp tab. It can be varied in the range -250V to +400V. For normal operation of the secondary electron detector this value should be set to maximum.
+
+
+Secondary Electron DetectorPIF7_D@sem.hlp
+Back Scattered Detector22PD_35@dlgmgr.hlp
+$#Scan Rate and Noise Reduction
+There are 16 scan rates availableSI1C1L@tabmgr.hlp. .
+The scan rate is usually changed using the scan rate icons{bmc bm10.bmp} and  {bmc bm11.bmp}, but there are also options on the Scanning menu and on the SEM Control ScanningR5KU.@tabmgr.hlp tab to do the same.
+
+The keypad keys + and - increase and decrease the scan rate.
+
+The SEM Control ScanningR5KU.@tabmgr.hlp tab also provides the noise reduction modes Frame Average117K7K3@tabmgr.hlp, Frame IntegrateEQNXF7@tabmgr.hlp and Line AveragePHG8LG@tabmgr.hlp .
+
+ In addition the freeze options allow the current zone to be frozen or unfrozen. The Freeze At End option freezes the zoneZones when the image acquisition has completed (determined by the number of frames in frame average, or just 1 frame if line average is selected). The Freeze On Command option freezes the zone immediately the Freeze command is actioned.
+
+There is one important difference between line and frame average. In line average mode the same noise reduction is applied to all the active zonesZones, But for frame average it is possible to set different frame counts for each zone.
+$#Scan Modes
+The following scan modes are provided, some of which are options.
+See also SEM Control ScanningR5KU.@tabmgr.hlp Tab, toolbar iconsIOLVYF@sem.hlp and the scanning drop down menu215WPY_@sem.hlp
+
+Normal4LTP_XJ@sem.hlp - The image occupies the whole image area (single zoneZones)
+
+Split Screen1QEXFRQ@sem.hlp- The image area is divided into half with a different zone being displayed in each part. Different detectors can be assigned to each zone and each zone can be frozen independently of the others.
+
+Dual magnificationOMU1V2@sem.hlp - This is a variation on split screen where the left image displays at a higher magnification an area defined in the right image
+
+Quad Mode - The image area is divided into four image zones, each occupying a quarter of the image window. The anchor symbol is used to select the current zone.
+
+ReducedBFKLC0@sem.hlp - When adjusting focus or stigmation, it is often convenient to use the Reduced function to increase the frame rate without having to increase the pixel rate.  The size and position may be adjusted by selecting and dragging the raster box edges/corners.
+
+Line ScanningBCEYQZ@sem.hlp  In this mode a single line of the image is scanned repeatedly and a profile of that line is displayed. The rest of the image is frozen during line scanning and a line cursor is used to select the line to be scanned. Selecting normal scanning will deselect line scanning.
+
+Spot Mode1YKSCA@sem.hlp - On selection the image is frozen and a crosshair cursor appears to indicate the beam position. The cursor may be moved by dragging with the mouse. Selecting normal scanning deselects spot mode.
+
+X-Ray Linescan9FTMO5@sem.hlp - In X-Ray Line Scan Mode a single horizontal line is scanned on the specimen. The X-Ray data is displayed in a profile window.
+. 
+$#Input LUT
+The Input Look Up Table (LUT) controls the transformation of the input signal before it reaches the store. 
+{bmc bm12.wmf}
+
+This is controlled by the Input LUT Dialog78UYAY@dlgmgr.hlp (Tools - Goto Panel - Input LUT) or by the SEM Control Detectors1WE3854@tabmgr.hlp Tab
+$#Advanced Operation
+Having become become familiar with the LEO -32 controls, sample insertion and basic micrography the operator may find that there are still a number of effects limiting image quality.  This section describes some of these effects and ways to reduce them.  Complete elimination of all problems is often impossible, and a compromise is usually reached.  In order to get the best results from the LEO SEM it is important to consider the following:-
+{bmc bm0.bmp}	Instrument familiarityInstrument_familiarity
+{bmc bm0.bmp}	Photographic considerationsPhotographic_considerations
+{bmc bm0.bmp}	Specimen preparationSpecimen_preparation
+{bmc bm0.bmp}	Choice of instrument parametersChoice_of_instrument_parameters
+{bmc bm0.bmp}	Specimen ChargingSpecimen_Charging
+{bmc bm0.bmp}	Using the digital storeUsing_the_digital_store
+
+
+See Also Trouble shootingTrouble_Shooting
+$#Instrument familiarity
+To get the best results from the LEO SEM it is important to be familiar with the operations described in this document.  If possible attend a LEO operators course which can be arranged by your local LEO representative.
+$#Photographic considerations
+A good micrograph is sharply focused, free of astigmatism, noiseless, with optimum contrast and brightness.  These factors are very user dependent but are easily achieved with a little practice.  Setting image levels correctly results in an image which is better looking and more readily interpreted.  Understanding how to manipulate grey levels allows tailoring of images for specific purposes.
+
+The camera and record CRT or video printer should be correctly calibrated and the signal waveform should be evenly distributed between the upper and lower video level markers, nearly spanning the range but never going outside the limits set by them.  Try to select the profile scan position on the image to span the brightest and darkest areas to give a representative sample of grey or video levels.  The display look-up table editing facility can be used to create a 'visual' exposure meter that clearly indicates lower and upper levels in the grey scale. This is a modification of the display look-up table, where the black level is changed to blue and the white level changed to red.  Hence, an image containing a good grey scale range will just begin to show areas shaded blue and red.  With this look-up table active, areas of too low a signal show blue whereas areas of too high a signal show red.  See  The Display LUT EditorContents@lutmgr.hlp.
+Other forms of display LUT can be used to enhance the contrast or adjust the brightness of the frozen image.
+Many samples exhibit a small amount of charging due to oxide layers or other surface coatings.  These samples show changes in signal level and contrast with scan speed.  For live micrographs of these samples, the signal should be set up using a scan speed similar to that to be used for the photograph.  The image store is particularly useful, as it can be used to save film by allowing the image to be acquired and checked before photographing it.  Also, many identical prints may be taken without the need to scan the sample again.
+$#Specimen preparation
+
+General GuidelinesSpecimen_preparation_General_Guidelines
+ConductorsSpecimen_Preparation_Conductors
+Non-Volatile, Non-ConductorsSpecimen_Preparation_Non_Volatile__Non_Conductors
+Volatile Non-ConductorsSpecimen_Preparation_Volatile_Non_Conductors
+
+
+$#Specimen preparation: General Guidelines
+
+The size of the specimen must be reduced (if necessary) to fit the available specimen holders and specimen stages, but there is often an advantage in selecting an even smaller sample size for ease of observation.
+
+The object must be able to withstand being in the high vacuum of the SEM; it must not change its shape, and it must not outgas.  A cold stage may help here.
+
+It should be clean, ie free of dust, oils and greases.  (Their presence can lead to charging and contamination effects.)
+
+It may be treated to improve the secondary yield if this is low, eg coating of the sample with gold.
+
+Any disturbance in the surface structure caused by preparation procedures should give rise to surface details which are too fine to be resolved at the magnification used to record the images.
+
+If an artefact is suspected as a result of a preparative procedure, a control specimen should be utilised.
+
+The specimen stub should be in good electrical contact with ground potential.
+
+There should be good electrical contact between the surface of the specimen and the specimen stub, ie attach sample to stub with conducting paint such as Silver-Dag and coat the specimen adequately if necessary.
+
+The specimen stub should give rise to as few backscattered and secondary electrons as possible.  Aluminium stubs are normally used, although carbon stubs are used for some X-ray microanalysis applications.
+
+Very small particles are best mounted on a low mass foil to give rise to minimal background signals, eg nylon film stretched over an aluminium ring.
+
+The sample must be attached to the specimen holder (stub) so that it does not move whilst being irradiated by the electron beam.
+
+The sample should be attached to the specimen holder (stub) so that all the surface can be studied using the existing stage movements (eg tilt, rotate, X, Y, Z).
+$#Specimen Preparation: Conductors
+These fall into two groups:-
+{bmc bm0.bmp}	Metallic: these are generally excellent conductors and need no preparation
+{bmc bm0.bmp}	Semi-conducting samples with a resistance of less than 10-10 ohms can be examined without special preparation
+$#Specimen Preparation: Non-Volatile, Non-Conductors
+If it is not possible to obtain suitable resolution by using a low accelerating voltage and leaving the sample uncoated, then the following applies:-
+
+For most non-conductors which contain no volatile components, eg water, that would outgas in the vacuum system it is sufficient to coat the sample with a thin layer of conducting medium such as Au, C, Au/Pd, Al etc.  This layer is typically 20-30nm in thickness.  There are several reasons for this coating:-
+{bmc bm0.bmp}	Increased conductivity of the sample, thus minimising sample charge up, which results in deflection of the incident beam and severe degradation of the final image.  (see Section 3.4 Specimen Charging)
+{bmc bm0.bmp}	Increased mechanical stability of the sample due to increased heat conduction.
+{bmc bm0.bmp}	Increase in primary and secondary electron emission.
+{bmc bm0.bmp}	Decrease in beam penetration, resulting in better spatial resolution.  The two important current techniques of applying a coating are vacuum evaporation and ion sputtering.
+{bmc bm0.bmp}	
+Gold is generally used for the following reasons:-
+{bmc bm0.bmp}	High secondary emission co-efficient.
+{bmc bm0.bmp}	High conduction of electrons and heat.
+{bmc bm0.bmp}	Does not oxidise.
+{bmc bm0.bmp}	Good granularity of evaporated or sputtered particles.
+{bmc bm0.bmp}	Carbon coating by evaporation is generally used if X-ray microanalysis is to be undertaken on the sample unless, of course, the element under investigation happens to be carbon.  Aluminium could be used in this case.
+{bmc bm0.bmp}	
+More recently Pt/Pd and Au/Pd have been used since their granularity is smaller.  Aluminium can also be used, but it has low mechanical strength and can oxidise.
+$#Specimen Preparation: Volatile Non-Conductors
+Biological and botanical samples, by their nature, require relatively more complex preparation procedures.  The samples fall into two main categories: a) hard, b) soft.
+
+a.	Hard samples (eg bone, teeth, wood).  These, if necessary, can be washed to remove extraneous fluids such as blood and mucus, dried in air and coated in the normal way.
+
+b.	Soft Samples
+	UntreatedUntreated_Soft_Samples 
+	ReplicationReplication__soft_samples 
+	Chemical Pre-treatmentChemical_Pre_treatment
+
+$#Untreated Soft Samples
+Soft tissue needs more specialised treatment.  Most soft tissue contains up to 90% water which must be removed without altering the structure.  If this is not done, there will be difficulty in achieving adequate vacuum in the SEM, and complete or partial sample collapse and distortion will occur.
+Some botanical specimens can be observed successfully for short periods provided that thought is given to the selection of instrument parameters, eg using a low accelerating voltage and beam current.
+$#Replication
+ Although it is usually only adequate for low magnification work and for comparatively simple surface topography, replication has the advantage that the sample can be totally preserved.  One method of replication uses an elastomeric material such as silicone rubber to obtain an impression.  A positive replica is then obtained from the impression by coating  it with low-viscosity polymethylmethacrylate solution, allowing this to dry and then stripping the resultant film away.  Coating and examination follow in the usual manner.
+
+With suitable modification, transmission electron microscope replication techniques can be utilised.
+$#Chemical Pre-treatment
+This technique involves chemical fixation of the material to strengthen the tissue.  There is a large range of chemicals used in this process (eg glutaraldehyde and osmium tetroxide) and there are numerous publications discussing the benefits of each.  After fixation, it is necessary to displace the water in the sample by a solvent to aid drying.  The method must be such that the specimen suffers no physical change.  The commonest drying agent used is a series of ethanol/water mixtures through to 100% ethanol.  Having replaced the water present in the sample there is a choice of three methods for drying:-
+
+Freeze DryingFreeze_Drying
+Air DryingAir_Drying
+Critical Point DryingCritical_Point_Drying
+
+General Considerations
+The methods described above for soft tissue preparation are mainly for secondary electron imaging.  The problems facing the biologist or botanist who wishes to undertake X-ray microanalysis are different in that the requirements in this case are to maintain the element(s) of interest in their original position in the sample.  There is not one major preparative technique for biological/botanical samples.  Where possible, several combinations should be tried for a particular type of sample, giving prime consideration to the information sought.  Once a technique has been established, instrument parameters and specimen coating methods must be carefully considered.
+$#Freeze Drying
+This is a complicated  procedure, and may not be too successful.  The sample is quench-frozen and maintained at low temperature (about -130C) until the sublimation process is complete.
+$#Air Drying
+It is worthwhile first transferring the specimen to a solvent of low volatility (eg amyl acetate) as the last stage of dehydration. The solvent is then allowed to evaporate from the sample under carefully controlled temperature conditions.  As this is a gentle process, there is little chance of any specimen damage.
+$#Critical Point Drying
+The specimen is dehydrated as previously described and the solvent replaced with a liquified gas in small pressure vessel.  The vessel is then heated to above the critical temperature of the selected gas.  Under these conditions the liquid and vapour phases have the sample physical properties, so that on venting, the liquid vapourises across cell boundaries and therefore minimum sample distortion occurs.
+
+The sample may however, undergo some mechanical shock during the venting stage.  The choice of gas for this process is limited by the number of available gases which have a critical temperature relatively close to ambient, a safe pressure level and low toxicity, whilst at the same time being completely miscible in all proportions with the solvent selected in the final stages of dehydration.  It is important to replace the solvent completely with the liquified gas (usually carbon dioxide) before venting.
+$#Choice of instrument parameters
+Instrument parameters have a large effect upon the final image quality.  To some extent the parameters chosen are dictated by the sample and its interaction  with the beam.  For each different specimen, some experimentation will usually be required before arriving at the optimum conditions.  Having achieved these conditions, they may be saved on disk (as a Macro file) for future reference, See Save StateI6NCK5@sem.hlp
+
+Consider the following parameters:-
+Accelerating Voltage (EHT)Choice_of_Accelerating_Voltage__EHT_    
+Probe CurrentChoice_of_Probe_Current 
+
+Working DistanceChoice_of_Working_Distance
+Specimen TiltChoice_of_Specimen_Tilt
+
+In addition to the parameters above the following should all be checked:-
+	Electron gun correctly alignedBeam_alignment
+	Stigmators correctly adjustedStigmation
+	Aperture centredAdjusting_the_variable_aperture
+	Correct film speed selected12O7D55@imgmgr.hlp
+	Gamma and derivative as required1WE3854@tabmgr.hlp
+$#Choice of Accelerating Voltage (EHT)
+The accelerating voltage, or beam energy, is one of the most important factors in achieving a satisfactory sample examination.  It will affect:-
+	Damage to the specimen by the beam
+	Visible surface detail
+	The production of X-rays for analysis
+	Image resolution
+In determining the accelerating voltage, the following factors must be considered:-
+
+Beam DamageBeam_Damage_and_EHT
+Surface DetailSurface_Detail_and_EHT
+X-Ray AnalysisX_Ray_Analysis_and_EHT
+ResolutionResolution_and_EHT
+
+$#Beam Damage
+If the specimen is beam sensitive, a higher accelerating voltage will result in a greater risk of the sample being damaged by the beam.  This can introduce artefacts into the image which may appear as cracking or darkened areas in the image.  The cause of this phenomenon is a localised heating or ionisation of the 
+specimen in the area of examination, hence the problem worsens as the magnification is increased.  Beam damage  can also be the result of using too high a probe current, thus the accelerating voltage and probe current should both be adjusted together to determine the optimum settings.  This problem is usually exhibited by low atomic weight specimens such as plastics or biological samples.  Coating the specimen with conducting film such as gold often helps to dissipate the heat generated by the beam.  However, better results are usually obtained by operating at lower voltages.
+$#Surface Detail
+The accelerating voltage of the electron beam directly affects the amount of surface detail seen in the image.  This is most easily understood by considering the simplified beam-specimen interaction volume Diagrambeam_specimen_interaction_volume_Diagram
+
+The zone of primary excitation increases in depth and diameter with a high accelerating voltage.  Backscattered electrons which are generated mainly beneath the specimen surface possess enough energy to ionise one or more specimen atoms before escaping from the specimen surface.  Each of these ionisations produces more secondary electrons which are added to the true secondary electron signal and result in a loss of surface detail.  The use of too 
+high a voltage also results in parts of the sample exhibiting very bright edges.  The 'edge effect' is caused by the electron beam completely penetrating the edge of the feature, so that secondary electrons are produced from a larger effective surface area
+See  Sample of fractured aluminium at high voltagefractured_aluminium_at_high_voltage and fractured aluminium at low voltagefractured_aluminium_at_low_voltage.
+$#Beam-specimen interaction volume Diagram - Click to continue
+{bmc bm13.wmf}
+$#Sample of fractured aluminium at high voltage showing edge effect - click to continue
+{bmc bm14.wmf}
+$#Fractured aluminium at low voltage without edge effect
+Click to continue
+{bmc bm15.wmf}
+$#X-Ray Analysis
+The production of X-rays from the specimen is caused by the removal of an electron from one of the atom's shells and the subsequent re-arrangement of the remaining electrons.  The initial removal of an electron is caused by the primary electron beam, therefore the beam energy must be sufficient to overcome the binding energy of the electron to be removed.  X-rays may be emitted as a result of ionisations within any of the electron shells - K, L or M and are then termed, K, L or M X-rays.  The energy required to stimulate a particular X-ray is known as the critical energy, therefore if the energy of the primary beam is less than the critical energy, no X-ray is produced.  Thus, for example if analysis for iron is required, then the beam energy must be at least 6.4KeV (to produce an iron K peak).  In fact, for ideal analysis (especially quantitative) the accelerating voltage should be 1.5 to 2 times the critical energy of the highest energy peak to be analysed; this is known as the `overvoltage'.  Samples that charge, or are non-conducting should be coated with a suitable material chosen to give electrical and thermal conductivity, but not to interfere with the elements specifically being analysed.  For example, if carbon is the element of interest in the spectrum then it would not be a good idea to coat the sample with carbon.  In this case, aluminium would be better because it has a sufficiently low atomic number not to attenuate too much of the carbon signal (whereas coating with gold probably would).
+$#Resolution and EHT
+Resolution can be defined as the minimum distance by which two adjacent features can be seen to be separated, as two discrete points.  The best resolution is usually obtained at high accelerating voltages since the shorter wavelength of electrons at high voltages minimises any diffraction.
+
+Other instrument parameters also significantly affect the resolution achievable including Probe Current, Working Distance and Aperture Size.
+$#Choice of Probe Current
+The probe current is defined as the total electron current reaching the specimen surface.  The value can be adjusted from the user interface in the range 1pA to 1µA.  In most cases, a value of 100pA gives a good video signal without over exposing the sample to electron bombardment.  Other settings would be as follows:-
+
+
+High Resolution:	5pA to 25pA	
+Backscattered electron imaging:	200pA to 500pA	
+X-Ray analysis:	600pA to 1nA	
+Charge or beam sensitive samples:	10pA to 20pA	
+
+The improved resolution performance at low probe currents is achieved because the diameter of the beam on the specimen is reduced.  A larger beam diameter is acceptable for X-ray analysis because of the larger volume of interaction (see diagram).beam_specimen_interaction_volume_Diagram
+$#Choice of Working Distance
+Working distance is defined as the distance in millimetres between the bottom of the lens and the sample surface.  In common with many of the other SEM parameters, choice of working distance  for the specimen may have to be a compromise.  The factors to be considered are:-
+1.	As the working distance is decreased the available resolution increases.  The optimum position is in the range 3 to 10mm.
+2.	If the sample is large, such that areas other than that being imaged come into contact with the lens or backscattered electron detector, it is wise to use a longer working distance.
+3.	The retractable backscattered electron detector occupies a finite space beneath the final lens.  All parts of the sample should therefore be just clear, particularly when the detector is to be moved in or out of position.  A safe working distance is 12mm.
+4.	The geometry used for X-ray analysis, at a 35degree take-off angle, dictates that the surface to be analysed should be at a working distance of  25mm
+7.	An improvement in depth of focus, the vertical distance over which the sample appears to be in focus, can usually be made by increasing the working distance.  An increased working distance has the effect of decreasing the angular aperture of the electron beam. (See diagramenhancement_of_depth_of_focus)
+
+The last Item  above directly conflicts with item 1.  However, improvements in depth of focus are usually required at relatively low magnifications where the minimal loss of resolution caused by using a longer working distance would not be noticed.  Depth of focus can also be improved by using a smaller aperture, say 30micron or 20micron, or by selecting Optibeam depth of focus mode.  This selects the lens settings which give the greatest depth of focus while maintaining the selected probe current.
+
+
+$#Enhancement of depth of focus - click to continue
+{bmc bm16.wmf}
+$#Choice of Specimen Tilt
+Tilting the specimen can greatly affect the SEM image, not only by changing the area excited but also by altering the zone of secondary electron emission.  The size of this zone varies with the angle at which the primary beam strikes the specimen.  When the specimen surface is perpendicular to the beam, the zone from which secondary electrons are emitted is smaller than when the specimen surface is tilted.  Since more secondary electrons are emitted, the tilted surface gives a brighter signal.  Tilting in the range 20 to 40 gives the best result.  Very often, a small amount of tilt adds some depth to the final image which gives more visual appeal than a flat image.
+$#Specimen Charging
+
+Electrons incident upon the sample which do not escape as backscattered or secondary electrons are absorbed by the sample.  Unless these absorbed electrons can find their way to ground (as in a conductive sample) they will remain in the sample resulting in a negative charge build up exhibited as one of the following image defects:-
+{bmc bm0.bmp}		Loss of image contrast (ExampleExample_loss_of_contrast)
+{bmc bm0.bmp}		Very bright or dark areas (ExampleExample_bright_and_dark)
+{bmc bm0.bmp}		Image or beam shift (shearing) (ExampleCharging_Example_shearing)
+Dust and other debris on the sample surface can also charge up, and appear as a bright area on the image surrounded by a dark region.  The charged debris may deflect secondary electron emission  and sometimes the incident beam, causing dark region and possibly image 'shearing' (see exampleCharging_Example_shearing).  If the sample itself is charging, beam deflection will occur during scanning, the effect being seen as a slow image drift followed by a jump back to its original position.
+
+Specimen charging of non or badly conducting specimens is dependent on the charge equilibrium inside the sample.  The secondary electron yield (S) is defined as the number of secondary electrons which leave the sample for one incoming primary electron.  The corresponding number for backscattered electrons is the backscatter coefficient (B).  If the total electron yield T=B+S equals 1, the charge balance is zero and therefore no charging occurs.  If T increases above 1, the sample should charge up positively because more electrons leave the sample than primary electrons enter it.  If T falls below 1, the sample will charge up negatively.  One of the most important parameters for changing the total electron yield T is the primary beam energy.  This is shown in the diagramPrimary_Energy_and_electron_yield which shows the typical dependence of T on the primary beam energy Eo.  If the primary = Ec2, then no specimen charging occurs.  Typically, Ec2 lies between 500eV and 2KeV.
+
+The total electron yield can also be increased by tilting the specimen.  A tilt in the region of 20 to 40 degrees will greatly reduce charging.
+
+The other most important factor affecting charging is electron "dose rate".  This can be defined as the total number of primary electrons per unit area of the specimen as a function of time.  In other words, the scan speed of the beam is critically important.  It can be seen that on some beam sensitive materials a fast scan speed gives a good screen image with good contrast and topography (see ExampleCharging_Example_fast_scan_speed) whilst a slow scan speed, ie for live photography, (see ExampleCharging_Example_slow_scan_speed) causes the image to display the defects mentioned previously.  
+
+In this case, the image store can be used to acquire the image, with noise reduction if necessary, at a fast scan speed.  The stored image can then be photographed or stored to disk.
+$#Charging Example loss of contrast-click to continue
+{bmc bm17.wmf}
+$#Charging Example bright and dark area-click to continue
+{bmc bm18.wmf}
+$#Charging Example image shearing - click to continue
+{bmc bm19.wmf}
+$#Primary Energy (Eo) and Total electron yield (T) - Click to continue
+{bmc bm20.wmf}
+$#Charging Example fast scan speed:Sample ceramic - click to continue
+{bmc bm21.wmf}
+$#Charging Example slow scan speed. Sample ceramic - click to continue
+{bmc bm22.wmf}
+$#Using the digital store
+Noise
+The image store of the LEO SEM is particularly useful in situations where use of poor signal-to-noise conditions is forced.  In these circumstances, noise can be removed from the image before photography.  For example, samples that exhibit charging often require the use of a very small probe current.  Noise arises from the electronics of the video system and gives a grainy appearance to the image. This occurs in situations where there is little signal detected from the specimen and the photomultiplier gain (or amplifier gain for BSD) is increased to compensate.  A low signal can be the result of a small electron emission co-efficient of the sample or of the choice of microscope operating conditions, eg low probe current.  The amount of signal compared to the noise content is known as the signal to noise ratio.
+
+Noise Reduction
+Prior to the use of digital techniques the only way to reduce the noise in the signal was to use a slower scan speed.  This allows the beam to dwell longer on each scanned point of the specimen so that more signal is collected.  Digital methods of noise reduction utilise the fact that the noise is random in nature.  If the signal from a single specimen point is sampled repeatedly and the average taken, noise will be averaged out and the signal will be reinforced.
+
+See Scan Rate and Noise ReductionScan_Rate_and_Noise_Reduction
+$#Trouble Shooting
+
+Summary of Image Defects
+{bmc bm0.bmp}	Lack of SharpnessLack_of_Sharpness
+{bmc bm0.bmp}	Image NoiseImage_Noise
+{bmc bm0.bmp}	Poor Final Image QualityPoor_Final_Image_Quality
+{bmc bm0.bmp}	Image DistortionImage_Distortion
+
+Image Defect Causes
+{bmc bm0.bmp}	Operator ErrorZVIQX7
+{bmc bm0.bmp}	External InfluenceExternal_Influence
+{bmc bm0.bmp}	Sample Type and PenetrationSample_Type_and_Penetration
+
+Specimen parametersSpecimen_parameters_troubleshooting
+
+$#Causes of Lack of Sharpness
+
+{bmc bm0.bmp}	Astigmatism not correct
+{bmc bm0.bmp}	Misaligned final aperture
+{bmc bm0.bmp}	Poor focusing
+{bmc bm0.bmp}	Sample charge-up or vibration
+{bmc bm0.bmp}	Magnetic fields (from sample or external)
+{bmc bm0.bmp}	Poor depth of focus
+{bmc bm0.bmp}	Too much noise
+{bmc bm0.bmp}	Specimen contaminated or of low potential reduction
+$#Causes of Image Noise
+
+{bmc bm0.bmp}	Probe current too low. 
+{bmc bm0.bmp}	Sample not facing electron collector
+{bmc bm0.bmp}	Faulty scintillator and/or photomultiplier
+{bmc bm0.bmp}	Too much CONTRAST and consequent incorrect brightness
+{bmc bm0.bmp}	Dark regions of sample being observed
+
+$#Causes of Poor Final Image Quality
+
+{bmc bm0.bmp}	Incorrect balance of BRIGHTNESS & CONTRAST settings
+{bmc bm0.bmp}	Incorrect acceleration voltage
+{bmc bm0.bmp}	Incorrect probe current.
+{bmc bm0.bmp}	Inadequate specimen preparation
+$#Causes of Image Distortion
+
+{bmc bm0.bmp}	Specimen charge-up
+{bmc bm0.bmp}	Specimen magnetism
+{bmc bm0.bmp}	Specimen vibration
+{bmc bm0.bmp}	Specimen damage
+{bmc bm0.bmp}	External magnetic fields
+{bmc bm0.bmp}	External vibration
+#Image Defect Causes: Operator Error
+
+   
+	DEFECT	CAUSE	
+			
+(1)	Low contrast, lack of video signal (if probe current too low), possible specimen damage (if too high) 	Incorrect probe current 	
+(2)	Lack of image sharpness, image shift when focusing 	Incorrect final aperture alignment	
+(3)	Less image sharpness in one direction, poor resolution 	Insufficient astigmatism correction	
+(4)	Noisy image, beam deflection on charging sample, specimen damage 	Wrong scanning period	
+(5)	Poor image quality 	Wrong brightness level selected	
+(6)	Poor image quality 	Wrong contrast level selected	
+(7)	Influence on penetration and charging 	Wrong accelerating voltage	
+
+$#Image Defect Causes: External Influence
+   
+	(DEFECT)	(CAUSE)	
+			
+(1)	Image distortion, jagged edges in image 	Magnetic fields	
+(2)	Jagged edge in image	Vibration	
+
+$#Image Defect Causes:Sample Type and Penetration
+
+   
+	DEFECT	CAUSE	
+			
+(1)	Reflected and secondary electron images brighten with increasing atomic number 	Atomic number effect	
+(2)	Image shift and distortion, abnormal contrast and unstable image 	Charge-up	
+(3)	Deformation and cracking of specimen, coating peeling 	Overheating (kV or probe current too high)	
+(4)	Charge-up or sample damage 	Incorrect or inadequate sample coating	
+(5)	Surface coating leading to poor image quality 	Contamination	
+(6)	Sample deformation, damage and charge-up	Incorrect sample preparation (especially soft tissues etc)	
+
+$#Specimen parameters:troubleshooting
+   
+PARAMETER	EFFECT	OPTIMUM CONDITIONS	COMMENTS	
+Mounting on to specimen stub	Charging, Vibration	Securely attached	Use quick - drying adhesive (preferably conducting)	
+Conductivity and grounding	Charging	Good conduction to earth	Use conducting paint (Dag)	
+Sensitivity to beam damage	Specimen distortion	Use:- Low beam current and/or low kV, short frame period.  Focus away from area of interest	Optimum conditions may result in poor SNR	
+Coating	Conductivity	No charging	Charging seen as: local intensity changes; astigmatism; image distortion; dark micrographs	
+Coating	S.E. Signal	20nm metal coating	If too thick can mask detail	
+Coating	B.S.E. Signal	Carbon coating	If too thick will absorb signal	
+Coating	C.L. Signal	Carbon, aluminium coating	If too thick will absorb signal	
+Coating	X-Ray Signal	Carbon, aluminium coating	Avoid interference with element(s) of interest	
+Coating	Specimen Current	C - Material contrast Au - Topography	Use inverted S.C. image for best topography	
+Coating	Resolution	Gold/Palladium	Grain size of coating may be resolution limit	
+Mechanical Stability	Resolution: Cracks in coating	Vibration amplitude less than required resolution	Reduce kV, and beam current	
+Eucentric Position	Specimen tilting, Stereo pairs	No translation motion during tilting	Use Eucentric goniometer stage for best results	
+Specimen Tilting	Topography, signal to noise ratio	About 45 for SE1 detector.   Zero for BSD	Found by expt. Depends on sample	
+Specimen Tilting	Stereo Viewing	Tilt difference 5-10 	Use low angles for large height differences	
+Working Distance	Resolution	Short	Beware of final lens damage	
+Working Distance	Depth of focus	Long	Limit = Loss of resolution	
+Working Distance	Sample - BSD Distance	Long - Best for Topog and Crystal Orientation Short - Best for Z-Contrast		
+
+$#Saving Images
+$#Printing Images
+$#Photographs on the HRRU
+$#Loading Images
+$#Annotation and Measurement
+$#Installing HRRU Camera
+The LEO 400 Series can accommodate a variety of camera types. Each camera type fits onto a camera assembly which slots into the HRRU CRT assembly. To gain access to the HRRU, simply slide the top cladding away to the rear of the HRRU CRT assembly.
+
+Installation of the Camera depends on the Camera type.
+Note Camera type should be specified in Settings dialo12O7D55@imgmgr.hlpg
+
+Polaroid 545Installing_Polaroid_545
+Polaroid 550Installing_Polaroid_550
+35 mm (RICOH)Installing_35_mm__RICOH_
+120mmInstalling_120mm_Camera
+$#Installing Polaroid 545
+The lens unit is setup as shown in Polaroid Camera Lens MountingPolaroid_Camera_Lens_Mounting. 
+The lens unit is fitted to the camera body using 4 M4 X 20mm screws.
+
+The camera unit is then inserted into the camera housing with the red spot towards the operator. It is important to ensure that the unit has been inserted as far as it will go, if this is not done the focus will be incorrect. The unit is clamped in place using the knurled head screws in the upper set of screw holes. The camera back is then fitted to the casting ensuring that the key fits into it's slot, and is locked in place using the two sliding clamps. If the aperture is set correctly, the unit is now ready for use.
+$#Polaroid Camera Lens Mounting -Click to continue
+{bmc bm23.wmf}
+$#Installing Polaroid 550
+The lens unit is setup as shown in Polaroid Camera Lens MountingPolaroid_Camera_Lens_Mounting. 
+The lens unit is fitted to the camera body using 4 M4 X 20mm screws.
+
+The camera unit is then inserted into the camera housing with the red spot away from the operator. It is important to ensure that the unit has been inserted as far as it will go, if this is not done the focus will be incorrect. The unit is clamped in place using the knurled head screws in the upper set of screw holes. The camera back is then fitted to the casting ensuring that the key fits into it's slot, and is locked in place using the two sliding clamps. If the aperture is set correctly, the unit is now ready for use.
+$#Installing 35 mm (RICOH)
+This unit complete is inserted in place of the Polaroid camera unit and is locked into place using the knurled head screws. The shutter remote cable is plugged into it's socket on the rear of the camera and the shutter set to 'Bulb' ( see the camera instruction booklet).
+$#Installing 120mm Camera
+The 120mm camera back will usually be sent with it's own camera assembly, but some early LEO 400 Series SEMs may have a camera assembly that is interchangeable between Polaroid and 120mm. The procedure to change camera backs with this type of assembly is shown in 120mm Camera Lens Mounting120mm_Camera_Lens_Mounting as follows:-
+1.	Remove the Camera assembly from the HRRU assembly by pushing the top cladding back towards the rear of the instrument (it may be necessary to loosen the fixing screws securing the cladding from within the HRRU pod- if they are not already loose enough), and loosening the 4 knurled knoblets. The camera assembly should now be loose enough to pull out of the HRRU CRT assembly.
+2.	 The lens spacer itself will be currently screwed up against a lens positioning stop ring, this must now be screwed clockwise up to the alternative lens stop ring at the opposite end of the lens spacer body, using the tool provided. These lens stop rings are preset and should not be re-adjusted.
+3.	The lens spacer assembly which holds the lens in the correct position must now be reversed. This is done by removing the 4 M4 allen screws securing it to the camera assembly and simply inverting the spacer assembly before refitting it back to the camera assembly.
+4.	Refit the lens into the spacer assembly, ensuring that the aperture is set to the correct position.
+5.	The 4 knoblets that secure the camera assembly into the HRRU CRT assembly must be fitted to the lower set of holes (there are two holes per screw) in order to ensure that the camera assembly can be secured into the HRRU CRT assembly correctly.
+6.	Refit the camera assembly to the HRRU CRT assembly, ensuring that the red spot on top of the camera housing is away from the operator. It is important to ensure that the unit has been inserted as far as it will go into the housing otherwise focus will be incorrect.
+7.	The camera should now be fitted onto the casting, ensuring that the key fits into it's slot, and is secured using the two sliding clamps.
+8.	Ensure that the correct camera type is entered in the HRRU Camera field of the HRRU Settings panel12O7D55@imgmgr.hlp.
+9.	To swap back again the reverse procedure applies.
+$#KK120mm Camera Lens Mounting - Click to continue
+{bmc bm24.wmf}

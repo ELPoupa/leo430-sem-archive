@@ -1,0 +1,3 @@
+﻿"Class","Dialog","Title","Vtable","Parameters","Functions","NameId","Licence","UserLevels","MachineTypes"
+"CDualMag","","","0x0040E6A0","CMD_MODE_NORMAL DP_ZOOM AP_ZOOMPOS_X AP_ZOOM_FACTOR","FUN_004017e0","","","",""
+"CStageAngle","","","0x00410FB0","DP_C3_ROT_SIGN","FUN_0040ade0","","","",""

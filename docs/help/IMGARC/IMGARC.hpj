@@ -1,0 +1,57 @@
+[OPTIONS]
+TITLE=LEO FTP Image Archive Utility
+CONTENTS=.WS91Q
+COPYRIGHT=Copyright © 1998, LEO Electron Microscopy Ltd
+LCID=0x409 0x0 0x0
+COMPRESS=0
+
+[WINDOWS]
+main=,,,,
+
+[ALIAS]
+_1ZQP_=.WS91Q
+TB1PVY=SEM_Image_Files
+FJYGGM=User_Log_File
+
+[FILES]
+IMGARC.rtf
+
+[MAP]
+RFXF3 1180
+Refresh_button 1210
+XYKH1 1090
+1BZPJX 1080
+Cancel_Current_Job 1330
+Landscape_Selection 1290
+3H.QV4 1070
+3HIUH2 1050
+5NK5OS 1140
+5VFV.V 2000
+Apply_Print_Settings 1320
+SEM_Image_Files 1040
+Images_Down_the_Page 1260
+9A3XVB 2010
+XQHW0R 1160
+3M0LA4C 2020
+.WS91Q 1030
+.WS91Q 1000
+1LJZ_DP 1130
+_8FIJN 1020
+Include_Files_Already_Transferred 1190
+5P5S_OV 1100
+Number_of_Printed_Copies 1240
+Page_Border 1280
+Enable_transfers_to_Network_Printer 1220
+124L4M7 1170
+Gaps_Between_Images 1270
+Printer_Model_Selection 1230
+Scaling_Selection 1310
+B8__3Z 1010
+Portrait_Selection 1300
+Exclude_Button 1200
+EE4OAC 1110
+User_Log_File 1150
+GRKAXJ 1060
+Images_Across_the_Page 1250
+LIYTPP 1120
+

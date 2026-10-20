@@ -1,0 +1,158 @@
+﻿$#KAbout
+Displays the about box dialog, containing Kversion number and copyright information.
+$#KBaud Rate
+This setting determines the speed at which characters are transferred across the RS232 connection. It is important that the same speed is selected within Remcon32 as in the program running on the remote PC.
+$#COM port selection
+This control selects which com port Remcon32 will address.
+$#Clear Terminal
+Clears the text window (without affecting the contents of the log file if it is open).
+$#KClose Log File
+Terminates the logging of commands and responses and closes the command log file.
+Remcon32 will continue to process commands after the log file has been closed.
+$#Close Port
+Closes the comms port at the end of a session.
+$#Comms Settings
+{bmc bm0.bmp}
+The following comm port parameters may be set using this dialog.
+{bmc bm1.bmp}	Baud RateBaud_Rate
+{bmc bm1.bmp}	Data BitsData_Bits
+{bmc bm1.bmp}	Stop BitsStop_Bits
+{bmc bm1.bmp}	EchoIC2YSC
+{bmc bm1.bmp}	ParityParity
+{bmc bm1.bmp}	Comm PortCOM_port_selection
+{bmc bm1.bmp}	Flow ControlFlow_Control
+{bmc bm1.bmp}	On StartupOn_Startup
+$#KContents
+AboutAbout
+Baud RateBaud_Rate
+Clear Terminal8I98O9
+Close Log File1IQ5_DN
+Close Port1MM950M
+COM port selectionCOM_port_selection
+Comms Settings1VDW3L3
+Data BitsData_Bits
+Dial a phone number7HBQVE
+EchoIC2YSC
+Flow ControlFlow_Control
+General DescriptionGeneral_Description
+Hang upHang_up
+Keep On TopJH.OWC
+Local Mode1UKN0RR
+On StartupOn_Startup
+Open Log File4_C4CL
+Open Port7HMXZG
+ParityParity
+PropertiesProperties
+Stop BitsStop_Bits
+ToolbarCX9YW2
+Transmit text fileA_KU2W
+
+Multiple Instances of RemCon32Multiple_Instances_of_RemCon32
+Auto Start of RemCon32 when logging on to the SEM User InterfaceAuto_Start_of_RemCon32_when_logging_on_to_the_SEM_User_Interface
+$#Data Bits
+An RS232 comm port setting which determines how many bits make up a single character.
+
+It is important that the same value is selected within Remcon32 as in the program running on the remote PC.
+$#KDial a phone number
+Allows a connection to be made to a remote PC via a modem connected to the comms port.
+
+When selected a dialog will appear requesting the phone number to be dialed.
+
+{bmc bm2.wmf}
+
+This function is only available when the comms port is open7HMXZG.
+
+Use of modem communication is likely to require Xon/RTS to be selected in the flow controlFlow_Control settings.
+
+To make the program ready for dialing in from a remote PC, it is necessary to open the comms port which has the modem connected to it.
+$#Echo
+Controls whether characters returned by the SEM are displayed in the text window.
+$#KFlow Control
+An RS232 comm port setting which determines how data overrun is prevented.
+
+It is important that the same value is selected within Remcon32 as in the program running on the remote PC.
+
+For remote communications via a modem Xon/RTS is likely to be required.
+$#General Description
+Remcon32 is a utility program which permits a remote PC to communicate with the SEM using an RS232 protocol.
+
+Details of the RS232 protocol are published by LEO under the OpenX policy. Contact your local LEO representative for further details.
+
+Remcon32 has several advanced features designed to enhance its usefulness, namely :
+1.	Remote PC connection via a modem7HBQVE.
+2.	Logging a remote control session to a text file4_C4CL
+3.	Local mode1UKN0RR operation for testing remote control sequences
+4.	Easy configuration of comm port settings1VDW3L3
+
+See also
+Multiple InstancesMultiple_Instances_of_RemCon32
+Auto Start in SEM user InterfaceAuto_Start_of_RemCon32_when_logging_on_to_the_SEM_User_Interface
+$#KHang up
+Disconnects a remote session via a modem.
+$#Keep On Top
+Selected to ensure that the Remcon32 window will always be uppermost of the windows on display.
+$#KLocal Mode
+Allows RS232 commands to be tried locally to the SEM by typing the relevant character sequence in the text window.
+
+This mode is useful for checking that the SEM is responding correctly to RS232 commands and for trying out sequences of commands before coding them into an automated control program.
+
+This mode will normally be used with Echo OnIC2YSC selected.
+
+When this mode is selected no output is sent to the comms port.
+$#KOn Startup
+Used to determine the actions taken when the program is started.
+
+If the box is checked the comms port will be opened and the program will be minimised, putting it into the ready state to receive external RS232 commands.
+
+If the box is not checked then the port will need to be opened manually.
+$#Open Log File
+Displays a file selection dialog to allow a filename to be selected so that all RS232 commands and responses can be recorded in a file.
+
+Commands will be logged from when a file is selected until the file is closed1IQ5_DN
+$#KOpen Port
+Initialises the RS232 port ready for communications.
+$#Parity
+An RS232 comm port setting which determines how error checking is performed on the data.
+
+The default value for this setting is None.
+
+It is important that the same value is selected within Remcon32 as in the program running on the remote PC.
+$#KProperties
+This collection of comms properties are used for diagnostic purposes and their settings should not be changed.
+$#Stop Bits
+An RS232 comm port setting which determines how many bits are used to terminate a transmission.
+
+It is important that the same value is selected within Remcon32 as in the program running on the remote PC.
+$#KToolbar
+The toolbar allows easy selection of the following :
+{bmc bm1.bmp}	Open log file4_C4CL
+{bmc bm1.bmp}	Close log file1IQ5_DN
+{bmc bm1.bmp}	Transmit text fileA_KU2W
+{bmc bm1.bmp}	Dial a phone number7HBQVE
+{bmc bm1.bmp}	Hang upHang_up
+{bmc bm1.bmp}	AboutAbout
+{bmc bm1.bmp}	Comms portCOM_port_selection
+{bmc bm1.bmp}	Open Port7HMXZG
+{bmc bm1.bmp}	Close Port1MM950M
+{bmc bm1.bmp}	Settings1VDW3L3
+{bmc bm1.bmp}	Local Mode1UKN0RR
+$#Transmit text file
+Allows a file on disk to be transmitted to the remote PC via the RS232 connection.
+
+When activated a standard file selection dialog allows the relevant file to be selected.
+
+This function is only enabled when the comms port is open7HMXZG.
+$#Multiple Instances of RemCon32
+If you wish to use multiple instances of RemCon32 it is necessary to identify which settings apply to which instance of RemCon32.
+This is achieved by adding a command line argument (alphanumeric characters only) which identifies the group of settings to be used.
+
+e.g. ..\leo\leo32\RemCon32.exe EDX
+
+The identifier is displayed in the RemCon32 Caption
+$#Auto Start of RemCon32 when logging on to the SEM User Interface
+
+Create a Macro called STARTL1I335@leom.hlp (or edit if it already exists) and insert in it an Execute Program instruction1KGATAT@leom.hlp. Select RemCon32.exe as the program to execute.
+
+See also
+MacrosContents@leom.hlp.
+Multiple Instances of Remcon32Multiple_Instances_of_RemCon32

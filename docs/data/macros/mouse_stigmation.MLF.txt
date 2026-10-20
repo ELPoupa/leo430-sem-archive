@@ -1,0 +1,6 @@
+﻿# mouse stigmation.MLF: format 1, 7 strings after the first
+
+MACRO mouse stigmation (Version 1)
+  Comment  Select which parameters for mouse adjustment of Stigmation
+  Mouse  AP_STIG_X_ONLY AP_STIG_Y_ONLY
+  Comment  alternatively select 'stigmation  X ' to the left mouse button (selects X+Y) and 'WD' to the middle button

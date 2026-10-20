@@ -1,0 +1,6 @@
+﻿"Map","Message","Kind","Id","LastId","Menu","Handler"
+"0x10030F30","registered PM_PARAMETER_NOTIFY","","","","","0x1001593D"
+"0x10030F30","registered PM_USER_PREFERENCES_CHANGED","","","","","0x1001594C"
+"0x10030F30","registered PM_SEM_CLOSE","","","","","0x10015B99"
+"0x10030F30","registered LEOIG_CONTEXT_HELP","","","","","0x1001B861"
+"0x10030F30","WM_HELPHITTEST","","","","","0x1001B87B"

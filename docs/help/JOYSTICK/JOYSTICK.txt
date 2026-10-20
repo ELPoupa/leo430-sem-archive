@@ -1,0 +1,26 @@
+﻿$#>KContents (Dual Joystick)
+
+A seKt of 2 joysticks move the stage. The current position is indicated in the readout window of the Dual Joystick Stage Controller.
+
+The speed is adjusted according to magnification (magnification compensation).
+
+
+The Dual Joystick Stage Controller is a self contained part similar to the key board and placed conveniently on the desk of the electronic console.  Two joysticks are provided which control the stage movements. The position of the stage is indicated in a window above the joysticks.  X/Y travels are controlled from the bigger joystick on the left in up/down and left/right direction respectively.  Rotation is controlled by turning the bigger joystick left or right.  Z travel is controlled with the smaller joystick to the right in up/down direction.  Tilt is controlled with the smaller joystick in left/right direction.	             {bmc bm0.bmp}	
+
+For further information see Operating InstructionsOperating_Instructions 
+$#>Moving the Stage
+
+ {bmc bm1.bmp} X/Y: When you shift the big joystick (1) on the left horizontally and vertically the stage moves horizontally and vertically in that particular direction. The more you move the joystick away from the centre the faster the stage moves.   {bmc bm1.bmp} Z: When you shift forward or draw back the small joystick (3) on the right the stage moves in the Z direction. The more you move the joystick away from the centre the faster the stage moves.  {bmc bm1.bmp} R: When you turn the big joystick (1) left or right  the stage rotates in that particular direction. The more you turn the joystick away from the centre  the faster the stage rotates.  {bmc bm1.bmp} T: When you shift left or right the small joystick (3) the stage tilts. The more you move the joystick away from the centre the faster the stage tilts. Only applicable if the tilt axis is motorised	     {bmc bm2.wmf}	
+
+$#>KOperating Instructions
+
+{bmc bm3.bmp}	The Dual Joystick Stage Controller is switched ON and OFF together with the SEM automatically so no user action is necessary. It is ON as long as the vacuum system is running.
+
+{bmc bm4.bmp}	Principal OperationPrincipal_Operation
+
+{bmc bm4.bmp}	Moving the StageMoving_the_Stage
+
+$#>Principal Operation
+
+ 1 Left joystick to control X/Y and Rotation   2 Controller housing  3 Right joystick to control Z and Tilt   4 Position display for X, Y, Z in mm, T and R in degrees.  The travel speed is increased when the joystick is moved further from its centre position.   Releasing the joystick stops the stage movement.  The movements of the stage are magnification compensated. This means that if you select low magnification, the stage will travel large distances fast and at high magnification the travel will be small.   Also, stage movements are rotation compensated, that is even if the scan is rotated, the movement in X will still be horizontal and the movement in Y will be vertical. 	{bmc bm5.wmf}	
+

@@ -1,0 +1,270 @@
+﻿$#KContents
+
+OverviewOverview
+KeyCodeK accessKeycode_access
+Main KWindowMain_Window
+Stage AttributesStage_Attributes
+Axis KAttributesAxis_attributes
+Creating a new stage tKypeCreating_a_new_stage_type
+Editing a stage typeEditing_a_stage_type
+Custom Stagecustom_stage
+$#Overview
+The Stage Administrator is a utility for creating, editing and selecting new stage types.
+The Leo-32 database contains the definitions of existing stage types. These definitions may be used as the basis to create new stage types.
+
+Access to the Stage Administator is controlled by Logon and is restricted as follows:
+
+Development
+{bmc bm0.bmp}	Unrestricted access, but may not edit predefined stage types.
+
+Users with Supervisor privilege
+{bmc bm0.bmp}	May inspect data
+
+Users with Calibration Privilege
+{bmc bm0.bmp}	May inspect data
+{bmc bm0.bmp}	May select alternative, already created, stage types as the custom stage type.
+{bmc bm0.bmp}	May be granted, for a limited duration, ability to create/edit new stage types. See Keycode accessKeycode_access
+
+Other Users
+{bmc bm0.bmp}	No access
+
+
+$#Keycode access
+A User with Calibration privilege may be granted the ability to create and edit stage data by means of a KeyCode.
+
+A KeyCode is a unique, date sensitive, serial number specific code which is granted to an engineer by the LEO Engineering Department. 
+
+To enter the KeyCode select the menu item Edit - Enter KeyCode.
+In the dialog enter the Keycode, the number of days duration and select OK.
+
+Following successful entry of the keyCode editing rights are granted for the duration defined.
+On subsequent logons on to the Stage Administrator you will be reminded of the unexpired days or notified if the period has expired.
+
+$#Main Window
+This window displays:
+{bmc bm0.bmp}	Stage AttributesStage_Attributes of the stage type currently selected for editing.
+{bmc bm0.bmp}	The currently selected Custom Stage.
+{bmc bm0.bmp}	The stage type currently in use.
+
+
+From the Edit Menu it is possible to:
+Create a New Stage TypeCreating_a_new_stage_type
+Delete a Stage TypeDelete_a_stage_type
+Add an axisadd_a_new_axis to a stage
+Delete an axisDelete_an_axis from a stage
+
+Override the default centre of rotationRotation_Centre_Override
+
+To display axis dataAxis_attributes press the axis data button
+
+When a new stage type has been created it will appear in the list of custom stage types.
+
+When a custom stagecustom_stage is selected it's name appears in the list of stage types.
+
+See also OverviewOverview
+
+
+$#Stage Attributes
+A stage has the following attributes:
+{bmc bm0.bmp}	Name		see Add New Stage Type
+{bmc bm0.bmp}	CartesianCartesian
+{bmc bm0.bmp}	Side TiltSide_Tilt
+{bmc bm0.bmp}	Power DownPower_Down
+{bmc bm0.bmp}	SnapBackSnapBack
+{bmc bm0.bmp}	Centre of rotationCentre_of_rotation
+{bmc bm0.bmp}	Axes, displayed on the main form is an area per axis. 
+The following axis data is displayed on the main form
+{bmc bm0.bmp}	Initialisation OrderInitialisation_Order
+{bmc bm0.bmp}	Protected Z PriorityProtected_Z_Priority
+
+The other axis attributesAxis_attributes may be displayed by pressing the Axis Data button.
+$#Cartesian Stage AttributeStage_Attributes
+
+If checked, the stage is cartesian; if unchecked the stage is Eucentric
+$#Side Tilt stage attributeStage_Attributes
+
+This attribute is checked if the stage tilts in the X direction and is unchecked if the stage tilts in the Y direction.
+$#Power Down stage attributeStage_Attributes.
+
+This attribute describes the behaviour of the stage motors when they become idle.
+
+This attribute will only take effect if supported by the version of stage firmware fitted.
+
+Earlier versions of firmware not supporting this function operate with LowMag 1/4: HighMag 1/2
+
+The transition point for LowMag:HighMag is 50 nanometres per pixel
+
+Choices are:
+{bmc bm0.bmp}	1/4 power (the default operation)
+{bmc bm0.bmp}	1/2 power
+{bmc bm0.bmp}	LowMag 1/4 power, HighMag 1/4 power
+{bmc bm0.bmp}	LowMag 1/4 power, HighMag 1/2 power
+$#SnapBack stage attributeStage_Attributes
+
+SnapBack is where, on completion of each move, the motor is moved back 3 microsteps to minimise drift.
+
+If attribute is checked this function is implemented.
+
+Note that the ability to turn this function off  may not be supported by the version of firmware fitted.
+
+Earlier versions of firmware always have this function selected.
+$#KCentre of rotation stage attributeStage_Attributes
+
+This defines (in millimetres) the default centre of rotation of the stage.
+Note that this value may be overridenRotation_Centre_Override.
+$#Axis attributes
+The following attributes are defined for each axis.
+
+{bmc bm0.bmp}	Initialisation orderInitialisation_Order
+{bmc bm0.bmp}	Protected Z PriorityProtected_Z_Priority
+{bmc bm0.bmp}	Step SizeStep_Size
+{bmc bm0.bmp}	Start speedStart_speed
+{bmc bm0.bmp}	AccelerationAcceleration
+{bmc bm0.bmp}	Maximum SpeedMaximum_Speed
+{bmc bm0.bmp}	RangeRange
+{bmc bm0.bmp}	Mid PointMid_Point
+{bmc bm0.bmp}	Initial PositionInitial_Position
+{bmc bm0.bmp}	Backlash distanceBacklash_distance
+{bmc bm0.bmp}	Backlash speedBacklash_speed
+{bmc bm0.bmp}	Safe AreaSafe_Area
+
+See also Range OverrideRange_Override
+$#Initialisation Order
+This axis attributeAxis_attributes is displayed for each axis in the main window.
+
+The attribute is the numeric order in which the axes are initialised.
+$#Protected Z Priority
+This axis attributeAxis_attributes is displayed for each axis in the main window.
+
+The attribute is the priority used to define the order of moves when protected Z mode is switched on.
+
+The priority is a number in the range 1 through 3.
+
+When performing a protected Z move the action is:
+{bmc bm0.bmp}	Move down all axes with priority 1 if applicable.
+{bmc bm0.bmp}	Move down all axes with priority 2 if applicable.
+{bmc bm0.bmp}	Move all axes with priority 3 if applicable.
+{bmc bm0.bmp}	Move up all axes with priority 2 if applicable.
+{bmc bm0.bmp}	Move up all axes with priority 1 if applicable.
+$#Step Size Axis attributeAxis_attributes
+
+This parameter defines the step size for the axis in pico metres/step or nano degrees/step
+
+$#Start speed axis attributeAxis_attributes
+
+This parameter defines for the axis the start speed in steps/sec.
+$#KAcceleration axis attributeAxis_attributes
+
+This parameter defines the acceleration rate for the axis in steps/sec/sec
+$#Maximum Speed axis attributeAxis_attributes
+
+This parameter defines the maximum speed of the axis in steps/sec
+$#Range axis attributeAxis_attributes
+
+These two parameters define the lower and upper range of the axis in milli metres or degrees
+
+Note that the upper range parameter may be overriddenRange_Override under some configurations.
+
+$#Range Override
+The high limit of travel for an axis may need to be modified when the stage is fitted to a particular configuration.
+
+This is achieved using the Range Conditions button on the axis data window.
+This botton displays the Range Conditions window in which rules may be defined to determine the axis high limit.
+
+Rules may be based either on a column type or a machine type.
+
+The rule also takes into account whether a WDX is fitted or not.
+
+To Add a rule
+{bmc bm0.bmp}	If no rules are currently defined, select column or machine
+{bmc bm0.bmp}	From the appropriate drop down box select the column type or machine type
+{bmc bm0.bmp}	Uncheck the WDX box 
+{bmc bm0.bmp}	Enter the range value which applies under these conditions
+{bmc bm0.bmp}	Select Add to add this rule
+{bmc bm0.bmp}	Check the WDX box
+{bmc bm0.bmp}	Enter the range value which applies under these conditions
+{bmc bm0.bmp}	Select Add to add the rule
+
+When the stage is configured the rules will be scanned in turn to check if they apply, if they do the range value is overriden with the value supplied.
+
+Remove a rule by selecting it and pressing Remove or double click it
+Column/Machine selection may only be changed if no rules are defined.
+$#Mid Point axis attributeAxis_attributes
+
+This parameter defines the mid point of travel for the axis in milli metres or degrees.
+$#Initial Position axis attributeAxis_attributes
+
+This parameter defines the position, in milli metres or degrees, to which the axis is driven on completion of initialisation.
+
+$#Backlash distance axis attributeAxis_attributes
+
+This parameter defines the backlash distance for the axis, in milli metres or degrees.
+$#KBacklash speed axis attributeAxis_attributes
+
+This parameter defines the axis backlash speed in steps/sec
+$#Safe Area axis attributeAxis_attributes
+
+These parameters define the boundaries of the safe position within which the axis must lie when venting the system. If both these parameters are zero a safe area is not applied. 
+$#KCreating a new stage type
+To create a new stage type follow this procedure:
+
+{bmc bm0.bmp}	Select the menu item Edit - Add - New Stage Type
+{bmc bm0.bmp}	Enter a name for the new stage type
+{bmc bm0.bmp}	Select from the drop down list an existing stage type which most closely resembles the stage you wish to create
+{bmc bm0.bmp}	press OK
+{bmc bm0.bmp}	The new stage type is created and displayed in the main window
+
+The data for the stage may now be edited
+
+If required add a new axisadd_a_new_axis
+If required delete an axisDelete_an_axis
+modify the stage attributesStage_Attributes as required
+modify the axis attributesAxis_attributes as required
+
+Note any changes to the stage data are not actually performed on the database until either you exit the Stage Administrator with OK or you select the menu item Edit - Apply changes. To discard the edits made select the menu item Edit - discard changes.
+
+Note that until changes are applied or discarded the selected stage type may not be changed.
+$#add a new axis
+To add an axis to a stage type select the menu item Edit - Add - ? Axis
+This will display a dialog which permits you to add an axis by copying one from the current stage type or from other stage types in the database.
+
+$#delete an axis
+To delete an axis select the menu item Edit - Delete - ? Axis
+$#Editing a stage type
+The currently selected stage type may be edited, providing the appropriate permissions have been granted.
+Note - pre-defined stage types may not be edited.
+
+Data may be edited as follows:
+Add an axisadd_a_new_axis
+Delete an axisDelete_an_axis
+Edit stage attributesStage_Attributes
+Edit axis attributesAxis_attributes
+Delete a stage typeDelete_a_stage_type
+
+Note any changes to the stage data are not actually performed on the database until either you exit the Stage Administrator with OK or you select the menu item Edit - Apply changes. To discard the edits made select the menu item Edit - discard changes.
+
+Note that until changes are applied or discarded the selected stage type may not be changed.
+$#KDelete a stage type
+The current stage type may be deleted if it is not a pre-defined stage type and if it is not selected as the custom stagecustom_stage.
+$#custom stage
+Created stage types are added to the list of custom stages.
+
+One of these stage types may be selected as the Custom Stage by pressing the Set Custom Stage button which registers the data with the server and adds the stage type to the list of installed stage types.
+$#KRotation Centre Override
+The Rotation centre may need to be modified when the stage is fitted to a particular configuration.
+
+This is achieved using the Override X or Override Y buttons on the main window.
+This button displays the Centre override Conditions window in which rules may be defined to determine the appropriate centre of rotation.
+
+Rules may be based either on a column type or a machine type.
+
+To Add a rule
+{bmc bm0.bmp}	If no rules are currently defined, select column or machine
+{bmc bm0.bmp}	From the appropriate drop down box select the column type or machine type
+{bmc bm0.bmp}	Enter the centre value which applies under these conditions
+{bmc bm0.bmp}	Select Add to add this rule
+{bmc bm0.bmp}	
+When the stage is configured the rules will be scanned in turn to check if they apply, if they do the default value is overriden with the value supplied.
+
+Remove a rule by selecting it and pressing Remove or double click it
+Column/Machine selection may only be changed if no rules are defined.

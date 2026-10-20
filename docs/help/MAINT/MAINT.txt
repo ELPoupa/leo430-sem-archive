@@ -1,0 +1,215 @@
+﻿$#Contents - Maintenance
+User maintenance on this series of instruments is very limited, and is restricted to items that do not require any panels to be removed in order to gain access to them.
+
+there are no user serviceable parts behind the panels , and removal of a panel exposes high voltages and highly sensitive electronic circuitry.
+User serviceable items are as follows:-
+Firing UnitCleaning_the_Gun_Assembly
+Anode CleaningAnode_Cleaning
+Final ‘variablKe’ Aperture replacementCleaning_the_Aperture_Assembly
+
+
+Desiccator Silica Crystal replacementAir_Admittance_Drier_Assembly
+Anode support Dismantling_and_Cleaning_of_Anode_Support and polepiecesH6.3KN
+Rotary pump oil changesRotary_Pump_Oil_Level
+ALL other maintenance operations, including these, if required, should be carried out by LEO Service Engineers, or authorised agents, and will be done on Service and Period Maintenance visits. These include:-
+{bmc bm0.bmp}		Turbo pump maintenance (as well as the rotary pump)
+{bmc bm0.bmp}		Collector system maintenance (including light pipe change IF required)
+{bmc bm0.bmp}		Cleaning of fans
+{bmc bm0.bmp}		Full column cleaning - if necessary
+
+Routine Basic MaintenanceRoutine_Basic_Maintenance
+Six Monthly MaintenanceSix_Monthly_Maintenance
+Looking for Vacuum LeaksLooking_for_Vacuum_Leaks
+$#Routine Basic Maintenance
+
+Rotary Pump Oil LevelRotary_Pump_Oil_Level
+Air Admittance Drier AssemblyAir_Admittance_Drier_Assembly
+$#Rotary Pump Oil Level
+Check the oil level in the sight glass on the pump. 
+The minimum oil level is the lower edge of the sight glass. 
+The maximum level is 25mm below the top of the glass.  
+When necessary top up with oil of the type specified for the particular pump in use (i.e. Edwards no 15 for Edwards pump, or Alcatel VP1 for Alcatel pumps).
+$#KAir Admittance Drier Assembly
+If the air drier is allowed to become ineffective the pump down time of the SEM will become longer than normal.  
+The assembly is mounted on the rear panel of the plinth. 
+The colour of the desiccant in the assembly should be checked daily and if it shows signs of becoming saturated, i.e. turning from pink to white, it should be replaced or reactivated.  If the pump down time is becoming longer than expected then the dessicant should be checked.The procedure below should be followed
+
+To renew the desiccant:-
+{bmc bm1.bmp}	Unclip the drier from the rear of the plinth.
+{bmc bm1.bmp}	Unscrew the large knurled retaining ring from one end of the assembly and remove the end cap.  Remove the filter washer beneath it.  The desiccant can now be poured out and either dried or discarded.  Remove the remaining filter washer and the perforated metal support.
+{bmc bm1.bmp}	Clean the parts by washing in a suitable solvent, e.g. diluted liquid detergent, after which each part must be thoroughly rinsed and dried.
+{bmc bm1.bmp}	Replace the perforated metal support with the concave side facing away from where the desiccant will be.  Cover with two filter washers (shiny side away from the desiccant).  Fill the assembly with new or reactivated desiccant.  Fit a filter washer with the shiny side towards the desiccant.  Fit the end cap and knurled clamp ring.
+{bmc bm1.bmp}	Refit the assembly to the rear of the plinth.
+
+{bmc bm2.bmp}	
+$#Six Monthly Maintenance
+Changing the Rotary Pump OilChanging_the_Rotary_Pump_Oil
+Column ServicingColumn_Servicing
+
+$#Changing the Rotary Pump Oil
+It is recommended that the rotary pump oil is changed at 6-monthly intervals, with intermediate checks on the oil level.
+To change the oil:-
+{bmc bm1.bmp}	Select CHAMBER vacuum vent and wait for the rotary pump to stop.
+{bmc bm1.bmp}	Place a container of not less than 2.5 litres capacity under the oil drain plug at the bottom of the pump.  Remove the plug and drain the oil.
+{bmc bm1.bmp}	Replace the drain plug and remove the filler plug at the top of the pump.  Refill the pump with the oil recommended in the pump manufacturers handbook.
+{bmc bm1.bmp}	Replace the filler plug.  Refit the 'O' ring carrier, 'O' ring, pump hose manifold clamp ring and 2 screws.
+{bmc bm1.bmp}	While pumping the system down, check the condition of the oil mist filter (if fitted).  If a strong smell of oil vapour can be detected the elements of the filter must be changed.  In addition if the oil within the filter reaches the maximum mark, it should be drained.  The pump should be switched off for both of these operations.
+$#KColumn Servicing
+The periods between cleaning will depend on the frequency of use, type of specimens and environmental conditions, etc.  As a general rule, if the required performance can be achieved then leave well alone.  Cleaning is only necessary if the resolution deteriorates and cannot be improved by adjustment.  The degree of cleaning needed can only be determined by inspecting the column components.
+Routine cleaning consists of cleaning the grid and anode and inserting clean apertures.  If this does not restore the performance, then the whole column must be dismantled and cleaned.  The extent of this depends on the severity of contamination, which can only be found by inspecting the column as it is dismantled.
+
+Cleaning recommendationsCleaning_recommendations
+Routine Column CleaningRoutine_Column_Cleaning
+Cleaning the Aperture AssemblyCleaning_the_Aperture_Assembly  
+
+
+Basic Column Dismantling, Cleaning and ReassemblyBasic_Column_Dismantling__Cleaning_and_Reassembly
+$#Cleaning recommendations
+All swabs should be made from clean, absorbent, lint free material which will leave no dust or particles on the cleaned surfaces.  A low power binocular microscope is useful to enable dust particles to be seen.  All cleaned components must be covered to protect them from dust in the atmosphere.  Great care must be taken when handling any part of the column since all parts are machined to close tolerance.  Nylon gloves must be worn when handling all polepieces, gun parts and other components exposed to the electron beam.
+An aerosol of compressed gas is very useful for blowing the dust off each component as it is replaced in the column.  Commercial compressed air should not be used as it contains oil vapour.
+
+
+Do not allow any liquid to come into contact with the gun ceramic.  It is essential to avoid magnetising any part of the column.  The steel used for components in the magnetic circuits (i.e. polepieces) is of a very soft type and will rust very quickly if left in the atmosphere.  Where possible the column should be kept under vacuum.
+{bmc bm2.bmp}	STEEL  AND STAINLESS STEEL, COPPER AND HIDURAL COMPONENTS.  (Hidural is the coppery looking metal.)
+{bmc bm2.bmp}	ALUMINIUM AND ALUMINIUM ALLOY COMPONENTS
+These components may be cleaned with Hyprez diamond compound grade 1-W-47 or, in the case of severe contamination, grade 6-W-47.  Wash off all Hyprez with the solvent recommended by the local Service Centre (see Appendix D), preferably in an ultrasonic cleaner, and dry off using a hot air blower.
+DO NOT USE QUADRALENE ON ANY COMPONENTS CONTAINING ALUMINIUM.
+
+{bmc bm2.bmp}	MOLYDENUM SPRAY APERTURES AND PLATINUM FINAL APERTURES
+Molydenum spray apertures may be cleaned by Method 1 above.  It is recommended that the platinum final apertures are replaced when they become dirty or discoloured.
+{bmc bm2.bmp}	MU METAL  
+These components should not be cleaned except for the removal of dust.  It is important that the metal is not strained or dropped as this will reduce its effectiveness as a magnetic screen.
+{bmc bm2.bmp}	'O' RINGS 
+May be cleaned with, a lint free tissue.  The use of 'O' ring grease is not recommended on any 'O' rings, but a small amount may be used, if necessary, on moving seals e.g. in the specimen stage and aperture changer micrometers.  The grease must be applied with a lint free tissue to avoid contamination with natural oils, using only enough grease to just put a shine on the 'O' ring.  High vacuum (e.g. FOMBLIN) grease is recommended.
+{bmc bm2.bmp}	'O' RING GROOVES AND FACES 
+Should be cleaned using the appropriate method for the particular material.
+Any component with 'O' ring grooves and/or mating surfaces, and which is to be ultrasonically cleaned, should be placed in the cleaner tank in such a way that the groove or face does not touch the walls of the tank, or any other components.
+$#Routine Column Cleaning
+
+
+
+The Column19A.J.D
+Cleaning the Gun AssemblyCleaning_the_Gun_Assembly
+Cleaning the aperture assemblyCleaning_the_Aperture_Assembly
+
+If required see also 
+Basic Column Dismantling, Cleaning and ReassemblyBasic_Column_Dismantling__Cleaning_and_Reassembly
+Cleaning RecommendationsCleaning_recommendations
+$#Column
+{bmc bm3.wmf}
+
+$#Cleaning the Gun Assembly
+
+{bmc bm2.bmp}	Vent the column and chamber to air.
+{bmc bm2.bmp}	Open the gun.
+{bmc bm2.bmp}	Loosen the three filament assembly clamp screws (see Firing UnitFiring_Unit) and remove the firing unit.
+{bmc bm2.bmp}	Lift out the anode (see Column19A.J.D). 
+{bmc bm2.bmp}	Close the gun and pump the system while the components are cleaned. Take the filament assembly and anode to a clean area for cleaning.
+{bmc bm2.bmp}	Using the flat metal key unscrew the height adjustment ring and remove the filament carrier.
+{bmc bm2.bmp}	Loosen the four screws (see Firing UnitFiring_Unit) holding the filament into the carrier and remove the filament.
+{bmc bm2.bmp}	Using thumb pressure push out the gun aperture disk and its retaining clip from the grid cap.  Clean and inspect the gun aperture disk, if it is badly scratched or distorted replace it.  Clean the anodeAnode_Cleaning and the filament carrier (if removed).
+{bmc bm2.bmp}	
+{bmc bm2.bmp}	Replace the anode into the anode support.
+{bmc bm2.bmp}	If necessary change the filament, centre it in the grid and replace the assembly in the gun (as described in  Changing the Filament2MRA_.K@operation.hlp).
+{bmc bm2.bmp}	Pump down the column and chamber and run up the gun, not forgetting to check the filament saturation and gun alignment, as these may have changed with the new filament.
+$#Firing Unit. See Also Cross SectionFiring_Unit_Cross_Section
+{bmc bm4.wmf}
+$#Cleaning the Aperture Assembly
+1.	Vent the column and chamber to air.
+2.	Remove the four screws holding the aperture changer into the column  and remove this assembly from the column.
+3.	Take the aperture assembly to a clean area for cleaning.
+4.	Remove the two screws holding the aperture clamp plate onto the aperture blade (see Final Aperture ChangerVTLIYS).  Lift off the clamp plate and remove the apertures.  The aperture blade must not be removed from its mounting arm. 
+5.	Clean the aperture clamp plate. The aperture blade should be carefully polished ensuring that the mounting arm does not become distorted.  The aperture blade can be cleaned by agitating it in a shallow beaker of solvent.
+6.	Insert new apertures into the aperture blade and fit the aperture clamp plate and screws. Refit the aperture blade to the aperture changer. Ensure that the blade is horizontal, and is not tilted to the side.
+7.	Clean the 'O' ring on the aperture changer and replace the assembly into the column and secure with the four screws.
+
+The apertures have one flat side, the other side being shaped like a funnel. The apertures must be mounted in the blade with the flat side upwards when the aperture changer is mounted in the column.
+$#Final Aperture Changer
+{bmc bm5.wmf}.
+$#Differential pumping aperture
+{bmc bm6.wmf}
+$#Aperture removal and fitting tool
+
+{bmc bm7.wmf}
+$#Basic Column Dismantling, Cleaning and Reassembly
+
+If the routine column cleaning section is not sufficient, the second stage of column cleaning is detailed below:-
+1. Remove and clean the filament assembly, gridCleaning_the_Gun_Assembly and final aperturesCleaning_the_Aperture_Assembly as detailed in Routine Column CleaningRoutine_Column_Cleaning section.
+2. Switch system to hardware standby.
+3.Column DismantlingB5GCZ0
+4. Dismantling and Cleaning of Anode SupportDismantling_and_Cleaning_of_Anode_Support
+5. Cleaning the Polepiece AssembliesCleaning_the_Polepiece_Assemblies
+6. Column ReassemblyColumn_Reassembly
+
+
+
+See also
+Cleaning recommendationsCleaning_recommendations
+#Column Dismantling
+This is part of the Basic Colummn Dismantling, Cleaning and Reassembly ProcedureBasic_Column_Dismantling__Cleaning_and_Reassembly
+
+1.	Remove the anode from the anode support.  Undo the four screws securing the anode support and remove it vertically.
+2.	Insert the special tool (Pt No 719951) into the C1 polepiece assembly and remove by lifting vertically.  Write down the serial number of this polepiece assembly.
+3.	Remove the C2 polepiece assembly in the same manner also noting its serial number.  Lift off the wavy washer from the top of the C2 polepiece assembly and store safely.  Replace the gun lid on the column and pump the system.
+
+See Column Diagram19A.J.D
+$#Dismantling and Cleaning of Anode Support
+This is part of the Basic Colummn Dismantling, Cleaning and Reassembly ProcedureBasic_Column_Dismantling__Cleaning_and_Reassembly
+
+1.	Place the low kV anode into the anode support and measure the Gap 'A' between the top of the anode support and the bottom of the anode (see Anode SupportAnode_Support).
+2.	Remove the two screws holding the spray aperture from the bottom of the anode support and extract the spray aperture.
+	Loosen the liner securing screw and remove the liner tube from the anode support.  Carefully clean all of the components ensuring that all traces of contamination are removed.  After cleaning inspect the spray aperture using a low power magnifier.  Replace it if it is distorted or scratched near the orifice.
+3.	Reassemble the anode support, adjusting the liner tube position so that the Gap 'A', using the low kV anode, is the same as before.  Insert the spray aperture and secure with two screws.
+$#KAnode Support
+{bmc bm8.wmf}
+$#Cleaning the Polepiece Assemblies
+This is part of the Basic Colummn Dismantling, Cleaning and Reassembly ProcedureBasic_Column_Dismantling__Cleaning_and_Reassembly
+
+1.	Carefully remove the spray apertures (3) from the bores of the polepiece assemblies noting their orientation.  These must be pulled out evenly so as not to distort them. 
+2.	Clean and wash the spray apertures. Inspect them for damage, replace if necessary.
+3.	Carefully clean the polepiece assemblies using lapping compound
+4.	The bores can be cleaned using cocktail sticks and the polepiece faces can be cleaned through the large pumping holes in the central copper spacer.
+The minimum amount of lapping compound must be used when cleaning the polepieces.
+5.	All traces of lapping compound must be removed from each polepiece and they should then be washed several times in a recommended solventCleaning_recommendations.
+6.	Clean and inspect the spray apertures.  If they are badly scratched or distorted replace them.
+
+
+See Column ReassemblyColumn_Reassembly
+$#Column Reassembly
+This is part of the Basic Colummn Dismantling, Cleaning and Reassembly ProcedureBasic_Column_Dismantling__Cleaning_and_Reassembly
+
+1.	Refit the Spray Apertures into the Polepiece Assemblies.
+2.	Refit the C2 Polepiece assembly into the column boer using the special tool, ensure that the orientation is correct.
+3.	Place the wavy washer onto the top of the C2 Polepiece.
+4.	Replace the C1 Polepiece assembly into the column using the special tool, ensure that the orientation is correct. Refit the anode supportAnode_Support and secure using the four screws. Replace the firing unit and the high or low KV anode as required.
+5.	Pump the system and then check system resolution performance. If the resolution of the SEM remains poor contact your local service agent.
+$#Looking for Vacuum Leaks
+The first requirement is a method of measuring the vacuum.  Some methods, starting from the simplest, are:-
+1.	Use the built in vacuum indicator, this may not be sensitive enough for leak hunting.
+2.	A better method is to disconnect the Penning gauge from the vac interlock PCB and connect to a commercially available Penning gauge box, e.g. a Penning 8 gauge box available from Edwards High Vacuum Ltd.
+3.	The best, and most expensive method is to fit a commercial leak detector system to the chamber, e.g. a mass spectrometer.  This only proves to be required in very rare cases.
+The second thing you need is to find the leak.  This is done by putting some liquid or gas onto the leak.  The liquid or gas used must do two things.  It must quickly find its way through the leak and it must cause a reaction on the vacuum gauge.
+If using a mass spectrometer leak detector the normal gas to use is helium.
+To find a vacuum leak:-
+{bmc bm2.bmp}	Set up the vacuum measuring equipment.
+{bmc bm2.bmp}	Get some leak detecting fluid.
+{bmc bm2.bmp}	Put a small amount of leak detecting fluid on a place in the vacuum system that is vacuum sealed.
+{bmc bm2.bmp}	Look for some reaction on the vacuum gauge.  This reaction is normally an increase in pressure but it can sometimes be a decrease in pressure.  (If the fluid washes a piece of dust, or some 'O' ring grease, into the hole causing the leak it may seal it.)
+{bmc bm2.bmp}	If no leak is found, test each vacuum seal in the system in turn.  Do this slowly as it may take the vacuum gauge several seconds to respond.
+{bmc bm2.bmp}	If a leak is found, take the vacuum joint apart and renew the seal.
+$#Anode Cleaning
+This procedure is usually part of cleaning the Gun AssemblyCleaning_the_Gun_Assembly.
+
+
+1.	Vent the column and chamber to air.
+2.	Open the gun.
+3.	Lift out the anode (see Column19A.J.D) 
+4.	Close the gun and pump the system while the anode is cleaned. Take the anode to a clean area for cleaning.
+5.	Carefully clean all components using  the recommended cleaning methodCleaning_recommendations, ensuring that all traces of contamination and discolouration are removed.
+6.	Wash  in the recommended solvent in an ultrasonic cleaner.  Visually check that all traces of cleaning materials are removed.  Wash again in clean solvents.  Now wash again in more clean solvent.
+7.	Vent the column and chamber to air.
+8.	Open the gun.
+9.	Replace the anode into the anode support.
+10.	Pump system
+$#KFiring Unit Cross Section
+{bmc bm9.wmf}

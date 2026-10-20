@@ -1,0 +1,3015 @@
+﻿=== DIALOG 100 "Button Choices" (15 controls)
+  -1  STATIC  "#501"
+  -1  STATIC  "#502"
+  -1  STATIC  "#503"
+  -1  STATIC  "#101"
+  300  BUTTON  "&OK"
+  301  BUTTON  "&Annuler"
+  102  STATIC  "LEO Liste de &Parameter :"
+  103  LISTBOX  ""
+  104  BUTTON  "&1"
+  105  BUTTON  "&2"
+  106  BUTTON  "&3"
+  107  STATIC  "&Button Choices :"
+  108  LISTBOX  ""
+  109  STATIC  "Double-Click to Add"
+  110  STATIC  "Double-Click to Remove"
+=== DIALOG 200 "Bouton des Trackerball " (8 controls)
+  -1  STATIC  "#501"
+  -1  STATIC  "#502"
+  -1  STATIC  "#503"
+  300  BUTTON  "&OK"
+  301  BUTTON  "&Annuler"
+  201  COMBOBOX  ""
+  202  COMBOBOX  ""
+  203  COMBOBOX  ""
+=== DIALOG 102 "" (4 controls)
+  502  EDIT  ""
+  500  STATIC  ""
+  1  BUTTON  "&OK"
+  2  BUTTON  "&Annuler"
+=== DIALOG 107 "" (7 controls)
+  502  EDIT  ""
+  503  EDIT  ""
+  500  STATIC  ""
+  501  STATIC  "Remplace par:"
+  1  BUTTON  "&OK"
+  504  BUTTON  "&Remplace Tout"
+  2  BUTTON  "&Annuler"
+=== DIALOG 101 "Erreur" (3 controls)
+  1  BUTTON  "&OK"
+  6  BUTTON  "&Debug"
+  500  LISTBOX  ""
+=== DIALOG 104 "" (8 controls)
+  500  COMBOBOX  ""
+  3  STATIC  "Fichiers:"
+  503  LISTBOX  ""
+  3  STATIC  "Répertoires:"
+  1  BUTTON  "&Ouvrir"
+  2  BUTTON  "&Annuler"
+  3  STATIC  "Répertoire:"
+  501  STATIC  ""
+=== DIALOG HPCONTROL "VP Controle" (15 controls)
+  1004  SCROLLBAR  ""
+  910  EDIT  ""
+  903  BUTTON  "Allez HV"
+  904  BUTTON  "Allez VP"
+  908  STATIC  ""
+  919  STATIC  ""
+  -1  STATIC  ""
+  -1  STATIC  ""
+  -1  STATIC  "Pression"
+  -1  STATIC  "Etat"
+  -1  STATIC  "Recherche"
+  916  STATIC  ""
+  1  BUTTON  "New Target"
+  1003  BUTTON  ""
+  -1  BUTTON  "Chambre d'objet"
+STRING 944  Fermeture MEB
+STRING 945  Fermeture: Sauvegarder Conditions Opératoires?
+STRING 946  Platine Occupée
+STRING 947  Commande pas exécutée
+STRING 948  Platine XYZ
+STRING 949  Zone 0 pas gelée
+STRING 950  ATTENTION
+STRING 951  Choisir Zone pour contrôle
+STRING 952  Choisir Panneau de Zone à cacher
+STRING 953  En Lisant un Fichier 
+STRING 954  Choisir élément à modifier 
+STRING 955  Sauvegarder comme Fichier..
+STRING 956  Copyright © 1995 LEO Electron Microscopy Ltd
+STRING 957  All rights reserved.             Portions Copyright:- 
+STRING 958   © 1992-1995 Leica Cambridge Ltd.
+STRING 959   © 1987-1994 Microsoft Corporation.
+STRING 960   © 1986-1991 The Whitewater Group, Inc.
+STRING 961   © 1988 Texas Instruments
+STRING 962  Co-operation Zeiss . Leica
+STRING 970  Sauvegarder: Points LUT  visualisation dans Fichier 
+STRING 971  Configuration de Visualisation
+STRING 972  Echec de la détection de configuration minimum
+STRING 973  Configuration incompatible avec le mode Double Canaux
+STRING 974  Configuration incompatible avec le mode Haute Résolution
+STRING 975   Fin de Fichier Inatendue 
+STRING 2200  Grand.
+STRING 2201  WD
+STRING 2202  Rotation balayage
+STRING 2203  Cor. Orthog. Balayage
+STRING 2204  Platine: Angle
+STRING 2205  Corr. éch. X
+STRING 2206  C3: Amplitude Wobbler
+STRING 2207  C3: Période Wobbler
+STRING 2208  C1: Courant
+STRING 2209  C2: Courant
+STRING 2210  Stig: ampl. d'équilibrage
+STRING 2211  Stig: période d'équilibrage
+STRING 2212  C1: Amplitude Oscillation
+STRING 2213  C3: Courant
+STRING 2214  C1: Période Oscillation
+STRING 2215  C2: Amplitude Wobbler
+STRING 2216  C2: Période Wobbler
+STRING 2217  Stig: Equilibrage X maxi
+STRING 2218  Stig: Equilibrage X mini
+STRING 2219  Stig: Equilibrage Y maxi
+STRING 2220  Stig: Equilibrage Y mini
+STRING 2221  Emission Zoom
+STRING 2222  I Sonde
+STRING 2223  Fil.: I(T)
+STRING 2224  EHT (T)
+STRING 2225  Fil.: I (Maxi utilisateur)
+STRING 2226  EHT (M)
+STRING 2227  Fil.: I Demandé
+STRING 2228  EHT
+STRING 2229  Fil.: I
+STRING 2230  Brillance
+STRING 2231  Comp. Ampl. Grand
+STRING 2232  Comp. décalage Grand.
+STRING 2233  C1: Cal
+STRING 2234  C1: Rem
+STRING 2235  C2: Cal
+STRING 2236  C2: Rem
+STRING 2237  C3: Cal
+STRING 2238  C3: Rem
+STRING 2239  Axe d'inclinaison
+STRING 2240  Angle d'inclinaison
+STRING 2241  Stéréo: Inclinaison
+STRING 2242  Stéréo: Fusion
+STRING 2243  Stéréo: Rotation
+STRING 2244  Période effacement
+STRING 2245  Foc Dynamique:  Angle
+STRING 2246  Ligne: Durée
+STRING 2247  Temps Cycle
+STRING 2248  Cal. Grand. largeur actuelle
+STRING 2249  Cal Grand.  hauteur actuelle
+STRING 2250  Cal. Grand. éch X
+STRING 2251  Cal. Grand. éch Y
+STRING 2252  Canon: Décalage X
+STRING 2253  Canon: Décalage Y
+STRING 2254  Canon: Inclinaison X
+STRING 2255  Canon: Inclinaison Y
+STRING 2256  Faisceau: Déplacement X
+STRING 2257  Faisceau: Déplacement Y
+STRING 2258  Position Zoom X
+STRING 2259  Position Zoom Y
+STRING 2260  Diaphragme: Dimension
+STRING 2261  Diaphragme: Pos. X
+STRING 2262  Diaphragme: Pos. Y
+STRING 2263  Stigmateur X
+STRING 2264  Stigmateur Y
+STRING 2265  Pos. Astig. Mini X
+STRING 2266  Pos. Astig. Mini Y
+STRING 2267  Facteur de Zoom
+STRING 2268  Spot à X
+STRING 2269  Spot à Y
+STRING 2270  Ligne: Position X
+STRING 2271  Ligne: Position Y
+STRING 2272  Ligne: Longueur
+STRING 2273  Décalage dble Grand. X
+STRING 2274  Décalage dble Grand. Y
+STRING 2275  Focalisation: Comp.Rot.
+STRING 2276  Fenêtre: Position X
+STRING 2277  Fenêtre: Position Y
+STRING 2278  Fenêtre: Largeur
+STRING 2279  Fenêtre: Hauteur
+STRING 2280  Mes Pt-Pt: distance 1
+STRING 2281  Mes Pt-Pt: distance 2
+STRING 2282  Mes Pt-Pt: distance 3
+STRING 2283  Mes Pt-Pt: distance 4
+STRING 2284  Mes Pt-Pt: angle 1
+STRING 2285  Mes Pt-Pt: angle 2
+STRING 2286  Mes Pt-Pt: angle 3
+STRING 2287  Mes Pt-Pt: angle 4
+STRING 2288  3D Pt-Pt distance réelle 1
+STRING 2289  3D Pt-Pt distance réelle 2
+STRING 2290  3D Pt-Pt distance réelle 3
+STRING 2291  3D Pt-Pt distance réelle 4
+STRING 2292  3D Pt-Pt profondeur 1
+STRING 2293  3D Pt-Pt profondeur 2
+STRING 2294  3D Pt-Pt profondeur 3
+STRING 2295  3D Pt-Pt profondeur 4
+STRING 2296  3D Pt-Pt H distance 1
+STRING 2297  3D Pt-Pt H distance 2
+STRING 2298  3D Pt-Pt H distance 3
+STRING 2299  3D Pt-Pt H distance 4
+STRING 2300  3D Pt-Pt direction. 1
+STRING 2301  3D Pt-Pt direction. 2
+STRING 2302  3D Pt-Pt direction. 3
+STRING 2303  3D Pt-Pt direction. 4
+STRING 2304  3D Pt-Pt pente 1
+STRING 2305  3D Pt-Pt pente 2
+STRING 2306  3D Pt-Pt pente 3
+STRING 2307  3D Pt-Pt pente 4
+STRING 2308  Mes radiale: Diamètre 1
+STRING 2309  Mes radiale: Diamètre 2
+STRING 2310  Mes radiale: Diamètre 3
+STRING 2311  Mes radiale: Diamètre 4
+STRING 2312  Angle 1
+STRING 2313  Angle 2
+STRING 2314  Angle 3
+STRING 2315  Angle 4
+STRING 2316  La 1
+STRING 2317  La 2
+STRING 2318  La 3
+STRING 2319  La 4
+STRING 2320  Lb 1
+STRING 2321  Lb 2
+STRING 2322  Lb 3
+STRING 2323  Lb 4
+STRING 2324  Mes. Lignes: Angle 1
+STRING 2325  Mes. Lignes: Angle 2
+STRING 2326  Mes. Lignes: Angle 3
+STRING 2327  Mes. Lignes: Angle 4
+STRING 2328  Dimension Pixel
+STRING 2329  Courant anode
+STRING 2330  EHT maximum
+STRING 2331  Profil: Largeur
+STRING 2332  Platine: position X
+STRING 2333  Platine: position Y
+STRING 2334  Platine: Z
+STRING 2335  Platine: Aller à X
+STRING 2336  Platine: Aller à Y
+STRING 2337  Platine: Aller à Z
+STRING 2338  Platine: Vecteur X
+STRING 2339  Platine: Vecteur Y
+STRING 2340  Platine: Vecteur Z
+STRING 2341  Platine: angle balayage
+STRING 2342  Platine: Champs X
+STRING 2343  Platine: Champs Y
+STRING 2344  Platine: Taille de Champ X
+STRING 2345  Platine: Taille de Champ Y
+STRING 2346  Platine: Aller à champ X
+STRING 2347  Platine: Aller à champ Y
+STRING 2348  Platine: sur Champ X
+STRING 2349  Platine: sur Champ Y
+STRING 2350  Platine: Limite haute X
+STRING 2351  Platine: Limite haute Y
+STRING 2352  Platine: Limite haute Z
+STRING 2353  Platine: Limite Basse X
+STRING 2354  Platine: Limite Basse Y
+STRING 2355  Platine: Limite Basse Z
+STRING 2356  Vide système
+STRING 2357  EDS: Seuil vide
+STRING 2358  Vide colonne
+STRING 2359  Platine: Définir X
+STRING 2360  Platine: Définir Y
+STRING 2361  Platine: Définir Z
+STRING 2362  Jeu distance X
+STRING 2363  Jeu distance Y
+STRING 2364  Jeu distance Z
+STRING 2365  Jeu: V Rattrapage X
+STRING 2366  Jeu: V Rattrapage Y
+STRING 2367  Jeu: V Rattrapage Z
+STRING 2368  Platine: Départ Vx
+STRING 2369  Platine: Départ Vy
+STRING 2370  Platine: Départ Vz
+STRING 2371  Platine: Vitesse  en X
+STRING 2372  Platine: Vitesse en Y
+STRING 2373  Platine: Vitesse en Z
+STRING 2374  Platine: Augmentation Vx
+STRING 2375  Platine: Augmentation Vy
+STRING 2376  Platine: Augmentation Vz
+STRING 2377  Platine: Accélération X
+STRING 2378  Platine: Accélération Y
+STRING 2379  Platine: Accélération Z
+STRING 2380  I Echantillon
+STRING 2381  Signal
+STRING 2382  Mixage Signal
+STRING 2383  Alpha
+STRING 2384  Bêta
+STRING 2385  Trames à moyenner
+STRING 2386  Trames à intégrer
+STRING 2387  Lignes à  Intégrer
+STRING 2388  Gamma
+STRING 2389  Gain A
+STRING 2390  Offset A
+STRING 2391  Contraste
+STRING 2392  Auto Brillance
+STRING 2393  Auto Contraste
+STRING 2394  Cal Largeur
+STRING 2395  Cal Hauteur
+STRING 2396  Tension Collecteur
+STRING 2397  Grand. Z0
+STRING 2398  Grand. Z1
+STRING 2399  Grand. Z2
+STRING 2400  Grand. Z3
+STRING 2401  Grand. Z4
+STRING 2402  Grand.  Z5
+STRING 2403  Grand.  Z6
+STRING 2404  Grand. Z7
+STRING 2405  PM1
+STRING 2406  PM2
+STRING 2407  PM3
+STRING 2408  Centre Mire X
+STRING 2409  Centre Mire Y
+STRING 2410  Filament: Age
+STRING 2411  HRRU: Brillance
+STRING 2412  HRRU: Contraste
+STRING 2413  HRRU: Focalisation
+STRING 2414  HRRU: Gamma
+STRING 2415  Gain B
+STRING 2416  Offset B
+STRING 2417  Cal Marque  X1
+STRING 2418  Cal Marque X2
+STRING 2419  Cal Marque Y1
+STRING 2420  Cal Marque Y2
+STRING 2421  Ligne: Cal. Ampl.
+STRING 2422  Cal.Amplitude Trame
+STRING 2423  Cal Ligne/Trame
+STRING 2424  Cal. Balayage X
+STRING 2425  Cal. Balayage Y
+STRING 2426  Photo N°
+STRING 2427  Lignes à Moyenner
+STRING 2428  N
+STRING 2429  Taille de sonde
+STRING 2430  Grand. mini
+STRING 2431  Cal Fenêtre: Gauche
+STRING 2432  Focalisation
+STRING 2433  Cal Fenêtre: Haut
+STRING 2434  Cal Périphérique actuel
+STRING 2435  Position conjuguée
+STRING 2436  Largeur
+STRING 2437  Hauteur
+STRING 2438  Faisceau: Décalage X
+STRING 2439  Faisceau: Décalage Y
+STRING 2440  HRRU: Reste à faire
+STRING 2441  Impression à faire
+STRING 2442  EHT Cal @1.0A
+STRING 2443  EHT Cal @3.2A
+STRING 2444  Temps Photo
+STRING 2445  Xtalk12
+STRING 2446  Xtalk21
+STRING 2447  Différentiation
+STRING 2448  Temps développement
+STRING 2449  Superposition champ
+STRING 2450  Platine: Départ X
+STRING 2451  Platine: Départ Y
+STRING 2452  Platine: Départ Z
+STRING 2453  Platine: X final
+STRING 2454  Platine: Y final
+STRING 2455  X: temps ligne
+STRING 2456  Cal Gamme X
+STRING 2457  Cal Gamme Y
+STRING 2458  Cal. Grand. dépl. X
+STRING 2459  Cal.Grand. dépl Y
+STRING 2460  EHT minimum
+STRING 2461  Seuil. Noir
+STRING 2462  Seuil Blanc
+STRING 2463  Fraction de surface
+STRING 2464  Copies VP
+STRING 2465  Focus Distance Maxi
+STRING 2466  Focus distance Mini
+STRING 2467  Stéréo stat.: Profondeur 1
+STRING 2468  Stéréo stat.: Profondeur 2
+STRING 2469  Stéréo stat.: Profondeur 3
+STRING 2470  Stéréo stat.: Profondeur 4
+STRING 2471  Stéréo St Angle
+STRING 2472  Signal Spot
+STRING 2473  Faisceau:Temps cumulé
+STRING 2474  Platine: R
+STRING 2475  Platine: I
+STRING 2476  Platine: Aller à R
+STRING 2477  Platine: Aller à I
+STRING 2478  Platine: Vecteur R
+STRING 2479  Platine: Vecteur I
+STRING 2480  Platine : Départ Vr
+STRING 2481  Platine: Départ Vi
+STRING 2482  Platine: Vitesse en R
+STRING 2483  Platine: Vitesse en I
+STRING 2484  Platine: Augmentation Vr
+STRING 2485  Platine: Augmentation Vi
+STRING 2486  Platine: Accélération R
+STRING 2487  Platine: Accélération I
+STRING 2488  Platine: Départ R
+STRING 2489  Platine: Départ I
+STRING 2490  Platine: Définir I
+STRING 2491  Jeu: distance I
+STRING 2492  Jeu: V Rattrapage  I
+STRING 2493  Platine: Limite haute I
+STRING 2494  Platine: Limite Basse T
+STRING 2495  EHT: Cal décalage
+STRING 2496  Spot: Vitesse d'acquisition
+STRING 2497  Spot: Durée acquisition
+STRING 2498  Spot: Données restantes
+STRING 2499  Vitesse Film
+STRING 2500  ABC Brillance
+STRING 2501  ABC contraste
+STRING 2502  Température Platine
+STRING 2503  V Extraction
+STRING 2504  V Suppresseur
+STRING 2505  Liner Tube
+STRING 2506  I Extraction
+STRING 2507  V Extraction Nominale
+STRING 2508  V Suppresseur Nominal
+STRING 2509  Fil I Nominal
+STRING 2510  Courant Extraction Disjonct.
+STRING 2511  Rayon Pointe
+STRING 2512  Intensité Angulaire Canon
+STRING 2513  Position Pointe
+STRING 2514  Courant Anode Nominal
+STRING 2515  Cal Effac. Faisceau
+STRING 2516  Canon Haut X
+STRING 2517  Canon Haut Y
+STRING 2518  Canon Bas X
+STRING 2519  Canon Bas Y
+STRING 2520  1st Spray Ap I
+STRING 2521  Version
+STRING 2522  Pression demandée
+STRING 2523  Chambre
+STRING 2524  Espac. Graticule
+STRING 2525  Align. Canon X
+STRING 2526  Align. Canon Y
+STRING 2527  Align. Diaphragme X
+STRING 2528  Align. Diaphragme Y
+STRING 2529  Diaphrame à X
+STRING 2530  Diaphrame à Y
+STRING 2531  Canon à X
+STRING 2532  Canon à Y
+STRING 2533  Test No.
+STRING 2534  Test Val
+STRING 2535  V Extraction (Cible)
+STRING 2536  V Suppresseur (Cible)
+STRING 2537  Liner Target
+STRING 2538  V Extraction Mini
+STRING 2539  Haut Profil
+STRING 2540  Progression
+STRING 2541  Largeur Curseur
+STRING 2542  Hauteur Curseur
+STRING 2543  Chauffage Etuve
+STRING 2544  Refroissement Etuve
+STRING 2545  EHT Cal@0.1KV
+STRING 2546  EHT Cal@10KV
+STRING 2547  EHT Cal@24KV
+STRING 2548  EHT Cal@30KV
+STRING 2549  V Extraction Max
+STRING 2550  Platine: M
+STRING 2551  Platine: Aller à M
+STRING 2552  Platine: Limite Basse M
+STRING 2553  Platine: Limite haute M
+STRING 2554  Platine: Départ M
+STRING 2555  Platine: Vecteur M
+STRING 2556  Jeu: distance  M
+STRING 2557  Jeu: V rattrapage M
+STRING 2558  Platine: Départ Vm
+STRING 2559  Platine: Vitesse en M
+STRING 2560  Stage Speed incr M
+STRING 2561  Platine: Accélération M
+STRING 2562  Mag Gain Cal X
+STRING 2563  Mag Gain Cal Y
+STRING 2564  Profil Largeur 1
+STRING 2565  Profil Largeur 2
+STRING 2566  Pa 5
+STRING 2567  Pa 6
+STRING 2568  Pa 7
+STRING 2569  Pa 8
+STRING 2570  Pa 9
+STRING 2571  Pa 10
+STRING 2572  Pb 5
+STRING 2573  Pb 6
+STRING 2574  Pb 7
+STRING 2575  Pb 8
+STRING 2576  Pb 9
+STRING 2577  Pb 10
+STRING 2578  H 1
+STRING 2579  H 2
+STRING 2580  H 3
+STRING 2581  H 4
+STRING 2582  H 5
+STRING 2583  H 6
+STRING 2584  H 7
+STRING 2585  H 8
+STRING 2586  H 9
+STRING 2587  H 10
+STRING 2588  V 1
+STRING 2589  V 2
+STRING 2590  V 3
+STRING 2591  V 4
+STRING 2592  V 5
+STRING 2593  V 6
+STRING 2594  V 7
+STRING 2595  V 8
+STRING 2596  V 9
+STRING 2597  V 10
+STRING 2598  Régalage FCF
+STRING 2599  Temp Eau
+STRING 2600  Limite Temp. Eau
+STRING 2601  Echantillon sur X
+STRING 2602  Echantillon sur Y
+STRING 2603  Ech aller à X
+STRING 2604  Ech aller à Y
+STRING 2605  Hauteur Ech
+STRING 2606  Centre Platine X
+STRING 2607  Centre Platine Y
+STRING 2608  Epaisseur Cale
+STRING 2609  Platine: Cal Inclin
+STRING 2610  Platine: Delta X
+STRING 2611  Platine: Delta Y
+STRING 2612  Platine: Delta Z
+STRING 2613  Platine: Delta I
+STRING 2614  Platine: Delta R
+STRING 2615  Platine: Delta M
+STRING 2616  Profil 1 X1
+STRING 2617  Profil 1 X2
+STRING 2618  Profil 2 X1
+STRING 2619  Profil 2 X2
+STRING 2620  Jeu: distance R
+STRING 2621  Jeu: V rattrapage R
+STRING 2622  Eht: Max utilisateur
+STRING 2623  Ld 1
+STRING 2624  Ld 2
+STRING 2625  Mes radiale: Surface 1
+STRING 2626  Mes radiale: Surface 2
+STRING 2627  Dim.  Pixel Image
+STRING 2628  Stig X seul
+STRING 2629  Stig Y seul
+STRING 2630  AligN Diaph. X Seul
+STRING 2631  Align  Diaph Y Seul
+STRING 2632  EDS Seuil
+STRING 2633  Erreur Inclin. Compucentr.
+STRING 2634  Profil EDS
+STRING 2635  Décalage Support Ech
+STRING 2636  Hauteur Ech.
+STRING 2637  Fichier Nro
+STRING 2638  Impression N°
+STRING 2639  HRRU No.
+STRING 2640  Limite VP en LaB6
+STRING 2641  Intervalle Auto Sat (Neuf)
+STRING 2642  Intervalle Auto Sat (Ancien)
+STRING 2643  Mes radiale: Surface3
+STRING 2644  Mes radiale: Surface4
+STRING 2645  Brillance CCD
+STRING 2646  Spot X Cal
+STRING 2647  Semi Angle
+STRING 2648  Opt. Semi Angle
+STRING 2649  Image: Position X
+STRING 2650  Image: Position Y
+STRING 2651  Z Sécurisé
+STRING 2652  Carte EO
+STRING 2653  Stig. dynamique
+STRING 2654  Wobbler
+STRING 2655  C1: Wobbler
+STRING 2656  C2: Wobble
+STRING 2657  Stig. Equilibrage
+STRING 2658  Optibeam
+STRING 2659  DLL trace
+STRING 2660  Optibeam: Résolution
+STRING 2661  Mode
+STRING 2662  Optibeam garde grand.
+STRING 2663  Filament: Type
+STRING 2664  Anode
+STRING 2665  Filament Neuf
+STRING 2666  Faisceau: Etat
+STRING 2667  EHT: Défaut comunic.
+STRING 2668  Cal: Mode
+STRING 2669  Vit. Balayage
+STRING 2670  C3: Mode Cal
+STRING 2671  C1/C2: Mode Cal
+STRING 2672  Faisceau Effacé
+STRING 2673  Effacement Faisceau
+STRING 2674  C3 : Inversé
+STRING 2675  C3: Hystérésis
+STRING 2676  Focalisation dyn.
+STRING 2677  C1/2/3: Hystérésis
+STRING 2678  Diaphragme Nro.
+STRING 2679  Diaphragme Opt.
+STRING 2680  Etat Diaphragme
+STRING 2681  Cal: Vit . balay.
+STRING 2682  Mode Opératoire
+STRING 2683  Zoom
+STRING 2684  Mode fenêtre
+STRING 2685  Spot
+STRING 2686  Balayage ligne
+STRING 2687  Canaux
+STRING 2688  Stéréo (Acquisition)
+STRING 2689  Profil
+STRING 2690  Filament: Cassé
+STRING 2691  EHT: Disjoncté
+STRING 2692  EHT réinit. ext
+STRING 2693  EHT: Vide bon
+STRING 2694  Etat dim.Pix
+STRING 2695  Gand.: Etat
+STRING 2696  Périphérique
+STRING 2697  Platine: en contact
+STRING 2698  Platine initialisée
+STRING 2699  Platine est
+STRING 2700  Platine: XY+Z
+STRING 2701  Balayage Platine
+STRING 2702  Balay. platine
+STRING 2703  Jeu platine
+STRING 2704  Axe X
+STRING 2705  Axe Y
+STRING 2706  Axe Z
+STRING 2707  Limite X
+STRING 2708  Limite Y
+STRING 2709  limite Z
+STRING 2710  Etat vide
+STRING 2711  Mise à l'air Inhibée
+STRING 2712  EDS activé
+STRING 2713  Fuite Chambre
+STRING 2714  Défaut Penning
+STRING 2715  EDS: Sans Fenêtre
+STRING 2716  WDS
+STRING 2717  Sas d'introduction
+STRING 2718  Hublot
+STRING 2719  Pos. Hublot
+STRING 2720  EDS: Fenêtre 
+STRING 2721  Sas: Etat
+STRING 2722  Colonne: Pomper
+STRING 2723  Colonne: Pompage
+STRING 2724  Vanne Chambre Canon
+STRING 2725  Vanne Colonne Chambre
+STRING 2726  Mise à l'air  Invalide
+STRING 2727  Vanne Canon: Position
+STRING 2728  Vanne Chambre: Pos
+STRING 2729  EDS: Position Fenêtre
+STRING 2730  Sas: Position
+STRING 2731  WDS: Vanne
+STRING 2732  Colonne: Isolation
+STRING 2733  WDS: Pos. vanne
+STRING 2734  Platine: Déplacement  vecteur
+STRING 2735  Platine: Type
+STRING 2736  WDS: Vanne  Motorisée
+STRING 2737  Q1
+STRING 2738  Q2
+STRING 2739  Q3
+STRING 2740  Q4
+STRING 2741  BSD: Rapide
+STRING 2742  BSD: Gain
+STRING 2743  BSD
+STRING 2744  I Ech installé
+STRING 2745  Réduction de bruit
+STRING 2746  Vide: EHT état Inhibé
+STRING 2747  Vide: Inhibe Tension
+STRING 2748  Vide: Inhibe PM
+STRING 2749  Vide: Inhibe Scint.
+STRING 2750  Inclinaison Platine
+STRING 2751  Image: Mémoire
+STRING 2752  Zone
+STRING 2753  Signal A
+STRING 2754  Détecteur
+STRING 2755  I .Ech: Mode
+STRING 2756  LUT: Destination
+STRING 2757  LUT: Source A
+STRING 2758  LUT: Source B
+STRING 2759  Mixage
+STRING 2760  Fenêtre
+STRING 2761  A inversé
+STRING 2762  Auto Vidéo
+STRING 2763  Platine Motorisée
+STRING 2764  Mixeur
+STRING 2765  Connecteur 9
+STRING 2766  Connecteur d'entrée
+STRING 2767  Gauche Gelé
+STRING 2768  Droite gelée
+STRING 2769  Visualisation
+STRING 2770  Gel  en/sur
+STRING 2771  Fonction Auto
+STRING 2772  Geler
+STRING 2773  Platine: Commande Invalide
+STRING 2774  Haute Résolution
+STRING 2775  Zone 0
+STRING 2776  Zone 1
+STRING 2777  Zone 2
+STRING 2778  Zone 3
+STRING 2779  Zone 4
+STRING 2780  Zone 5
+STRING 2781  Zone 6
+STRING 2782  Zone 7
+STRING 2783  GSP
+STRING 2784  Scint.
+STRING 2785  Mise à l'air: Inhibiteur
+STRING 2786  Platine Inclinée
+STRING 2787  PM1 inh.
+STRING 2788  PM2 inh.
+STRING 2789  PM3 inh.
+STRING 2790  Scint. Inh.
+STRING 2791  Collecteur: Inhibé
+STRING 2792  Colonne
+STRING 2793  PM2 installé
+STRING 2794  PM3 installé
+STRING 2795  HRRU: Image
+STRING 2796  Sensibilité Film
+STRING 2797  HRRU: Rep. Ligne
+STRING 2798  HRRU: Annotations
+STRING 2799  HRRU: Dos
+STRING 2800  HRRU
+STRING 2801  HRRU: Etat
+STRING 2802  Moteurs platine
+STRING 2803  Signal B
+STRING 2804  B inversé
+STRING 2805  Stéréo res.
+STRING 2806  Stéréo (G)
+STRING 2807  Stéréo (D)
+STRING 2808  Alarme inh.
+STRING 2809  Corrn. Inclinaison
+STRING 2810  Rot. Balayage
+STRING 2811  Orthog. Balayage
+STRING 2812  C3: Corrn.  Rot
+STRING 2813  Correct. angle platine
+STRING 2814  Grand.: Gamme
+STRING 2815  Toutes Zones
+STRING 2816  Contrôle Ext. Balayage
+STRING 2817  Calibration
+STRING 2818  Auto Vidéo: Mode
+STRING 2819  I. Ech Gamme
+STRING 2820  C3: Rotn Cal
+STRING 2821  Colonne isolée
+STRING 2822  Meilleur Diaphragme
+STRING 2823  Contrôle
+STRING 2824  Histo balayage
+STRING 2825  Balayage V Max
+STRING 2826  Image: Mode
+STRING 2827  HRRU: configurée
+STRING 2828  Optibeam conjugué
+STRING 2829  Vitesse Wobbler
+STRING 2830  Copieur Vidéo
+STRING 2831  Etat impr.
+STRING 2832  Papier VP
+STRING 2833  Sortie vers
+STRING 2834  Ecran
+STRING 2835  Faible Grand.
+STRING 2836  Vitesse Photo
+STRING 2837  HRRU: V. Rapide
+STRING 2838  HRRU: V. Lente
+STRING 2839  Plan double
+STRING 2840  Plan A Gelé
+STRING 2841  Plane B Gelé
+STRING 2842  C1: Inversé
+STRING 2843  C2: Inversé
+STRING 2844  LUT: Mode
+STRING 2845  EDS: Acquisition
+STRING 2846  Balayage Platine Invalide
+STRING 2847  Nouvelle Page VP
+STRING 2848  EDS: Image
+STRING 2849  Image
+STRING 2850  Contrôle DDE
+STRING 2851  EDS: Profils ligne
+STRING 2852  Port Parallèle
+STRING 2853  Joystick
+STRING 2854  Clavier Aux.
+STRING 2855  Trackball
+STRING 2856  EBBU
+STRING 2857  Balayage Objet
+STRING 2858  BSD: Type
+STRING 2859  ISIS toujours à l'écran
+STRING 2860  Détection Image
+STRING 2861  Filtre Image
+STRING 2862  Copier Zone
+STRING 2863  Réduction lecture
+STRING 2864  Réduction écriture
+STRING 2865  Stéréo statique
+STRING 2866  Stéréo semi Dyn.
+STRING 2867  Balayage Focalisation
+STRING 2868  Dir. Focalisation
+STRING 2869  Gen. Impulsions
+STRING 2870  Geler Efface
+STRING 2871  Contrôle Ext. Spot
+STRING 2872  Axe R:
+STRING 2873  Axe I:
+STRING 2874  Limite Inclin.
+STRING 2875  Saturation:
+STRING 2876  Anode Ajust.
+STRING 2877  Données Spot
+STRING 2878  Centrer Point
+STRING 2879  Comparaison Image
+STRING 2880  Film: Réduction
+STRING 2881  Film actif
+STRING 2882  Platine chauffante
+STRING 2883  BSDA
+STRING 2884  Pos. Align. Canon
+STRING 2885  Condition. Canon
+STRING 2886  Extracteur Disjoncté
+STRING 2887  Arrêt Urgence
+STRING 2888  Optibeam Stereo
+STRING 2889  Rattrapage de Jeu X
+STRING 2890  Rattrapage de Jeu Y
+STRING 2891  Rattrapage de Jeu Z
+STRING 2892  Rattrapage de Jeu I
+STRING 2893  Rattrapage de Jeu R
+STRING 2894  Macro est:
+STRING 2895  IA:Routine utilisateur
+STRING 2896  Menu utilisateur
+STRING 2897  IA:Routine
+STRING 2898  Etat ISIS
+STRING 2899  Impr Vidéo: Priorité
+STRING 2900  Flag 0
+STRING 2901  Flag 1
+STRING 2902  Flag 2
+STRING 2903  Flag 3
+STRING 2904  Flag 4
+STRING 2905  Flag 5
+STRING 2906  Flag 6
+STRING 2907  Flag 7
+STRING 2908  ISIS DDE
+STRING 2909  C1 align position
+STRING 2910  C2 Align position
+STRING 2911  Qualité Vide
+STRING 2912  Moteurs platine off
+STRING 2913  Vacuum Mode
+STRING 2914  Vanne Isol. Turbo
+STRING 2915  Vanne Pompe primaire
+STRING 2916  Etat VP
+STRING 2917  Erreur VP
+STRING 2918  Diaphragme fixe
+STRING 2919  Mire
+STRING 2920  Graticule
+STRING 2921  Gun align Cal No.
+STRING 2922  Garder Faisc. On à la fermeture
+STRING 2923  PlaqueArrièreX
+STRING 2924  Gen Balayage
+STRING 2925  Wobbler Canon
+STRING 2926  Wobbler Diaphragme
+STRING 2927  Mode LUT entrée
+STRING 2928  Condenseur Normal
+STRING 2929  Entrée TV
+STRING 2930  Calibration Utilisateur
+STRING 2931  HRRU Gamma
+STRING 2932  En Cours
+STRING 2933  Superviseur
+STRING 2934  Z Mini av Ouverture
+STRING 2935  MEB
+STRING 2936  Suivre Z
+STRING 2937  Autorisation arrêt Canon
+STRING 2938  Etuvage
+STRING 2939  Etat Etuvage
+STRING 2940  Mag Cal Mode
+STRING 2941  Mise à l'air partielle en Veille
+STRING 2942  Axe M est
+STRING 2943  M Limite atteinte
+STRING 2944  Ratrappage Jeu M
+STRING 2945  Acces DDE
+STRING 2946  Points List
+STRING 2947  Butée Rotation
+STRING 2948  Panneau Contrôle
+STRING 2949  ABCC Bri. Cal
+STRING 2950  ABCC Contr. Cal
+STRING 2951  I. Ech On
+STRING 2952  I. ECh: Etat
+STRING 2953  Utilisateur
+STRING 2954  Temps Pixel
+STRING 2955  Contrôle SAS
+STRING 2956  SAS Prêt
+STRING 2957  Temp. Platine Trop Elevée
+STRING 2958  Temp EO trop élevée
+STRING 2959  Eau OK
+STRING 2960  Dépassement Temp
+STRING 2961  Z Protégé
+STRING 2962  Enregistrement
+STRING 2963  Mode Compuc.
+STRING 2964  Cal Eucentricité
+STRING 2965  Liste platine
+STRING 2966  Ligne EDS
+STRING 2967  Couleur Ligne
+STRING 2968  Platine: Annuler Aller à
+STRING 2969  Joystick Désactivé
+STRING 2970  Autorisation Align. Canon
+STRING 2971  EHT Off @ Déconnection
+STRING 2972  Delai Mixage Vidéo
+STRING 2973  VP OK
+STRING 2974  BSD Gamme Auto
+STRING 2975  Mode Etude
+STRING 2976  Carte acquisition
+STRING 2977  Type Gene Balayage
+STRING 2978  Sécurité EHT OK
+STRING 2979  Platine: Init. autorisée
+STRING 2980  Proche $Exchange
+STRING 2981  Détecteur VPSE
+STRING 2982  Support Echantillon
+STRING 2983  Grand. Référence
+STRING 2984  Alimentation SE
+STRING 2985  X Axis
+STRING 2986  Y Axis
+STRING 2987  Z Axis
+STRING 2988  Axe I
+STRING 2989  Axe R
+STRING 2990  Axe M
+STRING 2991  X Activé
+STRING 2992  Y Activé
+STRING 2993  Z Activé
+STRING 2994  I Activé
+STRING 2995  R activé
+STRING 2996  M Actif
+STRING 2997  Platine Cartésienne
+STRING 2998  Auto Sat.
+STRING 2999  Comptage Electron
+STRING 3000  EBBU Utilisé
+STRING 3001  Caméra
+STRING 3002  Stig Cal N
+STRING 3003  Mouse
+STRING 3004  Fermeture
+STRING 3005  Faisc. On
+STRING 3006  Canon On
+STRING 3007  EHT On
+STRING 3008  Faisc. Off
+STRING 3009  EHT Off
+STRING 3010  Veille
+STRING 3011  Charger Valeurs Cibles
+STRING 3012  OK
+STRING 3013  Annuler
+STRING 3014  Cal Stig: Equilibrage
+STRING 3015  Cal rot.de Focalisation
+STRING 3016  Cal: C1/C2
+STRING 3017  Cal: C3
+STRING 3018  Cal Orthog balayage
+STRING 3019  Cal Angle Platine
+STRING 3020  Cal Grandissement
+STRING 3021  Cal Dble grand.
+STRING 3022  Cal Grand. Vitesses de bal.
+STRING 3023  C1: Cal
+STRING 3024  C1: Rem
+STRING 3025  C2: Cal
+STRING 3026  C2: Rem
+STRING 3027  C3: Cal
+STRING 3028  C3: Rem
+STRING 3029  C3: Normal
+STRING 3030  C3: Inversé
+STRING 3031  C3: Hystérésis
+STRING 3032  C1/2/3: Hystérésis
+STRING 3033  Vitesse bal.=  0
+STRING 3034  Vitesse bal.=  1
+STRING 3035  Vitesse bal.=  2
+STRING 3036  Vitesse bal.=  3
+STRING 3037  Vitesse bal.= 4
+STRING 3038  Vitesse bal.= 5
+STRING 3039  Vitesse bal.= 6
+STRING 3040  Vitesse bal.= 7
+STRING 3041  Vitesse bal.= 8
+STRING 3042  Vitesse bal.= 9
+STRING 3043  Vitesse bal.= 10
+STRING 3044  Vitesse bal.=11
+STRING 3045  Vitesse bal.= 12
+STRING 3046  Vitesse bal.= 13
+STRING 3047  Vitesse bal.= 14
+STRING 3048  Vitesse bal.= 15
+STRING 3049  Stig X: Equilibrage
+STRING 3050  Stig Y: Equilibrage
+STRING 3051  Normal
+STRING 3052  Partagé
+STRING 3053  Quad
+STRING 3054  Réduit
+STRING 3055  Réduit(Ajust.)
+STRING 3056  Emission
+STRING 3057  Platine: Initialisation
+STRING 3058  Platine: Départ Balay.
+STRING 3059  Platine: Champ suivant
+STRING 3060  Platine: Arrêt
+STRING 3061  Exécuter Rattrapage Jeu
+STRING 3062  Pompage
+STRING 3063  Mise à l'air
+STRING 3064  Pomp.: Abandon
+STRING 3065  Pomp. colonne: Démarrer
+STRING 3066  Pomp. colonne: Arrêter
+STRING 3067  Platine: Définir  Position
+STRING 3068  Moyen. Image
+STRING 3069  Intégr.Image
+STRING 3070  Intégr. Ligne
+STRING 3071  LUT: Transparente
+STRING 3072  LUT: Gamma
+STRING 3073  LUT: Inverse
+STRING 3074  LUT: Fusioner
+STRING 3075  Geler: Région
+STRING 3076  Dégeler: Zone
+STRING 3077  Geler: Canal
+STRING 3078  Dégeler:  Canal
+STRING 3079  Geler: Tout
+STRING 3080  Dégeler: Tout
+STRING 3081  Abandon Geler
+STRING 3082  Focalisation Grossière
+STRING 3083  Focalisation Précise
+STRING 3084  Alignement Grossier
+STRING 3085  Alignement Standard
+STRING 3086  Alignement Précis
+STRING 3087  Auto Stigmateur
+STRING 3088  Auto Saturation
+STRING 3089  Auto Photo
+STRING 3090  Abandon Auto
+STRING 3091  I éch.: Image
+STRING 3092  I Ech.: Mesure
+STRING 3093  Balayage +
+STRING 3094  Balayage -
+STRING 3095  Sauvegarde  param. HRRU
+STRING 3096  Photo
+STRING 3097  Test Alim. PlatineVide
+STRING 3098  Cal Ampl Ligne
+STRING 3099  Cal Ampl Balayage
+STRING 3100  Cal ligne: Trame
+STRING 3101  Cal centre du balayage
+STRING 3102  Moyen. Ligne
+STRING 3103  Exécuter Stig. dynamique
+STRING 3104  Cal courbe dble Grand.
+STRING 3105  Cal Périphérique
+STRING 3106  Abandon Photo
+STRING 3107  Cal Décalage Faisceau
+STRING 3108  Cal Stéréo
+STRING 3109  HRRU
+STRING 3110  Visualisation/Fichier
+STRING 3111  Imprimante Vidéo
+STRING 3112  Trouver Contraste
+STRING 3113  Trouver Brillance
+STRING 3114  Définir plan A
+STRING 3115  Effacer Plan A
+STRING 3116  Définir plan B
+STRING 3117  Effacer Plan B
+STRING 3118  Définir Stéréo
+STRING 3119  Effacer Stéréo
+STRING 3120  Démarrer temps Dévellop.
+STRING 3121  C1: Inversé
+STRING 3122  C2:  Inversé
+STRING 3123  C1: Normal
+STRING 3124  C2: Normal
+STRING 3125  X: Démarrer Acq.
+STRING 3126  X: Arrêter Acq.
+STRING 3127  X: Ré-initialiser
+STRING 3128  Platine: Commencer Bal.ici
+STRING 3129  Platine: Finir Bal. içi
+STRING 3130  Platine: Déf. départ
+STRING 3131  Platine: déf. fin
+STRING 3132  Platine: Calc Champs.
+STRING 3133  Platine: Champ précédent
+STRING 3134  Geler: Basculer
+STRING 3135  BSD:COMPO
+STRING 3136  BSD:TOPO
+STRING 3137  BSD en place
+STRING 3138  BSD Retiré
+STRING 3139  Cal décalage gamme Grand.
+STRING 3140  BSD: Définir TOPO
+STRING 3141  IA: A+B
+STRING 3142  IA: A - B
+STRING 3143  IA: B - A
+STRING 3144  IA: A min B
+STRING 3145  IA: A max B
+STRING 3146  IA: A vers B
+STRING 3147  IA: B vers A
+STRING 3148  Egalisation Histo: Mémoire
+STRING 3149  Egalisation Histo: LUT
+STRING 3150  Fraction de surface
+STRING 3151  IA: A Ech B
+STRING 3152  IA:Réinit LUT
+STRING 3153  Trouver Image
+STRING 3154  Auto Focus+Stig
+STRING 3155  Calc Prof. Stéréo Stat
+STRING 3156  Démarrer l' Acquisition Spot
+STRING 3157  Arrêter l'acquisition Spot
+STRING 3158  Effacer Tampon données Spot
+STRING 3159  Démarrer/Arrêter Film
+STRING 3160  Trouver ABC
+STRING 3161  Stéréo séparation
+STRING 3162  Stéréo:Former paire
+STRING 3163  Align Canon: Supérieur
+STRING 3164  Align Canon: Inférieur
+STRING 3165  Align Canon: Normal
+STRING 3166  Arrêt Urgence
+STRING 3167  IA:Chercher État de la routine
+STRING 3168  ISIS Start
+STRING 3169  ISIS Stop
+STRING 3170  ISIS get status
+STRING 3171  Run ISIS
+STRING 3172  Démarrer QWin
+STRING 3173  Cal Centre Emission
+STRING 3174  Cal Align. Canon
+STRING 3175  Next Gun Cal
+STRING 3176  Imprimante
+STRING 3177  Moyen Pixel
+STRING 3178  Align. Auto Diaphragme
+STRING 3179  Cal Gun/Aper Align
+STRING 3180  Cal. Grandissment Utilisateur
+STRING 3181  Runup Maintenance
+STRING 3182  Réinit EHT
+STRING 3183  Réinit.Calibration EO
+STRING 3184  Mode TV
+STRING 3185  Démarrer Etuvage
+STRING 3186  Annuler Etuvage
+STRING 3187  Moy. Continu
+STRING 3188  Ouvrir Vanne Colonne Chambre
+STRING 3189  Fermer Vanne Chambre Colonne
+STRING 3190  Pompage SAS
+STRING 3191  Ouverture SAS
+STRING 3192  Cal. Joystick
+STRING 3193  Réinit. Temp.
+STRING 3194  Start Comp. Cal.
+STRING 3195  Accept Cal. Comp.
+STRING 3196  Exit Comp. Cal.
+STRING 3197  Définir centre Platine
+STRING 3198  Annuler Platine Aller à
+STRING 3199  Hold Airlock Vacuum
+STRING 3200  Platine: Forcer Initialisation
+STRING 3201  Passer en  HV
+STRING 3202  Passer en VP
+STRING 3203  EO Self Test
+STRING 3204  Annuler Auto Sat.
+STRING 3205  Absent
+STRING 3206  auto
+STRING 3207  MK1
+STRING 3208  MK 2
+STRING 3209  CAN Bus
+STRING 3210  Série
+STRING 3211  Off
+STRING 3212  On
+STRING 3213  Off
+STRING 3214  On
+STRING 3215  Off
+STRING 3216  sur-X
+STRING 3217  sur-Y
+STRING 3218  On
+STRING 3219  manuel
+STRING 3220  Résolution
+STRING 3221  Prof. de champ
+STRING 3222  Tungstène
+STRING 3223  Denka
+STRING 3224  Kimball
+STRING 3225  FEI
+STRING 3226  FE FEI
+STRING 3227  Haute tension
+STRING 3228  Basse tension
+STRING 3229  Non
+STRING 3230  Oui
+STRING 3231  Arrêté
+STRING 3232  Faisc. ON
+STRING 3233  Chauffage en cours
+STRING 3234  Arrêt en cours
+STRING 3235  Arrêt en cours
+STRING 3236  Arrêt en cours
+STRING 3237  Restauration en cours
+STRING 3238  Veille EHT
+STRING 3239  Arrêt EHT en cours
+STRING 3240  Faisceau Off
+STRING 3241  EHT Off
+STRING 3242  Chauffage
+STRING 3243  Attente vide
+STRING 3244  Chauffage Maintenance
+STRING 3245  Arrêt urgence
+STRING 3246  Conditioning
+STRING 3247  C1/C2
+STRING 3248  C3
+STRING 3249  Orthogonalité
+STRING 3250  Comp. grand .vitesses de balayage
+STRING 3251   Offset double grandissement
+STRING 3252  équilibrage des Stig.
+STRING 3253  angle de platine
+STRING 3254  Rotation de mise au point
+STRING 3255  Grandissement
+STRING 3256  Ampl ligne
+STRING 3257   Ampl Trame
+STRING 3258  Ligne: Champ
+STRING 3259  Centre de rotation
+STRING 3260  Pente double grandissement
+STRING 3261  Périphérique
+STRING 3262  Déplacement  faisceau
+STRING 3263  Stéréo
+STRING 3264  Décalage Gamme grand.
+STRING 3265  Centre émission
+STRING 3266  Align. Canon
+STRING 3267  Align Diaphragme
+STRING 3268  Grand. Utilisateur
+STRING 3269  0
+STRING 3270  1
+STRING 3271  2
+STRING 3272  3
+STRING 3273  4
+STRING 3274  5
+STRING 3275  6
+STRING 3276  7
+STRING 3277  8
+STRING 3278  9
+STRING 3279  10
+STRING 3280  11
+STRING 3281  12
+STRING 3282  13
+STRING 3283  14
+STRING 3284  15
+STRING 3285  Rem
+STRING 3286  Cal
+STRING 3287  C1 Cal
+STRING 3288  C2 Cal
+STRING 3289  C1 Rem
+STRING 3290  C2 Rem
+STRING 3291  Normal
+STRING 3292  Inversé
+STRING 3293  Inversion
+STRING 3294  Normalisation
+STRING 3295  Inactif
+STRING 3296  Actif
+STRING 3297  1
+STRING 3298  2
+STRING 3299  3
+STRING 3300  4
+STRING 3301  5
+STRING 3302  6
+STRING 3303  Propre 
+STRING 3304  Contaminé
+STRING 3305  Partagé
+STRING 3306  Quad
+STRING 3307  Emission
+STRING 3308  Réduit
+STRING 3309  Réduit (Ajust.)
+STRING 3310  TV
+STRING 3311  1
+STRING 3312  2
+STRING 3313  inconnu
+STRING 3314  non calibré
+STRING 3315  calibré
+STRING 3316  Photo 120 mm
+STRING 3317  Photo 35 mm
+STRING 3318  Polaroid 545
+STRING 3319  Polaroid 550
+STRING 3320  Ecran 14/15 pouces
+STRING 3321  Ecran 17 pouces
+STRING 3322  Ecran 19/21 pouces
+STRING 3323  Imprimante P68B
+STRING 3324  Imprimante P78B
+STRING 3325  imprimante CP100B
+STRING 3326  Imprimante CP210U
+STRING 3327  Imprimante CP200BH
+STRING 3328  Imprimante Alden
+STRING 3329  Imprimante P66D
+STRING 3330   Imprimante Vidéo
+STRING 3331  Quitte  Mode Etude
+STRING 3332  420
+STRING 3333  440
+STRING 3334  430
+STRING 3335  Phoenix
+STRING 3336  435 VP
+STRING 3337  EBL 50
+STRING 3338  EBL100
+STRING 3339  1550
+STRING 3340  1530
+STRING 3341  1560
+STRING 3342  438VP
+STRING 3343  1450
+STRING 3344  1450VP
+STRING 3345  1460
+STRING 3346  1460VP
+STRING 3347  1420
+STRING 3348  1420VP
+STRING 3349  1430
+STRING 3350  1430VP
+STRING 3351  1525
+STRING 3352  1455
+STRING 3353  1455VP
+STRING 3354  Rapide
+STRING 3355  Nuit
+STRING 3356  Weekend
+STRING 3357  Utilisateur 
+STRING 3358  Chauffage
+STRING 3359  Refroidissement
+STRING 3360  Local R/O
+STRING 3361  Distant R/O
+STRING 3362  Local R/W
+STRING 3363  Full
+STRING 3364  Vide
+STRING 3365  Pas démarré
+STRING 3366  Dans liste
+STRING 3367  Sur Fin
+STRING 3368  Sur Début
+STRING 3369  1
+STRING 3370  2
+STRING 3371  3
+STRING 3372  4
+STRING 3373  5
+STRING 3374  6
+STRING 3375  7
+STRING 3376  8
+STRING 3377  9
+STRING 3378  10
+STRING 3379  Supérieur Gamme
+STRING 3380  Attente Gamme Auto
+STRING 3381  Valide
+STRING 3382  Inférieur Gamme
+STRING 3383  Pas installé
+STRING 3384  100 ns
+STRING 3385  200 ns
+STRING 3386  400 ns
+STRING 3387  800 ns
+STRING 3388  Temp. trop élevée
+STRING 3389  Enregistrement
+STRING 3390  Invalide
+STRING 3391  Inclinaison
+STRING 3392  Rotate
+STRING 3393  Tilt & Rot.
+STRING 3394  calibration
+STRING 3395  Platine
+STRING 3396  Reg 1
+STRING 3397  Reg 2
+STRING 3398  Reg 3
+STRING 3399  Reg 4
+STRING 3400  Reg 5
+STRING 3401  Default Printer
+STRING 3402  Occupé
+STRING 3403  Champs jointifs en X
+STRING 3404  en Z selon X
+STRING 3405  Champs jointifs en Y
+STRING 3406  En Z selon Y
+STRING 3407  en Mouvement
+STRING 3408  sur champ
+STRING 3409  fin balay.
+STRING 3410  Néant
+STRING 3411  Basse extérieure
+STRING 3412  Basse intérieure
+STRING 3413  Basse utilisateur
+STRING 3414  Haute utilisateur
+STRING 3415  Haute intérieure
+STRING 3416  Haute extérieure
+STRING 3417  P. Atmos.
+STRING 3418  Prêt
+STRING 3419  Pompage
+STRING 3420  Erreur
+STRING 3421  Attente vitesse turbo
+STRING 3422  Attente Penning
+STRING 3423  Attente EHT
+STRING 3424  Mise à l'air inhibée 
+STRING 3425  Vers VP
+STRING 3426  Absent 
+STRING 3427  Présent 
+STRING 3428  Oxford Inst.
+STRING 3429  Fermé
+STRING 3430  Ouvert
+STRING 3431  Déconnecté
+STRING 3432  Demandé
+STRING 3433  OK
+STRING 3434  Incorrect
+STRING 3435  cartésienne
+STRING 3436  eucentrique
+STRING 3437  Cartesian 95/98
+STRING 3438  Makro MK1
+STRING 3439  Fjeld 6 in.
+STRING 3440  Fjeld 5 in.
+STRING 3441  Makro MK2
+STRING 3442  Personalisé
+STRING 3443  Normal
+STRING 3444  Inversé
+STRING 3445  Faible
+STRING 3446  Médium
+STRING 3447  Elevé
+STRING 3448  Très élevé
+STRING 3449  Int. Trame actif
+STRING 3450  Int.Ligne actif
+STRING 3451  Moy. Trame
+STRING 3452  Int. ligne teminée
+STRING 3453  Int.Trame Terminée
+STRING 3454  Moy. ligne
+STRING 3455  Moyen.Pixel
+STRING 3456  Moy. Continu
+STRING 3457  en X
+STRING 3458  en Y
+STRING 3459  1024 * 768
+STRING 3460  512 * 384
+STRING 3461  2048 * 1536
+STRING 3462  3072 * 2304
+STRING 3463  0
+STRING 3464  1
+STRING 3465  2
+STRING 3466  3
+STRING 3467  4
+STRING 3468  5
+STRING 3469  6
+STRING 3470  7
+STRING 3471  Aucun
+STRING 3472  SE1
+STRING 3473  SE2
+STRING 3474  QBSD
+STRING 3475  RBSD
+STRING 3476  I éch.
+STRING 3477  Cathodo
+STRING 3478  Trans
+STRING 3479  T.V.
+STRING 3480  Aux 1
+STRING 3481  Aux 2
+STRING 3482  Aux 3
+STRING 3483  Aux 4
+STRING 3484  Aux 5
+STRING 3485  Aux 6
+STRING 3486  Aux 7
+STRING 3487  Aux 8
+STRING 3488  Aux 9
+STRING 3489  Image
+STRING 3490  Mesure
+STRING 3491  Zone 0
+STRING 3492  Zone 1
+STRING 3493  Zone 2
+STRING 3494  Zone 3
+STRING 3495  Zone 4
+STRING 3496  Zone 5
+STRING 3497  Zone 6
+STRING 3498  Zone 7
+STRING 3499  Utilisateur 0
+STRING 3500  Utilisateur 1
+STRING 3501  Utilisateur 2
+STRING 3502  Utilisateur 3
+STRING 3503  Utilisateur 4
+STRING 3504  Utilisateur 5
+STRING 3505  Utilisateur 0
+STRING 3506  Utilisateur 1
+STRING 3507  Utilisateur 2
+STRING 3508  Utilisateur 3
+STRING 3509  Utilisateur 4
+STRING 3510  Utilisateur 5
+STRING 3511  Gauche
+STRING 3512  Droite
+STRING 3513  Brillance
+STRING 3514  Contraste
+STRING 3515  BC
+STRING 3516  8
+STRING 3517  Fin de Trame
+STRING 3518  Fin de Ligne
+STRING 3519  Commande
+STRING 3520  Mise au point
+STRING 3521  Alignement canon
+STRING 3522  Astigmatisme
+STRING 3523  Saturation
+STRING 3524  Trouver contraste
+STRING 3525  Trouver brillance
+STRING 3526  Trouver Image
+STRING 3527  Variation Focalisation
+STRING 3528  Focal.+astigm.
+STRING 3529  ABC
+STRING 3530  balayage
+STRING 3531  Gelée
+STRING 3532  Vanne EDS non fermée
+STRING 3533  Vanne WDS non fermée
+STRING 3534  Sas non fermé
+STRING 3535  Vanne canon non fermée
+STRING 3536  Vanne canon non fermée
+STRING 3537  vanne col. non ouverte
+STRING 3538  vanne col. non fermée
+STRING 3539  Platine inclinée
+STRING 3540  Présence faisceau
+STRING 3541  Erreur pompage
+STRING 3542  Température platine
+STRING 3543  S440
+STRING 3544  S420
+STRING 3545  S425
+STRING 3546  435VP/438VP
+STRING 3547  EBL
+STRING 3548  1400
+STRING 3549  1500
+STRING 3550  1400VP
+STRING 3551  Mémoire
+STRING 3552  Balayage éch.
+STRING 3553  Cal Bri.
+STRING 3554  Cal Cont.
+STRING 3555  50 ASA
+STRING 3556  100 ASA
+STRING 3557  200 ASA
+STRING 3558  400 ASA
+STRING 3559  800 ASA
+STRING 3560  3
+STRING 3561  4
+STRING 3562  120 mm 
+STRING 3563  35 mm 
+STRING 3564  Polaroid 545
+STRING 3565  Polaroid 550
+STRING 3566  Mark 1
+STRING 3567  Mark 2
+STRING 3568  Mark 3
+STRING 3569  XY
+STRING 3570  XYZ
+STRING 3571  XYZTR
+STRING 3572  XYZTRM
+STRING 3573  XYZR
+STRING 3574  XYZT
+STRING 3575  Standard
+STRING 3576  Désactivé
+STRING 3577  Activé
+STRING 3578  Valeurs cibles
+STRING 3579  Valeurs actuelles
+STRING 3580  3->10 pA
+STRING 3581  10->30 pA
+STRING 3582  30->100 pA
+STRING 3583  100->300 pA
+STRING 3584  300->1000 pA
+STRING 3585  1->3 nA
+STRING 3586  3->10 nA
+STRING 3587  10->30 nA
+STRING 3588  30->100 nA
+STRING 3589  100->300 nA
+STRING 3590  300->1000 nA
+STRING 3591  1->3 µA
+STRING 3592  3->10 µA
+STRING 3593  +
+STRING 3594  -
+STRING 3595  Signal A
+STRING 3596  Signal B
+STRING 3597  Quart d'écran
+STRING 3598  Réduit
+STRING 3599  P78B
+STRING 3600  CP210U
+STRING 3601  CP100B
+STRING 3602  CP200BH
+STRING 3603  Alden
+STRING 3604  P68B
+STRING 3605  P66D
+STRING 3606  UP-D860
+STRING 3607  Standard
+STRING 3608  Large
+STRING 3609  Imprimante Vidéo
+STRING 3610  HRRU
+STRING 3611  Ecran/Fichier
+STRING 3612  Impr. par défaut
+STRING 3613  14/15 pouces
+STRING 3614  17 pouces
+STRING 3615  19/21 pouces
+STRING 3616  15 secs
+STRING 3617  30 secs
+STRING 3618  45 secs
+STRING 3619  60 secs
+STRING 3620  Stéréo
+STRING 3621  Image X
+STRING 3622  Pseudo couleur
+STRING 3623  Normalisé
+STRING 3624  Simple
+STRING 3625  Plusieurs
+STRING 3626  LPT1
+STRING 3627  LPT2
+STRING 3628  LPT3
+STRING 3629  Com 1
+STRING 3630  Com 2
+STRING 3631  Com 3
+STRING 3632  Com 4
+STRING 3633  MK1 (2 Quadrants)
+STRING 3634  MK1 (4 Quadrants)
+STRING 3635  MK2 (2 Quadrants)
+STRING 3636  MK2 (4 Quadrants)
+STRING 3637  MK2 (Motorisé 4 Quad.)
+STRING 3638  Noir
+STRING 3639  Blanc
+STRING 3640  Gris
+STRING 3641  Contour 1
+STRING 3642  Contour 2
+STRING 3643  Bords Horiz.
+STRING 3644  Bords Vert.
+STRING 3645  Laplace 1
+STRING 3646  Laplace 2
+STRING 3647  Prewitt
+STRING 3648  Sobel
+STRING 3649  Moyen
+STRING 3650  Gaussien
+STRING 3651  5
+STRING 3652  6
+STRING 3653  7
+STRING 3654  8
+STRING 3655  Montante
+STRING 3656  Descendante
+STRING 3657  Premier pic
+STRING 3658  Second Pic
+STRING 3659  Lecture
+STRING 3660  Lecture
+STRING 3661  Affichage
+STRING 3662  Faisceau + Platine
+STRING 3663  Platine 
+STRING 3664  Faisceau
+STRING 3665  Platine (X)
+STRING 3666  Platine (Y)
+STRING 3667  2
+STRING 3668  4
+STRING 3669  8
+STRING 3670  BSD
+STRING 3671  Trans
+STRING 3672  Supérieure
+STRING 3673  Inférieure
+STRING 3674  Conditionné
+STRING 3675  Conditionnement
+STRING 3676  Non Conditionné
+STRING 3677  +
+STRING 3678  -
+STRING 3679  + -
+STRING 3680  Echec/Non trouvée
+STRING 3681  Attente
+STRING 3682  terminée
+STRING 3683  9
+STRING 3684  erreur
+STRING 3685  Premier plan
+STRING 3686  Arrière plan
+STRING 3687  Pauvre
+STRING 3688  Marginal
+STRING 3689  Bon
+STRING 3690  Vide Elevé
+STRING 3691  Pression Variable
+STRING 3692  Ereur
+STRING 3693  Alimenté
+STRING 3694  P. atm. (VP)
+STRING 3695  P.atm (HV)
+STRING 3696  Pompage(HV)
+STRING 3697  Vers VP
+STRING 3698  En VP
+STRING 3699  Prêt pour mise à P.A.
+STRING 3700  Prêt pour pompage
+STRING 3701  Canon activé
+STRING 3702  Délai Canon
+STRING 3703  Attente > MCP
+STRING 3704  Attente < MCP
+STRING 3705  Erreur
+STRING 3706  erreur mode VP
+STRING 3707  Transparant
+STRING 3708  Gamma
+STRING 3709  Inverse
+STRING 3710  Utilisateur
+STRING 3711  Normal
+STRING 3712  CCD
+STRING 3713  PAL
+STRING 3714  NTSC
+STRING 3715  Linéaire
+STRING 3716  Dégressif
+STRING 3717  Progressif
+STRING 3718  Correction S
+STRING 3719  Ecriture..
+STRING 3720  Impression..
+STRING 3721  Mise en service..
+STRING 3722  HRRU..
+STRING 3723  Intégration..
+STRING 3724  En cours d'arrêt..
+STRING 3725  Initialisation platine..
+STRING 3726  Vers Mode Etude.. 
+STRING 3727  Vers mode Résolution
+STRING 3728  Reg 6
+STRING 3729  Reg 7
+STRING 3730  Reg 8
+STRING 3731  Reg 9
+STRING 3732  Bleu Foncé
+STRING 3733  Vert Foncé
+STRING 3734  Turquoise
+STRING 3735  Rouge Foncé
+STRING 3736  Violet foncé
+STRING 3737  Jaune
+STRING 3738  Gris foncé
+STRING 3739  Blanc
+STRING 3740  Bleu
+STRING 3741  Vert
+STRING 3742  Bleu Clair
+STRING 3743  Rouge
+STRING 3744  Violet
+STRING 3745  Moutarde
+STRING 3746  Gris clair
+STRING 3747  Invalide
+STRING 3748  Valide
+STRING 3749  VP
+STRING 3750  HV
+STRING 3751  Matrix PC Process
+STRING 3752  Matrox Genesis
+STRING 3753  Matrix Titan
+STRING 3754  Mémoire ligne
+STRING 3755  ISA
+STRING 3756  Serial
+STRING 3757  L-REM
+STRING 3758  Multi
+STRING 3759  x 1
+STRING 3760  x 2
+STRING 3761  x 4
+STRING 3762  LEO 1500VP
+STRING 3763  LEO 1525VP
+STRING 3764  LEO 1530VP
+STRING 3765  LEO 1550VP
+STRING 3766  1.6 µs 
+STRING 3767  3.2 µs 
+STRING 3768  6.4 µs 
+STRING 3769  12.8 µs 
+STRING 3770  25.6 µs 
+STRING 3771  51.2 µs 
+STRING 3772  102.4 µS
+STRING 3773  204.8 µs
+STRING 3774  409.6 µs 
+STRING 3775  819.2 µs 
+STRING 3776  1.64 ms
+STRING 3777  CAN Bus MK2
+STRING 3778  Rapide
+STRING 3779  Précis
+STRING 3780  W (Agar A054)
+STRING 3781  W (Zeiss)
+STRING 3782  W (Agar A054-L)
+STRING 992  Supprimer les Messages
+STRING 993  GSP-DBUG
+STRING 994  ON-Rapide
+STRING 995  ON-Lent
+STRING 996  OFF
+STRING 997  Réinit.
+STRING 998  Fichier
+STRING 999  Panneaux
+STRING 1000  Texte Français Version V02.04 12-Janvier-96
+STRING 1001  Equilibrage Stig X
+STRING 1002  Equilibrage StigY
+STRING 1003  Grand.
+STRING 1004  Heure
+STRING 1005  Date
+STRING 1006  Mode de Visualisation
+STRING 1007  Normal
+STRING 1392  Meilleur
+STRING 1393  Réglable
+STRING 1394  Image vers Imprimante Vidéo
+STRING 1395  Portrait
+STRING 1396  Paysage
+STRING 1397  Papier Large
+STRING 1398  Nvelle Page
+STRING 1399  Information Fichier TIFF
+STRING 1400  Off
+STRING 1401  Sélectionner 
+STRING 1406  OK 
+STRING 1407  Annuler
+STRING 1408  Abandon
+STRING 1409  Aide
+STRING 1410  Vert foncé
+STRING 1411  Rouge foncé
+STRING 1412  Distance sur le périphérique (mm) = 
+STRING 1413  &Importer  TIFF..
+STRING 1414  Par défaut
+STRING 1415  P&resse-papiers..
+STRING 1416  &Définir Exporter/Photo .. 
+STRING 1417  Exporter/&Photo..
+STRING 1418  Grandissement par défaut Périphérique de sortie
+STRING 1419  &Exporter  TIFF
+STRING 1420  Mire
+STRING 1421  Graticule
+STRING 1422  Pas du Grat.
+STRING 1423  Zone Focalisation
+STRING 1440  Gamme d'erreur de la valeur mesurée
+STRING 1441  Curseurs de mesure trop proches
+STRING 1442  Noms EDS
+STRING 1443  Ajouter Numérique
+STRING 1444  Effacer
+STRING 1450  Table Grand.
+STRING 1451  Rouge
+STRING 1452  Vert
+STRING 1453  Bleu
+STRING 1454  Jaune
+STRING 1455  Cyan
+STRING 900  Choisir position du minimum d'astigmatisme
+STRING 901  Erreur de LECTURE interface MEB: 
+STRING 902  Erreur d' ECRITURE interface MEB: 
+STRING 903  Erreur de COMMANDE interface MEB: 
+STRING 904  ERREUR 
+STRING 905  Type de Fichier Incorrect! 
+STRING 906  Sauvegarder Sélection courante
+STRING 907  N'est pas un Fichier de mise en page! 
+STRING 908  Echec de chargement 
+STRING 909  Retourne à la mise en page d'origine
+STRING 910  Sauvegarder Mise en page courante
+STRING 911  Sauvegarder l'identité des paramètres sélectionnés
+STRING 1680  Identité existante - remplacer?
+STRING 1681  actionné!
+STRING 1682  Pas de Source
+STRING 1683  Image Stockée
+STRING 1684  Profil ligne balayée
+STRING 1685  Profils X
+STRING 1686  Choisir la position Y pour le graphe
+STRING 1687  Choisir la position Y pour l'échelle
+STRING 1688  Mise en marche
+STRING 1689  Aucun fichier chargé
+STRING 1690  Sommaire
+STRING 1691  Réglages courants
+STRING 1692  Rechercher fichier
+STRING 1693  Edition
+STRING 1694  L'application LEO UIF est déjà active
+STRING 1695  FATAL
+STRING 1728  Démarrer içi
+STRING 1729  Terminer içi
+STRING 1730  Calc Champs
+STRING 1731  Choisir Surface
+STRING 1732  Démarrer le balay
+STRING 1733  Platine XY+Z
+STRING 1734  Pas
+STRING 1735  Balayage Platine
+STRING 1736  Zone de balayage platine
+STRING 1737  Restriction
+STRING 1738  Balayage Platine Implique Rotation Balayage off
+STRING 1739  Choisir Répertoire Image
+STRING 1740  Choisir point de seuillage
+STRING 1741  OUI
+STRING 1742  NON
+STRING 1743  Aucune Information Disponible
+STRING 1840  Le délai d'utilisation de votre licence d'évaluation est dépassé
+STRING 1841  Vos licences vont être réinstallées dans l'état précédant la période d'évaluation, toutes les licences installées pendant la période d'installation devront être réinstallées
+STRING 1842  Sauvegarder l'Alignement du Canon dans les Conditions
+STRING 1843  Pas une image pleine taille
+STRING 1844  Traitez les mesures avec précautions
+STRING 1845  &Restaurer
+STRING 1846  &Déplacer
+STRING 1847  Di&mensionner
+STRING 1848  &Réduire
+STRING 1849  &Agrandir
+STRING 1850  &Basculer vers..	Ctrl+Esc
+STRING 1851  &Fermer	Alt+F4
+STRING 1852  Centre
+STRING 1853  Platine + Faisceau
+STRING 1854  Platine Seulement
+STRING 1855  Faisceau Seulement
+STRING 1696  Espace disque insuffisant pour cette application
+STRING 1697  LEO démarré
+STRING 1698  Attente des données de la NVRAM .....
+STRING 1699  LEO ne peut pas fonctionner en même temps que les utilitaires Vide
+STRING 1700  Fermer les utilitaires Vide S.V.P.
+STRING 1701  LEO ne peut pas fonctionner en même temps que les utilitaires NVRAM 
+STRING 1702  Fermer les utilitaires NVRAM S.V.P.
+STRING 1703  Echec d'initialisation LEO 
+STRING 1704  Erreur durant l'utilisation SEM_INIT 
+STRING 1705  Définir les conditions devant être sauvegardées
+STRING 1706  Sélectionner les Paramètres
+STRING 1707  Boite de Nav. Introuvable
+STRING 1708  Introuvable 
+STRING 1709   Fermé
+STRING 1710  Erreur d'accès aux licences
+STRING 1711   Numéro de série Indéterminé
+STRING 1808  Graphe 
+STRING 1809  Langue
+STRING 1810  Anglais
+STRING 1811  Français
+STRING 1812  Allemand
+STRING 1813  Italien
+STRING 1814  Espagnol
+STRING 1815  Chinois
+STRING 1816  Traitment d'Image ..
+STRING 1817  Stéréo Statique..
+STRING 1818  LEO_FRA.HLP
+STRING 1819  CONF_FRA.HLP
+STRING 1820  ERRS_FRA.HLP
+STRING 1821  TKB_FRA.HLP
+STRING 1822  AIDE LEO UIF
+STRING 1823  Aide configuration LEO
+STRING 1824  Erreurs LEO et notes
+STRING 1825  Aide sur le Trackerball
+STRING 1826  En mode Wobbler
+STRING 1827  Moyennage Trame (N=1)
+STRING 1828  Balayage Rapide
+STRING 1829  Garder à l'écran
+STRING 1830  ISIS
+STRING 1831  Aide toujours à l'écran - échec dans la recherche de la fenêtre
+STRING 1832  Centre
+STRING 1833  Complément..
+STRING 1834  Réinstaller en laissant EHT en veille
+STRING 1836   nécessaire pour carto X en intensité
+STRING 1837  Trouver Image
+STRING 1838  Courant échantillon..
+STRING 1839  Jours restant avant l'expiration du délai d'utilisation de la licence d'évaluation =  
+STRING 1856  ANODE AJUSTABLE
+STRING 1857  Positionnez sur Haute Tension S. V. P. 
+STRING 1858  Positionnez sur Basse Tension S. V. P. 
+STRING 1859  &Listes de Fonctions des Boutons
+STRING 1860  &Action des Boutons
+STRING 1861  Diaphragme de définition
+STRING 1862  Gauche mm
+STRING 1863  Droite mm
+STRING 1864  Diaphragme Film 
+STRING 1865  Toutes
+STRING 1866  Expert
+STRING 1867  Débutant
+STRING 1868  Police suivante
+STRING 1869  Style suivant
+STRING 1870  SelNavCMD
+STRING 1871  LogOn
+STRING 1872  LogOff
+STRING 1873  Sauvegarder config EDS 
+STRING 1874  Rattrapage Jeu
+STRING 1875  Analyse d'Image ..
+STRING 1876  Moteurs Off
+STRING 1877  Select Emission Centre 
+STRING 1878  Contrôle Pression..
+STRING 1879  Trou
+STRING 1880  Fusionner Standard
+STRING 1881  Fusionner fichier
+STRING 1882  Impression
+STRING 1883  Réglages Impression..
+STRING 1884  Impression en cours..
+STRING 1885  Panneau de maintenance VP
+STRING 1886  Mise à l’air inhibée:
+  la platine doit être au %d, %d ? 
+STRING 1887  Applic HP déjà utilisée
+STRING 1888  Impossible d’établir la communication
+ avec le port de communication MEB COM%d:
+STRING 1889  Communication carte HP toujours active!
+STRING 1890  Le réglage VP à échoué!
+STRING 1891  Pression demandée: hors gamme
+STRING 1892  Inconnu
+STRING 1893  Alimenté
+STRING 1894  VP: P Atmos.
+STRING 1895  HV: P Atmos.
+STRING 1896  HV: Pompage
+STRING 1897  VP: pompage
+STRING 1898  Prêt pour mise à l’air
+STRING 1899  Prêt pour pompage
+STRING 1900  Transition vers HV
+STRING 1901  Transition vers VP
+STRING 1902  erreur HPSEM
+STRING 1903  erreur HPAPP
+STRING 1424  Zone De Données
+STRING 1425  Macro présente
+STRING 1426  Paramètres à Sauvegarder dans fichier TIFF
+STRING 1427  Ajouter Date
+STRING 1428  Ajouter Heure
+STRING 1429  Ajouter Analogique
+STRING 1430  Etat &antérieur
+STRING 1431  Rétablir der&nier état!
+STRING 1432  Dé&butant
+STRING 1433  E&xpert
+STRING 1434  Fichier DEFMAG.LEO introuvable
+STRING 1435  Mise en Veille
+STRING 1436  In&fo..
+STRING 1437  Reservé
+STRING 1438  Erreur format Fichier 
+STRING 1439  Toutes Fonctions
+STRING 800  Contrôle
+STRING 801  Réglages
+STRING 802  Position/Taille
+STRING 803  A propos de LEO
+STRING 804  Point-Point
+STRING 805  Echapement
+STRING 806  Angulaire
+STRING 807  Sauvegarder
+STRING 808  Charger
+STRING 809  Verrouiller
+STRING 810  Déverrouiller
+STRING 811  Radiale
+STRING 812  3D Point-Point
+STRING 813  Profil Vecteur
+STRING 814  Annot/mesures
+STRING 815  Mesure
+STRING 1712  Commence la fermeture de 
+STRING 1713  Termine UIF.....
+STRING 1714  Mode Opératoire ne convenant pas à la Cartographie Platine
+STRING 1715  Grandissement trop élevé pour la Cartographie Platine
+STRING 1716  Déplacement de l'Image par déplacement Faisceau
+STRING 1717  Grandissement inférieur à la valeur Liens
+STRING 1718  Supérieur à la limite Déplacement Faisceau
+STRING 1719  Etes-vous SUR?
+STRING 1720  Les Marques et Noms de Positions Platine n'ont pas été sauvegardés
+STRING 1721  Sauvegarder la liste de Positions Platine  
+STRING 1722  Choisir sur l'image
+STRING 1723  Coord. de départ
+STRING 1724  Taille de champ
+STRING 1725  Champs
+STRING 1726  Coord. d'arrivée
+STRING 1727  Sur champ
+STRING 1456  Magenta
+STRING 1457  Orange
+STRING 1458  Blanc
+STRING 1459  Transparent
+STRING 1460  Bleu foncé
+STRING 1461  Liens
+STRING 1462  EHT/I Sonde
+STRING 1463  Geler
+STRING 1464  Dégeler
+STRING 1465  Tension Collecteur
+STRING 1470  Aller vers &Panneau..
+STRING 1471  &Fichiers
+STRING 768  Choisir Panneau
+STRING 769  Choisir pour Effacer!
+STRING 770  Existe! - remplacer?
+STRING 771  Répertoire &utilisateur..
+STRING 772  Trace-toggle
+STRING 773  Commandes
+STRING 774  Boutons
+STRING 775  Interrupteurs
+STRING 776  Paramètres
+STRING 777   (Touche de Droite  pour le menu)
+STRING 778  Déplacer
+STRING 779  Editer
+STRING 780  Effacer
+STRING 781  Editer Panneau
+STRING 782  Choisir Départ Liaison
+STRING 783  Choisir Fin Liaison
+STRING 700  Erreur pendant la lecture
+STRING 701  Gamme de taille des diaphragmes 5 -> 500 
+STRING 702  S&tandard!
+STRING 703  Gamme X
+STRING 720  Etat
+STRING 721  Sélection
+STRING 722  Fichier
+STRING 724  &Charger un ETAT..
+STRING 725  Charger Panneaux
+STRING 726  Sauvegarder la Sélection
+STRING 727  Charger la Sélection
+STRING 728  &Grand/Foc.
+STRING 729  Annot/Mes!
+STRING 730  Impression
+STRING 731  Valeur actuelle (mm) = 
+STRING 732  Contruire
+STRING 733  Panneaux
+STRING 734  Nouveau Panneau
+STRING 735  Charger Panneau
+STRING 1216  Geler
+STRING 1217  Dégeler
+STRING 1218  Réduit
+STRING 1219  Rép. N&B
+STRING 1220  Plans
+STRING 1221  Windows OFF! (Maj F3)
+STRING 1222  Superposition
+STRING 1223  Image
+STRING 1224  Superposition Droite
+STRING 1225  Image Droite
+STRING 1226  &Sauvegarder Etat..
+STRING 1227  Accès Utilisateur
+STRING 1230  Contrôle
+STRING 1231  Réglages
+STRING 704  Gamme Y
+STRING 705  Affi&chage
+STRING 706  Image Plein Ecran
+STRING 707  Panneau d'information
+STRING 708  Calibration du périphérique de Sortie
+STRING 709  Boite de réglage!
+STRING 710  Construction Panneaux
+STRING 711  Etat Optibeam
+STRING 712  Layout
+STRING 713  Polices
+STRING 714  Etats!
+STRING 715  Barre d'outils (Maj  F2)
+STRING 716  Image
+STRING 717  Configuration
+STRING 718  &Outils
+STRING 719  Maintenance
+STRING 1508  Centrer Objet
+STRING 1509  Centrer Point
+STRING 1510  Fa&isceau
+STRING 1511  Faisceau On!
+STRING 1512  Faisceau Off!
+STRING 1513  Réglage Canon..
+STRING 1514  Alignement Canon..
+STRING 1515  Résolution Auto
+STRING 1516  Mode Prof. de champ
+STRING 1517  Réglage Optibeam ..
+STRING 1518  Wobbler
+STRING 1519  Diaphragmes..
+STRING 1520  Stigmateurs..
+STRING 1521  &Détecteurs
+STRING 1522  Signal A..
+STRING 1523  Signal B..
+STRING 1524  Contrôle Signal A
+STRING 1525  Configurer..
+STRING 1526  Réglages BSE..
+STRING 1529  Distance sur l'échantillon 
+STRING 1530  &Image
+STRING 1531  Réglage signal..
+STRING 1532  Réduction Bruit..
+STRING 1533  Gamma/Diff..
+STRING 1534  Mixage signaux..
+STRING 1360  Zone 7
+STRING 1361  Copie-Relie
+STRING 1362  Echelle X
+STRING 1363  Echelle Y
+STRING 1364  Actif
+STRING 1365  Plan PC
+STRING 1366  LUT Visu.
+STRING 1367  Seuil
+STRING 1368  R=
+STRING 1369  V=
+STRING 1370  EDS
+STRING 1371  Définition (avancée)
+STRING 1372  Acquisition
+STRING 1373  Clés
+STRING 1374  Couleurs
+STRING 1375  Définition
+STRING 1312  Call
+STRING 1313  à partir de TIFF
+STRING 1314  Souris (G) 
+STRING 1315  Souris (D) 
+STRING 1320  Histogramme
+STRING 1321  Classes
+STRING 1322  1
+STRING 1323  2
+STRING 1324  3
+STRING 1325  4
+STRING 1326  Hauteur
+STRING 1327  Démarrer
+STRING 1328  Echantilloner!
+STRING 1329  Stop
+STRING 1330  Modulation Y
+STRING 1331  Echelle X 
+STRING 1332  Echelle Y 
+STRING 1333  Echelle
+STRING 1334  Incr. ligne
+STRING 1335  Seuil
+STRING 1336  Couleur
+STRING 1337  Superposer
+STRING 1338  Fond Transparent
+STRING 1339  Options
+STRING 1340  Profil
+STRING 1341  Dimension Ligne
+STRING 1342  Pleine taille
+STRING 1343  Actif
+STRING 1472  &Edition
+STRING 1473  Tableau courant sonde
+STRING 1474  mBar
+STRING 1475  Torr
+STRING 1476  Pascal
+STRING 1477  Courant de Sonde
+STRING 1478  Stig X
+STRING 1479  Stig Y
+STRING 1480  delta X Faisceau
+STRING 1481  delta Y Faisceau
+STRING 1482  Sauvegarder
+STRING 1483  Charger
+STRING 1484  Démarrer
+STRING 1485  Stopper
+STRING 1486  Intensité
+STRING 1487  Présence
+STRING 1152  Touche gauche
+STRING 1153  Touche droite
+STRING 1154  Commande
+STRING 1155  Panneau
+STRING 1156  Interrupteur
+STRING 1157  Taille Icône
+STRING 1158  Précédent
+STRING 1159  36*36
+STRING 1160  LUT de Visualisation..
+STRING 1161  Brillance:Contr
+STRING 1162  Inverser
+STRING 1163  Echelle de gris
+STRING 1164  Gamma
+STRING 1165  Brillance
+STRING 1166  Contraste
+STRING 1167  Couleur
+STRING 1008  Stéréo
+STRING 1009  X
+STRING 1010  Détecteurs présents
+STRING 1011  Electrons  Secondaires No.1   (INLENS)
+STRING 1012  Electrons  Secondaires  No.2  (SE2)
+STRING 1013  Rétrodiffusés                        (QBSD)
+STRING 1014  Rétrodiffusés: Robinson        (RBSD)
+STRING 1015  Courant Echantillon               (SCM)
+STRING 1016  Cathodoluminescence        (Cathodo)
+STRING 1017  Transmission                       (Trans)
+STRING 1018  Entrée Vidéo                          (TV)
+STRING 1019  Auxiliare 1                           (Aux1)
+STRING 1020  Auxiliare 2                           (Aux2)
+STRING 1021  Auxiliare 3                           (Aux3)
+STRING 1022  Auxiliare 4                           (Aux4)
+STRING 1023  Auxiliare 5                           (Aux5)
+STRING 832  Brillance Profil Ligne
+STRING 833  Résolution
+STRING 834  Partagé
+STRING 835  Copie-Relie
+STRING 836  Trace 1 (G)
+STRING 837  Trace 2 (D)
+STRING 838  Fenêtre
+STRING 839  Réinit.
+STRING 840  Inverser
+STRING 841  Nouvelle
+STRING 842  LUT d'entrée..
+STRING 843  Ajouter
+STRING 844  Effacer
+STRING 845  Réinitialiser
+STRING 846  Déplacer
+STRING 847  Sauvegarder
+STRING 1136  Image ->
+STRING 1137  Largeur  =
+STRING 1138  Hauteur =
+STRING 1139  64*64
+STRING 1140  Barre d'outils..
+STRING 1141  Editeur barre d'outils
+STRING 1142  Réinit.
+STRING 1143  Charger
+STRING 1144  Sauvegarder
+STRING 1145  Installer
+STRING 1146  Rechercher
+STRING 1147  Actions Icône
+STRING 1148  Suivant
+STRING 1149  Nouv. bouton
+STRING 1150  Effacer
+STRING 1151  Editer
+STRING 1488  Fond: Img
+STRING 1489  Intensité Max
+STRING 1490  Balay.Ligne
+STRING 1491  Priorité
+STRING 1492  Effacer
+STRING 1493  Aide
+STRING 1500  Leo aj F1
+STRING 1501  Clésaj F9
+STRING 1502  Unités de Pression
+STRING 1503  &Info Version
+STRING 880  Police2
+STRING 881  Police3
+STRING 882  Police4
+STRING 883  Police5
+STRING 884  Police6
+STRING 885  Tableau Condition
+STRING 886  Distance de Travail
+STRING 887  Grandissement
+STRING 888  Polices d'Ann.
+STRING 889  Position Faisceau
+STRING 1539  Emission
+STRING 1540  &Balayage
+STRING 1541  Vitesses..
+STRING 1542  Normal
+STRING 1543  Réduit
+STRING 1544  Partagé
+STRING 1545  Quad
+STRING 1546  Double Grand.
+STRING 1547  Mode fenêtre
+STRING 1548  Ligne
+STRING 1549  Spot
+STRING 1550  Rotation/Inclin..
+STRING 1551  Focalisation Dyn..
+STRING 1376  Profils X
+STRING 1377  Superposer
+STRING 1378  Aide
+STRING 1379  Copie-Relie
+STRING 1380  Par Défaut
+STRING 1381  B=
+STRING 1382  Coller
+STRING 1383  0, 0
+STRING 1384  Exporter Fichier TIFF
+STRING 1385  Description
+STRING 1386  Binaire
+STRING 1387  Gris
+STRING 1388  Couleur
+STRING 1389  Sauv. Etat
+STRING 1390  Compression
+STRING 1391  Image Entière
+STRING 1552  &Platine/Vide
+STRING 1553  Etat Vide..
+STRING 1554  Changer échantillon..
+STRING 1555  Initialiser platine..
+STRING 1556  Déplacer platine..
+STRING 1557  Carto platine..
+STRING 1558  Balayage platine..
+STRING 1559  Centrer Point
+STRING 1560  Centrer Objet
+STRING 1561  Rattrapage Jeu
+STRING 1562  Exécuter Rattrapage jeu
+STRING 1563  Stéréo Dynamique..
+STRING 1564  Fenêtre préc par-dessus
+STRING 1565  Fenêtre préc pas par-dessus
+STRING 1566  Contrôle externe
+STRING 1567  Copier/Coller
+STRING 1248  Image
+STRING 1249  Superpos.
+STRING 1250  Macro
+STRING 1251  Editeur de Macros
+STRING 1252  Macro
+STRING 1253  Nouvelle
+STRING 1254  Rechercher
+STRING 1255  Charger
+STRING 1256  Installer
+STRING 1257  Sauvegarder
+STRING 1258  Renommer
+STRING 1259  Réinitialiser
+STRING 1260  Enregistrer
+STRING 1261  Insérer
+STRING 1262  Editer
+STRING 1263  Effacer
+STRING 784  Editer Micro-marqueur
+STRING 785  Grille
+STRING 786  Mode
+STRING 787  EDS: Traces
+STRING 788  &Aide
+STRING 789  Aide sur l'Aide
+STRING 790  Annotation
+STRING 791  Texte
+STRING 792  Analogique
+STRING 793  Numérique
+STRING 794  Extérieure
+STRING 795  Panneau
+STRING 796  Point
+STRING 797  Relier
+STRING 798  Micron
+STRING 799  Mes. Lignes
+STRING 1760  Souris
+STRING 1761  Gauche= 
+STRING 1762  Droite= 
+STRING 1763  Choisir Commande
+STRING 1764  Choisir Fonction
+STRING 1765  Choisir Macro
+STRING 1766  Choisir Paramètre Souris
+STRING 1767  Choisir Interrupteur
+STRING 1768  Etat
+STRING 1769  Création Icône
+STRING 1770  TROP D'ICONES
+STRING 1771  Fichier existant - impossible d'archiver
+STRING 1772  Fichier d'enregistrement archivé
+STRING 1773  Le panneau appelé est indéfini
+STRING 1774  Code Menu =
+STRING 1775  Panneau non trouvé 
+STRING 1776  STANDARD non trouvé dans la librairie 
+STRING 1777  Remplace la police d'annotation 
+STRING 1778  Effacera l'annotation existante
+STRING 1779  Toujours en Calibration
+STRING 1780  Les  conditions EHT ne seront pas sauvegardées, continuer?
+STRING 1781  Sauvegarde  Conditions : Le faisceau n'est pas en marche
+STRING 1782  Fermeture demandée par l'utilisateur.
+STRING 1783  Patience S.V.P...
+STRING 1784  Le démarrage du S400 à échoué
+STRING 1785   sera suivi d'ABANDON!
+STRING 1786  Pas du Graticule
+STRING 1787  Entrer la distance entre traits en pixels  50..512
+STRING 1788  Choisir le répertoire des images
+STRING 1789  Enregistrement Fermeture système
+STRING 1790  : Unités 
+STRING 1791   en dehors de la gamme valide
+STRING 1632  HRRU toujours occupée
+STRING 1633  HRRU Pas Configurée
+STRING 1634  Photo sur Impr. Vidéo
+STRING 1635  Impr. toujours occupée
+STRING 1636  Pas autorisé en mode Petite Image
+STRING 1637   Fichier Introuvable
+STRING 1638  Macro STANDARD de la Librairie de substitution introuvable
+STRING 1639  Macro pas installée
+STRING 1640  Définir un nom pour la sauvegarde 
+STRING 1641  Contrôle Trame
+STRING 1642   Choisir la fenêtre à inverser 
+STRING 1643  Contrôle Fenêtres multidétecteurs
+STRING 1644  Répertoire Utilisateur
+STRING 1645  Répertoire Images 
+STRING 1646  Barre d'outils 
+STRING 1647  Mise en page 
+STRING 1648  Information
+STRING 1649  Ne provient pas d'un fichier
+STRING 1650  Effacer la file d'attente des erreurs
+STRING 1651  Sauvegarder la Librarie
+STRING 1652  Période en secondes
+STRING 1653  Etat Sauvegarder
+STRING 1654  Délai de sortie en secondes, si  nécessaire
+STRING 1655   Exécute
+STRING 1656  Attente
+STRING 1657  Interrompue
+STRING 1658  Macro: Erreur en 
+STRING 1659  Macro: Limite de pile: Appeler
+STRING 1660   Echec à la ligne 
+STRING 1661  DEBUG?
+STRING 1662  Défaut de réponse durant la Macro 
+STRING 1663  End While pas atteignable
+STRING 1664  Else pas atteignable
+STRING 1665  End If pas atteignable
+STRING 1666  If sans EndIf
+STRING 1667  Else sans If
+STRING 1668  If Then Else sans EndIf correspondant
+STRING 1669  While sans EndWhile
+STRING 1670  Grand.mini
+STRING 1671  Définir Export/Photo
+STRING 1672  Calibrer
+STRING 1673  Installer
+STRING 1674  AJOUTER
+STRING 1675  SUPPRIMER
+STRING 1676  Annuler
+STRING 1677  Identité
+STRING 1678  valeur(s) courante(s)  identifiée(s) par:
+STRING 1679  courant
+STRING 1232  Trame
+STRING 1233   Fenêtrages
+STRING 1234  Annotation
+STRING 1235  Canal Gauche
+STRING 1236  Position
+STRING 1237  Taille
+STRING 1238  Point
+STRING 1239  Objet
+STRING 1240  Autre Rép.
+STRING 1241  Grey Backed
+STRING 1242  Effacer autres bits
+STRING 1243  Garder autres bits
+STRING 1244  ->Plan Binaire  
+STRING 1245  Copier Gris
+STRING 1246  Copier Binaire
+STRING 1247  Tout l'Ecran
+STRING 1568  Zone de focalisation(Annuler: Touche Dr)
+STRING 1569  Importer/Exporter Image  
+STRING 1570  Choisir une Image (Annuler: Touche Dr)
+STRING 1571  Panneau d'Information indéfini
+STRING 1572  Grille X
+STRING 1573  Grille Y
+STRING 1574  Entrer la taille de la grille
+STRING 1575  Micro-marqueur de Taille Fixe
+STRING 1576  Entrer la taille en microns
+STRING 1577  STYLE 
+STRING 1578  Police 
+STRING 1579  Compte Invalide
+STRING 1580  Sauvegarder annotations
+STRING 1581  [Choisir le Panneau d'Information]
+STRING 1582  Choisir paramètre
+STRING 1583  Annotation: Texte
+STRING 1344  Statique
+STRING 1345  5
+STRING 1346  6
+STRING 1350  Source
+STRING 1351  Image Stockée
+STRING 1352  Zone courante
+STRING 1353  Zone 0
+STRING 1354  Zone 1
+STRING 1355  Zone 2
+STRING 1356  Zone 3
+STRING 1357  Zone 4
+STRING 1358  Zone 5
+STRING 1359  Zone 6
+STRING 1792  N'est pas un fichier Personnalisable Valide
+STRING 1793  Définir Imagerie X
+STRING 1794  Non Utilisé
+STRING 1795  N'est pas un fichier de déf. Image X
+STRING 1796  Paramètres Imagerie X indéfinis!
+STRING 1797  Erreur de lecture du fichier description entrées X, Utilise Défaut
+STRING 1798  Définir profils X
+STRING 1799  Noir
+STRING 1800  Filtre ->
+STRING 1801  Fond ->
+STRING 1802  Echelle Max
+STRING 1803  Dépl. graphe
+STRING 1804  Echelle Auto
+STRING 1805  Acquisition
+STRING 1806  Graphe
+STRING 1807  Graphes
+STRING 1168  SauvePoints
+STRING 1169  ChargePoints
+STRING 1170  Gris
+STRING 1171  Gradient:Offset
+STRING 1172  Gradient
+STRING 1173  Offset
+STRING 1174  Tracé
+STRING 1175  Points
+STRING 1176  Réinit.
+STRING 1177  Ajouter
+STRING 1178  Déplacer
+STRING 1179  Effacer
+STRING 1180  Marches
+STRING 1181  Amplitude
+STRING 1182  Décalage
+STRING 1183  Période
+STRING 1184  Réinit.
+STRING 1185  Réinit.
+STRING 1186  Rouge
+STRING 1187  Vert
+STRING 1188  Bleu
+STRING 1189  Réinit.
+STRING 1190  Amplitude
+STRING 1191  Décalage
+STRING 1192  Période
+STRING 1193  Ajouter
+STRING 1194  Déplacer
+STRING 1195  Effacer
+STRING 1196  Réinit.
+STRING 1197  Niveau
+STRING 1198  Seuil
+STRING 1199  Niveau
+STRING 848  Charger
+STRING 849  Dent de Scie
+STRING 850  Marche
+STRING 851  Echelle
+STRING 852  Période
+STRING 853  Décalage
+STRING 854  Amplitude
+STRING 855  Options
+STRING 856  Détecteurs
+STRING 857  Aux
+STRING 858  Connections
+STRING 859  Ingénieur
+STRING 860  Passe utilisateur
+STRING 861  Passe Ingénieur
+STRING 862  Usine
+STRING 863  Platine
+STRING 1200  Seuil
+STRING 1201  Charger LUT
+STRING 1202  Sauvegarder LUT
+STRING 1203  sur point
+STRING 1204  Réinit.
+STRING 1205  1
+STRING 1206  2
+STRING 1207  Aide
+STRING 1208  Aide
+STRING 1209  1
+STRING 1210  2
+STRING 1211  Réduit =
+STRING 1212  Prem.
+STRING 1213  Sec.
+STRING 1214  0, 0
+STRING 1215  Palette
+STRING 1616  Fermer Histogramme
+STRING 1617  Fermer Profil
+STRING 1618  Plan PC (Windows)  On/Off
+STRING 1619  Signal non connecté =
+STRING 1620   -> LUT de visualisation Gauche  
+STRING 1621   -> LUT de visualisation Droite 
+STRING 1622  Sélectionner le  point pour le niveau de gris
+STRING 1623  Largeur Profil
+STRING 1624   Panneau indéfini
+STRING 1625  Créer un Répertoire Fichier
+STRING 1626  Nouveau Nom Fichier
+STRING 1627  OFF
+STRING 1628       Amplitude
+STRING 1629  Rapide
+STRING 1630  Image non Gelée
+STRING 1631  Photo sur HRRU
+STRING 1744  Macro présente
+STRING 1745  Image N&B
+STRING 1746  Image Couleur
+STRING 1747  Image Binaire
+STRING 1748  Image Couleur Palette
+STRING 1749  Image Binaire Compressée
+STRING 1750  Image N&B Réduite
+STRING 1751  Type d'image Inconnu
+STRING 1752  Image N&B 8 bit
+STRING 1753  Image Couleur 24 bit
+STRING 1754  Image N&B 4 bit
+STRING 1755  Niveaux de gris 4 bit
+STRING 1756  Type de données inconnu
+STRING 1757  Champ numérique de nom de Fichier
+STRING 1758  Ce champ doit être vide ou numérique
+STRING 1759  Sans Nom
+STRING 752  Mode
+STRING 753  Exécuter
+STRING 754  Déplacer
+STRING 755  Editer
+STRING 756  Effacer
+STRING 757  Réinit.
+STRING 758  Charger Mise en page
+STRING 759  Sauv. Mise en page
+STRING 760  Effacer Mise en page
+STRING 761  Messages  LEO 
+STRING 762  UIF Trace
+STRING 763  Panneau d'Information
+STRING 764  Mnémoniques->Fichier
+STRING 765  SANS NOM
+STRING 766  Nouveau Titre Panneau
+STRING 767  Nouvelle Référence Panneau
+STRING 816  Panneau
+STRING 817  Cacher
+STRING 818  Montrer
+STRING 819  Grand. Zone
+STRING 820  Bitmap
+STRING 821  Etiquette
+STRING 822  Micro-marqueur Fixe
+STRING 823  Sup. Alarme Diaphragme
+STRING 824  Profil Ligne
+STRING 825  Zone d'Information
+STRING 826  Installer
+STRING 827  Editer
+STRING 828  données TIFF
+STRING 829  Profil
+STRING 830   Brillance balayage Ligne
+STRING 831  Blanc
+STRING 1072  Zone 0
+STRING 1073  Zone 1
+STRING 1074  Zone 2
+STRING 1075  Zone 3
+STRING 1076  Zone 4
+STRING 1077  Zone 5
+STRING 1078  Zone 6
+STRING 1079  Zone 7
+STRING 1080  Zone 0
+STRING 1081  Zone 1
+STRING 1082  Zone 2
+STRING 1083  Zone 3
+STRING 1084  Zone 4
+STRING 1085  Zone 5
+STRING 1086  Zone 6
+STRING 1087  Zone 7
+STRING 1040  AUX5
+STRING 1041  AUX6
+STRING 1042  AUX7
+STRING 1043  AUX8
+STRING 1044  AUX9
+STRING 1045  Fich.Enregistrement
+STRING 1046  Vider
+STRING 1047  Archiver
+STRING 1049  Attributs
+STRING 1050  50 mV Unipolaire
+STRING 1051  100 mV Bipolaire
+STRING 1052  700 mV Unipolaire
+STRING 1053  1.0 Volt Unipolaire
+STRING 1054  Indéfini
+STRING 1055  Sélection des Liens
+STRING 1088  Jan
+STRING 1089  Fév
+STRING 1090  Mars
+STRING 1091  Avr
+STRING 1092  Mai
+STRING 1093  Juin
+STRING 1094  Juil
+STRING 1095  Aout
+STRING 1096  Sep
+STRING 1097  Oct
+STRING 1098  Nov
+STRING 1099  Déc
+STRING 1100  Modifier
+STRING 1101  Police
+STRING 1103  Couleur Caract
+STRING 1104  Texte: Fond
+STRING 1105  Texte: Style
+STRING 1106  Couleur Panneau
+STRING 1107  Style Ligne
+STRING 1108  Lignes: Largeur 
+STRING 1109  Lignes: Couleur
+STRING 1110  Transparent
+STRING 1111  Définir vitesse de balayage
+STRING 1112  Inhiber déplacement faisceau si grandissement inférieur à: 
+STRING 1113  Données diaphragme
+STRING 1114  No. 
+STRING 1115  Dia. 
+STRING 1116  Position du support
+STRING 1117  Intérieure
+STRING 1118  Contaminé
+STRING 1119  Médiane
+STRING 1120  Modifier Sélection
+STRING 1121  Modifier Tout
+STRING 1122  Diaph. Recommandé = 
+STRING 1123  Tableaux
+STRING 1124  Calibration Activée
+STRING 1125  Outrepasser Passe Utilisateur
+STRING 1126  Annuler Passe Utilisateur
+STRING 1127  Sauvegarder NVRAM en sortie
+STRING 1128  Sauvegarder Calibration Périphérique
+STRING 1129  Pièce polaire C1 =
+STRING 1130  Pièce polaire C2 =
+STRING 1131  Définition Entrées EDS
+STRING 1132  Cable-pin
+STRING 1133  Noms EDS
+STRING 1134  Sélection Fichier TIFF
+STRING 1135  Info..
+STRING 912  Type Invalide! 
+STRING 913  Désactivé - 
+STRING 914  Entrer la nouvelle valeur :
+STRING 915  Choisir le Répertoire de vos fichiers
+STRING 916  Choisir un point pour les réglage
+STRING 917  Choisir panneau/annotation à sauvegarder
+STRING 918  N'est pas un Fichier d' Annotations!
+STRING 919   Erreur Format! 
+STRING 920  Nombre Entier! 
+STRING 921   élément non reconnu 
+STRING 922  Choisir le Panneau à Verrouiller
+STRING 923  Choisir le Panneau à Déverrouiller
+STRING 924  Nombre d'éléments trop important 
+STRING 925  n'est pas optimum
+STRING 926  Le MEB est toujours en fonctionnement et interdit la Fermeture.
+STRING 927  Fermer dabord le MEB à partir du menu LEO
+STRING 864  Joystick
+STRING 865  Aller à
+STRING 866  Re-Cartographier
+STRING 867  Enregistrer
+STRING 868  Effacer
+STRING 869  Marques
+STRING 870  Noms..
+STRING 871  Tracer
+STRING 872  Cacher
+STRING 873  Premier
+STRING 874  Suivant
+STRING 875  Sauvegarder..
+STRING 876  Charger..
+STRING 877  Carto Platine
+STRING 878  Fermer Carto
+STRING 879  Tableau de grandissement
+STRING 1264  Modifier
+STRING 1265  Stop
+STRING 1266  Exécuter
+STRING 1267  Supprimer
+STRING 1268  Commande
+STRING 1269  Numérique
+STRING 1270  Analogique
+STRING 1271  Coord.
+STRING 1272  Platine aller à
+STRING 1273  Attendre que
+STRING 1274  Confirmer
+STRING 1275  Message
+STRING 1276  Commentaire
+STRING 1277  Config
+STRING 1278  Réglages
+STRING 1279  Réglages Canon
+STRING 1280  Application
+STRING 1281  LUT d'entrée
+STRING 1282  LUT Visualisation
+STRING 1283  Délai
+STRING 1284  Montrer Panneau
+STRING 1285  Cacher Panneau
+STRING 1286  Librairie
+STRING 1287  Charger
+STRING 1288  Sauvegarder
+STRING 1289  Charger Standard
+STRING 1290  Continue
+STRING 1291  Aide
+STRING 1292  Fonction
+STRING 1293  Sauvegarder En Texte
+STRING 1294  Structures de contrôle..
+STRING 1295  While 
+STRING 1296  End While
+STRING 1297  If then
+STRING 1298  Else
+STRING 1299  End If
+STRING 1300  Macro
+STRING 1301  Stop
+STRING 1302  Exéc. Mac. Installée 
+STRING 1303  Exéc. Mac. Fichier
+STRING 1304  Sauvegarder conditions
+STRING 1305  Définir
+STRING 1306  While Not 
+STRING 1307  If Not Then 
+STRING 1308  Instructions
+STRING 1309  Pause
+STRING 1310  Sel ?
+STRING 1311  Macro
+STRING 1056  Balayage réduit
+STRING 1057  Faisceau effacé quand l'image est gelée
+STRING 1058  En Mode Emission
+STRING 1059  Auto contraste
+STRING 1060  Signal
+STRING 1061  Exigences
+STRING 1062  Aucun
+STRING 1063  Tous PM
+STRING 1064  PM 1
+STRING 1065  PM 2
+STRING 1066  PM 3
+STRING 1067  Amp.BSD 
+STRING 1068  Amp.SCM 
+STRING 1069  Mire
+STRING 1070  Connecteur 
+STRING 1024  Auxiliare 6                           (Aux6)
+STRING 1025  Auxiliare 7                           (Aux7)
+STRING 1026  Auxiliare 8                           (Aux8)
+STRING 1027  Auxiliare 9                           (Aux9)
+STRING 1028  InLens
+STRING 1029  SE2
+STRING 1030  QBSD
+STRING 1031  RBSD
+STRING 1032  SCM
+STRING 1033  CATHODO
+STRING 1034  TRANS
+STRING 1035  TV
+STRING 1036  AUX1
+STRING 1037  AUX2
+STRING 1038  AUX3
+STRING 1039  AUX4
+STRING 736  Sauvegarder Panneau
+STRING 737  Sauvegarder  Panneau sous
+STRING 738  Installer Panneau
+STRING 739  Editer Panneau
+STRING 740  Renommer Panneau
+STRING 741  Supprimer  Panneau
+STRING 742  Fonctions
+STRING 743  EO
+STRING 744  Boite de Nav.
+STRING 745  SelNav
+STRING 746  SelShare
+STRING 747  ShareScroll
+STRING 748  Texte
+STRING 749  Dimension
+STRING 750  Paramètres
+STRING 751  Boutons du Panneau 
+STRING 1584   Choisir coin 2:ToucheD=retour
+STRING 1585   Choisir coin 1:ToucheD=Annuler
+STRING 1586  :ToucheD=Annuler
+STRING 1587  Aller à
+STRING 1588  Conditions Antérieures
+STRING 1589  Fenêtre de déplacement Platine
+STRING 1590  Histogramme
+STRING 1591  Mod Y
+STRING 1592  Profil
+STRING 1593  Souris: Grand./Foc.
+STRING 1594  Souris: Brillance/Cont.
+STRING 1595  Centrer Point
+STRING 1596  EHT/Courant sonde
+STRING 1597  Rétablir Conditions
+STRING 1598  Prendre Photo 
+STRING 1599  Définir Photo
+STRING 1600  Importer TIFF
+STRING 1601  Exporter TIFF
+STRING 1602  Définir Importer TIFF
+STRING 1603  Définir Image X
+STRING 1604  Centrer Objet
+STRING 1605  Mode Spot
+STRING 1606  Moyennage Trame
+STRING 1607  Moyennage Ligne
+STRING 1608  Boite de réglages
+STRING 1609  Fenêtre de carto Platine
+STRING 1610  Platine:Position des marques
+STRING 1611  Platine:Aller à première marque
+STRING 1612  Platine:Aller à marque suivante
+STRING 1613  Attendre fonction Centrer
+STRING 1614  Conditions Antérieures
+STRING 1615  Attendre Menu  Importer/Exporter
+STRING 976  Entrer Nouveau Nom
+STRING 977  La Macro à été modifiée, les modifications seront perdues
+STRING 978  Condition incorrecte, Continuer?
+STRING 979  Conditions Fichier introuvables
+STRING 980  Fichier pour la LUT de visualisation Gauche
+STRING 981  Fichier pour la LUT de visualisation Droite
+STRING 982  Choisir le point à centrer
+STRING 983  Choisir le premier coin(Annuler: Touche Droite)
+STRING 984  Choisir l'autre coin (Annuler: Touche Droite)
+STRING 985  Annuler: Touche Droite
+STRING 986  Rafraîchir Erreurs
+STRING 987  Rafraîchir Messages
+STRING 988  Effacer les Messages
+STRING 989  Afficher les Messages
+STRING 990  Aide
+STRING 991  Valider les Messages
+STRING 928  Fermeture du MEB
+STRING 929  Détecteur pas configuré
+STRING 930  Sortie détecteur =
+STRING 931  Connecteur utilisé
+STRING 932  Signal connecteur indéfini
+STRING 933   n'est pas utilisé par le détecteur
+STRING 934  Exigences Indéfinies
+STRING 935  Mot de Passe Utilisateur
+STRING 936  Taper le  Nouveau Mot de Passe
+STRING 937  Mot de Passe Ingénieur
+STRING 938  Taper le  Mot de Passe
+STRING 939  Mot de Passe non valide
+STRING 940  Mode  Restreint
+STRING 941  Mot de Passe Usine
+STRING 942   Numéro de Série 
+STRING 943   Indéfini 
+STRING 1905  Désirez vous faire une mise à l'air bien que la platine ne soit pas dans une position sûre pour l'ouverture de la porte?
+ Si oui, ouvrez la porte avec précautions.
+STRING 1906  Déplacement en mode compucentrique
+STRING 1907   %d mm  ne respecte pas la Limite X Haute.
+STRING 1908   %d mm  ne respecte pas la Limite X Basse.
+STRING 1909   %d mm  ne respecte pas la Limite Y Haute.
+STRING 1910   %d mm  ne respecte pas la Limite Y Basse.
+STRING 1911   %d mm  ne respecte pas la Limite Z Haute.
+STRING 1912   %d mm  ne respecte pas la Limite Z Basse.
+STRING 1913   %d Deg  ne respecte pas la Limite I Haute.
+STRING 1914   %d Deg  ne respecte pas la Limite I Basse.
+STRING 1915  Demande de déplacement platine ignorée
+
+STRING 1916  La platine n'étant pas initialisée elle n'est peut-être pas dans une position sûre pour l'ouverture de la porte.
+
+STRING 1917  Voulez-vous annuler la mise à l'air pour initialiser la platine?.
+ En cas de mise à l'air, ouvrez la porte avec précautions
+STRING 400  Identificateur Invalide ou LECTURE SEULE 
+STRING 401  IMPOSSIBLE DE DEFINIR CET ETAT DANS CE CONTEXTE
+STRING 402  PARAMETRE D'ETAT INVALIDE
+STRING 403  Action non permise - désactivé actuellement
+STRING 404   ACTION DEJA ENREGISTREE 
+STRING 405  Commande non reconnue comme provenant d'UIF
+STRING 406  L'Interface n'est pas actif
+STRING 407  Horloge non disponible - fermer une autre application
+STRING 408  La communication (ouverture/fermeture) vers l'EHT à Echoué
+STRING 410  Erreur de lect. du fich. configuration - Défaut est utilisé
+STRING 411  Erreur d'écriture du fichier
+STRING 412  Configuration des détecteurs vers les connecteurs inadaptée
+STRING 413  Données NVRAM défectueuses, lecture à partir de DATA.VAC
+STRING 414  Données DATA.VAC défectueuses, DEFAULT.VAC utilisé
+STRING 415  Données DEFAULT.VAC défectueuses, ATTENTION !
+STRING 416  Le chargement de Gestion Overlay à échoué
+STRING 417  Le chargement de Vac RLM à échoué
+STRING 418  Le chargement de Stage RLM à échoué
+STRING 419  Le chargement de Acquire RLM à échoué
+STRING 420  Le chargement de EO RLM à échoué
+STRING 421  Le chargement de EHT RLM à échoué
+STRING 422  Echec de l'activation du processus Vide
+STRING 423  Echec de l'activation du processus Platine
+STRING 424  Echec de l'activation du processus Acquisition
+STRING 425  Echec de l'activation du processus EO
+STRING 426  Echec de l'activation du processus EHT
+STRING 427  Le chargement de DSP RLM à échoué
+STRING 428  Echec de l'activation du processus DSP 
+STRING 429  L'écriture des NVRAM à échoué
+STRING 430  L'écriture de DATA.VAC à échoué
+STRING 431  L'écriture de DATA.VAC et des NVRAM à échoué
+STRING 432  Le chargement de  IMEX RLM à échoué
+STRING 433  EHT - Filament Coupé
+STRING 434  Unité EHT - Disjoncté 
+STRING 435  EHT - Inhibé par Le Système de Vide
+STRING 436  EHT - Ré-initialisation incontrôlée
+STRING 437  Erreur Commande de Vide
+STRING 438  Carte Vac  -12V défectueux
+STRING 439  Carte Vac  +12V défectueux
+STRING 440  Carte Vac  -5V défectueux
+STRING 441  Carte Vac  +5V défectueux
+STRING 442  Commande de platine Invalide
+STRING 443  Erreur de commande platine
+STRING 444  Platine  X -15V défectueux
+STRING 445  Platine  X +15V défectueux
+STRING 446  Platine  Y -15V défectueux
+STRING 447  Platine  Y +15V défectueux
+STRING 448  Platine  Z -15V défectueux
+STRING 449  Platine  Z +15V défectueux
+STRING 450  Echec au chargement de brillance RLM
+STRING 451  Echec à l'initialisation  de brillance RLM
+STRING 452  Erreur de commande Acquisition
+STRING 453  Echec d'initialisation IMEX
+STRING 454  Erreur de commande HRRU 
+STRING 455  Fuite détectée sur le sytème de vide
+STRING 456  Défaut de la Jauge de PENNING sur le système de vide
+STRING 457  Erreur à l'écriture de l'en-tête TIFF
+STRING 458  Erreur à l'écriture du répertoire TIFF
+STRING 459  Erreur à l'écriture d'image TIFF
+STRING 460  Erreur à la lecture de l'en-tête TIFF
+STRING 461  Erreur à la lecture du répertoire TIFF
+STRING 462  Erreur à la lecture d'une image TIFF
+STRING 463  Erreur fichier TIFF
+STRING 464  Erreur de sélection d'une image TIFF
+STRING 465  TIFF parameter memory lock/size error
+STRING 466  Erreur de conversion mémoire presse-papiers
+STRING 467  Erreur provenant de l'image du presse-papiers
+STRING 468  Erreur d'ouverture du presse-papiers
+STRING 469  Pas d'image dans le presse-papiers
+STRING 470  Erreur de recherche du presse-papiers
+STRING 471  Presse-papiers - format inconnu
+STRING 472  Presse-papiers - erreur de données BMP
+STRING 473  Image Import/Export - Echec de l'instruction CHERCHER
+STRING 474  Paramètre invalide reçu par l'unité Haute Tension
+STRING 475  EHT - Erreur sur la gamme du paramètre
+STRING 476  Défaut de l'unité Haute Tension
+STRING 477  Erreur de communication vers l'unité Haute Tension
+STRING 478  Commande inconnue reçue par l'unité Haute Tension
+STRING 479  Système de pompage en mode local
+STRING 480  Impression d'image TIFF couleur impossible
+STRING 481  HRRU photo terminée
+STRING 482  Limite basse externe atteinte en X
+STRING 483  Limite basse interne atteinte en X
+STRING 484  Limite basse utilisateur atteinte en X
+STRING 485  Limite haute utilisateur atteinte en X
+STRING 486  Limite haute interne atteinte en X
+STRING 487  Limite haute externe atteinte en X
+STRING 488  Limite basse externe atteinte en Y
+STRING 489  Limite basse interne atteinte en Y
+STRING 490  Limite basse utilisateur atteinte en Y
+STRING 491  Limite haute utilisateur atteinte en Y
+STRING 492  Limite haute interne atteinte en Y
+STRING 493  Limite haute externe atteinte en Y
+STRING 494  Limite basse externe atteinte en Z
+STRING 495  Limite basse interne atteinte en Z
+STRING 496  Limite basse utilisateur atteinte en Z
+STRING 497  Limite haute utilisateur atteinte en Z
+STRING 498  Limite haute interne atteinte en Z
+STRING 499  Limite haute externe atteinte en Z
+STRING 501  Contact Platine
+STRING 502  Position incorrecte de la vanne Canon
+STRING 503  Position incorrecte de la vanne Chambre/Colonne
+STRING 504  Position incorrecte de la fenêtre EDS
+STRING 505  Porte du SAS en position incorrecte
+STRING 506  Porte du système WDS en position incorrecte
+STRING 507  Espace disque faible - Penser à Faire le ménage
+STRING 508  Espace disque critique - libérer de la place immédiatement
+STRING 509  Limite basse externe atteinte en inclinaison
+STRING 510  Limite basse interne atteinte en inclinaison
+STRING 511  Limite basse utilisateur atteinte en inclinaison
+STRING 512  Limite haute utilisateur atteinte en inclinaison
+STRING 513  Limite haute interne atteinte en inclinaison
+STRING 514  Limite haute externe atteinte en inclinaison
+STRING 515  Inclinaison Platine: Défaut -15V 
+STRING 516  Inclinaison Platine: Défaut +15V
+STRING 517  Rotation Platine: Défaut -15V
+STRING 518  Rotation Platine: Défaut +15V
+STRING 519  Haute Tension d'extraction  disjoncté
+STRING 520  Arrêt d'urgence de l'unité Haute tension
+STRING 521  Echec de la définition de la table C1
+STRING 522  VACC réinitialisée vers to VACC_PANIC
+STRING 523  VEXT réinitialisée vers VEXT_PANIC
+STRING 524  Calibration de la position de la pointe perdue
+STRING 525  ZTIPréinitialisée vers ZTIP_PANIC
+STRING 526  Pas de tension de focalisation possible
+STRING 527  Pas de position  de focalisation possible(VHIGH)
+STRING 528  Pas de position  de focalisation possible(VLOW)
+STRING 529  Position conjuguée du 'beam-blanking' impossible
+STRING 530  Mode alignement du canon invalide
+STRING 531  Mode de calibration invalide
+STRING 532  Evènement 'Optibeam' invalide
+STRING 533  Limite des messages stockés atteinte
+STRING 534  Pas de valeur dans le polynome
+STRING 535  Il n'y a pas de position possible pour le 'crossover' de C1
+STRING 536  Il n'y a pas de position possible pour le 'crossover' de C2
+STRING 537  Erreur de réglage des lentilles pour l'alignement du canon
+STRING 538  Erreur dans IP_X1_X2
+STRING 539  Erreur 1 dans CALC_NEW_EXC
+STRING 540  Erreur 2 dans CALC_NEW_EXC
+STRING 541  Erreur 1 dans SET_LIMITS
+STRING 542  Erreur 2 dans SET_LIMITS
+STRING 543  Erreur du réglage pour calibration des lentilles
+STRING 544  Paramètres invalides pour l'initialisation
+STRING 545  Imprimante par défaut: mémoire insuffisante 
+STRING 546  Imprimante par défaut: Erreur d’impression 
+STRING 547  Imprimante par défaut: espace disque insuffisant 
+STRING 548  Imprimante par défaut: non configurée 
+STRING 549  Unité EHT: état inconnu
+STRING 550  HPApp: échec au démarrage
+STRING 551  HPApp: défaut de réponse 
+STRING 552  HPApp: fermeture inattendue 
+STRING 553  HPApp: liaison interrompue 
+STRING 554  Contrôle VP: réinitialisation inconnue 
+STRING 555  Contrôle VP: erreur de communication 
+STRING 556  Erreur 1 vanne isolation Turbo VP
+STRING 557  Erreur ouverture vanne isolation Turbo VP
+STRING 558  Erreur fermeture vanne isolation Turbo VP
+STRING 559  Erreur 4 vanne isolation Turbo VP
+STRING 560  Erreur 1 vanne isolation chambre - PV25
+STRING 561  Erreur ouverture vanne isolation chambre VP  - PV25
+STRING 562  Erreur fermeture vanne isolation chambre VP  - PV25
+STRING 563  Erreur 4 vanne isolation chambre - PV25
+STRING 564  Pression VP ciblée non obtenue
+STRING 565  Contrôle VP: défaut 1
+STRING 566  Contrôle VP: défaut 2
+STRING 567  Mode transition VP hors délai
+STRING 568  Erreur jauge de Pirani
+STRING 569  Erreur de rétablissement matériel VP
+STRING 570  Contrôle VP: Erreur non identifiée
+STRING 571  Image Access - memory error
+STRING 572  Image Access - error writing temporary file
+STRING 573  Image Access - error reading temporary file
+STRING 574  Image Import/Export - error creating temporary file
+STRING 575  Image Import/Export - error writing temporary file
+STRING 576  Image Import/Export - error reading temporary file
+STRING 577  Image Import/Export - Unsupported bitmap format
+STRING 578  CAN BUS Buffer overflow - Notify Leo Software Department
+STRING 579  CAN BUS bus error
+STRING 580  CAN BUS message error
+STRING 581  The Stage is not initialised.
+ Unable to move to lower Z position.
+STRING 582  Stage Command Overrun Error
+STRING 583  Stage Board Too Hot
+STRING 584  Stage Board Temperature returned to Normal
+STRING 585  Stage M +15V failed
+STRING 586  Stage M -15V failed
+STRING 587  Stage M axis low outer limit hit
+STRING 588  Stage M axis low inner limit hit
+STRING 589  Stage M axis low user limit hit
+STRING 590  Stage M axis high user limit hit
+STRING 591  Stage M axis high inner limit hit
+STRING 592  Stage M axis high outer limit hit
+STRING 593  Water flow has failed
+STRING 594  Water flow resumed
+STRING 595  Electron Optics Board Too Hot
+STRING 596  Electron Optics Board Temperature returned to Normal
+STRING 597  JPEG Initialisation failed
+STRING 598  JPEG Conversion failed
+STRING 599  JPEG internal error
+STRING 600  LEO recommends that chamber pressures should not exceed 275 Pa with Column Pumping is use.
+ Using higher pressures for an extended period may seriously reduce the life of LaB6 filaments.
+ High pressures may also reduce the life of the ion pump.

@@ -1,0 +1,256 @@
+﻿=== MENU 324 (lang 0809)
+  [ ]
+  32773  Auto &Initialise Stage
+  ----
+  32774  Calibrate Stage Centre ...
+  32775  Compucentric Setup...
+  32777  Horizontal Alignment ...
+=== MENU 325 (lang 0809)
+  [ ]
+  32781  &Clear List
+  ----
+  32778  &Load Points List...
+  57603  &Save
+  32789  Save &As...
+  ----
+  32790  Load Text File ...
+  32791  SaveAs Text File ...
+  ----
+  32788  Set &Mag
+  32783  Set &WD
+  32784  Move &XY Only
+  ----
+  32785  Stage &Registration...
+  32787  Stage Reg'd Mo&ve...
+=== DIALOG 1 "About LEO Stage Manager" (4 controls)
+  -1  STATIC  "#1"
+  201  STATIC  "Version inserted by software"
+  -1  STATIC  "Copyright (C) 1998-1999, LEO Electron Microscopy Ltd"
+  1  BUTTON  "OK"
+=== DIALOG 103 "Define Scan Fields Wizard           Step 1 of 4" (5 controls)
+  -1  STATIC  "To define the Stage Scan Fields you must first select the area for the scan fields to cover. 
+Select this area preferably at low Magnification.
+
+"
+  302  BUTTON  "Enter co-ordinates manually (default is screen area)"
+  303  BUTTON  "Set minimum Magnification before selecting area."
+  -1  STATIC  "You can skip mouse selecting by choosing to enter the co-ordinates manually."
+  -1  STATIC  "Press "Next >" to define this area with the mouse."
+=== DIALOG 104 "Define Scan Fields Wizard           Step 2 of 4" (11 controls)
+  -1  STATIC  "X"
+  -1  STATIC  "Y"
+  -1  STATIC  "Start"
+  -1  STATIC  "End"
+  -1  STATIC  "Z"
+  -1  STATIC  "You have now selected an area with the following 
+co-ordinates. You can modify them by mouse-click-
+ing on the edit boxes. "
+  309  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  310  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  311  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  312  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  313  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+=== DIALOG 105 "Define Scan Fields Wizard           Step 3 of 4" (4 controls)
+  -1  STATIC  "You must now zoom in the selected area to determine
+the Field Size. Make sure you see a satisfactory amount of detail. From the field size the number of Scan Fields will be calculated. "
+  -1  STATIC  "The Magnification is assigned to the left mouse button. Keep the button pressed and move the mouse to the right to zoom in. "
+  -1  STATIC  "Press "Next >" to start zooming in."
+  -1  STATIC  "Press the "Done" button to confirm your magnification."
+=== DIALOG 106 "Define Scan Fields Wizard           Step 4 of 4" (7 controls)
+  -1  STATIC  "You have now defined the scan fields. 
+You can redefine the field overlap. "
+  319  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  320  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  -1  STATIC  "Number of Fields"
+  -1  STATIC  "X"
+  -1  STATIC  "Y"
+  321  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+=== DIALOG 200 "" (0 controls)
+=== DIALOG 203 "Stage Side View" (8 controls)
+  288  {6FB2FD33-472C-11D2-A9A9-0020AFB710E4}  ""
+  289  {6FB2FD33-472C-11D2-A9A9-0020AFB710E4}  ""
+  300  BUTTON  "Show Fields"
+  -1  BUTTON  "Perpendicular"
+  -1  STATIC  "This view shows a perpendicular view to the holder. The horizontal 'beam-center' line is visible when Stage Tilt=0°"
+  -1  STATIC  "This view shows the selected stage sample holder, and is side-on to the holder. The horizontal line shows the sample height parameter"
+  -1  BUTTON  "Side-on"
+  365  BUTTON  "Initialise Stage"
+=== DIALOG 204 "SM2" (37 controls)
+  -1  STATIC  "X"
+  -1  STATIC  "Y"
+  -1  STATIC  "Z"
+  -1  STATIC  "T"
+  -1  STATIC  "R"
+  -1  STATIC  "M"
+  -1  STATIC  "Stage At"
+  -1  STATIC  "Go To"
+  -1  STATIC  "Delta"
+  222  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  223  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  224  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  225  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  226  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  227  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  228  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  229  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  230  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  231  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  232  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  233  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  235  BUTTON  "XY"
+  236  BUTTON  "Z"
+  237  BUTTON  "T"
+  238  BUTTON  "R"
+  239  BUTTON  "M"
+  240  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  241  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  242  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  243  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  -1  BUTTON  "Field Movement"
+  263  BUTTON  "Up1"
+  264  BUTTON  "Pause1"
+  265  BUTTON  "Down1"
+  266  BUTTON  "Left1"
+  267  BUTTON  "Right1"
+  274  BUTTON  "Move using Stage Scanning fields"
+=== DIALOG 205 "SM4" (37 controls)
+  4294967295  BUTTON  "Limits"
+  4294967295  STATIC  "X"
+  4294967295  STATIC  "Y"
+  4294967295  STATIC  "Z"
+  4294967295  STATIC  "T"
+  4294967295  STATIC  "M"
+  252  BUTTON  ""
+  4294967295  STATIC  "High"
+  4294967295  STATIC  "Low"
+  253  BUTTON  ""
+  254  BUTTON  ""
+  255  BUTTON  ""
+  256  BUTTON  ""
+  257  BUTTON  ""
+  258  BUTTON  ""
+  259  BUTTON  ""
+  260  BUTTON  ""
+  261  BUTTON  ""
+  262  BUTTON  "Set Limits"
+  263  BUTTON  ""
+  264  BUTTON  ""
+  4294967295  STATIC  "= OK"
+  4294967295  STATIC  "= Hit"
+  245  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  246  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  248  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  362  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  244  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  247  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  249  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  250  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  4294967295  BUTTON  "Centre Point Function"
+  367  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  4294967295  BUTTON  "Sample Holder"
+  265  BUTTON  "Settings"
+  375  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  4294967295  BUTTON  "General"
+=== DIALOG 206 "SM3" (14 controls)
+  269  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  271  LISTBOX  ""
+  272  BUTTON  "Add"
+  264  BUTTON  "Delete"
+  265  BUTTON  "Edit"
+  334  EDIT  ""
+  335  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  276  BUTTON  "Start"
+  277  BUTTON  "Prev"
+  278  BUTTON  "Next"
+  279  BUTTON  "End"
+  336  BUTTON  "Go to Selected point"
+  -1  BUTTON  "Edit points"
+  -1  BUTTON  "Navigation"
+=== DIALOG 209 "SM5" (14 controls)
+  276  BUTTON  "Start"
+  277  BUTTON  "Prev"
+  278  BUTTON  "Next"
+  279  BUTTON  "End"
+  4294967295  BUTTON  "Field Navigation"
+  280  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  294  BUTTON  "XBous"
+  295  BUTTON  "XRast"
+  296  BUTTON  "YBous"
+  297  BUTTON  "YRast"
+  4294967295  BUTTON  "Stage Scan Pattern"
+  299  BUTTON  "Advanced"
+  300  BUTTON  "Setup Wizard"
+  273  {6FB2FD33-472C-11D2-A9A9-0020AFB710E4}  ""
+=== DIALOG 210 "SM6" (29 controls)
+  4294967295  BUTTON  "Survey Mode"
+  202  BUTTON  "Lowest Mag"
+  203  BUTTON  "Mag --->"
+  330  EDIT  ""
+  205  BUTTON  "Get Current"
+  4294967295  STATIC  "WD"
+  206  EDIT  ""
+  207  BUTTON  "Get Current"
+  217  BUTTON  "Remember Changes"
+  218  BUTTON  "Auto Focus"
+  223  COMBOBOX  ""
+  225  BUTTON  "Macro"
+  4294967295  STATIC  "Mag"
+  210  EDIT  ""
+  211  BUTTON  "Get Current"
+  4294967295  STATIC  "WD"
+  212  EDIT  ""
+  213  BUTTON  "Get Current"
+  4294967295  BUTTON  "Resolution Imaging"
+  219  BUTTON  "Auto Focus"
+  224  COMBOBOX  ""
+  226  BUTTON  "Macro"
+  214  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  220  STATIC  ""
+  4294967295  BUTTON  "Exit Survey Mode"
+  227  BUTTON  "Macro"
+  228  COMBOBOX  ""
+  229  BUTTON  "Load"
+  230  BUTTON  "Save"
+=== DIALOG 314 "Magnification adjustment" (1 controls)
+  1  BUTTON  "Done"
+=== DIALOG 318 "Points List Label" (4 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  STATIC  "Please enter a label:"
+  322  EDIT  ""
+=== DIALOG 319 "Point Data" (20 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  STATIC  "Label"
+  332  STATIC  "X (mm)"
+  333  STATIC  "Y (mm)"
+  -1  STATIC  "Z (mm)"
+  -1  STATIC  "T (Deg)"
+  -1  STATIC  "R (Deg)"
+  -1  STATIC  "M (mm)"
+  -1  STATIC  "Mag (x)"
+  -1  STATIC  "WD (mm)"
+  323  EDIT  ""
+  324  EDIT  ""
+  325  EDIT  ""
+  326  EDIT  ""
+  327  EDIT  ""
+  328  EDIT  ""
+  329  EDIT  ""
+  330  EDIT  ""
+  331  EDIT  ""
+=== DIALOG 320 "Save Points As" (4 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  -1  STATIC  "Enter file name:"
+  342  EDIT  ""
+=== DIALOG 321 "Survey Mode Settings" (0 controls)
+=== DIALOG 323 "Save Settings: Enter Filename" (3 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  355  EDIT  ""
+=== DIALOG 332 "Sample Holder Settings" (4 controls)
+  -1  STATIC  "N.B: Double click to enter values manually"
+  369  {F8BEBA63-8E0A-11CF-BBF2-0020AF71E433}  ""
+  372  {F8BEBA63-8E0A-11CF-BBF2-0020AF71E433}  ""
+  373  {F8BEBA63-8E0A-11CF-BBF2-0020AF71E433}  ""

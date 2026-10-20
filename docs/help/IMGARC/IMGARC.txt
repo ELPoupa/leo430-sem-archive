@@ -1,0 +1,534 @@
+﻿$#KApply Print Settings
+
+This option is for use with Network Printers and is locaKted on the Network Printers TabNetwork_Printer_Tab, and is activated when the Enable Network PrinterEnable_transfers_to_Network_Printer option is checked.
+
+When this button is pressed, the Image Archive program will attempt to log in to the network printer ready to transfer any selected Image files. The print formatting options are actually applied just before the images are sent to the printer.
+$#Archive Attribute
+
+Each filename under the DOS operating system has a number of attributes associated with it, these can be any of :
+
+{bmc bm0.bmp}	Normal (default)
+{bmc bm0.bmp}	Read-only
+{bmc bm0.bmp}	Hidden
+{bmc bm0.bmp}	System file
+{bmc bm0.bmp}	Archive - File has changed since last backup
+
+ImgArc monitors the Archive attributes on image files, and transfers those files which have the archive attribute set. Once a file has been successfully transferred, the archive attribute on this file is cleared.
+
+ImgArc will by default not transfer image files with this bit set. The user may however change the archive attributeChanging_the_Archive_Attribute on any image file manually, or override this functionality by using the Include Files Already TransferredInclude_Files_Already_Transferred check-box on the Image File Source TabImage_File_Source_Tab.
+$#KArchived Images
+
+When logged in, this list box will contain a directory listing of the host computer3H.QV4, using the specified directory path1BZPJX that is assigned to the remote user account3HIUH2.
+
+Unlike the local SEM Image direcorySEM_Image_Files, all files in the remote directory are listed. The format of each entry is described below :
+
+-rw-rw-r--   1 37417    996        39754 Jun  9 16:33 image1.jpg
+
+The first four fields describe the file access attributes on the remote system, these are followed in order by :
+
+{bmc bm0.bmp}	File size in bytes : This may differ between machines, and is simply a replaction of the amount of storage space required on that system to hold the file
+{bmc bm0.bmp}	Month, Day and time that the file was created
+{bmc bm0.bmp}	The File name itself
+
+The next two example entries represent the current directory and the directory above the current directory (the parent directory) respectively.
+
+drwxrws---   2 37417    996          512 Jun  9 16:33 .
+drwxr-xr-x 940 0        996        15360 Jun 11 08:57 ..
+
+Double click on the '..' filename to move to the parent directory. Note that the current Image Directory1BZPJX and the Archived Images list refresh to reflect this change.
+$#Browse
+
+This option allows the user to specifiy another log file name that will hold the contents of the user log fileUser_Log_File. A file selection dialog box similar to the one show below will appear to make file selection easier :
+
+{bmc bm1.bmp}
+
+The log file is always stored in the SEM User directory which is displayed on the ImgArc Source TabImage_File_Source_Tab.
+$#KCancel All File Transfers
+
+When a file transfer5VFV.V is in progress, clicking this button will cancel the current file being transferred, along with all other subsequent file transfers for that session. A prompt will appear asking the user to confirm this action. If the cancel operation is confirmed, the partially copied file on the remote host3H.QV4 computer will be automatically deleted. 
+
+Click the Cancel button3M0LA4C to cancel the current file being transferred only.
+
+Note: When transferring Images to the network printer (When the Enable Network PrinterEnable_transfers_to_Network_Printer option is checked, which is located on the Network Printers TabNetwork_Printer_Tab.), the network printer will not include any of the remaining images in its printout(s). To Cancel the print job entirely, use the Cancel Print JobCancel_Current_Job button.
+$#Cancel Current Job
+
+This option is for use with Network Printers and is located on the Network Printers TabNetwork_Printer_Tab, and is activated when the Enable Network PrinterEnable_transfers_to_Network_Printer option is checked.
+
+When logged in to the network printer, pressing this button will transfer a command to the Network printer to abort any print jobs in progress. Any Images transferred to the printer prior to this command will not be printed.
+
+Note : Use this command with caution!
+$#KCancel Image Transfer
+
+When a file transfer5VFV.V is in progress, clicking this button will cancel the current file being transferred. A prompt will appear asking the user to confirm this action. If the cancel operation is confirmed, the partially copied file on the remote host3H.QV4 computer will be automatically deleted. There may be a brief pause whilst this operation is completed.
+
+File transfer will resume with the next image file in the list. To cancel all transfers, click the Cancel All9A3XVB button. 
+
+Note : The default behaviour of an FTP operation is to over-write files of the same name. If a file transfer operation has already started to copy a file over the top of an existing file, the existing file will also be unavailable when the cancel operation is used. The user3HIUH2 can use the Destination TabImage_File_Destination_Tab to check the files in their target directoryXYKH1 during the setup mode of operationModes_of_Operation of ImgArc.
+
+When transferring Images to the network printer (When the Enable Network PrinterEnable_transfers_to_Network_Printer option is checked, which is located on the Network Printers TabNetwork_Printer_Tab.), the network printer will not include this image in its printout(s). To Cancel the print job entirely, use the Cancel Print JobCancel_Current_Job button.
+$#Change Dir
+
+This button causes ImgArc to change the Destination Image Directory to that specified by the FTP Image Directory1BZPJX input box. If a directory change is successful, then the Image Archive ListXYKH1 will be updated. This setting then becomes the default directory for the user3HIUH2 to log in to on the remote host3H.QV4.
+
+If the user3HIUH2 does not have sufficient privilege, or the directory specified is invalid, then an FTP errorErrors_Help is reported both in the Image Archive listXYKH1 and in the Status BarThe_Status_Bar.
+
+Hint : To set a directory automatically, those entries in the Image Archive ListXYKH1 that represent directories can be double clicked on.
+$#KChanging the Archive Attribute
+
+The archive attribute1MP7OUG on any image file may be changed using the following method :
+
+1. Locate the image file using Explorer
+2. Right click on the file
+3. Select the file Properties menu Item :
+
+	{bmc bm2.bmp}
+4. Changes the file attributes :
+
+	{bmc bm3.bmp}
+$#Clear Log
+
+This option causes the user log fileUser_Log_File to be cleared. All prior messages in the log file will be removed.
+$#KContents
+
+Welcome to the LEO FTP Image Archive Utility
+
+IntroductionIntroduction
+
+Modes of OperationModes_of_Operation
+
+The Status BarThe_Status_Bar
+The FTP Status BarFTP_Status_Bar
+Image File Source TabImage_File_Source_Tab
+Image File Destination TabImage_File_Destination_Tab
+Options TabOptions_Tab
+Network Printer TabNetwork_Printer_Tab
+
+The Transfer ButtonB8__3Z
+The Close Button_8FIJN
+
+Error CodesErrors_Help
+
+
+Copyright © 1998, LEO Electron Microscopy Ltd
+Telephone (44) 1223 414166
+$#Enable transfers to Network Printer
+
+This check-box is found on the Network Printer TabNetwork_Printer_Tab, and allows access to a number of additional formatting options when transferring Images to a network printer.
+
+As soon as this option is enabled, the Image Archive program logs into the Remote Network Printer automatically. This link remains active until the user logs-out from the printer using the Log-out buttonEE4OAC, or until the Image Archive application closes.
+
+When transferring images to the printer using the Transfer buttonB8__3Z, the settings on the Network Printer TabNetwork_Printer_Tab are first sent to the printer.
+
+All Image files that are sent to the Network printer will have their archive attribute 1MP7OUG cleared, this allows the Image Archive program to identify which files will be transferred to the printer during the next transfer session. This selection option however can be overridden by using the Include Files Already TransferredInclude_Files_Already_Transferred check-box on the Image File Source TabImage_File_Source_Tab.
+$#KErrors Help
+
+During an FTP session, there are numerous operations that can result in an error code being generated either by the local PC or the remote computer. The PC uses as 'Windows Sockets' interface to implement its FTP transfers. Consult the following list of error codes as to why the particular function failed to complete.
+
+Error codes will usually be recorded in the log fileUser_Log_File, displayed in the Archived Images List and/or displayed in the status display barThe_Status_Bar
+
+Hint : The easiest way to reset an error condition is to logoutEE4OAC followed again by a login5P5S_OV to restart the FTP connection.
+
+FTP Error Codes
+
+Code	Mnemonic	Description
+
+0	OK	Socket operation okay or timeout.
+4	SOCK_INTR	System level interrupt interrupted socket operation.
+9	SOCK_BAD	Generic error for invalid format, bad format.
+13	SOCK_ACCESS	Generic error for access violation.
+14	SOCK_FAULT	Generic error for fault.
+22	SOCK_INVALID	Generic error for invalid format, entry, etc.
+24	SOCK_FILE	Generic error for file error.
+25	SOCK_BADDR	The IP address provided is not valid or the host specified by the IP does not exist.
+38	SOCK_NOSOCK	Invalid socket or not connected to remote.
+48	SOCK_ADDRINUSE	The specified address is already in use.
+49	SOCK_ADDRNOTAVAIL	The specified address is not available.
+50	SOCK_NETDOWN	The connected network is not available.
+51	SOCK_NETUNREACH	The connected network is not reachable.
+52	SOCK_NETRESET	The connected network connection has been reset.
+53	SOCK_CONNABORTED	The current connection has been aborted by the network or intermediate services.
+54	SOCK_CONNRESET	The current socket connection has been reset.
+57	SOCK_NOTCONN	The current socket has not been connected.
+58	SOCK_SHUTDOWN	The connection has been shutdown.
+60	SOCK_TIMEDOUT	The current connection has timedout.
+61	SOCK_CONNREFUSED	The requested connection has been refused by the remote host.
+63	SOCK_NAMETOOLONG	Specified host name is too long.
+64	SOCK_HOSTDOWN	Remote host is currently unavailable.
+65	SOCK_HOSTUNREACH	Remote host is currently unreachable. 
+91	SOCK_SYSNOTREADY	Remote system is not ready.
+92	SOCK_VERNOTSUPPORTED	Current socket version not supported by application.
+93	SOCK_NOTINITIALISED	Socket API is not initialized.
+101	SOCK_DISCON	Socket has been disconnected.
+110	SOCK_FTP_RESTART	A restart marker has been received from the remote host.
+120	SOCK_FTP_SYS_DELAY	FTP service ready in nnn minutes.
+125	SOCK_FTP_CONN_X	FTP data connection already open.
+150	SOCK_FTP_FILEOK	FTP File status is okay.
+200	SOCK_FTP_OK	FTP command is okay.
+202	SOCK_FTP_CMD_IMP1	FTP command is not implemented
+210	MAIL_NOCNCT	No mail connection available.
+211	SOCK_FTP_SYS_STAT	Current FTP reply is a system status or system help reply.
+211	MAIL_BADORIG	Originating email address is invalid.
+212	SOCK_FTP_DIR_STAT	Current message is a directory status.
+212	MAIL_BADDEST	Destination email address is invalid.
+213	SOCK_FTP_FILE_STAT	Current message is an FTP file status.
+213	MAIL_BADDOM	Domain name provided to SMTP is invalid.
+214	SOCK_FTP_HELP_MSG	Current message is a help message.
+214	MAIL_NODATA	Cannot send email data.
+215	SOCK_FTP_SYS_NAME	FTP system type.
+215	MAIL_NOEND	Cannot end the transmission of email.
+216	MAIL_NOQUIT	Unable to end the email session.
+217	MAIL_BADCC	CC address(es) are invalid.
+220	SOCK_FTP_SVC_READY	FTP service ready for new user.
+220	POP_NOCNCT	POP connection not available.
+221	SOCK_FTP_SVC_CLOSING	FTP server closing control connection.
+221	POP_NOSTAT	POP statistics unavailable.
+222	POP_NOLIST	POP email list unavailable.
+223	POP_INVUSER	Invalid POP account username.
+224	POP_INVPASS	Invalid POP account password.
+225	SOCK_FTP_CONN_NOX	No FTP connection.
+225	POP_NOOFF	Unable to logoff of POP.
+226	SOCK_FTP_CLOSE_CONN	FTP server closing data connection.
+226	POP_NODEL	Unable to delete mail.
+227	SOCK_FTP_PASSIVE	Passive Mode (h1,h2,h3,h4,p1,p2).
+227	POP_NOGET	Unable to get mail.
+228	POP_NOUNDEL	Unable to undelete mail.
+229	POP_NOUIDL	Unable to retrieve UIDL information.
+230	SOCK_FTP_LOGIN	Unable to log into FTP server.
+250	SOCK_FTP_FILEACT_OK	Requested file action okay, completed.
+257	SOCK_FTP_PATH_CREATE	"PATHNAME" created.
+331	SOCK_FTP_PASS	Invalid FTP password.
+332	SOCK_FTP_ACNT1	Invalid FTP account.
+350	SOCK_FTP_FILE_WAIT	File action pending further information.
+400	SOCK_NNTP_SVC_DISCNCT	Service disconnected.
+411	SOCK_NNTP_NO_NWSGRP	No such newsgroup.
+412	SOCK_NNTP_NO_SLCT_NWSGRP	No newsgroup selected for operation.
+420	SOCK_NNTP_NO_ARTICLE	No current article has been selected.
+421	SOCK_NNTP_NO_NXT_ARTICLE	No next article available in selected group.
+421	SOCK_FTP_SVC_NOT_AVAIL	Service not available.
+422	SOCK_NNTP_NO_PRV_ARTICLE	No previous article available in selected group.
+423	SOCK_NNTP_NO_ARTICLE_NUM	No such article available in selected group.
+425	SOCK_FTP_CONN_CLOSED 	Cant open data connection.
+426	SOCK_FTP_XFR_ABORT	Connection closed; transfer aborted.
+430	SOCK_NNTP_NO_SCH_ARTICLE	No such article in selected group.
+435	SOCK_NNTP_ARTICLE_NOTWNT	Article not wanted, do not send to server.
+436	SOCK_NNTP_XFR_FAIL	Transfer failed, try again later.
+437	SOCK_NNTP_ARTICLE_RJCT	Article rejected, do not resend.
+440	SOCK_NNTP_NO_POST	Posting of articles not allowed.
+441	SOCK_NNTP_POST_FAIL	Posting of the article has failed.
+450	SOCK_FTP_FILE_BUSY	Requested file action not taken.
+451	SOCK_FTP_LOCAL_ERROR	Local error in processing.
+452	SOCK_FTP_INSUFF_SPC	Insufficient storage space in system.
+500	SOCK_NNTP_CMD_SYNTAX	Syntax error, command unrecognized.
+500	SOCK_FTP_CMD_SYNTAX	Syntax error, command unrecognized.
+501	SOCK_NNTP_ARG_SYNTAX	Syntax error in arguments.
+501	SOCK_FTP_ARG_SYNTAX	Syntax error in arguments.
+502	SOCK_NNTP_NO_ACCESS	Access is restricted or denied.
+502	SOCK_FTP_CMD_IMP2	FTP command not implemented.
+503	SOCK_NNTP_FAULT	Program fault, operation not performed.
+503	SOCK_FTP_BAD_SEQ	Bad FTP sequence.
+504	SOCK_FTP_CMD_IMP3	FTP command not implemented.
+530	SOCK_FTP_NOLOGIN	Not logged into remote host.
+532	SOCK_FTP_ACNT2	Need account on remote host to store files.
+550	SOCK_FTP_FNOT_FOUND	Requested action not taken.
+551	SOCK_FTP_PAGE_UNK	Page type unknown.
+552	SOCK_FTP_XEED_STOR	Exceeded storage allocation 
+553	SOCK_FTP_NAME_NOTALL	File name not allowed.
+926	SOCK_FTP_INVFILE_HANDLE	Local file is invalid
+927	SOCK_FTP_INVFILE	Local file is invalid
+927	SOCK_SMTP_INVFILE	Local attachment file invalid
+927	SOCK_POP_INVFILE	Local attachment file invalid
+1001	SOCK_HOST_NOT_FOUND	Host not found
+1002	SOCK_TRY_AGAIN	Not authorized, host not found
+1003	SOCK_NO_RECOVERY	Non recoverable error
+1004	SOCK_NO_DATA	No data available for request
+1010	SOCK_GPH_NOFNAME	Query requires an output file.
+1011	SOCK_GPH_NOEXEC	Unable to execute application.
+1012	SOCK_NO_SND_DATA	Unable to send data
+1013	SOCK_NO_CNCT_DATA 	Unable to connect to remote
+1100	SOCK_POP_INVATTACH	Invalid or unsupported attachment
+11000	SYS_OPERATION_EXEC	Requested operation already being executed.  Retry the request or continue.
+$#Exclude Button
+
+The Exclude button on the Image File Source TabImage_File_Source_Tab is used to temporarily exclude the selected files from being included in the next image transfer option. 
+
+This exclusion does not alter the selected files in any way, and is cleared when the Refresh buttonRefresh_button is pressed.
+
+A typical use for this button would be to selectively transfer a set of image files from the users Image directory.
+$#KFTP Host
+
+This is the name of the Remote host computer where the FTP User account3HIUH2 exists. SEM Image files are transferred to this account.
+
+If the user does not know the name of the remote computer specifically, then the internet address of the remote computer can be entered directly e.g:
+
+ftp.acme.co.uk
+149.23.45.52
+
+Are both equally valid entries for the above imaginary internet FTP site. See your system administrator for the Internet address of the remote computer you wish to access.
+$#FTP Image Dir
+
+This is the path on the host computer3H.QV4 that the user account3HIUH2 exists. The SEM Image files are transferred to this directory on the remote Host computer.
+
+Note : By default, if the filename(s) of the SEM Image file(s) already exist on the remote computer, FTP will overwrite the Image files on the remote computer, and replace them with those most recently copied. If the filenames of the Images to be transferred are all different to those already present on the remote computer, no files will be overwritten.
+$#FTP Password
+
+This is the password associated with the FTP User name3HIUH2 on the Remote Host computer. This name must be a registered account on the hosts FTP Server and is not the same as the User Name logged into the SEM User Interface.
+$#KFTP Status Bar
+
+This status bar displays the current action being executed between the local and remote computers during an FTP session such as retrieving a directory listing. The main Status BarThe_Status_Bar Displays the current ImgArc Status.
+$#FTP User Name
+
+This is the name of the user on the Remote Host computer. This name must be a registered account on the host's FTP Server and is not the same as the User Name logged into the SEM User Interface.
+$#KGaps Between Images
+
+This option is for use with Network Printers and is located on the Network Printers TabNetwork_Printer_Tab, and is activated when the Enable Network PrinterEnable_transfers_to_Network_Printer option is checked.
+
+This option determines the line thickness of the gaps between each image 'cell' as it is positioned on the page.
+
+This option is actioned when the Apply Print SettingsApply_Print_Settings Button is Pressed.
+$#KImage File Destination Tab
+
+This tab allows the user to specify where the image files are to be transferred to.
+
+The input boxes available are :
+
+{bmc bm0.bmp}	User3HIUH2
+{bmc bm0.bmp}	PasswordGRKAXJ
+{bmc bm0.bmp}	FTP Host3H.QV4
+{bmc bm0.bmp}	Image Dir1BZPJX
+{bmc bm0.bmp}	Archived ImagesXYKH1
+
+The action buttons available are :
+
+{bmc bm0.bmp}	Log In5P5S_OV
+{bmc bm0.bmp}	Log OutEE4OAC
+{bmc bm0.bmp}	StatusLIYTPP
+{bmc bm0.bmp}	Change Dir1LJZ_DP
+
+{bmc bm4.bmp}
+$#Image File Source Tab
+
+This tab summarises the details associated with the User currently logged on to the LEO-32 Server. As seen below, the details include :
+
+{bmc bm0.bmp}	The Users Name
+{bmc bm0.bmp}	The Directory used to store the Log file for image transfer operations
+{bmc bm0.bmp}	The Directory used to store images saved whilst using the SEM User Interface
+{bmc bm0.bmp}	The list of images that are available for transfer to the Remote Host computer
+
+Note : When the Include Files Already TransferredInclude_Files_Already_Transferred check-box is not checked, the Image List is not a complete list of images in the Image Directory, but displays only those images with their archive attribute1MP7OUG set. When this check-box is checked however, all image files are displayed.
+
+The refresh button is used to update the list of files in the Images for Archive list. This may be necessary for example if the user has saved more images or deleted images from the user directory.
+
+When files are selected by the user, the Exclude ButtonExclude_Button can be pressed to temporarily exclude the selected files from being included in the next image transfer option. This exclusion does not alter the selected files in any way, and is cleared when the refresh button is pressed.
+
+{bmc bm5.bmp}
+$#KImage Transfer option
+
+When this button is checked, Image file transfer will only occur at the end of a session. This option is used in the mode of operationModes_of_Operation that ImgArc is started in.
+$#Images Across the Page
+
+This option is for use with Network Printers and is located on the Network Printers TabNetwork_Printer_Tab, and is activated when the Enable Network PrinterEnable_transfers_to_Network_Printer option is checked.
+
+This option set the number of images to be fitted across the printed page. The width available for the images is determined by the page being either LandscapeLandscape_Selection (Wide and Short) or PortraitPortrait_Selection (Narrow and Tall). If the Images will not fit into the page 'cells' then they will be scaled to fit using the Scaling MethodScaling_Selection set for the printer.
+
+This option is actioned when the Apply Print SettingsApply_Print_Settings Button is Pressed.
+$#KImages Down the Page
+
+This option is for use with Network Printers and is located on the Network Printers TabNetwork_Printer_Tab, and is activated when the Enable Network PrinterEnable_transfers_to_Network_Printer option is checked.
+
+This option set the number of images to be fitted down the printed page. The width available for the images is determined by the page being either LandscapeLandscape_Selection (Wide and Short) or PortraitPortrait_Selection (Narrow and Tall). If the Images will not fit into the page 'cells' then they will be scaled to fit using the Scaling MethodScaling_Selection set for the printer.
+
+This option is actioned when the Apply Print SettingsApply_Print_Settings Button is Pressed.
+$#Include Files Already Transferred
+
+This check-box on the Image File Source TabImage_File_Source_Tab controls the selected Image files displayed in the user directory. When this check box is checked, all Image files are included for transfer, otherwise only the image files with their archive attribute1MP7OUG set will be included.
+
+After each Image file is transferred to the remote computer, its archive bit is cleared to signify that the file has been successfully copied.
+$#KIntroduction
+
+The LEO FTP Image Archive Utility (ImgArc) is designed to allow the SEM Operator to transfer a copy of saved SEM Image FilesSEM_Image_Files to a remote computer using FTP; the TCP/IP Internet protocol for file transfer.
+
+This application program assumes that the TCP/IP protocol is installed and correctly configured on the system that you are running the application on, and on your target system. Your local system administrator should be able to help you configure your computer(s) to use this protocol..
+
+The remote or host computer must be capable of receiving FTP commands, and should be configured as an FTP server. There is additional support for network printers that accept commands and images using the FTP protocol. Such an example is the Codonics NP1600 printer.
+
+The user configures ImgArc by providing the internet address of a host computer, along with username, password and target directory that describe where the image files are to be stored.
+
+A basic interface exists for the user setting up ImgArc to verify that these parameters have been set correctly prior to transferring their image files.
+
+When this application is invoked from the SEM user Interface, only those image files with their archive attribute1MP7OUG set will be copied. The archive bit is cleared only when the image has successfully been copied to the host computer.
+
+Finally, the user can also specifiy whether files are copied as they are saved, or at the end of a 'session' on the SEM.
+$#Landscape Selection
+
+This option is for use with Network Printers and is located on the Network Printers TabNetwork_Printer_Tab, and is activated when the Enable Network PrinterEnable_transfers_to_Network_Printer option is checked.
+
+This option sets the orientation of the printed page. In Landscape mode whe page is wide and short (the opposite to PortraitPortrait_Selection).
+
+This option is actioned when the Apply Print SettingsApply_Print_Settings Button is Pressed.
+$#KLog In
+
+Once the User Name3HIUH2, PasswordGRKAXJ, FTP Host3H.QV4 and Directory Path1BZPJX have all been entered, this button can be pressed to log into the FTP Host computer. When run in any operating modeModes_of_Operation other than setup, login is automatic, and will use the setting provided on the Destination options tabImage_File_Destination_Tab.
+
+If login is successful, then the Archived Images list boxXYKH1 will display a list of files in the specified Image Directory.
+
+Hint : If the Image Directory Path name is not known, use '.' as a default value. ImgArc will then replace this value after a successful login to the default Users Directory path.
+$#Log Out
+
+This is the opposite action to loggin in5P5S_OV, and will result in the FTP session between ImgArc and the remote host computer to be terminated. Note that if the user3HIUH2 is not logged in, then this button is greyed.
+
+Hint: If you encounter any FTP errorsErrors_Help that you can't resolve, simply try logging out and logging back in to resume your FTP session.
+$#KModes of Operation
+
+There are currently three distinct modes in which ImgArc will operate. These are :
+
+1.	Setup Mode : No Command line parameter 
+2.	Image Saved Mode : Command line parameter /t
+3.	End of Session Mode : Command line parameter /e
+
+With no command line parameters, the Main Form will be displayed. Here, the FTP Host can be configured along with other program parameters. These are saved into the window registry by SEM User Name and are Recalled at the beginning of each session.
+
+The other two modes are for automatic image transfer and no setup screen will be displayed unless no input parameters have yet been set.
+
+Note : When run from the SEM User Interface, specific SEM macros will be used to set up the required command line parameters automatically. Please refer to the SEM UIF Help on programming and using Macros.
+See
+	MacrosQGFYFC@leom.hlp
+	Execute Program macro instruction1KGATAT@leom.hlp
+	Attaching macros to Special Function Keys1UJHHWM@leom.hlp
+$#Network Printer Tab
+
+When a network printer is available such as the Codonics NP1600, only the printer Host Address3H.QV4 needs to be given on the Image File Destination TabImage_File_Destination_Tab. After the Host address is entered, clicking on the Enable transfers to Network PrinterEnable_transfers_to_Network_Printer automatically logs on to the printer. The images from the Source TabImage_File_Source_Tab are transferred to the printer when the Transfer button is pressed.
+
+There are a number of formatting options available when sending images to a network printer :
+
+{bmc bm0.bmp}	Printer Model SelectionPrinter_Model_Selection
+{bmc bm0.bmp}	Number of Printed CopiesNumber_of_Printed_Copies
+{bmc bm0.bmp}	Images Across the PageImages_Across_the_Page
+{bmc bm0.bmp}	Images Down the PageImages_Down_the_Page
+{bmc bm0.bmp}	Gaps Between ImagesGaps_Between_Images
+{bmc bm0.bmp}	Page BorderPage_Border
+{bmc bm0.bmp}	Landscape SelectionLandscape_Selection
+{bmc bm0.bmp}	Portrait SelectionPortrait_Selection
+{bmc bm0.bmp}	Scaling SelectionScaling_Selection
+
+There are two command options available to the user from this tab :
+
+{bmc bm0.bmp}	Apply Print SettingsApply_Print_Settings
+{bmc bm0.bmp}	Cancel Current JobCancel_Current_Job
+
+{bmc bm6.bmp}
+$#KNumber of Printed Copies
+
+This option is for use with Network Printers and is located on the Network Printers TabNetwork_Printer_Tab, and is activated when the Enable Network PrinterEnable_transfers_to_Network_Printer option is checked.
+
+This option set the number of duplicate copies that the printer produces of the image files transferred to it.
+
+This option is actioned when the Apply Print SettingsApply_Print_Settings Button is Pressed.
+$#Options Tab
+
+This tab both specifies the location of the user log fileUser_Log_File, and the Image Transfer option5NK5OS.
+
+The log file has three command buttons associated with it :
+
+{bmc bm0.bmp}	BrowseXQHW0R
+{bmc bm0.bmp}	Update124L4M7
+{bmc bm0.bmp}	Clear LogRFXF3
+
+{bmc bm7.bmp}
+$#KPage Border
+
+This option is for use with Network Printers and is located on the Network Printers TabNetwork_Printer_Tab, and is activated when the Enable Network PrinterEnable_transfers_to_Network_Printer option is checked.
+
+This option determines the line thickness of the margin around the border of the printed page.
+
+This option is actioned when the Apply Print SettingsApply_Print_Settings Button is Pressed.
+$#Portrait Selection
+
+This option is for use with Network Printers and is located on the Network Printers TabNetwork_Printer_Tab, and is activated when the Enable Network PrinterEnable_transfers_to_Network_Printer option is checked.
+
+This option sets the orientation of the printed page. In Portrait mode whe page is narrow and tall (the opposite to LandscapeLandscape_Selection).
+
+This option is actioned when the Apply Print SettingsApply_Print_Settings Button is Pressed.
+$#KPrinter Model Selection
+
+This option is for use with Network Printers and is located on the Network Printers TabNetwork_Printer_Tab, and is activated when the Enable Network PrinterEnable_transfers_to_Network_Printer option is checked.
+
+Choose the correct printer type from the drop-down selection combo-box.
+
+This option is actioned when the Apply Print SettingsApply_Print_Settings Button is Pressed.
+
+Note : Depending on the printer type selected, some of the formatting options for that printer may be limited, and the options unavailable on that printer will be greyed.
+$#Refresh button
+
+The Refresh button on the Image File Source TabImage_File_Source_Tab is used to update the list of files included in the next image transfer option. 
+
+Any images excluded with the Exclude buttonExclude_Button will restored as the list is updated.
+
+A typical use for this button would be to reset the list of images to be transferred to the remote computer, or to update the list if any files have recently been added or removed from the User Directory. This function is executed automatically when the Image Archive application first starts up.
+$#SEM Image Files
+
+The LEO-32 UIF Currently Supports a number of output file formats. These Include :
+
+{bmc bm0.bmp}	TIFF - Tagged Image File Format Version 5.0
+{bmc bm0.bmp}	JPG - Image Files saved using the JPEG Compression algorithm
+{bmc bm0.bmp}	BMP - Windows Bitmap File Format
+
+Note : The SEM Image File List on the ImgMgr Source TabImage_File_Source_Tab is not a complete list of images in the Image Directory, but displays only those images with their archive attribute1MP7OUG set.
+$#KScaling Selection
+
+This option is for use with Network Printers and is located on the Network Printers TabNetwork_Printer_Tab, and is activated when the Enable Network PrinterEnable_transfers_to_Network_Printer option is checked.
+
+This option sets the method by which images are scaled down and pixels removed to allow an Image to be fitted into its position on the printed page. The current methods available for scaling Images are any of :
+
+{bmc bm0.bmp}	BOX : Box scaling is the fastest of the scaling algorithms. It is implemented using pixel replication. Box should be used for images containing text with block letters in which text must remain sharp. Artifacts : Box tends to produce blocky-looking prints, especially when large scale factors are used.
+{bmc bm0.bmp}	BILINEAR : Bilinear scaling is the second-fastest scaling routine and is the default printer setting. It employs a linear interpolation to determine the output image. Bilinear scaling provides ver good scaling for most applications where scale factors are relatively small (4X or less). A great amount of optimization effort was put into the bilinear algorithm. Artifacts : Block letters will have fuzzy edges. Bilinear results in a slight decrease in dynamic range for large scale factors.
+{bmc bm0.bmp}	BICUBIC : The Bicubic algorithm produces the smoothest output, but tends to smooth over fine details. The filter function is a cubic B-spline filter. This routine requires the same processing time as Mitchell. Bicubic is recommended for applications where the smoothest output is required. Artifacts : Images may appear somewhat blurry due to the smoothing of the filter. Block letters will have fuzzy edges.
+{bmc bm0.bmp}	MITCHELL : Mitchell uses a cubic Mitchell function to produce a very smooth output while maintaining dynamic range and sharpness. Mitchell processing takes approximately twice the processing time as Bilinear. Mitchell can be used for any scaling application, especially when scaling factors are 2X or greater. Artifacts : Block letters will have fuzzy edges.
+{bmc bm0.bmp}	LANCZOS : Lanczos uses a filter based on the sinc function. This is the most theoretically correct filter and produces the best output for photographic images that do not have sharp transitions in them. However, Lanczos will produce ripple artefacts especially for block text, due to aliasing. Lanczos also requires three times the processing time of Bilinear. Lanczos is not recommended except in very rare applications using band-limited photographic images with no sharp edges. Artifacts : Lanczos produces ripple artifacts around sharp edges, such as found with text. This algorithm is not recommended for most applications.
+
+This option is actioned when the Apply Print SettingsApply_Print_Settings Button is Pressed.
+$#The Close Button
+
+Pressing this button will close the ImgArc application. If the user is logged in5P5S_OV to the host computer3H.QV4, they are automatically logged outEE4OAC.
+
+All settings changed by the SEM User are saved in the registry and are restored when the SEM user subsequently runs ImgArc.
+$#The File Copy Dialog
+
+When a file copy operation is in progress, a dialog similar to the one show below appears. The information displayed within it is as follows :
+
+{bmc bm0.bmp}	Image Number : The current image being transferred from the current 'batch' as displayed in the Local Image ListSEM_Image_Files
+{bmc bm0.bmp}	Source : The source of the current SEM Image being transferred as specified on the Source TabImage_File_Source_Tab
+{bmc bm0.bmp}	Destination : The target location for the image file specified on the ImgMgr Destination TabImage_File_Destination_Tab
+{bmc bm0.bmp}	Progress : The percentage of the current file transfer that has completed so far
+{bmc bm0.bmp}	Bytes Remaining : The number of bytes waiting to be transferred to the remote host computer3H.QV4
+
+During transfer, there are two command buttons that can be pressed :
+
+{bmc bm0.bmp}	Cancel All9A3XVB
+{bmc bm0.bmp}	Cancel3M0LA4C
+
+{bmc bm8.bmp}
+
+Note : The time taken to transfer images relies entirely on the type of connection being used between the local and remote host computers. This can vary between seconds and minutes for the same image, where connection types vary.
+$#The Status Bar
+
+This graphic provides information on the current state of the ImgArc program. All pertinent status messages are recorded in the User Log FileUser_Log_File. When an FTP operation is in progress, the FTP Status BarFTP_Status_Bar reflects what action if any is currently pending.
+
+Any FTP or other error codesErrors_Help/messages are also stored in the User Log FileUser_Log_File.
+$#KThe Status Button
+
+This command asks ImgArc to return the current system status from the FTP session. The resultant status string (if any) is displayed in the Status BarThe_Status_Bar.
+$#The Transfer Button
+
+This button will be greyed out until the user3HIUH2 has logged in5P5S_OV to the remote host computer3H.QV4.
+
+The Transfer button will action an image transfer operation using settings displayed on the Source TabImage_File_Source_Tab and Destination TabImage_File_Destination_Tab. Each event during the transfer operation is stored in the user log fileUser_Log_File. 
+
+During the Image transfer operation a file copy progress dialog5VFV.V will appear showing the status of each Image file being transferred.
+$#KUpdate Log
+
+This causes the User log fileUser_Log_File display to be refreshed. Usually, this function is automatic and will automatically update the log file display whenever an entry is added to the log file.
+$#User Log File
+
+Each event in ImgArc such as logging in5P5S_OV and outEE4OAC of the remote host computer3H.QV4 and transferring Image Files is recorded in a log file specified on the Options TabOptions_Tab. The User directory where the log file exists is shown on the Source TabImage_File_Source_Tab.
+
+The Options TabOptions_Tab also shows the contents of the log file. All FTP errorsErrors_Help are also logged to this file.

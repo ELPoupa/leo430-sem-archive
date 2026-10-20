@@ -1,0 +1,1218 @@
+{\rtf1\ansi\deff4
+{\fonttbl{\f0\fnil System;}{\f1\fnil MS Sans Serif;}{\f2\fnil Courier;}{\f3\fnil Symbol;}{\f4\fswiss Arial;}{\f5\fnil Courier New;}{\f6\froman Times New Roman;}{\f7\fswiss Wingdings;}{\f8\fnil Arial Rounded MT Bold;}{\f9\fnil Wingdings 3;}{\f10\froman Tms Rmn;}{\f11\fswiss Helv;}{\f12\fnil Times;}{\f13\fswiss Helvetica;}{\f14\froman CG Times;}}
+{\colortbl;\red0\green0\blue255;}
+{\stylesheet{\fs36 \snext0 Normal;}
+}\pard\plain
+{\up $}{\footnote\pard\plain{\up $} 4QBSD Bias}
+{\up #}{\footnote\pard\plain{\up #} 4QBSD_Bias}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} 4QBSD Bias;menu;Points list Text File Format}
+\b\fs36\cf1 4QBSD Bias
+\par \pard \plain\fs24 
+\par \f13 Each segment can be set to one of{\up K}{\footnote\pard\plain{\up K} Mounting of  Back Scattered Detector}
+ three bias states.
+\par 
+\par \pard\tx355 \tab \b Normal\plain\f13\fs24 \tab The signal is added to the total signal.
+\par 
+\par \tab \b Off\plain\f13\fs24 \tab \tab The signal is not used.
+\par 
+\par \tab \b Inverted\plain\f13\fs24 \tab The signal is inverted before being added to the total signal.
+\par 
+\par \{bmc bm0.bmp\} Open the \ul Drop-down List\plain\f13\fs24 {\v XYVXW3@Sem.HLP} and \ul click\plain\f13\fs24 {\v CLICK@Sem.HLP} on the bias set{\up K}{\footnote\pard\plain{\up K} Registration Algorithm}
+ting of your choice.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} 4QBSD Dialog}
+{\up #}{\footnote\pard\plain{\up #} 4QBSD_Dialog}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn\tx355 \f4\b\fs36\cf1 4 Quadrant Back Scattered Detector Dialog
+\par \pard\tx355 \plain\fs24 
+\par \pard\tx355 \f13 This panel is used to control the \b 4\plain\f13\fs24  \b Q\plain\f13\fs24 uadrant \b B\plain\f13\fs24 ack \b S\plain\f13\fs24 catter \b D\plain\f13\fs24 etector (4QBSD).
+\par \pard\tx355 \f4 
+\par \trowd\trgaph105\trleft-116 \cellx8495\cellx8995\cellx13465\pard\intbl \f13 Each detector segment can be set up individually or by using one of the \uldb \b Predefined Settings\plain\f13\b\fs24 {\v 4QBSD_Predefined_Settings}\plain\f13\fs24 .
+\par\intbl 
+\par\intbl In the \b Quadrants\plain\f13\fs24  group, each quadrant can be configured. See \uldb \b BSD Bias\plain\f13\b\fs24 {\v 4QBSD_Bias}\plain\f13\fs24 .
+\par\intbl 
+\par\intbl The \b Mode\plain\f13\fs24  group allows predefined settings for the 4 segments to be set up.
+\par\intbl 
+\par\intbl \b Topo\plain\f13\fs24  should be used when configuring the detector for \i Topographical\plain\f13\fs24  imaging
+\par\intbl \b Compo\plain\f13\fs24  should be used when configuring the detector for \i Compositional\plain\f13\fs24  (or Atomic Contrast) imaging.
+\par\intbl 
+\par\intbl The BSD Gain, Auto Range and Fast fields control aspects of the BSD signal amplifier. \cell\pard \pard\intbl \cell\pard \pard\intbl \{bmc bm1.bmp\}\cell\intbl\row
+\pard 
+\par If the \b BSD Auto Range\plain\f13\fs24  is checked \{bmc bm2.bmp\} the Gain is automatically set by the signal contrast level.
+\par For more precise setting of BSD contrast, deselect\b  BSD Auto Range\plain\f13\fs24  and select a \b Gain\plain\f13\fs24  setting suitable for the sample. Contrast adjustment range now covers the selected gain range.
+\par 
+\par The \b BSD Fast\plain\f13\fs24  field is manually set and should be set \{bmc bm3.bmp\}\f4  when searching for an area of interest using fast scan rates, and disabled\b  \plain\fs24 when imaging at slow scan rates and also for photo recordings.
+\par \pard \f13 
+\par \b Defining Topo settings
+\par \plain\f13\fs24 To change the configuration set the individual segment settings as required and press \b BSD: Set TOPO\plain\f13\fs24 . 
+\par These settings will be remembered and used whenever the TOPO command is given.
+\par 
+\par See also \uldb \b Mounting of  Back Scattered Detector\plain\f13\b\fs24 {\v Mounting_of__Back_Scattered_Detector}\plain\f13\fs24  and \uldb \b Operation Principle of Backscattered Detector\plain\f13\b\fs24 {\v Operation_Principle_of_Backscattered_Detector} \plain\f13\fs24 and\b  \uldb Parameters\plain\f13\b\fs24 {\v 4QBSD_Parameters}\plain\f13\fs24 
+\par 
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} 4QBSD Parameters}
+{\up #}{\footnote\pard\plain{\up #} 4QBSD_Parameters}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} 4QBSD Dialog}
+\f4\b\fs36\cf1 4QBSD Parameters
+\par \pard \plain\fs24 
+\par The data and comments below shall provide for optimal adjustment of all parameters.
+\par 
+\par \trowd\trgaph105\trleft-116 \cellx8495\cellx12965\pard\intbl \b Working Distance
+\par\intbl \plain\fs24 
+\par\intbl The detector has a maximum sensitivity for the back scattered electrons at a working distance of 6 mm if the 10 mm diode pack is fitted or a range of 12 to 20mm if the 25mm diode pack is fitted. At shorter working distance many electrons travel through the central bore  in the detector and at long working distances more and more electrons pass by the sensitive area of the detector diode. 
+\par\intbl \cell\pard \pard\intbl \f11 
+\par\intbl \f10\fs20 \cell\intbl\row
+\trowd\trgaph105\trleft-116 \cellx8495\cellx12965\pard\intbl \f4\b\fs24 Tilt Angle
+\par\intbl 
+\par\intbl \plain\fs24 When the surface is oriented normal to the primary electron beam the signal level is the highest and it decreases as the tilt angle increases.  Therefore no strong signal can be expected from a highly tilted specimen surface because the electrons are scattered in forward direction and do not reach the detector anymore.
+\par\intbl \cell\pard \pard\intbl \{bmc bm4.wmf\}
+\par\intbl \cell\intbl\row
+\trowd\trgaph105\trleft-116 \cellx8495\cellx12965\pard\intbl \b High Voltage\plain\fs24 
+\par\intbl 
+\par\intbl The higher the energy of the backscattered electrons the better the collection efficiency. 
+\par\intbl There is a low KV limit of about 3 to 5 kV below which the detector will not detect backscattered electrons
+\par\intbl \cell\pard \pard\intbl 
+\par\intbl \cell\intbl\row
+\pard In order to obtain the best signal the highest voltage should be selected which the specimen will withstand consistent with good imaging.  Therefore the optimal setting must be considered for each application.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} 4QBSD Predefined Settings}
+{\up #}{\footnote\pard\plain{\up #} 4QBSD_Predefined_Settings}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 4QBSD Predefined Settings
+\par \pard \plain\fs24 
+\par \f13 There are two predefined settings for the 4QBSD, \b Topo\plain\f13\fs24  and \b Compo\plain\f13\fs24 .
+\par 
+\par The 4 segments are configured in the following way :
+\par 
+\par \pard\tx355 \tab \tab \f4\b \{bmc bm5.wmf\}
+\par 
+\par \plain\f13\fs24 Composition mode is designed to produce images showing the atomic contrast of the specimen.
+\par 
+\par Topography mode is designed to produce images showing the surface detail of the specimen.
+\par 
+\par Note that the settings for topography shown here are an example. Other settings may be defined.
+\par 
+\par \b \{bmc bm0.bmp\} \plain\f13\fs24 Open the\b  \plain\f13\ul\fs24 Drop-down List\plain\f13\fs24 {\v XYVXW3@Sem.HLP} and \ul click\plain\f13\fs24 {\v CLICK@Sem.HLP} on the \uldb \b bias setting\plain\f13\b\fs24 {\v 4QBSD_Bias}\plain\f13\fs24  of your choice.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} About Box}
+{\up #}{\footnote\pard\plain{\up #} DQ1ZKU}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn\tx355 {\up K}{\footnote\pard\plain{\up K} 4QBSD Parameters}
+\f4\b\fs36\cf1 About Box
+\par \pard\tx355 \plain\fs24 
+\par \pard\tx355 The Dialog Manager handles all user interface dialogs. 
+\par \pard\tx355 
+\par \pard\tx355 The copyright information for this piece of software and it's revision status is given in the About Box.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Absorbed Specimen Current Measurement}
+{\up #}{\footnote\pard\plain{\up #} Absorbed_Specimen_Current_Measurement}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Absorbed Specimen Current Measurement
+\par \pard \plain\fs24 
+\par Principle of Absorbed Specimen Current Measurement:
+\par 
+\par \trowd\trgaph105\trleft-116 \cellx9065\cellx13815\pard\intbl\tx355 When the primary electron beam (\b PE\plain\fs24 ) hits the specimen, a number of different signals are generated from the specimen:
+\par\intbl 
+\par\intbl \b SE\plain\fs24 :\tab Secondary electrons of low energy
+\par\intbl \b BSE\plain\fs24 :\tab Back scattered electrons of higher energy
+\par\intbl \b TE\plain\fs24 :\tab Transmitted electrons from thin specimens
+\par\intbl 
+\par\intbl Some electrons are absorbed in the specimen and must be conducted to ground potential. If the specimen is insulated from ground these electrons can be measured as specimen current (\b SC\plain\fs24 ) by an amplifier connected between the specimen and the chamber ground.
+\par\intbl 
+\par\intbl An equilibrium of charge is built on the specimen giving the following relation of electron currents:
+\par\intbl 
+\par\intbl \tab \tab \b I\plain\fs24 PE =\b  I\plain\fs24 SE +\b  I\plain\fs24 BSE + \b I\plain\fs24 TE + \b I\plain\fs24 SC
+\par\intbl 
+\par\intbl and thus
+\par\intbl 
+\par\intbl \tab \tab \b I\plain\fs24 SC = \b I\plain\fs24 PE -\b  I\plain\fs24 SE -\b  I\plain\fs24 BSE - \b I\plain\fs24 TE
+\par\intbl \b \cell\pard \pard\intbl\tx355 
+\par\intbl 
+\par\intbl \{bmc bm6.wmf\}\cell\intbl\row
+\pard\tx355 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Add}
+{\up #}{\footnote\pard\plain{\up #} Add}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} 4QBSD Predefined Settings}
+\fs36\cf1 Add
+\par \pard \plain\fs24 
+\par This function combines the current Stage Position and Beam Shift to produce a composite position.
+\par 
+\par This position together with the magnification and \ul Working Distance\plain\fs24 {\v 1YCGPIR@Sem.HLP} (WD) is stored in the Points List with a \uldb \b User Defined Label\plain\b\fs24 {\v User_Defined_Label}\plain\fs24 
+\par If the label already exists in the list a warning is given.
+\par 
+\par See also \uldb \b Stage Points List ADD\plain\b\fs24 {\v A.WPGL@Stage.HLP}\plain\fs24 .
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Backlash On}
+{\up #}{\footnote\pard\plain{\up #} IMYGA.}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Backlash On
+\par \pard \plain\fs24 
+\par This menu lets you switch \uldb Stage Backlash\plain\fs24 {\v Backlash_On@TabMgr.HLP} ON. or OFF
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Beam Current Measurement}
+{\up #}{\footnote\pard\plain{\up #} Beam_Current_Measurement}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} About Box}
+\b\fs36\cf1 Beam Current Measurement
+\par \pard\li705\ri25 \plain\f10\fs20 
+\par \pard \f4\fs24 The primary beam current can be measured with a Faraday cage.
+\par 
+\par \trowd\trgaph105\trleft-116 \cellx7935\cellx12685\pard\intbl A hole is drilled into the base material of the receptor (1) which has the inner walls painted with carbon to obtain high absorption of electrons. The hole is covered with a diaphragm (2) which is fastened with a spring ring (3).
+\par\intbl 
+\par\intbl The \b primary electron beam\plain\fs24  (4) is \b centered\plain\fs24  into the bore of the diaphragm (2) allowing the electrons to enter the hole (1). There the electrons are being absorbed. Electrons which are reflected (5) cannot leave the Faraday cage and get absorbed on its walls as well. 
+\par\intbl 
+\par\intbl Thus all electrons are conducted through the Specimen Current Measuring System (6) and are measured there.
+\par\intbl \cell\pard \pard\intbl 
+\par\intbl \{bmc bm7.wmf\}\cell\intbl\row
+\pard 
+\par For Beam Current Measurement use the \b Faraday Cup \plain\fs24 accessory.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Beam Only}
+{\up #}{\footnote\pard\plain{\up #} Beam_Only}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Beam Only
+\par \pard \plain\fs24 
+\par This function performs \uldb Beam Only\plain\fs24 {\v Beam_Only@TabMgr.HLP}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Beam Shift Dialog}
+{\up #}{\footnote\pard\plain{\up #} Beam_Shift_Dialog}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Absorbed Specimen Current Measurement}
+\b\fs36\cf1 Beam Shift Dialog
+\par \pard \plain\fs24 
+\par This panel allows to shift the beam which results in a fine shift of the raster on the specimen.
+\par 
+\par For additional information see \uldb \b Beam Shift\plain\b\fs24 {\v QD.RV_@Sem.HLP}\plain\fs24 .
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Calibrate Output Device Magnification}
+{\up #}{\footnote\pard\plain{\up #} Calibrate_Output_Device_Magnification}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Calibrate Output Device Magnification
+\par \pard\li355\fi-355\tx355 \plain\fs24    
+\par \trowd\trgaph105\trleft-116 \cellx6795\cellx12685\pard\intbl\li355\fi-355\tx355 \f13 \{bmc bm8.bmp\}\f4 \tab Select the \b Calibration Mode\plain\fs24  from the upper \ul Drop-down List\plain\fs24 {\v XYVXW3@Sem.HLP} as \b Output Device\plain\fs24 . Two cursor lines with \ul handles\plain\fs24 {\v K6O1DR@Sem.HLP} appear.\par\pard \pard\intbl\tx355 \par\pard \pard\intbl\li355\fi-355\tx355 \f13 \{bmc bm8.bmp\}\f4 \tab Select the output device to be \b Display/File\plain\fs24  or \b HRRU\plain\fs24 . (The default printer does not require calibration - the printer driver provides the calibration information). \par\pard \pard\intbl\tx355 \par\pard \pard\intbl\li355\fi-355\tx355 \f13 \{bmc bm8.bmp\}\f4 \tab If the output device selected is the HRRU a \b Print\plain\fs24  button will appear. \ul Click\plain\fs24 {\v CLICK@Sem.HLP} on it to take photograph.\par\pard \pard\intbl\tx355 \par\pard \pard\intbl\li355\fi-355\tx355 \f13 \{bmc bm8.bmp\}\f4 \tab Measure the distance between the cursor lines on the photo or the display.\par\pard \pard\intbl\tx355 \par\pard \pard\intbl\li355\fi-355\tx355 \f13 \{bmc bm8.bmp\}\f4 \tab Click on the parameter \b Output Dev cal Actual\plain\fs24  and enter the measured distance in mm.\par\pard \pard\intbl\tx355 \par\pard \pard\intbl\li355\fi-355\tx355 \f13 \{bmc bm8.bmp\}\f4 \tab Click \b OK\plain\fs24  or \b Cancel \plain\fs24 to  close the input dialog.
+\par\intbl 
+\par\intbl \f13 \{bmc bm8.bmp\}\f4 \tab Click \b OK\plain\fs24  or \b Cancel \plain\fs24 to  accept or neglect the device calibration
+\par\intbl 
+\par\intbl \f13 \{bmc bm8.bmp\}\f4 \tab \b Close\plain\fs24  the panel with \{bmc bm9.bmp\}.\cell\pard \pard\intbl\li355\fi-355\tx355 \{bmc bm10.bmp\}
+\par\intbl 
+\par\intbl \{bmc bm11.bmp\}\cell\intbl\row
+\pard\li355\fi-355\tx355 \tab 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Calibrate Stage Centre}
+{\up #}{\footnote\pard\plain{\up #} 4YI0_82}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Add}
+\b\fs36\cf1 Calibrate Stage Centre
+\par \pard \plain\fs24 It is a pre-requisite for all compucentric functions that the centre of the stage rotation is accurately known.
+\par 
+\par This will normally only need to be performed once each time the stage is serviced. However to achieve the ultimate accuracy it may be necessary to recalibrate the rotation centre each time the stage is initialised.
+\par 
+\par This dialog provides the Calibrate Stage Centre Wizard.
+\par 
+\par Instructions are displayed describing the operator actions required.
+\par Press \b Next\plain\fs24  when the action is completed.
+\par \pard Press \b Back\plain\fs24  button to return to the previous step.
+\par Press \b Cancel\plain\fs24  to abort the sequence - stage will return to original position.
+\par Press \b OK\plain\fs24  to accept the currently computed centre position at any point in the iteration.
+\par 
+\par The sequence is described below. 
+\par Entries labeled STEP are operator actions, those labeled NEXT are the wizard actions taken when \b Next\plain\fs24  is pressed
+\par 
+\par \pard\li355\fi-355\tx355 \b Step 1 \plain\fs24 Insert a suitable sample (e.g. calibration grid) into a single stub holder. The sample must be mounted centrally on the stub.
+\par \tab \tab Optionally switch on backlash correction.
+\par \tab \tab It is possible at this point to manually enter the Co-ordinates of the Rotation Centre and click \b OK\plain\fs24 
+\par \b Next\tab \plain\fs24 Save stage position.
+\par \pard\li1075\fi-355\tx1075 Move the stage to previously saved calibrated position or to nominal centre of stage travel. 
+\par Magnification set to 30 X. 
+\par Crosshairs On\b 
+\par \pard\tx1075 \plain\fs24 
+\par \pard\li355\fi-355\tx355 \b Step 2\plain\fs24  Using \b Centre Point \plain\fs24 (Ctrl Tab) or the joystick position a distinguishable mark at centre screen
+\par \pard\li1075\fi-355\tx1075 If required the \b Load Defaults \plain\fs24 button may be used to position the stage at the default centre of rotation for the current stage type.
+\par \pard\li355\fi-355\tx355 \b Next\plain\fs24 \tab The stage is moved back to it's position at the start of step 2
+\par 
+\par \pard\tx355 \b Step3\plain\fs24  Instructs the user to watch the mark movement
+\par \pard\tx355 \b Next\plain\fs24 \tab Rotates the stage by 180 degrees
+\par 
+\par \b Step 4\plain\fs24  Using \b Centre Point \plain\fs24 (Ctrl Tab) or the joystick position a distinguishable mark at centre screen
+\par \b Next\plain\fs24 \tab The new centre position is computed.
+\par 
+\par \b Step 5\plain\fs24  At this point you must decide if the calibration is sufficiently accurate (press \b OK\plain\fs24 ) or if cycle is to be repeated at a higher magnification (press \b Next\plain\fs24 )
+\par 
+\par \b Next\plain\fs24 \tab Stage is moved to newly computed centre position
+\par \pard\li1075\fi-355\tx1075 Magnification is increased
+\par Go To Step 2
+\par \pard\tx355 \b OK\plain\fs24  \tab Save new calibrated centre position.
+\par \pard\li1075\fi-355\tx1075 Crosshairs off
+\par Move stage to original position
+\par \pard\tx1075 
+\par \pard\tx1075 See also
+\par \pard\tx1075 \uldb Stage Control Tab\plain\fs24 {\v KH.ZCT@tabmgr.hlp}
+\par \pard\tx1075 \uldb Compucentric Stage Control\plain\fs24 {\v 10F6FNP@stage.hlp}
+\par \pard\tx1075 \uldb Compucentric setup\plain\fs24 {\v 4YI0_83}
+\par \pard\tx1075 \uldb Horizontal Stage Alignment\plain\fs24 {\v 4YI0_84}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Calibrate Stigmation Dialog}
+{\up #}{\footnote\pard\plain{\up #} 4YI0_75}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Calibrate Stigmation Dialog
+\par \pard \plain\fs24 
+\par This dialog is only available when the \b Access Level\plain\fs24  is set to \b Service.
+\par \plain\fs24 It should not be used by the user but only by service.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Calibrate User Magnification}
+{\up #}{\footnote\pard\plain{\up #} Calibrate_User_Magnification}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Backlash On}
+\b\fs36\cf1 Calibrate User Magnification
+\par \pard\li355\fi-355\tx355 \plain\fs24    
+\par \trowd\trgaph105\trleft-116 \cellx6795\cellx12685\pard\intbl\li355\fi-355\tx355 \f13 \{bmc bm8.bmp\}\f4 \tab Select the \b Calibration Mode\plain\fs24  from the upper \ul Drop-down List\plain\fs24 {\v XYVXW3@Sem.HLP} as \b User Magnification\plain\fs24 . Two cursor lines with \ul handles\plain\fs24 {\v K6O1DR@Sem.HLP} appear.
+\par\intbl 
+\par\intbl \f13 \{bmc bm8.bmp\}\f4 \tab Set the cursors by \ul dragging\plain\fs24 {\v DRAG@Sem.HLP} them with the mouse to a feature in the image whose dimensions are exactly known.
+\par\intbl 
+\par\intbl \f13 \{bmc bm8.bmp\}\f4 \tab \ul Click\plain\fs24 {\v CLICK@Sem.HLP} on the parameter field \b Mag Cal Actual Width\plain\fs24  and enter the actual width of the feature in Micrometers.\par\pard \pard\intbl\tx355 \'b7\par\pard \pard\intbl\li355\fi-355\tx355 \f13 \{bmc bm8.bmp\}\f4 \tab Click \b OK\plain\fs24  or \b Cancel \plain\fs24 to  close the input dialog.
+\par\intbl 
+\par\intbl \f13 \{bmc bm8.bmp\}\f4 \tab Click \b OK\plain\fs24  or \b Cancel \plain\fs24 to  accept or neglect the device calibration.
+\par\intbl 
+\par\intbl \f13 \{bmc bm8.bmp\}\f4 \tab \b Close\plain\fs24  the panel with \{bmc bm9.bmp\}.
+\par\intbl \par\pard \pard\intbl\tx355 \uldb \b Using The User Magnification Calibration\plain\b\fs24 {\v Using_The_User_Magnification_Calibration}\par\pard \pard\intbl\tx355 \plain\fs24 \par\pard \pard\intbl\li355\fi-355\tx355 
+\par\intbl 
+\par\intbl 
+\par\intbl \cell\pard \pard\intbl\li355\fi-355\tx355 \{bmc bm12.bmp\}
+\par\intbl 
+\par\intbl \{bmc bm13.bmp\}\cell\intbl\row
+\pard\li355\fi-355\tx355 \tab 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Clear List}
+{\up #}{\footnote\pard\plain{\up #} FL8YXE}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Clear List
+\par \pard \plain\fs24 
+\par The function deletes the contents of the Stage Points List.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Compucentric Setup}
+{\up #}{\footnote\pard\plain{\up #} 4YI0_83}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Beam Current Measurement}
+\b\fs36\cf1 Compucentric Setup (Sample Height)
+\par \pard \plain\fs24 It is a pre-requisite for compucentric tilt that the sample height (surface of sample relative to point of tilt rotation) is accurately known.
+\par 
+\par This will  need to be performed when the sample is changed.
+\par 
+\par This dialog provides the Calibrate Sample Height Wizard (Centre of Stage Rotation Calibration must have already been performed).
+\par 
+\par The first part of the calibration (steps 1 - 7) compute a sample height based on a 2 degree tilt. This is used in steps 8 onward to perform a more accurate calibration of the height for increasing tilt angles.
+\par \pard You may terminate the calibration at the maximum tilt angle you will be using.
+\par 
+\par Instructions are displayed describing the operator actions required.
+\par Press \b Next\plain\fs24  when the action is completed.
+\par Press \b Back\plain\fs24  button to return to the previous step.
+\par Press \b Cancel\plain\fs24  to abort the sequence - stage will return to original position.
+\par Press \b OK\plain\fs24  to accept the currently computed Height.
+\par 
+\par The sequence is described below. 
+\par Entries labeled STEP are operator actions, those labeled NEXT are the wizard actions taken when \b Next\plain\fs24  is pressed
+\par \pard 
+\par \b NOTE 1: How to centre the feature in steps 2 and 3.\plain\fs24 
+\par Centre point is restricted to move the stage in X direction only.
+\par If joystick is used you must move in X (horizonal) direction only.
+\par To achieve Y positioning use the stage rotation.
+\par 
+\par \b NOTE 2: How to centre the feature in steps 5 and 6\plain\fs24 
+\par Centre point is restricted to move the stage in the Y direction only.
+\par If joystick is used you must move in the Y (vertical) direction only.
+\par Ignore X positioning at this time.
+\par \pard 
+\par \b Note 3: How to centre the feature in steps 8 onwards\plain\fs24 
+\par Centre point is restricted to move the stage in the Y direction only.
+\par If joystick is used you must move in the Y (vertical) direction only.
+\par X positioning may be adjusted by using the Tilt error scroll bar
+\par 
+\par 
+\par \pard\li355\fi-355\tx355 \b Step 1\plain\fs24  If required the sample height may be entered manually and \b OK\plain\fs24  clicked
+\par \pard\tx355 \b Next\plain\fs24  \tab The Stage is moved to the centre of rotation (Y axis only)  and the tilt set to zero degrees
+\par \pard\li1075\fi-355\tx1075 Magnification is set to 30X
+\par \pard\tx1075 
+\par \pard\li355\fi-355\tx355 \b Step 2 \plain\fs24 Select a point on the X axis (horizontal centre line). 
+\par \pard\li1075\fi-355\tx1075 Centre the selected point See Note 1 above
+\par \pard\li355\fi-355\tx355 \b Next\plain\fs24  \tab Magnification is increased to 500X
+\par 
+\par \b Step 3\plain\fs24  Position the selected point more accurately.See Note 1 above
+\par \b Next\plain\fs24 \tab Notify the user that stage will be tilted
+\par 
+\par \b Step 4\plain\fs24  No action
+\par \b Next\plain\fs24 \tab Tilt the Stage 2 degrees
+\par \pard\li1075\fi-355\tx1075 Set Magnification to 30X
+\par \pard\li355\fi-355\tx355 
+\par \b Step 5\plain\fs24  Centre the point . N.B. adjust Y direction only. See note 2 above
+\par \b Next\plain\fs24 \tab Set Magnification to 500X
+\par 
+\par \b Step 6\plain\fs24  Centre the point more accurately. N.B. adjust Y direction only. See note 2 above
+\par \b Next\plain\fs24 \tab Compute the sample height
+\par 
+\par \b Step 7\plain\fs24  Press OK to terminate calibration here
+\par \b Next\plain\fs24 \tab Perform Compucentric tilt of 8 degrees, Mag = 500X
+\par 
+\par \b Step 8\plain\fs24  Centre the feature. See Note 3 above
+\par \b Next\plain\fs24 \tab Compute the sample height
+\par \pard\li355\fi-355\tx355 
+\par \b Step 9\plain\fs24  Press OK to terminate calibration here
+\par \b Next\plain\fs24 \tab Perform Compucentric tilt of 15 degrees, Mag = 500X
+\par 
+\par \b Step 10\plain\fs24  Centre the feature. See Note 3 above.
+\par \b Next\plain\fs24 \tab Compute the sample height
+\par 
+\par \b Step 11\plain\fs24  Press OK to terminate calibration here
+\par \b Next\plain\fs24 \tab Perform Compucentric tilt of 30 degrees, Mag = 500X
+\par 
+\par \b Step 12\plain\fs24  Centre the feature. See Note 3 above.
+\par \b Next\plain\fs24 \tab Compute the sample height
+\par 
+\par \b Step 13\plain\fs24  Press OK to terminate calibration here
+\par \pard\li355\fi-355\tx355 \b Next\plain\fs24 \tab Perform Compucentric tilt of 45 degrees, Mag = 500X
+\par 
+\par \b Step 14\plain\fs24  Centre the feature. See Note 3 above.
+\par \b Next\plain\fs24 \tab Compute the sample height
+\par 
+\par \b Step 15\plain\fs24  Press OK to finish
+\par 
+\par 
+\par \pard\tx355 See also
+\par \pard\tx355 \uldb Stage Control Tab\plain\fs24 {\v KH.ZCT@tabmgr.hlp}
+\par \pard\tx355 \uldb Compucentric Stage Control\plain\fs24 {\v 10F6FNP@stage.hlp}
+\par \pard\tx355 \uldb Calibrate stage centre of rotation\plain\fs24 {\v 4YI0_82}
+\par \pard\tx355 \uldb Horizontal Stage Alignment\plain\fs24 {\v 4YI0_84}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Delete}
+{\up #}{\footnote\pard\plain{\up #} Delete}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Beam Only}
+\b\fs36\cf1 Delete
+\par \pard \plain\fs24 
+\par This function deletes the currently selected entry in the Stage Points List.
+\par 
+\par For additional information see also \uldb \b Stage Points List Delete\plain\b\fs24 {\v 2YZN0PD@Stage.HLP}\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Do Backlash}
+{\up #}{\footnote\pard\plain{\up #} IMYG6_}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Beam Shift Dialog}
+\b\fs36\cf1 Do Backlash
+\par \pard \plain\fs24 
+\par  \uldb \b Do Backlash\plain\b\fs24 {\v Do_Backlash@TabMgr.HLP} \plain\fs24 causes the stage to execute a backlash correction operation
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Edit Points Dialog}
+{\up #}{\footnote\pard\plain{\up #} Edit_Points_Dialog}
+\pard\keepn \b\fs36\cf1 Edit Points Dialog
+\par \pard \plain\fs24 
+\par \trowd\trgaph105\trleft-116 \cellx7195\cellx10295\pard\intbl This dialog displays the data saved for a Label.
+\par\intbl The data may be edited if required
+\par\intbl 
+\par\intbl Note that Data in a Registration list has User defined Units, and that in this case Tilt and Rotate may not be edited.\cell\pard \pard\intbl \{bmc bm14.bmp\}\cell\intbl\row
+\pard 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} External Scan Control Dialog}
+{\up #}{\footnote\pard\plain{\up #} External_Scan_Control_Dialog}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Calibrate Output Device Magnification}
+\b\fs36\cf1 External Scan Control Dialog
+\par \pard\tx355 \plain\fs24 
+\par This dialog is used to switch scan control from internal LEO 32 Software controlled scan operation to external scan control.
+\par 
+\par \{bmc bm15.bmp\}\tab Call \b Tools\plain\fs24  from the Menu Bar and then \{bmc bm16.bmp\} select \b Goto Panel\plain\fs24  and \b Ext Scan Control\plain\fs24  panel:
+\par 
+\par \trowd\trgaph105\trleft-116 \cellx6795\cellx7295\cellx10395\pard\intbl\li355\fi-355\tx355 \f13 \{bmc bm8.bmp\}\f4 \tab \ul Click\plain\fs24 {\v CLICK@Sem.HLP} on \b Ext On\plain\fs24  to hand over the scan control to the external device. The \b status window\plain\fs24  shows Ext. Scan Control = On.
+\par\intbl 
+\par\intbl \f13 \{bmc bm8.bmp\}\f4 \tab Click on \b Ext Off\plain\fs24  to take scan control back to the SEM software. The \b status window\plain\fs24  shows Ext. Scan Control = Off.\cell\pard \pard\intbl\li355\fi-355\tx355 \pard\intbl \cell\pard \pard\intbl \{bmc bm17.bmp\}\cell\intbl\row
+\pard\li355\fi-355\tx355 
+\par \f13 \{bmc bm8.bmp\}\f4 \tab \b Close\plain\fs24  the window by clicking on \{bmc bm18.bmp\}.
+\par 
+\par \pard\tx355 The \b Ext On\plain\fs24  and \b Ext Off\plain\fs24  buttons call \uldb \b macros\plain\b\fs24 {\v LXYOJZ@Stage.HLP}\plain\fs24  \b \'91Ext On\'92\plain\fs24  and \b \'91Ext Off\'92\plain\fs24  respectively. These macros may be edited to add other actions if required.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Go To First}
+{\up #}{\footnote\pard\plain{\up #} Go_To_First}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Go To First
+\par \pard \plain\fs24 
+\par \f13 This function causes the stage to move to the position defined by the first (chronological) entry in the Stage Points List.
+\par  \ul Global labels\plain\f13\fs24 {\v Y4A8CN@Stage.HLP} are ignored for this function.\f4 
+\par The point label in the list box is selected.
+\par The beam shift is reset to 0,0.
+\par The state \b Points List\plain\fs24  is set to \b At Start.
+\par 
+\par \plain\fs24 If selected the Magnification and /or Working Distance are set to the values associated with the entry.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Go To Next}
+{\up #}{\footnote\pard\plain{\up #} E9SIP1}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Calibrate Stage Centre}
+\b\fs36\cf1 Go To Next
+\par \pard \plain\fs24 
+\par This function causes the stage to move to the position defined by the next chronological entry in the \f13 Stage Points List\f4 . 
+\par \f13  \ul Global labels\plain\f13\fs24 {\v Y4A8CN@Stage.HLP} are ignored for this function.\f4 
+\par The beam shift is reset to 0,0.
+\par The point label in the list box is selected.
+\par The state \b Points List\plain\fs24  is set to \b In List\plain\fs24  or,if appropriate, \b At End.
+\par 
+\par \plain\fs24 If selected the Magnification and /or Working Distance are set to the values associated with the entry.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Go To Previous}
+{\up #}{\footnote\pard\plain{\up #} Go_To_Previous}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Go To Previous
+\par \pard \plain\fs24 
+\par This function causes the stage to move to the position defined by the previous chronological entry in the \f13 Stage Points List\f4 .
+\par \f13  \ul Global labels\plain\f13\fs24 {\v Y4A8CN@Stage.HLP} are ignored for this function.\f4 
+\par The beam shift is reset to 0,0.
+\par The point label in the list box is selected.
+\par The state \b Points List\plain\fs24  is set to \b In List\plain\fs24  or,if appropriate, \b At Start.
+\par 
+\par \plain\fs24 If selected the Magnification and /or Working Distance are set to the values associated with the entry.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Go To Selected}
+{\up #}{\footnote\pard\plain{\up #} Go_To_Selected}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Calibrate Stigmation Dialog}
+\b\fs36\cf1 Go To Selected
+\par \pard \plain\fs24 
+\par This function causes the stage to move to the position defined by the highlighted entry in the \f13 Stage Points List\f4 .
+\par The beam shift is reset to 0,0.
+\par The state \b Points List\plain\fs24  is set to \b In List\plain\fs24  or,if appropriate, \b At Start.
+\par 
+\par \plain\fs24 If selected the Magnification and /or Working Distance are set to the values associated with the entry.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Hold Airlock Vacuum}
+{\up #}{\footnote\pard\plain{\up #} Hold_Airlock_Vacuum}
+\pard \b\fs36\cf1 Hold Airlock Vacuum
+\par \plain\fs24 This command is only available on some makes of airlock.
+\par It's purpose is to hold the airlock vacuum with the pumping switched off.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Input LUT Dialog}
+{\up #}{\footnote\pard\plain{\up #} Input_LUT_Dialog}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Calibrate User Magnification}
+\b\fs36\cf1 Input LUT Dialog
+\par \pard \plain\fs24 
+\par The Input\b  L\plain\fs24 ook \b U\plain\fs24 p \b T\plain\fs24 able (LUT) controls the transformation of the input signal before it reaches the store. Four different transformations can be applied:
+\par 
+\par \trowd\trgaph105\trleft-116 \cellx8495\cellx8995\cellx12615\pard\intbl \b Transparent:\plain\fs24 
+\par\intbl The input LUT is set to linear so that the signal passes through the LUT unchanged.
+\par\intbl \b Gamma:\plain\fs24 
+\par\intbl \f13 Gamma correction changes the LUT relationship between the input signal and the output signal. It can be used to expand the contrast in an image if much of the image detail is contained in a small number of grey levels.
+\par\intbl \f4 The input LUT is set according to the gamma parameter. Select the parameter with the \ul Scroll Bar\plain\fs24 {\v 2HOSDE@Sem.HLP} below. 
+\par\intbl \b Inverse:\plain\fs24 
+\par\intbl The input LUT is set to inverted linear so that the signal passes through the LUT with inverted contrast.
+\par\intbl \b User:
+\par\intbl \plain\fs24 Uses the user defined Input LUT.
+\par\intbl \par\pard \pard\intbl\li355\fi-355\tx355 \{bmc bm8.bmp\}\tab Select the mode by \ul clicking\plain\fs24 {\v CLICK@Sem.HLP} on one of the \ul Radio Buttons\plain\fs24 {\v 2R6X4F@Sem.HLP}\cell\pard \pard\intbl\li355\fi-355\tx355 \pard\intbl\tx355 \par\pard \pard\intbl \cell\pard \pard\intbl 
+\par\intbl \{bmc bm19.bmp\}\cell\intbl\row
+\pard 
+\par For addition information see \uldb \b Look Up Table Editor\plain\b\fs24 {\v QGFYFC@LutMgr.HLP} \plain\fs24 functions.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Label Position}
+{\up #}{\footnote\pard\plain{\up #} Label_Position}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Label Position
+\par \pard \plain\fs24 
+\par This function combines the current \b Stage Position\plain\fs24  and \b Beam Shift\plain\fs24  to produce a \uldb composite position\plain\fs24 {\v Label_Position@TabMgr.HLP}.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Load}
+{\up #}{\footnote\pard\plain{\up #} Load}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Clear List}
+\b\fs36\cf1 Load
+\par \pard\tx355 \plain\fs24 
+\par \{bmc bm16.bmp\}\tab \ul Click\plain\fs24 {\v CLICK@Sem.HLP} on \b Load \plain\fs24 to enter the standard loading dialog to load a list from the User Directory. 
+\par 
+\par \f13 This function loads the Coordinate List from a previously saved file. The current list of position data is deleted.\f4 
+\par \pard\tx355 \f13\fs20 
+\par \pard\tx355 \fs24 From the \b Select Coordinate File\plain\f13\fs24  dialog select the file name from the User Directory. The extension is \b *.XYZ\plain\f13\fs24 .\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Magnification Calibration Dialog}
+{\up #}{\footnote\pard\plain{\up #} Magnification_Calibration_Dialog}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \f4\b\fs36\cf1 Magnification Calibration Dialog
+\par \pard\tx355 \plain\fs24 
+\par This dialog is used to calibrate the magnification readout on devices and also to calibrate internal magnification..
+\par 
+\par \{bmc bm15.bmp\}\tab Call \b Tools\plain\fs24  from the Menu Bar and then \{bmc bm16.bmp\} select \b Goto Panel\plain\fs24  and \b Magnification Calibration\plain\fs24  panel:
+\par 
+\par \trowd\trgaph105\trleft-116 \cellx7935\cellx13815\pard\intbl Each output device (HRRU, video printer, etc) is calibrated and the magnification relates to the selected output device. So the magnification on a video printer is larger than on a HRRU (because the print is larger). This also applies to the monitor size for observing images by the user.\par\pard \pard\intbl\li355\fi-355\tx355 
+\par\intbl \f13 \{bmc bm8.bmp\}\f4 \tab Select the \b Calibration Mode\plain\fs24  from the upper \ul Drop-down List\plain\fs24 {\v XYVXW3@Sem.HLP} from 
+\par\intbl 
+\par\intbl \b \tab \{bmc bm20.bmp\} \uldb Calibrate Output Device Magnification\plain\b\fs24 {\v Calibrate_Output_Device_Magnification}\plain\fs24 
+\par\intbl 
+\par\intbl \b or\plain\fs24  
+\par\intbl 
+\par\intbl \tab \{bmc bm20.bmp\} \uldb \b Calibrate User Magnification\plain\b\fs24 {\v Calibrate_User_Magnification}\plain\fs24 . 
+\par\intbl \cell\pard \pard\intbl\li355\fi-355\tx355 \pard\intbl\tx355 \{bmc bm21.bmp\}\par\pard \pard\intbl \cell\intbl\row
+\pard \page
+{\up $}{\footnote\pard\plain{\up $} Menu}
+{\up #}{\footnote\pard\plain{\up #} 2H9L9SP}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Compucentric Setup}
+\b\fs36\cf1 Stage Points List Menu
+\par \pard \plain\fs24 
+\par The list may be saved to file or the contents of the \uldb list\plain\fs24 {\v Stage_Points_List_Dialog} replaced from a file using the load function.
+\par 
+\par \trowd\trgaph105\trleft-6 \cellx6795\cellx7585\cellx9785\pard\intbl\tx355 \{bmc bm16.bmp\}\tab \ul Click\plain\fs24 {\v CLICK@Sem.HLP} on \b File\plain\fs24  to open the menu.
+\par\intbl 
+\par\intbl \f13 \{bmc bm8.bmp\}\f4  Select \uldb \b Load\plain\b\fs24 {\v Load} \plain\fs24 to enter the standard loading dialog to load a list from the User Directory. 
+\par\intbl \f13 \{bmc bm8.bmp\} Select \uldb \b Save\plain\f13\b\fs24 {\v Save}\plain\f13\fs24  to save the list back to it's original file
+\par\intbl \{bmc bm8.bmp\}\f4  Select \uldb \b Save As\plain\b\fs24 {\v Save_As}\plain\fs24  to save the active list to the User Directory.
+\par\intbl \f13 \{bmc bm8.bmp\}\f4  Click on \uldb \b Clear List\plain\b\fs24 {\v Clear_List}\plain\fs24  to empty the actual Stage Points List.
+\par\intbl \uldb \b Text File Format\plain\b\fs24 {\v Points_list_Text_File_Format}\plain\fs24 \cell\pard \pard\intbl\tx355 \cell\pard \pard\intbl\tx355 
+\par\intbl \{bmc bm22.bmp\}\cell\intbl\row
+\pard\tx355 
+\par \pard\tx355 \f13 The current base \b magnification\plain\f13\fs24  is saved whenever an entry is made into the position list.
+\par \pard\tx355 
+\par \pard\tx355 The current \b working distance\plain\f13\fs24  is saved whenever an entry is made into the position list. 
+\par \pard\tx355 \f4 When the stage is moved from the stage points list you can select whether Working Distance and Magnification are to be changed accordingly..
+\par \pard\tx355 
+\par \trowd\trgaph105\trleft-6 \cellx6795\cellx7585\cellx10345\pard\intbl\tx355 \{bmc bm16.bmp\}\tab Click on \b On Goto\plain\fs24  to open the menu.
+\par\intbl \f13 \{bmc bm8.bmp\}\f4  \f13 Select \uldb \b Set Magnification\plain\f13\b\fs24 {\v On_Goto_Set_Magnification}\plain\f13\fs24  to set the magnification to the stored value when the stage is moved.
+\par\intbl \{bmc bm8.bmp\}\f4  \f13 Select  \uldb \b Set Working Distance\plain\f13\b\fs24 {\v On_Goto_Set_Working_Distance}\plain\f13\fs24  to set the working distance  to the stored value when the stage is moved.
+\par\intbl \{bmc bm8.bmp\} Select \uldb \b Move XY Only\plain\f13\b\fs24 {\v On_Goto_Move_XY_Only}\plain\f13\fs24  if other axes to be unchanged\cell\pard \pard\intbl\tx355 \cell\pard \pard\intbl\tx355 
+\par\intbl 
+\par\intbl \{bmc bm23.bmp\}\f4 \cell\intbl\row
+\pard\tx355 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Mounting of  Back Scattered Detector}
+{\up #}{\footnote\pard\plain{\up #} Mounting_of__Back_Scattered_Detector}
+\pard\keepn \b\fs36\cf1 Mounting of  Back Scattered Detector
+\par \pard \plain\fs24    
+\par \trowd\trgaph105\trleft-116 \cellx5665\cellx12685\pard\intbl The detector diode (1) is mounted underneath the final lens (2). The primary electron beam (PE) travels through the final lens and hits the specimen (3) where it releases back scattered electrons. These reach the detector (1) and generate an electrical signal there. 
+\par\intbl 
+\par\intbl The signal is taken out from the specimen chamber to the preamplifier (5) through the adjustment rod (4). The adjustment rod is used to slide the detector in and out.
+\par\intbl 
+\par\intbl The adjustment of the 4 detector segments is done in the \uldb \b 4QBSD Control Panel\plain\b\fs24 {\v 4QBSD_Dialog}\plain\fs24  and brightness and contrast are adjusted from the \uldb \b Detectors SEM Control Panel\plain\b\fs24 {\v 1WE3854@TabMgr.HLP}\plain\fs24 .\cell\pard \pard\intbl 
+\par\intbl 
+\par\intbl \{bmc bm24.wmf\}\cell\intbl\row
+\pard 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} On Goto Move XY Only}
+{\up #}{\footnote\pard\plain{\up #} On_Goto_Move_XY_Only}
+\pard {\up K}{\footnote\pard\plain{\up K} Contents}
+\b\fs36\cf1 On Goto Move XY Only
+\par \plain\fs24 If this menu item is selected \{bmc bm25.bmp\} in the Stage Points List dialog
+\par  only the XY co-ordinates are used when moving to a labelled position.
+\par 
+\par This does not apply to \ul Global Labels\plain\fs24 {\v Y4A8CN@Stage.HLP}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} On Goto Set Magnification}
+{\up #}{\footnote\pard\plain{\up #} On_Goto_Set_Magnification}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 On Goto Set Magnification
+\par \pard \plain\fs24 
+\par \f13 If \b Set Magnification\plain\f13\fs24  is selected \{bmc bm26.bmp\} then whenever the stage is moved to a saved position the magnification is set to the stored value.\f4 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} On Goto Set Working Distance}
+{\up #}{\footnote\pard\plain{\up #} L5V96Q}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Delete}
+\b\fs36\cf1 On Goto Set Working Distance
+\par \pard \plain\fs24 
+\par  \f13 If \b Set Working Distance\plain\f13\fs24  is selected \{bmc bm26.bmp\} then whenever the stage is moved to a saved position the working distance is set to the stored value.\f4 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Operation Principle of Backscattered Detector}
+{\up #}{\footnote\pard\plain{\up #} Operation_Principle_of_Backscattered_Detector}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Operation Principle of Backscattered Detector
+\par \pard \plain\fs24    
+\par \trowd\trgaph105\trleft-116 \cellx10485\cellx13535\pard\intbl While secondary electrons are most often used to display topography contrast the backscattered electrons are used to display the materials contrast because the backscatter coefficient is dependent on the mean atomic number of the material under investigation. 
+\par\intbl 
+\par\intbl \b Depth Information
+\par\intbl \plain\fs24 Those electrons which form the back scattered image stem from deeper regions of the specimen.
+\par\intbl The sketches on the right show the principle:
+\par\intbl The primary electron beam (PE) penetrates under the surface of the specimen because of its high energy. There the electrons interact with the material and are scattered back to the surface (BSE). The mid grey area in the sketch on the left shows approximately the region in which the primary beam is scattered. The real size of the scattering area varies with material and high voltage and serves here as a model only. 
+\par\intbl 
+\par\intbl On the left a cut an polished specimen is sketched where a dense phase (mid gray) is embedded in a light matrix (white). On the left side the edge of the phase runs perpendicular to the specimen surface, on the right side the edge is inclined. Although the phase is under the specimen surface where the primary electron beam (PE) hits the surface back scattered electrons (BSE) travel to the surface and add to the image.
+\par\intbl This defocuses the edge more the further the beam travels to the right. On the real image below this effect can be seen at the right edge of the particle very clearly.
+\par\intbl 
+\par\intbl Unsharp edges and fuzzy particles are due to the depth effect. Also the problems generated for stereometric evaluation can be seen since the dimensions of the phase can not be identified correctly. 
+\par\intbl 
+\par\intbl \b Image:\plain\fs24 
+\par\intbl Mineral particle embedded in resin, cut and polished and coated with carbon.\cell\pard \pard\intbl 
+\par\intbl \{bmc bm27.wmf\}
+\par\intbl 
+\par\intbl \{bmc bm28.wmf\}
+\par\intbl 
+\par\intbl \{bmc bm29.bmp\}\cell\intbl\row
+\pard 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Registration Algorithm}
+{\up #}{\footnote\pard\plain{\up #} Registration_Algorithm}
+\pard\keepn \b\fs36\cf1 Registration Algorithm
+\par \pard \plain\fs24 The algorithm used is two point registration which requires the locations of 2 marks at the extremities of the specimen co-ordinate system to be defined in terms of the stage absolute co-ordinate system.
+\par This algorithm assumes that the user co-ordinate system has the same units in both X and Y directions.
+\par 
+\par If the user co-ordinate system has different units in X and Y (e.g. rows and columns of structures) then \ul \b\ul 3 point alignment\plain\b\fs24 {\v 3_point_alignment}\plain\fs24  may be selected.
+\par 
+\par For a given registration the Rotation and Tilt axes are constant and the relationship between the XY  co-ordinate systems computed from the positions of the two points in each system
+\par \pard 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Registration sequence}
+{\up #}{\footnote\pard\plain{\up #} Registration_sequence}
+\pard \b\fs36\cf1 Registration sequence
+\par \plain\fs24 
+\par \pard\li355\fi-355\tx355 1. Choose two points (registration marks) on the sample having known positions in the sample co-ordinate system. These rwo points should be (as near as possible) at the origin and the extremity of the co-ordinate system
+\par 2. At low magnification use the joystick to navigate over the specimen to ensure both registration points may be located. Adjust rotate and tilt as necessary.
+\par 3.For best accuracy switch on Stage Backlash Correction
+\par 4. Display the \uldb Stage Registration Dialog\plain\fs24 {\v Stage_Registration_Dialog}
+\par \pard\li355\fi-355\tx355 5. Select the Stage List required (e.g. \b Reg 1\plain\fs24 )
+\par 6. Enter the registration name and units.
+\par 7. Position the first registration mark at the centre of the screen (Use centre point if required) increasing the magnification and centering again until a magnification is reached suitable for the conditions of inspection required. Press \b Record Stage Position : First Point. \plain\fs24 You may be asked to confirm that the Rotate and Tilt values should be updated. Reply \b Yes
+\par \pard\li355\fi-355\tx355 \plain\fs24 8. Enter the sample co-ordinates for this point in \b First Registration Point : Mapped Position
+\par \plain\fs24 9. At low magnification use the joystick to locate the second registration mark.
+\par 10. Position the second registration mark at the centre of the screen (Use centre point if required) increasing the magnification and centering again until a magnification is reached suitable for the conditions of inspection required. Press \b Record Stage Position : Second Point. \plain\fs24 If you are asked to confirm that the Rotate and Tilt values should be updated you have accidently changed the rotate or tilt, Reply \b NO \plain\fs24 and use \b Move Axis Tilt/Rotate\plain\fs24  to move the stage to the correct tilt/rotation, reposition the mark to centre and record again.
+\par \pard\li355\fi-355\tx355 11. Enter the sample co-ordinates for this point in \b Second Registration Point : Mapped Position
+\par \plain\fs24 12. If required confirm positioning by using\b  Go To Absolute position First Point/Second Point \plain\fs24 to confirm correct locations are recorded.
+\par 13. Press \b Register\plain\fs24 
+\par 14. Save registration data to file 
+\par 
+\par 
+\par Note: If registration data is available from file and the sample position on the stage is similar the the previous occasion load the file and use the \b Move Axis Tilt/Rotate \plain\fs24 to set stage to registration values and use \b Go To Absolute position First Point/Second Point \plain\fs24 to position the stage roughly at the registration mark positions.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Rotate/Tilt Dialog}
+{\up #}{\footnote\pard\plain{\up #} Rotate_Tilt_Dialog}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Rotate/Tilt Dialog
+\par \pard \plain\fs24 
+\par \b Dynamic Focus\plain\fs24 , \b Scan Rotation \plain\fs24 and \b Tilt Correction\plain\fs24  can be performed.
+\par 
+\par For additional information see \uldb \b Rotate / Tilt Panel\plain\b\fs24 {\v 8AC6K1@Sem.HLP}.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} SEM Control Dialogs}
+{\up #}{\footnote\pard\plain{\up #} 125PDUJ}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \fs36\cf1 SEM Control Dialogs
+\par \pard\tx355 \plain\fs24 
+\par \{bmc bm15.bmp\}\tab Select \b Tools\plain\fs24  then \{bmc bm16.bmp\} point to \b Goto Panel\plain\fs24  and \ul click\plain\fs24 {\v CLICK@Leo_1500.HLP} with the left mouse button.
+\par 
+\par The List of available \b SEM Control dialogs\plain\fs24  opens.
+\par 
+\par \trowd\trgaph105\trleft-6 \cellx7015\cellx7795\cellx12555\pard\intbl\li355\fi-355\tx355 \f13 \{bmc bm8.bmp\}\f4 \tab Select a dialog e.g. Beam Shift (use \ul Scroll Bar\plain\fs24 {\v 2HOSDE@Sem.HLP} to view all dialogs).
+\par\intbl 
+\par\intbl \f13 \{bmc bm8.bmp\}\f4 \tab Select \b <OK>\plain\fs24  to display the dialog.
+\par\intbl 
+\par\intbl \f13 \{bmc bm8.bmp\}\f4 \tab Select \b <Cancel> \plain\fs24 or click on\b  \{bmc bm18.bmp\} \plain\fs24 to terminate without displaying the dialog.
+\par\intbl \par\pard \pard\intbl Available dialogs are:\cell\pard \pard\intbl \cell\pard \pard\intbl \{bmc bm30.bmp\}\cell\intbl\row
+\pard 
+\par \pard\tx355 \tab \uldb \b 4QBSD Dialog\plain\b\fs24 {\v 4QBSD_Dialog} \plain\fs24 \tab \tab \uldb \b Aperture Data\plain\b\fs24 {\v Aperture_Data}\tab \uldb Beam Shift Dialog\plain\b\fs24 {\v Beam_Shift_Dialog}\tab \tab \uldb External Scan Control Dialog\plain\b\fs24 {\v External_Scan_Control_Dialog}
+\par \tab \uldb Input LUT Dialog\plain\b\fs24 {\v Input_LUT_Dialog}\plain\fs24 \tab \uldb \b Magnification Calibration Dialog\plain\b\fs24 {\v Magnification_Calibration_Dialog}\plain\fs24 \tab \uldb \b Rotate/Tilt Dialog\plain\b\fs24 {\v Rotate_Tilt_Dialog}\plain\fs24 \tab \tab \uldb \b Signal Adjust Dialog\plain\b\fs24 {\v Signal_Adjust_Dialog}
+\par \tab   \uldb Specimen Current Monitor\plain\b\fs24 {\v Specimen_Current_Monitor} \tab \uldb Stage Limits Dialog\plain\b\fs24 {\v Stage_Limits_Dialog}\plain\fs24 \tab \uldb \b Stage Points List Dialog\plain\b\fs24 {\v Stage_Points_List_Dialog}\plain\fs24 
+\par \tab \uldb \b Stage Registration Dialog\plain\b\fs24 {\v Stage_Registration_Dialog}\tab \tab \uldb Stage Registered Movement Dialog\plain\b\fs24 {\v Stage_Registered_Movement_Dialog}\plain\fs24 
+\par \pard\tx355 \tab \uldb \b Stage Scan Dialog\plain\b\fs24 {\v Stage_Scan_Dialog}\plain\fs24 \tab \tab \tab \uldb \b Stigmation Dialog\plain\b\fs24 {\v Stigmation_Dialog}\tab \tab  \uldb Static/Semi Dyn Stereo\plain\b\fs24 {\v Static_Semi_Dynamic_stereo}
+\par \tab \uldb Vaccum Status\plain\b\fs24 {\v Vacuum_Status}\tab \tab \tab \uldb Specimen Change\plain\b\fs24 {\v Specimen_Change_Dialog}\plain\fs24 
+\par \tab \uldb \b Calibrate Stage Centre\plain\b\fs24 {\v 4YI0_82}\plain\fs24 \tab \tab \uldb \b Compucentric Setup\plain\b\fs24 {\v 4YI0_83}\tab \uldb Stage Horizontal alignment\plain\b\fs24 {\v 4YI0_84}
+\par \tab \tab  
+\par \plain\fs24 
+\par Service Dialogs:
+\par \b \tab  \plain\fs24 \tab \tab  \uldb Calibrate Stigmation Dialog\plain\fs24 {\v Calibrate_Stigmation_Dialog} 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Save}
+{\up #}{\footnote\pard\plain{\up #} Save}
+\pard\keepn \b\fs36\cf1 Save
+\par \pard \plain\fs24 This function saves the current contents of the Points List back to the  \uldb \b User defined Points List File\plain\b\fs24 {\v User_defined_Points_List_File}\plain\fs24  from which it was loaded
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Save As}
+{\up #}{\footnote\pard\plain{\up #} Save_As}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Save As
+\par \pard \plain\fs24 
+\par This function saves the current contents of the Points List to a \uldb \b User defined Points List File\plain\b\fs24 {\v User_defined_Points_List_File}\plain\fs24  in the current User Directory
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Search String}
+{\up #}{\footnote\pard\plain{\up #} Search_String}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Search String
+\par \pard \plain\fs24 
+\par \f13 At the lower edge of the Stage Points List is a text entry window, characters typed here will be matched to the entries in the list box and the nearest match highlighted.\f4 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Signal Adjust Dialog}
+{\up #}{\footnote\pard\plain{\up #} T9F2S0}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Signal Adjust Dialog
+\par \pard \plain\fs24 
+\par The detector can be selected and the signal levels adjusted. See \uldb \b Image Signal Adjust\plain\b\fs24 {\v 3RDW8F@Sem.HLP}
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage And Beam}
+{\up #}{\footnote\pard\plain{\up #} 1T90SV4}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \fs36\cf1 Stage And Beam
+\par \pard \plain\fs24 
+\par This function performs \uldb Stage And Beam\plain\fs24 {\v Stage_And_Beam@TabMgr.HLP}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Horizontal alignment}
+{\up #}{\footnote\pard\plain{\up #} 4YI0_84}
+\pard\keepn \b\fs36\cf1 Stage Horizontal alignment
+\par \pard \plain\fs24 This Wizard is used to move the stage such that a linear feature on the sample, identified by two points, is horizontal with the second of the two points visible on screen.
+\par 
+\par The Stage Centre must be \uldb calibrated\plain\fs24 {\v 4YI0_82} for this function to be used.
+\par 
+\par Instructions are displayed describing the operator actions required.
+\par Press \b Next\plain\fs24  when the action is completed.
+\par Press \b Back\plain\fs24  button to return to the previous step.
+\par Press \b Cancel\plain\fs24  to abort the sequence - stage will return to original position.
+\par \pard\tx355 
+\par The sequence is described below. 
+\par Entries labeled STEP are operator actions, those labeled NEXT are the wizard actions taken when \b Next\plain\fs24  is pressed
+\par 
+\par \b Step 1\plain\fs24   Using \b Centre Point \plain\fs24 (Ctrl Tab), or the joystick, position the first point at centre screen
+\par \b Next\plain\fs24 \tab Record the first stage position.
+\par 
+\par \b Step 2\plain\fs24   Using \b Centre Point \plain\fs24 (Ctrl Tab), or the joystick, position the sercond point at centre screen
+\par \b Next\plain\fs24 \tab Compute the rotation required and perform compucentric rotation
+\par \pard\tx355 
+\par \b Finish\plain\fs24  Close the dialog
+\par 
+\par 
+\par See also
+\par \uldb Stage Control Tab\plain\fs24 {\v KH.ZCT@tabmgr.hlp}
+\par \uldb Compucentric Stage Control\plain\fs24 {\v 10F6FNP@stage.hlp}
+\par \uldb Calibrate stage centre of rotation\plain\fs24 {\v 4YI0_82}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Limits Dialog}
+{\up #}{\footnote\pard\plain{\up #} 49LR_R2}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Stage Limits Dialog
+\par \pard \plain\fs24 
+\par This panel allows to limit the range of travel for each motorised axis of the stage individually.
+\par 
+\par \trowd\trgaph105\trleft-6 \cellx5315\cellx5815\cellx10855\pard\intbl\tx355 
+\par\intbl For additional information see \uldb \b Stage Limits\plain\b\fs24 {\v HE_C4L@Stage.HLP}
+\par\intbl 
+\par\intbl 
+\par\intbl \{bmc bm31.bmp\}\plain\fs24 \tab If you try to enter a value outside the physical range of a stage travel a warning is displayed and no action is taken.\cell\pard \pard\intbl\tx355 \b \cell\pard \pard\intbl\tx355 \{bmc bm32.bmp\}\plain\fs24 \cell\intbl\row
+\pard\li355\fi-355\tx355 \b \{bmc bm31.bmp\}\plain\fs24   Although it is possible to operate the \b Stage\plain\fs24  with the Joystick or Hard Panel controls while it is not initialised it is \b STRONGLY RECOMMENDED\plain\fs24  that the stage is \b initialised\plain\fs24  as soon as possible to obtain full protection of the high limits which are only applicable after initialisation.\b 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Only}
+{\up #}{\footnote\pard\plain{\up #} 2FBT1MP}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \fs36\cf1 Stage Only
+\par \pard \plain\fs24 
+\par This function performs \uldb Stage Only\plain\fs24 {\v Stage_Only@TabMgr.HLP}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Points List Dialog}
+\pard\keepn {\up #}{\footnote\pard\plain{\up #} 4YI0_72}
+\b\fs36\cf1 Stage Points List Dialog
+\par \pard \plain\fs24    
+\par \trowd\trgaph105\trleft-116 \cellx8635\cellx13175\pard\intbl\tx355 This function displays the \uldb \b Points List Dialog\plain\b\fs24 {\v 139NVAW@Stage.HLP}.
+\par\intbl 
+\par\intbl \plain\fs24 The list box displays the labels of the current points in the Points List.
+\par\intbl 
+\par\intbl Double \ul Clicking\plain\fs24 {\v CLICK@Sem.HLP} an entry in the list box will execute a \b Go To Selected\plain\fs24 .
+\par\intbl Labels of the form \b M_nnn\plain\fs24  are points inserted by the Mark Point function.
+\par\intbl For additional information about the Points List Dialog see:
+\par\intbl \b 
+\par\intbl 
+\par\intbl \uldb Menu\plain\b\fs24 {\v Menu}\tab \tab \uldb Add\plain\b\fs24 {\v Add}\tab \tab \uldb Delete\plain\b\fs24 {\v Delete}        \uldb  Edit\plain\b\fs24 {\v Edit_Points_Dialog}
+\par\intbl  
+\par\intbl \uldb Go To First\plain\b\fs24 {\v Go_To_First}\tab \tab \uldb Go To Next\plain\b\fs24 {\v Go_To_Next}\tab \tab \uldb Go To Previous\plain\b\fs24 {\v Go_To_Previous}
+\par\intbl \uldb Go To Selected\plain\b\fs24 {\v Go_To_Selected}\tab Undo Stage Goto\plain\b\fs24 {\v IDQXIJ@tabmgr.hlp}
+\par\intbl 
+\par\intbl \uldb Search String\plain\b\fs24 {\v Search_String}
+\par\intbl 
+\par\intbl \plain\fs24 If using\uldb \b  Registration data\plain\b\fs24 {\v 1JD4XS8@stage.hlp}\plain\fs24  it may be advisable to use \ul \b\ul On Goto Move XY Only\plain\b\fs24 {\v On_Goto_Move_XY_Only}\plain\fs24 \cell\pard \pard\intbl\tx355 \{bmc bm33.bmp\}\cell\intbl\row
+\trowd\trqc\trgaph109\trleft-110 \cellx2884\cellx5984\pard\intbl\tx355 \pard\intbl \cell\pard \pard\intbl \cell\intbl\row
+\pard 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Registered Movement Dialog}
+{\up #}{\footnote\pard\plain{\up #} 2P.29RD}
+\pard\keepn \b\fs36\cf1 Stage Registered Movement Dialog
+\par \pard \plain\fs24 This dialog is part of the \uldb \b Stage Registration\plain\b\fs24 {\v 1JD4XS8@stage.hlp}\plain\fs24  Option.
+\par 
+\par \trowd\trgaph105\trleft-116 \cellx4315\cellx7415\pard\intbl Click on the elements of the dialog to display their function
+\par\intbl 
+\par\intbl See also:
+\par\intbl \uldb \b Registration Dialog\plain\b\fs24 {\v Stage_Registration_Dialog}\plain\fs24 \cell\pard \pard\intbl \{bmc bm34.shg\}\cell\intbl\row
+\pard 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Registration Dialog}
+{\up #}{\footnote\pard\plain{\up #} Stage_Registration_Dialog}
+\pard\keepn \b\fs36\cf1 Stage Registration Dialog
+\par \pard \plain\fs24 This dialog is part of the \uldb \b Stage Registration\plain\b\fs24 {\v 1JD4XS8@stage.hlp}\plain\fs24  Option.
+\par 
+\par \trowd\trgaph105\trleft-116 \cellx4315\cellx7415\pard\intbl Click on the elements of the dialog for a description of their function
+\par\intbl 
+\par\intbl \ul Registration sequence\plain\fs24 {\v Registration_sequence} 
+\par\intbl 
+\par\intbl \uldb Registration Algorithm\plain\fs24 {\v Registration_Algorithm}
+\par\intbl 
+\par\intbl \uldb Stage Registration move dialog\plain\fs24 {\v Stage_Registered_Movement_Dialog}
+\par\intbl 
+\par\intbl \uldb Points List dialog\plain\fs24 {\v Stage_Points_List_Dialog}\cell\pard \pard\intbl \{bmc bm35.shg\}\cell\intbl\row
+\pard 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Scan Dialog}
+{\up #}{\footnote\pard\plain{\up #} Stage_Scan_Dialog}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Stage Scan Dialog
+\par \pard \plain\fs24 
+\par \f13 This panel is used to control the \uldb \b Stage Scan\plain\f13\b\fs24 {\v 5PRL_G3@Stage.HLP}\plain\f13\fs24 .
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stigmation Dialog}
+{\up #}{\footnote\pard\plain{\up #} Stigmation_Dialog}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \f4\b\fs36\cf1 Stigmation Dialog
+\par \pard \plain\fs24 
+\par This panel allows to correct astigmatism in the image.
+\par 
+\par For operating information see \uldb \b Stigmation\plain\b\fs24 {\v 1Q3WXC@Sem.HLP}.
+\par 
+\par \plain\fs24 See also \uldb \b SEM Control Apertures\plain\b\fs24 {\v 295DOW3@tabmgr.hlp} \plain\fs24 and \uldb \b Astigmatism Correction\plain\b\fs24 {\v 7TVA0H0@sem.hlp}\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User Defined Label}
+{\up #}{\footnote\pard\plain{\up #} User_Defined_Label}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 User Defined Label
+\par \pard \plain\fs24 
+\par This dialog is used to define the label for an entry in the Stage Points List.
+\par The label may be any string of characters.
+\par 
+\par \ul Global labels\plain\fs24 {\v Y4A8CN@stage.hlp} start with $.
+\par 
+\par Labels starting M_ are not permitted.
+\par A warning will be given if the label already exists.
+\par 
+\par See also \uldb \b Stage Points List ADD\plain\b\fs24 {\v A.WPGL@Stage.HLP} \plain\fs24 for additional information on labels.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User defined Points List File}
+{\up #}{\footnote\pard\plain{\up #} User_defined_Points_List_File}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 User defined Points List File
+\par \pard \plain\fs24 
+\par This dialog is used to define the name of a Points List File. 
+\par The file will be saved in the current User Directory with the extension *\b .XYZ.\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Using The User Magnification Calibration}
+{\up #}{\footnote\pard\plain{\up #} Using_The_User_Magnification_Calibration}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Using The User Magnification Calibration
+\par \pard \plain\fs24 
+\par 
+\par \trowd\trgaph105\trleft-116 \cellx7935\cellx11025\pard\intbl\li355\fi-355\tx355 \f13 \{bmc bm8.bmp\}\f4 \tab The mode may be switched on/off by the pop up menu which is displayed by a right \ul click\plain\fs24 {\v CLICK@Sem.HLP} on the \uldb \b Image Window\plain\b\fs24 {\v GIRNF0@Sem.HLP}\plain\fs24 .\par\pard \pard\intbl\tx355 \par\pard \pard\intbl\li355\fi-355\tx355 \f13 \{bmc bm8.bmp\}\f4 \tab Click on \b User Calibration Enable\plain\fs24  to switch the function ON (\{bmc bm26.bmp\}) or OFF
+\par\intbl \par\pard \pard\intbl\tx355 While User Magnification Calibration is switched on this will be indicated by an asterisk on the micron marker\par\pard \pard\intbl \cell\pard \pard\intbl \{bmc bm36.bmp\}
+\par\intbl 
+\par\intbl \{bmc bm37.bmp\}\cell\intbl\row
+\pard 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_First_abs_xy}
+{\up #}{\footnote\pard\plain{\up #} reg_First_abs_xy}
+\pard \b\fs36\cf1 First Point absolute XY position
+\par \plain\fs24 These fields display the position of the first registration point in absolute stage co-ordinates.
+\par \page
+{\up #}{\footnote\pard\plain{\up #} reg_Registration}
+\pard\tx355 \b\fs36\cf1 Registration State
+\par \plain\fs24 This indicates the current registration state
+\par \b No\plain\fs24 \tab \tab No registration data and not registered
+\par \b Yes\plain\fs24 \tab \tab Registered
+\par \b Invalid\tab \plain\fs24 Registration data has been loaded from file but registration not yet confirmed
+\par \page
+{\up #}{\footnote\pard\plain{\up #} reg_Stage_list}
+\pard\tx355 \b\fs36\cf1 Stage List
+\par \pard\tx355 \plain\fs24 This selects which points list is currently in use.
+\par \pard\tx355 \b Stage List = Stage \plain\fs24 indicates that the current list is in absolute Stage Co-ordinates
+\par \pard\tx355 Stage List = Reg 1 indicates that the current list is in a User Defined Co-ordinate system (Registration list 1)
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_at_posn}
+{\up #}{\footnote\pard\plain{\up #} reg_at_posn}
+\pard \b\fs36\cf1 Sample At X/Y
+\par \plain\fs24 These fields display the current stage position in terms of the registered co-ordinate system
+\par \page
+{\up #}{\footnote\pard\plain{\up #} reg_constant_axes}
+\pard \b\fs36\cf1 Constant axes
+\par \plain\fs24 For a given registration the Tilt and Rotate Axes are constant.
+\par The current values are displayed in these fields.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_delta_coarse}
+{\up #}{\footnote\pard\plain{\up #} reg_delta_coarse}
+\pard \b\fs36\cf1 Coarse Relative Movement
+\par \plain\fs24 Click on the outer arrows to move the stage by ten units in the users co-ordinate system. The movement will be in the X or Y direction of the registered co-ordinate system
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_delta_fine}
+{\up #}{\footnote\pard\plain{\up #} reg_delta_fine}
+\pard \b\fs36\cf1 Fine Relative Movement
+\par \plain\fs24 Click on the inner arrows to move the stage by  one unit in the users co-ordinate system. The movement will be in the X or Y direction of the registered co-ordinate system
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_first_map_xy}
+{\up #}{\footnote\pard\plain{\up #} reg_first_map_xy}
+\pard \b\fs36\cf1 First Registration point mapped position
+\par \plain\fs24 Enter in these fields the co-ordinates of the first registration point in User Co-ordinate units.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_goto abs_posn}
+{\up #}{\footnote\pard\plain{\up #} reg_goto_abs_posn}
+\pard \b\fs36\cf1 Go To Absolute Position
+\par \plain\fs24 Pressing the \b First Point\plain\fs24  / \b Second Point\plain\fs24  /\b  Third Point \plain\fs24 buttons will move the stage to the currently stored registration mark location
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_load}
+{\up #}{\footnote\pard\plain{\up #} reg_load}
+\pard \b\fs36\cf1 Registration : Load from file
+\par \plain\fs24 Pressing this button will display the Load Registration dialog.
+\par Registration data files have the extension \b SRD\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_move_axis}
+{\up #}{\footnote\pard\plain{\up #} reg_move_axis}
+\pard \b\fs36\cf1 Move Axis
+\par \plain\fs24 Pressing these buttons will move the Tilt/Rotate axis to the registration value (Constant axis value)
+\par \page
+{\up #}{\footnote\pard\plain{\up #} reg_name}
+\pard \b\fs36\cf1 Registration Name
+\par \plain\fs24 This is an optional text string which may be used to identify the registration data set
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_record_position}
+{\up #}{\footnote\pard\plain{\up #} reg_record_position}
+\pard \b\fs36\cf1 Record Stage Position
+\par \plain\fs24 Press \b First Point \plain\fs24 / \b Second Point \plain\fs24 / \b Third Point \plain\fs24  to record the current stage position as the location of the \b First \plain\fs24 / \b Second \plain\fs24 / \b Third\plain\fs24  Registration mark.
+\par Note that this corresponds to the centre of the screen.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_register}
+{\up #}{\footnote\pard\plain{\up #} reg_register}
+\pard \b\fs36\cf1 Register
+\par \plain\fs24 This button computes the co-ordinate translation information from the registration data.
+\par If successful the\b  registration status\plain\fs24  = \b Yes\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_sample_goto}
+{\up #}{\footnote\pard\plain{\up #} reg_sample_goto}
+\pard \b\fs36\cf1 Sample Goto X/Y
+\par \plain\fs24 Click on these fields to enter the required stage position in terms of the registered co-ordinate system
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_save}
+{\up #}{\footnote\pard\plain{\up #} reg_save}
+\pard \b\fs36\cf1 Registration : Save to file
+\par \plain\fs24 Pressing this button will display the Save Registration dialog.
+\par Registration data files have the extension \b SRD\plain\fs24 
+\par 
+\par Note this saves \b only\plain\fs24  the registration data, not the points list.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_second_abs_xy}
+{\up #}{\footnote\pard\plain{\up #} reg_second_abs_xy}
+\pard \b\fs36\cf1 Second Point absolute XY position
+\par \plain\fs24 These fields display the position of the second registration point in absolute stage co-ordinates.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_second_map_xy}
+{\up #}{\footnote\pard\plain{\up #} reg_second_map_xy}
+\pard \b\fs36\cf1 Second Registration point mapped position
+\par \plain\fs24 Enter in these fields the co-ordinates of the second registration point in User Co-ordinate units.
+\par \page
+{\up #}{\footnote\pard\plain{\up #} reg_units}
+\pard \b\fs36\cf1 Registration Units
+\par \plain\fs24 This field describes the units of the Co-ordinate system.
+\par It may be any text string (e.g. \b cells, inches\plain\fs24 )
+\par If \ul \b\ul 3 point alignment\plain\b\fs24 {\v 3_point_alignment}\plain\fs24  is used different units may be specified for X and Y
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Aperture Data}
+{\up #}{\footnote\pard\plain{\up #} Aperture_Data}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Aperture Data Dialog
+\par \pard \plain\fs24 This dialog displays the information about the apertures fitted to the SEM
+\par 
+\par \trowd\trgaph105\trleft-116 \cellx5475\cellx10985\pard\intbl 
+\par\intbl \par\pard \pard\intbl\li355\fi-355\tx355 \f7 \{bmc bm8.bmp\}\f4 \tab Select Aperture with radio button
+\par\intbl \f7 \{bmc bm8.bmp\}\f4 \tab Size may be edited if replacement aperture is of different size
+\par\intbl \f7 \{bmc bm8.bmp\}\f4 \tab Position of apertures may be recorded if required.
+\par\intbl \f7 \{bmc bm8.bmp\}\f4 \tab   Press OK to accept the size/selection changed\par\pard \pard\intbl\tx355 \par\pard \pard\intbl\tx355 \par\pard \pard\intbl Optibeam will indicate the optimum Aperture for the current electron optical conditions.\cell\pard \pard\intbl \{bmc bm38.bmp\}\cell\intbl\row
+\trowd\trgaph105\trleft-116 \cellx5475\cellx10985\pard\intbl 
+\par\intbl \cell\pard \pard\intbl \cell\intbl\row
+\trowd\trleft-6 \cellx10935 \pard\intbl \{bmc bm39.bmp\}  Warning: If the aperture selected in the software is not the one actually in use in the SEM the optimum conditions may not be achieved
+\par\intbl \cell\intbl\row
+\pard \page
+{\up $}{\footnote\pard\plain{\up $} Static/Semi Dynamic stereo}
+{\up #}{\footnote\pard\plain{\up #} Static_Semi_Dynamic_stereo}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Static/Semi Dynamic stereo
+\par \pard \plain\fs24 This dialog provides access to the Stereo functions
+\par For details see:
+\par \trowd\trgaph105\trleft-116 \cellx4815\cellx7905\pard\intbl \ul \b\ul Static Stereo\plain\b\fs24 {\v N6.C9U}
+\par\intbl Semi Dynamic Stereo\plain\b\fs24 {\v 38VO_SM}
+\par\intbl Static Stereo Depth measurement\plain\b\fs24 {\v Static_Stereo_Depth}
+\par\intbl \plain\fs24 
+\par\intbl 
+\par\intbl 
+\par\intbl Sa1 is depth of point of interest at zero tilt
+\par\intbl 
+\par\intbl Sa2 is depth of point of interest at tilt angle
+\par\intbl 
+\par\intbl Sb is angle of tilt
+\par\intbl 
+\par\intbl See \ul \b\ul diagram\plain\b\fs24 {\v Static_Stereo_theory}\plain\fs24 \cell\pard \pard\intbl \{bmc bm40.bmp\}\cell\intbl\row
+\pard 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Vacuum Status}
+{\up #}{\footnote\pard\plain{\up #} Vacuum_Status}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Vacuum Status
+\par \pard \plain\fs24 
+\par This dialog displays the system vacuum and Vacuum Status
+\par \trowd\trgaph105\trleft-116 \cellx4495\cellx7595\pard\intbl The Specimen change button display the \uldb Specimen Change\plain\fs24 {\v Specimen_Change_Dialog} dialog\cell\pard \pard\intbl \{bmc bm41.bmp\}\cell\intbl\row
+\pard 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Specimen Change Dialog}
+{\up #}{\footnote\pard\plain{\up #} Specimen_Change_Dialog}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn \b\fs36\cf1 Specimen Change Dialog
+\par \pard \plain\fs24 This dialog  may be used for specimen exchange
+\par \trowd\trgaph105\trleft-116 \cellx5655\cellx8745\pard\intbl \{bmc bm8.bmp\}  Click on \b Beam State\plain\fs24  - select \b Shutdown
+\par\intbl \plain\fs24 \{bmc bm8.bmp\}  Wait for beam to be shutdown
+\par\intbl \{bmc bm8.bmp\}  Click on \b Vac Status \plain\fs24 - select \b Vent\plain\fs24 
+\par\intbl \{bmc bm8.bmp\}  When the chamber is at atmospheric pressure pull the door open carefully.
+\par\intbl \{bmc bm8.bmp\}  Exchange the specimen
+\par\intbl \{bmc bm8.bmp\}  Close the Chamber door
+\par\intbl \{bmc bm8.bmp\}  Click on \b Vac Status \plain\fs24 - select \b Pump\plain\fs24 
+\par\intbl \{bmc bm8.bmp\}  Wait for vac Status to be \b Ready
+\par\intbl \{bmc bm8.bmp\}  Click on Beam State\plain\fs24  - select \b Beam On\plain\fs24 \cell\pard \pard\intbl \{bmc bm42.bmp\}\cell\intbl\row
+\pard 
+\par \page
+{\up #}{\footnote\pard\plain{\up #} N6.C9U}
+\pard \fs32\cf1 Static Stereo\b\fs36 
+\par \plain\fs24 The Static Stereo function enables the user to combine two stored images to form a stereo image in the image store.
+\par \f6 
+\par \pard\li715 The left hand image of a static stereo image can be loaded into the image store.
+\par This can be copied to the off screen area using the \b A to B\plain\f6\fs24  button.
+\par The right hand image of a static stereo image can be loaded into the image store.
+\par Press the \b Static Stereo\plain\f6\fs24  radio button to combine the two images.\f4 
+\par \page
+{\up #}{\footnote\pard\plain{\up #} 38VO_SM}
+\pard \fs28\cf1 Semi Dynamic Stereo\b\fs36 
+\par \plain\f6\fs24 The Semi Dynamic Stereo function enables the user to combine one stored image and one live image to form a stereo image in the image store. \b 
+\par \pard\li715 
+\par \plain\f6\fs24 Set the sample to one position, press the \b Semi Dyn. Stereo\plain\f6\fs24  radio button, this will freeze the blue portion of the Semi Dynamic Stereo image, leaving the red portion live.
+\par Tilt the sample to produce a stereo effect.
+\par \b 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Static Stereo Depth Measurement}
+{\up #}{\footnote\pard\plain{\up #} Static_Stereo_Depth}
+\pard \plain\fs32\cf1 Static Stereo Depth Measurement
+\par \b\fs36 
+\par \plain\f14\fs24 The depth of a point from the height of a reference point can be calculated by measuring the distance from the point of interest to a reference point on the tilt axis, tilting the sample and measuring the new distance from the point of interest to the reference point. The reference point must not move hence must be on the tilt axis.
+\par 
+\par Using the Point to Point Cursors place the P1R cursor and the P2R cursor on the reference point on the tilt axis.
+\par \pard Place the P1 cursor on the point of interest.
+\par Tilt the sample by a known number of degrees. The reference point should not move.
+\par Place the P2 cursor on the point of interest (It should have moved ).  
+\par The angle the sample has been tilted can be entered into the St. Stereo Angle parameter.
+\par Press the Calc Static Stereo Depth button.
+\par The  Respective depths as shown on the \ul diagram\plain\f14\fs24 {\v Static_Stereo_theory} are calculated.
+\par \f4 
+\par \fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Static Stereo theory}
+{\up #}{\footnote\pard\plain{\up #} Static_Stereo_theory}
+\pard \b\fs36\cf1 Static Stereo theory
+\par \{bmc bm43.bmp\}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Specimen Current Monitor}
+{\up #}{\footnote\pard\plain{\up #} Specimen_Current_Monitor}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn Specimen Current Monitor
+\par \pard\tx355 \plain\fs24 
+\par This dialog is used to run the Specimen Current Monitor.
+\par 
+\par \{bmc bm15.bmp\}\tab Call \b Tools\plain\fs24  from the Menu Bar and then \{bmc bm16.bmp\} select \b Goto Panel\plain\fs24  and \b Specimen Current Monitor\plain\fs24  panel:
+\par 
+\par The SCM is both an\uldb \b  Imaging\plain\b\fs24 {\v specimen_current_Imaging}\plain\fs24  device and measurement device.
+\par 
+\par \b Measurement:\plain\fs24 
+\par \trowd\trgaph105\trleft-116 \cellx6795\cellx10985\cellx13465\pard\intbl\li355\fi-355\tx355 \f13 \{bmc bm8.bmp\}\f4 \tab \ul Click\plain\fs24 {\v CLICK@Sem.HLP} on \b SCM Measure\plain\fs24  to switch the Specimen Current Monitor to Measurement Mode
+\par\intbl 
+\par\intbl \f13 \{bmc bm8.bmp\}\f4 \tab Click on \b Spot\plain\fs24  \{bmc bm3.bmp\} to stop the scan and put the beam on a spot.
+\par\intbl 
+\par\intbl \f13 \{bmc bm8.bmp\}\f4 \tab \ul Drag\plain\fs24 {\v DRAG@Sem.HLP} the \b Spot \plain\fs24 to the required position.
+\par\intbl 
+\par\intbl \f13 \{bmc bm8.bmp\}\f4 \tab \b Close\plain\fs24  the window by clicking on \{bmc bm18.bmp\}.\cell\pard \pard\intbl\li355\fi-355\tx355 \pard\intbl \{bmc bm44.bmp\}\cell\pard \pard\intbl 
+\par\intbl \{bmc bm45.bmp\}\cell\intbl\row
+\pard\li355\fi-355\tx355 
+\par The bottom line displays the \b Specimen Current\plain\fs24  .
+\par 
+\par 
+\par See also \uldb \b Absorbed Specimen Current Measurement\plain\b\fs24 {\v Absorbed_Specimen_Current_Measurement}\plain\fs24  and \uldb \b Beam Current Measurement\plain\b\fs24 {\v Beam_Current_Measurement}\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} specimen current Imaging}
+\pard\keepn {\up #}{\footnote\pard\plain{\up #} specimen_current_Imaging}
+\b\fs36\cf1 specimen current Imaging
+\par \pard\tx355 \plain\fs24 The Specimen Current Monitor may be used as an imaging device.
+\par \b Image Mode\plain\fs24 
+\par 1.\tab Select the \uldb \b Specimen Current\plain\b\fs24 {\v Specimen_Current_Monitor}\plain\fs24   panel (\b Tools - Go To Panel\plain\fs24  and select \b Specimen Current Monitor\plain\fs24 )
+\par 2.\tab Obtain a secondary electron image and bring it to focus.
+\par 3.\tab Select \b SCM \plain\fs24 from the \b Detection -\plain\fs24   \b Detectors \plain\fs24 menu.
+\par 4.\tab Select \b SCM Image \plain\fs24 from the \b Specimen Current\plain\fs24  panel, set \b Brightness \plain\fs24 to 50% and adjust \b Contrast \plain\fs24 until an image is seen. Then adjust \b Brightness \plain\fs24 and \b Contrast \plain\fs24 to obtain the required image.
+\par \pard\tx355 
+\par At low probe currents i.e. on SCM ranges lower than 1nA full scale, the image can become degraded by mains field effects and other forms of interference. Also, on these ranges, the signal bandwidth is very low. The use of long scan times will overcome the bandwidth restrictions and will also help to reduce interference effects, but image quality may not be perfect under these conditions.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Backlash Warning}
+{\up #}{\footnote\pard\plain{\up #} Backlash_Warning}
+\pard \b\fs36\cf1 Backlash Warning
+\par \plain\fs24 When stage movement or registration is requested a warning will be given if Stage Backlash correction is not switched on. Unchecking this checkbox will suppress the warning
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg_third_abs_xy}
+{\up #}{\footnote\pard\plain{\up #} reg_third_abs_xy}
+\pard \b\fs36\cf1 Third Point absolute XY position
+\par \plain\fs24 These fields display the position of the second registration point in absolute stage co-ordinates.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} reg third map xy}
+{\up #}{\footnote\pard\plain{\up #} reg_third_map_xy}
+\pard \b\fs36\cf1 Third Registration point mapped position
+\par \plain\fs24 These fields display the co-ordinates of the third registration point in User Co-ordinate units.
+\par These fields are automatically filled when 3 point alignment is selected and are derived from the first and second point co-ordinates as defined by the X2,Y1 checkbox.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} 3 point alignment}
+{\up #}{\footnote\pard\plain{\up #} 3_point_alignment}
+\pard \b\fs36\cf1 Three Point Alignment
+\par \plain\fs24 If the 3 Point Alignment checkbox is ticked then 3 alignment points are used which permits the algorithm to handle different units in the X and Y direction
+\par  (e.g. the X dimension may be a horizontal count of rectangular structures and the Y dimension a vertical count of the structures).
+\par 
+\par The first 2 points (User Co-ordinates X1, Y1 and X2, Y2) are as for 2 point alignment.
+\par \{bmc bm46.bmp\}
+\par The third point may be at X1, Y2 or at X2, Y1 as specified by the X2,Y1 checkbox.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Points list Text File Format}
+{\up #}{\footnote\pard\plain{\up #} Points_list_Text_File_Format}
+{\up >}{\footnote\pard\plain{\up >} main}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Depth;Do Backlash;Edit Points Dialog;External Scan Control Dialog;Go To First;Go To Next;Go To Previous;Go To Selected;Hold Airlock Vacuum;Input LUT Dialog;Label Position;Load;Magnification Calibration Dialog}
+\b\fs36\cf1 Points list Text File Format
+\par \pard \plain\fs24 The stage points list may be saved /loaded as a text file, e.g. for importing into an Excel spreadsheet.
+\par 
+\par The data is in comma separated format as shown in the following example
+\par 
+\par Leo Points List
+\par Absolute
+\par Label,X,Y,Z,T,R,M,Mag,WD
+\par 2
+\par here,0.01000000,0.01000000,0.00000000,-1.00000000,0.00000000,0.00000000,100.000000,0.00500000
+\par there,0.01500000,0.01500000,0.00500000,0.00000000,0.00000000,0.00000000,100.000000,0.00500000
+\par 
+\par 
+\par Line 1 is fixed header \b Leo Points List \plain\fs24 to define type of data
+\par \pard Line 2 is either \b Absolute\plain\fs24  or \b Relative\plain\fs24  (relative if stage registration is used)
+\par Line 3 is column headings (content ignored on loading but line must be present)
+\par Line 4 is count of point data entries which follow
+\par 
+\par X,Y,Z,M are positions in Metres.
+\par T,R as positions in degrees.
+\par Working distance is in Metres.
+\par 
+\par 
+\par If preparing a file to be loaded please note that lines 1 through 4 are mandatory.
+\par 
+\par Example Importing into Excel:
+\par  File saved as \b Example.TXT\plain\fs24 
+\par \pard\li355\fi-355\tx355 \f7\b \{bmc bm8.bmp\}\plain\fs24 \tab Start Excel\b 
+\par \plain\f7\fs24 \{bmc bm8.bmp\}\f4\b \tab \plain\fs24 File Open
+\par \f7 \{bmc bm8.bmp\}\f4 \tab Select file type = \b Text Files\plain\fs24 
+\par \f7\b \{bmc bm8.bmp\}\plain\fs24 \tab Select File name = \b Example.TXT
+\par \f7 \{bmc bm8.bmp\}\f4 \tab \plain\fs24 Select \b Delimited\plain\fs24  and \b Next
+\par \f7 \{bmc bm8.bmp\}\f4 \tab \plain\fs24 Select \b Comma\plain\fs24  and \b Next
+\par \plain\f7\fs24 \{bmc bm8.bmp\}\f4\b \tab \plain\fs24 Select \b General\plain\fs24  and \b Finish\plain\fs24 
+\par 
+\par Example Exporting from Excel
+\par In Excel:
+\par \f7 \{bmc bm8.bmp\}\f4 \tab Select Table including header information as described above (lines 1 through 4)
+\par \pard\li355\fi-355\tx355 \f7 \{bmc bm8.bmp\}\f4 \tab Select Menu item \b File - SaveAs\plain\fs24 
+\par \f7 \{bmc bm8.bmp\}\f4 \tab Select SaveAs type \b CSV (comma delimited)\plain\fs24  and \b Save\plain\fs24  (e.g. Example.CSV)
+\par 
+\par 
+\par \page
+}

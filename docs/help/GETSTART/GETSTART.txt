@@ -1,0 +1,388 @@
+﻿$#>KAdditional Information
+
+What do you want to dKo? 
+
+{bmc bm0.shg}	Get help on how to do things.
+{bmc bm1.shg}	Get detailed help
+{bmc bm2.shg}	Shut down the instrument
+
+{bmc bm3.shg}	Go back
+{bmc bm4.shg}	Quit help
+$#>Adjust Brightness
+
+Changing the signal to more brightness shifts all grey levels in the image to lighter levels and vice versa.
+
+Follow these steps: 
+
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on the Contrast/Brightness iconICON@SEM.HLP {bmc bm6.bmp}
+{bmc bm5.bmp}	Press the left mouse button and adjust brightness moving the mouse left/right
+{bmc bm5.bmp}	Press the <TAB> key {bmc bm7.bmp} to switch sensitivity
+
+{bmc bm8.shg}	Go back
+$#>KAdjust Contrast
+
+Changing the signal to more contrast expands the range of grey levels in the image and vice versa.
+Follow these steps: 
+
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on  the Contrast/Brightness iconICON@SEM.HLP {bmc bm6.bmp}
+{bmc bm5.bmp}	Press the middle mouse button and adjust contrast moving the mouse left/right.
+{bmc bm5.bmp}	Press the <TAB> key {bmc bm7.bmp} to switch sensitivity
+
+{bmc bm8.shg}	Go back
+$#>Adjust Focus
+
+The focus is correctly adjusted when the image on the screen is sharp and clear.
+
+Follow these steps: 
+
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on the Magnification/Focus iconICON@SEM.HLP {bmc bm9.bmp}
+{bmc bm5.bmp}	Press the middle mouse button and focus moving the mouse left/right
+{bmc bm5.bmp}	Press the <TAB> key {bmc bm7.bmp} to switch sensitivity
+
+{bmc bm8.shg}	Go back
+$#>KAdjusting the Image
+
+When the electron beam is on, the image can be generated.
+
+What do you want to do? 
+
+{bmc bm10.shg}	Adjust focus
+{bmc bm11.shg}	Select a detector
+{bmc bm12.shg}	Adjust brightness of the image
+{bmc bm13.shg}	Adjust contrast of the image
+{bmc bm14.shg}	Select magnification
+{bmc bm15.shg}	Select scan
+
+{bmc bm16.shg}	Proceed
+
+{bmc bm17.shg}	Go back
+$#>Annotate the Image
+The data zone is used to display current parameters, including a micron marker showing the base magnification.
+
+Follow these steps: 
+
+{bmc bm5.bmp}	Type <CTRL + A> to display the annotation/measurement toolbar
+{bmc bm5.bmp}	With <CTRL + D> switch on the data zoneJ3NDYE@SEM.HLP
+{bmc bm5.bmp}	Typing <CTRL + D> again switches the data zone off
+{bmc bm5.bmp}	With <CTRL + T> switch on the text input dialog
+{bmc bm5.bmp}	When text input is finished with OK dragDRAG@SEM.HLP the text with the mouse to the exact position in the image
+
+{bmc bm3.shg}	Go back
+$#>KChange the Spacer
+Different specimen heights are compensated by exchanging spacers.
+
+Follow these steps:
+
+{bmc bm5.bmp}	Loosen the 3 small locating screws holding the sample holder with the hex screw driver provided and remove it.
+{bmc bm5.bmp}	Loosen the 3 small locating screws holding the spacer and remove it.
+{bmc bm5.bmp}	Insert new spacer and align its marks with the marks on the base ring. Tighten the 3 locating screws gently but firmly.
+{bmc bm5.bmp}	Mount the sample holder, align it, and tighten the locating screws.
+
+{bmc bm18.shg}	Go back
+$#>Change the Specimen
+
+After the specimen chamber is brought to atmospheric pressure it can be opened:
+
+What do you want to do?
+
+{bmc bm19.shg}	Open the chamber door
+{bmc bm20.shg}	Remove the specimen
+{bmc bm21.shg}	Change the Stage spacer
+{bmc bm22.shg}	Put in a new specimen
+{bmc bm23.shg}	Close the chamber door
+
+{bmc bm24.shg}	Go back
+
+While at air do you want to:
+Change the anode spacer1KHCK3U@operation.hlp
+
+Change the filament2MRA_.K@operation.hlp
+
+
+$#>KClose the Chamber Door
+
+
+
+Follow these steps:
+
+{bmc bm5.bmp}	Make sure that the specimen will clear the final lens
+{bmc bm5.bmp}	Carefully close the door and fasten the latch 
+
+{bmc bm18.shg}	Go back
+$#>Getting Started
+
+Before commencing to switch on the electron beam there should be a specimen inside the chamber and there should be satisfactory vacuum in the system.
+
+What do you want to do?
+
+{bmc bm25.shg}	Start the system
+{bmc bm26.shg} Switch OFF the electron Beam
+{bmc bm27.shg}	Ventilate the chamber
+{bmc bm28.shg}	Change the specimen
+{bmc bm29.shg}	Pump the chamber
+{bmc bm30.shg}	Switch ON the electron beam
+
+{bmc bm17.shg}   Proceed 	{bmc bm31.shg}   Display Control Panel	
+
+{bmc bm4.shg}	Quit Help
+$#KDisplay Control Panel
+The control panel provides a summary of the SEM Control settings.
+
+Follow these steps:
+
+{bmc bm5.bmp}	Type <Ctrl + G> 
+
+{bmc bm24.shg}	Go back
+$#>Improve the Noise Level
+
+The noise level in the image can be reduced by using longer scan times.
+
+Follow these steps: 
+
+{bmc bm5.bmp}	Click on {bmc bm32.bmp} to select next slower rate
+{bmc bm5.bmp}	Click on Menu Scanning - Scan Rate to select specific slower scan rate
+{bmc bm5.bmp}	Click on {bmc bm33.bmp} to apply Frame Averaging117K7K3@tabmgr.hlp (2 Frames). 
+{bmc bm5.bmp}	Click on {bmc bm34.bmp} to apply Frame IntegrationEQNXF7@tabmgr.hlp (25 frames then freeze)
+
+{bmc bm5.bmp}	See also SEM Control ScanningR5KU.@tabmgr.hlp and Scan Rate/Noise reduction1BUL_CS@operation.hlp for more noise reduction
+
+
+
+
+
+{bmc bm3.shg}	Go back
+$#>KInitialise the Stage
+
+The stage needs to be initialised before any absolute stage movement can be executed.
+
+Follow these steps: 
+
+{bmc bm5.bmp}	Select Stage on the Menu Bar then Stage Initialise to invoke the initialisation process
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on OK to start initialisation
+
+{bmc bm3.shg}	Go back
+$#>Move the Specimen
+The stage is moved using the JoystickContents@joystick.hlpcontents@hardpanl.hlp.
+Alternatively you can move a point on the image to the centre using Centre Point function
+or move by field size using the arrow keys.
+
+Follow these steps: (arrow key operation)
+
+{bmc bm5.bmp}	Press {bmc bm35.bmp},{bmc bm36.bmp},{bmc bm37.bmp},or {bmc bm38.bmp} for movement in the X/Y plane
+
+or
+Follow these steps: (centre point)
+
+{bmc bm5.bmp}	Press <Ctrl + Tab> to select Centre Point
+{bmc bm5.bmp}	Click on the feature you wish to centre
+
+{bmc bm3.shg}	Go back
+$#>KOpen the Chamber Door
+
+The chamber door also carries the stage. 
+
+Follow these steps:
+
+{bmc bm5.bmp}	Make sure that the specimen stage is low enough so that the specimen clears the  final lens.
+{bmc bm5.bmp}	Unfasten the latch and carefully open the door
+
+{bmc bm18.shg}	Go back
+$#>Print the Image
+
+This function requires that a graphics printer or hardcopy unit accessory be installed on the instrument
+
+Follow these steps: 
+
+If you have a CP750 Printer Which copies the screen:
+{bmc bm5.bmp}	Click on the {bmc bm39.bmp} to hide toolbar etc and move cursor off screen
+{bmc bm5.bmp}	Initiate print on CP750
+{bmc bm5.bmp}	Type <Shift + F3> to restore the User Interface
+
+For Other Printers, unless your toolbar {bmc bm39.bmp} has been edited to use the printer:
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on the image with the right mouse button
+{bmc bm5.bmp}	Click on Send to...
+{bmc bm5.bmp}	Click on Printer 
+{bmc bm5.bmp}	Select parameters if necessary
+{bmc bm5.bmp}	Click on Print button
+{bmc bm3.shg}	Go back
+$#>KPump the Chamber
+
+The chamber is pumped from atmospheric pressure automatically when the Pump coomand is given.
+
+Follow these steps:
+
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on the {bmc bm40.bmp} on the status bar to display commands
+
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on the pump command {bmc bm41.bmp} to start pumping
+
+{bmc bm24.shg}	Go back
+$#>Put in a new Specimen
+
+The specimen is mounted on a specimen stub. Several sizes are available.
+
+Follow these steps: 
+
+{bmc bm5.bmp}	Apply the forceps to a groove in the stub and insert it in the sample holder.
+{bmc bm5.bmp}	Tighten the locating screw gently but firmly
+
+{bmc bm18.shg}	Go back
+$#>KRecord the Image
+
+This function requires that the High Resolution Recording Unit accessory is installed on the instrument.
+
+Follow these steps: 
+
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on the image with the right mouse button
+{bmc bm5.bmp}	Click on Send to...
+{bmc bm5.bmp}	Click on HRRU 
+{bmc bm5.bmp}	Select parameters if necessary
+{bmc bm5.bmp}	Click on Photo button
+
+{bmc bm3.shg}	Go back
+$#>Remove the Specimen
+
+The specimen is usually mounted on a stub. This stub is clamped to the stage with a locating screw.
+
+Follow these steps:
+
+{bmc bm5.bmp}	Loosen the small locating screw holding the specimen stub in position with the hex screw driver provided.
+{bmc bm5.bmp}	Apply the forceps to the groove in the stub and pull it out of the stage
+
+{bmc bm18.shg}	Go back
+$#>KSave the Image
+The photo number can be added to the name under which the image is stored. Photo number must be selected from the Export TIFF dialog under Settings/Filename/Format.
+
+Follow these steps: 
+{bmc bm5.bmp}	Save the image by clickingCLICK@SEM.HLP on the Export TIFF iconICON@SEM.HLP {bmc bm42.bmp} with the left mouse button
+or:
+{bmc bm5.bmp}	 Click with the right mouse button on the image, select Send To and the destination (e.g. TIFF File ) to display the setup dialog  for the image export.
+
+{bmc bm3.shg}	Go back
+$#>Screening and Final Touches
+Move the specimen to investigate it's features from different points of view. Add data to the image (annotation) and take a micrograph (save, record or print it).
+
+What do you want to do?
+
+{bmc bm43.shg}	Initialise the stage 
+{bmc bm44.shg}	Move the specimen
+{bmc bm45.shg}	Improve noise level
+{bmc bm46.shg}	Annotate the image
+{bmc bm47.shg}	Save the image
+{bmc bm48.shg}	Record the image
+{bmc bm49.shg}	Print the image
+
+{bmc bm50.shg}	Proceed
+{bmc bm51.shg}	Go back
+$#>Select Magnification
+
+Choose magnification as required. Start at low magnification.
+
+Follow these steps: 
+
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on the Magnification/Focus iconICON@SEM.HLP {bmc bm9.bmp}
+{bmc bm5.bmp}	Press the left mouse button and adjust magnification moving the mouse left/right
+{bmc bm5.bmp}	Press the <TAB> key {bmc bm7.bmp} to switch sensitivity
+
+{bmc bm8.shg}	Go back
+$#>Select Scan
+Selection of the scan rate can greatly influence the quality of the image
+
+Follow these steps: 
+
+
+{bmc bm5.bmp}	Click on {bmc bm32.bmp} to select next slower rate
+{bmc bm5.bmp}	Click on {bmc bm52.bmp} to select next faster rate
+{bmc bm5.bmp}	Click on Menu Scanning - Scan Rate to select specific scan rate
+{bmc bm5.bmp}	Click on Reduced Raster icon {bmc bm53.bmp} for higher repetition rate for critical adjustment(clicking again will revert to Normal Mode)
+
+{bmc bm8.shg}	Go back
+$#>KSelect a Detector
+
+
+Select the required detector from the Main Menu under Detection - Detectors
+The selected detector is marked by a tick 
+Click on the required Detector {bmc bm54.bmp}
+
+{bmc bm8.shg}	 Go back
+
+If the detector required is not included in the list it may need to be configured in the AdministratorContents@admin32.hlp
+$#>Shut down the Instrument
+Exit shuts the current User Interface down
+Log Off closes all User interfaces.
+In both these cases the server continues to run.
+
+Follow these steps:
+
+{bmc bm5.bmp}	Type <ALT + F> to access the File menu and then <G> to start logging off
+or:
+{bmc bm5.bmp}	Type <ALT + F4> to start Exit
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on the YES button to proceed the shut down process
+{bmc bm5.bmp}	Save the system conditions with clicking on YES button
+
+To shut down the server right click on {bmc bm55.bmp} in the task bar and select Close
+If the server does not close another LEO application is still running.
+
+Windows Must be Shut Down before switching off power
+
+{bmc bm50.shg}	Go back
+{bmc bm4.shg}	Quit help
+$#Start Here
+$#>KStart the System
+
+Systems conditions are stored when the system is closed down. They can be selected and restored by clicking on the restore icon. The instrument is then set to the same conditions as it was shut down.
+
+Follow these steps:
+
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on the Restore iconICON@SEM.HLP {bmc bm56.bmp}
+
+{bmc bm24.shg}	Go back
+$#>Switch ON the Electron Beam
+When the operating vacuum is obtained the high voltage can be activated.
+
+Follow these steps: 
+
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on EHT {bmc bm57.bmp} in the Status Bar
+{bmc bm5.bmp}	Click on{bmc bm58.bmp} Beam On
+{bmc bm5.bmp}	When the beam is on it is indicated in the status bar with {bmc bm59.bmp}
+
+{bmc bm24.shg}	Go back
+$#>KVentilate the Chamber
+
+The chamber is brought to atmospheric pressure automatically when the Vent command is given.
+
+
+
+Follow these steps:
+
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on the {bmc bm60.bmp} on the status bar to display commands
+
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on the vent command {bmc bm61.bmp}
+
+{bmc bm24.shg}	Go back
+$#>Switching Beam OFF
+Before the system can be vented the Beam must be switched OFF.
+
+Proceed as follows:
+{bmc bm5.bmp}	ClickCLICK@SEM.HLP on EHT {bmc bm59.bmp} in the Status Bar
+{bmc bm5.bmp}	Click on {bmc bm62.bmp} Shutdown
+{bmc bm5.bmp}	When the beam is off it is indicated in the status bar with {bmc bm57.bmp}
+
+{bmc bm24.shg}	Go back
+$#>Beam Setup
+For correct imaging the filament current must be correctly set and the beam aligned
+With the Beam On proceed as follows:
+{bmc bm5.bmp}	Display the Control PanelContents@tabmgr.hlp by typing <Ctrl + G>
+{bmc bm5.bmp}	Select the Signal Tab1OTG14F@tabmgr.hlp and ensure Auto Brightness is off by clicking both Off buttons
+{bmc bm5.bmp}	Adjust Brightness and Contrast to suitable levels using the Scroll bars
+{bmc bm5.bmp}	Select the Gun Tab5_0HOO@tabmgr.hlp  click or double click on entries to change them (Beam Current typically 400 MicroA, EHT Target, I Probe )
+{bmc bm5.bmp}	Set the filament Current13HR49B@operation.hlp
+{bmc bm5.bmp}	Align the Beam1LKD_PL@operation.hlp
+{bmc bm5.bmp}	Check the filament current setting13HR49B@operation.hlp
+
+See also:
+Setting EHT And probe Current1N48D_S@operation.hlpSetting_EHT_and_Spot_Size@operation.hlp
+
+Adjusting the variable aperture334XEAC@operation.hlp
+
+{bmc bm51.shg}	Proceed
+{bmc bm24.shg}	Go back

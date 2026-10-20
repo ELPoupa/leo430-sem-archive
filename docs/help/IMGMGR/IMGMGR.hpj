@@ -1,0 +1,569 @@
+[OPTIONS]
+TITLE=Annotation
+CONTENTS=CS8STV
+COPYRIGHT=Copyright © LEO Electron Microscopy Ltd.
+LCID=0x809 0x0 0x0
+CNT=IMGMGR.CNT
+COMPRESS=0
+
+[WINDOWS]
+main="Annotation",(51,51,922,922),,,(255,255,128)
+
+[ALIAS]
+2WP5_U2=About_Image_Manager
+9MH8LK=Adjustable_Height_Measurement
+_UYUOU=Adjustable_Height_Measurement
+Adjustable_Width_Measurement=G4E4.G
+84CL0FS=G4E4.G
+W79WUK=4QHH_A0
+Angular_Measurement=4QHH_A0
+2FC93WO=118PCZU
+1WRG1D3=118PCZU
+KH50Z0=118PCZU
+1IFLFL=118PCZU
+1SEIGG=118PCZU
+1SOCAL=118PCZU
+SSL7F5=118PCZU
+Annotation_Settings=118PCZU
+9C2CG4=118PCZU
+1LD4Z_N=118PCZU
+_82CG4=118PCZU
+_.4BP5=Brush_Settings
+1IZA0OV=Calibration_Crosses
+7ATWLB=Calibration_Lines
+118JQUU=118GQWZ
+118KTPE=118GQWZ
+118YPKP=118GQWZ
+3491FKP=118GQWZ
+13I4RMC=118GQWZ
+Changing_Annotation_Settings=118GQWZ
+16QBOUU=118GQWZ
+EVZF0K=118GQWZ
+19_P_9N=118GQWZ
+1VG1.S5=118GQWZ
+19_PO2N=118GQWZ
+1.049EM=118GQWZ
+J_GYZU=118GQWZ
+JG5RQ4=118GQWZ
+LBK9L2=118GQWZ
+5D4C_JJ=118GQWZ
+O1JM3M=118GQWZ
+5C.5.N=118GQWZ
+S6JX4U=118GQWZ
+5Y0N4L=118GQWZ
+1EVDPX4=118GQWZ
+6CX3D9=118GQWZ
+1F5.ZAE=118GQWZ
+U1GX8A=118GQWZ
+2X.S04F=118GQWZ
+9W3AJF=118GQWZ
+1IDHQ0Z=118GQWZ
+WGJDE_=118GQWZ
+1J.3XCK=118GQWZ
+.K5H1P=118GQWZ
+53NA.RB=118GQWZ
+1MPCGSM=118GQWZ
+1MPCGUO=118GQWZ
+Clipboard_Copy=2OP8_K6
+1HI_F3U=Clipboard_Paste
+Colour_Selection_Dialog=OLW0WG
+CV183X=CS8STV
+CX9T32=CS8STV
+4GCF_MP=CS8STV
+D7420U=CS8STV
+K7KW01=CS8STV
+KQV4GZ=CS8STV
+41Y9WW5=CS8STV
+KV183X=CS8STV
+2N07STB=CS8STV
+3ACEHVL=CS8STV
+3C6Y_PO=CS8STV
+1C8W6VR=CS8STV
+41NBCH=CS8STV
+Contents=CS8STV
+27D30K0=CS8STV
+60HDGU=CS8STV
+SY.9DE=CS8STV
+28DOZ_S=CS8STV
+T0JOH5=CS8STV
+.WQWK.=CS8STV
+ZARZOS=CS8STV
+_NU4I8=CS8STV
+1M_B_G9=CS8STV
+PDTAFP=Crosshairs_Object
+_WLKSC=Delete_All_Seen
+5ZB0RY=Delete_all_Visible_Objects
+2NICYQK=Dual_Magnification_Object
+Ellipse_Annotation=I3XG.D
+QZ.414=I3XG.D
+A0EX2V=122FQ4E
+5JK0.VJ=Export_Area_Selection
+113RU2=2IE8ZU9
+Export_BMP_file=2IE8ZU9
+JN8AER=Export_File_Save
+UEAH7=Export_File_Settings
+2SCLSF=113ZWRG
+Export_JPEG_Save=113ZWRG
+8QFWJA=Export_TIFF_Save
+Export_Tiff_Data=JMTACN
+2IR8QV7=13.IZL9
+Fixed_Micron_Bar=13.IZL9
+0W2XOP=Graticule_Object
+Y32USV=HRRU_Photo
+X.Q0HJ=FYFERF
+Height_Measurement=FYFERF
+U9KT0I=Hide_Annotation
+.56MER=Hide_Annotation
+21MCS5=CP.Q6H
+Import_Tiff_Load=CP.Q6H
+Import_Tiff_Standard_Data=2A7V2WR
+_995LH=Import_Tiff_User_Data
+Insert_User_Bitmap_or_Metafile=5XW7_NE
+D747KJ=CS3H6W
+I3ZP7P=CS3H6W
+Line_Annotation=CS3H6W
+1PQL.JF=11EG2V9
+CV3SQ5=11EG2V9
+ITHVR8=11EG2V9
+ITHVR9=11EG2V9
+ITHVR0=11EG2V9
+3_NMTYP=11EG2V9
+ITHVRA=11EG2V9
+Line_Scan_Object=11EG2V9
+1V3LT4=11EG2V9
+5Z8ETW=11EG2V9
+5Z8ETX=11EG2V9
+5Z8ETY=11EG2V9
+5Z8ETZ=11EG2V9
+1EAPDXP=11EG2V9
+5Z8EU1=11EG2V9
+5Z8EU2=11EG2V9
+5Z8EU3=11EG2V9
+9BL8PU=11EG2V9
+9BL8PV=11EG2V9
+9BL8PW=11EG2V9
+9BL8PX=11EG2V9
+9BL8PY=11EG2V9
+9BL8PZ=11EG2V9
+1HU97TP=11EG2V9
+9BL8Q1=11EG2V9
+9BL8Q2=11EG2V9
+9BL8Q3=11EG2V9
+Line_Width=123AG2K
+7WV6EQ=123AG2K
+I3ZUUO=CS3MTV
+Loading_Annotation=CS3MTV
+M3AU16=Measurement_Results_Panel
+Q7GFMD=336WIS
+Micron_Marker=336WIS
+Micron_Marker_Value_Property=KUTX4X
+MR1GSP=Mouse_Control_Mode
+1HVL44P=Mouse_Control_Mode
+111BIK_=Objects_Properties_Menu
+55UW_S7=Objects_Properties_Menu
+AEWVHV=Objects_Properties_Menu
+1PXSULK=Objects_Properties_Menu
+ANWY6K=Objects_Properties_Menu
+B9VXL8=Objects_Properties_Menu
+CTT7MX=Objects_Properties_Menu
+4H3XTKP=Objects_Properties_Menu
+17CKVH8=Objects_Properties_Menu
+EYC.G4=Objects_Properties_Menu
+FQ78R2=Objects_Properties_Menu
+19DMN8Z=Objects_Properties_Menu
+1WOHVVE=Objects_Properties_Menu
+1WQJF4Y=Objects_Properties_Menu
+3.C._N8=Objects_Properties_Menu
+I49GFL=Objects_Properties_Menu
+1Z0.05I=Objects_Properties_Menu
+K11_2Z=Objects_Properties_Menu
+KY35NR=Objects_Properties_Menu
+2MK999M=Objects_Properties_Menu
+L9IH9J=Objects_Properties_Menu
+21IXRPM=Objects_Properties_Menu
+1UFKOZ=Objects_Properties_Menu
+1ARCIS7=Objects_Properties_Menu
+2SMETE=Objects_Properties_Menu
+P060JN=Objects_Properties_Menu
+3Q4G9I=Objects_Properties_Menu
+3TVD9U=Objects_Properties_Menu
+41434H=Objects_Properties_Menu
+43NCRN=Objects_Properties_Menu
+4OAU9A=Objects_Properties_Menu
+ROPWHP=Objects_Properties_Menu
+ROU0SY=Objects_Properties_Menu
+5FNXAI=Objects_Properties_Menu
+1DY.055=Objects_Properties_Menu
+5NL89A=Objects_Properties_Menu
+96DISB=Objects_Properties_Menu
+97JYAH=Objects_Properties_Menu
+1I.GU25=Objects_Properties_Menu
+4ZC0ZIU=Objects_Properties_Menu
+0BZ8AS=Objects_Properties_Menu
+0P_FNI=Objects_Properties_Menu
+0S.17M=Objects_Properties_Menu
+2.NKE74=Objects_Properties_Menu
+Y5_1P4=Objects_Properties_Menu
+_TJ6SQ=Objects_Properties_Menu
+1MKHEVJ=Objects_Properties_Menu
+3OL208K=Objects_Properties_Menu
+K_FL4.=Parameter_Annotation
+4W.H2V=Parameter_Annotation
+5ZTMY1=Photo_Selection_Dialog
+1YI.XCW=Photo_Settings_Dialog
+Point_to_Point=14_OZWO
+X0N7QF=14_OZWO
+17I_3FA=Print_Setup_Dialog
+0I1EF=Print_Setup_Dialog
+U4CMS6=Radial_Measurement
+8Q._S2=Radial_Measurement
+15_LM8K=Rectangle_Annotation
+K1K3LP=Rectangle_Annotation
+8QKHW8=Reduced_Raster_Object
+77QVZD=Reset_Drawing_Properties
+Z2K6CP=SEM_Operating_Mode
+SEM_Parameter_Object=1.GAOW0
+1XFNGCE=4G4W_J6
+1.ONFGC=4G4W_J6
+Saving_Annotation=4G4W_J6
+1HAWIAN=Select_Mode
+9UD9U0=Select_Mode
+Selection_of_Font__Style_and_Colour=178LJQH
+Selection_of_Pen_Settings=11_W.X3
+1_PS3QO=Selection_of_Text_Background
+Snap_to_Grid_Property=1OXZ5XN
+Split_Screen_Object=R8WARB
+Spot_Mode_Object=161FNOK
+Sticky_Panel_Annotation=1BX80Z0
+0HM41N=1BX80Z0
+L41I3U=Stored_Data_Histogram
+89NCHY=Stored_Data_Histogram
+3HT2IS=Stored_Vector_Profile
+1ME2DVW=Stored_Vector_Profile
+2F4G0X5=361T0QU
+DNL77G=361T0QU
+TIFF_Data_Annotation=361T0QU
+TIFF_Import_Object=1PMKFG5
+X_I0LM=1PMKFG5
+I47LB4=161GCXK
+Text_Annotation=161GCXK
+Undo_Last_Edit=I48TXZ
+Undo_Last_Edit_Delete=CS.LX6
+Unhide_Annotation=1OSL3AM
+1KNU0J4=1OSL3AM
+J8UEY6=HRW92F
+83V40N0=HRW92F
+Utility_Menu_Commands=HRW92F
+1FMGFT=HRW92F
+3JJ754S=HRW92F
+Z2EMV5=HRW92F
+907.5=1UR1_Q1
+Width_Measurement=1UR1_Q1
+3F8L.X4=1XUPQ4O
+Zone_Magnification=1XUPQ4O
+507__TC=Make_Current_Datazone
+Y5.R02=Save_As_Datazone
+The_Annotation_Options_Panel=11TJJR.
+FE_U6T=11TJJR.
+I4VD0Z=11TJJR.
+236HN6E=11TJJR.
+5JSH8Z=11TJJR.
+5M1P9E=11TJJR.
+5O94ZB=11TJJR.
+3JE1_70=The_Standard_Annotation_Options_Tab
+DGYB0F=13IB7T0
+G2MMJI=13IB7T0
+I0MP.3=13IB7T0
+M96BVY=13IB7T0
+_HP7A=13IB7T0
+T.ST0=13IB7T0
+16FQOT=13IB7T0
+250JZ6T=13IB7T0
+Q7JBC0=13IB7T0
+3GL.ZNU=13IB7T0
+The_Measurement___Results_Options_Tab=13IB7T0
+_HFAAT=13IB7T0
+_SYASI=13IB7T0
+._TAWW=The_General_Annotation_Options_Tab
+Setting_Automatic_Update_Frequency=SBDNVJ
+
+[FILES]
+IMGMGR.rtf
+
+[MAP]
+1UR1_Q1 108348
+Print_Setup_Dialog 66141
+13IB7T0 65934
+Reduced_Raster_Command 66038
+CS8STV 66137
+Mouse_Control_Mode 108302
+13IB7T0 65893
+Export_File_Settings 131177
+2IE8ZU9 66165
+4QHH_A0 108318
+13IB7T0 65932
+Graticule_Object 98334
+118GQWZ 65863
+11TJJR. 65848
+118PCZU 65836
+Export_to_the_System_Printer 131294
+118GQWZ 65855
+118PCZU 65873
+118PCZU 65839
+Objects_Properties_Menu 65767
+11EG2V9 66173
+CP.Q6H 131336
+CS8STV 66140
+Objects_Properties_Menu 65752
+OLW0WG 131309
+113ZWRG 65784
+Objects_Properties_Menu 65758
+Objects_Properties_Menu 65761
+336WIS 108315
+Crosshairs_Object 98333
+1BX80Z0 98312
+Stored_Vector_Profile 108322
+13IB7T0 65898
+Objects_Properties_Menu 65751
+CS8STV 98324
+Objects_Properties_Menu 65736
+336WIS 98315
+13IB7T0 65896
+Objects_Properties_Menu 65769
+CS8STV 97636
+Adjustable_Height_Measurement 98356
+Objects_Properties_Menu 65755
+Objects_Properties_Menu 65740
+I3XG.D 98311
+Parameter_Annotation 98307
+1XUPQ4O 98314
+118GQWZ 65875
+Objects_Properties_Menu 65742
+Objects_Properties_Menu 65744
+Objects_Properties_Menu 65796
+Objects_Properties_Menu 65762
+11TJJR. 65844
+11TJJR. 65843
+Objects_Properties_Menu 65763
+11TJJR. 65846
+CS8STV 65778
+118GQWZ 65860
+118GQWZ 65879
+11EG2V9 66142
+11EG2V9 66143
+11EG2V9 66144
+11EG2V9 66145
+11EG2V9 66146
+11EG2V9 66147
+11EG2V9 66148
+11EG2V9 66149
+Delete_all_Visible_Objects 98347
+Photo_Selection_Dialog 131192
+Export_to_the_HRRU_Device 131193
+SBDNVJ 131334
+CS8STV 98345
+118GQWZ 65853
+118GQWZ 65847
+13IB7T0 65894
+118PCZU 65883
+118GQWZ 65871
+Calibration_Lines 98335
+CS8STV 65943
+CS8STV 66139
+CS8STV 65779
+Reset_Drawing_Properties 131319
+118GQWZ 65857
+Radial_Measurement 108320
+Export_Area_Selection 98327
+123AG2K 98319
+Hide_Annotation 65887
+Stored_Data_Histogram 98323
+161FNOK 98336
+Radial_Measurement 98320
+Export_TIFF_Save 131335
+About_Image_Manager 131073
+Select_Mode 108303
+Objects_Properties_Menu 67536
+Clipboard_Paste 131189
+Objects_Properties_Menu 65774
+The_Standard_Annotation_Options_Tab 131338
+11EG2V9 66151
+11EG2V9 66152
+11EG2V9 66153
+11EG2V9 66154
+11EG2V9 66155
+11EG2V9 66156
+11EG2V9 66157
+11EG2V9 66158
+11EG2V9 66159
+11EG2V9 66150
+118GQWZ 65864
+118PCZU 65838
+HRW92F 131285
+Adjustable_Height_Measurement 108356
+Objects_Properties_Menu 65770
+118GQWZ 65884
+Objects_Properties_Menu 65759
+4QHH_A0 98318
+118GQWZ 65885
+118GQWZ 65868
+Objects_Properties_Menu 65760
+1BX80Z0 108312
+Objects_Properties_Menu 65749
+Objects_Properties_Menu 65741
+118GQWZ 65867
+14_OZWO 98317
+Objects_Properties_Menu 65786
+FYFERF 98349
+1PMKFG5 131328
+Import_TIFF 131184
+HRRU_Photo 131191
+Objects_Properties_Menu 65747
+Calling_the_Annotation_Toolbar 131276
+Hide_Annotation 65888
+Split_Screen_Command 66039
+1OSL3AM 65889
+The_General_Annotation_Options_Tab 131339
+118GQWZ 65872
+R8WARB 98331
+HRW92F 66135
+SEM_Operating_Mode 66040
+CS8STV 98322
+118PCZU 65876
+118PCZU 65837
+CS8STV 98325
+Import_Tiff_User_Data 131186
+Brush_Settings 131288
+13IB7T0 65882
+CS8STV 66018
+13IB7T0 65933
+Objects_Properties_Menu 65743
+CS8STV 65942
+Delete_All_Seen 108347
+Stored_Vector_Profile 98354
+118GQWZ 65878
+Objects_Properties_Menu 65771
+118GQWZ 65865
+118GQWZ 65862
+Objects_Properties_Menu 65745
+Objects_Properties_Menu 65781
+113ZWRG 66166
+118GQWZ 65854
+118GQWZ 65841
+118GQWZ 65869
+118PCZU 65935
+118GQWZ 65856
+11_W.X3 131286
+11EG2V9 131341
+2A7V2WR 131185
+11TJJR. 65845
+122FQ4E 108327
+123AG2K 108319
+118GQWZ 65881
+Objects_Properties_Menu 65753
+1OSL3AM 65890
+Reduced_Raster_Object 98330
+1OXZ5XN 131300
+13.IZL9 98316
+11EG2V9 108321
+118GQWZ 65880
+13IB7T0 65892
+Objects_Properties_Menu 65777
+Objects_Properties_Menu 65776
+Calibration_Crosses 98352
+Objects_Properties_Menu 65737
+14_OZWO 108317
+361T0QU 108313
+Objects_Properties_Menu 65766
+Select_Mode 98303
+Rectangle_Annotation 98310
+Mouse_Control_Mode 98302
+CS3H6W 98309
+CS3MTV 98304
+CS8STV 98332
+4G4W_J6 98305
+161GCXK 98306
+CS.LX6 98346
+Objects_Properties_Menu 66536
+CS8STV 98321
+CS8STV 98350
+CS8STV 98351
+CS3H6W 98357
+361T0QU 131317
+13IB7T0 65897
+118GQWZ 65851
+Make_Current_Datazone 65782
+361T0QU 98313
+Objects_Properties_Menu 131284
+118PCZU 131283
+178LJQH 131310
+Objects_Properties_Menu 65775
+Export_to_the_System_Clipboard 131188
+118GQWZ 65840
+Objects_Properties_Menu 65754
+1UR1_Q1 98348
+11TJJR. 65842
+Objects_Properties_Menu 65772
+Normal_Mode_Command 66037
+FYFERF 108349
+13IB7T0 65895
+118GQWZ 65861
+118GQWZ 65858
+118GQWZ 65866
+G4E4.G 98355
+Objects_Properties_Menu 65764
+5XW7_NE 98308
+2IE8ZU9 65783
+Save_As_Datazone 65785
+13.IZL9 108316
+1PMKFG5 98326
+Objects_Properties_Menu 65748
+Objects_Properties_Menu 65765
+118PCZU 65931
+Objects_Properties_Menu 65746
+I3XG.D 108311
+CS3H6W 108309
+CS3MTV 108304
+4G4W_J6 108305
+161GCXK 108306
+I48TXZ 108346
+Objects_Properties_Menu 65757
+11TJJR. 65886
+13IB7T0 65891
+1XUPQ4O 108314
+11EG2V9 66161
+11EG2V9 66162
+11EG2V9 66163
+11EG2V9 66164
+11EG2V9 66160
+118GQWZ 65874
+HRW92F 66036
+118GQWZ 65859
+1.GAOW0 131292
+4G4W_J6 131318
+118GQWZ 65852
+JMTACN 131178
+Export_File_Save 131176
+Objects_Properties_Menu 65756
+Objects_Properties_Menu 65768
+Rectangle_Annotation 108310
+G4E4.G 108355
+Dual_Magnification_Object 98353
+CS8STV 66138
+Parameter_Annotation 108307
+118PCZU 65870
+CS8STV 65780
+11EG2V9 98337
+CS8STV 98329
+KUTX4X 131293
+CS8STV 98328
+Objects_Properties_Menu 65738
+Objects_Properties_Menu 65750
+Stored_Data_Histogram 108323
+Objects_Properties_Menu 65739
+118GQWZ 65877
+CS8STV 131172
+Measurement_Results_Panel 131327
+Objects_Properties_Menu 65773
+13IB7T0 131340
+

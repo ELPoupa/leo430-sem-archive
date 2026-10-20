@@ -1,0 +1,130 @@
+[OPTIONS]
+TITLE=SEM Control Dialogs
+CONTENTS=125PDUJ
+COPYRIGHT=Copyright © 1997-1998 LEO Electron Microscopy Ltd.
+LCID=0x809 0x0 0x0
+CNT=DLGMGR.CNT
+COMPRESS=0
+
+[WINDOWS]
+main="SEM Control Dialogs",(51,51,922,922),,,(255,255,128)
+
+[ALIAS]
+4YI0_71=4QBSD_Dialog
+About_Box=DQ1ZKU
+Backlash_On=IMYGA.
+_4T2L6=Beam_Only
+4YI0_6X=Beam_Shift_Dialog
+Calibrate_Stigmation_Dialog=4YI0_75
+Clear_List=FL8YXE
+Do_Backlash=IMYG6_
+Q4B5H4=Edit_Points_Dialog
+T9F2S_=External_Scan_Control_Dialog
+LHXS1D=Go_To_First
+Go_To_Next=E9SIP1
+5GU354=Go_To_Previous
+4YI0_6W=Input_LUT_Dialog
+22HQZF4=Label_Position
+1JQ..O3=Load
+4YI0_73=Magnification_Calibration_Dialog
+1VN.AKF=2H9L9SP
+Menu=2H9L9SP
+1FHXCZX=2H9L9SP
+2MX2BK5=On_Goto_Move_XY_Only
+F7V98E=On_Goto_Set_Magnification
+_1R.8O=On_Goto_Set_Magnification
+On_Goto_Set_Working_Distance=L5V96Q
+32BMJD7=L5V96Q
+28L31W3=Rotate_Tilt_Dialog
+3.15_YE=125PDUJ
+H7UYTU=125PDUJ
+QGFYFC=125PDUJ
+TKXDWU=125PDUJ
+X5HEVY=Save_As
+Signal_Adjust_Dialog=T9F2S0
+Stage_And_Beam=1T90SV4
+4YI0_6Z=49LR_R2
+Stage_Limits_Dialog=49LR_R2
+Stage_Only=2FBT1MP
+Stage_Points_List_Dialog=4YI0_72
+Stage_Registered_Movement_Dialog=2P.29RD
+4YI0_7Z=2P.29RD
+UQENVC=Stage_Registration_Dialog
+4YI0_7Y=Stage_Registration_Dialog
+4YI0_85=Stage_Scan_Dialog
+28L31W4=Stigmation_Dialog
+OHA1S7=User_Defined_Label
+4YI0_81=Aperture_Data
+91UW0C0=Static_Semi_Dynamic_stereo
+T9F2S9=Vacuum_Status
+T9F2S8=Specimen_Change_Dialog
+
+[FILES]
+DLGMGR.rtf
+
+[MAP]
+Load 98329
+2H9L9SP 131324
+Stigmation_Dialog 131284
+Label_Position 98321
+4QBSD_Dialog 131320
+2P.29RD 98335
+External_Scan_Control_Dialog 131282
+Save_As 98330
+Edit_Points_Dialog 131388
+125PDUJ 131172
+49LR_R2 98308
+Specimen_Change_Dialog 131277
+Vacuum_Status 131278
+21KSYK4 131280
+Input_LUT_Dialog 131304
+125PDUJ 98305
+21KSYK4 131318
+Stage_Registration_Dialog 98334
+L5V96Q 98333
+21KSYK4 131335
+Stage_Registration_Dialog 131338
+2P.29RD 131339
+Static_Semi_Dynamic_stereo 131390
+Aperture_Data 131392
+4YI0_82 131394
+4YI0_83 131395
+4YI0_84 131396
+21KSYK4 131409
+49LR_R2 131315
+4YI0_72 131322
+T9F2S0 131279
+21KSYK4 131406
+E9SIP1 98324
+21KSYK4 131404
+Beam_Only 98311
+4YI0_75 131285
+21KSYK4 131275
+Beam_Shift_Dialog 131306
+125PDUJ 131274
+Stage_Scan_Dialog 131331
+DQ1ZKU 131073
+1T90SV4 98309
+2FBT1MP 98310
+On_Goto_Set_Magnification 98332
+Specimen_Current_Monitor 131398
+On_Goto_Set_Magnification 98326
+2H9L9SP 131314
+2H9L9SP 98322
+125PDUJ 327781
+Go_To_First 98323
+Rotate_Tilt_Dialog 131283
+21KSYK4 131411
+Go_To_Selected 98320
+IMYG6_ 98307
+IMYGA. 98306
+User_Defined_Label 131317
+FL8YXE 98331
+21KSYK4 131333
+User_defined_Points_List_File 131325
+Go_To_Previous 98325
+Magnification_Calibration_Dialog 131330
+21KSYK4 131328
+L5V96Q 98327
+On_Goto_Move_XY_Only 98336
+

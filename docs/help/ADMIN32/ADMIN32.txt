@@ -1,0 +1,640 @@
+﻿$#KAccess Hierarchy
+The access hieKrarchy (top to bottom) is
+
+Development
+Factory
+Service
+AdministratorAdministrator_restrictions
+UserUser
+$#KAccounting review
+This dialog is access from the AccountingUser_Accounting menu
+On initial entry this dialog lists all session records sorted in date order. Duration is in Hours:Minutes
+
+Session records mKay be displayed in Date or Username order
+
+To restrict records by date enter dates (e.g. 18-mar-1988) in either/both of the From and To boxes and click the {bmc bm0.bmp}
+
+To restrict sessions by Username select one of
+All Users.
+Username select Username required 
+Owner select owner required
+
+Account summary information may be displayed by selecting Accounts
+
+Information displayed may be printed on the default printer by selecting the Print menu item.
+
+The following may be copied to the clipboard
+Data		The data displayed in numerical form
+Heading	Column Headings
+Owner		The Owner information
+
+This information is suitable for pasting into an Excel spreadsheet.
+$#Activating/Deactivating user accounting
+This function is accessed from the AccountingUser_Accounting menu.
+The menu item Active is checked if the accounting function is in operation.
+Selecting this item will toggle the accounting on/off.
+When the accounting state is changed a session recordSession_data will be made to record the event.
+$#KAdministrator Main Form
+
+The main Form comprises a list of the currently available User ProfilesUser_Profile
+
+
+The Menu functions available depend on the position of the UserName in the Access HierarchyAccess_Hierarchy.
+
+Administrator and above
+User profile functionsUser_profile_Functions
+Licence functionsLicence_administration
+Configuration FunctionsConfiguration_Functions
+User AccountingUser_Accounting
+Database ManagementDatabase_Management
+
+Service and above
+Serial Number information
+Service Incident reports
+
+Factory and above
+Serial Number definition
+Reset Service reports
+
+$#Administrator restrictions
+The administrator may not:
+
+Edit User profiles at a higher level in the hierarchy
+Grant Calibration priviledge
+Perform functions assigned to higher levels
+
+$#KCalibration Privilege
+
+This privilege permits access to the SEM Calibration functions and parameters.
+
+The privilege may only be granted by a User at the Service level of the hierarchyAccess_Hierarchy or greater.
+$#Change Password Form
+
+This form is used to change the password in a User ProfileUser_Profile and is accessed from the Edit User profileEdit_User_Profile_Form form.
+
+Enter the new password in both the New Password and verify boxes and click OK.
+
+If changing the System password ensure that you record it in a safe place.
+
+If you forget your System password a chargeable Service visit will be required.
+
+$#KCompact Accounting Database
+This function is part of User AccountingUser_Accounting
+
+As you change data in a database, the database file can become fragmented and use more disk space than is necessary.
+Periodically, you can use the Compact Database function to defragment the database file. 
+The compacted database is usually smaller and often runs faster. 
+
+Before the Database is compacted it is copied to a .BAK file, which will overwrite any existing backup file.
+
+Should the Compact fail for any reason you may delete the new .MDB file and rename the .BAK file to .MDB
+
+See also Repair Accounting DatabaseRepair_Accounting_Database
+$#Compact User Database
+
+This function is part of the AdministratorAdministrator_Main_Form Database Menu
+As you change data in a database, the database file can become fragmented and use more disk space than is necessary.
+Periodically, you can use the Compact Database function to defragment the database file. 
+The compacted database is usually smaller and often runs faster. 
+
+Before the Database is compacted it is copied to a .BAK file, which will overwrite any existing backup file.
+
+Should the Compact fail for any reason you may delete the new .MDB file and rename the .BAK file to .MDB
+
+See also Repair User DatabaseRepair_User_Database
+
+$#KConfiguration Functions
+The Configuration tabbed dialog which is accessed from the Administrator Main FormAdministrator_Main_Form by selecting the Configuration menu item is used to set up SEM configuration parameters and detector InformationDetector_Configuration.
+
+These parameters should not be changed unless advised by LEO Staff.
+
+ 
+$#Administrator Contents
+
+OverviewOverview
+
+Log On FormLog_On_Form
+Administrator Main FormAdministrator_Main_Form
+
+User Profile FunctionsUser_profile_Functions
+User Profiles available on system installation7OR..2C
+
+Licence AdministrationLicence_administration
+Configuration FunctionsConfiguration_Functions
+User AccountingUser_Accounting
+
+System ManagementSystem_Management@sem.hlp
+$#KCreate New User Profile
+
+In the Administrator main Window select the menu item Users - New
+ This will display the User Profile FormUser_Profile_Form
+$#Creating the accounting database
+This function on the AccountingUser_Accounting menu creates an empty accounting databaseUser_Accounting_database if one does not exist.
+A warning is given if the database already exists.
+$#KCurrent Image Directory
+When a User Logs On his current Image Directory is selected according to the User ProfileUser_Profile.
+
+The Image directory is used to hold image files for loading/saving
+
+
+This is set initially in the Administrator by defining the Initial Image DirectoryInitial_Image_Directory 
+$#Current User Directory
+When a User Logs On his current User Directory is selected according to the User ProfileUser_Profile.
+
+The User directory is used to hold files specific to the user, e.g. his macro library, macro files, preferences, list of stage positions etc.
+
+It is therefore recommended that each user has a personal user directory.
+
+This is set initially in the Administrator by defining the Initial User DirectoryInitial_User_Directory 
+$#Database Management
+
+There are two Database management commands for the LEO_USER database provided on the main Menu 
+
+Compact User DatabaseCompact_User_Database
+Repair User DatabaseRepair_User_Database
+$#KDatabase location
+The database files (LEO_USER.*) are located in ...\leo32\system
+(Typically c:\program files\leo\leo32\system)
+$#KDelete User Profile
+
+A user profileUser_Profile may be deleted from the list in the main window by selecting it (click on the required entry in the profile list) and select menu entry Users - Delete
+$#Deleting session records
+This AccountingUser_Accounting menu item Delete Up To displays the 'Delete Session records' dialog
+The dialog displays the dates of the first and last session records and number of records in the database
+
+E.g. To delete all session records up to (but not including) the 23rd March 1998 enter the date ( 23-Mar-98) and press OK.
+You will be requested for confirmation.
+$#KDetector Configuration
+The detector Configuration is performed using the Detectors tab of the Configuration FormConfiguration_Functions.
+
+Select the Detector required in the Upper Left Combo Box
+
+If the selected detector is an auxiliary detector (i.e. not predefined) enter it's identity in the adjacent text box and select the type of signal it provides.
+
+Select the channel identity into which the detector is plugged.
+
+
+Repeat for any other detectors
+
+A RED  message will be displayed at the bottom of the form indicating any problems with the configuration
+
+When configuration is complete press Save Settings to action the configuration
+$#Development Profile
+
+This profile is reserved for LEO Software Development Staff
+$#Edit User Profile
+
+A User profileUser_Profile may be edited in two ways from the Administrator main Window
+:
+Select the User Profile to be edited (click on the item in the list of profiles) and select menu item Users - Edit
+
+Double click the User profile in the list of profiles
+
+The User ProfileEdit_User_Profile_Form form will be displayed
+$#Edit User Profile Form
+This form is used to Edit an existing User ProfileUser_Profile 
+
+UserName may not be changed.
+Password. Select Change PasswordChange_Password if required.
+Click on the User DirectoryDirectory_Selection_Form to change 
+Click on the Image DirectoryImage_Directory_Selection_Form to change
+Select User Level permissions2Z0A0ZB
+Select UserUser_Directory_Change_Privilege/ImageImage_Directory_Change_Privilege Directory Change permissions
+Select Privileges (CalibrationCalibration_Privilege, Supervisor3CNN77, Stage InitialiseStage_Initialise_Privilege,   Unlock IconsUnlock_Toolbar_Icon_privilege).
+
+Note: Ensure that the User who's profile is being edited is not logged on to the SEM if you wish to alter the user's User or Image Directory. This is because when logging off the current User and Image directories are written to the database which would overwrite your changes. 
+$#Factory Profile
+This profile is reserved for LEO Factory Staff
+User directory 	..\leo32\user\service
+Image Directory	..\leo32\images
+Full Privileges
+$#Guest profile
+
+This profile is provided for a guest user
+
+Password :default password is a blank field
+
+User directory 	..\leo32\user\guest
+Image Directory	..\leo32\images
+No privileges
+
+$#Image Directory Change Privilege
+
+This privilege is part of the User ProfileUser_Profile.
+
+If this priviledge is present the User may change his Current Image DirectoryCurrent_Image_Directory to any directory.
+
+If the privilege is not present the User may not set his Current User directory higher in the directory tree than the Initial Image DirectoryInitial_Image_Directory
+$#Image Directory Selection Form
+This form is accessed from the New User Profile FormUser_Profile_Form or Edit User Profile FormEdit_User_Profile_Form  to create/select the  Initial Image DirectoryInitial_Image_Directory
+
+Select the Image directory by clicking on the Drive/Directory select box until the required path is displayed in the top Edit Box
+
+To Create a New Image directory
+	Select Drive (e.g. D:)
+	Select path for directory (e.g ..\images)
+	Add to the path the new directory name(e.g. ..\images\phil)
+$#Initial Image Directory
+
+When a User logs on for the first time the Image Directory will be set to this directory specification.
+
+If a User does not have the Image Directory Change PrivilegeImage_Directory_Change_Privilege he may not set his current Image directory higher in the directory tree than this directory.
+$#Initial User Directory
+
+When a User logs on for the first time the User Directory will be set to this directory specification.
+
+If a User does not have the User Directory Change PrivilegeUser_Directory_Change_Privilege he may not set his current User directory higher in the directory tree than this directory.
+
+
+$#Installing Licences from disk
+Licences may be installed from a licence file on disk as follows
+
+Insert Licence disk in Drive A:
+On the Licence Administration FormLicence_Administration_Form press Install From Disk
+Select the licence fileLicence_File. 
+$#Licence Administration Form
+This form is accessed from the Administrator Main Window using the Licences menu item
+
+The Leo-32 Server is started if not already running. This is done so that the Server may perform the Licence validationLicence_validation.
+
+The current Server licence set is displayed in the list box.(Exception - Restore LicencesRestore_Licences)
+
+Licences which are standard are marked with an asterisk (*)
+Disabled Licences are marked with an X
+
+Licences in the list may be editedLicence_Editing
+
+Installing Licences from diskInstalling_Licences_from_disk
+
+Restore LicencesRestore_Licences
+
+$#Licence Editing
+An Installed licence may be edited (i.e. temporarily disabled or re-enabled) in the Licence Administration FormLicence_Administration_Form by selecting the licence (click on the required licence to highlight it) and press the Enable/Disable Licence button.
+
+A disabled licence is marked with an X
+$#Licence File
+A licence file is an encrypted file containing licences for a specific serial numbered SEM
+
+The licence file has extension .LIC, the file name is typically an order number (e.g. MW12345.LIC)
+$#Licence administration
+
+Licences are used to enable specific functionality in the software.
+
+Some licences are provided as standard with a specific model of SEM, others are purchased as options.
+
+When the SEM is delivered the Standard and purchased licences are already installed.
+
+For security the licences provided are also supplied on a floppy disk for reinstallation if required.
+
+Additional licences purchased will be supplied on floppy disk for installation on the SEM.
+
+Licence Administration FormLicence_Administration_Form
+Licence ValidationLicence_validation
+$#Licence validation
+The installed licences are held in the leo database as a master copy.
+Licences are valid only for a specific instrument Serial Number.
+On Server Start up Serial Number checks are performed and if successful the licences are transferred to the Server which is their normal working location.
+If the validation checks fail a failure message is displayed in the Server Window and the Server does not receive any licences, even those which are standard of the specific model of SEM.
+$#Log On Form
+
+On starting the Leo-32 Administrator you are requested to enter a UserName and password. 
+
+Only by entering a valid UserName and password will you be able to proceed beyond this point.
+
+Both UserName and password are case insensitive.
+
+On initial installation of the Leo-32 Software the SEM Supervisor should log on as SYSTEM with a blank password and change the password to a suitable string.
+This password will take effect on the next log on.
+
+Please record this password in a safe place
+If you forget your password a chargeable Service visit will be required.
+$#New User Profile Form
+This form is used to create a new User ProfileUser_Profile 
+
+Enter Username - this must be unique
+The password will default to the Username
+Click on the User DirectoryDirectory_Selection_Form to define 
+Click on the Image DirectoryImage_Directory_Selection_Form to define
+Select User Level permissions2Z0A0ZB
+Select UserUser_Directory_Change_Privilege/ImageImage_Directory_Change_Privilege Directory Change permissions
+Select Privileges (CalibrationCalibration_Privilege, Supervisor3CNN77, Stage InitialiseLJGPJG  Unlock IconsUnlock_Toolbar_Icon_privilege).
+$#Overview
+The Leo-32 Administrator provides controlled access to the Leo-32 DatabaseDatabase_location  which contains critical system information. It is essential that the database be regularly backed up to a secure destination.
+
+There is a hierarchyAccess_Hierarchy of access to the database, the functions available being controlled by the position of the Username in the hierarchy.
+
+The following administrative functions are provided:
+
+User profile FunctionsUser_profile_Functions
+Licence administrationLicence_administration
+System ConfigurationConfiguration_Functions
+Service Functions	[Not available for Customer use]
+Factory Functions	[Not available for Customer use]
+
+$#Owner Relation
+The Owner Relation record for the User Accounting databaseUser_Accounting_database contains
+
+OwnerID	see Owner DataOwner_information
+Username	The user name owned
+$#Owner data dialog
+This dialog is accessed from the Owners listOwners_dialog 
+An owner is a person responsible for one or more Usernames, 
+Enter the required data.
+Only the name and Company are mandatory.
+$#Owner information
+The owner information record for User accounting databaseUser_Accounting_database contains
+OwnerID	Unique reference number
+Name 
+Company   
+Addr1		 address line 1
+Addr2		 address line 2
+Addr3		address line 3
+Addr4		address line 4
+Zip		Zip/Post code
+Country
+$#Password
+A password is associated with a UserName as part of the User ProfileUser_Profile. 
+
+Only by correctly entering a correct Username and Password may a User Log on to the SEM or Administrator.
+
+When creating a New User profile the password is set as default to the UserName.
+
+The password is case insensitive.
+
+A password must be at least three characters.
+$#Protected Z
+
+This SEM parameter controls the behaviour of the stage when a multi axis move is performed (e.g. Go To a position label).
+
+Parameter not Set.
+All relevent axis move simultaneously to the desired position.
+Backlash correction performed if required.
+
+Parameter Set
+The move to the desired position is performed in phases to minimise the risk of collision. 
+
+
+The movement sequence is:
+
+
+If the desired Z is lower than the current Z then this axis is moved to the desired position.
+If the desired Tilt is lower than the current Tilt then this axis is moved to the desired position
+The X,Y,R,M axes are moved simultaneously to their desired positions
+If The desired Tilt position is not yet achieved move Tilt to the desired position
+If the desired Z position is not yet achieved move Z to the desired position.
+
+
+This Protected Z parameter may only be changed with Supervisor Privilege3CNN77.
+$#Repair Accounting Database
+This function is part of User AccountingUser_Accounting
+
+This function attempts to repair a database that was marked as possibly corrupt by an incomplete write operation. This can occur if an application using the  database is closed unexpectedly because of a power outage or computer hardware problem. 
+
+This function also attempts to validate all system tables and all indexes. Any data that can't be repaired is discarded. If the database can't be repaired, an error occurs.
+
+When you attempt to open or compact a corrupted database, an error usually occurs. In some situations, however, a corrupted database may not be detected, and no error occurs. It's a good idea to use this function if the database behaves unpredictably.
+
+Note   After repairing a database, it's also a good idea to compactCompact_Accounting_Database it  to defragment the file and to recover disk space.
+$#Repair User Database
+
+This function is part of the AdministratorAdministrator_Main_Form Database Menu
+
+This function attempts to repair a database that was marked as possibly corrupt by an incomplete write operation. This can occur if an application using the  database is closed unexpectedly because of a power outage or computer hardware problem. 
+
+This function also attempts to validate all system tables and all indexes. Any data that can't be repaired is discarded. If the database can't be repaired, an error occurs.
+
+When you attempt to open or compact a corrupted database, an error usually occurs. In some situations, however, a corrupted database may not be detected, and no error occurs. It's a good idea to use this function if the database behaves unpredictably.
+
+Note   After repairing a database, it's also a good idea to compactCompact_User_Database it  to defragment the file and to recover disk space.
+$#Restore Licences
+This function is actioned from the Licence Administrator FormLicence_Administration_Form
+The function re-enables any temporarily disabled licencesLicence_Editing and copies the master installed licences to a temporary location ready to be loaded to the Server when it is restarted.
+
+Note that on execution of this function the licences displayed are those in the temporary location not those actually in the Server.
+
+Note that any licences enabled by the Set All LicencesSet_All_Licences functions will be deleted.
+$#Service Profile
+This profile is reserved for LEO Service Staff
+User directory 	..\leo32\user\service
+Image Directory	..\leo32\images
+Full Privileges
+$#User accountingUser_Accounting session
+The duration between the User logging on and logging off.
+$#Session data
+The session data record for User Accounting databaseUser_Accounting_database contains
+SessionID Unique session number
+Username Username of operator.
+LogOn Date/Time user logged on
+LogOff Date/Time user logged off
+TIFFs Number of TIFF files exported
+Prints  Number of Images printed
+Photos Number of photographs made
+Status A code indicating one of the following
+0 = Normal session termination
+1 = abnormal session termination
+2 = accounting activated
+3 = accounting deactivated
+
+$#Set All Licences
+This function is provided on the Licence Administration FormLicence_Administration_Form 
+and is available only for UserName FACTORY
+
+All licences relevent to the Model of SEM are temporarily set to permit factory testing.
+
+See Restore LicencesRestore_Licences
+$#Supervisor Privilege
+This privilege is part of the User ProfileUser_Profile.
+
+Only Users with this Privilege are permitted to:
+
+1. Log on to the Administrator
+2. Modify Stage Global position labels1JKVBGQ@dlgmgr.hlp
+3. Save Common MacrosHBU_9D@leom.hlp
+4. Save Common ToolbarsDBDA.W@leom.hlp
+5. Access the following SEM parameters
+Z move on VentZ_move_on_Vent
+Protected ZProtected_Z
+Force Stage Initialise.4EJU@tabmgr.hlp
+EHT Off @ Log OffABHFR7@tabmgr.hlp
+User Max EHTUser_Max_EHT 
+
+User Max Filament currentUser_Max_Filament_current 
+
+$#System Management
+$#System profile
+
+This profile is provided for the System Administrator (Supervisor)
+
+Password :default password is a blank field
+
+User directory 	..\leo32\user\default
+Image Directory	..\leo32\images
+Full Privileges excluding calibration privilege.
+
+Change system password at earliest oportunity.
+Please record this password in a safe place
+If you forget your password a Service visit will be required.
+$#Unlock Toolbar Icon privilege
+
+It is possible to lock/unlock the functions assigned to specific Icons in the User Interface Toolbar.
+
+If this privilege is present the Icons may be locked/unlocked.
+
+This is part of the User ProfileUser_Profile
+$#Use Common Toolbar
+This is a setting defined using the AdministratorContents in a User ProfileUser_Profile.
+
+If this setting is not checked the Toolbar loaded for a user will be from the current User Directory and the user will be able to modify his toolbar
+
+If this setting is checked the toolbar loaded for a user will be from the \leo\leo32\user directory (if a toolbar file exists).
+This facility may be used to provide a common toolbar5XXH_AL@tooledit.hlp to a group of users.
+$#User Accounting - Overview
+User Accounting is a licenced facility which logs information about a User's sessionSession on the microscope in a separate databaseUser_Accounting_database and provides functionality within the administrator to review the information collected.
+
+If the User accounting licence is present the Administrator main window menu has an entry "Accounting" which provides access to the following functions
+
+Creating the accounting databaseCreating_the_accounting_database
+Activating/Deactivating user accountingActivating_Deactivating_user_accounting.
+Owner dataOwners_dialog
+Deleting session recordsDeleting_session_records.
+Compact Accounting DatabaseCompact_Accounting_Database
+Repair Accounting DatabaseRepair_Accounting_Database
+Accounting reviewAccounting_review
+
+$#User Accounting database
+The User accountingUser_Accounting database is named ACCOUNT.MDB and
+is located in ...\LEO\LEO32\SYSTEM.
+
+The database may be accessed and manipulated using Microsoft Access, Visual Basic or Visual C++.
+ It comprises 3 tables
+Session containing the session dataSession_data collected
+Owner containing informationOwner_information about the Username Owner
+OwnerRelation relating owner to UsernameOwner_Relation
+$#User Category
+Every User Interface item (Command, Analogue parameter, Digital Parameter) is assigned a User Category which is one of:
+Service	(calibration and Infrequently used items)
+Expert	(Parameters useful for the advanced user)
+Novice 	(Most frequently used parameters)
+
+This is used in conjunction with the User Access LevelUser_level
+$#User Directory Change Privilege
+
+This privilege is part of the User ProfileUser_Profile.
+
+If this priviledge is present the User may change his current User DirectoryCurrent_User_Directory to any directory.
+
+If the privilege is not present the User may not set his Current User directory higher in the directory tree than the Initial User DirectoryInitial_User_Directory
+$#KUser Directory Selection Form
+This form is accessed from the New User Profile FormUser_Profile_Form  or the  Edit User Profile FormEdit_User_Profile_Form  to create\select the Initial User DirectoryInitial_User_Directory 
+
+It is recommended that each Username should have a unique User directory, this will permit personal copies of all files/customisations to be maintained.
+
+Select the User Directory by clicking on the directory selection list box until the required path is displayed in the top edit box.
+
+To Create a new User directory
+	Select ...\leo32\user
+	Add to the path the new directory (e.g. \user\phil)
+	Press Create Directory
+	
+$#User Level Privilege
+
+The control interface of the SEM comprises Commands, Analogue parameters and Digital parameters.
+The total items  number many hundreds, hence when selecting parameters from a list (for display in the status window, parameters for annotation,  parameters in macros, etc) it is necessary to have a method of reducing the parameters listed.
+
+Every item is assigned a User CategoryUser_Category
+A user may select (part of SEM User Preferences) the levelUser_level at which he wishes to operate.
+
+This choice may be restricted in the User ProfileUser_Profile
+
+'Any Level' Checked
+User has unrestricted choice of level
+
+'Any Level' Unchecked
+Select the maximum level that the user may choose (e.g. if Expert then he may choose Expert or Novice, If Novice then he is restricted to Novice only)
+$#User Max EHT
+This value limits the maximum EHT that the user may request.
+Accessed by Right Button Click on SEM Control Gun5_0HOO@tabmgr.hlp Tab
+$#User Profile
+The User Profile is the collection of privileges and settings associated with a UserName. These are defined in the New User Profile FormUser_Profile_Form or Edit User Profile FormEdit_User_Profile_Form
+
+These are:
+
+PasswordPassword
+Initial User DirectoryInitial_User_Directory
+Current User DirectoryCurrent_User_Directory
+Initial Image DirectoryInitial_Image_Directory
+Current Image DirectoryCurrent_Image_Directory
+
+User Directory Change PrivilegeUser_Directory_Change_Privilege
+Image Directory Change PrivilegeImage_Directory_Change_Privilege
+User Level Privilege2Z0A0ZB
+Supervisor Privilege3CNN77
+Stage Initialise PrivilegeStage_Initialise_Privilege
+Calibration PrivilegeCalibration_Privilege 
+
+Use Common ToolbarUse_Common_Toolbar
+
+Unlock Toolbar Icon privilegeUnlock_Toolbar_Icon_privilege
+
+$#User Profiles available on system installation
+
+On System installation the following User Profiles are provided
+
+DevelopmentDevelopment_Profile
+FactoryFactory_Profile
+ServiceService_Profile
+SystemSystem_profile
+GuestGuest_profile
+$#User definition and restrictions
+A User is the lowest level in the Access hierarchyAccess_Hierarchy and is defined as a user profile which does not have Supervisor Priviledge3CNN77.
+
+A User may not log on to the Administrator Utility.
+$#User level
+
+Defines the categoriesUser_Category of Commands/parameters listed in the SEM Interface
+
+Choice of:
+Service 	(Displays all categories)
+Expert 	(Displays Novice and Expert categories)
+Novice	 (Displays Novice category only)
+
+The choice permitted2Z0A0ZB to a specific User is defined as part of the User Profile User_Profile
+$#User profile Functions
+
+The following functions are provided to administer User ProfilesUser_Profile
+
+Create New User ProfileCreate_New_User_Profile
+Edit User ProfileEdit_User_Profile
+Delete User ProfileDelete_User_Profile
+
+$#KUsername Owners dialog
+This dialog is displayed via the AccountingUser_Accounting menu.
+An owner is a person responsible for one or more Usernames, 
+e.g. an operator, or perhaps work being performed by an operator for a specific client
+This dialog displays the list of owners.
+
+Select the owner to display the associated usernames.
+A New Owner may be created from this dialog by selecting the Menu item Owners - New
+The Owner dataOwner_data_dialog may be edited by double clicking on the required owner in the list.
+
+User Names may be added to the owner by selecting the menu item Ownership - Add
+A Username may only be owned by one Owner.
+
+To remove a Username from an Owner double click the Username.
+$#Z move on Vent
+This SEM Parameter controls the behaviour of the Stage when the chamber is vented.
+
+Parameter Not Set
+No Action
+
+Parameter Set
+On vent the stage Z is driven to a low value.
+
+This parameter may only be changed with Supervisor Privilege3CNN77
+$#User Max Filament current
+This parameter defines the upper limit of filament current that a user may set.
+A Supervisor3CNN77 may click on the background of the SEM Control Gun5_0HOO@tabmgr.hlp tab to define this parameter
+$#KStage Initialise Privilege
+Only Users having this privilege may initialiseWDRES_@stage.hlp the Stage
+
+This privilege is part of the User ProfileUser_Profile

@@ -1,0 +1,73 @@
+[OPTIONS]
+TITLE=Help for Leo-32 Administrator
+CONTENTS=Contents
+COPYRIGHT=Copyright © 1997-1998 Leo Electron Microscopy Ltd
+LCID=0x409 0x0 0x0
+CNT=ADMIN32.CNT
+COMPRESS=0
+
+[WINDOWS]
+main=,(625,72,369,584),,,,1
+
+[FILES]
+ADMIN32.rtf
+
+[MAP]
+User 5
+Edit_User_Profile 31
+Repair_User_Database 56
+Database_location 2
+Detector_Configuration 47
+User_level 25
+3CNN77 6
+Owners_dialog 50
+Contents 44
+Compact_User_Database 55
+Initial_Image_Directory 20
+Log_On_Form 39
+Configuration_Functions 46
+Access_Hierarchy 3
+Factory_Profile 36
+Image_Directory_Selection_Form 42
+Accounting_review 53
+Administrator_Main_Form 40
+User_Profile 7
+System_profile 34
+Administrator_restrictions 4
+2Z0A0ZB 24
+7OR..2C 33
+Owner_data_dialog 51
+Edit_User_Profile_Form 43
+Password 16
+21KSYK4 10
+21KSYK4 15
+Calibration_Privilege 14
+Database_Management 54
+Image_Directory_Change_Privilege 21
+Overview 1
+Initial_User_Directory 17
+Create_New_User_Profile 26
+Licence_Administration_Form 45
+Activating_Deactivating_user_accounting 49
+Compact_Accounting_Database 57
+Current_User_Directory 19
+User_profile_Functions 29
+Unlock_Toolbar_Icon_privilege 28
+User_Category 23
+Delete_User_Profile 32
+Z_move_on_Vent 12
+Guest_profile 38
+Repair_Accounting_Database 58
+21KSYK4 8
+Change_Password 41
+Deleting_session_records 52
+Protected_Z 13
+Service_Profile 37
+Directory_Selection_Form 30
+User_Directory_Change_Privilege 18
+Current_Image_Directory 22
+Creating_the_accounting_database 48
+User_Profile_Form 27
+21KSYK4 11
+Development_Profile 35
+

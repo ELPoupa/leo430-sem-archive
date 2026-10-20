@@ -1,0 +1,44 @@
+﻿=== MENU 214 (lang 0809)
+  []
+  32768  &Properties...
+  32769  P&rint
+  32773  &Load
+  32774  Load as &2nd Image
+  ----
+  32770  &Delete
+=== MENU 216 (lang 0809)
+  []
+  32771  Fil&ter
+  32772  &Refresh
+=== DIALOG 1 "About LEO SEM Image Gallery Control" (4 controls)
+  -1  STATIC  "#1"
+  212  STATIC  "LEO SEM Image Gallery Control, V02.01"
+  -1  STATIC  "Copyright © 1997-98, Leo Electron Microscopy Ltd"
+  1  BUTTON  "OK"
+=== DIALOG 100 "" (0 controls)
+=== DIALOG 205 "Enter New .TIF Name Filter" (4 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  201  EDIT  ""
+  -1  BUTTON  "Filter (e.g. * for *.TIF)"
+=== DIALOG 206 "Properties" (12 controls)
+  4294967295  STATIC  "Filename"
+  202  STATIC  ""
+  4294967295  STATIC  "Width"
+  203  STATIC  ""
+  4294967295  STATIC  "Height"
+  205  STATIC  ""
+  4294967295  STATIC  "Date/Time"
+  206  STATIC  ""
+  4294967295  STATIC  "User Text"
+  207  STATIC  ""
+  4294967295  STATIC  "Size"
+  208  STATIC  ""
+=== DIALOG 210 "Enter Gallery File Name" (7 controls)
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  210  STATIC  "Static"
+  202  EDIT  ""
+  -1  STATIC  "File name:"
+  211  LISTBOX  ""
+  -1  BUTTON  "Current user directory"

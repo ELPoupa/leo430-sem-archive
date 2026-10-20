@@ -1,0 +1,308 @@
+﻿$#>KAcknowledge on event
+This User preferenceUser_Preferences determines the action taken when an errorError_Messages or warningWarning_messages message occurs.
+
+Action if set
+A dialog box containing the message is displayed and the user must acknowledge the message before proceeding.
+
+Action if not set
+The message is inserted in a list of unacknowledged messages for later acknowledgemenKtReview_Unacknowledged_Messages.
+ 
+$#>Backlash
+Backlash is employed to take up the necessary mechanical play in the stage motors, so that any absolute stage position is always approached from the same direction, improving the repeatability of motorised stage movement.
+Choose the backlash correction required for each axis.
+$#>KChange the Current Image Directory
+
+This function lets you select an Image Directory. 
+If you do not have the Image Directory Privilege the directory tree starts at your default directory
+
+ {bmc bm0.bmp} Navigate as in Windows, use the Scroll Bar1VOQNX@Sem.HLP on the right for longer directory trees.  {bmc bm0.bmp} Create a new sub directory to the currently highlighted one by pressing New  {bmc bm0.bmp} Delete a highlighted directory (and its sub directories) by pressing Delete  {bmc bm0.bmp} Accept the new directory with the OK button.  {bmc bm0.bmp} Break the action off with Cancel or close the window with {bmc bm1.bmp} which will make no change in currently selected directory. 	{bmc bm2.bmp}	
+
+$#>Change the Current User Directory
+This function lets you select a User Directory. 
+If you do not have the User Directory Privilege the directory tree starts at your default directory
+   
+ {bmc bm0.bmp} Navigate as in Windows, use the Scroll Bar1VOQNX@Sem.HLP on the right for longer directory trees.  {bmc bm0.bmp} Create a new sub directory to the currently highlighted one by pressing New  {bmc bm0.bmp} Delete a highlighted directory (and its sub directories) by pressing Delete  {bmc bm0.bmp} Accept the new directory with the OK button.  {bmc bm0.bmp} Break the action off with Cancel or close the window with {bmc bm1.bmp} which will make no change in currently selected directory. 	{bmc bm3.bmp}	
+
+$#>KClear Window
+This entry in the Message WindowMessage_Window system menu clears all displayed messages.
+It does not clear the Unacknowledged messageUnacknowledged_messages lists
+$#>Close
+Closing the Leo SRV-32  Message Window closes the Leo-32 Server.
+
+ If you explicitly attempt to close the Server it will request permission from all the currently registered interface applications. Only if all applications grant permission will the server close, it may therefore be necessary to close all interface applications before closing the server.
+
+The Server MUST be closed down before Switching off the PC
+$#KContents
+OverviewServer_Overview
+
+Logging On18RCAGS
+
+Message WindowMessage_Window
+
+User PreferencesUser_Preferences
+
+
+$#>Error Messages
+These are serious conditions which must immediately be drawn to the Operator's attention.
+
+When an error message occurs the Message windowMessage_Window will pop up to display the error message.
+
+The message is also inserted in the message logMessage_log.
+
+Further actions are defined by the User Preference Acknowledge on event Acknowledge_on_event
+$#>Image Directory Setup
+
+This function permits the Image Directory to be selected or changed.
+
+You can change the Image Directory from which images will be loaded and into which new images will be saved. . The Current Image Directory is displayed on the tab.  {bmc bm0.bmp} ClickCLICK@Sem.HLP on Change the Current Image DirectoryChange_the_Current_Image_Directory to open the selection dialog.  {bmc bm0.bmp} OK accepts the changes.  {bmc bm0.bmp} Help displays this help.  {bmc bm0.bmp} Break the action off with Cancel or close the window with {bmc bm1.bmp} which will make no changes. 	{bmc bm4.bmp}	
+
+$#>KInformation messages
+These are messages used to record information about the sequence of actions on the SEM, they include version information, log on/log off of users, and mid day recording of gun and vacuum system parameters.
+
+The messages are displayed in the message windowMessage_Window and inserted into the message logMessage_log.
+No further action is taken.
+$#>Language Selection
+If support for alternative languages (e.g. French) has been installed it may be selected in the Preference Selection menu.
+
+Changing to another language changes the parameter names, menu titles, operator messages, panels, dialog boxes and help text.
+
+Standard Dialog Message Boxes etc. which are part of Windows are not changed and will be appropriate to the language version of Windows in use.
+$#>KLogging On
+When the first User Interface application starts Leo-32 server requests the User to Log On
+You Must enter a valid Username and password. Three attempts are permitted.
+On Initial installation of Leo-32 two UserNames are provided which initially have null passwords, these are SYSTEM and GUEST.
+The System Supervisor should use the Administrator to define passwords for these UserNames and create new UserNames as required.
+$#>KMagnification Table
+
+This function permits to define a set of Magnifications which can quickly be toggled using the <F4> function key..
+{bmc bm0.bmp} ClickCLICK@Sem.HLP on the rightmost button. The button will then display being active and change between following choices: {bmc bm5.bmp} Lowest will be the lowest adjustable magnification in the present operating mode of the SEM. {bmc bm5.bmp} Disabled deselects this magnification definition from the toggle sequence. {bmc bm5.bmp} Enabled includes this magnification definition in the toggle sequence.  {bmc bm0.bmp} Enter a magnification definition value into the parameter box.  {bmc bm0.bmp} OK accepts the changes.  {bmc bm0.bmp} Help displays this help.  {bmc bm0.bmp} Break the action off with Cancel or close the window with {bmc bm1.bmp} which will make no changes. 	 {bmc bm6.bmp}	
+
+$#>Message Preferences
+These are defined on the Pressure - Language - User Level - Error MessagesL2NQES tab of the User Preferences.Contents
+
+The way in which the software reacts to Error and Warning messages may be defined here.
+
+Acknowledge on eventAcknowledge_on_event
+
+Pop Up on WarningPop_Up_on_Warning
+
+Suppress WarningsSuppress_Warnings
+$#>Message Window
+The message window for the Leo-32 ServerServer_Overview displays SEM operational messages.
+Each message has a time stamp and the messages are listed in chronological order.
+The last 100 messages (since the server was started) are displayed.
+
+Messages are divided into three categoriesMessage_categories
+
+Every message is inserted into the message logMessage_log
+
+The Window caption indicates any unacknowledged messagesUnacknowledged_messages.which may be reviewedReview_Unacknowledged_Messages if required.
+
+The system menu also provides a Clear WindowClear_Window function
+Closing Message WindowClose
+$#>Message categories
+Messages are divided into three categories
+Error messagesError_Messages
+Warning messagesWarning_messages
+Information messagesInformation_messages
+
+$#>KMessage log
+This is a file in which are recorded all the errorError_Messages, warningWarning_messages and informationInformation_messages messages of the SEM.
+The file LEOLOG.LEO is located in the ...\leo32\log directory.
+
+This file should not be edited or deleted. It is provided for Leo Service use as an aid to fault diagnosis.
+
+A warning will be given if it reaches 1 Mb and on each succeeding 1Mb boundary.
+If space is at a premium and the file is too large it may be copied to backup media and the file deleted (a new file will be created when the next message is output).
+The backed up file must be retained for Service inspection.
+$#>KPop Up on Warning
+This User PreferencesUser_Preferences setting determines the action when a warningWarning_messages message occurs
+
+Action if set
+The message WindowMessage_Window pops up to draw the warning to the Operator's attention
+
+Action if not set
+The Message Window remains iconised or behind other windows.
+$#>Preference Selection Beam Shift
+
+
+{bmc bm0.bmp} Locate the Beam Shift Mag. frame   {bmc bm0.bmp} Select ON / OFF for using beam shift as centering function above a defined magnification.  {bmc bm0.bmp} Enter the magnification value into the parameter box.   {bmc bm0.bmp} Click on OK to accept the new settings. Cancel cancels the selection and no changes are saved. 		 {bmc bm7.bmp}	
+
+$#>KPreference Selection Focus Wobble
+
+   
+{bmc bm0.bmp} Locate the Focus Wobble frame.   {bmc bm0.bmp} Select Reduced Raster ON or OFF. When reduced raster is on the repetition rate in the smaller frame is increased which allows better dynamic assessing of focus change.   {bmc bm0.bmp} Select Scan Rate ON / OFF. When Scan Rate is OFF the fastest scan rate (1) is selected. If Scan Rate is ON open the Drop-down List and select 1 out of 15 scan rates where 1 is the fastest and 15 is the slowest. This scan rate will then be used when you switch on Emission Image to produce it independent of which scan rate is active in the normal scan.   {bmc bm0.bmp} Click on OK to accept the new settings. Cancel cancels the selection and no changes are saved.		 {bmc bm8.bmp}	
+
+$#>Pressure - Language - User Level - Error Messages
+   
+You can make a selection for  {bmc bm5.bmp} Pressure UnitPressure_Unit  {bmc bm5.bmp} LanguageLanguage_Selection  {bmc bm5.bmp} User Access LevelUser_Access_Level  {bmc bm5.bmp} Error MessagesMessage_Preferences display  {bmc bm0.bmp} ClickCLICK@Sem.HLP on the respective button to make the selection.  {bmc bm0.bmp} Confirm with the Apply button when you return  {bmc bm0.bmp} OK accepts the changes.  {bmc bm0.bmp} Help displays this help.  {bmc bm0.bmp} Break the action off with Cancel or close the window with {bmc bm1.bmp} which will make no changes. 	{bmc bm9.bmp}	
+
+$#>KPressure Unit
+Pressure Units can be selected as
+
+	{bmc bm5.bmp}	Torr
+
+	{bmc bm5.bmp}	mBar
+
+	{bmc bm5.bmp}	Pascal
+
+The selected pressure unit will be used whenever a pressure read out is shown like e.g. in Vacuum Tab of the SEM Control panel
+$#>Review Unacknowledged Messages
+This dialog is displayed when the Review Unacknowledged Message entry is selected from the Message WindowMessage_Window system menu.
+
+The dialog displays the lists of unacknowledged ErrorError_Messages and WarningWarning_messages messages.
+Either or both lists may be cleared (i.e. acknowledged)
+$#>SEM Conditions
+
+This function permits certain SEM Conditions to be selected or changed.
+
+Special functions can be selected which come into effect additionally when this function is selected in the main SEM operating mode  {bmc bm0.bmp} ClickCLICK@Sem.HLP on the button. The button will then display being active.  Choices are for  {bmc bm5.bmp} Focus WobblePreference_Selection_Focus_Wobble,  {bmc bm5.bmp} Beam ShiftPreference_Selection_Beam_Shift. {bmc bm5.bmp} Magnification DisplayMagnification_Display   {bmc bm0.bmp} OK accepts the changes.  {bmc bm0.bmp} Help displays this help.  {bmc bm0.bmp} Break the action off with Cancel or close the window with {bmc bm1.bmp} which will make no changes. 	{bmc bm10.bmp}	
+
+$#>Server Overview
+The Leo-32 Server is the central controller of the microscope. It co-ordinates requests for data and control actions from other applications which it routes to low level control modules and also notifies all relevant applications of changes in the microscope.
+
+The server must therefore remain active whenever the microscope is in use.
+
+The server is also responsible for performing the log on  function when an interface application is started. On validation of the log on it establishes the operating environment for the specific user. In conjunction with this the Server also provides the User Preferences dialog.
+
+The server maintains a window for the display of messages and a log file.
+
+On request, or when all registered interface applications have closed, the server performs the log off function..
+
+If you explicitly attempt to close the Server it will request permission from all the currently registered interface applications. Only if all applications grant permission will the server close, it may therefore be necessary to close all interface applications before closing the server.
+
+$#>Stage
+   
+{bmc bm0.bmp} Select the BacklashBacklash correction required for each axis {bmc bm0.bmp} Select Fast Scanning if required {bmc bm0.bmp} Select Noise Reduction if required  {bmc bm0.bmp} OK accepts the changes. {bmc bm0.bmp} Help displays this help. {bmc bm0.bmp} Break the action off with Cancel or close the window with {bmc bm1.bmp} which will make no changes. 	{bmc bm11.bmp}	
+
+$#>Suppress Warnings
+This User PreferencesUser_Preferences setting affects the action when a warningWarning_messages message occurs
+
+Action If Set
+The message is displayed in the message WindowMessage_Window
+
+Action if not set
+The message is not displayed in the message window.
+Note that it is still inserted into the list of unacknowledged messagesUnacknowledged_messages and is overridden by the acknowledge on eventAcknowledge_on_event user preference.
+$#>Unacknowledged messages
+If Error or Warning messages are not acknowledged when they occurAcknowledge_on_event they are inserted into a list of unacknowledged messages.
+
+While there are unacknowledged messages the message windowMessage_Window caption displays
+[E]	Unacknowledged errors
+[W]	Unacknowledged warnings
+[E+W]	Unacknowledged errors and warnings
+
+These messages may be reviewed by selecting the Review Unacknowledged MessagesReview_Unacknowledged_Messages entry in  the system menu of the Message Window
+
+$#>User Access Level
+All parameters and commands are assigned a categoryGEE4AL@admin32.hlp
+The User Access level is defines which parameters are displayed for selection purposes (e.g. in the status window selection, annotation parameter selection etc)
+
+The levels of choice permitted are defined by the Administrator in the user profileV_JNBJ@admin32.hlp
+Some SEM Control panels are restricted by access level.
+Novice Mode: 
+Displays only those items assigned as Novice category
+
+Expert Mode:
+Displays items assigned as Novice and Expert Category.
+
+Service Mode:
+Displays all items
+$#>KUser Directory Setup
+
+This function permits the User Directory to be selected or changed.
+
+Selecting a new user directory saves the current user specific data and macro library in the Current User Directory, then selects the new directory and loads the new user specific data and macro library.  . The Current User Directory is displayed on the tab.  {bmc bm0.bmp} ClickCLICK@Sem.HLP on Change the Current User DirectoryChange_the_Current_User_Directory to open the selection dialog.  {bmc bm0.bmp} Confirm with the Apply button when you return  {bmc bm0.bmp} OK accepts the changes.  {bmc bm0.bmp} Help displays this help.  {bmc bm0.bmp} Break the action off with Cancel or close the window with {bmc bm1.bmp} which will make no changes. 	{bmc bm12.bmp}	
+
+$#>User Preferences
+The User Preferences Tabbed dialog allows the User to define specific preferences of operation.
+
+The following tabs are provided
+Sem Conditions1F9HBAX
+Magnification Table1_WKN3Z
+Pressure - Language - User level - Error MessagesL2NQES
+Stage3TQY_S
+
+User Directory Setup 5LDQJ4
+
+Image Directory Setup2V_G_EF 
+
+
+$#>Warning messages
+These are conditions which about which the Operator should be notified, but are less serious than error messages.
+.
+When an warning message occurs it is inserted in the Message WindowMessage_Window and the message logMessage_log
+
+Further actions are defined by the User PreferencesUser_Preferences
+ Acknowledge on eventAcknowledge_on_event 
+Pop Up on WarningPop_Up_on_Warning
+Suppress WarningsSuppress_Warnings
+$#Predefined List Dialog
+This dialog is displayed by clicking the Right Mouse button on an analogue parameter.
+
+{bmc bm13.bmp}
+
+For a description of functions see Predefined List6WI9IQ@sem.hlp
+$#KSecond Image Window
+The Second Image Window provides a Method of Viewing Image files and provides facilities to Pan and Zoom. It is especially useful on systems using the Expanded Desktop onto a second display monitor.
+See Operating System RequirementsOperating_System_Requirements
+Example of Second Image WindowExample_of_Second_Image_Window
+
+Images may be loaded into the Image Window as follows:
+{bmc bm0.bmp}	Main User Interface Menu command Image - Second Image Window - Load from Display. This loads the image currently displayed in the Leo-32 Image WindowGIRNF0@sem.hlp.
+{bmc bm0.bmp}	Main User Interface Menu command  Image - Second Image Window - Load from File. This present a file selection dialog enabling choice of image file.
+{bmc bm0.bmp}	Drag and Drop1NJSYVQ@sem.hlp (e.g. from Explorer Window) 
+{bmc bm0.bmp}	Paste Image from Clipboard. (Right Button click on window for Pop Up MenuSecond_Image_Window_Pop_Up_Menu)
+
+The window caption displays the image size and amount of Zoom relative to the original image.
+
+The window may be resized as required by dragging the edges or corners.
+
+To Pan over the image either use the scroll bars on the window or Drag the image using the Left Mouse button.
+
+To Zoom in press the Keypad + (PLUS) key.
+To Zoom out press the Keypad - (MINUS) key.
+
+The Second Image Window may be hidden/shown using the Top Menu command Image - View - Toggle Hide/Show. 
+
+NOTE: Hiding the Window does not free the resources used for the Image. To Delete the Image and free resources Close the Window.
+
+Click with the Right Mouse button to display the Pop Up MenuSecond_Image_Window_Pop_Up_Menu.
+See Also Zoom WindowZoom_Window
+$#Second Image Window Pop Up Menu
+
+Clicking with the Right Mouse Button on the Second Image WindowSecond_Image_Window displays the Pop Up Menu which provides the following functions:  ¡ Zoom Area displays the Zoom WindowZoom_Window  ¡ Zoom to 100% resets the zoom value ¡ Copy selection  copies the visible image area to the Clipboard at 100% zoom. ¡ Copy Entire Image copies the entire image to the Clipboard at 100% zoom. ¡ Paste Pastes an image from the Clipboard into the Second Image WindowSecond_Image_Window ¡ Print displays the standard Print dialog permitting the image to be printed on a Windows Printer. (Entire image at 100% zoom)	{bmc bm14.bmp}	
+
+$#Example of Second Image Window
+{bmc bm15.bmp}
+$#KZoom Window
+
+The Zoom Window displays the whole image and enables a zoomed area of interest to be identified for display in the Second Image WindowSecond_Image_Window  Image Files May be Dropped1NJSYVQ@sem.hlp into the Zoom Window.  To select an area click down with the left mouse button to define one corner, drag to the opposite corner, and release the mouse button.   The area selected may be dragged to other positions as required.	{bmc bm16.bmp}	
+
+$#Operating System Requirements
+The Second Image Window functions utilise the Imaging for Windows Controls.
+These may not be installed or may not be available on the current Operating System.
+
+Windows 98 and Windows NT 4.0 include Imaging for Windows, if this is not installed:
+{bmc bm0.bmp}	Start - Settings - Control Panel
+{bmc bm0.bmp}	Double click on Add/Remove Programs
+{bmc bm0.bmp}	Select the Windows Setup tab.
+{bmc bm0.bmp}	Under Accessories select Imaging.
+
+
+Windows 95
+This requires installation of Imaging for Windows 95 and Internet Explorer 4.01 SP1 
+For convenience these are included on the Leo-32 CD
+
+To perform Installation (NB must be in this order)
+{bmc bm0.bmp}	Close all running programs
+{bmc bm0.bmp}	Insert Leo-32 CD
+{bmc bm0.bmp}	Browse the CD
+{bmc bm0.bmp}	Double Click on  \Imaging\Setup.exe - follow the installation instructions
+{bmc bm0.bmp}	Double Click on  \IE4SP1\IE4Setup.exe - follow the installation instructions
+$#>Magnification Display
+This SEM User Preference1F9HBAX determines how the image magnification value is calculated for display.
+
+If Current Output Device is selected then the magnification value displayed is calculated according to the currently selected Output Device (e.g. Display)
+
+If Polaroid 545 is selected then the magnification value displayed is always calculated for a Polaroid 545 regardless of the currently selected output device.

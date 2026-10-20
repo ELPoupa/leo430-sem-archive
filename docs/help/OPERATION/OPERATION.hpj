@@ -1,0 +1,14 @@
+[OPTIONS]
+TITLE=Operation Help
+CONTENTS=Contents
+COPYRIGHT=Copyright ©Leo Electron Microscopy Ltd
+LCID=0x409 0x0 0x0
+CNT=OPERATION.CNT
+COMPRESS=0
+
+[WINDOWS]
+main="Operation Help",(471,10,512,983),,,
+
+[FILES]
+OPERATION.rtf
+

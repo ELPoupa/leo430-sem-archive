@@ -1,0 +1,11 @@
+﻿=== MENU 213 (lang 0809)
+  [&Utilities]
+  204  &Load Data
+  205  &Save Data
+=== DIALOG 1 "About Stage Nav Graphic" (4 controls)
+  -1  STATIC  "#1"
+  201  STATIC  "Version inserted by software"
+  -1  STATIC  "Copyright © 1998,  LEO Electron Microscopy Ltd"
+  1  BUTTON  "OK"
+=== DIALOG 221 "" (1 controls)
+  -1  STATIC  "LEO Stage Navigation Graphic"

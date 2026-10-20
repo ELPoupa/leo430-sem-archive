@@ -1,0 +1,703 @@
+{\rtf1\ansi\deff1
+{\fonttbl{\f0\fnil MS Sans Serif;}{\f1\fswiss Arial;}{\f2\fmodern Courier New;}{\f3\fnil Times New Roman;}{\f4\fnil Aardvark;}{\f5\fnil Calisto MT;}{\f6\fswiss AgfaRotisBold;}}
+{\stylesheet{\fs36 \snext0 Normal;}
+}\pard\plain
+{\up $}{\footnote\pard\plain{\up $} Apply Print Settings}
+{\up #}{\footnote\pard\plain{\up #} Apply_Print_Settings}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Apply Print Settings}
+\fs36 Apply Print Settings
+\par \pard \fs24 
+\par This option is for use with Network Printers and is loca{\up K}{\footnote\pard\plain{\up K} Images Across the Page}
+ted on the \uldb Network Printers Tab\plain\fs24 {\v Network_Printer_Tab}, and is activated when the \uldb Enable Network Printer\plain\fs24 {\v Enable_transfers_to_Network_Printer} option is checked.
+\par 
+\par When this button is pressed, the Image Archive program will attempt to log in to the network printer ready to transfer any selected Image files. The print formatting options are actually applied just before the images are sent to the printer.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Archive Attribute}
+{\up #}{\footnote\pard\plain{\up #} 1MP7OUG}
+\pard\keepn \fs36 Archive Attribute
+\par \pard \fs24 
+\par Each filename under the DOS operating system has a number of attributes associated with it, these can be any of :
+\par 
+\par \pard\li355\fi-355\tx355 \{bmc bm0.bmp\}\tab Normal (default)
+\par \{bmc bm0.bmp\}\tab Read-only
+\par \{bmc bm0.bmp\}\tab Hidden
+\par \{bmc bm0.bmp\}\tab System file
+\par \{bmc bm0.bmp\}\tab Archive - File has changed since last backup
+\par 
+\par \pard\tx355 ImgArc monitors the Archive attributes on image files, and transfers those files which have the archive attribute set. Once a file has been successfully transferred, the archive attribute on this file is cleared.
+\par \pard\tx355 
+\par \pard\tx355 ImgArc will by default not transfer image files with this bit set. The user may however \uldb change the archive attribute\plain\fs24 {\v Changing_the_Archive_Attribute} on any image file manually, or override this functionality by using the \uldb Include Files Already Transferred\plain\fs24 {\v Include_Files_Already_Transferred} check-box on the \uldb Image File Source Tab\plain\fs24 {\v Image_File_Source_Tab}.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Archived Images}
+{\up #}{\footnote\pard\plain{\up #} XYKH1}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Archive Bit}
+\fs36 Archived Images
+\par \pard \fs24 
+\par When logged in, this list box will contain a directory listing of the \uldb host computer\plain\fs24 {\v 3H.QV4}, using the specified \uldb directory path\plain\fs24 {\v 1BZPJX} that is assigned to the remote \uldb user account\plain\fs24 {\v 3HIUH2}.
+\par 
+\par Unlike the local \uldb SEM Image direcory\plain\fs24 {\v SEM_Image_Files}, all files in the remote directory are listed. The format of each entry is described below :
+\par 
+\par \f2 -rw-rw-r--   1 37417    996        39754 Jun  9 16:33 image1.jpg\f1 
+\par 
+\par The first four fields describe the file access attributes on the remote system, these are followed in order by :
+\par \pard 
+\par \pard\li355\fi-355\tx355 \{bmc bm0.bmp\}\tab File size in bytes : This may differ between machines, and is simply a replaction of the amount of storage space required on that system to hold the file
+\par \{bmc bm0.bmp\}\tab Month, Day and time that the file was created
+\par \{bmc bm0.bmp\}\tab The File name itself
+\par 
+\par \pard\tx355 The next two example entries represent the current directory and the directory above the current directory (the parent directory) respectively.
+\par \pard\tx355 
+\par \pard\tx355 \f2 drwxrws---   2 37417    996          512 Jun  9 16:33 .
+\par \pard\tx355 drwxr-xr-x 940 0        996        15360 Jun 11 08:57 ..
+\par \pard\tx355 \f1 
+\par \pard\tx355 Double click on the '..' filename to move to the parent directory. Note that the \uldb current Image Directory\plain\fs24 {\v 1BZPJX} and the Archived Images list refresh to reflect this change.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Browse}
+{\up #}{\footnote\pard\plain{\up #} XQHW0R}
+\pard\keepn \fs36 Browse
+\par \pard \fs24 
+\par This option allows the user to specifiy another log file name that will hold the contents of \uldb the user log file\plain\fs24 {\v User_Log_File}. A file selection dialog box similar to the one show below will appear to make file selection easier :
+\par 
+\par \{bmc bm1.bmp\}
+\par 
+\par The log file is always stored in the SEM User directory which is displayed on the ImgArc \uldb Source Tab\plain\fs24 {\v Image_File_Source_Tab}.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Cancel All File Transfers}
+{\up #}{\footnote\pard\plain{\up #} 9A3XVB}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Archived Images}
+\fs36 Cancel All File Transfers
+\par \pard \fs24 
+\par When a \uldb file transfer\plain\fs24 {\v 5VFV.V} is in progress, clicking this button will cancel the current file being transferred, along with all other subsequent file transfers for that session. A prompt will appear asking the user to confirm this action. If the cancel operation is confirmed, the partially copied file on the \uldb remote host\plain\fs24 {\v 3H.QV4} computer will be automatically deleted. 
+\par 
+\par Click the \uldb Cancel button\plain\fs24 {\v 3M0LA4C} to cancel the current file being transferred only.
+\par 
+\par \i\ul Note:\plain\i\fs24  When transferring Images to the network printer (When the \uldb Enable Network Printer\plain\i\fs24 {\v Enable_transfers_to_Network_Printer} option is checked, which is located on the \uldb Network Printers Tab\plain\i\fs24 {\v Network_Printer_Tab}.), the network printer will not include any of the remaining images in its printout(s). To Cancel the print job entirely, use the \uldb Cancel Print Job\plain\i\fs24 {\v Cancel_Current_Job} button.\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Cancel Current Job}
+{\up #}{\footnote\pard\plain{\up #} Cancel_Current_Job}
+\pard\keepn \fs36 Cancel Current Job
+\par \pard \fs24 
+\par This option is for use with Network Printers and is located on the \uldb Network Printers Tab\plain\fs24 {\v Network_Printer_Tab}, and is activated when the \uldb Enable Network Printer\plain\fs24 {\v Enable_transfers_to_Network_Printer} option is checked.
+\par 
+\par When logged in to the network printer, pressing this button will transfer a command to the Network printer to abort any print jobs in progress. Any Images transferred to the printer prior to this command will not be printed.
+\par 
+\par \i\ul Note :\plain\i\fs24  Use this command with caution!\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Cancel Image Transfer}
+{\up #}{\footnote\pard\plain{\up #} 3M0LA4C}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Browse}
+\fs36 Cancel Image Transfer
+\par \pard \fs24 
+\par When a \uldb file transfer\plain\fs24 {\v 5VFV.V} is in progress, clicking this button will cancel the current file being transferred. A prompt will appear asking the user to confirm this action. If the cancel operation is confirmed, the partially copied file on the \uldb remote host\plain\fs24 {\v 3H.QV4} computer will be automatically deleted. There may be a brief pause whilst this operation is completed.
+\par 
+\par File transfer will resume with the next image file in the list. To cancel all transfers, click the \uldb Cancel All\plain\fs24 {\v 9A3XVB} button. 
+\par \pard 
+\par \i\ul Note :\plain\i\fs24  The default behaviour of an FTP operation is to over-write files of the same name. If a file transfer operation has already started to copy a file over the top of an existing file, the existing file will also be unavailable when the cancel operation is used. The \uldb user\plain\i\fs24 {\v 3HIUH2} can use the \uldb Destination Tab\plain\i\fs24 {\v Image_File_Destination_Tab} to check the files in their \uldb target directory\plain\i\fs24 {\v XYKH1} during the \uldb setup mode of operation\plain\i\fs24 {\v Modes_of_Operation} of ImgArc.
+\par 
+\par When transferring Images to the network printer (When the \uldb Enable Network Printer\plain\i\fs24 {\v Enable_transfers_to_Network_Printer} option is checked, which is located on the \uldb Network Printers Tab\plain\i\fs24 {\v Network_Printer_Tab}.), the network printer will not include this image in its printout(s). To Cancel the print job entirely, use the \uldb Cancel Print Job\plain\i\fs24 {\v Cancel_Current_Job} button.\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Change Dir}
+{\up #}{\footnote\pard\plain{\up #} 1LJZ_DP}
+\pard\keepn \fs36 Change Dir
+\par \pard \fs24 
+\par This button causes ImgArc to change the Destination Image Directory to that specified by the \uldb FTP Image Directory\plain\fs24 {\v 1BZPJX} input box. If a directory change is successful, then the \uldb Image Archive List\plain\fs24 {\v XYKH1} will be updated. This setting then becomes the default directory for \uldb the user\plain\fs24 {\v 3HIUH2} to log in to on the \uldb remote host\plain\fs24 {\v 3H.QV4}.
+\par 
+\par If \uldb the user\plain\fs24 {\v 3HIUH2} does not have sufficient privilege, or the directory specified is invalid, then an \uldb FTP error\plain\fs24 {\v Errors_Help} is reported both in the \uldb Image Archive list\plain\fs24 {\v XYKH1} and in the \uldb Status Bar\plain\fs24 {\v The_Status_Bar}.
+\par \pard 
+\par \i\ul Hint :\plain\i\fs24  To set a directory automatically, those entries in the \uldb Image Archive List\plain\i\fs24 {\v XYKH1} that represent directories can be double clicked on.\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Changing the Archive Attribute}
+{\up #}{\footnote\pard\plain{\up #} Changing_the_Archive_Attribute}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Cancel All File Transfers}
+\fs36 Changing the Archive Attribute
+\par \pard \fs24 
+\par The \uldb archive attribute\plain\fs24 {\v 1MP7OUG} on any image file may be changed using the following method :
+\par 
+\par 1. Locate the image file using Explorer
+\par 2. Right click on the file
+\par 3. Select the file Properties menu Item :
+\par 
+\par \pard\tx355 \tab \{bmc bm2.bmp\}
+\par 4. Changes the file attributes :
+\par 
+\par \tab \{bmc bm3.bmp\}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Clear Log}
+{\up #}{\footnote\pard\plain{\up #} RFXF3}
+\pard\keepn \fs36 Clear Log
+\par \pard \fs24 
+\par This option causes the \uldb user log file\plain\fs24 {\v User_Log_File} to be cleared. All prior messages in the log file will be removed.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Contents}
+{\up #}{\footnote\pard\plain{\up #} .WS91Q}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Cancel Current Job}
+\fs36 Contents
+\par \pard \fs24 
+\par Welcome to the LEO FTP Image Archive Utility
+\par 
+\par \uldb Introduction\plain\fs24 {\v Introduction}
+\par 
+\par \uldb Modes of Operation\plain\fs24 {\v Modes_of_Operation}
+\par 
+\par \uldb The Status Bar\plain\fs24 {\v The_Status_Bar}
+\par \uldb The FTP Status Bar\plain\fs24 {\v FTP_Status_Bar}
+\par \uldb Image File Source Tab\plain\fs24 {\v Image_File_Source_Tab}
+\par \uldb Image File Destination Tab\plain\fs24 {\v Image_File_Destination_Tab}
+\par \uldb Options Tab\plain\fs24 {\v Options_Tab}
+\par \uldb Network Printer Tab\plain\fs24 {\v Network_Printer_Tab}
+\par 
+\par \uldb The Transfer Button\plain\fs24 {\v B8__3Z}
+\par \uldb The Close Button\plain\fs24 {\v _8FIJN}
+\par 
+\par \uldb Error Codes\plain\fs24 {\v Errors_Help}
+\par 
+\par 
+\par \f6 Copyright \'a9 1998, LEO Electron Microscopy Ltd
+\par Telephone (44) 1223 414166\f1 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Enable transfers to Network Printer}
+{\up #}{\footnote\pard\plain{\up #} Enable_transfers_to_Network_Printer}
+\pard\keepn \fs36 Enable transfers to Network Printer
+\par \pard \fs24 
+\par This check-box is found on the \uldb Network Printer Tab\plain\fs24 {\v Network_Printer_Tab}, and allows access to a number of additional formatting options when transferring Images to a network printer.
+\par 
+\par As soon as this option is enabled, the Image Archive program logs into the Remote Network Printer automatically. This link remains active until the user logs-out from the printer using the \uldb Log-out button\plain\fs24 {\v EE4OAC}, or until the Image Archive application closes.
+\par 
+\par When transferring images to the printer using the \uldb Transfer button\plain\fs24 {\v B8__3Z}, the settings on the \uldb Network Printer Tab\plain\fs24 {\v Network_Printer_Tab} are first sent to the printer.
+\par \pard 
+\par All Image files that are sent to the Network printer will have their \uldb archive attribute \plain\fs24 {\v 1MP7OUG} cleared, this allows the Image Archive program to identify which files will be transferred to the printer during the next transfer session. This selection option however can be overridden by using the \uldb Include Files Already Transferred\plain\fs24 {\v Include_Files_Already_Transferred} check-box on the \uldb Image File Source Tab\plain\fs24 {\v Image_File_Source_Tab}.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Errors Help}
+{\up #}{\footnote\pard\plain{\up #} Errors_Help}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Cancel Image Transfer}
+\fs36 Errors Help
+\par \pard \fs24 
+\par During an FTP session, there are numerous operations that can result in an error code being generated either by the local PC or the remote computer. The PC uses as 'Windows Sockets' interface to implement its FTP transfers. Consult the following list of error codes as to why the particular function failed to complete.
+\par 
+\par Error codes will usually be recorded in the \uldb log file\plain\fs24 {\v User_Log_File}, displayed in the Archived Images List and/or displayed in the \uldb status display bar\plain\fs24 {\v The_Status_Bar}
+\par \pard 
+\par \i\ul Hint :\plain\i\fs24  The easiest way to reset an error condition is to \uldb logout\plain\i\fs24 {\v EE4OAC} followed again by a \uldb login\plain\i\fs24 {\v 5P5S_OV} to restart the FTP connection.\plain\fs24 
+\par 
+\par \fs28 FTP Error Codes\fs36 
+\par \pard\tx4635 \fs24 
+\par \pard\tx675\tx3965 \b\ul Code\tab Mnemonic\tab Description\plain\fs24 
+\par 
+\par \fs20 0\tab OK\tab Socket operation okay or timeout.
+\par 4\tab SOCK_INTR\tab System level interrupt interrupted socket operation.
+\par 9\tab SOCK_BAD\tab Generic error for invalid format, bad format.
+\par 13\tab SOCK_ACCESS\tab Generic error for access violation.
+\par 14\tab SOCK_FAULT\tab Generic error for fault.
+\par 22\tab SOCK_INVALID\tab Generic error for invalid format, entry, etc.
+\par 24\tab SOCK_FILE\tab Generic error for file error.
+\par 25\tab SOCK_BADDR\tab The IP address provided is not valid or the host specified by the IP does not exist.
+\par \pard\tx675\tx3965 38\tab SOCK_NOSOCK\tab Invalid socket or not connected to remote.
+\par 48\tab SOCK_ADDRINUSE\tab The specified address is already in use.
+\par 49\tab SOCK_ADDRNOTAVAIL\tab The specified address is not available.
+\par 50\tab SOCK_NETDOWN\tab The connected network is not available.
+\par 51\tab SOCK_NETUNREACH\tab The connected network is not reachable.
+\par 52\tab SOCK_NETRESET\tab The connected network connection has been reset.
+\par 53\tab SOCK_CONNABORTED\tab The current connection has been aborted by the network or intermediate services.
+\par \pard\tx675\tx3965 54\tab SOCK_CONNRESET\tab The current socket connection has been reset.
+\par 57\tab SOCK_NOTCONN\tab The current socket has not been connected.
+\par 58\tab SOCK_SHUTDOWN\tab The connection has been shutdown.
+\par 60\tab SOCK_TIMEDOUT\tab The current connection has timedout.
+\par 61\tab SOCK_CONNREFUSED\tab The requested connection has been refused by the remote host.
+\par 63\tab SOCK_NAMETOOLONG\tab Specified host name is too long.
+\par 64\tab SOCK_HOSTDOWN\tab Remote host is currently unavailable.
+\par 65\tab SOCK_HOSTUNREACH\tab Remote host is currently unreachable. 
+\par \pard\tx675\tx3965 91\tab SOCK_SYSNOTREADY\tab Remote system is not ready.
+\par 92\tab SOCK_VERNOTSUPPORTED\tab Current socket version not supported by application.
+\par 93\tab SOCK_NOTINITIALISED\tab Socket API is not initialized.
+\par 101\tab SOCK_DISCON\tab Socket has been disconnected.
+\par 110\tab SOCK_FTP_RESTART\tab A restart marker has been received from the remote host.
+\par 120\tab SOCK_FTP_SYS_DELAY\tab FTP service ready in nnn minutes.
+\par 125\tab SOCK_FTP_CONN_X\tab FTP data connection already open.
+\par 150\tab SOCK_FTP_FILEOK\tab FTP File status is okay.
+\par \pard\tx675\tx3965 200\tab SOCK_FTP_OK\tab FTP command is okay.
+\par 202\tab SOCK_FTP_CMD_IMP1\tab FTP command is not implemented
+\par 210\tab MAIL_NOCNCT\tab No mail connection available.
+\par 211\tab SOCK_FTP_SYS_STAT\tab Current FTP reply is a system status or system help reply.
+\par 211\tab MAIL_BADORIG\tab Originating email address is invalid.
+\par 212\tab SOCK_FTP_DIR_STAT\tab Current message is a directory status.
+\par 212\tab MAIL_BADDEST\tab Destination email address is invalid.
+\par 213\tab SOCK_FTP_FILE_STAT\tab Current message is an FTP file status.
+\par 213\tab MAIL_BADDOM\tab Domain name provided to SMTP is invalid.
+\par \pard\tx675\tx3965 214\tab SOCK_FTP_HELP_MSG\tab Current message is a help message.
+\par 214\tab MAIL_NODATA\tab Cannot send email data.
+\par 215\tab SOCK_FTP_SYS_NAME\tab FTP system type.
+\par 215\tab MAIL_NOEND\tab Cannot end the transmission of email.
+\par 216\tab MAIL_NOQUIT\tab Unable to end the email session.
+\par 217\tab MAIL_BADCC\tab CC address(es) are invalid.
+\par 220\tab SOCK_FTP_SVC_READY\tab FTP service ready for new user.
+\par 220\tab POP_NOCNCT\tab POP connection not available.
+\par 221\tab SOCK_FTP_SVC_CLOSING\tab FTP server closing control connection.
+\par 221\tab POP_NOSTAT\tab POP statistics unavailable.
+\par \pard\tx675\tx3965 222\tab POP_NOLIST\tab POP email list unavailable.
+\par 223\tab POP_INVUSER\tab Invalid POP account username.
+\par 224\tab POP_INVPASS\tab Invalid POP account password.
+\par 225\tab SOCK_FTP_CONN_NOX\tab No FTP connection.
+\par 225\tab POP_NOOFF\tab Unable to logoff of POP.
+\par 226\tab SOCK_FTP_CLOSE_CONN\tab FTP server closing data connection.
+\par 226\tab POP_NODEL\tab Unable to delete mail.
+\par 227\tab SOCK_FTP_PASSIVE\tab Passive Mode (h1,h2,h3,h4,p1,p2).
+\par 227\tab POP_NOGET\tab Unable to get mail.
+\par 228\tab POP_NOUNDEL\tab Unable to undelete mail.
+\par 229\tab POP_NOUIDL\tab Unable to retrieve UIDL information.
+\par \pard\tx675\tx3965 230\tab SOCK_FTP_LOGIN\tab Unable to log into FTP server.
+\par 250\tab SOCK_FTP_FILEACT_OK\tab Requested file action okay, completed.
+\par 257\tab SOCK_FTP_PATH_CREATE\tab "PATHNAME" created.
+\par 331\tab SOCK_FTP_PASS\tab Invalid FTP password.
+\par 332\tab SOCK_FTP_ACNT1\tab Invalid FTP account.
+\par 350\tab SOCK_FTP_FILE_WAIT\tab File action pending further information.
+\par 400\tab SOCK_NNTP_SVC_DISCNCT\tab Service disconnected.
+\par 411\tab SOCK_NNTP_NO_NWSGRP\tab No such newsgroup.
+\par 412\tab SOCK_NNTP_NO_SLCT_NWSGRP\tab No newsgroup selected for operation.
+\par \pard\tx675\tx3965 420\tab SOCK_NNTP_NO_ARTICLE\tab No current article has been selected.
+\par 421\tab SOCK_NNTP_NO_NXT_ARTICLE\tab No next article available in selected group.
+\par 421\tab SOCK_FTP_SVC_NOT_AVAIL\tab Service not available.
+\par 422\tab SOCK_NNTP_NO_PRV_ARTICLE\tab No previous article available in selected group.
+\par 423\tab SOCK_NNTP_NO_ARTICLE_NUM\tab No such article available in selected group.
+\par 425\tab SOCK_FTP_CONN_CLOSED \tab Cant open data connection.
+\par 426\tab SOCK_FTP_XFR_ABORT\tab Connection closed; transfer aborted.
+\par 430\tab SOCK_NNTP_NO_SCH_ARTICLE\tab No such article in selected group.
+\par \pard\tx675\tx3965 435\tab SOCK_NNTP_ARTICLE_NOTWNT\tab Article not wanted, do not send to server.
+\par 436\tab SOCK_NNTP_XFR_FAIL\tab Transfer failed, try again later.
+\par 437\tab SOCK_NNTP_ARTICLE_RJCT\tab Article rejected, do not resend.
+\par 440\tab SOCK_NNTP_NO_POST\tab Posting of articles not allowed.
+\par 441\tab SOCK_NNTP_POST_FAIL\tab Posting of the article has failed.
+\par 450\tab SOCK_FTP_FILE_BUSY\tab Requested file action not taken.
+\par 451\tab SOCK_FTP_LOCAL_ERROR\tab Local error in processing.
+\par 452\tab SOCK_FTP_INSUFF_SPC\tab Insufficient storage space in system.
+\par \pard\tx675\tx3965 500\tab SOCK_NNTP_CMD_SYNTAX\tab Syntax error, command unrecognized.
+\par 500\tab SOCK_FTP_CMD_SYNTAX\tab Syntax error, command unrecognized.
+\par 501\tab SOCK_NNTP_ARG_SYNTAX\tab Syntax error in arguments.
+\par 501\tab SOCK_FTP_ARG_SYNTAX\tab Syntax error in arguments.
+\par 502\tab SOCK_NNTP_NO_ACCESS\tab Access is restricted or denied.
+\par 502\tab SOCK_FTP_CMD_IMP2\tab FTP command not implemented.
+\par 503\tab SOCK_NNTP_FAULT\tab Program fault, operation not performed.
+\par 503\tab SOCK_FTP_BAD_SEQ\tab Bad FTP sequence.
+\par 504\tab SOCK_FTP_CMD_IMP3\tab FTP command not implemented.
+\par \pard\tx675\tx3965 530\tab SOCK_FTP_NOLOGIN\tab Not logged into remote host.
+\par 532\tab SOCK_FTP_ACNT2\tab Need account on remote host to store files.
+\par 550\tab SOCK_FTP_FNOT_FOUND\tab Requested action not taken.
+\par 551\tab SOCK_FTP_PAGE_UNK\tab Page type unknown.
+\par 552\tab SOCK_FTP_XEED_STOR\tab Exceeded storage allocation 
+\par 553\tab SOCK_FTP_NAME_NOTALL\tab File name not allowed.
+\par 926\tab SOCK_FTP_INVFILE_HANDLE\tab Local file is invalid
+\par 927\tab SOCK_FTP_INVFILE\tab Local file is invalid
+\par 927\tab SOCK_SMTP_INVFILE\tab Local attachment file invalid
+\par \pard\tx675\tx3965 927\tab SOCK_POP_INVFILE\tab Local attachment file invalid
+\par 1001\tab SOCK_HOST_NOT_FOUND\tab Host not found
+\par 1002\tab SOCK_TRY_AGAIN\tab Not authorized, host not found
+\par 1003\tab SOCK_NO_RECOVERY\tab Non recoverable error
+\par 1004\tab SOCK_NO_DATA\tab No data available for request
+\par 1010\tab SOCK_GPH_NOFNAME\tab Query requires an output file.
+\par 1011\tab SOCK_GPH_NOEXEC\tab Unable to execute application.
+\par 1012\tab SOCK_NO_SND_DATA\tab Unable to send data
+\par 1013\tab SOCK_NO_CNCT_DATA \tab Unable to connect to remote
+\par 1100\tab SOCK_POP_INVATTACH\tab Invalid or unsupported attachment
+\par \pard\tx675\tx3965 11000\tab SYS_OPERATION_EXEC\tab Requested operation already being executed.  Retry the request or continue.\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Exclude Button}
+{\up #}{\footnote\pard\plain{\up #} Exclude_Button}
+\pard\keepn \fs36 Exclude Button
+\par \pard \fs24 
+\par The Exclude button on the \uldb Image File Source Tab\plain\fs24 {\v Image_File_Source_Tab} is used to temporarily exclude the selected files from being included in the next image transfer option. 
+\par 
+\par This exclusion does not alter the selected files in any way, and is cleared when the \uldb Refresh button\plain\fs24 {\v Refresh_button} is pressed.
+\par 
+\par A typical use for this button would be to selectively transfer a set of image files from the users Image directory.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} FTP Host}
+{\up #}{\footnote\pard\plain{\up #} 3H.QV4}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Change Dir}
+\fs36 FTP Host
+\par \pard \fs24 
+\par This is the name of the Remote host computer where the \uldb FTP User account\plain\fs24 {\v 3HIUH2} exists. SEM Image files are transferred to this account.
+\par 
+\par If the user does not know the name of the remote computer specifically, then the internet address of the remote computer can be entered directly e.g:
+\par 
+\par \f2\b ftp.acme.co.uk
+\par 149.23.45.52\plain\fs24 
+\par 
+\par Are both equally valid entries for the above imaginary internet FTP site. See your system administrator for the Internet address of the remote computer you wish to access.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} FTP Image Dir}
+{\up #}{\footnote\pard\plain{\up #} 1BZPJX}
+\pard\keepn \fs36 FTP Image Dir
+\par \pard \fs24 
+\par This is the path on the \uldb host computer\plain\fs24 {\v 3H.QV4} that the \uldb user account\plain\fs24 {\v 3HIUH2} exists. The SEM Image files are transferred to this directory on the remote Host computer.
+\par 
+\par \i\ul Note :\plain\i\fs24  By default, if the filename(s) of the SEM Image file(s) already exist on the remote computer, FTP will overwrite the Image files on the remote computer, and replace them with those most recently copied. If the filenames of the Images to be transferred are all different to those already present on the remote computer, no files will be overwritten.\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} FTP Password}
+{\up #}{\footnote\pard\plain{\up #} GRKAXJ}
+\pard\keepn \fs36 FTP Password
+\par \pard \fs24 
+\par This is the password associated with the \uldb FTP User name\plain\fs24 {\v 3HIUH2} on the Remote Host computer. This name must be a registered account on the hosts FTP Server and is not the same as the User Name logged into the SEM User Interface.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} FTP Status Bar}
+{\up #}{\footnote\pard\plain{\up #} FTP_Status_Bar}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Changing the Archive Attribute}
+\fs36 FTP Status Bar
+\par \pard \fs24 
+\par This status bar displays the current action being executed between the local and remote computers during an FTP session such as retrieving a directory listing. The main \uldb Status Bar\plain\fs24 {\v The_Status_Bar} Displays the current ImgArc Status.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} FTP User Name}
+{\up #}{\footnote\pard\plain{\up #} 3HIUH2}
+\pard\keepn \fs36 FTP User Name
+\par \pard \fs24 
+\par This is the name of the user on the Remote Host computer. This name must be a registered account on the host's FTP Server and is not the same as the User Name logged into the SEM User Interface.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Gaps Between Images}
+{\up #}{\footnote\pard\plain{\up #} Gaps_Between_Images}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Clear Log}
+\fs36 Gaps Between Images
+\par \pard \fs24 
+\par This option is for use with Network Printers and is located on the \uldb Network Printers Tab\plain\fs24 {\v Network_Printer_Tab}, and is activated when the \uldb Enable Network Printer\plain\fs24 {\v Enable_transfers_to_Network_Printer} option is checked.
+\par 
+\par This option determines the line thickness of the gaps between each image 'cell' as it is positioned on the page.
+\par 
+\par This option is actioned when the \uldb Apply Print Settings\plain\fs24 {\v Apply_Print_Settings} Button is Pressed.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Image File Destination Tab}
+{\up #}{\footnote\pard\plain{\up #} Image_File_Destination_Tab}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Contents}
+\fs36 Image File Destination Tab
+\par \pard \fs24 
+\par This tab allows the user to specify where the image files are to be transferred to.
+\par 
+\par The input boxes available are :
+\par 
+\par \pard\li355\fi-355\tx355 \{bmc bm0.bmp\}\tab \uldb User\plain\fs24 {\v 3HIUH2}
+\par \{bmc bm0.bmp\}\tab \uldb Password\plain\fs24 {\v GRKAXJ}
+\par \{bmc bm0.bmp\}\tab \uldb FTP Host\plain\fs24 {\v 3H.QV4}
+\par \{bmc bm0.bmp\}\tab \uldb Image Dir\plain\fs24 {\v 1BZPJX}
+\par \{bmc bm0.bmp\}\tab \uldb Archived Images\plain\fs24 {\v XYKH1}
+\par 
+\par \pard\tx355 The action buttons available are :
+\par \pard\tx355 
+\par \pard\li355\fi-355\tx355 \{bmc bm0.bmp\}\tab \uldb Log In\plain\fs24 {\v 5P5S_OV}
+\par \{bmc bm0.bmp\}\tab \uldb Log Out\plain\fs24 {\v EE4OAC}
+\par \{bmc bm0.bmp\}\tab \uldb Status\plain\fs24 {\v LIYTPP}
+\par \{bmc bm0.bmp\}\tab \uldb Change Dir\plain\fs24 {\v 1LJZ_DP}
+\par \pard\tx355 
+\par \pard\tx355 \{bmc bm4.bmp\}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Image File Source Tab}
+{\up #}{\footnote\pard\plain{\up #} Image_File_Source_Tab}
+\pard\keepn \fs36 Image File Source Tab
+\par \pard \fs24 
+\par This tab summarises the details associated with the User currently logged on to the LEO-32 Server. As seen below, the details include :
+\par 
+\par \pard\li355\fi-355\tx355 \{bmc bm0.bmp\}\tab The Users Name
+\par \{bmc bm0.bmp\}\tab The Directory used to store the Log file for image transfer operations
+\par \{bmc bm0.bmp\}\tab The Directory used to store images saved whilst using the SEM User Interface
+\par \{bmc bm0.bmp\}\tab The list of images that are available for transfer to the Remote Host computer
+\par 
+\par \pard\tx355 \i\ul Note :\plain\fs24  When the \uldb Include Files Already Transferred\plain\fs24 {\v Include_Files_Already_Transferred} check-box is not checked, the Image List is not a complete list of images in the Image Directory, but displays only those images with their \uldb archive attribute\plain\fs24 {\v 1MP7OUG} set. When this check-box is checked however, all image files are displayed.
+\par \pard\tx355 
+\par \pard\tx355 The refresh button is used to update the list of files in the Images for Archive list. This may be necessary for example if the user has saved more images or deleted images from the user directory.
+\par \pard\tx355 
+\par \pard\tx355 When files are selected by the user, the \uldb Exclude Button\plain\fs24 {\v Exclude_Button} can be pressed to temporarily exclude the selected files from being included in the next image transfer option. This exclusion does not alter the selected files in any way, and is cleared when the refresh button is pressed.
+\par \pard\tx355 
+\par \pard\tx355 \{bmc bm5.bmp\}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Image Transfer option}
+{\up #}{\footnote\pard\plain{\up #} 5NK5OS}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Enable transfers to Network Printer}
+\fs36 Image Transfer option
+\par \pard \fs24 
+\par When this button is checked, Image file transfer will only occur at the end of a session. This option is used in the \uldb mode of operation\plain\fs24 {\v Modes_of_Operation} that ImgArc is started in.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Images Across the Page}
+{\up #}{\footnote\pard\plain{\up #} Images_Across_the_Page}
+\pard\keepn \fs36 Images Across the Page
+\par \pard \fs24 
+\par This option is for use with Network Printers and is located on the \uldb Network Printers Tab\plain\fs24 {\v Network_Printer_Tab}, and is activated when the \uldb Enable Network Printer\plain\fs24 {\v Enable_transfers_to_Network_Printer} option is checked.
+\par 
+\par This option set the number of images to be fitted across the printed page. The width available for the images is determined by the page being either \uldb Landscape\plain\fs24 {\v Landscape_Selection} (Wide and Short) or \uldb Portrait\plain\fs24 {\v Portrait_Selection} (Narrow and Tall). If the Images will not fit into the page 'cells' then they will be scaled to fit using the \uldb Scaling Method\plain\fs24 {\v Scaling_Selection} set for the printer.
+\par \pard 
+\par This option is actioned when the \uldb Apply Print Settings\plain\fs24 {\v Apply_Print_Settings} Button is Pressed.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Images Down the Page}
+{\up #}{\footnote\pard\plain{\up #} Images_Down_the_Page}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Errors Help}
+\fs36 Images Down the Page
+\par \pard \fs24 
+\par This option is for use with Network Printers and is located on the \uldb Network Printers Tab\plain\fs24 {\v Network_Printer_Tab}, and is activated when the \uldb Enable Network Printer\plain\fs24 {\v Enable_transfers_to_Network_Printer} option is checked.
+\par 
+\par This option set the number of images to be fitted down the printed page. The width available for the images is determined by the page being either \uldb Landscape\plain\fs24 {\v Landscape_Selection} (Wide and Short) or \uldb Portrait\plain\fs24 {\v Portrait_Selection} (Narrow and Tall). If the Images will not fit into the page 'cells' then they will be scaled to fit using the \uldb Scaling Method\plain\fs24 {\v Scaling_Selection} set for the printer.
+\par \pard 
+\par This option is actioned when the \uldb Apply Print Settings\plain\fs24 {\v Apply_Print_Settings} Button is Pressed.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Include Files Already Transferred}
+{\up #}{\footnote\pard\plain{\up #} Include_Files_Already_Transferred}
+\pard\keepn \fs36 Include Files Already Transferred
+\par \pard \fs24 
+\par This check-box on the \uldb Image File Source Tab\plain\fs24 {\v Image_File_Source_Tab} controls the selected Image files displayed in the user directory. When this check box is checked, all Image files are included for transfer, otherwise only the image files with their \uldb archive attribute\plain\fs24 {\v 1MP7OUG} set will be included.
+\par 
+\par After each Image file is transferred to the remote computer, its archive bit is cleared to signify that the file has been successfully copied.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Introduction}
+{\up #}{\footnote\pard\plain{\up #} Introduction}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Exclude Button}
+\fs36 Introduction
+\par \pard \fs24 
+\par The LEO FTP Image Archive Utility (ImgArc) is designed to allow the SEM Operator to transfer a copy of saved \uldb SEM Image Files\plain\fs24 {\v SEM_Image_Files} to a remote computer using FTP; the TCP/IP Internet protocol for file transfer.
+\par 
+\par This application program assumes that the TCP/IP protocol is installed and correctly configured on the system that you are running the application on, and on your target system. Your local system administrator should be able to help you configure your computer(s) to use this protocol..
+\par \pard 
+\par The remote or host computer must be capable of receiving FTP commands, and should be configured as an FTP server. There is additional support for network printers that accept commands and images using the FTP protocol. Such an example is the Codonics NP1600 printer.
+\par 
+\par The user configures ImgArc by providing the internet address of a host computer, along with username, password and target directory that describe where the image files are to be stored.
+\par 
+\par A basic interface exists for the user setting up ImgArc to verify that these parameters have been set correctly prior to transferring their image files.
+\par \pard 
+\par When this application is invoked from the SEM user Interface, only those image files with their \uldb archive attribute\plain\fs24 {\v 1MP7OUG} set will be copied. The archive bit is cleared only when the image has successfully been copied to the host computer.
+\par 
+\par Finally, the user can also specifiy whether files are copied as they are saved, or at the end of a 'session' on the SEM.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Landscape Selection}
+{\up #}{\footnote\pard\plain{\up #} Landscape_Selection}
+\pard\keepn \fs36 Landscape Selection
+\par \pard \fs24 
+\par This option is for use with Network Printers and is located on the \uldb Network Printers Tab\plain\fs24 {\v Network_Printer_Tab}, and is activated when the \uldb Enable Network Printer\plain\fs24 {\v Enable_transfers_to_Network_Printer} option is checked.
+\par 
+\par This option sets the orientation of the printed page. In Landscape mode whe page is wide and short (the opposite to \uldb Portrait\plain\fs24 {\v Portrait_Selection}).
+\par 
+\par This option is actioned when the \uldb Apply Print Settings\plain\fs24 {\v Apply_Print_Settings} Button is Pressed.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Log In}
+{\up #}{\footnote\pard\plain{\up #} 5P5S_OV}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} FTP Host}
+\fs36 Log In
+\par \pard \fs24 
+\par Once the \uldb User Name\plain\fs24 {\v 3HIUH2}, \uldb Password\plain\fs24 {\v GRKAXJ}, \uldb FTP Host\plain\fs24 {\v 3H.QV4} and \uldb Directory Path\plain\fs24 {\v 1BZPJX} have all been entered, this button can be pressed to log into the FTP Host computer. When run in any \uldb operating mode\plain\fs24 {\v Modes_of_Operation} other than setup, login is automatic, and will use the setting provided on the \uldb Destination options tab\plain\fs24 {\v Image_File_Destination_Tab}.
+\par 
+\par If login is successful, then the \uldb Archived Images list box\plain\fs24 {\v XYKH1} will display a list of files in the specified Image Directory.
+\par 
+\par \i\ul Hint :\plain\i\fs24  If the Image Directory Path name is not known, use '.' as a default value. ImgArc will then replace this value after a successful login to the default Users Directory path.\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Log Out}
+{\up #}{\footnote\pard\plain{\up #} EE4OAC}
+\pard\keepn \fs36 Log Out
+\par \pard \fs24 
+\par This is the opposite action to \uldb loggin in\plain\fs24 {\v 5P5S_OV}, and will result in the FTP session between ImgArc and the remote host computer to be terminated. Note that if the \uldb user\plain\fs24 {\v 3HIUH2} is not logged in, then this button is greyed.
+\par 
+\par \i\ul Hint\plain\i\fs24 : If you encounter any \uldb FTP errors\plain\i\fs24 {\v Errors_Help} that you can't resolve, simply try logging out and logging back in to resume your FTP session.\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Modes of Operation}
+{\up #}{\footnote\pard\plain{\up #} Modes_of_Operation}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} FTP Password}
+\fs36 Modes of Operation
+\par \pard \fs24 
+\par There are currently three distinct modes in which ImgArc will operate. These are :
+\par 
+\par \pard\li355\fi-355\tx355 1.\tab Setup Mode : No Command line parameter 
+\par 2.\tab Image Saved Mode : Command line parameter /t
+\par 3.\tab End of Session Mode : Command line parameter /e
+\par 
+\par \pard\tx355 With no command line parameters, the Main Form will be displayed. Here, the FTP Host can be configured along with other program parameters. These are saved into the window registry by SEM User Name and are Recalled at the beginning of each session.
+\par \pard\tx355 
+\par \pard\tx355 The other two modes are for automatic image transfer and no setup screen will be displayed unless no input parameters have yet been set.
+\par \pard\tx355 
+\par \pard\tx355 \i\ul Note :\plain\i\fs24  When run from the SEM User Interface, specific SEM macros will be used to set up the required command line parameters automatically. Please refer to the SEM UIF Help on programming and using Macros.
+\par \pard\tx355 See
+\par \tab \uldb \b Macros\plain\i\b\fs24 {\v QGFYFC@leom.hlp}
+\par \tab \uldb Execute Program macro instruction\plain\i\b\fs24 {\v 1KGATAT@leom.hlp}
+\par \tab \uldb Attaching macros to Special Function Keys\plain\i\b\fs24 {\v 1UJHHWM@leom.hlp}\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Network Printer Tab}
+{\up #}{\footnote\pard\plain{\up #} Network_Printer_Tab}
+\pard\keepn\tx355 \fs36 Network Printer Tab
+\par \pard\tx355 \fs24 
+\par \pard\tx355 When a network printer is available such as the Codonics NP1600, only the printer \uldb Host Address\plain\fs24 {\v 3H.QV4} needs to be given on the \uldb Image File Destination Tab\plain\fs24 {\v Image_File_Destination_Tab}. After the Host address is entered, clicking on the \uldb Enable transfers to Network Printer\plain\fs24 {\v Enable_transfers_to_Network_Printer} automatically logs on to the printer. The images from the \uldb Source Tab\plain\fs24 {\v Image_File_Source_Tab} are transferred to the printer when the Transfer button is pressed.
+\par \pard\tx355 
+\par \pard\tx355 There are a number of formatting options available when sending images to a network printer :
+\par \pard\tx355 
+\par \pard\li355\fi-355\tx355 \{bmc bm0.bmp\}\tab \uldb Printer Model Selection\plain\fs24 {\v Printer_Model_Selection}
+\par \{bmc bm0.bmp\}\tab \uldb Number of Printed Copies\plain\fs24 {\v Number_of_Printed_Copies}
+\par \{bmc bm0.bmp\}\tab \uldb Images Across the Page\plain\fs24 {\v Images_Across_the_Page}
+\par \{bmc bm0.bmp\}\tab \uldb Images Down the Page\plain\fs24 {\v Images_Down_the_Page}
+\par \{bmc bm0.bmp\}\tab \uldb Gaps Between Images\plain\fs24 {\v Gaps_Between_Images}
+\par \{bmc bm0.bmp\}\tab \uldb Page Border\plain\fs24 {\v Page_Border}
+\par \{bmc bm0.bmp\}\tab \uldb Landscape Selection\plain\fs24 {\v Landscape_Selection}
+\par \{bmc bm0.bmp\}\tab \uldb Portrait Selection\plain\fs24 {\v Portrait_Selection}
+\par \{bmc bm0.bmp\}\tab \uldb Scaling Selection\plain\fs24 {\v Scaling_Selection}
+\par 
+\par \pard\tx355 There are two command options available to the user from this tab :
+\par \pard\tx355 
+\par \pard\li355\fi-355\tx355 \{bmc bm0.bmp\}\tab \uldb Apply Print Settings\plain\fs24 {\v Apply_Print_Settings}
+\par \{bmc bm0.bmp\}\tab \uldb Cancel Current Job\plain\fs24 {\v Cancel_Current_Job}
+\par 
+\par \pard\tx355 \{bmc bm6.bmp\}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Number of Printed Copies}
+{\up #}{\footnote\pard\plain{\up #} Number_of_Printed_Copies}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} FTP Status Bar}
+\fs36 Number of Printed Copies
+\par \pard \fs24 
+\par This option is for use with Network Printers and is located on the \uldb Network Printers Tab\plain\fs24 {\v Network_Printer_Tab}, and is activated when the \uldb Enable Network Printer\plain\fs24 {\v Enable_transfers_to_Network_Printer} option is checked.
+\par 
+\par This option set the number of duplicate copies that the printer produces of the image files transferred to it.
+\par 
+\par This option is actioned when the \uldb Apply Print Settings\plain\fs24 {\v Apply_Print_Settings} Button is Pressed.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Options Tab}
+{\up #}{\footnote\pard\plain{\up #} Options_Tab}
+\pard\keepn \fs36 Options Tab
+\par \pard \fs24 
+\par This tab both specifies the location of the \uldb user log file\plain\fs24 {\v User_Log_File}, and the \uldb Image Transfer option\plain\fs24 {\v 5NK5OS}.
+\par 
+\par The log file has three command buttons associated with it :
+\par 
+\par \pard\li355\fi-355\tx355 \{bmc bm0.bmp\}\tab \uldb Browse\plain\fs24 {\v XQHW0R}
+\par \{bmc bm0.bmp\}\tab \uldb Update\plain\fs24 {\v 124L4M7}
+\par \{bmc bm0.bmp\}\tab \uldb Clear Log\plain\fs24 {\v RFXF3}
+\par 
+\par \pard\tx355 \{bmc bm7.bmp\}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Page Border}
+{\up #}{\footnote\pard\plain{\up #} Page_Border}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} FTP User Name}
+\fs36 Page Border
+\par \pard \fs24 
+\par This option is for use with Network Printers and is located on the \uldb Network Printers Tab\plain\fs24 {\v Network_Printer_Tab}, and is activated when the \uldb Enable Network Printer\plain\fs24 {\v Enable_transfers_to_Network_Printer} option is checked.
+\par 
+\par This option determines the line thickness of the margin around the border of the printed page.
+\par 
+\par This option is actioned when the \uldb Apply Print Settings\plain\fs24 {\v Apply_Print_Settings} Button is Pressed.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Portrait Selection}
+{\up #}{\footnote\pard\plain{\up #} Portrait_Selection}
+\pard\keepn \fs36 Portrait Selection
+\par \pard \fs24 
+\par This option is for use with Network Printers and is located on the \uldb Network Printers Tab\plain\fs24 {\v Network_Printer_Tab}, and is activated when the \uldb Enable Network Printer\plain\fs24 {\v Enable_transfers_to_Network_Printer} option is checked.
+\par 
+\par This option sets the orientation of the printed page. In Portrait mode whe page is narrow and tall (the opposite to \uldb Landscape\plain\fs24 {\v Landscape_Selection}).
+\par 
+\par This option is actioned when the \uldb Apply Print Settings\plain\fs24 {\v Apply_Print_Settings} Button is Pressed.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Printer Model Selection}
+{\up #}{\footnote\pard\plain{\up #} Printer_Model_Selection}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Gaps Between Images}
+\fs36 Printer Model Selection
+\par \pard \fs24 
+\par This option is for use with Network Printers and is located on the \uldb Network Printers Tab\plain\fs24 {\v Network_Printer_Tab}, and is activated when the \uldb Enable Network Printer\plain\fs24 {\v Enable_transfers_to_Network_Printer} option is checked.
+\par 
+\par Choose the correct printer type from the drop-down selection combo-box.
+\par 
+\par This option is actioned when the \uldb Apply Print Settings\plain\fs24 {\v Apply_Print_Settings} Button is Pressed.
+\par 
+\par \i\ul Note :\plain\i\fs24  Depending on the printer type selected, some of the formatting options for that printer may be limited, and the options unavailable on that printer will be greyed.\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Refresh button}
+{\up #}{\footnote\pard\plain{\up #} Refresh_button}
+\pard\keepn \fs36 Refresh button
+\par \pard \fs24 
+\par The Refresh button on the \uldb Image File Source Tab\plain\fs24 {\v Image_File_Source_Tab} is used to update the list of files included in the next image transfer option. 
+\par 
+\par Any images excluded with the \uldb Exclude button\plain\fs24 {\v Exclude_Button} will restored as the list is updated.
+\par 
+\par A typical use for this button would be to reset the list of images to be transferred to the remote computer, or to update the list if any files have recently been added or removed from the User Directory. This function is executed automatically when the Image Archive application first starts up.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} SEM Image Files}
+{\up #}{\footnote\pard\plain{\up #} SEM_Image_Files}
+\pard\keepn \fs36 SEM Image Files
+\par \pard \fs24 
+\par The LEO-32 UIF Currently Supports a number of output file formats. These Include :
+\par 
+\par \pard\li355\fi-355\tx355 \{bmc bm0.bmp\}\tab TIFF - Tagged Image File Format Version 5.0
+\par \{bmc bm0.bmp\}\tab JPG - Image Files saved using the JPEG Compression algorithm
+\par \{bmc bm0.bmp\}\tab BMP - Windows Bitmap File Format
+\par \pard\tx355 
+\par \pard\tx355 \i\ul Note :\plain\i\fs24  The SEM Image File List on the ImgMgr \uldb Source Tab\plain\i\fs24 {\v Image_File_Source_Tab} is not a complete list of images in the Image Directory, but displays only those images with their \uldb archive attribute\plain\i\fs24 {\v 1MP7OUG} set.\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Scaling Selection}
+{\up #}{\footnote\pard\plain{\up #} Scaling_Selection}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Image Dir}
+\fs36 Scaling Selection
+\par \pard \fs24 
+\par This option is for use with Network Printers and is located on the \uldb Network Printers Tab\plain\fs24 {\v Network_Printer_Tab}, and is activated when the \uldb Enable Network Printer\plain\fs24 {\v Enable_transfers_to_Network_Printer} option is checked.
+\par 
+\par This option sets the method by which images are scaled down and pixels removed to allow an Image to be fitted into its position on the printed page. The current methods available for scaling Images are any of :
+\par 
+\par \pard\li355\fi-355\tx355 \{bmc bm0.bmp\}\tab \b BOX\plain\fs24  : Box scaling is the fastest of the scaling algorithms. It is implemented using pixel replication. Box should be used for images containing text with block letters in which text must remain sharp. Artifacts : Box tends to produce blocky-looking prints, especially when large scale factors are used.
+\par \{bmc bm0.bmp\}\tab \b BILINEAR\plain\fs24  : Bilinear scaling is the second-fastest scaling routine and is the \b default\plain\fs24  printer setting. It employs a linear interpolation to determine the output image. Bilinear scaling provides ver good scaling for most applications where scale factors are relatively small (4X or less). A great amount of optimization effort was put into the bilinear algorithm. Artifacts : Block letters will have fuzzy edges. Bilinear results in a slight decrease in dynamic range for large scale factors.
+\par \pard\li355\fi-355\tx355 \{bmc bm0.bmp\}\tab \b BICUBIC\plain\fs24  : The Bicubic algorithm produces the smoothest output, but tends to smooth over fine details. The filter function is a cubic B-spline filter. This routine requires the same processing time as Mitchell. Bicubic is recommended for applications where the smoothest output is required. Artifacts : Images may appear somewhat blurry due to the smoothing of the filter. Block letters will have fuzzy edges.
+\par \{bmc bm0.bmp\}\tab \b MITCHELL\plain\fs24  : Mitchell uses a cubic Mitchell function to produce a very smooth output while maintaining dynamic range and sharpness. Mitchell processing takes approximately twice the processing time as Bilinear. Mitchell can be used for any scaling application, especially when scaling factors are 2X or greater. Artifacts : Block letters will have fuzzy edges.
+\par \pard\li355\fi-355\tx355 \{bmc bm0.bmp\}\tab \b LANCZOS\plain\fs24  : Lanczos uses a filter based on the sinc function. This is the most theoretically correct filter and produces the best output for photographic images that do not have sharp transitions in them. However, Lanczos will produce ripple artefacts especially for block text, due to aliasing. Lanczos also requires three times the processing time of Bilinear. Lanczos is not recommended except in very rare applications using band-limited photographic images with no sharp edges. Artifacts : Lanczos produces ripple artifacts around sharp edges, such as found with text. This algorithm is not recommended for most applications.
+\par \pard\li355\fi-355\tx355 
+\par \pard\tx355 This option is actioned when the \uldb Apply Print Settings\plain\fs24 {\v Apply_Print_Settings} Button is Pressed.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} The Close Button}
+{\up #}{\footnote\pard\plain{\up #} _8FIJN}
+\pard\keepn \fs36 The Close Button
+\par \pard \fs24 
+\par Pressing this button will close the ImgArc application. If the user is \uldb logged in\plain\fs24 {\v 5P5S_OV} to the \uldb host computer\plain\fs24 {\v 3H.QV4}, they are automatically\uldb  logged out\plain\fs24 {\v EE4OAC}.
+\par 
+\par All settings changed by the SEM User are saved in the registry and are restored when the SEM user subsequently runs ImgArc.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} The File Copy Dialog}
+{\up #}{\footnote\pard\plain{\up #} 5VFV.V}
+\pard\keepn \fs36 The File Copy Dialog
+\par \pard \fs24 
+\par When a file copy operation is in progress, a dialog similar to the one show below appears. The information displayed within it is as follows :
+\par 
+\par \pard\li355\fi-355\tx355 \{bmc bm0.bmp\}\tab Image Number : The current image being transferred from the current 'batch' as displayed in the \uldb Local Image List\plain\fs24 {\v SEM_Image_Files}
+\par \{bmc bm0.bmp\}\tab Source : The source of the current SEM Image being transferred as specified on the \uldb Source Tab\plain\fs24 {\v Image_File_Source_Tab}
+\par \{bmc bm0.bmp\}\tab Destination : The target location for the image file specified on the ImgMgr \uldb Destination Tab\plain\fs24 {\v Image_File_Destination_Tab}
+\par \{bmc bm0.bmp\}\tab Progress : The percentage of the current file transfer that has completed so far
+\par \{bmc bm0.bmp\}\tab Bytes Remaining : The number of bytes waiting to be transferred to the \uldb remote host computer\plain\fs24 {\v 3H.QV4}
+\par \pard\li355\fi-355\tx355 
+\par \pard\tx355 During transfer, there are two command buttons that can be pressed :
+\par \pard\tx355 
+\par \pard\li355\fi-355\tx355 \{bmc bm0.bmp\}\tab \uldb Cancel All\plain\fs24 {\v 9A3XVB}
+\par \{bmc bm0.bmp\}\tab \uldb Cancel\plain\fs24 {\v 3M0LA4C}
+\par 
+\par \pard\tx355 \{bmc bm8.bmp\}
+\par \pard\tx355 
+\par \pard\tx355 \i\ul Note :\plain\i\fs24  The time taken to transfer images relies entirely on the type of connection being used between the local and remote host computers. This can vary between seconds and minutes for the same image, where connection types vary.\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} The Status Bar}
+{\up #}{\footnote\pard\plain{\up #} The_Status_Bar}
+\pard\keepn \fs36 The Status Bar
+\par \pard \fs24 
+\par This graphic provides information on the current state of the ImgArc program. All pertinent status messages are recorded in the \uldb User Log File\plain\fs24 {\v User_Log_File}. When an FTP operation is in progress, the \uldb FTP Status Bar\plain\fs24 {\v FTP_Status_Bar} reflects what action if any is currently pending.
+\par 
+\par Any FTP or other \uldb error codes\plain\fs24 {\v Errors_Help}/messages are also stored in the \uldb User Log File\plain\fs24 {\v User_Log_File}.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} The Status Button}
+{\up #}{\footnote\pard\plain{\up #} LIYTPP}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Image File Destination Tab;Image File Source Tab}
+\fs36 The Status Button
+\par \pard \fs24 
+\par This command asks ImgArc to return the current system status from the FTP session. The resultant status string (if any) is displayed in the \uldb Status Bar\plain\fs24 {\v The_Status_Bar}.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} The Transfer Button}
+{\up #}{\footnote\pard\plain{\up #} B8__3Z}
+\pard\keepn \fs36 The Transfer Button
+\par \pard \fs24 
+\par This button will be greyed out until the \uldb user\plain\fs24 {\v 3HIUH2} has \uldb logged in\plain\fs24 {\v 5P5S_OV} to the \uldb remote host computer\plain\fs24 {\v 3H.QV4}.
+\par 
+\par The Transfer button will action an image transfer operation using settings displayed on the \uldb Source Tab\plain\fs24 {\v Image_File_Source_Tab} and \uldb Destination Tab\plain\fs24 {\v Image_File_Destination_Tab}. Each event during the transfer operation is stored in the \uldb user log file\plain\fs24 {\v User_Log_File}. 
+\par 
+\par During the Image transfer operation a file \uldb copy progress dialog\plain\fs24 {\v 5VFV.V} will appear showing the status of each Image file being transferred.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Update Log}
+{\up #}{\footnote\pard\plain{\up #} 124L4M7}
+\pard\keepn {\up K}{\footnote\pard\plain{\up K} Image Transfer option}
+\fs36 Update Log
+\par \pard \fs24 
+\par This causes the \uldb User log file\plain\fs24 {\v User_Log_File} display to be refreshed. Usually, this function is automatic and will automatically update the log file display whenever an entry is added to the log file.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User Log File}
+{\up #}{\footnote\pard\plain{\up #} User_Log_File}
+\pard\keepn \fs36 User Log File
+\par \pard \fs24 
+\par Each event in ImgArc such as \uldb logging in\plain\fs24 {\v 5P5S_OV} and \uldb out\plain\fs24 {\v EE4OAC} of the remote\uldb  host computer\plain\fs24 {\v 3H.QV4} and transferring Image Files is recorded in a log file specified on the \uldb Options Tab\plain\fs24 {\v Options_Tab}. The User directory where the log file exists is shown on the \uldb Source Tab\plain\fs24 {\v Image_File_Source_Tab}.
+\par 
+\par The \uldb Options Tab\plain\fs24 {\v Options_Tab} also shows the contents of the log file. All \uldb FTP errors\plain\fs24 {\v Errors_Help} are also logged to this file.
+\par \page
+}

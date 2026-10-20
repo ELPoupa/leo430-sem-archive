@@ -1,0 +1,17 @@
+﻿=== MENU 128 (lang 0809)
+  [&File]
+    32771  &Input LUT	Ctrl+I
+    32772  &Display LUT	Ctrl+D
+    32775  &Open LUT...	Ctrl+O
+    32774  &Save LUT As...	Ctrl+S
+    ----
+    57665  E&xit
+  [&Help]
+  57670  LUT Help ..
+  ----
+  57664  &About LEO-32 LUT Editor...
+=== DIALOG 99 "About LEO LUT Editor" (4 controls)
+  -1  STATIC  "#128"
+  -1  STATIC  "LEO LUT Editor Version 1.0"
+  -1  STATIC  "Copyright © 1997, LEO Electron Micoscopy Ltd"
+  1  BUTTON  "OK"

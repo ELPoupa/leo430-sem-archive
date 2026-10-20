@@ -1,0 +1,150 @@
+﻿$#>KAdd Buttons
+
+{bmc bm0.bmp}	ClickCLICK@Sem.HLP on the User ToolbarUser_Toolbar tab.
+
+{bmc bm0.bmp} Click on the button iconICON@Sem.HLP after which you want to insert the new button icon  in the Tool Bar window. It will be marked blue (Split Screen in this example).  {bmc bm0.bmp} Click on the button iconICON@Sem.HLP which you want to insert in the Available Button Images window. It will be marked blue. ({bmc bm1.bmp} in this example).  {bmc bm0.bmp} Click on Add to add the button in the User Toolbar window.  {bmc bm2.bmp} Assign functions to the new button with    LefKt Mouse Click Button AssignmentsLeft_Mouse_Click_Button_Assignments and     Middle Mouse Click Button AssignmentsMiddle_Mouse_Click_Button_Assignments tabs.		 {bmc bm3.bmp}	
+
+{bmc bm2.bmp}	SaveSave_a_Tool_Bar the new Tool Bar.
+$#>Arrange the Sequence
+
+{bmc bm0.bmp}	ClickCLICK@Sem.HLP on the User ToolbarUser_Toolbar tab.
+
+ {bmc bm0.bmp} Click on the button iconICON@Sem.HLP you want to move in the Tool Bar window. It will be marked blue (Faster/Slower in this example).  {bmc bm0.bmp} Click on Move Up  or type <ALT + U> to move the button one position up.  {bmc bm0.bmp} Click on Move Down  or type <ALT + D> to move the button one position down.  {bmc bm2.bmp} SaveSave_a_Tool_Bar the new Tool Bar.		{bmc bm4.bmp}	
+
+$#KCommon Toolbar
+If a User profileV_JNBJ@admin32.hlp is configured by the AdministratorContents@admin32.hlp with the attribute Use Common Toolbar then thistoolbar is always loaded from ...\LEO\LEO32\USER\COMMON.UTB and the user is prohibited from changing the current toolbar.
+
+The enables the Supervisor to set up a group of users with a common (and possibly restricted function) toolbar.
+
+How to set up a common toolbarWKOUPN@how_to.hlp
+$#>Contents of Toolbar Editor
+
+{bmc bm5.bmp}	Select Edit then {bmc bm0.bmp} point to Toolbar and clickCLICK@Sem.HLP with the left mouse button to open the Toolbar Editor.
+
+This editor window provides facilities generate your specific Tool Bar1Y24MM@Sem.HLP and save it to disk or load a previously saved Tool Bar from disk.
+You may also define your own BitmapsDefine_your_own_Bitmaps for icons.
+The Tool Customise Window has three tabs to select the iconsICON@Sem.HLP and the functions for the icons:
+
+{bmc bm6.bmp}
+
+	User ToolbarUser_Toolbar	Adds or removes icons, saves and loads Tool Bars.
+
+	Left Mouse Click Button AssignmentsLeft_Mouse_Click_Button_Assignments		Assigns actions to the left mouse button.
+
+	Middle Mouse Click Button AssignmentsMiddle_Mouse_Click_Button_Assignments	Assigns actions to the middle mouse button.
+
+There are four buttons common for the tabs:	{bmc bm7.bmp}
+
+	OK		Closes the editor and saves changes if any. (Will be greyed if User is configured to use a Common ToolbarCommon_Toolbar)
+
+	Cancel	Closes the editor and disregards any changes, same as clicking on {bmc bm8.bmp}.
+
+	Apply		Not used in this application, remains greyed.
+
+	Help		Displays the help for the selected tab.
+$#>Left Mouse Click Button Assignments
+   
+{bmc bm0.bmp} ClickCLICK@Sem.HLP on the Left Mouse Click Button Assignments  tab.  An action is assigned when a button of the Tool Bar is clicked with the left mouse button and also the function of the middle mouse button under this condition.  {bmc bm9.bmp} The left window shows the User Toolbar ButtonsUser_Toolbar_Buttons (iconsICON@Sem.HLP) and their definitions which are in use. {bmc bm9.bmp} The middle window shows the assignment tree of the Select Button ActionSelect_Button_Action. It is greyed if the selection is not available. {bmc bm9.bmp} The right window shows the assignment tree of the Middle Mouse Button AdjustmentMiddle_Mouse_Button_Adjustment. It is greyed if the selection is not available. {bmc bm9.bmp} The Tool TipIJYVH3@Sem.HLP window allows to set the  Tool Tip TextTool_Tip_Text for the selected Tool Bar button.  Scroll Bars2HOSDE@Sem.HLP allow to shift the information in the windows.	{bmc bm10.bmp}	
+
+$#>Load a Tool Bar
+   
+{bmc bm0.bmp} ClickCLICK@Sem.HLP on the User ToolbarUser_Toolbar tab.  {bmc bm0.bmp} Click on Load  or type <ALT + L> to load a Tool Bar.  A load dialogue opens requesting selection of a file name. The file has the extension *.UTB (User Tool Bar) and is located in the User Directory.  or  {bmc bm0.bmp} Click on Default  or type <ALT + E> to load the standard Tool Bar which is distributed with the software.		{bmc bm11.bmp}	
+
+or 
+
+{bmc bm0.bmp}	Click on Default Fixed to load the default Fixed Icon Definitions. This button is only displayed if the user has permission to edit fixed icons.
+
+
+For Move Up and Move Down buttons see Arrange the SequenceArrange_the_Sequence
+$#>Middle Mouse Button Adjustment
+   
+The Middle Mouse Button Adjustment defines the secondary action when the left mouse button is clicked on the iconICON@Sem.HLP.  The choice is:  {bmc bm9.bmp} Mouse:This offers a list of parameters which may be assigned to the middle mouse adjustment pane in the User Interface Status Bar.  See Status Bar Parameter ControlT3KQVM@Sem.HLP. It defines what the middle mouse adjustment pane is set to.  {bmc bm9.bmp} None:  No action.		 {bmc bm12.bmp}	
+
+The box below the tree is a search box. Type the parameter to search for and the tree will open to that parameter.
+
+The current selection path is displayed above the tree window (e.g. Mouse).
+
+Left Mouse Click Button Assignment tab and Middle Mouse Click Assignment tab use the same Middle Mouse Button Adjustment tree.
+$#>Middle Mouse Click Button Assignments
+   
+{bmc bm0.bmp} ClickCLICK@Sem.HLP on the Middle Mouse Click Button Assignments  tab.  An action is assigned when a button of the Tool Bar is clicked with the middle mouse button and also the function of the middle mouse button under this condition.  {bmc bm9.bmp} The left window shows the User Toolbar ButtonsUser_Toolbar_Buttons (iconsICON@Sem.HLP) and their definitions which are in use.  {bmc bm9.bmp} The middle window shows the assignment tree of the Select Button ActionSelect_Button_Action. It is greyed if the selection is not available.  {bmc bm9.bmp} The right window shows the assignment tree of the Middle Mouse Button AdjustmentMiddle_Mouse_Button_Adjustment. It is greyed if the selection is not available.  Scroll Bars2HOSDE@Sem.HLP allow to shift the information in the windows.	{bmc bm13.bmp}	
+
+$#>KRemove Buttons
+
+{bmc bm0.bmp}	ClickCLICK@Sem.HLP on the User ToolbarUser_Toolbar tab.
+
+{bmc bm0.bmp} Click on the button iconICON@Sem.HLP you want to remove in the Tool Bar window. It will be marked blue (Dual Magnification in this example).  {bmc bm0.bmp} Click on Remove to remove the button and add it on the available button images window (left).		 {bmc bm14.bmp}	
+
+$#>Save a Tool Bar
+   
+ {bmc bm0.bmp} ClickCLICK@Sem.HLP on the User ToolbarUser_Toolbar tab.  {bmc bm0.bmp} Click on Save As  or type <ALT + S> to save the Tool Bar.  A save dialogue opens requesting input of a file name. The new file will be saved under the name with the extension *.UTB (User Tool Bar) in the User Directory.		{bmc bm11.bmp}	
+
+$#>KSelect Button Action
+
+{bmc bm0.bmp} ClickCLICK@Sem.HLP on the Left Mouse Click Button Assignments  tab or Middle Mouse Click Assignment to make the Select Button Action accessible.
+The Select Button Action tree defines the primary action when the left mouse button is clicked on the iconICON@Sem.HLP.  The choice is: {bmc bm9.bmp} Commands: This expands to a list of possible commands for selection. {bmc bm9.bmp} Dialogs: This expands to give a list of possible dialogs and the tabs on the SEM Control Panel. {bmc bm9.bmp} Macros: This expands to show the macros available in the current macro library. {bmc bm9.bmp} Mouse:This offers a list of parameters which may be assigned to the left mouse adjustment pane in the User Interface Status Bar.  See Status Bar Parameter ControlT3KQVM@Sem.HLP. If one of these parameters is selected it enables the Middle Mouse Button AdjustmentMiddle_Mouse_Button_Adjustment tree which defines what the middle mouse adjustment pane is set to as part of the same action. {bmc bm9.bmp} None:  No action.		 {bmc bm15.bmp}	
+{bmc bm9.bmp}	Parameters: This allows selection of any read/write parameter. The action is the same as a click on the parameter in the status window. If the parameter is entry only a dialog box is displayed permitting the value to be typed in. If the parameter is mouse adjustable then it is selected to the left mouse adjustment pane in the status bar. See Status Bar Parameter Control.
+{bmc bm9.bmp}	Special Functions: These are used where a function cannot be achieved by a macro (e.g. Save System Conditions).
+{bmc bm9.bmp}	Toggle: This offers a choice of binary state digital parameters and cause the icon to toggle (e.g. Focus Wobble On /Off).
+
+The box below the tree is a search box. Type the parameter to search for and the tree will open to that parameter.
+
+The current selection path is displayed above the tree window (e.g. Mouse).
+
+Left Mouse Click Button Assignment tab and Middle Mouse Click Assignment tab use the same Select Button Action tree except for the toggle function.
+$#>Tool Tip Text
+
+{bmc bm0.bmp} ClickCLICK@Sem.HLP on Unlocked {bmc bm16.bmp} to make the button features adjustable.
+
+{bmc bm2.bmp} Select a Tip Text from the Drop-down ListXYVXW3@Sem.HLP. when Resource is not pressed.  or  {bmc bm2.bmp} Press Resource (the button label changes to User Text) and enter your specific Tip Text into the text box.		 {bmc bm17.bmp}	
+
+{bmc bm18.bmp}	A button with user tool tip annotation text can not be locked!
+$#>K
+{bmc bm0.bmp} ClickCLICK@Sem.HLP on the User Toolbar tab
+
+The left window shows the available button images (iconsICON@Sem.HLP) and their definitions which are not in use.  The right window shows the icons of the present Tool Bar with their Tool TipsIJYVH3@Sem.HLP definitions.  Scroll Bars2HOSDE@Sem.HLP allow to shift the information in the windows.		{bmc bm19.bmp}	
+
+You may 
+
+	add buttonsAdd_Buttons and remove buttonsRemove_Buttons, 
+
+	load a Tool BarLoad_a_Tool_Bar and save a Tool BarSave_a_Tool_Bar 
+
+	and arrange the sequenceArrange_the_Sequence of the icons of the Tool Bar 
+
+If you have supervisor privilegeXTAC5O@admin32.hlp you may save a toolbar as a common toolbarCommon_Toolbar
+
+from the User Toolbar tab.
+
+To change or assign functions to the icons see Left Mouse Click Button AssignmentsLeft_Mouse_Click_Button_Assignments 
+
+and Middle Mouse Click Button AssignmentsMiddle_Mouse_Click_Button_Assignments tabs.
+$#>User Toolbar Buttons
+
+{bmc bm0.bmp} ClickCLICK@Sem.HLP on the Left Mouse Click Button Assignments  tab to make the Tool Bar buttons accessible.
+
+{bmc bm0.bmp} Select the button iconICON@Sem.HLP you want to edit.   Scroll Bars2HOSDE@Sem.HLP allow to shift the information in the window.  {bmc bm18.bmp} A button must not be locked in order to edit its characteristics.  {bmc bm20.bmp} A locked icon is signified by a red mesh overlay. Locked icons apply across all Tool Bars.  If the icon is locked, click on Unlocked.  {bmc bm16.bmp}  An icon function may be predefined and locked or unlocked if the user has the Unlock Tool Bar Icon privilege. In this case the User Toolbar Button field includes a pair of Locked / Unlocked buttons   {bmc bm18.bmp} An icon may only be locked if it is fully defined and has resource tool tips. 		 {bmc bm21.bmp}	
+
+$#>Define your own Bitmaps
+Each of the bitmap images provided as standard has a number in the range 1 through 52
+Example: Icon 1 is the restore Icon {bmc bm22.bmp} 
+To determine the icon numbers in your current toolbar select context help mode <Shift + F1> and then click on an icon.
+
+When a toolbar is loaded (on User Interface Start or load/edit in the toolbar editor) the software searches for an icon file and, if it finds it, loads it in place of the standard icon bitmap. (Note, once a replacement bitmap is loaded it will only revert to the standard on restarting the UIF after the file(s) have been deleted).
+
+If the common ToolbarCommon_Toolbar property is not set for the user the search locations are:
+1.	In the user directory
+2.	In the Distribution directory (..\leo32\distrib)
+
+If the common toolbar property is set the search location is:
+{bmc bm2.bmp}	..\leo32\user
+The bitmaps will be used even if a common toolbar is not present
+
+Toolbar Icon Files have a standard name format which is TOOLn.BMP
+
+To Create an Icon Bitmap file:
+{bmc bm2.bmp}	Use MS Paint (Start-programs-accessories-paint)
+{bmc bm2.bmp}	Set the Image attributes to 32 pixels wide and 31 pixels high
+{bmc bm2.bmp}	Tip - use View-zoom-large size
+{bmc bm2.bmp}	Design your bitmap
+{bmc bm2.bmp}	SaveAs TOOLn.BMP and must be 16 colour bitmap format

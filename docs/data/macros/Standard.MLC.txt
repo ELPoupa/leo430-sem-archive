@@ -1,0 +1,145 @@
+﻿# Standard.MLC: format 1, 274 strings after the first
+
+MACRO Standard (Version 2)
+  Comment  Leo 420/430 standard macro
+  Comment  Stage Initialisation
+  IfThen  DP_STAGE_MOTOR%1%0
+    IfThen  DP_STAGE_INIT%0%0
+      Message  %#DP_FLAG0Stage is not initialised. Initialise?
+      IfThen  DP_FLAG0%0%1
+        Command  CMD_STAGE_INIT
+      EndIf
+    EndIf
+  EndIf
+  Comment  Setup Conditions Saved
+  Confirm  DP_ANODE%0
+  Confirm  DP_FILAMENT_TYPE%0
+  Command  CMD_MODE_NORMAL
+  Command  CMD_SCANRATE2
+  Digital  DP_ZONE%0
+  Digital  DP_DETECTOR_CHANNEL%SE1
+  Digital  DP_INVERT%0
+  Analogue  AP_GAIN%1.000000e+002
+  Analogue  AP_OFFSET%0.000000e+000
+  IfThen  DP_MIXER%1%0
+    Digital  DP_IMPLIED_DETECTOR%0
+    Digital  DP_IMPLIED_INVERT%0
+    Analogue  AP_IMPLIED_GAIN%1.000000e+002
+    Analogue  AP_IMPLIED_OFFSET%0.000000e+000
+  EndIf
+  Digital  DP_ZONE%1
+  Digital  DP_DETECTOR_CHANNEL%SE1
+  Digital  DP_INVERT%0
+  Analogue  AP_GAIN%1.000000e+002
+  Analogue  AP_OFFSET%0.000000e+000
+  IfThen  DP_MIXER%1%0
+    Digital  DP_IMPLIED_DETECTOR%0
+    Digital  DP_IMPLIED_INVERT%0
+    Analogue  AP_IMPLIED_GAIN%1.000000e+002
+    Analogue  AP_IMPLIED_OFFSET%0.000000e+000
+  EndIf
+  Digital  DP_ZONE%2
+  Digital  DP_DETECTOR_CHANNEL%SE1
+  Digital  DP_INVERT%0
+  Analogue  AP_GAIN%1.000000e+002
+  Analogue  AP_OFFSET%0.000000e+000
+  IfThen  DP_MIXER%1%0
+    Digital  DP_IMPLIED_DETECTOR%0
+    Digital  DP_IMPLIED_INVERT%0
+    Analogue  AP_IMPLIED_GAIN%1.000000e+002
+    Analogue  AP_IMPLIED_OFFSET%0.000000e+000
+  EndIf
+  Digital  DP_ZONE%3
+  Digital  DP_DETECTOR_CHANNEL%SE1
+  Digital  DP_INVERT%0
+  Analogue  AP_GAIN%1.000000e+002
+  Analogue  AP_OFFSET%0.000000e+000
+  IfThen  DP_MIXER%1%0
+    Digital  DP_IMPLIED_DETECTOR%0
+    Digital  DP_IMPLIED_INVERT%0
+    Analogue  AP_IMPLIED_GAIN%1.000000e+002
+    Analogue  AP_IMPLIED_OFFSET%0.000000e+000
+  EndIf
+  Digital  DP_ZONE%0
+  Comment  Current Gun Conditions saved
+  Analogue  AP_STIG_X%0.000000e+000
+  Analogue  AP_STIG_Y%0.000000e+000
+  Comment  Application Conditions Saved
+  Command  CMD_MODE_NORMAL
+  Command  CMD_SCANRATE2
+  Command  CMD_XRAY_RESET
+  Digital  DP_LUT_MODE%0
+  Digital  DP_PLANEA_FROZEN%0
+  Analogue  AP_MAG%1.000000e+002
+  Digital  DP_OPTIBEAM%0
+  Analogue  AP_C1%1.310000e+000
+  Analogue  AP_C2%2.640000e-001
+  Analogue  AP_C3%7.200000e-001
+  Digital  DP_OPTIBEAM%1
+  Digital  DP_OPTIMODE%0
+  Digital  DP_MAGTRACK%1
+  Digital  DP_OPTIRESMODE%0
+  Analogue  AP_IPROBE%1.500000e-010
+  Analogue  AP_WD%1.500000e-002
+  Analogue  AP_MAX_WD%4.000000e-002
+  Analogue  AP_MIN_WD%1.000000e-003
+  IfThen  DP_VACSTATUS%1%1
+    Message  %#DP_FLAG0Vacuum is not ready. Pump?
+    IfThen  DP_FLAG0%1%0
+      Command  CMD_PUMP
+      WaitForTimeout  DP_VACSTATUS%1%3000
+    EndIf
+  EndIf
+  Analogue  AP_MANUALKV%1.500000e+004
+  Analogue  AP_USERMAXCURRENT%2.900000e+000
+  Analogue  AP_BEAM_CURRENT%4.000000e-004
+  Command  CMD_MANUAL
+  WaitForTimeout  DP_RUNUPSTATE%1%2000
+  Analogue  AP_STIG_X%0.000000e+000
+  Analogue  AP_STIG_Y%0.000000e+000
+  Digital  DP_DETECTOR_CHANNEL%SE1
+  Analogue  AP_COLLECTOR_BIAS%4.000000e+002
+  Digital  DP_AUTO_VIDEO%0
+  Analogue  AP_BRIGHTNESS%3.200000e+001
+  Analogue  AP_CONTRAST%5.000000e+001
+  Analogue  AP_AUTO_BRIGHT%5.000000e+001
+  Analogue  AP_AUTO_CONTRAST%7.500000e+001
+  Digital  DP_DETECTOR_CHANNEL%SE1
+  Digital  DP_AUTO_VIDEO_ENABLE%0
+  Digital  DP_ZONE%0
+  Analogue  AP_ALPHA%0.000000e+000
+  Analogue  AP_BETA%1.000000e+000
+  Analogue  AP_K1%1.000000e+000
+  Analogue  AP_K2%0.000000e+000
+  Digital  DP_ZONE%1
+  Analogue  AP_ALPHA%0.000000e+000
+  Analogue  AP_BETA%1.000000e+000
+  Analogue  AP_K1%1.000000e+000
+  Analogue  AP_K2%0.000000e+000
+  Digital  DP_ZONE%2
+  Analogue  AP_ALPHA%0.000000e+000
+  Analogue  AP_BETA%1.000000e+000
+  Analogue  AP_K1%1.000000e+000
+  Analogue  AP_K2%0.000000e+000
+  Digital  DP_ZONE%3
+  Analogue  AP_ALPHA%0.000000e+000
+  Analogue  AP_BETA%1.000000e+000
+  Analogue  AP_K1%1.000000e+000
+  Analogue  AP_K2%0.000000e+000
+  Digital  DP_ZONE%0
+  Digital  DP_INPUT_LUT_MODE%0
+  Analogue  AP_FRAME_AVERAGE_COUNT%1.000000e+000
+  Analogue  AP_LINE_AVERAGE_COUNT%2.000000e+000
+  Command  CMD_FRAME_AVERAGE
+  Command  CMD_SCANRATE2
+  Digital  DP_C3_ROT_CORRECTION%1
+  Digital  DP_SCAN_ROT%0
+  Command  CMD_PRINTER
+  Analogue  AP_DEVELOP_TIME%0.000000e+000
+  Analogue  AP_MAG%1.000000e+002
+  Command  CMD_MODE_NORMAL
+  IfThen  DP_OPTIBEAM%1%0
+    Mouse  AP_MAG AP_WD
+  Else
+    Mouse  AP_MAG AP_C3
+  EndIf

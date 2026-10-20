@@ -1,0 +1,33 @@
+﻿=== DIALOG 1 "About LEO Tracker Ball Controller" (4 controls)
+  -1  STATIC  "#1"
+  201  STATIC  "Version inserted by software"
+  -1  STATIC  "Copyright (C) 1998, LEO Electron Microscopy Ltd"
+  1  BUTTON  "OK"
+=== DIALOG 203 "LTB1" (4 controls)
+  -1  STATIC  "X Axis Parameter :"
+  204  COMBOBOX  ""
+  -1  STATIC  "Y Axis Parameter :"
+  205  COMBOBOX  ""
+=== DIALOG 204 "LTB2" (4 controls)
+  -1  STATIC  "X Axis Parameter :"
+  215  COMBOBOX  ""
+  -1  STATIC  "Y Axis Parameter :"
+  216  COMBOBOX  ""
+=== DIALOG 205 "LTB4" (12 controls)
+  219  BUTTON  "Enabled for  X,Y Parameter Pairs"
+  -1  BUTTON  "Invert Axes"
+  -1  STATIC  "Left Button :"
+  221  BUTTON  "X Axis"
+  222  BUTTON  "Y Axis"
+  -1  STATIC  "Middle Button :"
+  223  BUTTON  "X Axis"
+  224  BUTTON  "Y Axis"
+  -1  STATIC  "Right Button :"
+  225  BUTTON  "X Axis"
+  226  BUTTON  "Y Axis"
+  -1  BUTTON  "Auto Y Axis Assignmnet"
+=== DIALOG 206 "LTB3" (4 controls)
+  -1  STATIC  "X Axis Parameter :"
+  218  COMBOBOX  ""
+  -1  STATIC  "Y Axis Parameter :"
+  217  COMBOBOX  ""

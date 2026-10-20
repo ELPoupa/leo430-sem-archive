@@ -1,0 +1,806 @@
+' hrru.exe: Visual Basic 3 p-code, decompiled by tools/vb3-pcode.ps1 (do not edit; regenerate)
+' Names in this file: control and event names come from the exe's form resources and the VB3 / VBX class
+' lists; DLL names from the Declare records; names marked in tools/vb3/hrru.names.csv were given by hand.
+' L_xxxx = local, G_xxxx = module variable, K_xxxx = constant, P_xxxx = parameter (operand offsets in hex).
+' Form 'Welcome' controls: 0=Welcome, 1=Password, 2=Label4, 10=QuitCmd, 13=OKCmd, 14=Label1, 15=Label2, 16=Label3, 19=WHelp
+' Form 'Hrru' controls: 0=Hrru, 1=Command1, 2=Command2, 4=Command4, 5=CMDialog1, 11=GSPReadWriteExit
+' Form 'Display' controls: 0=Display, 16=Command1, 19=Label1, 20=Label2, 21=Label3, 22=Label4, 23=Label5, 24=Label6, 25=Label7, 26=Label8, 27=Label9, 28=Label10, 29=Label11, 30=Label12, 32=Label14, 33=Label15, 34=Label16, 39=Label13, 40=Label17
+' Declare record 0x00C8: GetModuleHandle (library Kernel.)
+' Declare record 0x0100: GetModuleUsage (library Kernel.)
+
+' ---- segment 4 0x0000-0x0050, procedure record 0x0178, Welcome event Load of Welcome (Form, slot 6 of 23)
+Sub Welcome_Load()
+  0000  Welcome.Left = (Screen.Width - Welcome.Width) / 2
+  0024  Welcome.Top = (Screen.Height - Welcome.Height) / 2
+  0048  End Sub
+
+' ---- segment 4 0x0050-0x0134, procedure record 0x01B0, Welcome event Click of OKCmd (CommandButton, slot 0 of 11)
+Sub OKCmd_Click()
+  0050  If Not (Welcome!Password.Text <> "RUSTAT") Then GoTo L_E4
+  0072  Beep
+  0076  MsgBox "Invalid Password", 16, "HRRU Configuration Manager"
+  00BC  Welcome!Password.SetFocus
+  00DA  GoTo L_12E   ' leave
+L_00E4:
+  00E4  Screen.MousePointer = 11
+  00F4  Hrru.Show
+  0116  Screen.MousePointer = 0
+  0124  Unload Welcome
+L_012E:
+  012E  End Sub
+
+' ---- segment 4 0x0134-0x0162, procedure record 0x01E8, Welcome event Click of QuitCmd (CommandButton, slot 0 of 11)
+Sub QuitCmd_Click()
+  0134  Screen.MousePointer = 11
+  0144  Unload Welcome
+  014C  Screen.MousePointer = 0
+  015A  End Sub
+
+' ---- segment 4 0x0162-0x0200, procedure record 0x0220, Welcome event Click of WHelp (Menu, slot 0 of 1)
+Sub WHelp_Click()
+  0162  MsgBox "Enter the password in the box provided" & Chr$(10) & "Press OK to continue, or Quit to exit", 64, "HRRU Configuration Manager Help"
+  01F8  End Sub
+
+' ---- segment 5 0x0000-0x01AE, procedure record 0x0298, Hrru event Click of Command1 (CommandButton, slot 0 of 11)
+Sub Command1_Click()
+  0000  On Error Resume Next
+  0006  ChDir LeoDir
+  0010  Err = 0
+  0016  CMDialog1.DefaultExt = "CNF"
+  002E  CMDialog1.Filename = "HRRU.CNF"
+  004C  CMDialog1.DialogTitle = "Please select a Config file"
+  007C  CMDialog1.Filter = "All files (*.*)|*.*|Config File (*.CNF)|*.cnf|"
+  00C0  CMDialog1.FilterIndex = 2
+  00CE  CMDialog1.Flags = OFN_FILEMUSTEXIST
+  00DE  CMDialog1.CancelError = True
+  00EC  CMDialog1.Action = 1
+  00FA  If Not (Err = 0) Then GoTo L_10C
+  0106  GoTo L_130
+L_010C:
+  010C  If Not (Err = cdlCancel) Then GoTo L_130
+  0118  CMDialog1.Action = 0
+  0126  GoTo L_1A8   ' leave
+L_0130:
+  0130  Open CMDialog1.Filetitle For Binary Access Read 'mode 0x120 As #1
+  0144  L_28 = 0
+L_014E:
+  014E  If Not (L_28 < 17) Then GoTo L_19C
+  015C  Get #1, 1 + (L_28 * 2), L_2A   ' 2 bytes
+  0178  Config(L_28) = L_2A
+  0188  L_28 = L_28 + 1
+  0196  GoTo L_14E
+L_019C:
+  019C  Close #1
+L_01A8:
+  01A8  End Sub
+
+' ---- segment 5 0x01AE-0x01F4, procedure record 0x02D0, Hrru event Click of Command2 (CommandButton, slot 0 of 11)
+Sub Command2_Click()
+  01AE  Hrru.Hide
+  01CC  Display.Show 1
+  01EC  End Sub
+
+' ---- segment 5 0x01F4-0x03A0, procedure record 0x0308, Hrru event Click of Command4 (CommandButton, slot 0 of 11)
+Sub Command4_Click()
+  01F4  On Error Resume Next
+  01FA  ChDir LeoDir
+  0204  Err = 0
+  020A  CMDialog1.DefaultExt = "CNF"
+  0222  CMDialog1.Filename = "HRRU.CNF"
+  0240  CMDialog1.DialogTitle = "Please select a Config file"
+  0270  CMDialog1.Filter = "All files (*.*)|*.*|Config File (*.CNF)|*.cnf|"
+  02B4  CMDialog1.FilterIndex = 2
+  02C2  CMDialog1.Flags = L_3A
+  02D0  CMDialog1.CancelError = True
+  02DE  CMDialog1.Action = 1
+  02EC  If Not (Err = 0) Then GoTo L_2FE
+  02F8  GoTo L_322
+L_02FE:
+  02FE  If Not (Err = cdlCancel) Then GoTo L_322
+  030A  CMDialog1.Action = 0
+  0318  GoTo L_39A   ' leave
+L_0322:
+  0322  Open CMDialog1.Filetitle For Binary Access Write 'mode 0x220 As #1
+  0336  L_3E = 0
+L_0340:
+  0340  If Not (L_3E < 17) Then GoTo L_38E
+  034E  L_40 = Config(L_3E)
+  035E  Put #1, 1 + (L_3E * 2), L_40   ' 2 bytes
+  037A  L_3E = L_3E + 1
+  0388  GoTo L_340
+L_038E:
+  038E  Close #1
+L_039A:
+  039A  End Sub
+
+' ---- segment 5 0x03A0-0x0486, procedure record 0x0340, Hrru event Load of Hrru (Form, slot 6 of 23)
+Sub Hrru_Load()
+  03A0  L_44 = GetModuleHandle("HRRU.EXE")
+  03D4  If Not (GetModuleUsage(L_44) > 1) Then GoTo L_436
+  03EE  MsgBox "This program is already loaded!", 16, AppTitle
+  0424  Unload Hrru
+  042C  GoTo L_480   ' leave
+L_0436:
+  0436  Hrru.Left = (Screen.Width - Hrru.Width) / 2
+  045A  Hrru.Top = (Screen.Height - Hrru.Height) / 2
+L_0480:
+  0480  End Sub
+
+' ---- segment 5 0x0486-0x0496, procedure record 0x0378, Hrru event Click of GSPReadWriteExit (CommandButton, slot 0 of 11)
+Sub GSPReadWriteExit_Click()
+  0486  Unload Hrru
+  048E  End Sub
+
+' ---- segment 6 0x0000-0x0030, procedure record 0x03F0, Display event Click of Command1 (CommandButton, slot 0 of 11)
+Sub Command1_Click()
+  0000  Unload Display
+  0008  Hrru.Show 1
+  0028  End Sub
+
+' ---- segment 6 0x0030-0x0220, procedure record 0x0428, Display event Load of Display (Form, slot 6 of 23)
+Sub Display_Load()
+  0030  Display!Label1.Caption = G_22 & Hex$(Config(0))
+  004C  Display!Label2.Caption = G_30 & Hex$(Config(1))
+  0068  Display!Label3.Caption = G_38 & Hex$(Config(2))
+  0084  Display!Label4.Caption = G_40 & Hex$(Config(3))
+  00A0  Display!Label5.Caption = G_48 & Hex$(Config(4))
+  00BC  Display!Label6.Caption = G_50 & Hex$(Config(5))
+  00D8  Display!Label7.Caption = G_58 & Hex$(Config(6))
+  00F4  Display!Label8.Caption = G_60 & Hex$(Config(7))
+  0110  Display!Label9.Caption = G_68 & Hex$(Config(8))
+  012C  Display!Label10.Caption = G_70 & Hex$(Config(9))
+  0148  Display!Label11.Caption = G_78 & Hex$(Config(10))
+  0164  Display!Label12.Caption = G_80 & Hex$(Config(11))
+  0182  Display!Label13.Caption = G_88 & Hex$(Config(12))
+  01A0  Display!Label14.Caption = G_90 & Hex$(Config(13))
+  01BE  Display!Label15.Caption = G_98 & Hex$(Config(14))
+  01DC  Display!Label16.Caption = G_A0 & Hex$(Config(15))
+  01FA  Display!Label17.Caption = G_A8 & Hex$(Config(16))
+  0218  End Sub
+
+' ---- segment 6 0x0220-0x03A4, procedure record 0x0460, Display event Click of Label1 (Label, slot 1 of 12)
+Sub Label1_Click()
+  0220  L_B0 = InputBox$("Location 0x72. 0->0xfff", G_22, Hex$(Config(0)))
+  0258  L_B2 = Len(L_B0)
+  0266  If Not (L_B2 = 0) Then GoTo L_280
+  0276  GoTo L_39E   ' leave
+L_0280:
+  0280  L_B6 = 1
+L_028C:
+  028C  If Not (L_B6 <= L_B2) Then GoTo L_342
+  029A  L_BA = Mid$(L_B0, L_B6, 1)
+  02B0  Select Case L_BA   ' tests at L_2C0
+  02BA  GoTo L_33C
+L_02C0:
+  02C0  Case "0" To "9": If L_BA matches GoTo L_314 (case body), else L_2DC (next test or Case Else)
+L_02DC:
+  02DC  Case "A" To "F": If L_BA matches GoTo L_314 (case body), else L_2F8 (next test or Case Else)
+L_02F8:
+  02F8  Case "a" To "f": If L_BA matches GoTo L_314 (case body), else L_32C (next test or Case Else)
+L_0314:
+  0316  L_B6 = L_B6 + 1
+  0326  GoTo L_33C
+L_032C:
+  032C  End Select
+  032E  GoTo L_39E   ' leave
+  0334  GoTo L_33C
+  0334  End Select
+L_033C:
+  033C  GoTo L_28C
+L_0342:
+  0342  L_BC = Val("&h" & L_B0)
+  035E  If Not (L_BC <= &HFFF) Then GoTo L_39C
+  036E  Config(0) = L_BC
+  037C  Display!Label1.Caption = G_22 & Hex$(Config(0))
+L_039C:
+L_039E:
+  039E  End Sub
+
+' ---- segment 6 0x03A4-0x0528, procedure record 0x0498, Display event Click of Label10 (Label, slot 1 of 12)
+Sub Label10_Click()
+  03A4  L_BE = InputBox$("Location 0x3A. 0->0xff", G_70, Hex$(Config(9)))
+  03DC  L_C0 = Len(L_BE)
+  03EA  If Not (L_C0 = 0) Then GoTo L_404
+  03FA  GoTo L_522   ' leave
+L_0404:
+  0404  L_C4 = 1
+L_0410:
+  0410  If Not (L_C4 <= L_C0) Then GoTo L_4C6
+  041E  L_C8 = Mid$(L_BE, L_C4, 1)
+  0434  Select Case L_C8   ' tests at L_444
+  043E  GoTo L_4C0
+L_0444:
+  0444  Case "0" To "9": If L_C8 matches GoTo L_498 (case body), else L_460 (next test or Case Else)
+L_0460:
+  0460  Case "A" To "F": If L_C8 matches GoTo L_498 (case body), else L_47C (next test or Case Else)
+L_047C:
+  047C  Case "a" To "f": If L_C8 matches GoTo L_498 (case body), else L_4B0 (next test or Case Else)
+L_0498:
+  049A  L_C4 = L_C4 + 1
+  04AA  GoTo L_4C0
+L_04B0:
+  04B0  End Select
+  04B2  GoTo L_522   ' leave
+  04B8  GoTo L_4C0
+  04B8  End Select
+L_04C0:
+  04C0  GoTo L_410
+L_04C6:
+  04C6  L_CA = Val("&h" & L_BE)
+  04E2  If Not (L_CA <= &HFFF) Then GoTo L_520
+  04F2  Config(9) = L_CA
+  0500  Display!Label10.Caption = G_70 & Hex$(Config(9))
+L_0520:
+L_0522:
+  0522  End Sub
+
+' ---- segment 6 0x0528-0x06AC, procedure record 0x04D0, Display event Click of Label11 (Label, slot 1 of 12)
+Sub Label11_Click()
+  0528  L_CC = InputBox$("Location 0x3B. 0->0xff", G_78, Hex$(Config(10)))
+  0560  L_CE = Len(L_CC)
+  056E  If Not (L_CE = 0) Then GoTo L_588
+  057E  GoTo L_6A6   ' leave
+L_0588:
+  0588  L_D2 = 1
+L_0594:
+  0594  If Not (L_D2 <= L_CE) Then GoTo L_64A
+  05A2  L_D6 = Mid$(L_CC, L_D2, 1)
+  05B8  Select Case L_D6   ' tests at L_5C8
+  05C2  GoTo L_644
+L_05C8:
+  05C8  Case "0" To "9": If L_D6 matches GoTo L_61C (case body), else L_5E4 (next test or Case Else)
+L_05E4:
+  05E4  Case "A" To "F": If L_D6 matches GoTo L_61C (case body), else L_600 (next test or Case Else)
+L_0600:
+  0600  Case "a" To "f": If L_D6 matches GoTo L_61C (case body), else L_634 (next test or Case Else)
+L_061C:
+  061E  L_D2 = L_D2 + 1
+  062E  GoTo L_644
+L_0634:
+  0634  End Select
+  0636  GoTo L_6A6   ' leave
+  063C  GoTo L_644
+  063C  End Select
+L_0644:
+  0644  GoTo L_594
+L_064A:
+  064A  L_D8 = Val("&h" & L_CC)
+  0666  If Not (L_D8 <= &HFFF) Then GoTo L_6A4
+  0676  Config(10) = L_D8
+  0684  Display!Label11.Caption = G_78 & Hex$(Config(10))
+L_06A4:
+L_06A6:
+  06A6  End Sub
+
+' ---- segment 6 0x06AC-0x0836, procedure record 0x0508, Display event Click of Label12 (Label, slot 1 of 12)
+Sub Label12_Click()
+  06AC  L_DA = InputBox$("Location 0x70. 0->0xfff", G_80, Hex$(Config(11)))
+  06E6  L_DC = Len(L_DA)
+  06F4  If Not (L_DC = 0) Then GoTo L_70E
+  0704  GoTo L_830   ' leave
+L_070E:
+  070E  L_E0 = 1
+L_071A:
+  071A  If Not (L_E0 <= L_DC) Then GoTo L_7D0
+  0728  L_E4 = Mid$(L_DA, L_E0, 1)
+  073E  Select Case L_E4   ' tests at L_74E
+  0748  GoTo L_7CA
+L_074E:
+  074E  Case "0" To "9": If L_E4 matches GoTo L_7A2 (case body), else L_76A (next test or Case Else)
+L_076A:
+  076A  Case "A" To "F": If L_E4 matches GoTo L_7A2 (case body), else L_786 (next test or Case Else)
+L_0786:
+  0786  Case "a" To "f": If L_E4 matches GoTo L_7A2 (case body), else L_7BA (next test or Case Else)
+L_07A2:
+  07A4  L_E0 = L_E0 + 1
+  07B4  GoTo L_7CA
+L_07BA:
+  07BA  End Select
+  07BC  GoTo L_830   ' leave
+  07C2  GoTo L_7CA
+  07C2  End Select
+L_07CA:
+  07CA  GoTo L_71A
+L_07D0:
+  07D0  L_E6 = Val("&h" & L_DA)
+  07EC  If Not (L_E6 <= &HFFF) Then GoTo L_82E
+  07FC  Config(11) = L_E6
+  080C  Display!Label12.Caption = G_80 & Hex$(Config(11))
+L_082E:
+L_0830:
+  0830  End Sub
+
+' ---- segment 6 0x0836-0x09D8, procedure record 0x0540, Display event Click of Label13 (Label, slot 1 of 12)
+Sub Label13_Click()
+  0836  L_E8 = InputBox$("Contrast Low Limit. 0->0xfff", G_88, Hex$(Config(12)))
+  0876  L_EA = Len(L_E8)
+  0884  If Not (L_EA = 0) Then GoTo L_89E
+  0894  GoTo L_9D2   ' leave
+L_089E:
+  089E  L_EE = 1
+L_08AA:
+  08AA  If Not (L_EE <= L_EA) Then GoTo L_960
+  08B8  L_F2 = Mid$(L_E8, L_EE, 1)
+  08CE  Select Case L_F2   ' tests at L_8DE
+  08D8  GoTo L_95A
+L_08DE:
+  08DE  Case "0" To "9": If L_F2 matches GoTo L_932 (case body), else L_8FA (next test or Case Else)
+L_08FA:
+  08FA  Case "A" To "F": If L_F2 matches GoTo L_932 (case body), else L_916 (next test or Case Else)
+L_0916:
+  0916  Case "a" To "f": If L_F2 matches GoTo L_932 (case body), else L_94A (next test or Case Else)
+L_0932:
+  0934  L_EE = L_EE + 1
+  0944  GoTo L_95A
+L_094A:
+  094A  End Select
+  094C  GoTo L_9D2   ' leave
+  0952  GoTo L_95A
+  0952  End Select
+L_095A:
+  095A  GoTo L_8AA
+L_0960:
+  0960  L_F4 = Val("&h" & L_E8)
+  097C  If Not ((L_F4 >= 0) And (L_F4 < Config(13))) Then GoTo L_9D0
+  099E  Config(12) = L_F4
+  09AE  Display!Label13.Caption = G_88 & Hex$(Config(12))
+L_09D0:
+L_09D2:
+  09D2  End Sub
+
+' ---- segment 6 0x09D8-0x0B7A, procedure record 0x0578, Display event Click of Label14 (Label, slot 1 of 12)
+Sub Label14_Click()
+  09D8  L_F6 = InputBox$("Contrast High Limit. 0->0xfff", G_90, Hex$(Config(13)))
+  0A18  L_F8 = Len(L_F6)
+  0A26  If Not (L_F8 = 0) Then GoTo L_A40
+  0A36  GoTo L_B74   ' leave
+L_0A40:
+  0A40  L_FC = 1
+L_0A4C:
+  0A4C  If Not (L_FC <= L_F8) Then GoTo L_B02
+  0A5A  L_100 = Mid$(L_F6, L_FC, 1)
+  0A70  Select Case L_100   ' tests at L_A80
+  0A7A  GoTo L_AFC
+L_0A80:
+  0A80  Case "0" To "9": If L_100 matches GoTo L_AD4 (case body), else L_A9C (next test or Case Else)
+L_0A9C:
+  0A9C  Case "A" To "F": If L_100 matches GoTo L_AD4 (case body), else L_AB8 (next test or Case Else)
+L_0AB8:
+  0AB8  Case "a" To "f": If L_100 matches GoTo L_AD4 (case body), else L_AEC (next test or Case Else)
+L_0AD4:
+  0AD6  L_FC = L_FC + 1
+  0AE6  GoTo L_AFC
+L_0AEC:
+  0AEC  End Select
+  0AEE  GoTo L_B74   ' leave
+  0AF4  GoTo L_AFC
+  0AF4  End Select
+L_0AFC:
+  0AFC  GoTo L_A4C
+L_0B02:
+  0B02  L_102 = Val("&h" & L_F6)
+  0B1E  If Not ((L_102 <= &HFFF) And (L_102 > Config(12))) Then GoTo L_B72
+  0B40  Config(13) = L_102
+  0B50  Display!Label14.Caption = G_90 & Hex$(Config(13))
+L_0B72:
+L_0B74:
+  0B74  End Sub
+
+' ---- segment 6 0x0B7A-0x0D1E, procedure record 0x05B0, Display event Click of Label15 (Label, slot 1 of 12)
+Sub Label15_Click()
+  0B7A  L_104 = InputBox$("Brightness Low Limit. 0->0xfff", G_98, Hex$(Config(14)))
+  0BBC  L_106 = Len(L_104)
+  0BCA  If Not (L_106 = 0) Then GoTo L_BE4
+  0BDA  GoTo L_D18   ' leave
+L_0BE4:
+  0BE4  L_10A = 1
+L_0BF0:
+  0BF0  If Not (L_10A <= L_106) Then GoTo L_CA6
+  0BFE  L_10E = Mid$(L_104, L_10A, 1)
+  0C14  Select Case L_10E   ' tests at L_C24
+  0C1E  GoTo L_CA0
+L_0C24:
+  0C24  Case "0" To "9": If L_10E matches GoTo L_C78 (case body), else L_C40 (next test or Case Else)
+L_0C40:
+  0C40  Case "A" To "F": If L_10E matches GoTo L_C78 (case body), else L_C5C (next test or Case Else)
+L_0C5C:
+  0C5C  Case "a" To "f": If L_10E matches GoTo L_C78 (case body), else L_C90 (next test or Case Else)
+L_0C78:
+  0C7A  L_10A = L_10A + 1
+  0C8A  GoTo L_CA0
+L_0C90:
+  0C90  End Select
+  0C92  GoTo L_D18   ' leave
+  0C98  GoTo L_CA0
+  0C98  End Select
+L_0CA0:
+  0CA0  GoTo L_BF0
+L_0CA6:
+  0CA6  L_110 = Val("&h" & L_104)
+  0CC2  If Not ((L_110 >= 0) And (L_110 <= Config(15))) Then GoTo L_D16
+  0CE4  Config(14) = L_110
+  0CF4  Display!Label15.Caption = G_98 & Hex$(Config(14))
+L_0D16:
+L_0D18:
+  0D18  End Sub
+
+' ---- segment 6 0x0D1E-0x0EC2, procedure record 0x05E8, Display event Click of Label16 (Label, slot 1 of 12)
+Sub Label16_Click()
+  0D1E  L_112 = InputBox$("Brightness High Limit. 0->0xfff", G_A0, Hex$(Config(15)))
+  0D60  L_114 = Len(L_112)
+  0D6E  If Not (L_114 = 0) Then GoTo L_D88
+  0D7E  GoTo L_EBC   ' leave
+L_0D88:
+  0D88  L_118 = 1
+L_0D94:
+  0D94  If Not (L_118 <= L_114) Then GoTo L_E4A
+  0DA2  L_11C = Mid$(L_112, L_118, 1)
+  0DB8  Select Case L_11C   ' tests at L_DC8
+  0DC2  GoTo L_E44
+L_0DC8:
+  0DC8  Case "0" To "9": If L_11C matches GoTo L_E1C (case body), else L_DE4 (next test or Case Else)
+L_0DE4:
+  0DE4  Case "A" To "F": If L_11C matches GoTo L_E1C (case body), else L_E00 (next test or Case Else)
+L_0E00:
+  0E00  Case "a" To "f": If L_11C matches GoTo L_E1C (case body), else L_E34 (next test or Case Else)
+L_0E1C:
+  0E1E  L_118 = L_118 + 1
+  0E2E  GoTo L_E44
+L_0E34:
+  0E34  End Select
+  0E36  GoTo L_EBC   ' leave
+  0E3C  GoTo L_E44
+  0E3C  End Select
+L_0E44:
+  0E44  GoTo L_D94
+L_0E4A:
+  0E4A  L_11E = Val("&h" & L_112)
+  0E66  If Not ((L_11E <= &HFFF) And (L_11E > Config(14))) Then GoTo L_EBA
+  0E88  Config(15) = L_11E
+  0E98  Display!Label16.Caption = G_A0 & Hex$(Config(15))
+L_0EBA:
+L_0EBC:
+  0EBC  End Sub
+
+' ---- segment 6 0x0EC2-0x104C, procedure record 0x0620, Display event Click of Label17 (Label, slot 1 of 12)
+Sub Label17_Click()
+  0EC2  L_120 = InputBox$("Location 0x71. 0->0xfff", G_A8, Hex$(Config(16)))
+  0EFC  L_122 = Len(L_120)
+  0F0A  If Not (L_122 = 0) Then GoTo L_F24
+  0F1A  GoTo L_1046   ' leave
+L_0F24:
+  0F24  L_126 = 1
+L_0F30:
+  0F30  If Not (L_126 <= L_122) Then GoTo L_FE6
+  0F3E  L_12A = Mid$(L_120, L_126, 1)
+  0F54  Select Case L_12A   ' tests at L_F64
+  0F5E  GoTo L_FE0
+L_0F64:
+  0F64  Case "0" To "9": If L_12A matches GoTo L_FB8 (case body), else L_F80 (next test or Case Else)
+L_0F80:
+  0F80  Case "A" To "F": If L_12A matches GoTo L_FB8 (case body), else L_F9C (next test or Case Else)
+L_0F9C:
+  0F9C  Case "a" To "f": If L_12A matches GoTo L_FB8 (case body), else L_FD0 (next test or Case Else)
+L_0FB8:
+  0FBA  L_126 = L_126 + 1
+  0FCA  GoTo L_FE0
+L_0FD0:
+  0FD0  End Select
+  0FD2  GoTo L_1046   ' leave
+  0FD8  GoTo L_FE0
+  0FD8  End Select
+L_0FE0:
+  0FE0  GoTo L_F30
+L_0FE6:
+  0FE6  L_12C = Val("&h" & L_120)
+  1002  If Not (L_12C <= &HFFF) Then GoTo L_1044
+  1012  Config(16) = L_12C
+  1022  Display!Label17.Caption = G_A8 & Hex$(Config(16))
+L_1044:
+L_1046:
+  1046  End Sub
+
+' ---- segment 6 0x104C-0x11D0, procedure record 0x0658, Display event Click of Label2 (Label, slot 1 of 12)
+Sub Label2_Click()
+  104C  L_12E = InputBox$("Location 0x51. 0->0xfff", G_30, Hex$(Config(1)))
+  1084  L_130 = Len(L_12E)
+  1092  If Not (L_130 = 0) Then GoTo L_10AC
+  10A2  GoTo L_11CA   ' leave
+L_10AC:
+  10AC  L_134 = 1
+L_10B8:
+  10B8  If Not (L_134 <= L_130) Then GoTo L_116E
+  10C6  L_138 = Mid$(L_12E, L_134, 1)
+  10DC  Select Case L_138   ' tests at L_10EC
+  10E6  GoTo L_1168
+L_10EC:
+  10EC  Case "0" To "9": If L_138 matches GoTo L_1140 (case body), else L_1108 (next test or Case Else)
+L_1108:
+  1108  Case "A" To "F": If L_138 matches GoTo L_1140 (case body), else L_1124 (next test or Case Else)
+L_1124:
+  1124  Case "a" To "f": If L_138 matches GoTo L_1140 (case body), else L_1158 (next test or Case Else)
+L_1140:
+  1142  L_134 = L_134 + 1
+  1152  GoTo L_1168
+L_1158:
+  1158  End Select
+  115A  GoTo L_11CA   ' leave
+  1160  GoTo L_1168
+  1160  End Select
+L_1168:
+  1168  GoTo L_10B8
+L_116E:
+  116E  L_13A = Val("&h" & L_12E)
+  118A  If Not (L_13A <= &HFFF) Then GoTo L_11C8
+  119A  Config(1) = L_13A
+  11A8  Display!Label2.Caption = G_30 & Hex$(Config(1))
+L_11C8:
+L_11CA:
+  11CA  End Sub
+
+' ---- segment 6 0x11D0-0x1354, procedure record 0x0690, Display event Click of Label3 (Label, slot 1 of 12)
+Sub Label3_Click()
+  11D0  L_13C = InputBox$("Location 0x52. 0->0xfff", G_38, Hex$(Config(2)))
+  1208  L_13E = Len(L_13C)
+  1216  If Not (L_13E = 0) Then GoTo L_1230
+  1226  GoTo L_134E   ' leave
+L_1230:
+  1230  L_142 = 1
+L_123C:
+  123C  If Not (L_142 <= L_13E) Then GoTo L_12F2
+  124A  L_146 = Mid$(L_13C, L_142, 1)
+  1260  Select Case L_146   ' tests at L_1270
+  126A  GoTo L_12EC
+L_1270:
+  1270  Case "0" To "9": If L_146 matches GoTo L_12C4 (case body), else L_128C (next test or Case Else)
+L_128C:
+  128C  Case "A" To "F": If L_146 matches GoTo L_12C4 (case body), else L_12A8 (next test or Case Else)
+L_12A8:
+  12A8  Case "a" To "f": If L_146 matches GoTo L_12C4 (case body), else L_12DC (next test or Case Else)
+L_12C4:
+  12C6  L_142 = L_142 + 1
+  12D6  GoTo L_12EC
+L_12DC:
+  12DC  End Select
+  12DE  GoTo L_134E   ' leave
+  12E4  GoTo L_12EC
+  12E4  End Select
+L_12EC:
+  12EC  GoTo L_123C
+L_12F2:
+  12F2  L_148 = Val("&h" & L_13C)
+  130E  If Not (L_148 <= &HFFF) Then GoTo L_134C
+  131E  Config(2) = L_148
+  132C  Display!Label3.Caption = G_38 & Hex$(Config(2))
+L_134C:
+L_134E:
+  134E  End Sub
+
+' ---- segment 6 0x1354-0x14D8, procedure record 0x06C8, Display event Click of Label4 (Label, slot 1 of 12)
+Sub Label4_Click()
+  1354  L_14A = InputBox$("Location 0x34. 0->0xff", G_40, Hex$(Config(3)))
+  138C  L_14C = Len(L_14A)
+  139A  If Not (L_14C = 0) Then GoTo L_13B4
+  13AA  GoTo L_14D2   ' leave
+L_13B4:
+  13B4  L_150 = 1
+L_13C0:
+  13C0  If Not (L_150 <= L_14C) Then GoTo L_1476
+  13CE  L_154 = Mid$(L_14A, L_150, 1)
+  13E4  Select Case L_154   ' tests at L_13F4
+  13EE  GoTo L_1470
+L_13F4:
+  13F4  Case "0" To "9": If L_154 matches GoTo L_1448 (case body), else L_1410 (next test or Case Else)
+L_1410:
+  1410  Case "A" To "F": If L_154 matches GoTo L_1448 (case body), else L_142C (next test or Case Else)
+L_142C:
+  142C  Case "a" To "f": If L_154 matches GoTo L_1448 (case body), else L_1460 (next test or Case Else)
+L_1448:
+  144A  L_150 = L_150 + 1
+  145A  GoTo L_1470
+L_1460:
+  1460  End Select
+  1462  GoTo L_14D2   ' leave
+  1468  GoTo L_1470
+  1468  End Select
+L_1470:
+  1470  GoTo L_13C0
+L_1476:
+  1476  L_156 = Val("&h" & L_14A)
+  1492  If Not (L_156 <= &HFFF) Then GoTo L_14D0
+  14A2  Config(3) = L_156
+  14B0  Display!Label4.Caption = G_40 & Hex$(Config(3))
+L_14D0:
+L_14D2:
+  14D2  End Sub
+
+' ---- segment 6 0x14D8-0x165C, procedure record 0x0700, Display event Click of Label5 (Label, slot 1 of 12)
+Sub Label5_Click()
+  14D8  L_158 = InputBox$("Location 0x35. 0->0xff", G_48, Hex$(Config(4)))
+  1510  L_15A = Len(L_158)
+  151E  If Not (L_15A = 0) Then GoTo L_1538
+  152E  GoTo L_1656   ' leave
+L_1538:
+  1538  L_15E = 1
+L_1544:
+  1544  If Not (L_15E <= L_15A) Then GoTo L_15FA
+  1552  L_162 = Mid$(L_158, L_15E, 1)
+  1568  Select Case L_162   ' tests at L_1578
+  1572  GoTo L_15F4
+L_1578:
+  1578  Case "0" To "9": If L_162 matches GoTo L_15CC (case body), else L_1594 (next test or Case Else)
+L_1594:
+  1594  Case "A" To "F": If L_162 matches GoTo L_15CC (case body), else L_15B0 (next test or Case Else)
+L_15B0:
+  15B0  Case "a" To "f": If L_162 matches GoTo L_15CC (case body), else L_15E4 (next test or Case Else)
+L_15CC:
+  15CE  L_15E = L_15E + 1
+  15DE  GoTo L_15F4
+L_15E4:
+  15E4  End Select
+  15E6  GoTo L_1656   ' leave
+  15EC  GoTo L_15F4
+  15EC  End Select
+L_15F4:
+  15F4  GoTo L_1544
+L_15FA:
+  15FA  L_164 = Val("&h" & L_158)
+  1616  If Not (L_164 <= &HFFF) Then GoTo L_1654
+  1626  Config(4) = L_164
+  1634  Display!Label5.Caption = G_48 & Hex$(Config(4))
+L_1654:
+L_1656:
+  1656  End Sub
+
+' ---- segment 6 0x165C-0x17E0, procedure record 0x0738, Display event Click of Label6 (Label, slot 1 of 12)
+Sub Label6_Click()
+  165C  L_166 = InputBox$("Location 0x36. 0->0xff", G_50, Hex$(Config(5)))
+  1694  L_168 = Len(L_166)
+  16A2  If Not (L_168 = 0) Then GoTo L_16BC
+  16B2  GoTo L_17DA   ' leave
+L_16BC:
+  16BC  L_16C = 1
+L_16C8:
+  16C8  If Not (L_16C <= L_168) Then GoTo L_177E
+  16D6  L_170 = Mid$(L_166, L_16C, 1)
+  16EC  Select Case L_170   ' tests at L_16FC
+  16F6  GoTo L_1778
+L_16FC:
+  16FC  Case "0" To "9": If L_170 matches GoTo L_1750 (case body), else L_1718 (next test or Case Else)
+L_1718:
+  1718  Case "A" To "F": If L_170 matches GoTo L_1750 (case body), else L_1734 (next test or Case Else)
+L_1734:
+  1734  Case "a" To "f": If L_170 matches GoTo L_1750 (case body), else L_1768 (next test or Case Else)
+L_1750:
+  1752  L_16C = L_16C + 1
+  1762  GoTo L_1778
+L_1768:
+  1768  End Select
+  176A  GoTo L_17DA   ' leave
+  1770  GoTo L_1778
+  1770  End Select
+L_1778:
+  1778  GoTo L_16C8
+L_177E:
+  177E  L_172 = Val("&h" & L_166)
+  179A  If Not (L_172 <= &HFFF) Then GoTo L_17D8
+  17AA  Config(5) = L_172
+  17B8  Display!Label6.Caption = G_50 & Hex$(Config(5))
+L_17D8:
+L_17DA:
+  17DA  End Sub
+
+' ---- segment 6 0x17E0-0x1964, procedure record 0x0770, Display event Click of Label7 (Label, slot 1 of 12)
+Sub Label7_Click()
+  17E0  L_174 = InputBox$("Location 0x37. 0->0xff", G_58, Hex$(Config(6)))
+  1818  L_176 = Len(L_174)
+  1826  If Not (L_176 = 0) Then GoTo L_1840
+  1836  GoTo L_195E   ' leave
+L_1840:
+  1840  L_17A = 1
+L_184C:
+  184C  If Not (L_17A <= L_176) Then GoTo L_1902
+  185A  L_17E = Mid$(L_174, L_17A, 1)
+  1870  Select Case L_17E   ' tests at L_1880
+  187A  GoTo L_18FC
+L_1880:
+  1880  Case "0" To "9": If L_17E matches GoTo L_18D4 (case body), else L_189C (next test or Case Else)
+L_189C:
+  189C  Case "A" To "F": If L_17E matches GoTo L_18D4 (case body), else L_18B8 (next test or Case Else)
+L_18B8:
+  18B8  Case "a" To "f": If L_17E matches GoTo L_18D4 (case body), else L_18EC (next test or Case Else)
+L_18D4:
+  18D6  L_17A = L_17A + 1
+  18E6  GoTo L_18FC
+L_18EC:
+  18EC  End Select
+  18EE  GoTo L_195E   ' leave
+  18F4  GoTo L_18FC
+  18F4  End Select
+L_18FC:
+  18FC  GoTo L_184C
+L_1902:
+  1902  L_180 = Val("&h" & L_174)
+  191E  If Not (L_180 <= &HFFF) Then GoTo L_195C
+  192E  Config(6) = L_180
+  193C  Display!Label7.Caption = G_58 & Hex$(Config(6))
+L_195C:
+L_195E:
+  195E  End Sub
+
+' ---- segment 6 0x1964-0x1AE8, procedure record 0x07A8, Display event Click of Label8 (Label, slot 1 of 12)
+Sub Label8_Click()
+  1964  L_182 = InputBox$("Location 0x38. 0->0xff", G_60, Hex$(Config(7)))
+  199C  L_184 = Len(L_182)
+  19AA  If Not (L_184 = 0) Then GoTo L_19C4
+  19BA  GoTo L_1AE2   ' leave
+L_19C4:
+  19C4  L_188 = 1
+L_19D0:
+  19D0  If Not (L_188 <= L_184) Then GoTo L_1A86
+  19DE  L_18C = Mid$(L_182, L_188, 1)
+  19F4  Select Case L_18C   ' tests at L_1A04
+  19FE  GoTo L_1A80
+L_1A04:
+  1A04  Case "0" To "9": If L_18C matches GoTo L_1A58 (case body), else L_1A20 (next test or Case Else)
+L_1A20:
+  1A20  Case "A" To "F": If L_18C matches GoTo L_1A58 (case body), else L_1A3C (next test or Case Else)
+L_1A3C:
+  1A3C  Case "a" To "f": If L_18C matches GoTo L_1A58 (case body), else L_1A70 (next test or Case Else)
+L_1A58:
+  1A5A  L_188 = L_188 + 1
+  1A6A  GoTo L_1A80
+L_1A70:
+  1A70  End Select
+  1A72  GoTo L_1AE2   ' leave
+  1A78  GoTo L_1A80
+  1A78  End Select
+L_1A80:
+  1A80  GoTo L_19D0
+L_1A86:
+  1A86  L_18E = Val("&h" & L_182)
+  1AA2  If Not (L_18E <= &HFFF) Then GoTo L_1AE0
+  1AB2  Config(7) = L_18E
+  1AC0  Display!Label8.Caption = G_60 & Hex$(Config(7))
+L_1AE0:
+L_1AE2:
+  1AE2  End Sub
+
+' ---- segment 6 0x1AE8-0x1C6C, procedure record 0x07E0, Display event Click of Label9 (Label, slot 1 of 12)
+Sub Label9_Click()
+  1AE8  L_190 = InputBox$("Location 0x39. 0->0xff", G_68, Hex$(Config(8)))
+  1B20  L_192 = Len(L_190)
+  1B2E  If Not (L_192 = 0) Then GoTo L_1B48
+  1B3E  GoTo L_1C66   ' leave
+L_1B48:
+  1B48  L_196 = 1
+L_1B54:
+  1B54  If Not (L_196 <= L_192) Then GoTo L_1C0A
+  1B62  L_19A = Mid$(L_190, L_196, 1)
+  1B78  Select Case L_19A   ' tests at L_1B88
+  1B82  GoTo L_1C04
+L_1B88:
+  1B88  Case "0" To "9": If L_19A matches GoTo L_1BDC (case body), else L_1BA4 (next test or Case Else)
+L_1BA4:
+  1BA4  Case "A" To "F": If L_19A matches GoTo L_1BDC (case body), else L_1BC0 (next test or Case Else)
+L_1BC0:
+  1BC0  Case "a" To "f": If L_19A matches GoTo L_1BDC (case body), else L_1BF4 (next test or Case Else)
+L_1BDC:
+  1BDE  L_196 = L_196 + 1
+  1BEE  GoTo L_1C04
+L_1BF4:
+  1BF4  End Select
+  1BF6  GoTo L_1C66   ' leave
+  1BFC  GoTo L_1C04
+  1BFC  End Select
+L_1C04:
+  1C04  GoTo L_1B54
+L_1C0A:
+  1C0A  L_19C = Val("&h" & L_190)
+  1C26  If Not (L_19C <= &HFFF) Then GoTo L_1C64
+  1C36  Config(8) = L_19C
+  1C44  Display!Label9.Caption = G_68 & Hex$(Config(8))
+L_1C64:
+L_1C66:
+  1C66  End Sub
+

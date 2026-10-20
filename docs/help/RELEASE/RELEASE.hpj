@@ -1,0 +1,14 @@
+[OPTIONS]
+TITLE=Leo-32 Release Notes
+CONTENTS=Contents
+COPYRIGHT=Copyright ©1998 Leo Electron Microscopy Ltd
+LCID=0x409 0x0 0x0
+CNT=\L500Help\build\releasene\release.cnt
+COMPRESS=0
+
+[WINDOWS]
+main=,(532,41,440,911),,,
+
+[FILES]
+RELEASE.rtf
+

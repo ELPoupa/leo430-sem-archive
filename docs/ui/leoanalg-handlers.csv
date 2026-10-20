@@ -1,0 +1,4 @@
+﻿"Message","Kind","Id","Menu","Handler","Function","ServerCalls","Imports","Text"
+"PM_PARAMETER_NOTIFY","registered","","","0x10004650","FUN_10004650","","","AP_PIXEL_SIZE | Warning: Parameter range too high | MMF_LEO_SC_%lx_%lx_%lx"
+"PM_USER_PREFERENCES_CHANGED","registered","","","0x100048B0","FUN_100048b0","","",""
+"PM_SEM_CLOSE","registered","","","0x100048D0","FUN_100048d0","","",""

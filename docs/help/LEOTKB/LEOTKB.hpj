@@ -1,0 +1,19 @@
+[OPTIONS]
+TITLE=Leo-32 Trackerball Help
+CONTENTS=Contents
+COPYRIGHT=Copyright ©1998 Leo Electron Microscopy Ltd
+LCID=0x409 0x0 0x0
+COMPRESS=0
+
+[WINDOWS]
+main=,(287,72,707,614),,,
+
+[FILES]
+LEOTKB.rtf
+
+[MAP]
+Left_Button_Assignment 131275
+Right_Button_Assignment 131277
+General_Properties 131278
+Middle_Button_Assignment 131276
+

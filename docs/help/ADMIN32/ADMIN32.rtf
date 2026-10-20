@@ -1,0 +1,874 @@
+{\rtf1\ansi\deff4
+{\fonttbl{\f0\fnil System;}{\f1\fnil MS Sans Serif;}{\f2\fnil Courier;}{\f3\fnil Symbol;}{\f4\fswiss Arial;}}
+{\stylesheet{\fs36 \snext0 Normal;}
+}\pard\plain
+{\up $}{\footnote\pard\plain{\up $} Access Hierarchy}
+{\up #}{\footnote\pard\plain{\up #} Access_Hierarchy}
+\pard {\up K}{\footnote\pard\plain{\up K} Access Hierarchy}
+\fs36 Access Hierarchy
+\par \fs24 The access hie{\up K}{\footnote\pard\plain{\up K} Licence validation}
+rarchy (top to bottom) is
+\par 
+\par Development
+\par Factory
+\par Service
+\par \ul Administrator\plain\fs24 {\v Administrator_restrictions}
+\par \ul User\plain\fs24 {\v User}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Accounting review}
+{\up #}{\footnote\pard\plain{\up #} Accounting_review}
+\pard {\up K}{\footnote\pard\plain{\up K} Access Level Privilege}
+\fs36 Accounting review
+\par \fs24 This dialog is access from the \ul Accounting\plain\fs24 {\v User_Accounting} menu
+\par On initial entry this dialog lists all session records sorted in date order. Duration is in Hours:Minutes
+\par 
+\par Session records m{\up K}{\footnote\pard\plain{\up K} Owner data dialog}
+ay be displayed in Date or Username order
+\par 
+\par To restrict records by date enter dates (e.g. 18-mar-1988) in either/both of the \b From \plain\fs24 and \b To\plain\fs24  boxes and click the \{bmc bm0.bmp\}
+\par 
+\par To restrict sessions by Username select one of
+\par \b All Users\plain\fs24 .
+\par \b Username \plain\fs24 select Username required 
+\par \pard\tx355 \b Owner \plain\fs24 select owner required
+\par 
+\par Account summary information may be displayed by selecting \b Accounts
+\par \plain\fs24 
+\par Information displayed may be printed on the default printer by selecting the \b Print\plain\fs24  menu item.
+\par 
+\par The following may be copied to the clipboard
+\par Data\tab \tab The data displayed in numerical form
+\par Heading\tab Column Headings
+\par Owner\tab \tab The Owner information
+\par 
+\par This information is suitable for pasting into an Excel spreadsheet.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Activating/Deactivating user accounting}
+{\up #}{\footnote\pard\plain{\up #} Activating_Deactivating_user_accounting}
+\pard \fs36 Activating/Deactivating user accounting
+\par \fs24 This function is accessed from the \uldb Accounting\plain\fs24 {\v User_Accounting} menu.
+\par The menu item \b Active \plain\fs24 is checked if the accounting function is in operation.
+\par Selecting this item will toggle the accounting on/off.
+\par When the accounting state is changed a \ul session record\plain\fs24 {\v Session_data} will be made to record the event.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Administrator Main Form}
+{\up #}{\footnote\pard\plain{\up #} Administrator_Main_Form}
+\pard {\up K}{\footnote\pard\plain{\up K} Accounting review}
+\fs36 Administrator Main Form
+\par \fs24 
+\par The main Form comprises a list of the currently available \ul User Profiles\plain\fs24 {\v User_Profile}
+\par 
+\par 
+\par The Menu functions available depend on the position of the UserName in the \ul Access Hierarchy\plain\fs24 {\v Access_Hierarchy}.
+\par 
+\par \b Administrator and above\plain\fs24 
+\par \ul User profile functions\plain\fs24 {\v User_profile_Functions}
+\par \ul Licence functions\plain\fs24 {\v Licence_administration}
+\par \ul Configuration Functions\plain\fs24 {\v Configuration_Functions}
+\par \ul User Accounting\plain\fs24 {\v User_Accounting}
+\par \ul Database Management\plain\fs24 {\v Database_Management}
+\par 
+\par \b Service and above\plain\fs24 
+\par Serial Number information
+\par Service Incident reports
+\par \pard 
+\par \b Factory and above\plain\fs24 
+\par Serial Number definition
+\par Reset Service reports
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Administrator restrictions}
+{\up #}{\footnote\pard\plain{\up #} Administrator_restrictions}
+\pard \fs36 Administrator restrictions
+\par \fs24 The administrator may not:
+\par 
+\par Edit User profiles at a higher level in the hierarchy
+\par Grant Calibration priviledge
+\par Perform functions assigned to higher levels
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Calibration Privilege}
+{\up #}{\footnote\pard\plain{\up #} Calibration_Privilege}
+\pard {\up K}{\footnote\pard\plain{\up K} Activating/Deactivating user accounting}
+\fs36 Calibration Privilege
+\par \fs24 
+\par This privilege permits access to the SEM Calibration functions and parameters.
+\par 
+\par The privilege may only be granted by a User at the Service level of the \ul hierarchy\plain\fs24 {\v Access_Hierarchy} or greater.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Change Password}
+{\up #}{\footnote\pard\plain{\up #} Change_Password}
+\pard \fs36 Change Password Form
+\par \fs24 
+\par This form is used to change the password in a \ul User Profile\plain\fs24 {\v User_Profile} and is accessed from the \ul Edit User profile\plain\fs24 {\v Edit_User_Profile_Form} form.
+\par 
+\par Enter the new password in both the \b New Password\plain\fs24  and \b verify\plain\fs24  boxes and click OK.
+\par 
+\par If changing the System password ensure that you record it in a safe place.
+\par 
+\par \fs32 If you forget your System password a chargeable Service visit will be required.
+\par \fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Compact Accounting Database}
+{\up #}{\footnote\pard\plain{\up #} Compact_Accounting_Database}
+\pard {\up K}{\footnote\pard\plain{\up K} Administrator Main Form}
+\fs36 Compact Accounting Database
+\par \fs24 This function is part of \uldb User Accounting\plain\fs24 {\v User_Accounting}
+\par 
+\par As you change data in a database, the database file can become fragmented and use more disk space than is necessary.
+\par Periodically, you can use the Compact Database function to defragment the database file. 
+\par The compacted database is usually smaller and often runs faster. 
+\par 
+\par Before the Database is compacted it is copied to a .BAK file, which will overwrite any existing backup file.
+\par 
+\par Should the Compact fail for any reason you may delete the new .MDB file and rename the .BAK file to .MDB
+\par \pard 
+\par See also \ul Repair Accounting Database\plain\fs24 {\v Repair_Accounting_Database}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Compact User Database}
+{\up #}{\footnote\pard\plain{\up #} Compact_User_Database}
+\pard \fs36 Compact User Database
+\par \fs24 
+\par This function is part of the \uldb Administrator\plain\fs24 {\v Administrator_Main_Form} Database Menu
+\par As you change data in a database, the database file can become fragmented and use more disk space than is necessary.
+\par Periodically, you can use the Compact Database function to defragment the database file. 
+\par The compacted database is usually smaller and often runs faster. 
+\par 
+\par Before the Database is compacted it is copied to a .BAK file, which will overwrite any existing backup file.
+\par \pard 
+\par Should the Compact fail for any reason you may delete the new .MDB file and rename the .BAK file to .MDB
+\par 
+\par See also \ul Repair User Database\plain\fs24 {\v Repair_User_Database}
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Configuration Functions}
+{\up #}{\footnote\pard\plain{\up #} Configuration_Functions}
+\pard {\up K}{\footnote\pard\plain{\up K} Administrator rights}
+\fs36 Configuration Functions
+\par \fs24 The Configuration tabbed dialog which is accessed from the \ul Administrator Main Form\plain\fs24 {\v Administrator_Main_Form} by selecting the \b Configuration\plain\fs24  menu item is used to set up SEM configuration parameters and \ul detector Information\plain\fs24 {\v Detector_Configuration}.
+\par 
+\par These parameters should not be changed unless advised by LEO Staff.
+\par 
+\par  
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Contents}
+{\up #}{\footnote\pard\plain{\up #} Contents}
+\pard \fs36 Administrator Contents
+\par \fs24 
+\par \uldb Overview\plain\fs24 {\v Overview}
+\par 
+\par \uldb Log On Form\plain\fs24 {\v Log_On_Form}
+\par \uldb Administrator Main Form\plain\fs24 {\v Administrator_Main_Form}
+\par 
+\par \uldb User Profile Functions\plain\fs24 {\v User_profile_Functions}
+\par \uldb User Profiles available on system installation\plain\fs24 {\v 7OR..2C}
+\par 
+\par \uldb Licence Administration\plain\fs24 {\v Licence_administration}
+\par \uldb Configuration Functions\plain\fs24 {\v Configuration_Functions}
+\par \uldb User Accounting\plain\fs24 {\v User_Accounting}
+\par 
+\par \uldb System Management\plain\fs24 {\v System_Management@sem.hlp}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Create New User Profile}
+{\up #}{\footnote\pard\plain{\up #} Create_New_User_Profile}
+\pard {\up K}{\footnote\pard\plain{\up K} Calibration Privilege}
+\fs36 Create New User Profile
+\par \fs24 
+\par In the Administrator main Window select the menu item \b Users\plain\fs24  - \b New
+\par \plain\fs24  This will display the \uldb User Profile Form\plain\fs24 {\v User_Profile_Form}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Creating the accounting database}
+{\up #}{\footnote\pard\plain{\up #} Creating_the_accounting_database}
+\pard \fs36 Creating the accounting database
+\par \fs24 This function on the \ul Accounting\plain\fs24 {\v User_Accounting} menu creates an empty \ul accounting database\plain\fs24 {\v User_Accounting_database} if one does not exist.
+\par A warning is given if the database already exists.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Current Image Directory}
+{\up #}{\footnote\pard\plain{\up #} Current_Image_Directory}
+\pard {\up K}{\footnote\pard\plain{\up K} Change Password}
+\fs36 Current Image Directory
+\par \fs24 When a User Logs On his current Image Directory is selected according to the \ul User Profile\plain\fs24 {\v User_Profile}.
+\par 
+\par The Image directory is used to hold image files for loading/saving
+\par 
+\par 
+\par This is set initially in the Administrator by defining the \ul Initial Image Directory\plain\fs24 {\v Initial_Image_Directory} 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Current User Directory}
+{\up #}{\footnote\pard\plain{\up #} Current_User_Directory}
+\pard \fs36 Current User Directory
+\par \fs24 When a User Logs On his current User Directory is selected according to the \ul User Profile\plain\fs24 {\v User_Profile}.
+\par 
+\par The User directory is used to hold files specific to the user, e.g. his macro library, macro files, preferences, list of stage positions etc.
+\par 
+\par It is therefore recommended that each user has a personal user directory.
+\par 
+\par This is set initially in the Administrator by defining the \ul Initial User Directory\plain\fs24 {\v Initial_User_Directory} 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Database Management}
+{\up #}{\footnote\pard\plain{\up #} Database_Management}
+\pard \fs36 Database Management
+\par \fs24 
+\par There are two Database management commands for the LEO_USER database provided on the main Menu 
+\par 
+\par \ul Compact User Database\plain\fs24 {\v Compact_User_Database}
+\par \ul Repair User Database\plain\fs24 {\v Repair_User_Database}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Database location}
+{\up #}{\footnote\pard\plain{\up #} Database_location}
+\pard {\up K}{\footnote\pard\plain{\up K} Compact Accounting Database}
+\fs36 Database location
+\par \fs24 The database files (LEO_USER.*) are located in ...\'5cleo32\'5csystem
+\par (Typically c:\'5cprogram files\'5cleo\'5cleo32\'5csystem)
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Delete User Profile}
+{\up #}{\footnote\pard\plain{\up #} Delete_User_Profile}
+\pard {\up K}{\footnote\pard\plain{\up K} Compact User Database}
+\fs36 Delete User Profile
+\par \fs24 
+\par A \ul user profile\plain\fs24 {\v User_Profile} may be deleted from the list in the main window by selecting it (click on the required entry in the profile list) and select menu entry \b Users\plain\fs24  - \b Delete\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Deleting session records}
+{\up #}{\footnote\pard\plain{\up #} Deleting_session_records}
+\pard \fs36 Deleting session records
+\par \fs24 This \ul Accounting\plain\fs24 {\v User_Accounting} menu item \b Delete Up To\plain\fs24  displays the 'Delete Session records' dialog
+\par The dialog displays the dates of the first and last session records and number of records in the database
+\par 
+\par E.g. To delete all session records up to (but not including) the 23rd March 1998 enter the date ( 23-Mar-98) and press OK.
+\par You will be requested for confirmation.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Detector Configuration}
+{\up #}{\footnote\pard\plain{\up #} Detector_Configuration}
+\pard {\up K}{\footnote\pard\plain{\up K} Configuration Functions}
+\fs36 Detector Configuration
+\par \fs24 The detector Configuration is performed using the \b Detectors\plain\fs24  tab of the \ul Configuration Form\plain\fs24 {\v Configuration_Functions}.
+\par 
+\par Select the Detector required in the Upper Left Combo Box
+\par 
+\par If the selected detector is an auxiliary detector (i.e. not predefined) enter it's identity in the adjacent text box and select the type of signal it provides.
+\par 
+\par Select the channel identity into which the detector is plugged.
+\par 
+\par 
+\par Repeat for any other detectors
+\par 
+\par A RED  message will be displayed at the bottom of the form indicating any problems with the configuration
+\par \pard 
+\par When configuration is complete press \b Save Settings\plain\fs24  to action the configuration
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Development Profile}
+{\up #}{\footnote\pard\plain{\up #} Development_Profile}
+\pard \fs36 Development Profile
+\par \fs24 
+\par This profile is reserved for LEO Software Development Staff
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Edit User Profile}
+{\up #}{\footnote\pard\plain{\up #} Edit_User_Profile}
+\pard \fs36 Edit User Profile
+\par \fs24 
+\par A \ul User profile\plain\fs24 {\v User_Profile} may be edited in two ways from the Administrator main Window
+\par :
+\par Select the User Profile to be edited (click on the item in the list of profiles) and select menu item \b Users\plain\fs24  - \b Edit\plain\fs24 
+\par 
+\par Double click the User profile in the list of profiles
+\par 
+\par The \uldb User Profile\plain\fs24 {\v Edit_User_Profile_Form} form will be displayed
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Edit User Profile Form}
+{\up #}{\footnote\pard\plain{\up #} Edit_User_Profile_Form}
+\pard \fs36 Edit User Profile Form
+\par \fs24 This form is used to Edit an existing \ul User Profile\plain\fs24 {\v User_Profile} 
+\par 
+\par UserName may not be changed.
+\par Password. Select \uldb Change Password\plain\fs24 {\v Change_Password} if required.
+\par Click on the \uldb User Directory\plain\fs24 {\v Directory_Selection_Form} to change 
+\par Click on the \uldb Image Directory\plain\fs24 {\v Image_Directory_Selection_Form} to change
+\par Select \ul User Level permissions\plain\fs24 {\v 2Z0A0ZB}
+\par Select \ul User\plain\fs24 {\v User_Directory_Change_Privilege}/\ul Image\plain\fs24 {\v Image_Directory_Change_Privilege} Directory Change permissions
+\par Select Privileges (\ul Calibration\plain\fs24 {\v Calibration_Privilege}, \ul Supervisor\plain\fs24 {\v 3CNN77}, \ul Stage Initialise\plain\fs24 {\v Stage_Initialise_Privilege},   \ul Unlock Icons\plain\fs24 {\v Unlock_Toolbar_Icon_privilege}).
+\par \pard 
+\par Note: Ensure that the User who's profile is being edited is not logged on to the SEM if you wish to alter the user's User or Image Directory. This is because when logging off the current User and Image directories are written to the database which would overwrite your changes. 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Factory Profile}
+{\up #}{\footnote\pard\plain{\up #} Factory_Profile}
+\pard\tx355 \fs36 Factory Profile
+\par \fs24 This profile is reserved for LEO Factory Staff
+\par User directory \tab ..\'5cleo32\'5cuser\'5cservice
+\par Image Directory\tab ..\'5cleo32\'5cimages
+\par Full Privileges
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Guest profile}
+{\up #}{\footnote\pard\plain{\up #} Guest_profile}
+\pard\tx355 \fs36 Guest profile
+\par \pard\tx355 \fs24 
+\par \pard\tx355 This profile is provided for a guest user
+\par \pard\tx355 
+\par \pard\tx355 Password :default password is a blank field
+\par \pard\tx355 
+\par \pard\tx355 User directory \tab ..\'5cleo32\'5cuser\'5cguest
+\par Image Directory\tab ..\'5cleo32\'5cimages
+\par No privileges
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Image Directory Change Privilege}
+\pard\tx355 {\up #}{\footnote\pard\plain{\up #} Image_Directory_Change_Privilege}
+\fs36 Image Directory Change Privilege
+\par \pard\tx355 \fs24 
+\par \pard\tx355 This privilege is part of the \ul User Profile\plain\fs24 {\v User_Profile}.
+\par \pard\tx355 
+\par \pard\tx355 If this priviledge is present the User may change his \ul Current Image Directory\plain\fs24 {\v Current_Image_Directory} to any directory.
+\par \pard\tx355 
+\par \pard\tx355 If the privilege is not present the User may not set his Current User directory higher in the directory tree than the \ul Initial Image Directory\plain\fs24 {\v Initial_Image_Directory}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Image Directory Selection Form}
+{\up #}{\footnote\pard\plain{\up #} Image_Directory_Selection_Form}
+\pard \fs36 Image Directory Selection Form
+\par \fs24 This form is accessed from the \uldb New User Profile Form\plain\fs24 {\v User_Profile_Form} or \uldb Edit User Profile Form\plain\fs24 {\v Edit_User_Profile_Form}  to create/select the  \ul Initial Image Directory\plain\fs24 {\v Initial_Image_Directory}
+\par 
+\par Select the Image directory by clicking on the Drive/Directory select box until the required path is displayed in the top Edit Box
+\par 
+\par To Create a New Image directory
+\par \pard\tx355 \tab Select Drive (e.g. D:)
+\par \tab Select path for directory (e.g ..\'5cimages)
+\par \tab Add to the path the new directory name(e.g. ..\'5cimages\'5cphil)
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Initial Image Directory}
+{\up #}{\footnote\pard\plain{\up #} Initial_Image_Directory}
+\pard\tx355 \fs36 Initial Image Directory
+\par \pard\tx355 \fs24 
+\par \pard\tx355 When a User logs on for the first time the Image Directory will be set to this directory specification.
+\par \pard\tx355 
+\par \pard\tx355 If a User does not have the \ul Image Directory Change Privilege\plain\fs24 {\v Image_Directory_Change_Privilege} he may not set his current Image directory higher in the directory tree than this directory.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Initial User Directory}
+{\up #}{\footnote\pard\plain{\up #} Initial_User_Directory}
+\pard \fs36 Initial User Directory
+\par \fs24 
+\par When a User logs on for the first time the User Directory will be set to this directory specification.
+\par 
+\par If a User does not have the \ul User Directory Change Privilege\plain\fs24 {\v User_Directory_Change_Privilege} he may not set his current User directory higher in the directory tree than this directory.
+\par 
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Installing Licences from disk}
+{\up #}{\footnote\pard\plain{\up #} Installing_Licences_from_disk}
+\pard \fs36 Installing Licences from disk
+\par \fs24 Licences may be installed from a licence file on disk as follows
+\par 
+\par Insert Licence disk in Drive A:
+\par On the \ul Licence Administration Form\plain\fs24 {\v Licence_Administration_Form} press \b Install From Disk\plain\fs24 
+\par Select the \ul licence file\plain\fs24 {\v Licence_File}. 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Licence Administration Form}
+{\up #}{\footnote\pard\plain{\up #} Licence_Administration_Form}
+\pard \fs36 Licence Administration Form
+\par \fs24 This form is accessed from the Administrator Main Window using the \b Licences\plain\fs24  menu item
+\par 
+\par The Leo-32 Server is started if not already running. This is done so that the Server may perform the \ul Licence validation\plain\fs24 {\v Licence_validation}.
+\par 
+\par The current Server licence set is displayed in the list box.(Exception - \ul Restore Licences\plain\fs24 {\v Restore_Licences})
+\par 
+\par Licences which are standard are marked with an asterisk (*)
+\par Disabled Licences are marked with an X
+\par 
+\par Licences in the list may be \ul edited\plain\fs24 {\v Licence_Editing}
+\par \pard 
+\par \ul Installing Licences from disk\plain\fs24 {\v Installing_Licences_from_disk}
+\par 
+\par \ul Restore Licences\plain\fs24 {\v Restore_Licences}
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Licence Editing}
+{\up #}{\footnote\pard\plain{\up #} Licence_Editing}
+\pard \fs36 Licence Editing
+\par \fs24 An Installed licence may be edited (i.e. temporarily disabled or re-enabled) in the \ul Licence Administration Form\plain\fs24 {\v Licence_Administration_Form} by selecting the licence (click on the required licence to highlight it) and press the Enable/Disable Licence button.
+\par 
+\par A disabled licence is marked with an X
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Licence File}
+{\up #}{\footnote\pard\plain{\up #} Licence_File}
+\pard \fs36 Licence File
+\par \fs24 A licence file is an encrypted file containing licences for a specific serial numbered SEM
+\par 
+\par The licence file has extension \b .LIC\plain\fs24 , the file name is typically an order number (e.g. MW12345.LIC)
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Licence administration}
+{\up #}{\footnote\pard\plain{\up #} Licence_administration}
+\pard \fs36 Licence administration
+\par \fs24 
+\par Licences are used to enable specific functionality in the software.
+\par 
+\par Some licences are provided as standard with a specific model of SEM, others are purchased as options.
+\par 
+\par When the SEM is delivered the Standard and purchased licences are already installed.
+\par 
+\par For security the licences provided are also supplied on a floppy disk for reinstallation if required.
+\par 
+\par Additional licences purchased will be supplied on floppy disk for installation on the SEM.
+\par \pard 
+\par \uldb Licence Administration Form\plain\fs24 {\v Licence_Administration_Form}
+\par \ul Licence Validation\plain\fs24 {\v Licence_validation}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Licence validation}
+{\up #}{\footnote\pard\plain{\up #} Licence_validation}
+\pard \fs36 Licence validation
+\par \fs24 The installed licences are held in the leo database as a master copy.
+\par Licences are valid only for a specific instrument Serial Number.
+\par On Server Start up Serial Number checks are performed and if successful the licences are transferred to the Server which is their normal working location.
+\par If the validation checks fail a failure message is displayed in the Server Window and the Server does not receive any licences, even those which are standard of the specific model of SEM.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Log On Form}
+{\up #}{\footnote\pard\plain{\up #} Log_On_Form}
+\pard \fs36 Log On Form
+\par \fs24 
+\par On starting the Leo-32 Administrator you are requested to enter a UserName and password. 
+\par 
+\par Only by entering a valid UserName and password will you be able to proceed beyond this point.
+\par 
+\par Both UserName and password are case insensitive.
+\par 
+\par On initial installation of the Leo-32 Software the SEM Supervisor should log on as SYSTEM with a blank password and change the password to a suitable string.
+\par This password will take effect on the next log on.
+\par 
+\par \fs32 Please record this password in a safe place
+\par \pard If you forget your password a chargeable Service visit will be required.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} New User Profile Form}
+{\up #}{\footnote\pard\plain{\up #} User_Profile_Form}
+\pard \fs36 New User Profile Form
+\par \fs24 This form is used to create a new \ul User Profile\plain\fs24 {\v User_Profile} 
+\par 
+\par Enter Username - this must be unique
+\par The password will default to the Username
+\par Click on the \uldb User Directory\plain\fs24 {\v Directory_Selection_Form} to define 
+\par Click on the \uldb Image Directory\plain\fs24 {\v Image_Directory_Selection_Form} to define
+\par Select \ul User Level permissions\plain\fs24 {\v 2Z0A0ZB}
+\par Select \ul User\plain\fs24 {\v User_Directory_Change_Privilege}/\ul Image\plain\fs24 {\v Image_Directory_Change_Privilege} Directory Change permissions
+\par Select Privileges (\ul Calibration\plain\fs24 {\v Calibration_Privilege}, \ul Supervisor\plain\fs24 {\v 3CNN77}, \ul Stage Initialise\plain\fs24 {\v LJGPJG}  \ul Unlock Icons\plain\fs24 {\v Unlock_Toolbar_Icon_privilege}).
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Overview}
+{\up #}{\footnote\pard\plain{\up #} Overview}
+\pard \fs36 Overview
+\par \fs24 The Leo-32 Administrator provides controlled access to the Leo-32 \ul Database\plain\fs24 {\v Database_location}  which contains critical system information. It is essential that the database be regularly backed up to a secure destination.
+\par 
+\par There is a \ul hierarchy\plain\fs24 {\v Access_Hierarchy} of access to the database, the functions available being controlled by the position of the Username in the hierarchy.
+\par 
+\par The following administrative functions are provided:
+\par 
+\par \ul User profile Functions\plain\fs24 {\v User_profile_Functions}
+\par \ul Licence administration\plain\fs24 {\v Licence_administration}
+\par \pard\tx355 \ul \ul System Configuration\plain\fs24 {\v Configuration_Functions}
+\par Service Functions\tab [Not available for Customer use]
+\par Factory Functions\tab [Not available for Customer use]
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Owner Relation}
+{\up #}{\footnote\pard\plain{\up #} Owner_Relation}
+\pard\tx355 \fs36 Owner Relation
+\par \pard\tx355 \fs24 The Owner Relation record for the \uldb User Accounting database\plain\fs24 {\v User_Accounting_database} contains
+\par \pard\tx355 
+\par \pard\tx355 \b OwnerID\tab \plain\fs24 see \ul Owner Data\plain\fs24 {\v Owner_information}
+\par \b Username\tab \plain\fs24 The user name owned
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Owner data dialog}
+{\up #}{\footnote\pard\plain{\up #} Owner_data_dialog}
+\pard \fs36 Owner data dialog
+\par \fs24 This dialog is accessed from the \ul Owners list\plain\fs24 {\v Owners_dialog} 
+\par An owner is a person responsible for one or more Usernames, 
+\par Enter the required data.
+\par Only the name and Company are mandatory.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Owner information}
+{\up #}{\footnote\pard\plain{\up #} Owner_information}
+\pard\tx355 \fs36 Owner information
+\par \fs24 The owner information record for\uldb  User accounting database\plain\fs24 {\v User_Accounting_database} contains
+\par \b OwnerID\tab \plain\fs24 Unique reference number
+\par \b Name 
+\par Company   
+\par Addr1\plain\fs24 \tab \tab  address line 1
+\par \b Addr2\tab \tab  \plain\fs24 address line 2
+\par \b Addr3\plain\fs24 \tab \tab address line 3
+\par \b Addr4\plain\fs24 \tab \tab address line 4
+\par \b Zip\tab \tab \plain\fs24 Zip/Post code
+\par \b Country\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Password}
+{\up #}{\footnote\pard\plain{\up #} Password}
+\pard \fs36 Password
+\par \fs24 A password is associated with a UserName as part of the \ul User Profile\plain\fs24 {\v User_Profile}. 
+\par 
+\par Only by correctly entering a correct Username and Password may a User Log on to the SEM or Administrator.
+\par 
+\par When creating a New User profile the password is set as default to the UserName.
+\par 
+\par The password is case insensitive.
+\par 
+\par A password must be at least three characters.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Protected Z}
+{\up #}{\footnote\pard\plain{\up #} Protected_Z}
+\pard \fs36 Protected Z
+\par \fs24 
+\par This SEM parameter controls the behaviour of the stage when a multi axis move is performed (e.g. Go To a position label).
+\par 
+\par \b Parameter not Set\plain\fs24 .
+\par All relevent axis move simultaneously to the desired position.
+\par Backlash correction performed if required.
+\par 
+\par \b Parameter Set\plain\fs24 
+\par The move to the desired position is performed in phases to minimise the risk of collision. 
+\par 
+\par 
+\par The movement sequence is:
+\par 
+\par \pard\li355\fi-355\tx355 
+\par If the desired Z is lower than the current Z then this axis is moved to the desired position.
+\par If the desired Tilt is lower than the current Tilt then this axis is moved to the desired position
+\par The X,Y,R,M axes are moved simultaneously to their desired positions
+\par If The desired Tilt position is not yet achieved move Tilt to the desired position
+\par If the desired Z position is not yet achieved move Z to the desired position.
+\par 
+\par 
+\par This \b Protected Z\plain\fs24  parameter may only be changed with \ul Supervisor Privilege\plain\fs24 {\v 3CNN77}.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Repair Accounting Database}
+{\up #}{\footnote\pard\plain{\up #} Repair_Accounting_Database}
+\pard\tx355 \fs36 Repair Accounting Database
+\par \pard\tx355 \fs24 This function is part of \uldb User Accounting\plain\fs24 {\v User_Accounting}
+\par \pard\tx355 
+\par \pard\tx355 This function attempts to repair a database that was marked as possibly corrupt by an incomplete write operation. This can occur if an application using the  database is closed unexpectedly because of a power outage or computer hardware problem. 
+\par \pard\tx355 
+\par \pard\tx355 This function also attempts to validate all system tables and all indexes. Any data that can't be repaired is discarded. If the database can't be repaired, an error occurs.
+\par \pard\tx355 
+\par \pard\tx355 When you attempt to open or compact a corrupted database, an error usually occurs. In some situations, however, a corrupted database may not be detected, and no error occurs. It's a good idea to use this function if the database behaves unpredictably.
+\par \pard\tx355 
+\par \pard\tx355 Note   After repairing a database, it's also a good idea to \ul compact\plain\fs24 {\v Compact_Accounting_Database} it  to defragment the file and to recover disk space.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Repair User Database}
+{\up #}{\footnote\pard\plain{\up #} Repair_User_Database}
+\pard \fs36 Repair User Database
+\par \fs24 
+\par This function is part of the \uldb Administrator\plain\fs24 {\v Administrator_Main_Form} Database Menu
+\par 
+\par This function attempts to repair a database that was marked as possibly corrupt by an incomplete write operation. This can occur if an application using the  database is closed unexpectedly because of a power outage or computer hardware problem. 
+\par 
+\par This function also attempts to validate all system tables and all indexes. Any data that can't be repaired is discarded. If the database can't be repaired, an error occurs.
+\par \pard 
+\par When you attempt to open or compact a corrupted database, an error usually occurs. In some situations, however, a corrupted database may not be detected, and no error occurs. It's a good idea to use this function if the database behaves unpredictably.
+\par 
+\par Note   After repairing a database, it's also a good idea to \ul compact\plain\fs24 {\v Compact_User_Database} it  to defragment the file and to recover disk space.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Restore Licences}
+{\up #}{\footnote\pard\plain{\up #} Restore_Licences}
+\pard \fs36 Restore Licences
+\par \fs24 This function is actioned from the \ul Licence Administrator Form\plain\fs24 {\v Licence_Administration_Form}
+\par The function re-enables any \ul temporarily disabled licences\plain\fs24 {\v Licence_Editing} and copies the master installed licences to a temporary location \b ready to be loaded to the Server when it is restarted\plain\fs24 .
+\par 
+\par Note that on execution of this function the licences displayed are those in the \b temporary\plain\fs24  location\b  not \plain\fs24 those actually in the Server.
+\par 
+\par Note that any licences enabled by the \ul Set All Licences\plain\fs24 {\v Set_All_Licences} functions will be deleted.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Service Profile}
+{\up #}{\footnote\pard\plain{\up #} Service_Profile}
+\pard\tx355 \fs36 Service Profile
+\par \fs24 This profile is reserved for LEO Service Staff
+\par User directory \tab ..\'5cleo32\'5cuser\'5cservice
+\par Image Directory\tab ..\'5cleo32\'5cimages
+\par Full Privileges
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Session}
+{\up #}{\footnote\pard\plain{\up #} Session}
+\pard\tx355 \uldb \fs36 User accounting\plain\fs36 {\v User_Accounting} session
+\par \pard\tx355 \fs24 The duration between the User logging on and logging off.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Session data}
+{\up #}{\footnote\pard\plain{\up #} Session_data}
+\pard \fs36 Session data
+\par \fs24 The session data record for \uldb User Accounting database\plain\fs24 {\v User_Accounting_database} contains
+\par \b SessionID\plain\fs24  Unique session number
+\par \b Username\plain\fs24  Username of operator.
+\par \b LogOn\plain\fs24  Date/Time user logged on
+\par \b LogOff \plain\fs24 Date/Time user logged off
+\par \b TIFFs \plain\fs24 Number of TIFF files exported
+\par \b Prints\plain\fs24   Number of Images printed
+\par \b Photos\plain\fs24  Number of photographs made
+\par \b Status \plain\fs24 A code indicating one of the following
+\par 0 = Normal session termination
+\par 1 = abnormal session termination
+\par \pard 2 = accounting activated
+\par 3 = accounting deactivated
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Set All Licences}
+{\up #}{\footnote\pard\plain{\up #} Set_All_Licences}
+\pard \fs36 Set All Licences
+\par \fs24 This function is provided on the \ul Licence Administration Form\plain\fs24 {\v Licence_Administration_Form} 
+\par and is available only for UserName FACTORY
+\par 
+\par All licences relevent to the Model of SEM are temporarily set to permit factory testing.
+\par 
+\par See \ul Restore Licences\plain\fs24 {\v Restore_Licences}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Supervisor Privilege}
+{\up #}{\footnote\pard\plain{\up #} 3CNN77}
+\pard \fs36 Supervisor Privilege
+\par \fs24 This privilege is part of the\ul  User Profile\plain\fs24 {\v User_Profile}.
+\par 
+\par Only Users with this Privilege are permitted to:
+\par 
+\par 1. Log on to the Administrator
+\par 2. Modify Stage Global \uldb position labels\plain\fs24 {\v 1JKVBGQ@dlgmgr.hlp}
+\par 3. Save \uldb Common Macros\plain\fs24 {\v HBU_9D@leom.hlp}
+\par 4. Save \uldb Common Toolbars\plain\fs24 {\v DBDA.W@leom.hlp}
+\par 5. Access the following SEM parameters
+\par \ul Z move on Vent\plain\fs24 {\v Z_move_on_Vent}
+\par \ul Protected Z\plain\fs24 {\v Protected_Z}
+\par \ul Force Stage Initialise\plain\fs24 {\v .4EJU@tabmgr.hlp}
+\par \ul EHT Off @ Log Off\plain\fs24 {\v ABHFR7@tabmgr.hlp}
+\par \pard \ul \ul User Max EHT\plain\fs24 {\v User_Max_EHT} 
+\par 
+\par \ul User Max Filament current\plain\fs24 {\v User_Max_Filament_current} 
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} System Management}
+{\up #}{\footnote\pard\plain{\up #} System_Management}
+\pard System Management
+\par \page
+{\up $}{\footnote\pard\plain{\up $} System profile}
+{\up #}{\footnote\pard\plain{\up #} System_profile}
+\pard\tx355 \fs36 System profile
+\par \fs24 
+\par This profile is provided for the System Administrator (Supervisor)
+\par 
+\par Password :default password is a blank field
+\par 
+\par User directory \tab ..\'5cleo32\'5cuser\'5cdefault
+\par Image Directory\tab ..\'5cleo32\'5cimages
+\par Full Privileges excluding calibration privilege.
+\par 
+\par Change system password at earliest oportunity.
+\par \fs32 Please record this password in a safe place
+\par If you forget your password a Service visit will be required.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Unlock Toolbar Icon privilege}
+{\up #}{\footnote\pard\plain{\up #} Unlock_Toolbar_Icon_privilege}
+\pard\tx355 \fs36 Unlock Toolbar Icon privilege
+\par \pard\tx355 \fs24 
+\par \pard\tx355 It is possible to lock/unlock the functions assigned to specific Icons in the User Interface Toolbar.
+\par \pard\tx355 
+\par \pard\tx355 If this privilege is present the Icons may be locked/unlocked.
+\par \pard\tx355 
+\par \pard\tx355 This is part of the \ul User Profile\plain\fs24 {\v User_Profile}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Use Common Toolbar}
+{\up #}{\footnote\pard\plain{\up #} Use_Common_Toolbar}
+\pard \fs36 Use Common Toolbar
+\par \fs24 This is a setting defined using the \uldb Administrator\plain\fs24 {\v Contents} in a \ul User Profile\plain\fs24 {\v User_Profile}.
+\par 
+\par If this setting is not checked the Toolbar loaded for a user will be from the current User Directory and the user will be able to modify his toolbar
+\par 
+\par If this setting is checked the toolbar loaded for a user will be from the \'5cleo\'5cleo32\'5cuser directory (if a toolbar file exists).
+\par This facility may be used to provide a \uldb common toolbar\plain\fs24 {\v 5XXH_AL@tooledit.hlp} to a group of users.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User Accounting}
+{\up #}{\footnote\pard\plain{\up #} User_Accounting}
+\pard \fs36 User Accounting - Overview
+\par \fs24 User Accounting is a licenced facility which logs information about a User's \ul session\plain\fs24 {\v Session} on the microscope in a separate \ul database\plain\fs24 {\v User_Accounting_database} and provides functionality within the administrator to review the information collected.
+\par 
+\par If the User accounting licence is present the Administrator main window menu has an entry "Accounting" which provides access to the following functions
+\par 
+\par \uldb Creating the accounting database\plain\fs24 {\v Creating_the_accounting_database}
+\par \ul Activating/Deactivating user accounting\plain\fs24 {\v Activating_Deactivating_user_accounting}.
+\par \pard \ul \ul Owner data\plain\fs24 {\v Owners_dialog}
+\par \ul Deleting session records\plain\fs24 {\v Deleting_session_records}.
+\par \ul Compact Accounting Database\plain\fs24 {\v Compact_Accounting_Database}
+\par \ul Repair Accounting Database\plain\fs24 {\v Repair_Accounting_Database}
+\par \ul Accounting review\plain\fs24 {\v Accounting_review}
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User Accounting database}
+{\up #}{\footnote\pard\plain{\up #} User_Accounting_database}
+\pard \fs36 User Accounting database
+\par \fs24 The \uldb User accounting\plain\fs24 {\v User_Accounting} database is named \b ACCOUNT.MDB \plain\fs24 and
+\par is located in ...\'5cLEO\'5cLEO32\'5cSYSTEM.
+\par 
+\par The database may be accessed and manipulated using Microsoft Access, Visual Basic or Visual C++.
+\par  It comprises 3 tables
+\par \b Session \plain\fs24 containing the \ul session data\plain\fs24 {\v Session_data} collected
+\par \b Owner \plain\fs24 containing \ul information\plain\fs24 {\v Owner_information} about the Username Owner
+\par \b OwnerRelation\plain\fs24  relating \ul owner to Username\plain\fs24 {\v Owner_Relation}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User Category}
+{\up #}{\footnote\pard\plain{\up #} User_Category}
+\pard\tx355 \fs36 User Category
+\par \fs24 Every User Interface item (Command, Analogue parameter, Digital Parameter) is assigned a User Category which is one of:
+\par \b Service\plain\fs24 \tab (calibration and Infrequently used items)
+\par \b Expert\tab \plain\fs24 (Parameters useful for the advanced user)
+\par \b Novice\plain\fs24  \tab (Most frequently used parameters)
+\par 
+\par This is used in conjunction with the \ul User Access Level\plain\fs24 {\v User_level}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User Directory Change Privilege}
+{\up #}{\footnote\pard\plain{\up #} User_Directory_Change_Privilege}
+\pard\tx355 \fs36 User Directory Change Privilege
+\par \pard\tx355 \fs24 
+\par \pard\tx355 This privilege is part of the \ul User Profile\plain\fs24 {\v User_Profile}.
+\par \pard\tx355 
+\par \pard\tx355 If this priviledge is present the User may change his \ul current User Directory\plain\fs24 {\v Current_User_Directory} to any directory.
+\par \pard\tx355 
+\par \pard\tx355 If the privilege is not present the User may not set his Current User directory higher in the directory tree than the \ul Initial User Directory\plain\fs24 {\v Initial_User_Directory}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User Directory Selection Form}
+{\up #}{\footnote\pard\plain{\up #} Directory_Selection_Form}
+\pard {\up K}{\footnote\pard\plain{\up K} Contents;Create New User Profile;Creating the accounting database;Current Image Directory;Current User Directory;Database location;Database Management;Delete User Profile;Deleting session records}
+\fs36 User Directory Selection Form
+\par \fs24 This form is accessed from the \uldb New User Profile Form\plain\fs24 {\v User_Profile_Form}  or the  \uldb Edit User Profile Form\plain\fs24 {\v Edit_User_Profile_Form}  to create\'5cselect the \ul Initial User Directory\plain\fs24 {\v Initial_User_Directory} 
+\par 
+\par It is recommended that each Username should have a unique User directory, this will permit personal copies of all files/customisations to be maintained.
+\par 
+\par Select the User Directory by clicking on the directory selection list box until the required path is displayed in the top edit box.
+\par \pard 
+\par To Create a new User directory
+\par \pard\tx355 \tab Select ...\'5cleo32\'5cuser
+\par \tab Add to the path the new directory (e.g. \'5cuser\'5cphil)
+\par \tab Press \b Create Directory\plain\fs24 
+\par \tab 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User Level Privilege}
+{\up #}{\footnote\pard\plain{\up #} 2Z0A0ZB}
+\pard \fs36 User Level Privilege
+\par \fs24 
+\par The control interface of the SEM comprises Commands, Analogue parameters and Digital parameters.
+\par The total items  number many hundreds, hence when selecting parameters from a list (for display in the status window, parameters for annotation,  parameters in macros, etc) it is necessary to have a method of reducing the parameters listed.
+\par 
+\par Every item is assigned a \ul User Category\plain\fs24 {\v User_Category}
+\par A user may select (part of SEM User Preferences) the \ul level\plain\fs24 {\v User_level} at which he wishes to operate.
+\par \pard 
+\par This choice may be restricted in the \ul User Profile\plain\fs24 {\v User_Profile}
+\par 
+\par '\b Any Level' Checked\plain\fs24 
+\par User has unrestricted choice of level
+\par 
+\par '\b Any Level' Unchecked\plain\fs24 
+\par Select the maximum level that the user may choose (e.g. if Expert then he may choose Expert or Novice, If Novice then he is restricted to Novice only)
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User Max EHT}
+{\up #}{\footnote\pard\plain{\up #} User_Max_EHT}
+\pard \fs36 User Max EHT
+\par \fs24 This value limits the maximum EHT that the user may request.
+\par Accessed by Right Button Click on \uldb SEM Control Gun\plain\fs24 {\v 5_0HOO@tabmgr.hlp} Tab
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User Profile}
+{\up #}{\footnote\pard\plain{\up #} User_Profile}
+\pard \fs36 User Profile
+\par \fs24 The User Profile is the collection of privileges and settings associated with a UserName. These are defined in the \ul New User Profile Form\plain\fs24 {\v User_Profile_Form} or \ul Edit User Profile Form\plain\fs24 {\v Edit_User_Profile_Form}
+\par 
+\par These are:
+\par 
+\par \ul Password\plain\fs24 {\v Password}
+\par \ul Initial User Directory\plain\fs24 {\v Initial_User_Directory}
+\par \ul Current User Directory\plain\fs24 {\v Current_User_Directory}
+\par \ul Initial Image Directory\plain\fs24 {\v Initial_Image_Directory}
+\par \ul Current Image Directory\plain\fs24 {\v Current_Image_Directory}
+\par 
+\par \ul User Directory Change Privilege\plain\fs24 {\v User_Directory_Change_Privilege}
+\par \ul Image Directory Change Privilege\plain\fs24 {\v Image_Directory_Change_Privilege}
+\par \ul User Level Privilege\plain\fs24 {\v 2Z0A0ZB}
+\par \pard \ul \ul Supervisor Privilege\plain\fs24 {\v 3CNN77}
+\par \ul Stage Initialise Privilege\plain\fs24 {\v Stage_Initialise_Privilege}
+\par \ul Calibration Privilege\plain\fs24 {\v Calibration_Privilege} 
+\par 
+\par \ul Use Common Toolbar\plain\fs24 {\v Use_Common_Toolbar}
+\par 
+\par \ul Unlock Toolbar Icon privilege\plain\fs24 {\v Unlock_Toolbar_Icon_privilege}
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User Profiles available on system installation}
+{\up #}{\footnote\pard\plain{\up #} 7OR..2C}
+\pard \fs36 User Profiles available on system installation
+\par \fs24 
+\par On System installation the following User Profiles are provided
+\par 
+\par \ul Development\plain\fs24 {\v Development_Profile}
+\par \ul Factory\plain\fs24 {\v Factory_Profile}
+\par \ul Service\plain\fs24 {\v Service_Profile}
+\par \ul System\plain\fs24 {\v System_profile}
+\par \ul Guest\plain\fs24 {\v Guest_profile}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User definition and restrictions}
+{\up #}{\footnote\pard\plain{\up #} User}
+\pard \fs36 User definition and restrictions
+\par \fs24 A User is the lowest level in the \ul Access hierarchy\plain\fs24 {\v Access_Hierarchy} and is defined as a user profile which does not have \ul Supervisor Priviledge\plain\fs24 {\v 3CNN77}.
+\par 
+\par A User may not log on to the Administrator Utility.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User level}
+{\up #}{\footnote\pard\plain{\up #} User_level}
+\pard\tx355 \fs36 User level
+\par \fs24 
+\par Defines the \ul categories\plain\fs24 {\v User_Category} of Commands/parameters listed in the SEM Interface
+\par 
+\par Choice of:
+\par \b Service\plain\fs24  \tab (Displays all categories)
+\par \b Expert\plain\fs24  \tab (Displays Novice and Expert categories)
+\par \b Novice\plain\fs24 \tab  (Displays Novice category only)
+\par 
+\par The \ul choice permitted\plain\fs24 {\v 2Z0A0ZB} to a specific User is defined as part of the \ul User Profile \plain\fs24 {\v User_Profile}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User profile Functions}
+{\up #}{\footnote\pard\plain{\up #} User_profile_Functions}
+\pard \fs36 User profile Functions
+\par \fs24 
+\par The following functions are provided to administer \ul User Profiles\plain\fs24 {\v User_Profile}
+\par 
+\par \uldb Create New User Profile\plain\fs24 {\v Create_New_User_Profile}
+\par \uldb Edit User Profile\plain\fs24 {\v Edit_User_Profile}
+\par \uldb Delete User Profile\plain\fs24 {\v Delete_User_Profile}
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Username Owners dialog}
+{\up #}{\footnote\pard\plain{\up #} Owners_dialog}
+\pard {\up K}{\footnote\pard\plain{\up K} Detector Configuration;Development Profile;Directory Selection Form;Edit User Profile;Factory Profile;Guest profile}
+\fs36 Username Owners dialog
+\par \fs24 This dialog is displayed via the\ul  Accounting\plain\fs24 {\v User_Accounting} menu.
+\par An owner is a person responsible for one or more Usernames, 
+\par e.g. an operator, or perhaps work being performed by an operator for a specific client
+\par This dialog displays the list of owners.
+\par 
+\par Select the owner to display the associated usernames.
+\par A New Owner may be created from this dialog by selecting the Menu item \b Owners\plain\fs24  - \b New
+\par \plain\fs24 The \ul Owner data\plain\fs24 {\v Owner_data_dialog} may be edited by double clicking on the required owner in the list.
+\par \pard 
+\par User Names may be added to the owner by selecting the menu item \b Ownership\plain\fs24  - \b Add\plain\fs24 
+\par A Username may only be owned by one Owner.
+\par 
+\par To remove a Username from an Owner double click the Username.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Z move on Vent}
+{\up #}{\footnote\pard\plain{\up #} Z_move_on_Vent}
+\pard \fs36 Z move on Vent
+\par \fs24 This SEM Parameter controls the behaviour of the Stage when the chamber is vented.
+\par 
+\par \b Parameter Not Set\plain\fs24 
+\par No Action
+\par 
+\par \b Parameter Set\plain\fs24 
+\par On vent the stage Z is driven to a low value.
+\par 
+\par This parameter may only be changed with \ul Supervisor Privilege\plain\fs24 {\v 3CNN77}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User Max Filament current}
+{\up #}{\footnote\pard\plain{\up #} User_Max_Filament_current}
+\pard \fs36 User Max Filament current
+\par \fs24 This parameter defines the upper limit of filament current that a user may set.
+\par A \uldb Supervisor\plain\fs24 {\v 3CNN77} may click on the background of the \uldb SEM Control Gun\plain\fs24 {\v 5_0HOO@tabmgr.hlp} tab to define this parameter
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Initialise Privilege}
+{\up #}{\footnote\pard\plain{\up #} Stage_Initialise_Privilege}
+\pard {\up K}{\footnote\pard\plain{\up K} Image Directory Change Privilege;Image Directory Selection Form;Initial Image Directory;Initial User Directory;Installing Licences from disk;Licence administration;Licence Administration Form;Licence Editing;Licence File}
+\fs36 Stage Initialise Privilege
+\par \fs24 Only Users having this privilege may \uldb initialise\plain\fs24 {\v WDRES_@stage.hlp} the Stage
+\par 
+\par This privilege is part of the \ul User Profile\plain\fs24 {\v User_Profile}
+\par \page
+}

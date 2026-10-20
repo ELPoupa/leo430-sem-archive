@@ -1,0 +1,2458 @@
+﻿$#>KAbout Image Manager
+
+The Image Manager provides the Annotation ControlContents panKels. 
+
+The copyright information for this piece of software and it's revision status is given in the About Box.
+$#>{bmc bm0.bmp}  Adjustable Height Measurement
+
+This measurement facility comprises a related pair of horizontal lines. Each line may be adjusted in position and length.
+Precision AdjustmentPrecision_Adjustment is available
+   
+{bmc bm1.bmp} ClickCLICK@Sem.HLP on the Adjustable Height Measurement Icon to switch the function on.  {bmc bm1.bmp} Point to the Zone for which you want to place the Adjustable Height Measurement and click.  {bmc bm1.bmp} Click on the rectangle, pick the handleHandles@Sem.HLP and dragDRAG@Sem.HLP it to size.  {bmc bm1.bmp} Click on the upper line, pick the handle and place it.  {bmc bm1.bmp} Click on the lower line, pick the handle and place it.  {bmc bm1.bmp} Double clicking on one of the markers calls the Results PanelResults_Panel_Parameters which annotates the Adjustable Cursor Height.  {bmc bm1.bmp} The data from this objects results panelResults_Panel_Parameters can be copied to the clipboard for insertion into a speadsheet. This is achieved using the Annotation CopyAnntotation_to_Clipboard Popup Menu item. 		  {bmc bm2.bmp} 	
+{bmc bm3.bmp}	The dimensional measurement is derived from the zone magnification hence when multiple zones are present both lines are brought into the same zone.
+
+{bmc bm4.bmp}	There are 10 instances available.
+
+See also Retrospective MeasurementRetrospective_Measurement. 		 Properties of Adjustable Height MeasurementProperties_of_Adjustable_Height_Measurement
+$#>K{bmc bm5.bmp}  Adjustable Width Measurement
+
+This measurement facility comprises a related pair of vertical lines. Each line may be adjusted in position and length.
+Precision AdjustmentPrecision_Adjustment is available
+   
+{bmc bm1.bmp} ClickCLICK@Sem.HLP on the Adjustable Width Measurement Icon to switch the function on.  {bmc bm1.bmp} Point to the Zone for which you want to place the Adjustable Width Measurement and click.  {bmc bm1.bmp} Click on the rectangle, pick the handleHandles@Sem.HLP and dragDRAG@Sem.HLP it to size.  {bmc bm1.bmp} Click on the left line, pick the handle and place it.  {bmc bm1.bmp} Click on the right line, pick the handle and place it.  {bmc bm1.bmp} Double clicking on one of the markers calls the Results PanelResults_Panel_Parameters which annotates the Adjustable Cursor Width.  {bmc bm1.bmp} The data from this objects results panelResults_Panel_Parameters can be copied to the clipboard for insertion into a speadsheet. This is achieved using the Annotation CopyAnntotation_to_Clipboard Popup Menu item. 		  {bmc bm6.bmp} 	
+{bmc bm3.bmp}	The dimensional measurement is derived from the zone magnification hence when multiple zones are present both lines are brought into the same zone.
+
+{bmc bm4.bmp}	There are 10 instances available.
+
+See also Retrospective MeasurementRetrospective_Measurement. 		 Properties of Adjustable Width MeasurementProperties_of_Adjustable_Width_Measurement
+$#>Alignment Grid Spacing
+
+An Alignment Grid pattern can be defined. Objects on the Overlay Plane can be aligned to the grid raster. This helps to make a picture look well structured especially if may objects are shown.
+
+{bmc bm7.bmp} You must be in  Annotation Mode.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clickingCLICK@Sem.HLP with the right mouse button.
+
+ {bmc bm1.bmp} Select Grid Settings. The Panel opens.  {bmc bm1.bmp} Type in the Spacings in Width and Height in number of pixels.  {bmc bm1.bmp} Select Snap to Grid in Options if you want all objects to snap to the grid automatically.  {bmc bm1.bmp} With <OK> the new grid setting is accepted.  {bmc bm1.bmp} <Cancel> terminates the panel without change.  	 {bmc bm9.bmp}	
+
+$#>KAlignment of Annotation Objects
+
+Annotation objects can be aligned laterally by snapping them to an Alignment Grid.
+
+They can also be aligned in layers where partial overlap may be present. They can be brought forward or set back. 
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Leo_1500.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm1.bmp}	To align the marked object(s) laterally click on Snap to Grid. Alignment Grid SpacingAlignment_Grid_Spacing can be adjusted.
+
+{bmc bm1.bmp}	Select Bring to Front to bring the marked object(s) on top of all others.
+
+{bmc bm1.bmp}	Select Bring Forward to move the marked object(s) on level to the front.
+
+{bmc bm1.bmp}	Select  Send to Back to take the marked object(s) the furthest behind.
+
+{bmc bm1.bmp}	Select Send Back to move the marked object(s) one level back.
+
+{bmc bm4.bmp}	 Depending on the relative level with respect to other layers Bring to Front and Bring Forward or Send to Back and Send Back may not be available.
+$#>{bmc bm11.bmp}  Angular Measurement
+
+The angular measurement facility comprises a related pair of measurement lines, a reference line (identified by the symbol AaRn) and a measurement line (identified by Aan). Each line has a 'blob' at the end which identities it's centre of rotation. Each line may be adjusted in length, angle and position. Precision AdjustmentPrecision_Adjustment is available
+
+{bmc bm1.bmp} ClickCLICK@Sem.HLP on the Angular Measurement Icon to switch the function on.  {bmc bm1.bmp} Point to the Zone for which you want to place the Angular Measurement Markers and click.  {bmc bm1.bmp} Pick the handlesHandles@Sem.HLP of the Reference Line AaRn and place them.  {bmc bm1.bmp} Pick the handles of the Measurement Line Aan and place them.   {bmc bm1.bmp} Double clicking on one of the lines calls the Results PanelResults_Panel_Parameters loaded from file An.ANN containing the measurement parameter Aa n the angle between the lines where n is the instance identifier (i.e. 1 for first object created, 2 for second object)  {bmc bm1.bmp} The data from this objects results panelResults_Panel_Parameters can be copied to the clipboard for insertion into a speadsheet. This is achieved using the Annotation CopyAnntotation_to_Clipboard Popup Menu item. 	 {bmc bm12.bmp}  Note: If in reduced formatReduced_Format_display_of_results the acute angle between the lines is displayed instead of the angle relative to the reference line	
+See also	Properties of Angular MeasurementProperties_of_Angular_Measurement
+$#>KAnnotating the Image
+
+Annotation can be performed in several ways:
+
+{bmc bm13.bmp} 	Text AnnotationText_Annotation  to add text, current date, current time, and user name to the Image Overlay plane. Font, styles and colours may be defined for each individual text string. The function can be directly called with <CTRL + T>. For properties like font, background, alignment of text see Properties of Text AnnotationProperties_of_Text_Annotation	
+{bmc bm14.bmp} 	Parameter AnnotationParameter_Annotation allows any parameter of the SEM to be included in the annotation overlay. For properties like font, background, alignment of parameter text see Properties of Parameter AnnotationProperties_of_Parameter_Annotation	
+{bmc bm15.bmp}	Insert User Bitmap or MetafileInsert_User_Bitmap_or_Metafile allows to insert bitmaps or metafiles which the user generated like logos or other special signs. For properties like background or alignment of the picture see Properties of Bitmap AnnotationProperties_of_Bitmap_Annotation 	
+{bmc bm16.bmp}	Line AnnotationLine_Annotation adds a line to the overlay plane. The line may be configured as an arrow. For properties like pen setting, arrow head or alignment of the line see Properties of Line AnnotationProperties_of_Line_Annotation	
+{bmc bm17.bmp}	Rectangle AnnotationRectangle_Annotation adds a rectangle to the overlay plane. The rectangle may be filled or transparent. For properties like pen setting, brush setting or alignment of the rectangle see Properties of Rectangle AnnotationProperties_of_Rectangle_Annotation	
+{bmc bm18.bmp}	Ellipse AnnotationEllipse_Annotation adds an ellipse to the overlay plane. The ellipse may be filled or transparent. For properties like pen setting, brush setting or alignment of the ellipse see Properties of Ellipse AnnotationProperties_of_Ellipse_Annotation	
+{bmc bm19.bmp}	Sticky Panel AnnotationSticky_Panel_Annotation adds a rectangle to the overlay plane. The rectangle may be filled or transparent. For properties like pen setting, brush setting or alignment of the rectangle see Properties of Sticky Panel AnnotationProperties_of_Sticky_Panel_Annotation	
+{bmc bm20.bmp}	TIFF Data AnnotationTIFF_Data_Annotation displays data which have been saved with a TIFF file and retrieved again. For properties like font, background, alignment see Properties of TIFF Data AnnotationProperties_of_TIFF_Data_Annotation	
+ 	Data ZoneData_Zone is a panel with annotation placed upon it, and as such it may be edited as any other annotation panel. However Data Zone design can be individually saved by the user and loaded back again for later use.	
+
+{bmc bm4.bmp}	Note : All annotation and measurement objects created on screen can be saved or printed with the image by selecting the Overlay plane On from the Export TIFF Setup menu.
+$#>Annotation File Types (.ANN, .ADZ)
+
+Annotation ObjectsObject_Selection that can be saved is stored in .ANN files along with their respective propertiesObject_Properties  (some objects such as the reduced rasterReduced_Raster_Object box cannot be saved as annotation). This may be useful if a specific overlay is required to load on top of an image in the SEM Image Store, or if a frequently used set of measurement objects needs to be created more easily.
+
+The reason for the Annotation having two file extensions is that if the user wishes to load in a special user defined DataZoneData_Zone, then the definition for the DataZone is saved as an .ADZ file. If the file is saved as CURRENT.ADZ in the User Directory, then when the DataZone is displayed from the SEM User Interface this annotation file is loaded. The internal formats of the .ADZ and .ANN files are otherwise identical.
+
+Note : As this file is automatically saved when any changes are made to the current DataZone, do not copy a user defined DataZone over CURRENT.ADZ while the SEM User Interface is loaded. This is because at the next DataZone change, CURRENT.ADZ will be overwritten with whatever is currently in memory, overwriting any CURRENT.ADZ file already present on disk.
+$#>KAnnotation Settings Popup Menu
+
+ {bmc bm8.bmp}  ClickingCLICK@Sem.HLP in the Image WindowGIRNF0@Sem.HLP with the right mouse button whilst in Image Manager Select ModeSelect_Mode will display a popup menu that is similar to the one shown below :
+
+The functions that this menu usually provides are :   {bmc bm21.bmp} AnnotationConfiguring_Annotation   {bmc bm21.bmp} Send toImage_Export_Functions   {bmc bm21.bmp} Import TIFFImport_TIFF   {bmc bm21.bmp} User Calibration EnableUser_Calibration_Enable	{bmc bm22.bmp}	
+
+{bmc bm4.bmp}	If Image Manager is not in Select ModeSelect_Mode but is in Mouse Control ModeMouse_Control_Mode, then the right mouse button calls the Utility Popup MenuUtility_Popup_Menu instead.
+$#Annotation Warning
+{bmc bm3.bmp}  WARNING CONCERNING ANNOTATION
+
+If it is required to save an image into a TIFF file and later to load and print it to hardcopy then do not include the magnification value when saving to file.
+If the annotation (e.g. data zone) is merged into the image and saved to a TIFF file then the magnification will be that with reference to the display device. If the file is subsequently reloaded and printed then the magnification VALUE will not be correct for this media.
+
+NOTE: The facility is provided to fix the output magnification to be referenced to a Polaroid 54532AVUYD@leoserv.hlp
+
+For unambiguous magnification use a Micron MarkerMicron_Marker.
+
+
+However, the file will contain the pixel sizes for each zone on the reloaded image so that the correct magnification can be re-established using Zone MagnificationZone_Magnification.
+
+For measurement on imported TIFF files also observe Measurement WarningMeasurement_Warning.
+$#>KAnnotation to Clipboard
+
+These functions perform Cut, Copy and Paste to/from the memory with selected annotation objects similar to Clipboard usage in Windows. 
+
+Ensure first that all of the objects that are to be Cut, Copied or Pasted are selectedObject_Selection. To bring up the Annotation menu, right click the mouse button outside any of the selected objects (as right clicking on any of the selected objects brings up the objects propertiesObject_Properties popup menu).
+
+Cut:
+Store the selected annotation objectsObject_Selection in memory and remove them from the overlay plane.
+
+Copy:
+Store the selected annotation objects in memory but leave them on the overlay plane too.
+
+Note : When performing a Copy operation on any of the following measurement objects results panelsResults_Panel_Parameters, the measurement data associated with them is copied to the clipboard in text format (Only the data appearing in the selected results panel will be copied. For the profile and histogram objects, ensure that the profile graphic or histogram graphic is selected before performing the copy function) :
+
+1.	Point to PointPoint_to_Point 
+2.	Stored Vector ProfileStored_Vector_Profile (Optional Profile Width, followed by profile image data values 0..255, one data value per pixel covered).
+3.	Stored HistogramStored_Data_Histogram (A set of 256 values, each containing the pixel count for bin n where n = 0..255).
+4.	AngularAngular_Measurement 
+5.	RadialRadial_Measurement
+6.	Line WidthLine_Width
+
+This special feature allows applications such as spreadsheets to graph/accumulate the data in their own special format, directly from the SEM User Interface. Note that all values are in standard engineering units (Amps, Metres, Volts, Degrees).
+
+Paste:
+Copy the annotation objects which have been copied or pasted previously to the overlay plane.
+
+{bmc bm3.bmp}	The Data ZoneData_Zone is also cut if it was selected. You can regain the Data Zone by pasting it back.
+$#>KBackground Colour Property
+
+The object background colour property is selected by choosing a colour from a Colour Selection DialogColour_Selection_Dialog.
+
+This property is used when the object background mode property is set to Solid/Opaque. 
+When the property is solid, certain rules are used to determine how the background of the object is actually painted.
+$#>Background Mode Property
+
+This property can either be :
+
+{bmc bm21.bmp}	Solid/Opaque
+
+{bmc bm21.bmp}	Transparent
+
+If the property is transparent, then only the current Pen PropertySelection_of_Pen_Settings is used to draw the object.
+$#>Background Settings
+
+After an Annotation Object has been created it's properties can be changed.
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+ {bmc bm1.bmp} Select Solid Background Mode or Transparent Background Mode. The selected mode is marked {bmc bm23.bmp}  {bmc bm1.bmp} If you selected Solid Background Mode you may select  Background Colour. This is the colour which fills the rectangle.   {bmc bm1.bmp} Click on a colour field to activate it.  {bmc bm1.bmp} With <OK> the selection is accepted and the marked picture will be presented with the new background selection.  {bmc bm1.bmp} <Close> or {bmc bm24.bmp} terminate the panel without change.   {bmc bm4.bmp}  Note: The BrushSelection_of_Brush_Settings may still paint on the Background with a different colour and pattern. 	 {bmc bm25.bmp}	
+
+$#>KBrush Settings
+
+The following dialog is used to select brush settings for an Image Manager Object :
+
+{bmc bm26.bmp}
+
+The following brush styles can be selected :
+
+{bmc bm21.bmp}	Solid
+{bmc bm21.bmp}	Hollow Brush
+{bmc bm21.bmp}	_______
+{bmc bm21.bmp}	| | | | | | | | 
+{bmc bm21.bmp}	\ \ \ \ \ \ \ \
+{bmc bm21.bmp}	/ / / / / / / /
+{bmc bm21.bmp}	|-|-|-|-|-|-|-| 
+{bmc bm21.bmp}	XXXXXX
+
+The colour of the brush is selected by double clicking the colour box, and choosing a colour from a colour selection dialog.
+$#>Calibration Crosses
+
+This object is used for SEM calibration purposes
+$#>KCalibration Lines
+
+This object is used for SEM calibration purposes
+$#>Calling the Annotation Toolbar
+   
+{bmc bm27.bmp} Type <ALT + E> to open the Edit Menu  {bmc bm10.bmp} Point to Annotation and clickCLICK@Sem.HLP with the left mouse button.  or  {bmc bm28.bmp} Use the short cut <CTRL + A> to access the function directly.  The Annotation Toolbar Panel opens displaying the icons for the Annotation FunctionsContents.  {bmc bm29.bmp} To close the Annotation Toolbar Panel click on {bmc bm24.bmp}.  The Toolbar titel bar may display text other than Annotation in some instances. H:n in its title means that there are a number of hidden objects present where n represents the number of objects currently hiddenHidden_Objects. O:n in its title means that there are n off-screen objects placed outside the 1024x768 display area (see the recovery methodRecover_All_Offscreen for this situation). S in its title means that the snap to grid option is currently enabled (see Alignment Grid SpacingAlignment_Grid_Spacing dialog).		{bmc bm30.shg}	
+
+If your Image Manager toolbar has fewer buttons than are displayed above, or if some of the buttons are greyed out then this may be for a number of reasonsReasons_for_missing_greyed_Functions.
+$#>KCaption Property
+
+This property typically defines the text that is displayed in a Text AnnotationText_Annotation Object. 
+
+A caption dialog is displayed when this property is selected.
+$#>Changing Annotation Settings
+
+This function is accessed via the Image Manager Context Sensitive Popup MenuContext_Sensitive_Popup_Menu in Select ModeSelect_Mode, and contains a number of commands and preference settings. 
+
+	{bmc bm21.bmp}	Undo Last Edit/DeleteUndo_Last_Edit
+
+	{bmc bm21.bmp}	Cut Selected AnnotationCut_Selected_Annotation
+	{bmc bm21.bmp}	Copy Selected AnnotationCopy_Selected_Annotation
+	{bmc bm21.bmp}	Paste AnnotationPaste_Annotation
+
+	{bmc bm21.bmp}	Select All SeenSelect_All_Seen
+	{bmc bm21.bmp}	Delete All SeenDelete_All_Seen
+
+	{bmc bm21.bmp}	Hide Annotation ObjectsHide_Annotation
+	{bmc bm21.bmp}	Unhide Annotation ObjectsUnhide_Annotation
+
+	{bmc bm21.bmp}	Recover all off ScreenRecover_All_Offscreen
+
+	{bmc bm21.bmp}	The Annotation Options PanelThe_Annotation_Options_Panel
+$#KClipboard Copy
+
+When the Copy tab of the Clipboard dialogExport_to_the_System_Clipboard is displayed the operator is able to define whether to include annotation with the image and what area of the image should be copied.
+{bmc bm31.bmp}	The Image Window should be frozen before attempting to copy to the clipboard.
+Select the Store ResolutionStore_resolution from the Drop-down List. which selects the pixel density of the copied image. Annotation, Overlay and Color can be mergedmerge_settings into the image if selected by {bmc bm32.bmp}. If As seen is checked {bmc bm32.bmp} the image data copied must first be transformed using the RED portion of the display LUT. A Reduction between 1 (no reduction) and 8 may be selected from the Drop-down List. If the check box labeled Whole has been checked {bmc bm32.bmp}, the whole screen area, which will be overlayed blue, will be copied as the image.	{bmc bm33.bmp}	
+If this check box is not checked, then the operator can define the area to be saved by resizing the area of the blue box. using the handlesHandles. or setting the dimensions in the Dimensions box by typing values for X (start x), Y (start y), W (width), and H (height) and click on Set. Clicking on the Centre button will position the defined area about the centre of the screen. To terminate the clipboard without copying click on {bmc bm24.bmp}.  See Annotation WarningAnnotation_Warning See PasteClipboard_Paste	{bmc bm34.bmp}	
+
+$#Clipboard Paste
+When the Paste tab of the Clipboard dialogExport_to_the_System_Clipboard is displayed the operator is able to select to where the image should be pasted.
+{bmc bm31.bmp}  Before an image may be pasted the image store must be frozen.
+From the Drop-down List the resolutionStore_resolution for pasting the image in the image store can be selected. Also the Image Reduction may be selected from another Drop-down List. The screen area, where the image will be imported to is marked in red. Load at allows to select Centre where the pasted image is centered in the Image Window.  Origin places it at the screen origin, and X,Y allows to set individual coordinates.	{bmc bm35.bmp}	
+{bmc bm10.bmp}  Also the area may be dragged with the mouse to a position. If Step Frame is checked {bmc bm32.bmp} the pasted image will be offset by a frame width or frame height after pasting.  When all parameters are set, press <Paste> to actually paste the image.  To terminate the clipboard without pasting click on {bmc bm24.bmp}.	{bmc bm36.bmp}	
+See also CopyClipboard_Copy
+$#>Co-ordinate System
+
+Although the store resolution of the SEM Image can be greater or less than the viewport area, Image Manager always works over a 1024x768 display area. 
+
+This is an important point, as all cartesian co-ordinates used by Image Manager are also in these display units.
+
+The top left co-ordinate (0,0) represents the origin of the display. 
+
+The bottom right limit of the display area is therefore at co-ordinate (1023, 767).
+$#>KColour Selection Dialog
+
+
+The Image Manager uses the following dialog to prompt for a colour selection   {bmc bm1.bmp} ClickCLICK@Sem.HLP on the desired colour field.  {bmc bm1.bmp} Click on the OK button to accept the color and close the dialog.  {bmc bm1.bmp} Click on the Close button or click on {bmc bm24.bmp} to reject the selection and close the dialog. {bmc bm4.bmp} Note that the solid colours differ from some of the Basic colours in that there may be more than one colour that is used to make up a Basic colour. This technique is called dithering.	{bmc bm25.bmp}	
+
+$#>Configuring Annotation
+
+The Annotation Settings popup menuAnnotation_Settings allows quick and easy access to a number of control functions to edit and manipulate the annotation on the image.  {bmc bm1.bmp} Switch on the Annotation ToolbarCalling_the_Annotation_Toolbar   {bmc bm1.bmp} {bmc bm8.bmp}  ClickCLICK@Sem.HLP in the Image WindowGIRNF0@Sem.HLP with the right mouse button. The Annotation Settings Popup MenuAnnotation_Settings opens. Choose the Annotation {bmc bm1.bmp} menu item.  {bmc bm4.bmp} If Image Manager is not in Select ModeSelect_Mode, then the right mouse button calls the Utility Popup MenuUtility_Popup_Menu instead, and the Annotation {bmc bm1.bmp} option is replaced by a Commands {bmc bm1.bmp} menu item.  The user may define his own settings, store them on disk and load them back again via the Annotation Options...The_Annotation_Options_Panel Menu item.  Detailed informationChanging_Annotation_Settings is provided on each of the topics shown in the panel on the right.   {bmc bm10.bmp} Point to the topic of interest. When the cursor changes from {bmc bm37.bmp}to {bmc bm38.bmp}help is available. Click to present the additional information. 		{bmc bm39.shg}	
+
+$#>KAnnotation and Measurement
+
+The Annotation panel provides a comprehensive means of putting additional information on the SEM image. Text, SEM Parameter Data, and even bitmaps (like logos etc.) can easily be added to the image. In addition features of the image can be measured in many different ways which include distances, diameters, angles.
+
+For additional information see 
+
+		Calling the Annotation ToolbarCalling_the_Annotation_Toolbar			Mouse ControlMouse_Control			Undo Last EditUndo_Last_Edit
+
+		Loading AnnotationLoading_Annotation				Saving AnnotationSaving_Annotation 
+
+		Delete all Visible ObjectsDelete_all_Visible_Objects				Export Area SelectionExport_Area_Selection
+
+		Annotating the ImageAnnotating_the_Image				Measuring Image FeaturesMeasuring_Image_Features>main
+
+		Configuring AnnotationConfiguring_Annotation				Keyboard AdjustmentKeyboard_Adjustment
+
+		Image Export FunctionsImage_Export_Functions 				Image Import FunctionsImage_Import_Functions
+
+
+Additional Information:
+
+		Software PrinciplesSoftware_Principles				Object PropertiesObject_Properties
+
+		SEM  Menu BarSEM__Menu_Bar					Context Sensitive Popup MenuContext_Sensitive_Popup_Menu
+
+		DatazoneData_Zone						String and Counting ParametersString_and_Counting_Parameters
+
+For Service only:
+
+		SEM CalibrationSEM_Calibration
+$#>Context Sensitive Popup Menu
+
+Depending on the current Image Manager Operating ModeImage_Manager_Operating_Mode, (either Select ModeSelect_Mode or Mouse Control ModeMouse_Control_Mode) clickingCLICK@Sem.HLP the right mouse button in the SEM Image WindowGIRNF0@Sem.HLP will cause a Pop-up Menu to be displayed. 
+
+The contents of this menu is determined by the above Image Manager operating mode, and whether or not the cursor is over an Image Manager ObjectImage_Manager_Objects (when the mouse cursor is over an object, it must usually first be selected). Each of the types of Pop-up Menu are discussed below:
+
+{bmc bm8.bmp} Right clicking on the Image in Image Manager Select ModeSelect_Mode displays the Annotation Settings Popup MenuAnnotation_Settings
+
+{bmc bm8.bmp} Right clicking on the Image in Mouse Control Mode Mouse_Control_Mode displays the Utility Popup MenuUtility_Popup_Menu
+
+{bmc bm8.bmp} Right clicking on a Selected Image Manager ObjectObjects_Properties_Menu
+$#>Copy Selected Annotation
+
+Accessed via the Annotation SettingsAnnotation_Settings Popup Menu, this function copies selected objectsObject_Selection into a temporary file ready for pasting back into the Image WindowGIRNF0@Sem.HLP as new objects. 
+
+The System Clipboard is not used for this operation
+
+Use the Undo FunctionUndo_Last_Edit_Delete to restore any annotation objects affected by this function.
+$#>KCreation of Objects
+
+To create an object, bring up the Annotation ToolbarCalling_the_Annotation_Toolbar by 
+
+{bmc bm28.bmp}  pressing <CTRL+A> or {bmc bm10.bmp} selecting Edit then Annotation from the Menu Bar8ZP0K4@Sem.HLP. 
+
+Most of the Image Manager Objects follow the same principle when creating them, so the example below shows how to create an Ellipse Annotation Object :
+{bmc bm1.bmp} From the toolbar click the grey ellipse {bmc bm18.bmp}. Note that the button presses down and stays down.  {bmc bm1.bmp} Move the mouse pointer to the part of the image where the top left of the object is to be placed.  {bmc bm1.bmp} Press the left mouse button and hold it down.	{bmc bm40.bmp}	
+{bmc bm1.bmp}	Now dragDRAG@Sem.HLP the mouse left and down, Image Manager draws a 'ghost' object of the ellipse that follows or 'tracks' the mouse, the SEM UIF Status BarRDJHU5@Sem.HLP will display object dimensions as the mouse is dragged.
+
+{bmc bm1.bmp}	When the ellipse is at a reasonable size, let go of the left mouse button
+
+{bmc bm1.bmp}	Image Manager creates the object in place of the 'ghost' object.
+
+{bmc bm4.bmp} Note also that in Select ModeSelect_Mode, the object is shown to be selected as it it highlighted by selection handlesHandles@Sem.HLP.
+
+{bmc bm4.bmp} Note : Most objects have a default size if the mouse is simply clicked once on the image to denote the top left corner of the object. If the object does not create however, the initial 'ghost' object  may need to be dragged to at least a certain size.
+$#>Crosshairs Object
+
+The lines of Crosshairs intersect at the center of the image
+
+	{bmc bm41.bmp}
+
+This object is called from the SEM Menu BarSEM__Menu_Bar
+$#>KCut Selected Annotation
+
+Accessed via the Annotation SettingsAnnotation_Settings Popup Menu, this function moves selected objectsObject_Selection into a temporary file ready for pasting back into the Image WindowGIRNF0@Sem.HLP as new objects. 
+
+The System Clipboard is not used for this operation
+
+Use the Undo FunctionUndo_Last_Edit_Delete to restore any annotation objects affected by this function.
+$#>Data Zone
+
+The data zone is a special group of annotation objects which are used to display current parameters, including if required a micron marker showing the base magnification. The data zone objects are disconnected from the normal annotation objects (e.g. reset does not remove them) and they are switched on/off using the top menu function from Menu View6Y3XP3@Sem.HLP.
+
+{bmc bm42.bmp}
+
+The user may edit the data zone by using the technique of Sticky Panel AnnotationSticky_Panel_Annotation .
+
+Modifications to the Data Zone, for example the addition of SEM Parameter ObjectsSEM_Parameter_Object, will be saved automatically.
+
+When a Data Zone is subsequently recalled it is loaded from a CURRENT.ADZAnnotation_File_Types file in the users directory.
+
+Note : As this file is automatically saved when any changes are made to the current DataZone, do not copy a user defined DataZone over CURRENT.ADZ while the SEM User Interface is loaded. This is because at the next DataZone change, CURRENT.ADZ will be overwritten with whatever is currently in memory, overwriting any CURRENT.ADZ file already present on disk.
+
+User Datazones savedSave_As_Datazone in a files may be loaded from the Main Interface Menu View - Datazones - Load User Datazone.
+
+{bmc bm3.bmp}	Note: If the data zone is to be used for annotation of hard copy and the image has been loaded from TIFF file then only those objects which reflect the data in the TIFF file should be used (TIFF dataTIFF_Data_Annotation , Retrospective MeasurementRetrospective_Measurement)
+
+See also How to Create a datazoneO3YXGB@how_to.hlp and How To Edit a Datazone2E164BN@how_to.hlp
+$#>KDelete All Seen
+
+Deletes all visible Annotation ObjectsDelete_all_Visible_Objects from the ovelay plane.
+
+{bmc bm3.bmp}	The Data ZoneData_Zone is not deleted.
+
+{bmc bm3.bmp}	Deletion can be reversed with Undo Last Edit/DeleteUndo_Last_Edit_Delete. 
+$#>{bmc bm43.bmp}  Delete all Visible Objects
+
+{bmc bm10.bmp}	ClickingCLICK@Sem.HLP on the Delete all Visible Objects icon clears the complete overlay plane (annotations, measurements), and then the icon is disabled (greyed).
+
+{bmc bm4.bmp}	The icon is only active if annotation objects are present in the overlay plane.
+
+{bmc bm31.bmp}	If you have deleted the overlay plane by accident the Undo Last Edit function {bmc bm44.bmp} brings it back.
+$#>KDeleting of Annotation
+
+The annotation object can be deleted:
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm28.bmp}	The direct command (Short Cut) from the Keyboard is <DEL>  to delete the annotation object
+
+or
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm29.bmp}	Click on Delete to delete the annotation object.
+
+
+{bmc bm3.bmp}	Warning: Make sure that you have selected the object you want to delete. Otherwise another item which was previously selected may be deleted.
+
+{bmc bm4.bmp} Some objects such as the Data ZoneData_Zone, or the Reduced RasterBFKLC0@Sem.HLP objects for example will not be affected by this function. Hidden ObjectsHidden_Objects are also unaffected by this action.
+
+{bmc bm31.bmp} Use the UndoUndo_Last_Edit function to restore any mistakenly deleted annotation.
+$#>Direction Arrow Property
+
+This property defines whether or not an arrow-head is drawn on a Line ObjectLine_Annotation. 
+
+The end of the line at which the arrow head is drawn is determined by the first point clicked when creating the line object.
+
+The arrow head orientation automatically compensates for the angle of the line.
+$#>KDual Magnification Object
+
+This object is a 'mode graphic' and simply exists to depict boundaries of the SEM Dual Magnification ModeOMU1V2@Sem.HLP. 
+
+{bmc bm27.bmp}  This function can be selected from the SEM Menu Bar8ZP0K4@Sem.HLP. 
+
+The colour of this graphic can be changed from the Annotation Settings Popup MenuAnnotation_Settings under Selection of Pen SettingsSelection_of_Pen_Settings.
+
+The size of the adjustment box displayed depicts the zoom factor applied to the right hand side of the Split Mode1QEXFRQ@Sem.HLP image.
+
+The selected objectObject_Selection can be reseized by draggingDRAG@Sem.HLP its selection handlesHandles@Sem.HLP to the desired object size, or moved by clickingCLICK@Sem.HLP on one of the objects lines and dragging the mouse. After the mouse button is released, the SEM Dual Magnification Mode parameters are set to these new values.  When selected, this object can be deletedDeleting_of_Annotation by using its PropertiesObjects_Properties_Menu popup menu. Deleting this object sets the SEM to Normal Mode4LTP_XJ@Sem.HLP.  Special Features  {bmc bm21.bmp} When adjusting the objects selection handles, the Dual Mag Object scales from its centre point, altering the zoom factor accordingly.	{bmc bm45.bmp}	
+{bmc bm21.bmp}	The dual magnification object is a 'hollow' object, this means that in Mouse Control ModeMouse_Control_Mode, the mouse can be clicked and dragged inside the dual magnification object to adjust any parameters assigned to the mouse such as magnification and focus. When selected, the cursor changes shape to a mini dual magnification graphic {bmc bm46.bmp} when the mouse is over an adjustable part of the dual magnification object. 
+$#>{bmc bm18.bmp}  Ellipse Annotation
+
+Adds an ellipse to the overlay plane. The ellipse can be transparent or filled with a pattern.
+
+{bmc bm1.bmp} Select the Ellipse Annotation Icon.  {bmc bm1.bmp} Point to the place where you want to start the ellipse and dragDRAG@Sem.HLP to the place where you want to end the ellipse. {bmc bm31.bmp} Holding down <SHIFT> while dragging the mouse generates a circle around the centre.  {bmc bm1.bmp} The ellipse will be shown at the selected place of the Image Window and can be dragged into the required position. 	  {bmc bm40.bmp}	
+{bmc bm1.bmp}	The handlesHandles@Sem.HLP of the ellipse can be picked up and be used for reseizing the ellipse.
+{bmc bm1.bmp}	Holding the <SHIFT> key down whilst adjusting a selection handle will cause the ellipse object to snap to a circle. 
+{bmc bm1.bmp}	Using the <SHIFT> key and the diagonal selection handles will shrink and grow the object from its centre point.
+
+The coordinates of the ellipse are displayed in the Status BarRDJHU5@Sem.HLP. {bmc bm47.bmp}
+(From corner X/Y to opposite corner X/Y, centre X/Y, size X/Y)
+
+See also	Properties of Ellipse AnnotationProperties_of_Ellipse_Annotation
+
+$#Export Area
+
+Select {bmc bm32.bmp} Whole to save the whole of the screen area.
+
+If you do not select this you may adjust the size and position 
+of the area to save using the Export Area Select objectA0EX2V
+
+Alternatively enter the dimensions and press the Set button
+
+Press the Centre button to centralise the area object.
+$#Export Area Object
+
+
+Once created by the TIFF Import DialogImport_TIFF, this object allows the area it defines on the Image WindowGIRNF0@Sem.HLP to be used to Export Image Data to a File.  The selectedObject_Selection object can be moved by clickingCLICK@Sem.HLP inside the object and draggingDRAG@Sem.HLP the mouse.  By selecting the handles of the object and dragging the size may be adjusted.  Right clicking on the object displays its properties menuAnnotation_Settings. From this menu, new object attributes or properties can be defined for this instance of the object.	{bmc bm34.bmp}	
+		
+
+$#>K{bmc bm48.bmp}  Export Area Selection
+
+This function is used to define an Image area for export to file.
+
+{bmc bm10.bmp}	ClickingCLICK@Sem.HLP on the Export Area Selection icon {bmc bm48.bmp} enables the export areaA0EX2V to be drawn on the image.
+
+{bmc bm8.bmp}	Right mouse click to display the pop up menu, select Send To (or Properties if the area selection Object is selected) and select the required destination.
+For details refer to Image Export Image_Export_Functions
+
+$#KExport BMP Save
+This is a tab on the Export BMP DialogExport_BMP_file   				Select Change Directory11JZ0YM@leoserv.hlp if required.
+The list box displays the current files in the image directory  {bmc bm1.bmp} Select {bmc bm32.bmp}Wide File List to display longer file names without scrolling horizontally  {bmc bm1.bmp} Select  Dimensions /AreaUKJGL_ to save  {bmc bm1.bmp}Select what to Mergemerge_settings into the image  {bmc bm1.bmp}Select Store resolutionStore_resolution  {bmc bm1.bmp}Define File Name (See SettingsExport_BMP_Settings )  {bmc bm1.bmp}Save the file by pressing the SAVE button or typing ENTER  See also SettingsExport_BMP_Settings 	{bmc bm49.bmp}	
+
+$#Export BMP Settings
+This is a tab on the Export BMP DialogExport_BMP_file   				 To change the directory see User Preferences6T9R6I@leoserv.hlp
+ {bmc bm1.bmp} Select the amount of spatial reduction to be performed on the exported image  Select Filename FormatFilename_Format   See also SaveExport_BMP_Save 	{bmc bm50.bmp}	
+
+$#Export BMP file
+This dialog is used to save images in Bitmap format
+The caption of this dialog shows the current image directory. Select Change Directory11JZ0YM@leoserv.hlp if required.
+ When this function is selected  from the Context Sensitive Popup MenuContext_Sensitive_Popup_Menu, a dialog is displayed similar to the one shown right:  When using the Annotation ToolbarCalling_the_Annotation_Toolbar, this dialog is displayed after creatingCreation_of_Objects an  Export selection ObjectExport_Area_Selection.   If no  Export selection Object is visible when this dialog is activated, the Image Manager will automatically create one.  For more details on each tab see Export BMP SaveExport_BMP_Save Export BMP SettingsExport_BMP_Settings    See also Magnification Reference32AVUYD@leoserv.hlp 	{bmc bm49.bmp}  {bmc bm3.bmp} See Annotation WarningAnnotation_Warning	
+
+$#KExport File Save
+This Tab is used to control the saving of images to file.
+
+The caption indicates the type of file format being saved.
+
+For details see:
+
+Export Tiff SaveExport_TIFF_Save
+Export BMP SaveExport_BMP_Save
+Export JPEG SaveExport_JPEG_Save
+$#Export File Settings
+This Tab is used to define the settings used in the saving of images to file.
+
+The caption indicates the type of file format being saved.
+
+For details see:
+
+Export TIFF SettingsExport_Tiff_Settings
+Export BMP SettingsExport_BMP_Settings
+Export JPEG SettingsExport_JPEG_Settings
+$#Export JPEG Save
+This is a tab on the Export JPEG DialogExport_to_a_JPEG_file   				Select Change Directory11JZ0YM@leoserv.hlp if required.
+The list box displays the current files in the image directory {bmc bm1.bmp} Select {bmc bm32.bmp}Wide File List to display longer file names without scrolling horizontally  {bmc bm1.bmp} Select  Dimensions /AreaUKJGL_ to save  {bmc bm1.bmp}Select what to Mergemerge_settings into the image  {bmc bm1.bmp}Select Store resolutionStore_resolution  {bmc bm1.bmp}Define File Name (See SettingsExport_BMP_Settings )  {bmc bm1.bmp}Save the file by pressing the SAVE button or typing ENTER  See also SettingsExport_BMP_Settings 	{bmc bm51.bmp}	
+
+$#Export JPEG Settings
+This is a tab on the Export BMP Dialog   				 To change the directory see User Preferences6T9R6I@leoserv.hlp
+ {bmc bm1.bmp} Select the amount of spatial reduction to be performed on the exported image  Select Filename FormatFilename_Format   Select JPEG QualityJPEG_Quality  See also SaveExport_JPEG_Save 	{bmc bm52.bmp}	
+
+$#>Export TIFF
+
+The caption of this dialog shows the current image directory. Select Change Directory11JZ0YM@leoserv.hlp if required.
+When this function is selected from either the SEM Menu Bar8ZP0K4@Sem.HLP or from the Context Sensitive Popup MenuContext_Sensitive_Popup_Menu, a dialog is displayed similar to the one shown right:  When using the Annotation ToolbarCalling_the_Annotation_Toolbar, this dialog is displayed after creatingCreation_of_Objects an  Export selection ObjectExport_Area_Selection.   If no  Export selection Object is visible when this dialog is activated, the Image Manager will automatically create one.  For more details on each tab see Export TIFF SaveExport_TIFF_Save Export TIFF SettingsExport_Tiff_Settings Export TIFF DataExport_Tiff_Data  See also Magnification Reference32AVUYD@leoserv.hlp 	{bmc bm53.bmp} {bmc bm3.bmp} See Annotation WarningAnnotation_Warning	
+See also String ParametersString_Parameters
+$#Export TIFF Save
+
+This is a tab on the Export TIFF DialogExport_TIFF    				 Select Change Directory11JZ0YM@leoserv.hlp if required.
+ The list box displays the current files in the image directory {bmc bm1.bmp} Select {bmc bm32.bmp}Wide File List to display longer file names without scrolling horizontally  {bmc bm1.bmp} Select  Dimensions /AreaUKJGL_ to save  {bmc bm1.bmp}Select what to Mergemerge_settings into the image  {bmc bm1.bmp}Select Store resolutionStore_resolution  {bmc bm1.bmp}Define File Name (See SettingsExport_Tiff_Settings )  {bmc bm1.bmp}Define User TextTIFF_User_Text  {bmc bm1.bmp}Save the file by pressing the SAVE button or typing ENTER  See also SettingsExport_Tiff_Settings and DataExport_Tiff_Data	{bmc bm53.bmp}	
+
+$#Export Tiff Data
+
+This is a tab on the Export TIFF DialogExport_TIFF    				 To change the directory see User Preferences6T9R6I@leoserv.hlp
+   
+This tab allows you to select parameter data to be saved in Leo Reserved Tag fields embedded in the TIFF file.  This data may be inspected in the TIFF Import dialog and displayed as annotationTIFF_Data_Annotation  {bmc bm1.bmp} Click ADD to select a parameter to be added to the list  {bmc bm1.bmp} Select a parameter in the list and click Remove to remove it from the list  See also SaveExport_TIFF_Save and  SettingsExport_Tiff_Settings 	{bmc bm54.bmp}	
+
+$#Export Tiff Settings
+
+This is a tab on the Export TIFF DialogExport_TIFF    				 To change the directory see User Preferences6T9R6I@leoserv.hlp
+ {bmc bm1.bmp} Select Image settings Grey ( 8 bit) or 24 bit Colour {bmc bm1.bmp} Select {bmc bm32.bmp}As Seen if the image pixels are to be transformed by the Look Up Table before exporting. If this is used a linear grey pallettewill be required on loading. {bmc bm1.bmp} Select {bmc bm32.bmp}Pallette if the pallette is to be saved in the file. {bmc bm1.bmp} Select the amount of spatial reduction to be performed on the exported image  Select Filename FormatFilename_Format   See also SaveExport_TIFF_Save and DataExport_Tiff_Data 	{bmc bm55.bmp}	
+{bmc bm4.bmp} 24 bit colour files cannot be imported into Leo-32
+$#Export to a JPEG file
+This dialog is used to save images in JPEGJPEG format
+The caption of this dialog shows the current image directory. Select Change Directory11JZ0YM@leoserv.hlp if required.
+
+When this function is selected  from the Context Sensitive Popup MenuContext_Sensitive_Popup_Menu, a dialog is displayed similar to the one shown right:  When using the Annotation ToolbarCalling_the_Annotation_Toolbar, this dialog is displayed after creatingCreation_of_Objects an  Export selection ObjectExport_Area_Selection.   If no  Export selection Object is visible when this dialog is activated, the Image Manager will automatically create one.  For more details on each tab see Export JPEG SaveExport_JPEG_Save Export JPEG SettingsExport_JPEG_Settings    See also Magnification Reference32AVUYD@leoserv.hlp 	{bmc bm51.bmp} {bmc bm3.bmp} See Annotation WarningAnnotation_Warning	
+
+$#>Export to the HRRU Device
+
+{bmc bm56.bmp} This function is selected from the Context Sensitive Popup MenuContext_Sensitive_Popup_Menu and selecting Send toImage_Export_Functions if the HRRUHRRU@Sem.HLP accessory  is installed
+
+A dialog is displayed similar to the one on the right.  The photo dialog box handles   {bmc bm21.bmp} taking photographsHRRU_Photo,  {bmc bm21.bmp} selecting parametersPhoto_Selection_Dialog and also  {bmc bm21.bmp} settingPhoto_Settings_Dialog up the HRRU.  The selected function is brought forward by clickingCLICK@Sem.HLP to the respective tab.  See also Magnification Reference32AVUYD@leoserv.hlp 	{bmc bm57.bmp}	
+
+$#>Export to the System Clipboard
+
+{bmc bm27.bmp}  This function is selected from either the SEM Menu Bar8ZP0K4@Sem.HLP  selecting Edit28IFRD5@Sem.HLP and Clipboard34LNAH3@Sem.HLP
+or 
+
+{bmc bm8.bmp} from the Context Sensitive Popup MenuContext_Sensitive_Popup_Menu and selecting Send toImage_Export_Functions
+
+ A dialog is displayed similar to the one on the right.  The clipboard dialog box handles the exporting of data to the clipboard (CopyClipboard_Copy@Sem.HLP) and the importing of data from the clipboard (PasteClipboard_Paste@Sem.HLP).  The selected function is brought forward by clickingCLICK@Sem.HLP to the respective tab.	{bmc bm33.bmp}	
+
+$#>Export to the System Printer (Setup)
+
+{bmc bm27.bmp}  This function is selected from either the SEM Menu Bar8ZP0K4@Sem.HLP  selecting File6XNXVL@Sem.HLP and Print SetupPrint_Setup_Dialog
+or 
+
+{bmc bm8.bmp} from the Context Sensitive Popup MenuContext_Sensitive_Popup_Menu and selecting Send toImage_Export_Functions
+
+For details see  Print SetupPrint_Setup_Dialog
+
+{bmc bm3.bmp} The Printer routine will only function properly if the Printer SetupPrint_Setup_Dialog was performed at least once before it is accessed from the SEM Menu Bar through File and Print 64XCEH@Sem.HLP
+		
+
+$#Filename Format
+The filename may be constructed in a number of ways as defined on the Export SettingsExport_Tiff_Settings tab.
+
+Select Photo No. This uses the Photo No. parameter as the filename. It is automatically incremented for every image export (File export, Print or HRRU Photograph)
+
+Select File No.. This uses the 7 digit File No. parameter which is incremented on each file export.
+
+Select Max 8 Chars to restrict the filename size if the files are for use on systems running Windows 3.1
+Select Max 30 Chars if more descriptive filenames are required.
+
+If Photo No.or File No are not used as filename the filename is constructed by appending a number of digits to the base filename on the SaveExport_TIFF_Save tab.
+
+Select the number of digits to be appended.
+
+Select the initial value of the incrementing number in the Next box.
+
+Note that the Photo No. and File No. parameters may be displayed as annotation
+$#>{bmc bm58.bmp}  Fixed Micron Bar
+This comprises a horizontal bar which indicates the size of an object in the image. Above the bar is displayed it's length.
+If the image is in a mode comprising multiple zonesZone then the micron marker displays the zone magnification of the zone identified by the pixel at the top left corner of the text. (i.e. the top left corner of the box displayed when moving the object).
+ {bmc bm1.bmp} ClickCLICK@Sem.HLP on the Fixed Micron Marker Icon to switch the function on.  {bmc bm1.bmp} Point to the Zone for which you want to show the Fixed Micron Marker and click. The micron marker represents a fixed dimension, and may therefore extend off the screen if the magnification is too large or may shrink to a single pixel length if the magnification is too low. Editing the Micron marker permits the size to be changed.  {bmc bm1.bmp} Insert the value into the text field of the Annotation Micron Measurement panel.  {bmc bm1.bmp} <OK> sets the value, <Cancel> leaves the panel without change.  {bmc bm1.bmp} The Fixed Micron Marker will be shown at the selected place of the Image Window 	 {bmc bm59.bmp}  {bmc bm60.bmp} 	
+{bmc bm1.bmp}	{bmc bm7.bmp}  Click on Annotation Select Icon  to leave the Fixed Micron Marker Mode.
+
+{bmc bm1.bmp}	 The Micron Marker Annotation can be picked up draggedDRAG@Sem.HLP into the required position. Make sure not to place the annotation over another zone.
+
+{bmc bm1.bmp}	Double clicking on the Micron Marker calls the Annotation Micron Measurement panel again for editing the value.
+
+{bmc bm4.bmp} Note that an * (asterisk) is shown in the value field of the marker if User Calibration EnableUser_Calibration_Enable is checked. 
+
+See also Retrospective MeasurementRetrospective_Measurement. 		 Properties of Fixed Micron BarProperties_of_Fixed_Micron_Bar
+$#>Freeze Marker Objects
+
+Whenever a ZoneZone is frozen, a Freeze Marker(blue dot) will appear in the bottom right corner of the Image WindowGIRNF0@Sem.HLP. 
+
+	{bmc bm61.bmp}
+$#>Graticule Object
+
+This object displays a grid over the Image WindowGIRNF0@Sem.HLP. The parameters from this object can be modified by using the Graticule Spacing Dialog199M5I2@Sem.HLP. This object is created by selecting GraticuleAQG_VH@Sem.HLP from the SEM Menu Bar8ZP0K4@Sem.HLP. 
+
+{bmc bm62.bmp}
+
+The object can be deleted by selecting the object and pressing the <DELETE> key, or by choosing the Delete option from its Properties Popup Menu.Objects_Properties_Menu
+$#HRRU Photo
+
+This panel allows the operator to select how a photo exposure will be performed.  It also shows the current status of the HRRU.
+{bmc bm1.bmp} Use Photo to start the exposure. The progress bar indicates how far an individual exposure has progressed.  {bmc bm1.bmp} Abort Photo can be used to terminate an exposure before it completes.  Completion of the exposure is indicated by Camera Status = Idle.  Other information fields include:	{bmc bm57.bmp}	
+Photo Number which is incremented each time an image is exported. Double clicking in the field allows input of a number.
+
+Photo Time as set in the Photo Settings Dialog panel.
+
+If you use direct developing film the Photo Development TimerPhoto_Development_Timer.helps for proper timing.
+
+Also see Photo Selection DialogPhoto_Selection_Dialog and observe Parameter Control Analogue for parameter input.
+$#Handles
+
+Handles are square spots at the corners of frames and halfway between corners. 
+They can be used for sizing a frame by the mouse. 
+Point to a handle and drag for adjustment.
+$#>{bmc bm63.bmp}  Height Measurement
+
+This measurement facility comprises a related pair of horizontal lines. Each line may be adjusted in position. Precision AdjustmentPrecision_Adjustment is available.
+
+{bmc bm1.bmp} ClickCLICK@Sem.HLP on the Height Measurement Icon to switch the function on.  {bmc bm1.bmp} Click on the left line, pick the handleHandles@Sem.HLP and place it.  {bmc bm1.bmp} Click on the right line, pick the handle and place it.  {bmc bm1.bmp} Double clicking on one of the markers calls the Results PanelResults_Panel_Parameters which annotates the Cursor Width. 	{bmc bm64.bmp}	
+{bmc bm3.bmp}	The dimensional measurement is derived from the zone magnification hence when multiple zones are present both lines are shortened into the same zone.
+
+{bmc bm4.bmp}	There is one instance available.
+
+See also Retrospective MeasurementRetrospective_Measurement. 		Properties of Height MeasurementProperties_of_Height_Measurement
+$#>Hidden Objects
+
+When an object is hidden, it is as if the object were temporarily deleted. No selectionObject_Selection can be made on these objects, and they cannot be deleted whilst hidden.
+
+The SEM Menu Bar8ZP0K4@Sem.HLP can be used to access the Hide AnnotationHide_Annotation objects or Unhide AnnotationUnhide_Annotation objects functions.
+$#>Hide Annotation
+
+This function allows to hide annotation objects in a differentiated way:
+
+Hide Selected Objects:
+All objects which are selected (handlesHandles@Sem.HLP are displayed) become invisible.
+
+{bmc bm28.bmp}	The short cut from the keyboard is <CTRL + H>
+
+Hide Standard Annotation:
+Standard annotation objects (text, parameter annotation, bitmap, line, rectangle, ellipse, sticky panel, TIFF data) become invisible.
+
+Hide Measurement Annotation:
+Measurement annotation objects (Micron Bars, Point to Point, Angular, Line Width, Circular, Horizontal, Vertical, Vector Profile) become invisible.
+
+Hide Data Zone Annotation:
+The Data Zone becomes invisible.
+
+Hide Image Selection Area(s):
+The selected areas are set invisible.
+
+Hide Image Selection Handles:
+Image Selection Handles are set invisible.
+
+Hide Results Panels:
+Measurement Objects Results Panels are set invisible.
+
+Hide All:
+Sets all of the above annotation objects invisible.
+$#>Image Export Functions
+
+This function is accessed via the Context Sensitive Popup MenuContext_Sensitive_Popup_Menu.
+Select the entry Send To,  and then select the destination required:
+
+	Export to a TIFF FileExport_TIFF
+
+	Export to a BMP fileExport_BMP_file
+
+	Export to a JPEG fileExport_to_a_JPEG_file
+
+	Export to the System ClipboardExport_to_the_System_Clipboard
+
+	Export to the System PrinterExport_to_the_System_Printer
+
+	Export to the HRRU DeviceExport_to_the_HRRU_Device
+
+	Select Export for Video PrinterExport_for_Video_Printer
+$#Image Import Functions
+
+The following Image import functions are provided
+
+Import TIFF fileImport_TIFF
+
+Clipboard PasteClipboard_Paste
+
+See also Image ExportImage_Export_Functions
+$#>Image Manager Objects
+
+A special graphical object that can be createdCreation_of_Objects or selectedObject_Selection in the Image WindowGIRNF0@Sem.HLP. 
+
+The Image Manager ToolbarCalling_the_Annotation_Toolbar is a good place to select object for creation, however, certain objects such as Text AnnotationText_Annotation or Point to Point MeasurementPoint_to_Point objects can be created from the SEM Menu Bar8ZP0K4@Sem.HLP.
+
+The objects may be used for measurement, SEM Parameter adjustment, or as simple annotation of a feature of interest on the Image.
+
+Most Image Manager objects have attributes or propertiesObject_Properties that can be changed by the user.
+$#>Image Manager Operating Mode
+
+This mode determines the action taken by mouse clicks on the Image WindowGIRNF0@Sem.HLP and is not related to the current SEM Operating Mode. There are two main modes of operation :
+
+{bmc bm7.bmp}  Select Mode
+
+When the Select Mode button is pressed on the Annotation ToolbarCalling_the_Annotation_Toolbar, Image Manager Object Selection can take place.
+
+{bmc bm65.bmp}  Mouse Control Mode
+
+When the Mouse Control Mode button is pressed on the Toolbar, Image Manager acts as if the toolbar has been switched off.
+
+Both these modes affect the Context Sensitive Popup MenuContext_Sensitive_Popup_Menu.
+$#>Import TIFF
+   
+When this function is selected from either the SEM Menu Bar8ZP0K4@Sem.HLP or from the Context Sensitive Popup MenuContext_Sensitive_Popup_Menu, a dialog is displayed similar to the one shown right:   This dialog automatically creates a TIFF Import ObjectTIFF_Import_Object for allowing the selection of an area of the Image WindowGIRNF0@Sem.HLP into which the data is to be imported.  Select Change Directory11JZ0YM@leoserv.hlp if required.  See also LoadImport_Tiff_Load For more details of this dialog Standard DataImport_Tiff_Standard_Data User DataImport_Tiff_User_Data Image GalleryContents@gallery.hlp	{bmc bm66.bmp}	
+
+$#Import Tiff Load
+
+This is a tab on the Import TIFF DialogImport_TIFF    				Select Change Directory11JZ0YM@leoserv.hlp if required.
+ The list box displays the current files in the image directory {bmc bm1.bmp} Select {bmc bm32.bmp}Wide File List to display longer file names without scrolling horizontally {bmc bm1.bmp} Select a file to display it's information and user textTIFF_User_Text  {bmc bm1.bmp} Select the amount of spatial reduction required. {bmc bm1.bmp} Select where to loadwhere_to_load the image  {bmc bm1.bmp} Select Store resolutionStore_resolution {bmc bm1.bmp} Select {bmc bm32.bmp}Step Frame to step the load area to the next position after the image is loaded {bmc bm1.bmp} Select {bmc bm32.bmp}Fit to Image to automatically increase the store resolution if the image is too large to load at the current resolution  {bmc bm1.bmp} Double Click on file to load it or {bmc bm1.bmp}Load the file by pressing the Load button  Typing ENTER will load the file and step the selection to the next file in the list 	{bmc bm66.bmp}	
+See also Standard DataImport_Tiff_Standard_Data  DataExport_Tiff_Data and GalleryContents@gallery.hlp
+$#Import Tiff Standard Data
+
+This is a tab on the Import TIFF DialogImport_TIFF   
+When a Tiff file is exported a standard set of data is embedded in a Leo Reserved Tag field. This is displayed on this tab for the currently selected file.  Zone 0 is the full screen in Normal or Reduced Raster mode or the Left hand half of the image when in Split Screen mode.  Zone 1 is the Right hand half of the image when in Split screen mode  See Measurement WarningMeasurement_Warning	{bmc bm67.bmp}	
+See also User DataImport_Tiff_User_Data LoadImport_Tiff_Load and GalleryContents@gallery.hlp
+$#Import Tiff User Data
+
+This is a tab on the Import TIFF DialogImport_TIFF 
+This tab displays the User dataExport_Tiff_Data embedded in the currently selected file when exported  If the file is loaded this data is also available for  annotationTIFF_Data_Annotation  See also LoadImport_Tiff_Load and Standard DataImport_Tiff_Standard_Data   See Measurement WarningMeasurement_Warning	{bmc bm68.bmp}	
+
+$#>Insert User Bitmap Dialog
+
+The following file dialog is used when creating Bitmap ObjectsInsert_User_Bitmap_or_Metafile :
+
+{bmc bm1.bmp} Select the image directory from where you want to load the file. Navigate in Look In with {bmc bm69.bmp}.  {bmc bm1.bmp} Select the file type from the Drop-down ListXYVXW3@Sem.HLP  {bmc bm1.bmp} ClickCLICK@Sem.HLP on the file name.  {bmc bm1.bmp} Click on Open button to load the file.  {bmc bm1.bmp} Click on Cancel button to finish without loading the file ore close the dialog window with {bmc bm24.bmp}.	{bmc bm70.bmp}	
+
+{bmc bm4.bmp} Note that .BMP and .WMF file types are both supported.
+$#>{bmc bm15.bmp}  Insert User Bitmap or Metafile
+
+You can insert any bitmap or metafile as an annotation object.
+
+{bmc bm1.bmp} Select the Brush Icon.  {bmc bm1.bmp} Point to the place where you want to show the top left corner of your picture and clickCLICK@Sem.HLP.  {bmc bm1.bmp} The Insert User BitmapInsert_User_Bitmap_Dialog or Metafile open dialog box will appear.  {bmc bm1.bmp} Select the file as you would load a file under Windows95.   {bmc bm1.bmp} Press <Open> to load the file. 	 {bmc bm71.bmp}	
+{bmc bm1.bmp}	The picture will be shown at the selected place of the Image Window and can be draggedDRAG@Sem.HLP into the required position.
+	Using the handlesHandles@Sem.HLP the picture can also be sized.
+	Holding the <SHIFT> key down whilst adjusting a selection handle will cause the aspect ratio of the bitmap to be preserved (i.e. the X and Y ratios remain the same
+
+The coordinates of the picture are displayed in the Status BarRDJHU5@Sem.HLP. {bmc bm72.bmp}
+(From corner X/Y to opposite corner X/Y, centre X/Y, size X/Y)
+
+{bmc bm1.bmp}	<Cancel> leaves the Insert dialog box without transferring a picture into the Image Window Overlay Plane.
+
+See also	Properties of Bitmap AnnotationProperties_of_Bitmap_Annotation
+
+$#JPEG
+
+(pronounced "jay-peg") is a standardized compression method for full-color
+and gray-scale images.  JPEG is designed to handle "real-world" scenes,
+for example scanned photographs. 
+
+JPEG is lossy, meaning that the output image is not necessarily identical to
+the input image.  Hence you should not use JPEG if you have to have identical
+output bits.  However, on typical real-world images, very good compression
+levels can be obtained with no visible change, and amazingly high compression
+is possible if you can tolerate a low-quality image.  You can trade off image
+quality against file size by adjusting the compressor's "qualityJPEG_Quality" setting.
+$#JPEG Quality
+The quality switch lets you trade off compressed file size against quality of
+the reconstructed image: the higher the quality setting, the larger the JPEG
+file, and the closer the output image will be to the original input.  Normally
+you want to use the lowest quality setting (smallest file) that decompresses
+into something visually indistinguishable from the original image.  For this
+purpose the quality setting should be between 50 and 95; the default of 75 is
+often about right.  If you see defects at quality 75, then go up 5 or 10
+counts at a time until you are happy with the output image.  (The optimal
+setting will vary from one image to another.)
+
+In the other direction, quality values below 50 will produce very small files
+of low image quality.  Settings around 5 to 10 might be useful in preparing an
+index of a large image library, for example.  
+$#>{bmc bm28.bmp}  Keyboard Adjustment
+
+When an object is selectedSelect_Mode, it will display selection handlesHandles@Sem.HLP. To cycle through the currently selected selection handle, press the <Space> key. When no handles are selected, the object is in move mode.
+
+At any point, press an arrow key on the keyboard {bmc bm73.bmp}{bmc bm74.bmp}{bmc bm75.bmp}{bmc bm76.bmp} to either dragDRAG@Sem.HLP a selection handle, or to move the object, depending on the currently selected handle.
+
+ If the object does not move or size, try clickingCLICK@Sem.HLP on it with the mouse to ensure that the object is both selected, and that Image Manager has the keyboard focus.
+
+In some special cases the <SHIFT> key {bmc bm77.bmp} can be used whilst dragging selection handles:
+
+RectangleRectangle_Annotation and EllipseEllipse_Annotation : Shift key 'snaps' width and height to create a square or circle.
+
+BitmapInsert_User_Bitmap_or_Metafile : Maintains X and Y axis aspect ratio when sizing
+
+Sticky PanelSticky_Panel_Annotation : Scales panel as in Bitmap, but also scales objects 'stuck' to it
+
+In some special cases the <CTRL> key can be used whilst dragging selection handles:
+
+This will step the X or Y axis by the amount specified in the Alignment Grid SpacingAlignment_Grid_Spacing Dialog. This is convenient for sizing an object quickly with the keyboard.
+$#>{bmc bm16.bmp}  Line Annotation
+
+Adds a line to the overlay plane. The line may be configured as an arrow.
+
+{bmc bm1.bmp} Select the Line Annotation Icon.  {bmc bm1.bmp} Point to the place where you want to start the line and dragDRAG@Sem.HLP to the place where you want to end the line. 	{bmc bm78.bmp} 	
+{bmc bm1.bmp}	The line will be shown at the selected place of the Image Window and can be dragged into the required position.
+
+{bmc bm1.bmp}	The end points of the line can be picked up and also be dragged to new positions.
+
+The coordinates of the line are displayed in the Status BarRDJHU5@Sem.HLP. {bmc bm79.bmp}
+(From X/Y to X/Y, middle X/Y, Xrel, Yrel)
+
+{bmc bm31.bmp}	Double clicking on the line on the Image WindowGIRNF0@Sem.HLP Overlay changes the line to an arrow and vice versa.
+
+See also	 Properties of Line AnnotationProperties_of_Line_Annotation
+$#>Line Scan Object
+
+This object is a 'mode graphic' and simply exists to depict the position of the SEM Line Scan ModeBCEYQZ@Sem.HLP. 
+
+{bmc bm27.bmp}  This function can be selected from the SEM Menu Bar8ZP0K4@Sem.HLP. 
+
+The colour of this graphic can be changed from the Annotation Settings Popup MenuAnnotation_Settings under Selection of Pen SettingsSelection_of_Pen_Settings.  A profile window for the line scan object is displayed when this object is created.   {bmc bm10.bmp}  By adjusting the cursors in the profile window with the mouse, a width measurement from within the profile data can be achieved.  The object can be deleted by selecting the object and pressing the <Delete> key, or by choosing the Delete option from its PropertiesObjects_Properties_Menu popup menu.	{bmc bm80.bmp}	
+
+When the line scan object is displaying an X-ray Line Profile, its propertiesProperties_of_X_Ray_Line_Scan_object popup menu can be used to select a channel for display.
+
+In both Live Line Scan, and X-ray Line Scan modes, the same menu can be used to choose a colour for the line profile line.
+$#>{bmc bm81.bmp}  Line Width
+
+The line width measurement object is a rectangle which may be adjusted in height, width and angle. Precision AdjustmentPrecision_Adjustment is available.
+
+{bmc bm1.bmp} ClickCLICK@Sem.HLP on the Line Width Icon to switch the function on.  {bmc bm1.bmp} Point to the Zone for which you want to place the Line Width Rectangle and click.  {bmc bm1.bmp} Pick the handlesHandles@Sem.HLP of the first side La n and place them.  {bmc bm1.bmp} Pick the handles of the second side Lb n and place them.  {bmc bm1.bmp} Double clicking on one of the lines calls the Results PanelResults_Panel_Parameters containing the measurement parameters which are:  La n dimension of the first side of the rectangle,   Lb n dimension of the second side of the rectangle and  Lc n angle of the first side to the scan direction  Ld n The area of the rectangle  where n is the instance identifier (i.e. 1 for first object created, 2 for second object)  {bmc bm1.bmp} The data from this objects results panelResults_Panel_Parameters can be copied to the clipboard for insertion into a speadsheet. This is achieved using the Annotation CopyAnntotation_to_Clipboard Popup Menu item.	{bmc bm82.bmp}	
+
+{bmc bm3.bmp}	The dimensional measurement is derived from the zone magnification hence when multiple zones are present the rectangle must wholly lie within a zone. If the rectangle is moved so that it spans zones the dimensional values are set to zero and a ? is annotated.
+
+See also Retrospective MeasurementRetrospective_Measurement. 		Properties of Line Width MeasurementProperties_of_Line_Width_Measurement
+$#Load User Settings
+
+User settings may be saved on diskSave_User_Settings and loaded back again for later use. The are saved in the user directory by default and have the extension *.anp. The default file for current annotation preferences is CURRENT.ANPUser_Preferences_File 
+
+Dialogs guide you through the procedure.
+
+{bmc bm1.bmp} If you are not in your User Directory as shown in the   Look In box use {bmc bm69.bmp} button to navigate to your directory.  {bmc bm1.bmp} Select User Preferences from the Files of Type Drop-down ListXYVXW3@Sem.HLP box.  {bmc bm1.bmp} ClickCLICK@Sem.HLP on your preferred file (e.g. User1.anp). The name shows in the File Name box.  {bmc bm1.bmp} Click on the OK button to load the file.  {bmc bm1.bmp} Click on the Cancel button if you don't want to load the file. 	{bmc bm83.bmp} 	
+$#>{bmc bm84.bmp}  Loading Annotation
+
+This function is used to load Annotation Data from file.
+
+{bmc bm10.bmp}	ClickingCLICK@Sem.HLP on the Load Annotation icon calls a standard Load File Dialog.
+
+This function allows the user to restore previously savedSaving_Annotation annotation objectsObject_Selection. Annotation files are loaded form the User Directory. and have the extension *.ANN.  If annotation objects are already present in the current overlay plane the user is asked whether or not the present data should be merged with the data to be loaded.  {bmc bm4.bmp}Note that two Annotation File TypesAnnotation_File_Types are supported by this dialog .ANN (annotation) and .ADZ (annotation data zone). 	{bmc bm85.bmp}	
+{bmc bm31.bmp}  When objects are already present on the Image WindowGIRNF0@Sem.HLP, the user is asked if they wish to merge or discard the existing annotation. Merging the saved annotation will add the annotation objects to the current set of annotation objects on display. Discarding the existing annotation will remove the current annotation on display. Merged annotation appears behind the last of the current objects at the bottom of the z-order (behind all other annotation objects).
+$#>Measurement Results Panel
+
+This is a special kind of Sticky Panel ObjectSticky_Panel_Annotation, and contains either SEM Parameter ObjectsSEM_Parameter_Object or a mixture of SEM Parameter Objects and some other graphical objects such as Histogram ObjectStored_Data_Histogram graphs or Stored Vector Profile ObjectStored_Vector_Profile graphs.
+
+Certain properties (such as the User Results Panel FontThe_User_Defaults_or_User_Settings_Option and User Results Panel Brush Definition) for this panel can be selected from the Annotation SettingsAnnotation_Settings Popup Menu.
+$#>Measurement Results Selection Dialog
+
+The following dialog allows the user to select results for adding to a Measurement Results PanelMeasurement_Results_Panel :
+
+In the example the measurement object being configured is a Line Width ObjectLine_Width.   {bmc bm4.bmp} Notice that the Lc 1 parameter is in the Available Parameters list and is not part of the Current Selection. This means that when this object is created, only La 1, and Lb 1 will be added to the measurement results panel for this object.  To move a parameter from one list to another, simply clickCLICK@Sem.HLP on the parameter then click either the Remove or Add buttons.  {bmc bm4.bmp} Note : Were there are no parameters in the Current Selection list, no measurement results panel is created.	{bmc bm86.bmp}	
+
+$#Measurement Warning
+{bmc bm3.bmp}	WARNING CONCERNING MEASUREMENT 
+
+If a TIFF image is imported which is less than full size (due to spatial reduction or saving only part of an image) then there is no constraint on where the image is loaded in relation to the scanned image. 
+The determination of which zone applies to which portion of the image is governed by the position within the scanned image, and this information is used in measurement. 
+It therefore follows that if a portion of image which was in Zone 0Zone when saved is inserted into a position in the scanned image corresponding to zone 1 and zones 0 and 1 have different pixel sizes then any measurement performed will be incorrect.
+$#>Measuring Image Features
+There is a wide range of measuring image features:
+
+{bmc bm87.bmp}	Zone MagnificationZone_Magnification will display the correct magnification for the zone of the image in which they are positioned, even if the zone has been frozen. For properties like font, background, alignment see Properties of Zone Mag AnnotationProperties_of_Zone_Mag_Annotation	
+{bmc bm88.bmp}	Micron MarkerMicron_Marker will display the correct micron bar for the zone of the image in which they are positioned, even if the zone has been frozen. For properties like font, background, alignment see Properties of Micron MarkerProperties_of_Micron_Marker	
+{bmc bm58.bmp}	Fixed Micron BarFixed_Micron_Bar will display the correct micron bar for the zone of the image in which they are positioned, even if the zone has been frozen. For properties like font, background, alignment see Properties of Fixed Micron BarProperties_of_Fixed_Micron_Bar	
+{bmc bm89.bmp}	Point to PointPoint_to_Point displays a pair of pointers on features of the image and the distance plus rotational difference . For properties like font, background, alignment see Properties of Point to Point MeasurementProperties_of_Point_to_Point_Measurement	
+{bmc bm11.bmp}	Angular MeasurementAngular_Measurement facilities are also provided. For properties like font, background, alignment see Properties of Angular MeasurementProperties_of_Angular_Measurement	
+{bmc bm81.bmp}	Line WidthLine_Width displays a box which can be positioned over a feature and the width and breadth of the box displayed. For properties like font, background, alignment see Properties of Line Width MeasurementProperties_of_Line_Width_Measurement	
+{bmc bm90.bmp}	Radial MeasurementRadial_Measurement puts a circle over a feature and annotates the radius. For properties like font, background, alignment see Properties of Radial MeasurementProperties_of_Radial_Measurement	
+{bmc bm91.bmp}	Width MeasurementWidth_Measurement displays a pair of vertical lines and the space between them. For properties like alignment see Properties of Width MeasurementProperties_of_Width_Measurement	
+{bmc bm63.bmp}	Height MeasurementHeight_Measurement displays a pair of vertical lines and the space between them. For properties like alignment see Properties of Height MeasurementProperties_of_Height_Measurement	
+{bmc bm5.bmp}	Adjustable Width MeasurementAdjustable_Width_Measurement displays a pair of adjustable vertical lines and the space between them. For properties like alignment see Properties of Adjustable Width MeasurementProperties_of_Adjustable_Width_Measurement	
+{bmc bm0.bmp}	Adjustable Width MeasurementAdjustable_Width_Measurement displays a pair of adjustable vertical lines and the space between them. For properties like alignment see Properties of Adjustable Width MeasurementProperties_of_Adjustable_Width_Measurement	
+{bmc bm92.bmp}	Stored Vector ProfileStored_Vector_Profile generates a vector and displays the grey level profile under the vector. For properties like alignment see Properties of Stored Vector ProfileProperties_of_Stored_Vector_Profile	
+{bmc bm93.bmp}	Stored Data HistogramStored_Data_Histogram generates a vector and displays the grey level profile under the vector. For properties like alignment see Properties of Stored Data HistogramProperties_of_Stored_Data_Histogram	
+{bmc bm4.bmp}	Note : All annotation and measurement objects created on screen can be saved or printed with the image by selecting the Overlay plane On from the Export TIFF Setup menu.
+$#>{bmc bm88.bmp}  Micron Marker
+
+This comprises a horizontal bar which indicates the size of an object in the image. Above the bar is displayed it's length.
+The micon marker is self sizing in that the bar has minimum and maximum lengths. If the magnification is changed such that these limits would be exceeded the length represented by the bar is changed to a whole number which would permit the bar to lie within limits.
+
+{bmc bm1.bmp} ClickCLICK@Sem.HLP on the Micron Marker Icon to switch the function on.  {bmc bm1.bmp} Point to the Zone for which you want to show the Micron Marker and click.  {bmc bm1.bmp} The Micron Marker will be shown at the selected place of the Image Window . {bmc bm1.bmp} Click on Annotation Mode Icon {bmc bm7.bmp} to leave the Micron Marker Mode.  {bmc bm1.bmp}  The Micron Marker Annotation can be picked up draggedDRAG@Sem.HLP into the required position. Make sure to place the annotation not over another zone.	  {bmc bm94.bmp}	
+
+See also Retrospective MeasurementRetrospective_Measurement. 
+
+{bmc bm28.bmp}  The keyboard can be used to adjust the currently highlighted selection handle. This feature is especially useful for fine adjustments.
+
+{bmc bm4.bmp}This object cannot extend beyond the image display area boundary. Where the marker straddles a zoneZone boundary, the zone used for the measurement is taken as the zone that the top left corner of the marker is in.
+
+See also	Properties of Micron MarkerProperties_of_Micron_Marker
+$#>Micron Marker Value Property
+
+This property only applies to Fixed Micron Marker ObjectsFixed_Micron_Bar. Selecting this property displays a dialog similar to the one shown below :
+
+{bmc bm60.bmp}
+
+The value displayed by the fixed micron marker can then be changed by the user.
+$#>Mouse Control
+
+{bmc bm65.bmp} 	ClickingCLICK@Sem.HLP on this icon selects the Mouse Control ModeMouse_Control_Mode, the Annotation Mode is disabled.
+
+The mouse has special functions while it is in the Image WindowGIRNF0@Sem.HLP and the Image Window Adjustment Mode is selected.
+It  is not related to the current SEM Operating ModeSEM_Operating_Mode.
+
+{bmc bm7.bmp} 	Clicking on this icon selects the Annotation Select ModeSelect_Mode, the Mouse Control Mode is disabled.
+
+The left and right mouse buttons are used differently if the Annotation Mode is selected:
+
+
+{bmc bm10.bmp}	selectsObject_Selection annotation and measurement functions from the Annotation Panel. 
+
+Clicking on the Image Window selects the place for Parameter, imported bitmaps, and Text annotation if one of the modes is selected.
+
+Clicking on an annotation object selects it. Holding down <SHIFT> or <CTRL> allows to select many objects as you click on them. Drawing a frame around objects selects them.
+
+{bmc bm8.bmp}	Click on the Image Window with the right mouse button selects the Configuring AnnotationConfiguring_Annotation mode.
+
+{bmc bm95.bmp}	The middle mouse button always adjusts the right parameter of the image window adjustment mode which is the yellow marked field in the Status BarRDJHU5@Sem.HLP.
+
+$#>{bmc bm65.bmp}  Mouse Control Mode
+
+In this mode, no Object SelectionObject_Selection operations can take place, but any mouse button assignments for parameter adjustment work as if the Image Manager Tool BarCalling_the_Annotation_Toolbar has been switched off.
+
+This mode is mainly used when annotation is being added and the toolbar is required, but parameter adjustment is also required prior to switching off the Image Manager Toolbar.
+
+This mode also affects the Image Manager Context Sensitive Popup MenuContext_Sensitive_Popup_Menu.
+
+See also Mouse ControlMouse_Control
+$#>Multiple Object Selection
+   
+{bmc bm1.bmp} This can be achieved by clickingCLICK@Sem.HLP outside a group of objects with the left mouse button. Whilst holding down the left mouse button, dragDRAG@Sem.HLP the mouse over the objects. A 'rubber rectangle' will follow the mouse, and any objects intersecting the rectangle will be selected and display their selection handles.  {bmc bm1.bmp} To add or remove objects from a multiple selection list click on the object whilst holding down <CTRL>.  	{bmc bm96.bmp}	
+{bmc bm4.bmp} Note that there are two main differences in multi-select mode :
+
+{bmc bm21.bmp}	The objects can only be moved as a group, not sized
+
+{bmc bm21.bmp}	Right clicking to give a properties menu on any object, gives a properties menu with an aggregate of all of the properties available in the group, even though some objects would not usually have that property (e.g. A line objectLine_Annotation has the ability to have arrow heads, a rectangleRectangle_Annotation doesn't, however when the two objects are selected together, the single properties menu displays this option- this is not a bug, as only those applicable properties for the selected objects can be changed).
+
+Multiple select mode is a convenient way of grouping objects and changing for example their brushSelection_of_Brush_Settings or fontSelection_of_Font__Style_and_Colour properties all in one operation.
+
+In all cases, clicking on the image removes a current selection.
+$#>Normal Mode Command
+
+This command calls the Normal Mode4LTP_XJ@Sem.HLP.
+
+In this mode, there is only one ZoneZone. 
+
+This is the default SEM Operating Mode.
+$#>Object Properties
+
+From an Objects Properties MenuObjects_Properties_Menu, selecting this function will display a list of currently available attributes or properties that can be changed for the selected objectObject_Selection or group of selected objects.
+
+When an object is createdCreation_of_Objects, its properties are automatically set up to use either default or user defined settings, this behavior is defined by the Annotation Options PanelThe_Annotation_Options_Panel.
+
+A list of all the properties Image Manager can change is listed below. Note however that depending on the object type, not all of the properties will apply:
+
+	Caption PropertyCaption_Property	Parameter PropertyParameter_Property	Micron Marker Value PropertyMicron_Marker_Value_Property		Font PropertySelection_of_Font__Style_and_Colour
+
+	Transparent Background ModeSelection_of_Bitmap_Background	Transparent Background ColourSelection_of_Bitmap_Background	Background Mode PropertyBackground_Mode_Property
+
+	Text Background Mode PropertySelection_of_Text_Background	Background Colour PropertyBackground_Colour_Property		Pen PropertySelection_of_Pen_Settings	Brush PropertySelection_of_Brush_Settings
+
+	Direction Arrow PropertyDirection_Arrow_Property	Reset PropertiesReset_Drawing_Properties	Sticky Panel Lock PropertySticky_Panel_Lock_Property	Sticky Panel Datazone FlagSticky_Panel_Datazone_Flag
+
+	Sticky Panel Font PropertySet_Panel_Font	Snap to Grid PropertySnap_to_Grid_Property	Results Parameter SelectionsResults_Parameter_Selections	Update Results PropertyUpdate_Results_Property
+
+{bmc bm4.bmp} Note : When a group of objects are selected, right clickingCLICK@Sem.HLP on any of the selected objects brings up a properties menu that is constructed from all of the available properties from all of the selected objects. If for example a Caption PropertyCaption_Property is available for some objects and not for others, when the caption property is changed, only those options that have a caption property are affected.
+$#>Object Selection
+
+This mode operates when the current Image Manager mode is set to Select ModeSelect_Mode. All selected objects are highlighted by selection handlesHandles@Sem.HLP, which identifies that they can either be moved, sized or ordered. Some objects have special behavior when double clickedCLICK@Sem.HLP. 
+
+When right clicking on an object a Popup MenuConfiguring_Annotation may be displayed so that the properties of the objectObject_Properties can be changed. If an object cannot be selected, then Image Manger may be in Mouse Control Mode, or the object may not be a selectable object (for example, Freeze Marker ObjectsFreeze_Marker_Objects).
+
+{bmc bm4.bmp} Note that some objects such as the Reduced RasterReduced_Raster_Object object may be selected both in Select ModeSelect_Mode or in Mouse Control ModeMouse_Control_Mode.
+
+You may need to create one or two object to experiment with Object Selection Mode.
+
+See also Simple Object SelectionSimple_Object_Selection and  Multiple Object SelectionMultiple_Object_Selection
+$#>Objects Properties Menu
+   
+Most Image Manager ObjectsImage_Manager_Objects will have a properties menu. This menu is accessed after creating an objectCreation_of_Objects for example from the Annotation ToolbarCalling_the_Annotation_Toolbar, and right-clicking on it when it is selectedObject_Selection.   {bmc bm4.bmp} Note that some objects can only be selected in the Image Manager Operating Mode termed Select ModeSelect_Mode.  In the example on the right, the middle Text ObjectText_Annotation 2 is selected (as can be seen by its selection handlesHandles@Sem.HLP), and has be right-clicked (properties menu open).  {bmc bm4.bmp} Note the options available from its properties menu :   {bmc bm21.bmp} PropertiesObject_Properties   {bmc bm21.bmp} Bring to Front Send to Back Bring Forward Send Back   (see Alignment of Annotation ObjectsAlignment_of_Annotation_Objects)   {bmc bm21.bmp} DeleteDeleting_of_Annotation	     {bmc bm97.bmp}	
+
+{bmc bm4.bmp} Note that the z-ordering functions (alignment) may not all be present, depending on the z-order of the selected object.
+
+Z-ordering is a way of arranging the list of Image Manger objects that are on the display.
+$#>{bmc bm14.bmp}  Parameter Annotation
+
+You can select any available analogue microscope parameter, e.g. Aperture Size etc, or digital parameter (instrument states), e.g. Aperture Wobble = Off , which both display in the list box for selection.
+See also String and counting parameters.String_and_Counting_Parameters
+ {bmc bm1.bmp} Select the Parameter Icon. {bmc bm1.bmp} Point to the place where you want to start the parameter readout and clickCLICK@Sem.HLP. {bmc bm1.bmp} The Annotation SEM Parameter box will appear. {bmc bm1.bmp} Select the parameter with the Scroll Bar2HOSDE@Sem.HLP. It is then displayed in the top window. {bmc bm1.bmp} Press <OK> to display the parameter..	 {bmc bm98.bmp}	
+
+{bmc bm1.bmp}	The parameter will be shown at the selected place of the Image Window and can be draggedDRAG@Sem.HLP into the required position.
+The coordinates of the parameter text are displayed in the Status BarRDJHU5@Sem.HLP. {bmc bm99.bmp}
+
+(From corner X/Y to opposite corner X/Y, centre X/Y, size X/Y)
+
+{bmc bm4.bmp}	Note: The available fonts are those that have been installed under Windows95.
+
+{bmc bm1.bmp}	<Cancel> leaves the Annotation SEM Parameter box without transferring the parameter text into the Image Window Overlay.
+
+{bmc bm31.bmp}	Double clicking on the parameter text field on the Image Window Overlay brings back the Annotation SEM Parameter panel for new selection.
+$#>Parameter Property
+
+This property only applied to SEM parameterParameter_Annotation objects. 
+
+A parameter for display can be selected by either typing in the name of the parameter or by selecting a parameter from the list box. 
+
+List Box Double Clicks
+
+{bmc bm21.bmp}	Double clicking a parameter in the list box automatically selects it and closes the above dialog.
+
+{bmc bm21.bmp}	When creatingCreation_of_Objects a SEM Parameter ObjectSEM_Parameter_Object for the first time, double clicking in the list box creates a new parameter object immediately. Multiple parameters can be added in this way.
+$#>Paste Annotation
+
+Accessed via the Annotation SettingsAnnotation_Settings Popup Menu, this function pastes / inserts objectsImage_Manager_Objects from a previous cutCut_Selected_Annotation or copyCopy_Selected_Annotation operation back into the Image WindowGIRNF0@Sem.HLP as new objects. 
+
+The System Clipboard is not used for this operation
+
+Use the Undo FunctionUndo_Last_Edit_Delete to restore any annotation objects affected by this function.
+
+$#Photo Development Timer
+The development timer is an easy way to measure the development time of a micrograph, it is simply a counter which will count down from a preset value to zero, at which point a 'beep' will be emitted.
+{bmc bm1.bmp} Start the timer by clicking on Start Development Timer .  {bmc bm1.bmp} Clicking on the counter field allows the starting value to be entered (in seconds). The display is in minutes while the value is greater than 60 seconds, then in seconds down to zero. The maximum timer value is 300 seconds.	{bmc bm100.bmp}	
+
+$#Photo Selection Dialog
+The content of the exposure is defined by Photo Selection Dialog
+{bmc bm1.bmp} Select the Camera Image source from the Drop-down List as stored or live.  {bmc bm1.bmp} Select whether the Overlay (real time profile) shall be included {bmc bm32.bmp}.  {bmc bm1.bmp} Select whether the Annotation shall be included {bmc bm32.bmp}.  {bmc bm1.bmp} Adjust Brightness and Contrast with the Scroll Bars   See also Parameter Control Analogue129F2JR@sem.hlp for parameter input.	{bmc bm101.bmp}	
+
+For Camera selection and settings see Photo Settings Photo_Settings_Dialog 
+For taking photograph see PhotoHRRU_Photo
+$#Photo Settings Dialog
+This panel allows the HRRU to be set up for film materials.
+{bmc bm1.bmp} Select Film Speed from the Drop-down List.  {bmc bm1.bmp} Select the Camera Back from the Drop-down List.  {bmc bm1.bmp} Select Gamma for film response compensation from the Drop-down List.  {bmc bm1.bmp} Select Photo Fast Time for stored image recording from the Drop-down List .  {bmc bm1.bmp} Select Photo Slow Time for live image recording from the Drop-down List .  {bmc bm1.bmp} Check if Photo Fast {bmc bm32.bmp} is active or Photo Slow is active.	{bmc bm102.bmp}	
+
+See also : Photo PanelHRRU_Photo and Photo SelectionPhoto_Selection_Dialog Dialogs and HRRU NoHRRU_No.
+$#>{bmc bm89.bmp}  Point to Point
+
+This measurement facility comprises a related pair of markers, a reference marker (identified by the symbol PaRn ) and a measurement marker (identified by Pan). Each marker may be adjusted in position. Precision AdjustmentPrecision_Adjustment is available
+
+{bmc bm1.bmp} ClickCLICK@Sem.HLP on the Point to Point Icon to switch the function on or load it from the Menu Bar8ZP0K4@Sem.HLP  {bmc bm1.bmp} Point to the Zone for which you want to place the Point to Point Marker and click.  {bmc bm1.bmp} Pick the handleHandles@Sem.HLP of the Reference Point PaRn and place it.  {bmc bm1.bmp} Pick the handle of the Measurement Point Pan and place it.  {bmc bm1.bmp} Pick the centre handle to place the complete line.  {bmc bm1.bmp} The data from this objects results panelResults_Panel_Parameters can be copied to the clipboard for insertion into a speadsheet. This is achieved using the Annotation CopyAnntotation_to_Clipboard Popup Menu item. 	{bmc bm103.bmp}	
+{bmc bm1.bmp}	Double clicking on one of the markers calls the Results PanelResults_Panel_Parameters containing the measurement parameters which are:
+	Pan Distance between the markers, 
+	Pbn Angle between the line joining the markers and the direction of scan 
+	where n is the instance identifier (i.e. 0 for first object created, 1 for second object up to 10 objects)
+
+{bmc bm1.bmp}	When no measurement results are selected for display, the point to point marker displays the line length by the centre point on the line. Double clicking on this value allows a manual line length to be entered.
+
+{bmc bm3.bmp}	The dimensional measurement is derived from the zone magnification hence when multiple zones are present both markers must lie in the same zone. If the markers are moved into different zones the dimensional value is set to zero and a ? is annotated.
+
+See also Retrospective MeasurementRetrospective_Measurement. 		Properties of Point to Point MeasurementProperties_of_Point_to_Point_Measurement
+$#>Precision Adjustment
+
+{bmc bm10.bmp}	Although using the mouse is a very good method of moving quickly over the whole of the image it is not the best for precision adjustments as this would require a steady hand and in some circumstances the cursor obscures the point of interest.
+
+{bmc bm28.bmp}	In this case the arrow keys on the keyboard {bmc bm73.bmp}{bmc bm75.bmp}{bmc bm74.bmp}{bmc bm76.bmp}may be used to increment the position of a measurement object, or one of its handlesHandles@Sem.HLP Once an arrow key is used the mouse position is ignored (and hence the cursor may be moved out of the way). Press the Spacebar to select a different handle, the currently selected handle is highlighted in red. When no handles are selected, the cursor keys can then be used to move the whole object, rather than just a selected handle.
+
+{bmc bm4.bmp}		<CTRL + Cursor> gives coarse adjustment. The Height and Width increments for coarse adjustment are defined by the Grid Settings DialogThe_Snap_to_Grid_Option. These settings are used regardless of the snap-to-grid function.
+$#Print Setup Dialog
+This dialog is accessed through
+{bmc bm27.bmp}	Menu File, Print Setup
+
+or through
+{bmc bm8.bmp}	right mouse button on the Image Window with Send To and Printer. 
+When the Print Setup panel is displayed the operator is able to define how an image is being printed, i.e. whether to include annotation, overlay and color with the image and to what area of the page the image should be printed.
+Select {bmc bm32.bmp} the items to mergemerge_settings in the print If annotation is included see Annotation WarningAnnotation_Warning  In Size select Fit to Page to adjust the print size to the page width or select Zoom and from the Drop-down List one of the factors. The magnification of the printed image is indicated.  The Position of the print on the page can be selected to Top, Middle and Bottom by clicking on a Radio Button. See also Magnification Reference32AVUYD@leoserv.hlp and Print No.Print_No. {bmc bm31.bmp} Before you start printing make sure, all settings of the printer (page layout etc.) are correct. (use PrinterStandard_Printer_dialog)	{bmc bm104.bmp}	
+Print starts the printout of the image.
+Close closes the setup dialog and preserves the settings you just made.
+Cancel or clicking on {bmc bm24.bmp} closes the setup dialog and omits any changes made during this session.
+Help calls this page.
+$#>Properties of Adjustable Height Measurement
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Select Results Panel ParametersResults_Panel_Parameters
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also 	Adjustable Height MeasurementAdjustable_Height_Measurement
+$#>Properties of Adjustable Width Measurement
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Select Results Panel ParametersResults_Panel_Parameters
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also 	Adjustable Width MeasurementAdjustable_Width_Measurement
+$#>Properties of Angular Measurement
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Select Results Panel ParametersResults_Panel_Parameters The parameter displayed in reduced formatReduced_Format_display_of_results is the Angle
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Reset Drawing PropertiesReset_Drawing_Properties
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also	Angular MeasurementAngular_Measurement 
+$#>Properties of Bitmap Annotation
+
+{bmc bm29.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Leo_1500.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Selection of Bitmap BackgroundSelection_of_Bitmap_Background 
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Reset Drawing PropertiesReset_Drawing_Properties
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also	Insert User Bitmap or MetafileInsert_User_Bitmap_or_Metafile
+$#>Properties of Ellipse Annotation
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Leo_1500.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Background SettingsBackground_Settings.
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings 
+
+{bmc bm21.bmp}	Selection of Brush SettingsSelection_of_Brush_Settings 
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Reset Drawing PropertiesReset_Drawing_Properties
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also	Ellipse AnnotationEllipse_Annotation
+
+$#>Properties of Fixed Micron Bar
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Leo_1500.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Set Fixed Micron ValueSet_Fixed_Micron_Value  The function can be directly called with <CTRL + M>
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Selection of Background ColourSelection_of_Line_Background 
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Reset Drawing PropertiesReset_Drawing_Properties
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also	Fixed Micron BarFixed_Micron_Bar
+$#>Properties of Height Measurement
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Leo_1500.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Select Results Panel ParametersResults_Panel_Parameters
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also	Height MeasurementHeight_Measurement
+$#>Properties of Line Annotation
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Leo_1500.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Selection of Direction ArrowSelection_of_Direction_ArroW_ 
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Reset Drawing PropertiesReset_Drawing_Properties
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also	Line AnnotationLine_Annotation 
+$#>Properties of Line Width Measurement
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Select Results Panel ParametersResults_Panel_Parameters
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings 
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Reset Drawing PropertiesReset_Drawing_Properties
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also	Line Width MeasurementLine_Width
+$#>Properties of Micron Marker
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Selection of Background ColourSelection_of_Line_Background 
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings 
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Reset Drawing PropertiesReset_Drawing_Properties
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also	Micron MarkerMicron_Marker
+$#>Properties of Parameter Annotation
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Leo_1500.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Reset Drawing PropertiesReset_Drawing_Properties
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also 	Parameter AnnotationParameter_Annotation
+$#>Properties of Point to Point Measurement
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Leo_1500.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Select Results Panel ParametersResults_Panel_Parameters The parameter displayed in reduced formatReduced_Format_display_of_results is the distance.
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings 
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Reset Drawing PropertiesReset_Drawing_Properties
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also	Point to Point MeasurementPoint_to_Point  
+$#>Properties of Radial Measurement
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Select Results Panel ParametersResults_Panel_Parameters The parameter displayed in reduced formatReduced_Format_display_of_results is the Diameter.
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings 
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Reset Drawing PropertiesReset_Drawing_Properties
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also	Radial MeasurementRadial_Measurement
+$#>Properties of Rectangle Annotation
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Leo_1500.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Background SettingsBackground_Settings.
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings 
+
+{bmc bm21.bmp}	Selection of Brush SettingsSelection_of_Brush_Settings 
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Reset Drawing PropertiesReset_Drawing_Properties
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+Also see	Rectangle AnnotationRectangle_Annotation
+$#>Properties of Sticky Panel Annotation
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Leo_1500.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Set Panel FontSet_Panel_Font Set an uniform font for all annotations on the panel.
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Sticky Panel Background ColourSticky_Panel_Background_Colour.
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings 
+
+{bmc bm21.bmp}	Selection of Brush SettingsSelection_of_Brush_Settings 
+
+{bmc bm21.bmp}	Special Panel SettingsSpecial_Panel_Settings Locking / Unlocking, Data Zone
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Deleting AnnotationDeleting_of_Annotation 
+
+{bmc bm21.bmp}	Make Current DatazoneMake_Current_Datazone
+
+{bmc bm21.bmp}	Save As DatazoneSave_As_Datazone
+
+See also	Sticky Panel AnnotationSticky_Panel_Annotation 
+$#>Properties of Stored Data Histogram
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Leo_1500.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Update ResultsUpdate_Results_Property
+
+{bmc bm21.bmp}	Setting Automatic Update FrequencySetting_Automatic_Update_Frequency
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour 
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings 
+
+{bmc bm21.bmp}	Selection of Brush SettingsSelection_of_Brush_Settings 
+
+{bmc bm21.bmp}	Special Panel SettingsSpecial_Panel_Settings Locking / Unlocking, Data Zone
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also	Stored Data HistogramStored_Data_Histogram
+$#>Properties of Stored Vector Profile
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Leo_1500.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Update ResultsUpdate_Results_Property
+
+{bmc bm21.bmp}	Setting Automatic Update FrequencySetting_Automatic_Update_Frequency
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour 
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings 
+
+{bmc bm21.bmp}	Selection of Brush SettingsSelection_of_Brush_Settings 
+
+{bmc bm21.bmp}	Special Panel SettingsSpecial_Panel_Settings Locking / Unlocking, Data Zone
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also	Stored Vector ProfileStored_Vector_Profile
+$#>Properties of TIFF Data Annotation
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour 
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Reset Drawing PropertiesReset_Drawing_Properties
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also	TIFF Data AnnotationTIFF_Data_Annotation
+$#Properties of Text Annotation
+
+{bmc bm10.bmp}	Select the object by clicking with the left mouse button on it. A selected object displays handles.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Reset Drawing PropertiesReset_Drawing_Properties
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also Text AnnotationText_Annotation
+$#>Properties of Width Measurement
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Select Results Panel ParametersResults_Panel_Parameters
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Selection of Line SettingsSelection_of_Pen_Settings
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also 	Width MeasurementWidth_Measurement
+$#Properties of X-Ray Line Scan object
+
+The Pop up properties menu enables you to:
+
+{bmc bm21.bmp}	Switch off the Linescan
+{bmc bm21.bmp}	Select the colour of the trace
+{bmc bm21.bmp}	Select which X-Ray Channel is to be displayed
+{bmc bm21.bmp}	Freeze/Unfreeze the linescan
+$#>Properties of Zone Mag Annotation
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Leo_1500.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm21.bmp}	Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour 
+
+{bmc bm21.bmp}	Selection of Text Background ModeText_Background_Mode 
+
+{bmc bm21.bmp}	Selection of Text Background ColourText_Background_Colour 
+
+{bmc bm21.bmp}	Alignment of Annotation ObjectsAlignment_of_Annotation_Objects 
+
+{bmc bm21.bmp}	Reset Drawing PropertiesReset_Drawing_Properties
+
+{bmc bm21.bmp}	Deleting of AnnotationDeleting_of_Annotation 
+
+See also	Zone MagnificationZone_Magnification
+$#>{bmc bm90.bmp}  Radial Measurement
+
+The radial measurement facility is a circle which may be adjusted in diameter Da n. Precision AdjustmentPrecision_Adjustment is available
+
+{bmc bm1.bmp} ClickCLICK@Sem.HLP on the Radial Measurement Icon to switch the function on.  {bmc bm1.bmp} Point to the ZoneZone for which you want to place the Radial Measurement and click.  {bmc bm1.bmp} Pick the handlesHandles@Sem.HLP of the Circle Da n and place them.  {bmc bm1.bmp} Double clicking on the circle calls the Results PanelResults_Panel_Parameters  containing the measurement parameter Da n the diameter of the circle where n is the instance identifier (i.e. 1 for first object created, 2 for second object) and Db n the area of the Circle  {bmc bm1.bmp} The data from this objects results panelResults_Panel_Parameters can be copied to the clipboard for insertion into a speadsheet. This is achieved using the Annotation CopyAnntotation_to_Clipboard Popup Menu item. 	 {bmc bm105.bmp}	
+
+{bmc bm3.bmp}	The dimensional measurement is derived from the zone magnification hence when multiple zones are present the bounding square must wholly lie within a zone. If the bounding square is moved so that is spans zones the dimensional value is set to zero and a ? is annotated.
+
+See also Retrospective MeasurementRetrospective_Measurement. 		Properties of Radial MeasurementProperties_of_Radial_Measurement
+$#>Reasons for missing/greyed Functions
+
+This topic lists a number of reasons why either some Annotation ToolbarCalling_the_Annotation_Toolbar functions are either greyed out, or are not visible :
+
+{bmc bm21.bmp}	The required option may not be licenced for use on the machine that the software is running
+
+{bmc bm21.bmp}	The maximum number of times a function could be used has been reached. For example only one instance of full screen Height MeasurementHeight_Measurement cursors and Width MeasurementWidth_Measurement cursors is allowed.
+
+{bmc bm21.bmp}	The system is not running in the correct context at present for the function to be valid. For example, no more items to deleteDeleting_of_Annotation or nothing to undoUndo_Last_Edit.
+$#>Recover All Offscreen
+
+This function moves any off-screen objects to the screen centre.
+
+To see if there are any off-screen objects check the Annotation PanelCalling_the_Annotation_Toolbar Caption (the blue bar on top of the panel):
+
+When objects are off-screen the caption displays the number of objects with the code O:n where n is the number of off-screen objects placed outside the 1024x768 display area. 
+
+This may happen when for example an object is draggedDRAG@Sem.HLP off-screen, and cannot be selected to drag back into the display area.
+
+One object will therefore read O:1 and so on.
+
+{bmc bm3.bmp}	When the objects are moved to the screen centre they may overlap and hide each other there.
+$#>{bmc bm17.bmp}  Rectangle Annotation
+
+Adds a rectangle to the overlay plane. The rectangle can be transparent or filled with a pattern.
+
+{bmc bm1.bmp} Select the Rectangle Annotation Icon.  {bmc bm1.bmp} Point to the place where you want to start the rectangle and dragDRAG@Sem.HLP to the place where you want to end the rectangle. {bmc bm31.bmp} Holding down <SHIFT> while dragging the mouse generates a square around the centre.  {bmc bm1.bmp} The rectangle will be shown at the selected place of the Image Window and can be dragged into the required position. 	  {bmc bm106.bmp}	
+{bmc bm1.bmp}	The HandlesHandles@Sem.HLP of the rectangle can be picked up and be used for reseizing the rectangle.
+	Holding the <SHIFT> key down whilst adjusting a selection handle will cause the rectangle object to snap to a square. 
+	Using the <SHIFT> key and the diagonal selection handles will shrink and grow the object from its centre point.
+
+The coordinates of the rectangle are displayed in the Status BarRDJHU5@Sem.HLP. {bmc bm107.bmp} 
+(From corner X/Y to opposite corner X/Y, centre X/Y, size X/Y)
+
+Also see 	Properties of Rectangle AnnotationProperties_of_Rectangle_Annotation
+$#Reduced Format display of results
+By default the results of a measurement object are displayed on an associated Results PanelResults_Parameter_Selections. The position of the Panel is unrestricted with respect to its measurement object. To enable the user to identify which measurement object is associated with which results panel each measurement object has one or more lables (e.g. Pa 1).
+
+An Alternative Reduced format is used when no results are selected on the results panel.
+In this format a label is not displayed and the value of the default parameter is displayed attached to the measurement object
+
+$#>Reduced Raster Command
+
+This command calls the Reduced Raster ModeBFKLC0@Sem.HLP.
+
+See also Reduced Raster ObjectReduced_Raster_Object
+$#>Reduced Raster Object
+
+This object is a 'mode graphic' and simply exists to depict boundaries of the SEM Reduced Raster ModeBFKLC0@Sem.HLP. 
+
+{bmc bm27.bmp} This function can be selected from the SEM Menu Bar8ZP0K4@Sem.HLP. 
+
+The colour of this graphic can be changed from the Annotation Settings Popup MenuAnnotation_Settings under Selection of Pen SettingsSelection_of_Pen_Settings.
+
+The selectedObject_Selection object can be reseized by draggingDRAG@Sem.HLP its selection handlesHandles@Sem.HLP to the desired object size, or moved by clickingCLICK@Sem.HLP on one of the objects lines and dragging the mouse. After the mouse button is released, the SEM Reduced Raster Mode parameters are set to these new values.
+
+
+ When selected, this object can be deletedDeleting_of_Annotation by using its PropertiesObjects_Properties_Menu popup menu as shown right. Deleting this object sets the SEM to Normal Mode4LTP_XJ@Sem.HLP. 	{bmc bm108.bmp}	
+
+{bmc bm4.bmp}	The reduced raster object is a 'hollow' object, this means that in Mouse Control ModeMouse_Control_Mode, the mouse can be clicked and dragged inside the reduced raster object to adjust any parameters assigned to the mouse such as magnification and focus. When selected, the cursor changes shape to a mini reduced raster graphic {bmc bm109.bmp} when the mouse is over an adjustable part of the reduced raster object. 
+$#>Reset Drawing Properties
+
+The properties of the annotation object may be reset either to the properties which have been selected by the user and were stored before o to the default settings.
+
+{bmc bm1.bmp} Click to one of the Radio Buttons2R6X4F@Sem.HLP to make your selection.  {bmc bm1.bmp} Click on <OK> to reset the properties.  {bmc bm1.bmp} <Cancel> or closing the window with {bmc bm24.bmp} will leave the panel without resetting the properties. 	{bmc bm110.bmp}	
+
+The objects properties will either revert to those set up via the Annotation SettingsAnnotation_Settings Popup Menu, or to a default selection defined by Image Manager for the specific object being reset.
+$#>Reset Standard Annotation User Settings
+
+This function when selected from the Standard Annotation Options TabThe_Standard_Annotation_Options_Tab, will revert the standard user settings stored in the Annotation Preferences FileUser_Preferences_File back to default factory settings.
+
+{bmc bm4.bmp}  Note that there is no undo option available once the user has confirmed this action. If you select this option by mistake, you may loadLoad_User_Settings any previously stored annotation preferencesSave_User_Settings back from disk.
+$#>Results Panel Parameters
+When double ckicking on a measurement object, or by selection of its Measurement Results Panel Properties Item, the following dialog appears. Note Deselecting all parameters invokes the Reduced Format display of resultsReduced_Format_display_of_results
+
+The Current Selection list box displays the results to be placed into the measurement objects results panel.  The Available parameters list box displays the parameters that can be added to the results panel, but are not currently displayed.  The default for each instance of a measurement object is to have all of its associated measurement parameters currently selected.  Double click on a parameter in either list box to move it to the opposite list box. Alternatively, select the desired parameter and press the button associated with its list box to move it.  Note : Each instance of a measurement object has its own settings regarding results parameters. There are usually two instances available of each measurement object, with the exception of the point to point markers, and the adjustable height and width cursor objects, which can be licenced (advanced measurement) to allow upto ten instances of each of these object to be created.	{bmc bm86.bmp} 	
+$#>Results Parameter Selections
+
+Each measurement object that has a Measurement Results PanelMeasurement_Results_Panel, such as the Point to Point Measurement ObjectPoint_to_Point also has an associated set of results that can be added to the measurement results panel when the object is created. If no results are selected, then a results panel for that particular object will not be created and the reduced formatReduced_Format_display_of_results used.
+
+Each instance of measurement object has its own set of selected parameters associated with it. Parameters are selected by using the
+ Measurement Results Selection DialogMeasurement_Results_Selection_Dialog.
+
+These settings are automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>Retrospective Measurement
+
+By Retrospective Measurement we mean measurements performed on an image loaded from a TIFF file.
+
+Provided the file has stored within it zone data the measurement objects will use the saved operating mode and pixel sizes to generate correct measurement values. The Zone magnification will will also be correct and will adjust for the current output device.
+
+Normal analogue and digital annotation objects should not be used as they will display the current values and not those relating to the TIFF image.
+ 
+{bmc bm3.bmp}	WARNING: MEASUREMENTS WHEN IMPORTED IMAGE IS NOT FULL SIZEMeasurement_Warning 
+$#>SEM  Menu Bar
+
+The SEM UIF application is tightly integrated with the Image Manager, in that a number of Image Manager functions are directly available from the SEM Menu Bar8ZP0K4@Sem.HLP . The interactions from the Image Manager are discussed:
+
+{bmc bm21.bmp}	The File Menu6XNXVL@Sem.HLP allows for the ExportExport_TIFF or Import of TIFFImport_TIFF format Image files, and for Annotation LoadingLoading_Annotation and SavingSaving_Annotation to be actioned.
+
+{bmc bm21.bmp}	From the Edit Menu28IFRD5@Sem.HLP, the Annotation ToolbarCalling_the_Annotation_Toolbar can be displayed by selecting Annotation3KJ6VR@Sem.HLP. 
+	This menu option also allows for Annotation Text ObjectsText_Annotation and Point to Point MeasurementPoint_to_Point Objects to be created directly.
+
+{bmc bm21.bmp}	The View Menu6Y3XP3@Sem.HLP allows the loading of the current or a default Data ZoneData_Zone into the Image WindowGIRNF0@Sem.HLP. 
+	Note that when a default datazone is loaded, the CURRENT.ADZ datazone in the user directory is overwritten. A prompt is displayed however to confirm this option. This menu also allows the creation of a Crosshairs ObjectCrosshairs_Object and a Graticule ObjectGraticule_Object. The parameters for Graticule Spacing199M5I2@Sem.HLP are also available through the menu item. 
+	The Hide and Unhide menu items allow various categories of annotation object to either be shown or hiddenHidden_Objects. When displayed, the Annotation Toolbar will display a H:n in its title caption where n represents the number of objects currently hidden.
+
+{bmc bm21.bmp}	The Scanning Menu215WPY_@Sem.HLP deals mainly with changes in SEM Operating ModesSEM_Operating_Mode. 
+	As a result of a SEM operating mode change, associalted Image Manager ObjectsImage_Manager_Objects may also be created. Tthese are used to graphically interact with the operating mode parameters :
+
+		Reduced RasterReduced_Raster_Object	Split ScreenSplit_Screen_Object		Dual MagnificationDual_Magnification_Object		Spot ModeSpot_Mode_Object		Line ScanLine_Scan_Object
+$#>SEM Calibration
+
+There are a number of Image Manager objects used for calibration of the SEM. 
+
+These include :
+
+	{bmc bm21.bmp}	Calibration CrossesCalibration_Crosses
+
+	{bmc bm21.bmp}	Calibration LinesCalibration_Lines
+$#>SEM Operating Mode
+
+This mode determines the format of the Image WindowGIRNF0@Sem.HLP, and the format in which Image Data is scanned into the SEM Image Store, and is not related to the current Image Manager Operating ModeMouse_Control.
+
+Depending on the SEM Operating Mode, the display may divided up into a number of ZonesZone.
+
+The following objects may be available for selection, however certain LicencesReasons_for_missing_greyed_Functions may be required to enter particular modes :
+
+	Reduced Raster ObjectReduced_Raster_Object
+
+	Split Screen ObjectSplit_Screen_Object
+
+	Dual Magnification ObjectDual_Magnification_Object
+
+	Spot Mode ObjectSpot_Mode_Object
+
+	Line Scan ObjectLine_Scan_Object
+
+{bmc bm4.bmp}Note that the Utility Menu CommandsUtility_Menu_Commands option, (an Image Manager Popup MenuContext_Sensitive_Popup_Menu) will offer a subset of the above operating modes.	{bmc bm111.bmp}	
+
+$#>SEM Parameter Object
+
+SEM Parameter objects are createdCreation_of_Objects from the Annotation ToolbarCalling_the_Annotation_Toolbar. A Parameter Input DialogParameter_Annotation appears before the object is displayed so that the appropriate parameter can be selected.
+
+The selected object can be reseized by draggingDRAG@Sem.HLP its selection handlesHandles@Sem.HLP to the desired object size, or moved by clickingCLICK@Sem.HLP inside the object and dragging the mouse.  The picture below shows the result of right clicking on the object to display its properties menu. From this menu, new object attributes or properties can be defined for this instance of the object.	{bmc bm112.bmp} 	
+ Special Features  {bmc bm21.bmp} Double clicking this object in Image Manager Select ModeSelect_Mode brings up the parameter input dialog so that this object can be edited.  {bmc bm21.bmp} Double clicking this object in Image Manager Mouse Control ModeMouse_Control_Mode brings up a parameter value dialog, where the value of this parameter can be modified.	{bmc bm113.bmp}	
+See also 	Parameter AnnotationParameter_Annotation
+		
+		Properties of Parameter AnnotationProperties_of_Parameter_Annotation
+$#>Save User Settings
+
+User settings may be saved on disk and loaded back againLoad_User_Settings for later use. The are saved in the user directory by default and have the extension *.anp. The default file for current annotation preferences is CURRENT.ANPUser_Preferences_File 
+
+Dialogs guide you through the procedure.
+
+{bmc bm1.bmp} If you are not in your User Directory as shown in the   Look In box use {bmc bm69.bmp} button to navigate to your directory.  {bmc bm1.bmp} Select User Preferences from the Files of Type Drop-down ListXYVXW3@Sem.HLP box.  {bmc bm1.bmp} Enter the file name (e.g. User1.anp) into the File Name box.  {bmc bm1.bmp} Click on the OK button to save the file.  {bmc bm1.bmp} Click on the Cancel button if you don't want to save the file.	{bmc bm114.bmp}	
+
+$#>{bmc bm115.bmp}  Saving Annotation
+
+This function is used to save Annotation Data to file.
+
+{bmc bm10.bmp} ClickingCLICK@Sem.HLP on the Save Annotation icon calls a standard Save File Dialog.  Annotation files are saved by default to the User Directory and have the extension *.ANN.  {bmc bm1.bmp} You are prompted to enter a file name. If a filename is already present you are asked whether or not the present file should be overwritten with the file to be saved.  {bmc bm4.bmp} Note that two file types are supported by this dialog .ANN (annotation) and .ADZ (annotation data zone).	 {bmc bm116.bmp}	
+
+{bmc bm31.bmp}The Save Selected Annotation Only check box on the dialog is useful when only selectedObject_Selection annotation objects, need to be saved. This is especially useful when saving Sticky Panel ObjectsSticky_Panel_Annotation for example into .ADZ files to later be loaded as data zonesData_Zone.
+$#>Select All Seen
+
+Selects all visible Annotation ObjectsObject_Selection from the overlay plane.
+
+{bmc bm4.bmp}	An object is selected when it's handlesHandles@Sem.HLP are displayed.
+
+{bmc bm3.bmp}	The Data ZoneData_Zone gets also selected. 
+
+$#>Select Buttons
+
+Enter Select Mode on New Object:
+In this mode you return to the selection mode after you have created an object. Selection mode selects the object (handlesHandles@Leo_1500.HLP appear) for further adjustment and alignment.
+
+Keep Current Tool Button Selected:
+In this mode the tool button is kept selected. So each time you click in the Image Window an new object of the same type is generated up to the maximum number of objects on the overlay plane (usually 2).
+
+The selected mode is checked with {bmc bm23.bmp}.
+
+$#>{bmc bm7.bmp}  Select Mode
+
+In this mode, the user can select objectsObject_Selection, or groups of objects for moving or deletion. If an individual object is selected then it can also be sized. 
+
+{bmc bm4.bmp} Note that if parameters are assigned for mouse adjustment (See Status Bar Parameter ControlT3KQVM@Sem.HLP), no adjustment will be performed while Image Manager is in this mode.
+
+With the Annotation ToolbarCalling_the_Annotation_Toolbar displayed, this is the default mode. The opposite of select mode is Mouse Control ModeMouse_Control_Mode. In Mouse Control Mode, the Image Manager acts as if the toolbar were not being displayed, and ignores all object selections that could otherwise be made if Select Mode were active.
+
+This mode also affects the Context Sensitive Popup MenuContext_Sensitive_Popup_Menu.
+
+See also Mouse ControlMouse_Control
+$#>Selection of Bitmap Background
+
+After an Annotation Object has been created it's properties can be changed.
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+ {bmc bm1.bmp} Select Solid Background Mode or Transparent Background Mode. The selected mode is marked {bmc bm23.bmp}  {bmc bm1.bmp} If you selected Transparent Background Mode you may select Transparent Background Colour. This is the colour which becomes transparent.  {bmc bm1.bmp} Click on a colour field to activate it.  {bmc bm1.bmp} With <OK> the selection is accepted and the marked picture will be presented with the new background selection.  {bmc bm1.bmp} <Close> or {bmc bm24.bmp} terminate the panel without change. 	{bmc bm25.bmp} 	
+$#>Selection of Brush Settings
+
+After an Annotation Object has been created it's properties can be changed.  {bmc bm10.bmp} Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.  {bmc bm8.bmp} Open the Properties Dialog by clicking with the right mouse button.  {bmc bm1.bmp} Select the Brush SettingsBrush_Settings Panel.  {bmc bm1.bmp} From the Style Drop-down ListXYVXW3@Sem.HLP select the style (pattern).  {bmc bm1.bmp} Click on Colour to open the Colour Selection panel.  {bmc bm1.bmp} Click on a colour field to activate it.  {bmc bm1.bmp} With <OK> the colour selection is accepted .  {bmc bm1.bmp} <Close> or {bmc bm24.bmp} terminate the Colour panel without change. .  {bmc bm1.bmp} With <OK> the Brush Settings selection is accepted.  {bmc bm1.bmp} <Cancel> or {bmc bm24.bmp} terminate the Brush Settings panel without change.   {bmc bm4.bmp} Note: If Transparent Background is selected the brush is set automatically to Hollow Brush, otherwise the Solid Background may have it's own colour.	{bmc bm26.bmp}  {bmc bm25.bmp}	
+
+$#>Selection of Direction Arrow 
+
+After an Annotation Object has been created it's properties can be changed.
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm117.bmp}	Select between Display Direction Arrow(s) and No Direction Arrow(s)
+
+The selected property is checked {bmc bm118.bmp}.
+ 
+$#>Selection of Font, Style and Colour
+
+After an Annotation Object has been created it's properties can be changed.
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm1.bmp} Select the Font Dialog Panel.  {bmc bm1.bmp} From the Font List select the type.  {bmc bm1.bmp} Select the style from the Style List.  {bmc bm1.bmp} Select Font Size.  {bmc bm1.bmp} From the Effects Frame select Colour from the Drop-down ListXYVXW3@Sem.HLP and Strikeout and Underline if so required.  {bmc bm1.bmp} With <OK> the selection is accepted and the marked text will be presented with the new font selection.  {bmc bm1.bmp} <Cancel> or {bmc bm24.bmp} terminate the panel without change.   {bmc bm31.bmp} Adjusting the size of the annotation text field scales the text size inside.	{bmc bm119.bmp}	
+
+$#>Selection of Background Colour
+
+After an Annotation Object has been created it's properties can be changed.
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+ {bmc bm1.bmp} Select Solid Background or Transparent Background. The selected mode is marked {bmc bm23.bmp}   {bmc bm1.bmp} If you selected Solid Background you may select Background Colour.  {bmc bm1.bmp} Click on a colour field to activate it.  {bmc bm1.bmp} With <OK> the selection is accepted and the marker bar will be presented with the new background selection.  {bmc bm1.bmp} <Close> or {bmc bm24.bmp} terminate the panel without change.  	{bmc bm25.bmp}	
+
+$#Selection of Line/Pen Settings
+
+After an Annotation Object has been created it's properties can be changed.  {bmc bm10.bmp} Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.  {bmc bm8.bmp} Open the Properties Dialog by clicking with the right mouse button.  {bmc bm1.bmp} Select the Line/Pen Settings Panel.  {bmc bm1.bmp} From the Line/Pen Width Drop-down ListXYVXW3@Sem.HLP select the line width.  {bmc bm1.bmp} Select the style from the Style List if line width is 1. If line width is >1 then only Solid is available  {bmc bm1.bmp} Click on Colour to open the Colour Selection panel.  {bmc bm1.bmp} Click on a colour field to activate it.  {bmc bm1.bmp} With <OK> the colour selection is accepted .  {bmc bm1.bmp} <Close> or {bmc bm24.bmp} terminate the Colour panel without change. .  {bmc bm1.bmp} With <OK> the Pen Settings selection is accepted.  {bmc bm1.bmp} <Cancel> or {bmc bm24.bmp} terminate the Pen Settings panel without change. 	{bmc bm120.bmp}  {bmc bm25.bmp}	
+
+$#>Selection of Text Background
+
+After an Annotation Object has been created it's properties can be changed.
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Leo_1500.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm1.bmp} Select Solid Text Background or Transparent Text Background. The selected mode is marked {bmc bm23.bmp}.  {bmc bm1.bmp} If you selected Solid Text Background you may select Text Background Colour.  {bmc bm1.bmp} Click on a colour field to activate it.  {bmc bm1.bmp} With <OK> the selection is accepted and the marked text will be presented with the new background selection.  {bmc bm1.bmp} <Close> or {bmc bm24.bmp} terminate the panel without change.   {bmc bm31.bmp} Adjusting the size of the annotation text field scales the text size inside.  	{bmc bm25.bmp}	
+
+$#>Set Fixed Micron Value
+
+After an Annotation Object has been created it's properties can be changed.
+
+{bmc bm10.bmp}	Select the object by clickingCLICK@Sem.HLP with the left mouse button on it. A selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm1.bmp} Click on the Set Fixed Micron Value to switch the Annotation Micron Measurement panel on.  {bmc bm1.bmp} Insert the value into the text field of the Annotation Micron Measurement panel.  {bmc bm1.bmp} <OK> sets the value, <Cancel> leaves the panel without change. 	 {bmc bm60.bmp} 	
+The panel can be directly called with <CTRL + M>.
+$#>Set Font Pen and Brush
+
+Set Raster Line Pen Settings:
+Sets the pen for the lines of annotation objects. See Selection of Pen SettingsSelection_of_Pen_Settings.
+
+Set Font for Measurement Objects:
+Sets the font for existing measurement objects. See Selection of Font, Style and ColourSelection_of_Font__Style_and_Colour.
+
+Set Font for Result Panels:
+Sets the font for result panels. See Selection of Font, Style and Colour.
+
+Set Result Panels Background Brush:
+Sets the background brush for result panels. See Selection of Brush SettingsSelection_of_Brush_Settings.
+
+{bmc bm3.bmp}	New objects will be drawn with their default properties.
+$#>Set Panel Font
+
+A combined font for all objects in the sticky panel can be set for uniform appearance.
+
+
+{bmc bm1.bmp} Select the Font Dialog Panel from Set Panel Font.  {bmc bm1.bmp} From the Font List select the type.  {bmc bm1.bmp} Select the style from the Style List.  {bmc bm1.bmp} Select Font Size.  {bmc bm1.bmp} From the Effects Frame select Colour from the Drop-down ListXYVXW3@Sem.HLP and Strikeout and Underline if so required. {bmc bm1.bmp} With <OK> the selection is accepted and the marked text will be presented with the new font selection.  {bmc bm1.bmp} <Cancel> or {bmc bm24.bmp} terminate the panel without change.   {bmc bm31.bmp} Adjusting the size of the sticky panel scales the text size inside.	{bmc bm119.bmp} 	
+$#>Simple Object Selection
+
+{bmc bm1.bmp} To select an object clickCLICK@Sem.HLP on its centre. If you are in Select ModeSelect_Mode, then selection handlesHandles@Sem.HLP should appear around the object.   {bmc bm4.bmp} Note that by dragging the selection handles, depending on the object type and handle clicked the object will either resize or move.  {bmc bm1.bmp} The keyboard cursor keys may also be used to adjust the object.  {bmc bm1.bmp} Try right clicking on the object to see its properties menuConfiguring_Annotation.   {bmc bm1.bmp} Double clicking with the left button opens the Results PanelResults_Panel_Parameters. 	{bmc bm103.bmp}	
+
+$#>Snap to Grid Property
+
+This property determines whether or not an objectImage_Manager_Objects is snapped to a grid (defined by the Snap to GridAlignment_Grid_Spacing settings dialog), when moved or sized.
+$#Software Principles
+
+The LEO-32 Image Manager which handles Annotation and Measurement is a special application that co-exists with the SEM User Interface (SEM UIF). It acts as an overlay on top of the SEM Image, and allows various image related functions to be actioned easily. Typical functions would be those that add image annotation and measurement objects, save images, change SEM operating modes etc.
+
+Unlike most windows applications, when the SEM UIF window is moved, the image portion or 'Client Area' to use Window terminology; remains static along with the overlay provided by Image Manager. The SEM UIF Client Area and Image Manager overlay can in this way be seen as a viewport on the Image.
+
+The Image Manager is controlled mainly by a simple 'selection and execution' process using the mouse. The user 'selects' a toolbar or menu function and 'executes' its features by clicking and dragging the mouse over the desired area of the viewport. Where possible, some additional keyboard short-cuts have also been implemented for use with Image Manager.
+As Image Manager is object oriented, all of its functions can be classed or sub-classed into Image Manager Objects. An object can be anything from a measurement tool, to a piece of text, to a file selection area.
+
+Finally, Image Manager works with a standard co-ordinate systemCo_ordinate_System and  a standard measurement systemStandard_Measurement_System that is applied to all objects.
+
+The Image Manager, where possible, is logically partitioned into a number of discrete sections, each having one of two goals : -To select a specific function or action. -To apply a specific action in the context of the selected function. Selection of functions can be achieved by making selections from  :
+
+The Annotation ToolbarCalling_the_Annotation_Toolbar, the SEM Menu Bar8ZP0K4@Sem.HLP and the Image Manager Context Sensitive Popup MenuContext_Sensitive_Popup_Menu.
+
+The contents of the Popup Menu are determined by the current operating modeImage_Manager_Operating_Mode of the Image Manager. Wherever possible, help text is displayed in the SEM UIF Status Bar Message AreaStatus_Bar_Message_Area. Objects can easily be createdCreation_of_Objects or selectedObject_Selection by using the Annotation Toolbar functions.
+$#>Special Panel Settings
+
+{bmc bm10.bmp}	Select the Sticky Panel by clickingCLICK@Sem.HLP with the left mouse button on it. The selected object displays handlesHandles@Sem.HLP.
+
+{bmc bm8.bmp}	Open the Properties Dialog by clicking with the right mouse button.
+
+{bmc bm1.bmp}	Select Lock this Panel or Unlock this Panel. The selected mode is indicated with {bmc bm23.bmp}.
+
+{bmc bm4.bmp}	When the panel is locked, the annotation objects which are placed on the panel cannot be selected, sized or changed in any way until this setting is unchecked.
+{bmc bm1.bmp}	Select Make Panel a Data Zone or Don't make Panel a Data Zone. The selected mode is indicated with {bmc bm23.bmp}. This is simply an internal tag that allows the panel to be identified as a DataZone.
+
+{bmc bm4.bmp}	Datazones are handled differently from normal annotation objects: They can be individually hidden and unhidden from top menu functions on the Menu Bar Menu View6Y3XP3@Sem.HLP. Also RESET does not remove them
+
+{bmc bm1.bmp}	To save a panel as a DataZone, first ensure that the Make Panel a Data Zone option is selected. Secondly, ensure that only the panel to be saved is selected. Finally, when the file save dialog appears, ensure that the Save Selected Annotation Only flag is checked and that the file extension is .ADZ e.g MyDataZone.ADZ.
+
+{bmc bm1.bmp}	Usually the user alters the current DataZone to their own requirements, these changes are automatically remembered until the Default DataZone is re-loaded. If you have created your own DataZone panel however, and do not wish to edit the current DataZone, then select Make Current Data Zone to overwrite the current DataZone with your new settings.
+$#>Split Screen Command
+
+
+This command calls the Split Mode1QEXFRQ@Sem.HLP.
+
+See also Split Screen ObjectSplit_Screen_Object
+$#>Split Screen Object
+
+This object is a 'mode graphic' and simply exists to depict the ZoneZone boundaries in the SEM Split Mode1QEXFRQ@Sem.HLP. 
+
+{bmc bm27.bmp}  This function can be selected from the SEM Menu Bar8ZP0K4@Sem.HLP. 
+
+The colour of this graphic can be changed from the Annotation Settings Popup MenuAnnotation_Settings under Selection of Pen SettingsSelection_of_Pen_Settings.
+
+
+In Split Mode, a Zone Selection MarkerZone_Selection_Marker is used to switch control between zones:{bmc bm121.bmp}  When selectedObject_Selection, this object can be deletedDeleting_of_Annotation by using its PropertiesObjects_Properties_Menu popup menu as shown right. Deleting this object sets the SEM to Normal Mode4LTP_XJ@Sem.HLP.	{bmc bm122.bmp}	
+
+$#>Spot Mode Object
+
+This object is a 'mode graphic' and simply exists to depict the spot position of the SEM Spot Mode1YKSCA@Sem.HLP.
+
+{bmc bm27.bmp}  This function can be selected from the SEM Menu Bar8ZP0K4@Sem.HLP. 
+
+The colour of this graphic can be changed from the Annotation Settings Popup MenuAnnotation_Settings under Selection of Pen SettingsSelection_of_Pen_Settings.
+
+The selected objectObject_Selection can be moved by draggingDRAG@Sem.HLP its selection handlesHandles@Sem.HLP or lines to the desired Image WindowGIRNF0@Sem.HLP area with the mouse. As the object is dragged, the SEM Spot Mode parameters are set to these new values.  The object can be deleted by selecting the object and pressing the <Delete> key, or by choosing the Delete option from its PropertiesObjects_Properties_Menu popup menu.	{bmc bm123.bmp}	
+
+$#>Standard Measurement System
+
+The angles used in measurement are, 0°-360°, with 0° being measured perpendicular to the SEM Raster Scan line, traveling clockwise to 360°. 
+
+Other measurement values have a base unit of metres, but are automatically formatted to engineering units where appropriate (mm, µm, nm). This formatting depends on the current value of Pixel Size, which in turn is dependent on the ZoneZone that the object is in, and the magnification factor that is being applied to the zone when the measurement object is being displayed.
+$#Standard Printer dialog
+This is requested from the Printer Setup DialogPrint_Setup_Dialog and displays the Standard Printer Dialog as it is also used in Windows95 which allows selection of the printer, printing type, number of copies etc. The form of the panel may vary according to the type of printer used. Use {bmc bm124.bmp} in the printer dialog to get information about details of your printer.
+{bmc bm1.bmp} Select the printer type on which you want to print the image from the Name Drop-down List.   Status (of the printer like Ready), Type (of the printer like HP LaserJet 4V) and Where (the path to the printer) give you additional information.  {bmc bm1.bmp} With Properties you select and set the parameters of the printer in use.  {bmc bm1.bmp} You may print the image to a print file for later printing if you check {bmc bm32.bmp} Print to file.   {bmc bm1.bmp} Print range is generally All because you print 1 image at a time from the SEM application.  {bmc bm1.bmp} In Copies select the number of copies with the scroll bar or type the parameter into the filed.	{bmc bm125.bmp}	
+{bmc bm1.bmp}	OK accepts the changes made, Cancel or clicking on {bmc bm24.bmp} terminates the dialog without changing settings.
+$#>Status Bar Message Area
+
+Wherever possible, help text for the current menu item or action is displayed in the SEM Status Bar Message Area. 
+
+When an object is created, or selected using the Image Manager Object selection option, and the left mouse button is pressed down over the object, an object status display is output to the status bar in the form :
+
+{bmc bm126.bmp}
+
+This display co-ordinate information is interpreted as follows :
+
+(Left X, Top Y)->(Right X, Bottom Y),(X-Centre, Y Centre)=(Width, Height)
+
+The cartesian co-ordinate system of 1024x768, with the top left co-ordinate being the origin at (0,0) is used, as mentioned in the Overview.
+$#>{bmc bm19.bmp}  Sticky Panel Annotation
+
+Adds a rectangle to the overlay plane onto which annotation objects can be "stuck". The rectangle can be transparent or filled with a pattern. A transparent background can be achieved by setting the Brush StyleSelection_of_Brush_Settings to Hollow, and the Pen SettingsSelection_of_Pen_Settings to Invisible.
+
+{bmc bm1.bmp} Select the Sticky Panel Annotation Icon.  {bmc bm1.bmp} Point to the place where you want to start the rectangle and dragDRAG@Sem.HLP to the place where you want to end the rectangle.  {bmc bm1.bmp} The rectangle will be shown at the selected place of the Image Window and can be dragged into the required position.	  {bmc bm127.bmp} 	
+{bmc bm1.bmp}	{bmc bm31.bmp} The handlesHandles@Sem.HLP of the rectangle can be clicked on and used for resizing the rectangle. Holding down <SHIFT> while dragging the mouse will proportionally scale all objects inside the panel, along with the panel itself.
+
+{bmc bm1.bmp}	To "stick" objects to a panel, simply click and drag them over the panel when in Selection ModeSelect_Mode. When releasing the left mouse button, the top left corner of the object being "stuck" to the panel must be anywhere within the bounds of the panel rectangle.
+
+The coordinates of the rectangle are displayed in the Status BarRDJHU5@Sem.HLP. {bmc bm128.bmp}
+(From corner X/Y to opposite corner X/Y, centre X/Y, size X/Y)
+
+See also	 Properties of Sticky Panel AnnotationProperties_of_Sticky_Panel_Annotation
+
+$#>Sticky Panel Background Colour
+
+{bmc bm10.bmp}	Select the Sticky Panel by clickingCLICK@Sem.HLP with the left mouse button on it. The selected object displays handlesHandles@Leo_1500.HLP.
+
+{bmc bm8.bmp} Open the Properties Dialog by clicking with the right mouse button.  {bmc bm1.bmp} Select  Background Colour. This is the colour which fills the rectangle.   {bmc bm1.bmp} Click on a colour field to activate it.  {bmc bm1.bmp} With <OK> the selection is accepted.  {bmc bm1.bmp} <Close> or {bmc bm24.bmp} terminate the panel without change.   {bmc bm4.bmp}  Note: The BrushSelection_of_Brush_Settings may still paint on the Background with a different colour and pattern.  {bmc bm31.bmp} Adjusting the size of the sticky panel scales the text size inside.		{bmc bm25.bmp}	
+
+$#>Sticky Panel Datazone Flag
+
+This property only applies to Sticky Panel ObjectsSticky_Panel_Annotation. 
+
+When this flag is set, the panel is turned into a Data Zone ObjectData_Zone.
+$#>Sticky Panel Lock Property
+
+This property only applies to Sticky Panel ObjectsSticky_Panel_Annotation. 
+
+When this flag is set, any objects that are 'stuck' to this panel cannot be selectedObject_Selection or otherwise edited. This prevents accidental activation of objects when moving or sizing sticky panel objects. 
+
+The exception to this rule is that double clickingCLICK@Sem.HLP of objects is still valid, this is especially useful for example if
+a SEM Parameter ObjectSEM_Parameter_Object is stuck to a panel. When the parameter object is double clicked in Mouse Control ModeMouse_Control_Mode, a user input box appears with the option to adjust the selected parameter.
+$#Store resolution
+This parameter sets the resolution of the image store.
+Choices are	512 	* 384
+		1024	* 768
+		2048	* 1536
+		3072	* 2304
+
+$#>{bmc bm93.bmp}  Stored Data Histogram
+
+The histogram function displays a histogram of the stored image.
+
+ {bmc bm1.bmp} ClickCLICK@Sem.HLP on the Stored Data Histogram Icon to switch to histogram creation mode.  {bmc bm1.bmp} Click on the image on the area in the which you want the top left corner of the histogram to be displayed. The histogram will auto-scale itself to a default width and height  {bmc bm1.bmp} The histogram will be shown at the selected position in the Image Window, and can be draggedDRAG@Sem.HLP to a new position as required. 	{bmc bm129.bmp}	
+{bmc bm1.bmp}	Using the handlesHandles@Sem.HLP the histogram can also be sized.
+
+{bmc bm1.bmp}	Note that the histogram bin cursors at bin positions 34 and 103 can be clicked and dragged to highlight the desired bin number. Holding the Shift key whilst dragging one cursor, moves the other cursor by the same amount. 
+
+{bmc bm1.bmp}	The data for the histogram can be copied to the clipboard for insertion into a speadsheet. This is achieved using the Annotation CopyAnntotation_to_Clipboard Popup Menu item.
+
+See also	 Properties of Stored Data HistogramProperties_of_Stored_Data_Histogram
+$#>{bmc bm92.bmp}  Stored Vector Profile
+
+The Stored Vector Profile function brings up the profile display along a measurement line on the stored image.
+Precision AdjustmentPrecision_Adjustment is available.
+
+{bmc bm1.bmp} ClickCLICK@Sem.HLP on the Stored Vector Profile Icon to switch the function on.  {bmc bm1.bmp} Draw a line for which you want to show the grey level profile.  {bmc bm1.bmp} This line may be moved on the stored image of the Image Window and can be draggedDRAG@Sem.HLP into the required position.  Using the handlesHandles@Sem.HLP the line can also be sized.  {bmc bm1.bmp} When the line is dropped the trace on the profile display describes the grey levels lying under the line. Note that the leftmost point of the line is the leftmost position on the profile display. The display can be dragged to size.  {bmc bm1.bmp} Note that the profile width cursors can be clicked and dragged to highlight the desired profile position. Holding the Shift key whilst dragging one cursor, moves the other cursor by the same amount.  	{bmc bm130.bmp}	
+{bmc bm1.bmp}	Note also that an alternative to dragging the cursors is to adjust the cursor markers actualy on the profile line itself. This allows for accurate feature alignment. Click and drag these markers to adjust the profile cursors.
+
+{bmc bm1.bmp}	If not already displayed, double click on the profile to open the Results PanelResults_Panel_Parameters and add the Profile Width parameter which shows the distance between the cursors in the profile plot. 
+
+{bmc bm1.bmp}	The data from this objects results panelResults_Panel_Parameters can be copied to the clipboard for insertion into a speadsheet. This is achieved using the Annotation CopyAnntotation_to_Clipboard Popup Menu item.
+
+{bmc bm4.bmp}Changing the magnification setting on the microscope will invalidate the profile graph, as the object no longer represents the data that was previously sampled and stored. In this case, double click on the profile graphic to resample the profile data.
+
+{bmc bm3.bmp} The dimensional measurement is derived from the zone magnification hence when multiple zones are present both markers must lie in the same zone. If the markers are moved into different zones the dimensional value is set to zero and a ? is annotated.
+
+See also	 Properties of Stored Vector ProfileProperties_of_Stored_Vector_Profile
+$#>{bmc bm20.bmp}  TIFF Data Annotation
+
+This function creates a sequence of annotation objects which contain data from the currently loaded TIFF file which were saved as User Selected ParametersExport_Tiff_Data.
+
+{bmc bm1.bmp} Select the TIFF Data Icon. {bmc bm1.bmp} Point to the place where you want to start the annotation and clickCLICK@Sem.HLP. {bmc bm1.bmp} The Annotation SEM TIFF Parameter panel will appear. {bmc bm1.bmp} Mark the Parameter which you want to display. It shows in the top window. {bmc bm1.bmp} With <OK>.the parameter will be annotated. The procedure can be repeated. {bmc bm1.bmp} <Remove> removes a marked item from the list. {bmc bm1.bmp} <Remove All> clears the list after confirmation of a safety request input panel. {bmc bm1.bmp} <Cancel> or closing with {bmc bm24.bmp} leaves the Annotation box without transferring parameters.	{bmc bm131.bmp} 	
+{bmc bm1.bmp}	The parameter(s) will be shown at the selected place of the image Window and can be dragged into the required position.
+{bmc bm1.bmp}	If you have edited text (e.g. deleted) you can revert it with <Undo>.
+
+{bmc bm31.bmp}	These TIFF data objects may be placed in a Sticky PanelSticky_Panel_Annotation or User Defined Data ZoneData_Zone. They have the special property that when the datum is not available they display it as ?.
+
+
+See also: 		Parameter AnnotationParameter_Annotation 		Properties of TIFF Data AnnotationProperties_of_TIFF_Data_Annotation
+
+				Retrospective MeasurementRetrospective_Measurement
+$#>TIFF Import Object
+
+
+Once created by the TIFF Import DialogImport_TIFF, this object allows the area it defines on the Image WindowGIRNF0@Sem.HLP to be used to Import Image Data from a TIFF File.  The selectedObject_Selection object can be moved by clickingCLICK@Sem.HLP inside the object and draggingDRAG@Sem.HLP the mouse.   Right clicking on the object displays its properties menuAnnotation_Settings. From this menu, new object attributes or properties can be defined for this instance of the object.	{bmc bm36.bmp}	
+This object is the opposite of a TIFF Export ObjecExport_TIFFt. This object is automatically created if no existing Import Area Object is present when the user selects an Import function from either the Annotation SettingsAnnotation_Settings Popup-menu or from the Utility Popup MenuUtility_Popup_Menu, or even from its own properties menu as shown above.	{bmc bm132.bmp}	
+
+$#TIFF User Text
+
+This is User defined text which is embedded within the exported TIFF file using a LEO Reserved Tag Field.
+This text may be viewed in TIFF Import and GalleryQE6MIU@gallery.hlp functions
+
+The text is also available for annotation as a string parameterString_Parameters.
+$#>{bmc bm13.bmp}  Text Annotation
+
+{bmc bm1.bmp} Select the Text Icon. {bmc bm1.bmp} Point to the place where you want to start the text and clickCLICK@Sem.HLP. {bmc bm1.bmp} The Annotation Caption box will appear. {bmc bm1.bmp} DragDRAG@Sem.HLP the slider6C_DYB@Sem.HLP on top of the input window to design the text width (Word Wrap must be on). {bmc bm1.bmp} Enable Word Wrap by marking the check box {bmc bm32.bmp}. {bmc bm1.bmp} Insert into caption <Time Now>, <Date Now>, <User Name>, and special characters as indicated if required. {bmc bm1.bmp} Use Insert Now to place text lines written so far onto the Image Window and clear the input window for new text. {bmc bm1.bmp} After typing the text press <OK>.  {bmc bm1.bmp} The text will be shown at the selected place of the image Window and can be dragged into the required position. 	{bmc bm133.bmp}	
+	The coordinates of the text are displayed in the Status BarRDJHU5@Sem.HLP. {bmc bm134.bmp}
+	(From corner X/Y to opposite corner X/Y, centre X/Y, size X/Y)
+{bmc bm4.bmp}	Note: The available fonts are those that have been installed under Windows95.
+{bmc bm1.bmp}	If you have edited text (e.g. deleted) you can revert it with <Undo>.
+
+{bmc bm1.bmp}	<Cancel> leaves the Annotation Caption box without transferring text into the Image Window Overlay Plane.
+{bmc bm31.bmp}	Double clicking on the text field on the Image Window Overlay brings back the text in the Annotation Caption for editing.
+
+See also  Properties of Text AnnotationProperties_of_Text_Annotation
+$#>The Measurement Object Font
+
+This preference is configured using the Measurement & Results Annotation Options TabThe_Measurement___Results_Options_Tab
+
+This user setting alters the FontSelection_of_Font__Style_and_Colour of a measurement object, such as the Point to Point Measurement ObjectPoint_to_Point.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>The Raster Lines Line Colour
+
+This user setting alters the LineSelection_of_Pen_Settings of a raster object, such as the Reduced Raster ObjecReduced_Raster_Objectt or the Split Screen ObjectSplit_Screen_Object.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>The Return to Select Mode Option
+
+This option affects the functionality of the Annotation ToolbarCalling_the_Annotation_Toolbar. 
+
+When this option is set, after performing an operation such as creating an annotation object, Select ModeSelect_Mode is automatically entered and the toolbar Select Mode button is shown as pressed {bmc bm7.bmp}. This then allows further operations to be performed on the newly created object.
+
+When this option is not set, the currently selected toolbar function remains active, and allows further instances of the same object to be created. 
+
+This may be useful when for example creating a set of Annotation LinesLine_Annotation for labeling a specimen, without having to select the Annotation Line toolbar button {bmc bm16.bmp} repeatedly.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#The Select On Create Option
+
+This option affects the functionality of the Annotation ToolbarCalling_the_Annotation_Toolbar. 
+
+When this option is set, after creating an annotation object, it is automatically selected
+
+When this option is not set, the object is not selected and will require a Click to select it
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File
+$#The Snap to Grid Option
+
+The following dialog is displayed for the user to select the grid settings, and is accessed via 
+the Annotation Settings Pop Up MenuAnnotation_Settings :
+
+When the Snap to Grid option is checked {bmc bm32.bmp}, objects that this preference affects will only be able to be sized and moved over the Image WindowGIRNF0@Sem.HLP to the accuracy given in the Width and Height input boxes.   This option is useful for aligning text objectsText_Annotation for example. When displayed, the Annotation ToolbarCalling_the_Annotation_Toolbar will display an S in its title if the Snap to Grid setting is enabled.  These settings are automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.	{bmc bm9.bmp}	
+
+$#>The Text Wordwrap Option
+
+This user setting alters the word wrap options associated with an Annotation TextText_Annotation selection dialog. 
+
+{bmc bm4.bmp} Note that this option either enables {bmc bm32.bmp} or disabled the Word Wrap option.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>The Standard Object Background Colour
+
+This preference is configured using the Standard Annotation Options TabThe_Standard_Annotation_Options_Tab.
+
+This user setting alters the Background ColourBackground_Colour_Property of an object that supports this property, such as the Rectangle ObjectRectangle_Annotation.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>The Standard Object Background Mode
+
+This preference is configured using the Standard Annotation Options TabThe_Standard_Annotation_Options_Tab.
+
+This user setting alters the Background ModeBackground_Mode_Property of an object that supports this property, such as the Rectangle ObjectRectangle_Annotation.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>The Standard Object Brush Definition
+
+This preference is configured using the Standard Annotation Options TabThe_Standard_Annotation_Options_Tab.
+
+This user setting alters the BrushSelection_of_Brush_Settings of an object that supports this property, such as the Rectangle ObjectRectangle_Annotation.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>The User Defaults or User Settings Option
+
+When the Use Defaults Option is selected from the Annotation Settings Popup MenuAnnotation_Settings , each object that is created will have a default set of properties such as line width and colour, or font size and colour. These defaults are defined by the system for the objects being created.
+
+When the defaults option is not selected, then the User settings are used to define the properties of annotation objects that are subsequently created. These user settings are selected from the Context Sensitive Popup MenuContext_Sensitive_Popup_Menu, and are stored in the Users Preferences FileUser_Preferences_File. User perferences containing new settings can be saved or loaded, again by using the Load User SettingsLoad_User_Settings option from Image Manager Popup Menu.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>The Direction Arrows Option
+
+This user setting alters the Direction Arrow PropertySelection_of_Direction_ArroW_ of an object that supports this property, such as the Line ObjectLine_Annotation.
+
+$#>The Standard Object Font Definition
+
+This preference is configured using the Standard Annotation Options TabThe_Standard_Annotation_Options_Tab.
+
+This user setting alters the FontSelection_of_Font__Style_and_Colour of an object that supports this property, such as the Text ObjectText_Annotation.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>The User Measurement Object Text Colour
+
+This user setting alters the Text ColourSelection_of_Font__Style_and_Colour of a measurement object, such as the Point to PointPoint_to_Point measurement object.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>The Standard Object Line/Pen Definition
+
+This preference is configured using the Standard Annotation Options TabThe_Standard_Annotation_Options_Tab.
+
+This user setting alters the PenSelection_of_Pen_Settings of an object that supports this property, such as the Rectangle ObjectRectangle_Annotation.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>The Results Panel Brush Definition
+
+This user setting alters the BrushSelection_of_Brush_Settings property of a measurement object Results PanelResults_Panel_Parameters, such as the Point to Point Measurement ObjectPoint_to_Point results panel.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>The Results Panel Font
+
+This preference is configured using the Measurement & Results Annotation Options TabThe_Measurement___Results_Options_Tab
+
+This user setting alters the FontSelection_of_Font__Style_and_Colour of a measurement object results panel, such as the Point to PointPoint_to_Point Measurement Object Results PanelSelection_of_Font__Style_and_Colour..
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+
+$#>The User Results Panel Text Colour
+
+This user setting alters the Text Colour Selection_of_Font__Style_and_Colourof a measurement object Results PanelMeasurement_Results_Panel, such as the Point to PointPoint_to_Point measurement object results panel.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+
+$#>The Standard Object Text Background Mode
+
+This preference is configured using the Standard Annotation Options TabThe_Standard_Annotation_Options_Tab.
+
+This user setting alters the Text Background ModeText_Background_Mode of an object that supports this property, such as the Text ObjectText_Annotation.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#The Standard Object Text Colour
+
+This preference is configured using the Standard Annotation Options TabThe_Standard_Annotation_Options_Tab.
+
+This user setting alters the Text ColourSelection_of_Font__Style_and_Colour of an object that supports this property, such as the Text ObjectText_Annotation.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+
+$#>{bmc bm44.bmp}  Undo Last Edit
+
+{bmc bm10.bmp}	ClickingCLICK@Sem.HLP on the Undo Last Edit icon reverts the last editing action, and then the icon is disabled (greyed).
+
+{bmc bm4.bmp}	The icon is only active if a editing action was performed previously.
+
+When an object has been createdCreation_of_Objects, edited or moved, either by using the mouse or the keyboardKeyboard_Adjustment, the Image Manager takes a temporary 'snap-shot' of the current set of annotation objects.
+
+When the undo function is called, the previous annotation set is re-instated.
+
+When the Annotation ToolbarCalling_the_Annotation_Toolbar button for this function is 'greyed' no undo action can be performed. Either the object being edited does not support an undo function, or the undo function has already been called / there is nothing to undo.
+
+{bmc bm4.bmp} Note : This function does not undo SEM parameter value changes unless they are specific to a graphic object. For example, changing the angle of an Angular Measurement Angular_Measurementobject will adjust the angular SEM parameter, performing an undo will reset the angle to that before the edit, and change the SEM parameter correspondingly.
+$#>Undo Last Edit/Delete
+
+This function is identical to the function called from the annotation panel with {bmc bm44.bmp}  Undo Last EditUndo_Last_Edit.
+$#>Unhide Annotation
+
+This function allows to unhide annotation objects which have been hidden before in a differentiated way:
+
+Unhide Selected Objects:
+
+Unhide Standard Annotation:
+Hidden standard annotation objects (text, parameter annotation, bitmap, line, rectangle, ellipse, sticky panel, TIFF data) become visible.
+
+Unhide Measurement Annotation:
+Hidden measurement annotation objects (Micron Bars, Point to Point, Angular, Line Width, Circular, Horizontal, Vertical, Vector Profile) become visible.
+
+Unhide Data Zone Annotation:
+The hidden Data Zone becomes visible.
+
+Unhide Image Selection Area(s):
+Hidden selected areas are set visible.
+
+Unhide Image Selection Handles:
+Image Selection Handles are set visible.
+
+Unhide Results Panels:
+Measurement Objects Results Panels are set visible.
+
+Unhide All:
+Sets all of the above hidden annotation objects visible.
+
+{bmc bm28.bmp}	The short cut from the keyboard is <CTRL + U>.
+$#>Update Results Property
+
+Causes an object to update itself. Typical examples of this property being chosen would be for the Stored Vector ProfileStored_Vector_Profile object to update a line profile, or for the Stored Data HistogramStored_Data_Histogram Object, to acquire new histogram data.
+$#>User Calibration Enable
+
+This option can be set using the Image Manager Context Sensitive Popup MenuContext_Sensitive_Popup_Menu. 
+
+When the option is checked, the reference magnification calibrationK20CQ2@DlgMgr.HLP from the user is effective. 
+
+Both the Micron MarkerMicron_Marker and Fixed Micron MarkerFixed_Micron_Bar Objects will display an asterisk in their measurement text to signify that this option is set.
+$#>User Preferences File (*.ANP)
+
+User Preferences files have the extension .ANP. The current working file will be called CURRENT.ANP and is automatically loaded when the SEM starts up. These files contain the following information :
+
+{bmc bm21.bmp}	The Snap to Grid OptionThe_Snap_to_Grid_Option
+{bmc bm21.bmp}	The Return to Select Mode OptionThe_Return_to_Select_Mode_Option
+{bmc bm21.bmp}	The Standard Object Background ModeThe_User_Background_Mode
+{bmc bm21.bmp}	The Standard Object Text Background ModeThe_User_Text_Background_Mode
+{bmc bm21.bmp}	The Standard Object Background ColourThe_User_Background_Colour
+{bmc bm21.bmp}	The Standard Object Text ColourThe_User_Text_Colour
+{bmc bm21.bmp}	The Standard Object Text Background ColourThe_Standard_Object_Text_Background_Colour
+{bmc bm21.bmp}	The Standard Object Brush DefinitionThe_User_Brush_Definition
+{bmc bm21.bmp}	The Standard Object Pen DefinitionThe_User_Pen_Definition
+{bmc bm21.bmp}	The Standard Object Font DefinitionThe_User_Font_Definition
+{bmc bm21.bmp}	The Text Wordwrap OptionThe_Text_Wordwrap_Option
+{bmc bm21.bmp}	The Raster Lines Pen ColourThe_Raster_Lines_Pen_Colour
+{bmc bm21.bmp}	The Standard Object Measurement Object Text ColourThe_User_Measurement_Object_Text_Colour
+{bmc bm21.bmp}	The Measurement Object FontThe_Measurement_Object_Font
+{bmc bm21.bmp}	The Measurement Object LineMeasurement_Object_Line
+{bmc bm21.bmp}	The Measurement Object Text Background ModeMeasurement_Object_Text_Background_Mode
+{bmc bm21.bmp}	The Measurement Object Text Background ColourMeasurement_Object_Text_Background_Colour
+{bmc bm21.bmp}	The Results Panel FontThe_User_Results_Panel_Font
+{bmc bm21.bmp}	The Results Panel Text ColourThe_User_Results_Panel_Text_Colour
+{bmc bm21.bmp}	The Results Panel Brush DefinitionThe_User_Results_Panel_Brush_Definition
+{bmc bm21.bmp}	The Measurment Object Results Parameter SelectionsResults_Parameter_Selections
+
+User preferences can also be loaded or saved using the Image Manger Context Sensitive Popup MenuContext_Sensitive_Popup_Menu when no objects are selected.
+$#>Utility Menu Commands
+
+This function is accessed via the Image Manager Popup MenuContext_Sensitive_Popup_Menu in Mouse Control ModeMouse_Control_Mode.
+
+These commands enable the user to select a new SEM Operating ModeSEM_Operating_Mode. 
+
+The following modes may be available for selection, however certain LicensesReasons_for_missing_greyed_Functions may be required to enter particular modes :
+
+	Normal Mode CommandNormal_Mode_Command
+
+	Reduced Raster CommandReduced_Raster_Command
+
+	Split Screen CommandSplit_Screen_Command
+$#>Utility Popup Menu
+
+ {bmc bm8.bmp}  ClickingCLICK@Sem.HLP in the Image WindowGIRNF0@Sem.HLP with the right mouse button whilst in Image Manager Mouse Control ModeMouse_Control_Mode,. will display a popup menu similar to the one shown below :
+
+The functions that this menu usually provides are :   {bmc bm21.bmp} Utility Menu CommandsUtility_Menu_Commands   {bmc bm21.bmp} Send toImage_Export_Functions   {bmc bm21.bmp} Import TIFF...Import_TIFF   {bmc bm21.bmp} User Calibration EnableUser_Calibration_Enable	{bmc bm135.bmp}	
+
+{bmc bm4.bmp}	If Image Manager is not in Mouse Control ModeMouse_Control_Mode but is in Select ModeSelect_Mode, then the right mouse button calls the Annotation Settings Popup MenuAnnotation_Settings instead.
+$#>{bmc bm91.bmp}  Width Measurement
+
+This measurement facility comprises a related pair of vertical lines. Each line may be adjusted in position. Precision AdjustmentPrecision_Adjustment is available.
+
+{bmc bm1.bmp} ClickCLICK@Sem.HLP on the Width Measurement Icon to switch the function on.  {bmc bm1.bmp} Point to the Zone for which you want to place the Width Measurement and click.  {bmc bm1.bmp} Click on the left line, pick the handleHandles@Sem.HLP and place it.  {bmc bm1.bmp} Click on the right line, pick the handle and place it.  {bmc bm1.bmp} Double clicking on one of the markers calls the Results PanelResults_Panel_Parameters which annotates the Cursor Width. 	  {bmc bm136.bmp}	
+{bmc bm3.bmp}	The dimensional measurement is derived from the zone magnification hence when multiple zones are present both lines are brought into the same zone.
+
+{bmc bm4.bmp}	There is one instance available.
+
+See also Retrospective MeasurementRetrospective_Measurement. 		 Properties of Width MeasurementProperties_of_Width_Measurement
+$#>Zone
+
+The Image WindowGIRNF0@Sem.HLP can be divided up into a number of zones, depending on the currently selected SEM Operating ModeSEM_Operating_Mode.
+
+When detectors are selected to particular zones, and the brightness and/or contrast of the image needs to be adjusted for example, by changing detector settings; there needs to be an easy way of telling the SEM which zone this adjustment applies to. The Zone Selection MarkerZone_Selection_Marker is used to achieve this.
+
+$#>{bmc bm87.bmp}  Zone Magnification
+
+When in Dual Magnification or when in Split Mode and one or more Zones are frozen the magnification may differ between zones.
+
+{bmc bm1.bmp} ClickCLICK@Sem.HLP on the Zone Magnification Icon to switch the function on.  {bmc bm1.bmp} Point to the Zone for which you want to show the magnification and click.  {bmc bm1.bmp} The magnification at the selected place of the Image Window will be shown.  {bmc bm1.bmp} Click on Annotation Mode Icon {bmc bm7.bmp}  to leave the Zone Magnification Mode.  {bmc bm1.bmp} The Zone Magnification Annotation can be picked up draggedDRAG@Sem.HLP into the required position. Make sure to place the annotation not over another zone.	   {bmc bm137.bmp}	
+
+The coordinates of the display are shown in the Status BarRDJHU5@Sem.HLP. {bmc bm138.bmp}
+(From corner X/Y to opposite corner X/Y, centre X/Y, size X/Y)
+
+See also	 Properties of Zone Mag AnnotationProperties_of_Zone_Mag_Annotation
+$#>Zone Selection Marker
+
+This object appears when there is more than one ZoneZone on the Image WindowGIRNF0@Sem.HLP such as in Split Screen ModeSplit_Screen_Object. It appears as an anchor shaped object :
+
+	{bmc bm121.bmp}
+
+The anchor shows in the currently selected zone.
+
+Double clicking on the anchor graphic changes its appearance :
+
+	{bmc bm139.bmp}
+
+This denotes that all zones, are being controlled at once (e.g. adjustments to the detectors assigned to each zone are all applied at once, instead of to the detectors just assigned to the curently selected zone).
+$#Merge Settings
+
+These settings define what is to be merged with the image when saving it.
+
+Select {bmc bm32.bmp}Annotation to merge the annotation and measurement objects with the image.
+
+Select {bmc bm32.bmp}Overlay to merge the real time profile display with the image
+
+Select {bmc bm32.bmp}Colour Merge if you wish the colours of the annotation to be maintained in the exported image.
+ Note however that if colour is maintained you will lose up to 20 of the 256 grey levels in the exported image.
+If Colour Merge is not selected the annotation colours will be mapped to grey levels and there will be no loss of image grey levels.
+$#Where to load
+Define where to load the image by one of the following:
+
+{bmc bm1.bmp} Drag the Import Selection ObjectTIFF_Import_Object to the required position.
+{bmc bm1.bmp} Press the Centre button to centralise the load area.
+{bmc bm1.bmp} Press the Origin button to position the load area at the origin
+{bmc bm1.bmp} Enter the required screen co-ordinates and press the XY Button.
+$#>Make Current Datazone
+This function (Right click on selected sticky panel) makes the selected Stick PanelSticky_Panel_Annotation replace the current datazoneData_Zone.
+
+The current Datazone will be lost.
+$#>Save As Datazone
+This function (Right click on selected sticky panel) saves the currently selected Sticky PanelSticky_Panel_Annotation as a DatazoneData_Zone file.
+The current Datazone is not affected.
+The datazone file may be loaded using the interface main menu View - Datazones - Load User Datazone
+$#>The Annotation Options Panel
+
+This panel is accessed via the Image Manager Context Sensitive Popup MenuContext_Sensitive_Popup_Menu in Select ModeSelect_Mode, (The Annotation Settings MenuAnnotation_Settings, Annotation {bmc bm1.bmp} sub-menu). There are three tabs on this panel :
+
+{bmc bm1.bmp}	The Standard Annotation Options TabThe_Standard_Annotation_Options_Tab
+{bmc bm1.bmp}	The Measurement & Results Options TabThe_Measurement___Results_Options_Tab
+{bmc bm1.bmp}	The General Annotation Options TabThe_General_Annotation_Options_Tab
+
+The settings on this panel are saved in an User Preferences FileUser_Preferences_File, which is automatically restored when the user logs in and starts the SEM application.
+$#>The Standard Annotation Options Tab
+
+This Tab is part of the Annotation Options PanelThe_Annotation_Options_Panel, and is accessed via the Image Manager Context Sensitive Popup MenuContext_Sensitive_Popup_Menu in Select ModeSelect_Mode, (The Annotation Settings MenuAnnotation_Settings, Annotation {bmc bm1.bmp} sub-menu). 
+
+ Standard Annotation Options:   {bmc bm21.bmp} Standard Font DefinitionThe_User_Font_Definition {bmc bm21.bmp} Standard Text ColourThe_User_Text_Colour {bmc bm21.bmp} Standard Line DefinitionThe_User_Pen_Definition  {bmc bm21.bmp} Standard Text Background ModeThe_User_Text_Background_Mode {bmc bm21.bmp} Standard Text Background ColourThe_Standard_Object_Text_Background_Colour  {bmc bm21.bmp} Standard Background ModeThe_User_Background_Mode {bmc bm21.bmp} Standard Background ColourThe_User_Background_Colour  {bmc bm21.bmp} Reset Standard SettingsReset_User_Settings  {bmc bm4.bmp}  Note that These options are for standard Annotation Objects such as lines, text, rectangles, ellipses, SEM parameters etc and do not apply to measurement objects or results panels.	{bmc bm140.shg}	
+
+$#>The Measurement & Results Options Tab
+
+This Tab is part of the Annotation Options PanelThe_Annotation_Options_Panel, and is accessed via the Image Manager Context Sensitive Popup MenuContext_Sensitive_Popup_Menu in Select ModeSelect_Mode, (The Annotation Settings MenuAnnotation_Settings, Annotation {bmc bm1.bmp} sub-menu). 
+
+ Measurement & Results Annotation Options:   {bmc bm21.bmp} Measurement Object FontThe_Measurement_Object_Font  {bmc bm21.bmp} Measurement Object LineMeasurement_Object_Line  {bmc bm21.bmp} Measurement Object Text Background ModeMeasurement_Object_Text_Background_Mode  {bmc bm21.bmp} Measurement Object Text Background ColourMeasurement_Object_Text_Background_Colour  {bmc bm21.bmp} Reset Measurement Object SettingsReset_Measurement_Object_Settings   {bmc bm21.bmp} Results Panel FontThe_User_Results_Panel_Font {bmc bm21.bmp} Result Panel Background ModeResult_Panel_Background_Mode {bmc bm21.bmp} Results Panel Background ColourResults_Panel_Background_Colour {bmc bm21.bmp} Results Panel Text Background ModeResults_Panel_Text_Background_Mode {bmc bm21.bmp} Results Panel Text Background ColourResults_Panel_Text_Background_Colour {bmc bm21.bmp} Reset Results Panel SettingsReset_Results_Panel_Settings 	{bmc bm141.shg}	
+
+$#>The General Annotation Options Tab
+
+This Tab is part of the Annotation Options PanelThe_Annotation_Options_Panel, and is accessed via the Image Manager Context Sensitive Popup MenuContext_Sensitive_Popup_Menu in Select ModeSelect_Mode, (The Annotation Settings MenuAnnotation_Settings, Annotation {bmc bm1.bmp} sub-menu). 
+
+ General Annotation Options:   {bmc bm21.bmp} Enter Select Mode on New ObjectThe_Return_to_Select_Mode_Option  {bmc bm21.bmp} Select Objects on CreationThe_Select_On_Create_Option  {bmc bm21.bmp} Apply Object Settings to All ObjectsApply_Object_Settings_to_All_Objects   {bmc bm21.bmp} The Grid Settings OptionSnap_to_Grid_Property  {bmc bm21.bmp} The Raster Lines Line ColourThe_Raster_Lines_Pen_Colour   {bmc bm21.bmp} The Significant Figures OptionMeasurement_Significant_Figures   {bmc bm21.bmp} Load Annotation Options Load_User_Settings  {bmc bm21.bmp} Save Annotation OptionsSave_User_Settings 	{bmc bm142.shg}	
+
+$#>Apply Object Settings to All Objects
+
+This option when set changes all instances of objects, applying the settings immediately. All subsequent objects will also be created with the desired object settingsObject_Properties.
+
+This is a convenient way to change all fonts/line styles etc at once without having to select objects individually first.
+
+When this option is not enabled, only newly created objects inherit the desired object settings.
+$#>The Standard Object Text Background Colour
+
+This preference is configured using the Standard Annotation Options TabThe_Standard_Annotation_Options_Tab.
+
+This user setting alters the Text Background ColourText_Background_Colour of an object that supports this property, such as the Text ObjectText_Annotation.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>Text Background Colour
+
+The objects text background colour property is selected by choosing a colour from a Colour Selection DialogColour_Selection_Dialog.
+
+After selecting a new text background colourSelection_of_Text_Background, this property is used when the objects text background modeText_Background_Mode property is set to Solid/Opaque. 
+$#>Measurement Object Line
+
+This preference is configured using the Measurement & Results Options TabThe_Measurement___Results_Options_Tab.
+
+This user setting alters the PenSelection_of_Pen_Settings of an object that supports this property, such as the Point 2 Point ObjectPoint_to_Point.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>Measurement Object Text Background Mode
+
+This preference is configured using the Measurement & Results Options TabThe_Measurement___Results_Options_Tab.
+
+This user setting alters the Text Background ModeText_Background_Mode of an object that supports this property, such as the Point 2 Point ObjectPoint_to_Point.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>Measurement Object Text Background Colour
+
+This preference is configured using the Measurement & Results Options TabThe_Measurement___Results_Options_Tab.
+
+This user setting alters the Text Background ColourText_Background_Colour of an object that supports this property, such as the Point 2 Point ObjectPoint_to_Point.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>Reset Measurement Object Settings
+
+This function when selected from the Measurement & Results Options TabThe_Measurement___Results_Options_Tab. will revert the Measurement user settings stored in the Annotation Preferences FileUser_Preferences_File back to default factory settings.
+
+{bmc bm4.bmp}  Note that there is no undo option available once the user has confirmed this action. If you select this option by mistake, you may loadLoad_User_Settings any previously stored annotation preferencesSave_User_Settings back from disk.
+$#>Results Panel Background Colour
+
+This preference is configured using the Measurement & Results Annotation Options TabThe_Measurement___Results_Options_Tab
+
+This user setting alters the background colour of a measurement object results panel, such as the Point to PointPoint_to_Point Measurement Object Results PanelSelection_of_Font__Style_and_Colour. This colour only applies when the panel background modeResult_Panel_Background_Mode is set to solid.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>Result Panel Background Mode
+
+This preference is configured using the Standard Annotation Options TabThe_Standard_Annotation_Options_Tab.
+
+This user setting alters the Background ModeBackground_Mode_Property of a measurement object results panel, such as the Point to PointPoint_to_Point Measurement Object Results PanelSelection_of_Font__Style_and_Colour. The panel background can either be set to transparent or to solid. When solid is selected, the panel background colourResults_Panel_Background_Colour option applies.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>Reset Results Panel Settings
+
+This function when selected from the Measurement & Results Options TabThe_Measurement___Results_Options_Tab. will revert the Results Panel user settings stored in the Annotation Preferences FileUser_Preferences_File, back to default factory settings.
+
+{bmc bm4.bmp}  Note that there is no undo option available once the user has confirmed this action. If you select this option by mistake, you may loadLoad_User_Settings any previously stored annotation preferencesSave_User_Settings back from disk.
+$#>Results Panel Text Background Mode
+
+This preference is configured using the Measurement & Results Options TabThe_Measurement___Results_Options_Tab.
+
+This user setting alters the Text Background ModeText_Background_Mode of a measurement object results panel, such as the Point to PointPoint_to_Point Measurement Object Results PanelSelection_of_Font__Style_and_Colour.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>Results Panel Text Background Colour
+
+This preference is configured using the Measurement & Results Options TabThe_Measurement___Results_Options_Tab.
+
+This user setting alters the Text Background ColourText_Background_Colour of a measurement object results panel, such as the Point to PointPoint_to_Point Measurement Object Results PanelSelection_of_Font__Style_and_Colour.
+
+This setting is automatically saved in the users directory into a CURRENT.ANPUser_Preferences_File file.
+$#>Text Background Mode
+
+This property can either be :
+
+{bmc bm21.bmp}	Solid/Opaque
+
+{bmc bm21.bmp}	Transparent
+
+If the property is solid, then only the current text background colourText_Background_Colour is used to draw the text for this object.
+$#>Setting Automatic Update Frequency
+
+ When enabled, the graphic will be automatically updated at the frequency specified in milliseconds.  To manually update the object, simply double click on its results panel.  Examples of objects that have this property are the Stored Data HistogramStored_Data_Histogram object, or the Stored Vector Profile ObjectStored_Vector_Profile	{bmc bm143.wmf}	
+
+$#>Measurement Significant Figures
+This option, located on the General annotation OptionsThe_General_Annotation_Options_Tab tab defines the number of significant figures used to display distance measuements.
+$#Print No.
+This parameter which is displayed on the Print Setup dialogPrint_Setup_Dialog may be set to any required value.
+The value will be incremented when each print is made.
+The Print No. parameter may also be displayed as an annotation parameter if required.
+
+Note that the Photo No. parameter is incremented when any export (file, print or HRRU photo) is executed.
+$#HRRU No
+This parameter, which is displayed on the Photo SettingsPhoto_Settings_Dialog tab, may be set to any required value.
+The parameter is incremented after each photo output.
+
+The parameter may be used as annotation.
+
+Note that the Photo No. parameter is incremented for any export (file, print and HRRU)
+$#>String Parameters
+The following parameters are provided which may be used for annotation.
+
+User Name. This read only parameter is set to the Log On User name.
+Operator. This read/Write parameter may be set to the operator Name. The setting is preserved.
+File Name. This read only parameter is set to the name of the last file saved or loaded. Note that the parameter is updated on receipt of the output command and before the file is saved, hence the filename saved in the annotation is the correct one.
+User Text. This read only parameter is set to the User Text field of the last TIFF file loaded or saved.
+$#>String and Counting Parameters
+The following parameters are provided which may be useful for annotation.
+
+Photo No.Photo_No.
+File No.File_No.
+Print No.Print_No.
+HRRU No.HRRU_No
+String parametersString_Parameters
+$#>File No.
+This parameter is a 7 digit counter which is incremented on each file save.
+It may be set as required and used as annotation.
+
+Note that the Photo No. parameter is incremented for any output (file, print, HRRU)
+
+The filename for saving may be derived from this parameter -
+See also 
+filename formatFilename_Format
+TIFF Export SettingsExport_Tiff_Settings
+BMP Export SettingsExport_BMP_Settings
+JPEG Export SettingsExport_JPEG_Settings
+$#>Photo No.
+This parameter is incremented on any output (file, print, HRRU).
+It may be used for automatic file naming.
+See also 
+filename formatFilename_Format
+TIFF Export SettingsExport_Tiff_Settings
+BMP Export SettingsExport_BMP_Settings
+JPEG Export SettingsExport_JPEG_Settings
+$#>KKExport for Video Printer
+This function requested from the Pop up MenuContext_Sensitive_Popup_Menu selects Video Printer as Output Device.
+The Software does not initiate the printing, as this device is not controlled from the software, however it does select the output device calibration as previously calibrated for this device.
+Additionally when this command is given a macro VIDEO PRINT is executed which provides an uncluttered display for 15 seconds to permit the user to initiate the print.
+This macro may be customisedN31_RN@leom.hlp.

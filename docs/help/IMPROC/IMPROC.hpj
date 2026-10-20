@@ -1,0 +1,93 @@
+[OPTIONS]
+TITLE=Image Processor
+CONTENTS=2114YDN
+COPYRIGHT=Copyright © LEO Electron Microscopy Ltd.
+CITATION=Written by
+LCID=0x809 0x0 0x0
+CNT=IMPROC.CNT
+COMPRESS=0
+
+[WINDOWS]
+main="Image Processor",(51,51,922,922),,,(255,255,128)
+
+[ALIAS]
+2D_Filters=12Y5CEM
+OHA1S7=2114YDN
+Contents=2114YDN
+RWGTHU=2114YDN
+8V9DU9=2114YDN
+XPU499=2114YDN
+HID_C1=Convolution_Kernel
+HID_C2=Convolution_Kernel
+HID_C3=Convolution_Kernel
+HID_C4=Convolution_Kernel
+HID_C5=Convolution_Kernel
+HID_C6=Convolution_Kernel
+HID_C7=Convolution_Kernel
+HID_C8=Convolution_Kernel
+HID_C9=Convolution_Kernel
+3FQLQ7E=Convolution_Kernel
+1E5SRGA=Convolution_Kernel
+1E5SRGB=Convolution_Kernel
+1E5SRGC=Convolution_Kernel
+1E5SRGD=Convolution_Kernel
+1E5SRGE=Convolution_Kernel
+1E5SRGF=Convolution_Kernel
+1E5SRGG=Convolution_Kernel
+1E5SRGH=Convolution_Kernel
+1E5SRGI=Convolution_Kernel
+3FQLQ8E=Convolution_Kernel
+RWGS11=Convolution_Kernel
+RWGS12=Convolution_Kernel
+RWGS13=Convolution_Kernel
+RWGS14=Convolution_Kernel
+RWGS19=Convolution_Kernel
+1BMDDVP=Design_a_Filter
+QMK_.Y=Design_a_Filter
+Histogram_Equalisation=13JON9P
+Image_Mathematics=17JKS11
+1B1BZ7K=Threshold
+5JHUWD=User_Defined_Filter
+
+[FILES]
+IMPROC.rtf
+
+[MAP]
+17JKS11 131289
+Threshold 131291
+2114YDN 131285
+User_Defined_Filter 131274
+Design_a_Filter 65637
+Design_a_Filter 131273
+13JON9P 131293
+Convolution_Kernel 65667
+Convolution_Kernel 65668
+Convolution_Kernel 65669
+Convolution_Kernel 65670
+Convolution_Kernel 65671
+Convolution_Kernel 65677
+Convolution_Kernel 65678
+Convolution_Kernel 65679
+Convolution_Kernel 65680
+Convolution_Kernel 65661
+Convolution_Kernel 65687
+Convolution_Kernel 65688
+Convolution_Kernel 65689
+Convolution_Kernel 65690
+Convolution_Kernel 65691
+Convolution_Kernel 65681
+2114YDN 65697
+2114YDN 131286
+12Y5CEM 131288
+2114YDN 65698
+Convolution_Kernel 65647
+Convolution_Kernel 65648
+Convolution_Kernel 65649
+Convolution_Kernel 65650
+Convolution_Kernel 65651
+Convolution_Kernel 65657
+Convolution_Kernel 65658
+Convolution_Kernel 65659
+Convolution_Kernel 65660
+2114YDN 131287
+

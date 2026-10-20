@@ -1,0 +1,1564 @@
+{\rtf1\ansi\deff1
+{\fonttbl{\f0\fnil MS Sans Serif;}{\f1\fswiss Arial;}{\f2\froman Times New Roman;}{\f3\fswiss Wingdings;}{\f4\fswiss Helvetica;}}
+{\colortbl;\red0\green0\blue255;}
+{\stylesheet{\fs36 \snext0 Normal;}
+}\pard\plain
+{\up $}{\footnote\pard\plain{\up $} About dialog}
+{\up #}{\footnote\pard\plain{\up #} BC76QK}
+\pard {\up K}{\footnote\pard\plain{\up K} About dialog}
+\fs36 About dialog\fs24 
+\par This dialog displays the version and copyright information for the Macro Editor
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Adding your own functionality}
+{\up #}{\footnote\pard\plain{\up #} Adding_your_own_functionality}
+\pard \fs36\cf1 {\up K}{\footnote\pard\plain{\up K} Macro Editor}
+Adding your own functionality
+\par \plain\fs24 
+\par You may add your own functionality by executing programs you have written yourself, either in Visual C++ or in Visual Basic.
+\par 
+\par Use  the \ul Execute Program\plain\fs24 {\v 1KGATAT} instruction to call your program.
+\par 
+\par You may pass arguments in the command line.
+\par 
+\par Those who have access to the LEOAPI may obtain (or set) values of parameters such as the \ul Flag Variables\plain\fs24 {\v Flag_Variables__Semaphores_} to communicate with the program.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Allowing user response in macro}
+{\up #}{\footnote\pard\plain{\up #} Allowing_user_response_in_macro}
+\pard {\up K}{\footnote\pard\plain{\up K} Adding your own functionality}
+\fs36\cf1 Allowing user response in macro
+\par \plain\fs24 If you need to get a response from the user to determine the execution sequence to be followed use the following technique
+\par 
+\par 
+\par \ul YesNo Message\plain\fs24 {\v Message}: Flag 2 :Do you want to continue?
+\par If  : \ul Flag 2\plain\fs24 {\v Flag_Variables__Semaphores_} = 0     Is True
+\par \ul End The Macro\plain\fs24 {\v End_The_Macro}
+\par EndIf Statement
+\par continue execution from here.....
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Analogue Pair dialog}
+{\up #}{\footnote\pard\plain{\up #} 3A6O_W4}
+\pard \fs36 Analogue Pair dialog\fs24 
+\par This dialog is used to define a co-ordinate pair of parameters and the values to be set.
+\par 
+\par Select the required parameter (only the X parameters are listed) from the drop down list
+\par 
+\par If this is a new instruction the current XY values appear in the value boxes, if editing an existing instruction the previously defined values will appear.
+\par 
+\par Edit the values as required.
+\par  
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Annotation Text}
+{\up #}{\footnote\pard\plain{\up #} Annotation_Text}
+\pard {\up K}{\footnote\pard\plain{\up K} Allowing user response in macro}
+\fs36 Special Function: Request Annotation Text\fs24 
+\par This \uldb special function\plain\fs24 {\v Special_Functions} creates a new annotation text object
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Annotation Toolbar Off}
+{\up #}{\footnote\pard\plain{\up #} Annotation_Toolbar_Off}
+\pard \fs36\cf1 Special Function:Annotation Toolbar Off
+\par \fs24 This\uldb  function\plain\fs24\cf1 {\v Special_Functions} switches off the User Interface Annotation/measurement Toolbar.
+\par See also \ul Annotation Toolbar On\plain\fs24\cf1 {\v Annotation_Toolbar_on}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Annotation Toolbar On}
+{\up #}{\footnote\pard\plain{\up #} Annotation_Toolbar_on}
+\pard {\up K}{\footnote\pard\plain{\up K} Analogue Pair dialog}
+\fs36 Special Function:Annotation Toolbar On
+\par \fs24 This \uldb function\plain\fs24\cf1 {\v Special_Functions} switches on the User Interface Annotation/measurement Toolbar.
+\par See also \ul Annotation Toolbar Off\plain\fs24\cf1 {\v Annotation_Toolbar_Off}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Application conditions}
+{\up #}{\footnote\pard\plain{\up #} Application_conditions}
+\pard \plain\fs36 Application conditions\fs24 
+\par This Editor function is part of the Macro Generator which is used to save SEM Conditions.
+\par This function inserts a sequence of \ul macro instructions\plain\fs24 {\v Macro_Instructions} to establish the application conditions.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Attaching macros to keys}
+{\up #}{\footnote\pard\plain{\up #} Attaching_macros_to_keys}
+\pard {\up K}{\footnote\pard\plain{\up K} Annotation Text}
+\fs36 Attaching macros to keys\fs24 
+\par Macros may be attached to \ul Special Function Keys\plain\fs24 {\v Special_Function_Keys}
+\par 
+\par This is achieved by naming the macro with the key name,
+\par e.g. name the macro \b F5 \plain\fs24 or \b Shift F5 \plain\fs24 (Note only a single space between \b shift\plain\fs24  and the key name)
+\par 
+\par Note that if there is not a macro for the key in the library a \b Beep\plain\fs24  is sounded when the key is pressed.
+\par 
+\par Note also that the macro may not be initiated again until it has completed, attempting to do so will result in a \b Beep\plain\fs24 
+\par \pard 
+\par See also \ul Common Macros\plain\fs24 {\v Common_Macros}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} BMP Export Dialog}
+{\up #}{\footnote\pard\plain{\up #} BMP_Export_Dialog}
+\pard \fs36 Special Function: BMP Export Dialog\fs24 
+\par This \uldb special function\plain\fs24 {\v Special_Functions} displays the BMP Export dialog.
+\par Note the the digital state \b USER\plain\fs24  is set to\b  BUSY\plain\fs24  until the user closes the dialog.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Call Macro}
+{\up #}{\footnote\pard\plain{\up #} JS42TU}
+\pard {\up K}{\footnote\pard\plain{\up K} Annotation Toolbar Off}
+\fs36\cf1 Macro Instruction:Call Macro
+\par \plain\f4\fs24 This instruction calls another macro.in the\ul  library.\plain\f4\fs24 {\v Macro_Library} or a Macro File (see \ul search order\plain\f4\fs24 {\v Search_Order_for_macro_execution}) Note that calls are permitted to nest 10 deep, attempting to exceed this will result in an error message.\f2\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Centre Point}
+{\up #}{\footnote\pard\plain{\up #} Centre_Point}
+\pard {\up K}{\footnote\pard\plain{\up K} Annotation Toolbar On}
+\f1\fs36 Special Function:CentrePoint\fs24 
+\par This \uldb function\plain\fs24 {\v Special_Functions} initiates the centre point function.
+\par Note the the digital state \b USER\plain\fs24  is set to\b  BUSY\plain\fs24  until the user completes or cancels the function.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Centre feature}
+{\up #}{\footnote\pard\plain{\up #} Centre_feature}
+\pard \fs36 Special Function:Centre feature\fs24 
+\par This \uldb function\plain\fs24 {\v Special_Functions} initiates the centre feature function.
+\par Note the the digital state \b USER\plain\fs24  is set to\b  BUSY\plain\fs24  until the user completes or cancels the function.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Clear Editor}
+{\up #}{\footnote\pard\plain{\up #} Clear_Editor}
+\pard \fs36 Clear Editor\fs24 
+\par This Editor function deletes the contents of the Macro \ul Editor Window\plain\fs24 {\v Editor_Window}.
+\par Any edits made are lost.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Clipboard}
+{\up #}{\footnote\pard\plain{\up #} Clipboard}
+\pard {\up K}{\footnote\pard\plain{\up K} Application conditions}
+\fs36 Clipboard\fs24 
+\par This Editor function copies the macro in the \ul Editor Window\plain\fs24 {\v Editor_Window} to the Clipboard in text Format from where it may be pasted into documents.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Clipboard dialog}
+{\up #}{\footnote\pard\plain{\up #} Clipboard_dialog}
+\pard \fs36 Special Function:Clipboard\fs24 
+\par This \uldb function\plain\fs24 {\v Special_Functions} displays the Clipboard Copy/Paste dialog.
+\par Note the the digital state \b USER\plain\fs24  is set to\b  BUSY\plain\fs24  until the user closes the dialog.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Command/Panel Dialog}
+{\up #}{\footnote\pard\plain{\up #} D1_FNV}
+\pard\tx355 {\up K}{\footnote\pard\plain{\up K} Attaching macros to keys}
+\fs36 Command/Panel Dialog\fs24 
+\par This dialog is used to define/Edit the following macro instructions (See caption for current use)
+\par 
+\par \b Select command\plain\fs24  : \tab Select the required command from the drop down list
+\par \b Select Panel\tab \plain\fs24 \tab Select the required panel from the drop down list
+\par \b Select control Tab\plain\fs24 \tab Select the required control panel tab from the drop down list
+\par 
+\par  
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Comment}
+{\up #}{\footnote\pard\plain{\up #} 5TWH_3K}
+\pard \b\fs36\cf1 Macro Instruction:Comment\plain\fs36\cf1 
+\par \plain\f4\fs24 This provides the user with the ability to annotate the macro. 
+\par When executed performs no action except to step to the next instruction.\f2\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Comment dialog}
+{\up #}{\footnote\pard\plain{\up #} 6QL_OBN}
+\pard {\up K}{\footnote\pard\plain{\up K} BMP Export Dialog}
+\f1\fs36 Comment dialog\fs24 
+\par This dialog is used to enter/edit a string for the \ul comment instruction\plain\fs24 {\v Comment}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Common Macros}
+{\up #}{\footnote\pard\plain{\up #} Common_Macros}
+\pard \fs36\cf1 Common Macros
+\par \plain\fs24 If you have a  macro which you wish to be shared with other users then save it using \uldb \b File SaveAs Common\plain\b\fs24 {\v SaveAs_Common}\plain\fs24 
+\par The \ul \b\ul search order\plain\b\fs24 {\v Search_Order_for_macro_execution}\plain\fs24  for executing macros means that they may then be executed without having to insert them in each current Macro Library.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Configuration Conditions}
+{\up #}{\footnote\pard\plain{\up #} BYGS4E}
+\pard {\up K}{\footnote\pard\plain{\up K} Call Macro}
+\fs36 Configuration Conditions\fs24 
+\par This Editor function is part of the Macro Generator which is used to save SEM Conditions.
+\par This function generates a sequence of \ul Confirm\plain\fs24 {\v Confirm_Configuration} Instructions for those options which are present of the SEM.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Confirm Configuration}
+{\up #}{\footnote\pard\plain{\up #} 12OTCMX}
+\pard \fs36\cf1 Macro Instruction:Confirm Configuration
+\par \plain\f4\fs24 This instruction checks if the configuration defined is true.
+\par If the state is true execution steps to the next instruction.
+\par If the state is false the user is requested to state if the sequence should continue or stop.\f2\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Confirm State dialog}
+{\up #}{\footnote\pard\plain{\up #} LOKWK8}
+\pard {\up K}{\footnote\pard\plain{\up K} Centre feature}
+\f1\fs36 Confirm State dialog\fs24 
+\par This dialog is displayed by the \ul Confirm Configuration instruction\plain\fs24 {\v Confirm_Configuration} when it detects that the configuration is incorrect.
+\par 
+\par The dialog displays the current and required state.
+\par 
+\par Press \b Continue\plain\fs24  to continue with execution of the macro or \b Quit\plain\fs24  to stop the macro
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Contents}
+{\up #}{\footnote\pard\plain{\up #} AXKHI9}
+\pard\keepn \fs36\cf1 Contents
+\par \pard \plain\fs24 
+\par \uldb Overview\plain\fs24 {\v Macros___Overview}
+\par 
+\par \uldb Macro Editor\plain\fs24 {\v Macro_Editor}
+\par \uldb Macro Instructions\plain\fs24 {\v Macro_Instructions}
+\par 
+\par \uldb Attaching macros to keys\plain\fs24 {\v Attaching_macros_to_keys}
+\par 
+\par \uldb Restore Conditions\plain\fs24 {\v Restore_Conditions}
+\par \uldb Standard Conditions\plain\fs24 {\v Standard_Conditions}
+\par 
+\par \uldb \b\fs28 Customising default files\plain\b\fs28 {\v Customising_default_files}\plain\fs24 
+\par 
+\par \uldb Flag Variables (Semaphores)\plain\fs24 {\v Flag_Variables__Semaphores_}
+\par 
+\par \uldb Customising the Hard Panel\plain\fs24 {\v Customising_the_Hard_Panel}
+\par 
+\par \uldb Search Order for macro execution\plain\fs24 {\v Search_Order_for_macro_execution}
+\par 
+\par \uldb Hints and Tips\plain\fs24 {\v Hints_and_Tips}
+\par 
+\par 
+\par  
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Continue}
+{\up #}{\footnote\pard\plain{\up #} 17XJ1.L}
+\pard {\up K}{\footnote\pard\plain{\up K} Centre Point}
+\fs36 Continue\fs24 
+\par This editor function causes execution of the macro to continue from the currently highlighted \ul instruction\plain\fs24 {\v Macro_Instructions}.
+\par When running in the \ul editor window\plain\fs24 {\v Editor_Window} execution is slowed down to permit the sequence to be observed.
+\par The currently executing instruction is highlighted.
+\par The current status is displayed in the \ul Status Bar\plain\fs24 {\v Editor_Status_Bar}.
+\par This function may also be achieved by pressing \b F7\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Control Structures}
+{\up #}{\footnote\pard\plain{\up #} Control_Structures}
+\pard \f2\fs36 Macro Instructions: Control Structures\fs20 
+\par \f4\fs24 There are two types of control structure provided:
+\par 
+\par \ul If Then Construct\plain\f4\fs24 {\v If_Then_Constructs}
+\par \ul While Construct\plain\f4\fs24 {\v While_construct}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Current Line}
+{\up #}{\footnote\pard\plain{\up #} Current_Line}
+\pard {\up K}{\footnote\pard\plain{\up K} Clear Editor}
+\f1\fs36 Status Bar:Current Line\fs24 
+\par This indicates the line number of the current insertion point/Program Counter.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Current Status}
+{\up #}{\footnote\pard\plain{\up #} KW40O2}
+\pard \fs36 Editor Status Bar: Current Status\fs24 
+\par This displays the current action of the macro,  some examples of this are:
+\par 
+\par "Editing", "Executing line number nn", "Paused at line number nn" etc
+\par 
+\par 
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Cursor Off Screen}
+{\up #}{\footnote\pard\plain{\up #} Cursor_Off_Screen}
+\pard {\up K}{\footnote\pard\plain{\up K} Clipboard}
+\fs36\cf1 Special Function: Cursor Off Screen
+\par \plain\fs24 This \ul special function\plain\fs24 {\v Special_Functions} moves the cursor off screen (to the right edge, half way down).
+\par The cursor may be brought back by moving the mouse to the left.
+\par 
+\par Useful if dumping the video screen image to a printer.
+\par See also
+\par \ul Annotation Toolbar On\plain\fs24 {\v Annotation_Toolbar_on}
+\par \ul Hide Control Panel\plain\fs24 {\v Hide_Control_Panel}
+\par \ul Hide Panels\plain\fs24 {\v Hide_Panels}
+\par \ul Full screen mode On\plain\fs24 {\v Full_screen_mode_On}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Customising the Hard Panel}
+{\up #}{\footnote\pard\plain{\up #} Customising_the_Hard_Panel}
+\pard \fs36\cf1 Customising the Hard Panel
+\par \plain\fs24 If your SEM is fitted with a Hard Panel (Mark 2) it may be configured for your use.
+\par [Applies to Leo 1500 only]
+\par This is achieved by two facilities.
+\par 
+\par \b Hard Panel Buttons.\plain\fs24 
+\par When one of the buttons on the Hard Panel is pressed (excluding the Stage axis control buttons) an associated macro is executed.
+\par Pressing \b Button M1\plain\fs24  executes the Macro \b M1, \plain\fs24 pressing\b  Button M2\plain\fs24  executes the Macro \b M2,\plain\fs24  \b  \plain\fs24 pressing\b  Button M3\plain\fs24  executes the Macro \b M3\plain\fs24 .
+\par \pard Default versions of these macros are supplied in the ...\'5cLEO32\'5cDISTRIB .directory. See \ul Search order\plain\fs24 {\v Search_Order_for_macro_execution} on how to override these macros
+\par 
+\par \b Knob Assignment\plain\fs24 
+\par There is a macro Instruction \ul Knob\plain\fs24 {\v Knob} which is used to disable or assign a parameter to a knob.
+\par 
+\par Macros may therefore be constructed which assign complementary functions to the Hard Panel Knobs and to the Mouse.
+\par These macros may be called from Toolbar Icons (Use \uldb Toolbar Editor\plain\fs24 {\v Contents@tooledit.hlp}), \ul Special function keys\plain\fs24 {\v Attaching_macros_to_keys}, or Hard Panel Buttons
+\par \pard 
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Datazone Off}
+{\up #}{\footnote\pard\plain{\up #} Datazone_Off}
+\pard {\up K}{\footnote\pard\plain{\up K} Clipboard}
+\fs36 Special Function: Datazone Off\fs24 
+\par This \uldb special function\plain\fs24 {\v Special_Functions} switches off the User Interface Datazone
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Datazone On}
+{\up #}{\footnote\pard\plain{\up #} Datazone_on}
+\pard \fs36 Special Function: Datazone On\fs24 
+\par This \uldb special function\plain\fs24 {\v Special_Functions} switches off the User Interface Datazone
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Delay}
+{\up #}{\footnote\pard\plain{\up #} H6MLSK}
+\pard {\up K}{\footnote\pard\plain{\up K} Command/Panel Dialog}
+\fs36\cf1 Macro Instruction:Delay
+\par \plain\f4\fs24 This instruction waits the specified number of seconds before stepping to the next instruction.\f2\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Delay Dialog}
+{\up #}{\footnote\pard\plain{\up #} 46GL0}
+\pard \f1\fs36 Delay Dialog\fs24 
+\par This dialog is used to define the delay period (in seconds) for the \ul Delay Instruction\plain\fs24 {\v Delay}.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Delete Item}
+{\up #}{\footnote\pard\plain{\up #} AVF0JI}
+\pard {\up K}{\footnote\pard\plain{\up K} comment}
+\fs36 Delete Item\fs24 
+\par This Editor function will delete the macro instruction currently highlighted in the \ul Editor Window\plain\fs24 {\v Editor_Window}.
+\par This function may also be achieved by pressing the \b DEL\plain\fs24  key
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Delete macro}
+{\up #}{\footnote\pard\plain{\up #} Delete_macro}
+\pard \fs36 Delete macro\fs24 
+\par This Editor function displays a list of the macros in the current \ul library\plain\fs24 {\v Macro_Library}. 
+\par The selected macro is deleted from the library.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Edit Item}
+{\up #}{\footnote\pard\plain{\up #} Edit_Item}
+\pard \fs36 Edit Item\fs24 
+\par This Editor function will edit the Macro Instruction currently highlighted in the \ul Editor window\plain\fs24 {\v Editor_Window}
+\par This may also be achieved by double clicking on the macro instruction.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Edit Macro}
+{\up #}{\footnote\pard\plain{\up #} Edit_Macro}
+\pard \fs36 Edit Macro
+\par \fs24 This Editor  function displays a list of macros in the current \ul Library\plain\fs24 {\v Macro_Library}
+\par The selected macro will be loaded into the \ul Editor Window\plain\fs24 {\v Editor_Window} for editing.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Editor Caption}
+{\up #}{\footnote\pard\plain{\up #} Editor_Caption}
+\pard \fs36 Macro Editor Caption
+\par \fs24 The caption bar displays the path and name of the current \ul Macro Library\plain\fs24 {\v Macro_Library}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Editor Menu bar}
+{\up #}{\footnote\pard\plain{\up #} Editor_Menu_bar}
+\pard\keepn \fs36\cf1 Editor Menu bar
+\par \pard \plain\fs24 The following menu groups are provided:
+\par \pard\tx355 \tab 
+\par \ul File\plain\fs24 {\v Editor_Menu__File}\tab \ul Edit\plain\fs24 {\v Editor_Menu__Edit}\tab \ul View\plain\fs24 {\v Editor_Menu__View}\tab \ul Insert\plain\fs24 {\v Editor_Menu__Insert}\tab \ul Library\plain\fs24 {\v Editor_Menu__Library} \tab \ul Debug\plain\fs24 {\v Editor_Menu__Debug}\tab \tab \ul Generator\plain\fs24 {\v Editor_Menu__Generator}
+\par 
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Editor Menu: Debug}
+{\up #}{\footnote\pard\plain{\up #} Editor_Menu__Debug}
+\pard\tx355 \fs36 Editor Menu: Debug\fs24 
+\par \pard\tx355 
+\par \tab \ul Run\plain\fs24 {\v Run}
+\par \tab \ul Step\plain\fs24 {\v Step}
+\par \tab \ul Continue\plain\fs24 {\v Continue}
+\par \tab \ul Stop\plain\fs24 {\v Stop}
+\par \tab \ul Stop All Macros\plain\fs24 {\v Stop_All_Macros}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Editor Menu: Edit}
+{\up #}{\footnote\pard\plain{\up #} Editor_Menu__Edit}
+\pard\tx355 \fs36 Editor Menu: Edit\fs24 
+\par \pard\tx355 
+\par \tab \ul Undo\plain\fs24 {\v Undo}
+\par \tab \ul Edit Item\plain\fs24 {\v Edit_Item}
+\par \tab \ul Delete Item\plain\fs24 {\v Delete_Item}
+\par \tab \ul Clipboard\plain\fs24 {\v Clipboard}
+\par \tab \ul Timeout\plain\fs24 {\v Edit_Timeout}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Editor Menu: File}
+{\up #}{\footnote\pard\plain{\up #} Editor_Menu__File}
+\pard\tx355 \fs36 Editor Menu: File
+\par \pard\tx355 
+\par \fs24 \tab \ul New Macro\plain\fs24 {\v New_Macro}
+\par \tab \ul Edit Macro\plain\fs24 {\v Edit_Macro}
+\par \tab \ul Delete macro\plain\fs24 {\v Delete_macro}
+\par \tab \ul Clear Editor\plain\fs24 {\v Clear_Editor}
+\par 
+\par \tab \ul Save macro To Library\plain\fs24 {\v Save_macro_To_Library}
+\par \tab \ul SaveAs Macro To Library\plain\fs24 {\v SaveAs_Macro_To_Library}
+\par 
+\par \tab \ul Load Macro File\plain\fs24 {\v Load_Macro_File}
+\par \tab \ul Save Macro To File\plain\fs24 {\v Save_Macro_To_File}
+\par \tab \ul SaveAs Macro To File\plain\fs24 {\v SaveAs_Macro_To_File}
+\par \tab \ul SaveAs Common\plain\fs24 {\v SaveAs_Common}
+\par \tab \ul Macro Locations\plain\fs24 {\v Macro_Locations}
+\par 
+\par \tab \ul Rename macro\plain\fs24 {\v Rename_macro}
+\par \tab \ul Print \plain\fs24 {\v Print_Macro}
+\par \tab \ul Print Setup\plain\fs24 {\v Print_Setup}
+\par \tab \ul Exit\plain\fs24 {\v Exit}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Editor Menu: Generator}
+{\up #}{\footnote\pard\plain{\up #} 1ARUUUX}
+\pard\tx355 \fs36 Editor Menu: Generator\fs24 
+\par \pard\tx355 
+\par \pard\tx355 \ul \ul Save System Conditions\plain\fs24 {\v Save_System_Conditions}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Editor Menu: Insert}
+{\up #}{\footnote\pard\plain{\up #} Editor_Menu__Insert}
+\pard \fs36 Editor Menu: Insert\fs24 
+\par 
+\par These Editor Functions insert \ul Macro Instructions\plain\fs24 {\v Macro_Instructions}  after the currently highlighted instruction (or at the end of the macro if highlight is not present)
+\par 
+\par There are four special functions provided which insert multiple instructions as part of the Macro Generator used in saving system conditions. These are
+\par 
+\par \ul Configuration Conditions\plain\fs24 {\v Configuration_Conditions}
+\par \ul Gun Conditions\plain\fs24 {\v Gun_Conditions}
+\par \ul Set up Conditions\plain\fs24 {\v Set_up_Conditions}
+\par \ul Application conditions\plain\fs24 {\v Application_conditions}
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Editor Menu: Library}
+{\up #}{\footnote\pard\plain{\up #} Editor_Menu__Library}
+\pard \fs36 Editor Menu: Library\fs24 
+\par 
+\par \pard\tx355 \tab \ul Load User Library\plain\fs24 {\v Load_User_Library}
+\par \tab \ul Merge Libraries\plain\fs24 {\v Merge_Libraries}
+\par \tab \ul Load Standard Library\plain\fs24 {\v Load_Standard_Library}
+\par \tab \ul Merge Standard Library\plain\fs24 {\v Merge_Standard_Library}
+\par \tab \ul Save Library As\plain\fs24 {\v Save_Library_As}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Editor Menu: View}
+{\up #}{\footnote\pard\plain{\up #} 1N9.38B}
+\pard\tx355 \fs36 Editor Menu: View\fs24 
+\par \pard\tx355 
+\par \tab Toolbar
+\par \tab Status Bar
+\par 
+\par These Menu functions toggle on/off the \ul Toolbar\plain\fs24 {\v Editor_Toolbar} and \ul Status Bar\plain\fs24 {\v Editor_Status_Bar} respectively.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Editor Status Bar}
+{\up #}{\footnote\pard\plain{\up #} 3397_GS}
+\pard \fs36 Editor Status Bar\fs24 
+\par The Status bar contains three panes which indicate the status of the macro in the \ul editor window\plain\fs24 {\v Editor_Window}
+\par 
+\par \ul Current Line\plain\fs24 {\v Current_Line}
+\par \ul Current Status\plain\fs24 {\v Current_Status}
+\par \ul Last Error\plain\fs24 {\v Last_Error}:
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Editor Toolbar}
+{\up #}{\footnote\pard\plain{\up #} Editor_Toolbar}
+\pard \fs36 Editor Toolbar\fs24 
+\par The toolbar privides Icons for commonly required Editor Functions.
+\par Use Shift F1 help for more information on individual icons.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Editor Window}
+{\up #}{\footnote\pard\plain{\up #} Editor_Window}
+\pard \fs36 Editor Window
+\par \fs24 The editor window is used to edit and debug the currently displayed macro.
+\par The macro name and version are displayed at the start of the macro in green.
+\par Double clicking on the name/version will perform the \ul rename\plain\fs24 {\v Rename_macro} function.
+\par 
+\par Each macro\ul  instruction\plain\fs24 {\v Macro_Instructions} occupies one line
+\par 
+\par The selected (highlighted) instruction indicates the insertion point and Program Counter
+\par Clicking on an instruction will select it.
+\par 
+\par Double clicking on an instruction will enable editing of the instruction.
+\par \pard 
+\par Inserting a new instruction will cause the instruction to be inserted AFTER the selected instruction and the new instruction will be selected as insertion point. If no instruction is selected insertion will be at the end of the macro.
+\par 
+\par The macro may be executed using \ul Run or F5\plain\fs24 {\v Run}, stopped by pressing \ul ESC\plain\fs24 {\v Stop}
+\par Execution may be continued by pressing \ul F7\plain\fs24 {\v Continue}
+\par For debugging you may \ul step (F10)\plain\fs24 {\v Step} through the macro.
+\par 
+\par Progress of the macro is indicated by the \ul Status Bar\plain\fs24 {\v Editor_Status_Bar}.
+\par \pard 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Else}
+{\up #}{\footnote\pard\plain{\up #} Else}
+\pard \fs36\cf1 Macro Instruction: Else
+\par \plain\f4\fs24 This statement is part of the\ul  If Then construc\plain\f4\fs24 {\v If_Then_Constructs}ts and used to indicate the start of the Else Clause\f2\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} End If}
+{\up #}{\footnote\pard\plain{\up #} End_If}
+\pard \f1\fs36\cf1 Macro Instruction: End If
+\par \plain\f4\fs24 This statement is part of the\f2\fs1  \ul \f4\ul\fs24  If Then constructs\plain\f4\fs24 {\v If_Then_Constructs} and identifies the end of the conditional sequence.\f2\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} End The Macro}
+{\up #}{\footnote\pard\plain{\up #} 12YD33W}
+\pard \f1\fs36 Macro Instruction: End A Macro\fs24 
+\par Executing this instruction terminates the macro specified
+\par \page
+{\up $}{\footnote\pard\plain{\up $} End While}
+{\up #}{\footnote\pard\plain{\up #} KMLNS9}
+\pard \fs36\cf1 Macro Instruction:End While
+\par \plain\f4\fs24 This is part of the \ul While construct\plain\f4\fs24 {\v While_construct}.
+\par 
+\par When this function is executed it resets the statement counter to the corresponding \ul While\plain\f4\fs24 {\v While} statement.\f2\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Execute Command}
+{\up #}{\footnote\pard\plain{\up #} 362C0VQ}
+\pard \f1\fs36\cf1 Macro Instruction:Execute Command
+\par \plain\f4\fs24 This \ul Macro Instruction\plain\f4\fs24 {\v Macro_Instructions} executes the specified SEM Command. 
+\par Does not step on to the next instruction if the command is currently disabled.
+\par See \uldb Timeout\plain\f4\fs24 {\v 1280J7M}\f2\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Execute Program}
+{\up #}{\footnote\pard\plain{\up #} 1KGATAT}
+\pard \f1\fs36\cf1 Macro Instruction: Execute Program
+\par \plain\fs24 This\ul  macro Instruction\plain\fs24 {\v Macro_Instructions} executes the defined command line to run the specified program.
+\par If an error is encountered a message box is displayed notifying the user of the error and the Macro is aborted.
+\par 
+\par This facility may be used in conjunction with the \uldb \b FTP Remote Archiving Utility\plain\b\fs24 {\v _1ZQP_@imgarc.hlp}\plain\fs24  
+\par  e.g. Command Line  \b c:\'5cprogram files\'5cleo\'5cleo32\'5cimgarc.exe  /e\plain\fs24   for archive at end of session. 
+\par See\uldb \b  Archiving Modes of Operation\plain\b\fs24 {\v 12OXYHK@imgarc.hlp}\plain\fs24 .
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Execute Program Dialog}
+{\up #}{\footnote\pard\plain{\up #} Execute_Program_Dialog}
+\pard \fs36\cf1 Execute Program Dialog
+\par \plain\fs24 This dialog is used to define the command line for the \ul Execute Program\plain\fs24 {\v 1KGATAT} Macro Instruction.
+\par 
+\par Either enter the command line manually or use the Browse Button to locate the Program you wish to execute.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Exit}
+{\up #}{\footnote\pard\plain{\up #} M6O76G}
+\pard \fs36 Exit\fs24 
+\par This editor function hides the macro editor. Any macro executing in the editor will continue to run.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Flag Variables (Semaphores)}
+{\up #}{\footnote\pard\plain{\up #} Flag_Variables__Semaphores_}
+\pard \fs36 Flag Variables (Semaphores)\fs24 
+\par The state variables \b Flag0\plain\fs24  through \b Flag7 \plain\fs24 are provided for use as semaphores between macros.
+\par 
+\par i.e. one macro may be written such that it's behaviour is determined by the state of Flag0, a second macro, probably \ul attached\plain\fs24 {\v Attaching_macros_to_keys} to a Special Function key can modify the state of Flag0.
+\par 
+\par Flag Variables may also be used in \ul Yes/No Message\plain\fs24 {\v Message} Instructions
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Full screen mode Off}
+{\up #}{\footnote\pard\plain{\up #} Full_screen_mode_Off}
+\pard \fs36\cf1 Special Function: Full screen mode Off
+\par \plain\fs24 This \ul Special Function\plain\fs24 {\v Special_Functions}  switches off Full screen mode. (Equivalent to pressing the Shift F3 key).
+\par See also \ul Full screen mode on\plain\fs24 {\v Full_screen_mode_On}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Full screen mode On}
+{\up #}{\footnote\pard\plain{\up #} Full_screen_mode_On}
+\pard \fs36\cf1 Special Function: Full screen mode On
+\par \plain\fs24 This \ul Special Function\plain\fs24 {\v Special_Functions}  switches on Full screen mode. (Equivalent to pressing the Shift F3 key).
+\par The condition may be reversed by the \ul Full screen mode Off\plain\fs24 {\v Full_screen_mode_Off} function.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Gun Conditions}
+{\up #}{\footnote\pard\plain{\up #} J0IB2G}
+\pard \fs36 Gun Conditions\fs24 
+\par This Editor function is part of the Macro Generator which is used to save SEM Conditions.
+\par This function generates macro instructions for Stigmation correction and optionally the Aperture alignment and Gun alignment settings for all apertures.
+\par 
+\par The alignment option is found in the User Interface under\b  Tools-User Preferences\plain\fs24  and selecting the \b SEM Conditions\plain\fs24  tab.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} HRRU (photo) dialog}
+{\up #}{\footnote\pard\plain{\up #} HRRU__photo__dialog}
+\pard \fs36 Special Function: HRRU (Photo) Dialog\fs24 
+\par This \uldb special function\plain\fs24 {\v Special_Functions} displays the High Resolution Record Unit dialog.
+\par Note the the digital state \b USER\plain\fs24  is set to\b  BUSY\plain\fs24  until the user closes the dialog.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Hide Control Panel}
+{\up #}{\footnote\pard\plain{\up #} 1HMHBW8}
+\pard \fs36 Macro Instruction: Hide Control Panel
+\par \fs24 This is a predefined Special Function which hides the SEM Control Panel.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Hide Panel}
+{\up #}{\footnote\pard\plain{\up #} VCWND}
+\pard \fs36\cf1 Macro Instruction:Hide Panel
+\par \plain\fs24 Hides the selected panel dialog and steps to the next instruction
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Hide Panels}
+{\up #}{\footnote\pard\plain{\up #} Hide_Panels}
+\pard \fs36 Macro Instruction: Hide Panels\fs24 
+\par This is a predefined Special Function which hides all currently displayed panels.
+\par See also \ul Show Panels\plain\fs24 {\v Show_Panels}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Hints and Tips}
+{\up #}{\footnote\pard\plain{\up #} Hints_and_Tips}
+\pard\keepn \fs36\cf1 Hints and Tips
+\par \pard \plain\fs24 This section will be expanded as a result of feedback from users.
+\par Please refer to your Leo Applications Specialist.
+\par 
+\par \ul Uncluttered image for video printing\plain\fs24 {\v Uncluttered_image_for_video_printing}.
+\par \ul Allowing user response in macro\plain\fs24 {\v Allowing_user_response_in_macro}
+\par \ul Adding your own functionality\plain\fs24 {\v Adding_your_own_functionality}
+\par \ul Start Macro\plain\fs24 {\v Start_Macro}
+\par \ul Common Macros\plain\fs24 {\v Common_Macros}
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} If Then}
+{\up #}{\footnote\pard\plain{\up #} If_Then}
+\pard \fs36\cf1 Macro Instruction: If Then
+\par \plain\f4\fs24 This statement is part of the\ul  if constructs\plain\f4\fs24 {\v If_Then_Constructs} 
+\par 
+\par If the condition is true (or optionally false) execution continues at the statement after the IF.THEN
+\par 
+\par otherwise  execution continues after the \f2\fs1  \ul \f4\ul\fs24 ELSE\plain\f4\fs24 {\v Else} statement if one exists, or after the \f2\fs1  \ul \f4\ul\fs24 END IF\plain\f4\fs24 {\v End_If} if there is no ELSE clause.\f2\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} If Then Constructs}
+{\up #}{\footnote\pard\plain{\up #} If_Then_Constructs}
+\pard \f1\fs36\cf1 If Then Constructs
+\par \plain\f4\fs24 These are of the form:
+\par 
+\par \ul If <condition>   then\plain\f4\fs24 {\v If_Then}
+\par 
+\par other statements
+\par 
+\par optional  \ul else\plain\f4\fs24 {\v Else} 
+\par 
+\par other statements for else clause
+\par 
+\par \ul End if\plain\f4\fs24 {\v End_If}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} If Then Dialog}
+{\up #}{\footnote\pard\plain{\up #} 97ORQN}
+\pard \f1\fs36 If Then Dialog\fs24 
+\par This dialog is used to define an \ul If Then Instruction\plain\fs24 {\v If_Then}
+\par 
+\par Select the required parameter from the drop down list.
+\par 
+\par The lower drop down list displays the possible state values for the parameter.
+\par 
+\par If this is a new instruction the current state value will be displayed, if editing an existing instruction the state value will be that previously defined.
+\par 
+\par A Radio button is used to define if the condition should be TRUE or FALSE for execution to continue at the next instruction.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} JPEG Export Dialog}
+{\up #}{\footnote\pard\plain{\up #} JPEG_Export_Dialog}
+\pard \fs36 Special Function: JPEG Export Dialog\fs24 
+\par This \uldb special function\plain\fs24 {\v Special_Functions} displays the JPEG Export dialog.
+\par Note the the digital state \b USER\plain\fs24  is set to\b  BUSY\plain\fs24  until the user closes the dialog.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Knob}
+{\up #}{\footnote\pard\plain{\up #} Knob}
+\pard \fs36\cf1 Macro Instruction: Knob
+\par \plain\fs24 This Macro instruction is used to assign functions to the Knobs on the 1500 Hard Panel (Mark 2)
+\par Select the parameter required or  \b Disabled
+\par \plain\fs24 Check the \b Right\plain\fs24  checkbox if the Right hand knob is to be assigned, leave unchecked if the Left knob is to be assigned.
+\par \b Note\plain\fs24 : Brightness/Contrast control is only available for the InLens and SE2 detectors
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Last Error}
+{\up #}{\footnote\pard\plain{\up #} Last_Error}
+\pard \fs36 Editor Status Bar: Last Error\fs24 
+\par This displays the error state as a result of executing the last macro instruction. 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Library Name dialog}
+{\up #}{\footnote\pard\plain{\up #} BWUVR}
+\pard \fs36 Library Name dialog\fs24 
+\par This dialog is is used to define the name of a macro \ul library\plain\fs24 {\v Macro_Library} file to be saved in the User Directory.
+\par 
+\par A macro library file will be given the extension .MLL, do not define an extension
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Load Macro File}
+{\up #}{\footnote\pard\plain{\up #} FNZNKZ}
+\pard \fs36 Load Macro File\fs24 
+\par This Editor function loads a macro file (.MLF) or condition file (.MLC) into the \ul Editor Window\plain\fs24 {\v Editor_Window} where it may be edited or saved into the\ul  Library\plain\fs24 {\v Macro_Library}.
+\par Note that macros may be loaded from any directory.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Load Standard Library}
+{\up #}{\footnote\pard\plain{\up #} Load_Standard_Library}
+\pard \fs36 Load Standard Library\fs24 
+\par This editor function deletes the current macro \ul library\plain\fs24 {\v Macro_Library} and replaces it with the System standard library which contains macros for the default toolbar etc.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Load User Library}
+{\up #}{\footnote\pard\plain{\up #} AAJ.V0}
+\pard \fs36 Load User Library\fs24 
+\par This editor function loads a user selected library file (*.MLL) and replaces the current macro \ul library\plain\fs24 {\v Macro_Library}
+\par The current macro library is deleted.
+\par Note that the library file loaded will be updated if macros in the library are modified/deleted
+\par 
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Macro Editor}
+{\up #}{\footnote\pard\plain{\up #} Macro_Editor}
+\pard\keepn \fs36\cf1 Macro Editor
+\par \pard \plain\fs24 The Macro editor is used to create/Edit macros and to debug them.
+\par The Macro Editor also provides facilities to manage macro Libraries.
+\par 
+\par The Macro Editor is initiated from the SEM User Interface (Tools-Macro Editor) and comprises
+\par 
+\par \ul Caption\plain\fs24 {\v Editor_Caption}
+\par \uldb Menu bar\plain\fs24 {\v Editor_Menu_bar}
+\par \ul Toolbar\plain\fs24 {\v Editor_Toolbar}
+\par \ul Macro Window\plain\fs24 {\v Editor_Window}
+\par \ul Status Bar\plain\fs24 {\v Editor_Status_Bar}
+\par 
+\par 
+\par See also
+\par \uldb \b Macro - Contents\plain\b\fs24 {\v Contents}\plain\fs24 
+\par \uldb \b Macro - Overview\plain\b\fs24 {\v Macros___Overview}\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Macro Instructions}
+{\up #}{\footnote\pard\plain{\up #} Macro_Instructions}
+\pard \f4\fs36 Macro Instructions\f2\fs20 
+\par \f4\fs24 
+\par A macro is a set of macro instructions which are executed in sequence (except for \ul control structures\plain\f4\fs24 {\v Control_Structures}). If the macro is displayed in the macro window the instruction currently being executed is highlighted. If an instruction fails to execute it will repeatedly attempt to execute until either \ul stop\plain\f4\fs24  is pressed or it \ul times out\plain\f4\fs24 .
+\par 
+\par The following macro instructions are provided:
+\par 
+\par \ul Call Macro\plain\f4\fs24 {\v Call_Macro}
+\par \ul Comment\plain\f4\fs24 {\v Comment}
+\par \ul Confirm Configuration\plain\f4\fs24 {\v Confirm_Configuration}
+\par \pard \ul \ul Delay\plain\f4\fs24 {\v Delay}
+\par \ul Else\plain\f4\fs24 {\v Else}
+\par \ul End If\plain\f4\fs24 {\v End_If}
+\par \ul End a Macro\plain\f4\fs24 {\v End_The_Macro}
+\par \ul End While\plain\f4\fs24 {\v End_While}
+\par \ul Execute Command\plain\f4\fs24 {\v Execute_Command}
+\par \ul Execute Program\plain\f4\fs24 {\v 1KGATAT}
+\par \ul Hide Control Panel\plain\f4\fs24 {\v Hide_Control_Panel}
+\par \ul Hide Panel\plain\f4\fs24 {\v Hide_Panel}
+\par \ul Hide Panels\plain\f4\fs24 {\v Hide_Panels}
+\par \ul If Then\plain\f4\fs24 {\v If_Then}
+\par \ul Knob\plain\f4\fs24 {\v Knob}
+\par \uldb Look up Table Functions\plain\f4\fs24 {\v Look_up_Table_Functions}
+\par \ul Message\plain\f4\fs24 {\v Message}
+\par \ul Mouse Assignment\plain\f4\fs24 {\v Mouse_Assignment}
+\par \ul Pause\plain\f4\fs24 {\v Pause}
+\par \ul Set Analogue Pair\plain\f4\fs24 {\v Set_Analogue_Pair}
+\par \ul Set Analogue Parameter\plain\f4\fs24 {\v Set_Analogue_Parameter}
+\par \ul Set Digital State\plain\f4\fs24 {\v Set_Digital_State}
+\par \ul Show Control Panel\plain\f4\fs24 {\v Show_Control_Panel}
+\par \ul Show Control Tab\plain\f4\fs24 {\v Show_Control_Tab}
+\par \ul Show Panel\plain\f4\fs24 {\v Show_Panel}
+\par \pard \ul \ul Show Panels\plain\f4\fs24 {\v Show_Panels}
+\par \ul Special Functions\plain\f4\fs24 {\v Special_Functions}
+\par \ul Stage Goto First Point\plain\f4\fs24 {\v Stage_Goto_First_Point}
+\par \ul Stage Goto Label\plain\f4\fs24 {\v Stage_Goto_Label}
+\par \ul Stage Goto Next Point\plain\f4\fs24 {\v Stage_Goto_Next_Point}
+\par \ul Stage Goto XY\plain\f4\fs24 {\v Stage_Goto_XY}
+\par \ul Stage Mark Point\plain\f4\fs24 {\v Stage_Mark_Point}
+\par \ul Stage save position in current\plain\f4\fs24 {\v KVIFXB}
+\par \ul Stage Scan Next Field\plain\f4\fs24 {\v Stage_Scan_Next_Field}
+\par \ul Stage Scan Start\plain\f4\fs24 {\v Stage_Scan_Start}
+\par \ul Stage While not at end of list\plain\f4\fs24 {\v Stage_While_not_at_end_of_list}
+\par \ul Stage While Stage scan not at end\plain\f4\fs24 {\v Stage_While_Stage_scan_not_at_end}
+\par \ul Wait For Stage Idle\plain\f4\fs24 {\v Wait_For_Stage_Idle}
+\par \ul Wait For State\plain\f4\fs24 {\v Wait_For_State}
+\par \ul While\plain\f4\fs24 {\v While}
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Macro Library}
+{\up #}{\footnote\pard\plain{\up #} Macro_Library}
+\pard \f1\fs36 Macro Library
+\par \fs24 A Macro Library is a collection of macros held in memory ready for execution.
+\par The macro library is loaded from a library file (.MLL) in the User Directory.
+\par 
+\par When macros are deleted or saved in memory the Library file is also updated.
+\par 
+\par If the User Directory is changed the Macro Library is loaded from the File in the new User D|irectory and any currently executing macros are terminated.
+\par 
+\par If the User Directory does not contain a macro library file then a new one is created (CURRENT.MLL) from a Standard Macro Library in ..\'5cLeo32\'5cDistrib\'5cDefault.MLL
+\par \pard 
+\par The Standard Macro Library contains all the Standard Macros required,  for the Standard Toolbar etc.
+\par 
+\par All macro libraries must contain these standard macros. This may be achieved either by Loading the Standard Library (Library-Load Standard Library) or by merging the Standard Library with the current Library (Library-Merge Standard Library)
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Macro Name Dialog}
+{\up #}{\footnote\pard\plain{\up #} 1F01WR4}
+\pard \fs36 Macro Name dialog\fs24 
+\par This dialog is used to define the name and version of a macro.
+\par 
+\par Note that the macro name may be used as a filename hence normal filename conventions should be applied.
+\par 
+\par The version is any string of text.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Macro Rename dialog}
+{\up #}{\footnote\pard\plain{\up #} SCWUVR}
+\pard \fs36 Macro Rename dialog\fs24 
+\par This dialog is used to define the new name and/or version of a macro.
+\par 
+\par Note that the macro name may be used as a filename hence normal filename conventions should be applied.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Macros - Overview}
+{\up #}{\footnote\pard\plain{\up #} Macros___Overview}
+\pard\keepn \fs36\cf1 Macros - Overview
+\par \pard \plain\f4\fs24 A macro is a sequence of Macro Instructions which are executed on user request to achieve a specific result.  Each macro is identified by a macro name.
+\par 
+\par Macros are collected together into a Macro Library from which they may be executed.
+\par 
+\par There is a macro Library per User Directory. Changing to a different User Directory changes to a different Macro Library. Note that any executing macros are aborted on change of macro library.
+\par 
+\par If a Macro Library does not exist when a User Directory is selected a Default Macro Library is loaded.
+\par \pard 
+\par Macro execution may be initiated from the User Interface, Special Function keys, Macro buttons on dialogs, Toolbar Icons and by the Macro Editor.
+\par 
+\par Any number of macros may run simultaneously, however only one copy of a macro may be executed at a time. Attempting to run a macro which is already executing will result in a \b Beep\plain\f2\fs20 
+\par \f4\fs24 
+\par One use of a macro is to restore machine conditions. This is achieved by a macro generator which is invoked either on shutdown when the user requests \b save conditions \plain\f4\fs24 or by requesting \uldb save state\plain\f4\fs24 {\v I6NCK5@sem.hlp} this inspects the current machine conditions and generates a macro to re-establish them.
+\par \pard The conditions are therefore achieved by loading and executing the saved macro from file.
+\par 
+\par Macros may be created or edited using the \uldb Macro editor\plain\f4\fs24 {\v Macro_Editor} 
+\par 
+\par See also \uldb Macro - Contents\plain\f4\fs24 {\v Contents}
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Macros dialog}
+{\up #}{\footnote\pard\plain{\up #} 55E3Y}
+\pard \f1\fs36 Macros dialog\fs24 
+\par This dialog offers for choice the list of macros in the current macro \ul library\plain\fs24 {\v Macro_Library}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Merge Dialog}
+{\up #}{\footnote\pard\plain{\up #} .1B314}
+\pard \fs36 Merge Dialog\fs24 
+\par This dialog is used when a library file is being merged with the current \ul library\plain\fs24 {\v Macro_Library}  and a macro name conflict is detected.
+\par 
+\par Both the macro in the current library and the macro in the file being loaded are displayed on this dialog.
+\par 
+\par Select which macro is to be used in the current library.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Merge Libraries}
+{\up #}{\footnote\pard\plain{\up #} 17TY..P}
+\pard \fs36 Merge Libraries\fs24 
+\par This editor function reads a User selected Library file (*.MLL) and checks each macro name in the library file against the names of macros in the current \ul library\plain\fs24 {\v Macro_Library}. If a macro from the file would overwrite an existing macro the user is requested to indicate which macro is required.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Merge Standard Library}
+{\up #}{\footnote\pard\plain{\up #} 3_9WA7T}
+\pard \fs36 Merge Standard Library\fs24 
+\par This editor function merges the system Standard Library with the current\ul  library\plain\fs24 {\v Macro_Library}.
+\par Any macro in the library file unconditionally replaces one in the library with the same name.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Message}
+{\up #}{\footnote\pard\plain{\up #} 1Y.4Q6P}
+\pard \fs36\cf1 Macro Instruction:Message
+\par \plain\f4\fs24 This instruction displays a dialog box containing the defined text.
+\par 
+\par The message box may just contain an OK button or Yes/No buttons
+\par 
+\par If the \ul Message type\plain\f4\fs24 {\v 0JPV9B} is Yes/No then a defined \ul flag variable\plain\f4\fs24 {\v Flag_Variables__Semaphores_} will be set to 0 if \b No\plain\f4\fs24  is pressed or set to 1 if \b Yes\plain\f4\fs24  is pressed.
+\par 
+\par  Execution is suspended until a button  is clicked.\f2\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Message dialog}
+{\up #}{\footnote\pard\plain{\up #} 0JPV9B}
+\pard \f1\fs36 Message dialog\fs24 
+\par This dialog is used to define/edit a  \ul Message Instruction\plain\fs24 {\v Message}
+\par 
+\par If a simple Message box is required (displays an \b OK\plain\fs24  button and the defined message text) then the \b YesNo Box \plain\fs24 checkbox should be unchecked.
+\par 
+\par If the \b YesNo Box\plain\fs24  checkbox is checked then the message box will have \b Yes\plain\fs24  and \b No\plain\fs24  buttons.
+\par In this case select one of the \ul Flag Variables\plain\fs24 {\v Flag_Variables__Semaphores_} which will be set according to the button pressed by the user.
+\par \pard \b No\plain\fs24  pressed sets variable = 0
+\par \b Yes\plain\fs24  pressed sets variable = 1
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Mouse Assignment}
+{\up #}{\footnote\pard\plain{\up #} Mouse_Assignment}
+\pard \fs36 Macro Instruction: Mouse Assignment\fs24 
+\par This instruction assigns parameters for mouse adjustment.
+\par Either or Both of the Left/Middle buttons may be assigned.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Mouse assignment dialog}
+{\up #}{\footnote\pard\plain{\up #} MFLPJ6}
+\pard \fs36 Mouse assignment dialog\fs24 
+\par This dialog is used to define the parameters for the \ul mouse assignment instruction\plain\fs24 {\v Mouse_Assignment}
+\par 
+\par Select either\b  Left Button Only\plain\fs24  or \b Both Buttons \plain\fs24  as required.
+\par 
+\par Select the required parameters for assignment from the drop down lists.
+\par 
+\par Note that parameters which are XY co-ordinate pairs only require the selection of the X parameter.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} New Macro}
+{\up #}{\footnote\pard\plain{\up #} 33R8RRU}
+\pard \fs36 New Macro
+\par \fs24 This Editor function clears the \ul Editor window\plain\fs24 {\v Editor_Window} and requests the macro name and version.
+\par 
+\par The name may comprise any sequence of ASCII characters, and the name must not already exist in the library.
+\par 
+\par The version is any sequence of ASCII characters.
+\par 
+\par These entries will be displayed in Green in the Editor window.
+\par 
+\par Only when these entries are defined may a macro be created.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Panels}
+{\up #}{\footnote\pard\plain{\up #} Panels}
+\pard \fs36 Panels
+\par \fs24 The following instructions may be used 
+\par \ul Hide Control Panel\plain\fs24 {\v Hide_Control_Panel}
+\par \ul Hide Panel\plain\fs24 {\v Hide_Panel}
+\par \ul Hide Panels\plain\fs24 {\v Hide_Panels}
+\par \ul Show Control Panel\plain\fs24 {\v Show_Control_Panel}
+\par \ul Show Control Tab\plain\fs24 {\v Show_Control_Tab}
+\par \ul Show Panel\plain\fs24 {\v Show_Panel}
+\par \ul Show Panels\plain\fs24 {\v Show_Panels}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Pause}
+{\up #}{\footnote\pard\plain{\up #} HBIV07}
+\pard \fs36\cf1 Macro Instruction:Pause
+\par \plain\f4\fs24 This instruction causes the execution of the macro to be temporarily suspended.
+\par 
+\par Pressing the \b pause\plain\f4\fs24  key will cause execution to resume.\f2\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Point to Point}
+{\up #}{\footnote\pard\plain{\up #} Point_to_Point}
+\pard \f1\fs36 Special Function: Create Point to Point Object\fs24 
+\par This \uldb special function\plain\fs24 {\v Special_Functions} creates a new Point to Point Measurement Object
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Position Labels}
+{\up #}{\footnote\pard\plain{\up #} Position_Labels}
+\pard \fs36\cf1 Position Labels
+\par \plain\fs24 Position labels are part of the Co-ordinate Store and Recall licenced function.
+\par Labels which start with a $ character are global labels which are independant of User Directory
+\par Other labels are User Directory Specific.
+\par These positions may be used with the \ul Goto Label\plain\fs24 {\v Stage_Goto_Label} macro instruction.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Print Image Dialog}
+{\up #}{\footnote\pard\plain{\up #} Print_Image_Dialog}
+\pard \fs36 Special Function: Print Image Dialog\fs24 
+\par This \uldb special function\plain\fs24 {\v Special_Functions} displays thePrint Image dialog.
+\par Note the the digital state \b USER\plain\fs24  is set to\b  BUSY\plain\fs24  until the user closes the dialog.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Print Macro}
+{\up #}{\footnote\pard\plain{\up #} 17X.LS3}
+\pard \fs36 Print\fs24 
+\par This editor function will print the contents of the \ul Editor Window\plain\fs24 {\v Editor_Window}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Print Setup}
+{\up #}{\footnote\pard\plain{\up #} 141OXS2}
+\pard \fs36 Print Setup\fs24 
+\par This Editor function displays the printer setup dialog
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Rename macro}
+{\up #}{\footnote\pard\plain{\up #} ESBWK}
+\pard \fs36 Rename macro\fs24 
+\par This Editor function renames the macro currently in the \ul Editor Window\plain\fs24 {\v Editor_Window}.
+\par Note that this will save the macro to the library and delete the macro from the \ul library\plain\fs24 {\v Macro_Library} having the old name if you reply 'Yes' to the confirmation message.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Restore Conditions}
+{\up #}{\footnote\pard\plain{\up #} Restore_Conditions}
+\pard \fs36\cf1 Restore Conditions
+\par 
+\par \plain\fs24 When a \b RestoreConditions \plain\fs24 command\b  \plain\fs24 is issued by the\b  User Interface \plain\fs24 the Macro Engine looks for a file \b RESTOREn.MLC \plain\fs24  in the User Directory.
+\par [\b n\plain\fs24  is selected according to the filament type in use, On a Leo 1500 this value is \b 4\plain\fs24 , On a Leo 400 this value is \b 0\plain\fs24  for Tungsten or \b 1\plain\fs24  for LaB6]
+\par 
+\par This is the file generated when the User Interface 
+\par is closed and you request \b Save Conditions\plain\fs24 .
+\par \pard 
+\par If the file is not found the \ul Standard Conditions\plain\fs24 {\v Standard_Conditions} function is executed.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Run}
+{\up #}{\footnote\pard\plain{\up #} Run}
+\pard \fs36 Run\fs24 
+\par This editor function starts the execution of the macro from the first instruction.
+\par When running in the \ul editor window\plain\fs24 {\v Editor_Window} execution is slowed down to permit the sequence to be observed.
+\par The currently executing instruction is highlighted.
+\par The current status is displayed in the \ul Status Bar\plain\fs24 {\v Editor_Status_Bar}.
+\par This function may also be achieved by pressing \b F5\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} SEM Status Window Off}
+{\up #}{\footnote\pard\plain{\up #} SEM_Status_Window_Off}
+\pard \fs36 Special Function: SEM Status Window Off\fs24 
+\par This \uldb special function\plain\fs24 {\v Special_Functions} hides the SEM Status Window
+\par \page
+{\up $}{\footnote\pard\plain{\up $} SEM Status Window On}
+{\up #}{\footnote\pard\plain{\up #} SEM_Status_Window_On}
+\pard \fs36 Special Function: SEM Status Window On\fs24 
+\par This \uldb special function\plain\fs24 {\v Special_Functions} displays the SEM Status Window
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Save Library As}
+{\up #}{\footnote\pard\plain{\up #} NDSB7N}
+\pard \fs36 Save Library As\fs24 
+\par This editor function saves the current macro \ul library\plain\fs24 {\v Macro_Library} to a user defined file name in the current User Directory
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Save Macro To File}
+{\up #}{\footnote\pard\plain{\up #} 3M9ODS}
+\pard \fs36 Save Macro To File\fs24 
+\par This Editor function saves the macro currently in the \ul Editor Window\plain\fs24 {\v Editor_Window} to the current User Directory with the same file name that was used to load it to the Editor window.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Save State dialog}
+{\up #}{\footnote\pard\plain{\up #} 6RITM7}
+\pard \fs36 Save State dialog\fs24 
+\par This dialog is used to select which of the macro generator sections are to be inserted in the saved state.
+\par 
+\par \ul Configuration Conditions\plain\fs24 {\v Configuration_Conditions}
+\par \ul Gun Conditions\plain\fs24 {\v Gun_Conditions}
+\par \ul Set up Conditions\plain\fs24 {\v Set_up_Conditions}
+\par \ul Application conditions\plain\fs24 {\v Application_conditions}
+\par 
+\par 
+\par the resulting macro is saved to a user defined filename (*.MLC) in the User Directory.
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Save System Conditions}
+{\up #}{\footnote\pard\plain{\up #} 4GPLKQE}
+\pard \fs36 Save System Conditions\fs24 
+\par This editor function is equivalent to the \b Save State \plain\fs24 function in the User Interface.
+\par A Dialog is displayed allowing selection of the Macro Generator sections to be generated
+\par 
+\par \ul Configuration Conditions\plain\fs24 {\v Configuration_Conditions}
+\par \ul Gun Conditions\plain\fs24 {\v Gun_Conditions}
+\par \ul Set up Conditions\plain\fs24 {\v Set_up_Conditions}
+\par \ul Application conditions\plain\fs24 {\v Application_conditions}
+\par 
+\par 
+\par the resulting macro is saved to a user defined filename (*.MLC) in the User Directory.
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Save macro To Library}
+{\up #}{\footnote\pard\plain{\up #} AKPRDT}
+\pard \fs36 Save macro To Library\fs24 
+\par This Editor function saves the macro from the \ul Editor Window\plain\fs24 {\v Editor_Window} into the current \ul Library\plain\fs24 {\v Macro_Library}.
+\par If a macro of the same name already exists, confirmation will be requested.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Save macro file dialog}
+{\up #}{\footnote\pard\plain{\up #} 52AA_EG}
+\pard \fs36 Save macro file dialog\fs24 
+\par This dialog is used to define the filename when saving a macro to file.
+\par 
+\par An extension \b .MLF\plain\fs24  will be appended
+\par 
+\par The file will be saved in the User Directory
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} SaveAs Macro To File}
+{\up #}{\footnote\pard\plain{\up #} 1AIXV6L}
+\pard \fs36 SaveAs Macro To File\fs24 
+\par This editor function saves the macro currently in the \ul Editor Window\plain\fs24 {\v Editor_Window} to a file in the Current User Directory.
+\par A New name for the file is requested.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} SaveAs Macro To Library}
+{\up #}{\footnote\pard\plain{\up #} SaveAs_Macro_To_Library}
+\pard \fs36 SaveAs Macro To Library\fs24 
+\par This editor function saves the macro currently in the \ul Editor window\plain\fs24 {\v Editor_Window} to the\ul  library\plain\fs24 {\v Macro_Library}.
+\par A new name and version are requested.
+\par The name must not already exist in the library.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Search Order for macro execution}
+{\up #}{\footnote\pard\plain{\up #} Search_Order_for_macro_execution}
+\pard \fs36\cf1 Search Order for macro execution
+\par \plain\fs24 When a macro is requested for execution the Macro Engine first tries to locate the macro in the current macro Library.
+\par 
+\par If the macro is not found in the libary it will try to execute it as a macro file MacroName.MLF in the current User Directory.
+\par 
+\par If this also fails it will then try to execute a macro file  ...\'5cLEO32\'5cUser\'5cMacroName.MLF
+\par 
+\par If this also fails it will try to execute a macro file  ...\'5cLEO32\'5cDistrib\'5cMacroName.MLF.
+\par 
+\par A number of standard macros are located in the Distribution directory.
+\par \pard To override them create new macros in the macro library or macro files in the \'5cUSER directory.
+\par 
+\par See \uldb \b Customising Default Files\plain\b\fs24 {\v Customising_default_files}\plain\fs24  and \uldb \b Macro Locations\plain\b\fs24 {\v Macro_Locations}\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Select label dialog}
+{\up #}{\footnote\pard\plain{\up #} G.KTZ}
+\pard \fs36 Select label dialog\fs24 
+\par This dialog is used to select a\ul  position label\plain\fs24 {\v Position_Labels} for use with the \ul Stage Goto Label\plain\fs24 {\v Stage_Goto_Label} instruction.
+\par 
+\par Click on the required label and press OK
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Set Analogue Pair}
+{\up #}{\footnote\pard\plain{\up #} Set_Analogue_Pair}
+\pard \fs36\cf1 Macro Instruction:Set Analogue Pair
+\par \plain\f4\fs24 Sets the specified co-ordinate pair of parameters to the defined values.
+\par Does  not step on to the next instruction if either are currently disabled.
+\par See\uldb  Timeout\plain\f4\fs24 {\v 1280J7M}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Set Analogue Parameter}
+\pard {\up #}{\footnote\pard\plain{\up #} 2IDGZ8Y}
+\f1\fs36\cf1 Macro Instruction:Set Analogue Parameter
+\par \plain\f4\fs24 Sets the specified analogue parameter to the defined value.
+\par Does  not step on to the next instruction if currently disabled.
+\par See\uldb  Timeout\plain\f4\fs24 {\v 1280J7M}
+\par \f2\fs20 
+\par \f4\fs24 On insertion or editing a \ul dialog\plain\f4\fs24 {\v GH_CLU} is displayed.\f2\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Set Analogue dialog}
+{\up #}{\footnote\pard\plain{\up #} GH_CLU}
+\pard \f1\fs36 Set Analogue dialog\fs24 
+\par 
+\par This dialog is used to define the analogue parameter and the value required.
+\par 
+\par Select the required parameter
+\par 
+\par If this is a new instruction the current value appears in the value box, if editing an existing instruction the previously defined value appears in the box.
+\par 
+\par Modify the value as required.
+\par 
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Set Digital State}
+{\up #}{\footnote\pard\plain{\up #} HG7Q2B}
+\pard \fs36\cf1 Macro Instruction:Set Digital State
+\par \plain\fs24 A digital state is a parameter with a limited number of settings, e.g. On/Off
+\par \f4 This instruction sets the specified digital parameter to the defined state.
+\par Does  not step on to the next instruction if currently disabled.
+\par See\uldb  Timeout\plain\f4\fs24 {\v 1280J7M}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Set Digital dialog}
+{\up #}{\footnote\pard\plain{\up #} 76786B}
+\pard \f1\fs36 Set Digital dialog\fs24 
+\par This dialog is used to define the \ul Set Digital State\plain\fs24 {\v Set_Digital_State} instruction
+\par 
+\par Select the required digital parameter from the drop down list.
+\par 
+\par The possible states for the parameter are displayed in the lower drop down list.
+\par 
+\par If this is a new instruction the state will be the current state. If an instruction is being edited the state will be the previously defined state.
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Set up Conditions}
+{\up #}{\footnote\pard\plain{\up #} Set_up_Conditions}
+\pard \fs36 Set up Conditions\fs24 
+\par This Editor function is part of the Macro Generator which is used to save SEM Conditions.
+\par This function generates a sequence of \ul macro instructions\plain\fs24 {\v Macro_Instructions} to define the set up conditions for Detectors in Single zone (Normal/Reduced Raster\'5cEmission) and dual zone (Split/Dual Mag) operation.
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Show Control Panel}
+{\up #}{\footnote\pard\plain{\up #} 1_1SO5N}
+\pard \fs36 Macro Instruction: Show Control Panel\fs24 
+\par This is a predefined Special Function which displays the SEM Control panel previously hidden using the \ul Hide Control panel\plain\fs24 {\v Hide_Panel} instruction. The active tab is not changed.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Show Control Tab}
+{\up #}{\footnote\pard\plain{\up #} Show_Control_Tab}
+\pard \fs36\cf1 Macro Instruction:Show Control Tab
+\par \plain\fs24 Displays the defined Control Panel Tab and steps to the next instruction.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Show Panel}
+{\up #}{\footnote\pard\plain{\up #} PGY.E0}
+\pard \fs36\cf1 Macro Instruction:Show Panel
+\par \plain\fs24 Displays the selected panel dialog and steps to the next instruction.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Show Panels}
+{\up #}{\footnote\pard\plain{\up #} Show_Panels}
+\pard \fs36 Macro Instruction: Show Panels\fs24 
+\par This is a predefined Special Function which displays the panels hidden by the \ul Hide Panels\plain\fs24 {\v Hide_Panels} instruction..
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Special Function Keys}
+{\up #}{\footnote\pard\plain{\up #} Special_Function_Keys}
+\pard \fs36 Special Function Keys
+\par \fs24 The following may be used for macros (with and without \b Shift Key\plain\fs24 )
+\par \b F5\plain\fs24 , \b F6\plain\fs24 , \b F7\plain\fs24 , \b F8\plain\fs24 ,\b  F11\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Special Functions}
+{\up #}{\footnote\pard\plain{\up #} 5RL__P8}
+\pard \fs36 Macro Instruction : Special Functions\fs24 
+\par There are the following Special Functions which may be requested with this instruction:
+\par Note that as soon as the function is initiated the macro steps to the next instruction, it does not wait for the function to complete. If required insert the appropriate instructions to wait for completion.
+\par 
+\par \ul Annotation Toolbar Off\plain\fs24 {\v Annotation_Toolbar_Off}
+\par \ul Annotation Toolbar On\plain\fs24 {\v Annotation_Toolbar_on}
+\par \ul BMP Export Dialog\plain\fs24 {\v BMP_Export_Dialog}
+\par \ul Centre feature\plain\fs24 {\v Centre_feature}
+\par \ul Centre Point\plain\fs24 {\v Centre_Point}
+\par \pard \ul \ul Clipboard dialog\plain\fs24 {\v Clipboard_dialog}
+\par \ul Create Point to Point Object\plain\fs24 {\v Point_to_Point}
+\par \ul Cursor Off Screen\plain\fs24 {\v Cursor_Off_Screen}
+\par \ul Datazone Off\plain\fs24 {\v Datazone_Off}
+\par \ul Datazone On\plain\fs24 {\v Datazone_on}
+\par \ul Full screen mode Off\plain\fs24 {\v Full_screen_mode_Off}
+\par \ul Full screen mode On\plain\fs24 {\v Full_screen_mode_On}
+\par \ul Hide Control Panel\plain\fs24 {\v Hide_Control_Panel}
+\par \ul Hide Panels\plain\fs24 {\v Hide_Panels}
+\par \ul HRRU (photo) dialog\plain\fs24 {\v HRRU__photo__dialog}
+\par \ul JPEG Export Dialog\plain\fs24 {\v JPEG_Export_Dialog}
+\par \ul Print Image Dialog\plain\fs24 {\v Print_Image_Dialog}
+\par \ul Request Annotation Text\plain\fs24 {\v Annotation_Text}
+\par \ul Save Stage position in Current\plain\fs24 {\v KVIFXB}
+\par \ul SEM Status Window Off\plain\fs24 {\v SEM_Status_Window_Off}
+\par \ul SEM Status Window On\plain\fs24 {\v SEM_Status_Window_On}
+\par \ul Set Mouse to Coarse\plain\fs24 {\v Set_Mouse_to_Coarse}
+\par \pard \ul \ul Set Mouse to Fine\plain\fs24 {\v Set_Mouse_to_Fine}
+\par \ul Show Control Panel\plain\fs24 {\v Show_Control_Panel}
+\par \ul Show Panels\plain\fs24 {\v Show_Panels}
+\par \ul Signal Event\plain\fs24 {\v Signal_Event}
+\par \ul Stage Goto First Point\plain\fs24 {\v Stage_Goto_First_Point}
+\par \ul Stage Goto Next Point\plain\fs24 {\v Stage_Goto_Next_Point}
+\par \ul Stage Mark Current Position\plain\fs24 {\v Stage_Mark_Point}
+\par \ul Step Up WD\plain\fs24 {\v Step_Up_Down_WD}
+\par \ul Step Down WD\plain\fs24 {\v Step_Up_Down_WD}
+\par \ul TIFF Export Dialog\plain\fs24 {\v TIFF_Export_Dialog}
+\par \ul TIFF Import Dialog\plain\fs24 {\v TIFF_Import_Dialog}
+\par \ul Toggle Mouse Coarse/Fine\plain\fs24 {\v Toggle_Mouse_Coarse_Fine}
+\par \ul User Toolbar Off\plain\fs24 {\v User_Toolbar_Off}
+\par \ul User Toolbar On\plain\fs24 {\v User_Toolbar_On}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Special function dialog}
+{\up #}{\footnote\pard\plain{\up #} IWFRGI}
+\pard \fs36 Special function dialog\fs24 
+\par This dialog is used to select one of the \ul special user interface functions\plain\fs24 {\v Special_Functions}.
+\par 
+\par Select the required function from the drop down list.
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Goto First Point}
+{\up #}{\footnote\pard\plain{\up #} 1.TKBFA}
+\pard \fs36 Macro Instruction:Special Function:Stage Goto First Point\fs24 
+\par This macro instruction Issues a command to the Stage Co-ordinate Store/Recall software to \ul move to the first point\plain\fs24 {\v LHXS1D@tabmgr.hlp} in the list
+\par 
+\par Note that it is necessary to\ul  wait for stage movement to cease\plain\fs24 {\v Wait_For_Stage_Idle} before issueing a new stage movement command.
+\par 
+\par If the Stage is not initialised the macro does not step to the next instruction.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Goto Label}
+{\up #}{\footnote\pard\plain{\up #} JQ72KT}
+\pard \fs36\cf1 Macro Instruction :Stage Goto Label
+\par \plain\fs24 This instruction will move the stage to the position defined by the selected \ul Position Label\plain\fs24 {\v Position_Labels} and step to the next instruction.
+\par 
+\par If the Label is indefined an error message will be given and the macro stops with an error status.
+\par 
+\par If the Stage is not initialised the instruction will not execute.
+\par 
+\par Note that if the stage is already moving this will override the movement.
+\par Use the \ul Wait For Stage Idle\plain\fs24 {\v Wait_For_Stage_Idle} instruction if necessary.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Goto Next Point}
+{\up #}{\footnote\pard\plain{\up #} 114K4VQ}
+\pard \fs36 Macro Instruction:Special Function:Stage Goto Next Point\fs24 
+\par This macro instruction Issues a command to the Stage Co-ordinate Store/Recall software to \ul move to the next point\plain\fs24 {\v E9SIP1@tabmgr.hlp} in the list
+\par 
+\par Note that it is necessary to\ul  wait for stage movement to cease\plain\fs24 {\v Wait_For_Stage_Idle} before issueing a new stage movement command.
+\par 
+\par If the current point is the last in the list the digital parameter \b Points List\plain\fs24  will be set to\b  At End. 
+\par \plain\fs24 For a loop use \uldb While Not at end list\plain\fs24 {\v Stage_While_not_at_end_of_list}.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Goto XY}
+{\up #}{\footnote\pard\plain{\up #} Stage_Goto_XY}
+\pard \fs36\cf1 Macro Instruction: Stage Goto XY
+\par \plain\fs24 This instruction will move the stage to the co-ordinates defined and step to the next instruction.
+\par If the Stage is not initialised the instruction will not execute.
+\par 
+\par Note that if the stage is already moving this will override the movement.
+\par Use the \ul Wait For Stage Idle\plain\fs24 {\v Wait_For_Stage_Idle} instruction if necessary.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Mark Point}
+{\up #}{\footnote\pard\plain{\up #} SNJTR}
+\pard \fs36 Macro Instruction: Special Function: Stage Mark Point\fs24 
+\par This special function \ul adds an entry\plain\fs24 {\v 4F62PF@tabmgr.hlp} to the points list as part of the Stage Co-ordinate Store/Recall Option 
+\par 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Save Position in "Current"}
+{\up #}{\footnote\pard\plain{\up #} KVIFXB}
+\pard \fs36\cf1 Macro Instruction: Special Function: Stage Save Position in "Current"
+\par \plain\fs24 This macro instruction \ul Special Function\plain\fs24 {\v Special_Functions} saves the current stage position in a label "Current" in the Stage Co-ordinate Store & Recall Option points list. If label "Current" does not exist it is created.
+\par 
+\par This function is useful in circumstances where it is necessary to periodically move the stage (e.g. to the position of a Faraday Cage to confirm probe current) and then return to the original position using the\ul  Stage Goto Label\plain\fs24 {\v Stage_Goto_Label} Current.
+\par \pard 
+\par If the Stage is not initialised the macro does not step to the next instruction.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Scan Next Field}
+{\up #}{\footnote\pard\plain{\up #} 118SAWG}
+\pard \fs36 Macro Instruction: Stage Scan Next Field\fs24 
+\par This is a predefined Macro \ul Command\plain\fs24 {\v Execute_Command} which steps to the next field of a predefined \ul stage scan\plain\fs24 {\v 4YI0_85@dialgmgr.hlp} pattern.
+\par If at end of scan the digital state \b Stage Scanning\plain\fs24  is set to \b At End\plain\fs24 .
+\par For a loop use \ul While Stage scan not at end\plain\fs24 {\v Stage_While_Stage_scan_not_at_end}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage Scan Start}
+{\up #}{\footnote\pard\plain{\up #} YD._Q}
+\pard \fs36 Macro Instruction: Stage Scan Start\fs24 
+\par This is a predefined Macro \ul Command\plain\fs24 {\v Execute_Command} which initiates a predefined \ul stage scan\plain\fs24 {\v 4YI0_85@dialgmgr.hlp} pattern.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage While Stage scan not at end}
+{\up #}{\footnote\pard\plain{\up #} O9K0HM}
+\pard \fs36 Macro Instruction: Stage While Stage scan not at end\fs24 
+\par This is a predefined \ul While\plain\fs24 {\v While} Instruction used to control the \ul Stage Scan\plain\fs24 {\v 4YI0_85@dialgmgr.hlp} loop.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stage While not at end of list}
+{\up #}{\footnote\pard\plain{\up #} AEICVN}
+\pard \fs36 Macro Instruction: Stage While not at end of list\fs24 
+\par \fs36\cf1 
+\par \plain\fs24 This is a predefined case of the \ul While\plain\fs24 {\v While} Instruction which will loop until the end of the Stage Scan pattern is reached.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Standard Conditions}
+{\up #}{\footnote\pard\plain{\up #} Standard_Conditions}
+\pard \fs36\cf1 Standard Conditions
+\par \plain\fs24 This function is executed on request from the User Interface or if \ul Restore Conditions\plain\fs24 {\v Restore_Conditions} fails.
+\par 
+\par The action is as follows
+\par \pard\li355\fi-355\tx355 
+\par 1. Execute the macro STANDARD if it exists in the current macro library. 
+\par 2. Otherwise load and execute the file STANDARD.MLC if it exists in the User Directory.
+\par 3. Otherwise load and execute the file ..\'5cLEO32\'5cUSER\'5cSTANDARD.MLC if it exists
+\par 4. Otherwise load and execute the file ..\'5cLEO32\'5cDISTRIB\'5cSTANDARD.MLC.
+\par 
+\par The default behaviour is therefore to execute the file in the Distribution directory (case 4).
+\par 
+\par An alternative file may be created and placed in \'5cLEO32\'5cUSER this will therefore be executed when any new user directory is created and conditions restored (case 3)
+\par \pard\li355\fi-355\tx355 
+\par NOTE: The macro in file STANDARD.MLC must be named \b Standard\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Start Macro}
+{\up #}{\footnote\pard\plain{\up #} Start_Macro}
+\pard\tx355 \fs36\cf1 Start Macro
+\par \pard\tx355 \plain\fs24 When the SEM User Interface is started it runs a macro called \b Start \plain\fs24 if it exists.
+\par \pard\tx355 This macro may be used to set up user conditions if required.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Step}
+{\up #}{\footnote\pard\plain{\up #} Step}
+\pard \fs36 Step\fs24 
+\par This editor function executes the currently selected (highlighted) \ul instruction\plain\fs24 {\v Macro_Instructions} in the \ul Editor Window\plain\fs24 {\v Editor_Window}
+\par The next instruction to be executed becomes highlighted.
+\par This function may also be achieved by pressing \b F10\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stop}
+{\up #}{\footnote\pard\plain{\up #} Stop}
+\pard \fs36 Stop\fs24 
+\par This editor function stops execution of the macro in the \ul Editor window\plain\fs24 {\v Editor_Window}
+\par Pressing \b ESC\plain\fs24  also performs this function.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} TIFF Export Dialog}
+{\up #}{\footnote\pard\plain{\up #} TIFF_Export_Dialog}
+\pard \fs36 Special Function: TIFF Export Dialog\fs24 
+\par This \uldb special function\plain\fs24 {\v Special_Functions} displays theTIFF Export dialog.
+\par Note the the digital state \b USER\plain\fs24  is set to\b  BUSY\plain\fs24  until the user closes the dialog.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} TIFF Import Dialog}
+{\up #}{\footnote\pard\plain{\up #} TIFF_Import_Dialog}
+\pard \fs36 Special Function: TIFF Import Dialog\fs24 
+\par This \uldb special function\plain\fs24 {\v Special_Functions} displays theTIFF Import dialog.
+\par Note the the digital state \b USER\plain\fs24  is set to\b  BUSY\plain\fs24  until the user closes the dialog.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Uncluttered image for video printing}
+\pard {\up #}{\footnote\pard\plain{\up #} Uncluttered_image_for_video_printing}
+\fs36\cf1 Uncluttered image for video printing
+\par \plain\fs24 The following special functions may be used
+\par 
+\par \ul Annotation Toolbar Off\plain\fs24 {\v Annotation_Toolbar_Off}
+\par \ul Cursor Off Screen\plain\fs24 {\v Cursor_Off_Screen}
+\par \ul Datazone On\plain\fs24 {\v Datazone_on}
+\par \ul Full screen mode On\plain\fs24 {\v Full_screen_mode_On}
+\par \ul Hide Control Panel\plain\fs24 {\v Hide_Control_Panel}
+\par \ul Hide Panels\plain\fs24 {\v Hide_Panels}
+\par \ul SEM Status Window Off\plain\fs24 {\v SEM_Status_Window_Off}
+\par 
+\par 
+\par See also \ul attaching macros to Keys\plain\fs24 {\v Attaching_macros_to_keys}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Undo}
+{\up #}{\footnote\pard\plain{\up #} Undo}
+\pard \fs36 Undo\fs24 
+\par If the macro in the \ul Editor Window\plain\fs24 {\v Editor_Window} has been edited, this Editor function will replace it with an unmodified copy from the \ul Library\plain\fs24 {\v Macro_Library}.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User Toolbar Off}
+{\up #}{\footnote\pard\plain{\up #} User_Toolbar_Off}
+\pard \fs36 Special Function: User Toolbar Off\fs24 
+\par This \uldb special function\plain\fs24 {\v Special_Functions} hides the SEM User Toolbar
+\par \page
+{\up $}{\footnote\pard\plain{\up $} User Toolbar On}
+{\up #}{\footnote\pard\plain{\up #} User_Toolbar_On}
+\pard \fs36 Special Function: User Toolbar On\fs24 
+\par This \uldb special function\plain\fs24 {\v Special_Functions} displays the SEM User Toolbar
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Wait For Stage Idle}
+{\up #}{\footnote\pard\plain{\up #} 13VLKQL}
+\pard \fs36\cf1 Wait For Stage Idle
+\par \plain\fs24 This is a predefined case of the \ul Wait For State\plain\fs24 {\v Wait_For_State} Instruction which will wait for the stage status to become idle.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Wait For State}
+{\up #}{\footnote\pard\plain{\up #} Wait_For_State}
+\pard \fs36\cf1 Macro Instruction:Wait For State
+\par \plain\f4\fs24 This instruction waits for the specified digital parameter to be the defined state or until the timeout period expires. 
+\par 
+\par Steps to the next instruction when the required state is achieved.
+\par 
+\par If the instruction times out the macro stops with an error state (default action) or optionally continues with the next instruction.
+\par 
+\par The option to continue on timeout is provided so that alternative action may be taken on timeout (e.g. an IF statement following the waitfor can check if the condition has not been met)
+\par \pard 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Wait For dialog}
+{\up #}{\footnote\pard\plain{\up #} GEDWQ}
+\pard \f1\fs36 Wait For dialog\fs24 
+\par This dialog is used to define a \ul Wait For instruction\plain\fs24 {\v Wait_For_State}
+\par 
+\par Select the required parameter from the drop down list.
+\par 
+\par The lower drop down list displays the possible state values for the parameter.
+\par 
+\par If this is a new instruction the current state value will be displayed, if editing an existing instruction the state value will be that previously defined.
+\par 
+\par A timeout value (in seconds) defines how long the instruction will wait.
+\par 
+\par There is a checkbox which defines the action on Timeout. If you wish the macro to halt on timeout (the default action) then check the box.
+\par \pard If you uncheck the box the next instruction in sequence will be executed.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} While}
+{\up #}{\footnote\pard\plain{\up #} While}
+\pard \fs36\cf1 Macro Instruction:While
+\par \plain\f4\fs24 This is part of the \ul While construct\plain\f4\fs24 {\v While_construct}.
+\par 
+\par If the condition defined is true (or optionally false) then the next instruction in sequence is executed,
+\par 
+\par otherwise execution continues after the associated EndWhile statement.\f2\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} While construct}
+{\up #}{\footnote\pard\plain{\up #} While_construct}
+\pard \f1\fs36\cf1 While construct
+\par 
+\par \plain\f4\fs24 This is of the form:
+\par 
+\par \ul While\plain\f4\fs24 {\v While} <condition>  
+\par 
+\par 
+\par other statements
+\par 
+\par \ul End While\plain\f4\fs24 {\v End_While}
+\par 
+\par other statements\f2\fs20 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} While dialog}
+{\up #}{\footnote\pard\plain{\up #} G9DVQ}
+\pard \f1\fs36 While dialog\fs24 
+\par This dialog is used to define a \ul while instruction\plain\fs24 {\v While}
+\par 
+\par Select the required parameter from the drop down list.
+\par 
+\par The lower drop down list displays the possible state values for the parameter.
+\par 
+\par If this is a new instruction the current state value will be displayed, if editing an existing instruction the state value will be that previously defined.
+\par 
+\par A Radio button is used to define if the condition should be TRUE or FALSE for execution to continue at the next instruction.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} SaveAs Common}
+{\up #}{\footnote\pard\plain{\up #} SaveAs_Common}
+\pard \fs36\cf1 Editor Menu: File: SaveAs Common
+\par \plain\fs24 This command saves the current macro as ..\'5cleo32\'5cuser\'5ccommon.mlc for use as a \uldb common macro.\plain\fs24 {\v Common_Macros}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Edit Timeout}
+{\up #}{\footnote\pard\plain{\up #} Edit_Timeout}
+\pard \fs36\cf1 Editor Menu: Edit Timeout
+\par \plain\fs24 This command displays the edit timeout dialog which enables the\uldb  Instruction Timeout\plain\fs24 {\v 1280J7M} value to be changed
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Instruction Timeout}
+{\up #}{\footnote\pard\plain{\up #} 1280J7M}
+\pard \fs36\cf1 Instruction Timeout
+\par \plain\fs24 If an attempt is made to set a \uldb digital parameter\plain\fs24 {\v Set_Digital_State}, set an \uldb Analogue parameter \plain\fs24 {\v Set_Analogue_Parameter}or execute a \uldb command\plain\fs24 {\v Execute_Command} which is disabled then the instruction is repeatedly executed without stepping on to the next instruction.
+\par 
+\par If after a timeout period the instruction still cannot proceed a message box is displayed notifying the user.
+\par 
+\par The user may choose:
+\par \pard\li355\fi-355\tx355 \f3 \{bmc bm0.bmp\}\f1 \tab To stop the Macro
+\par \f3 \{bmc bm0.bmp\}\f1 \tab To skip the instruction
+\par \f3 \{bmc bm0.bmp\}\f1 \tab To wait a further timeout period
+\par \pard\tx355 
+\par \pard\tx355 The default timeout period is 10 seconds.
+\par \pard\tx355 The period may be changed from the menu using \b Edit - timeout\plain\fs24 .
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Customising default files}
+{\up #}{\footnote\pard\plain{\up #} Customising_default_files}
+\pard\keepn \fs36\cf1 Customising default files
+\par \pard \plain\fs24 There are default files installed during Leo-32 installation, these are found in the ...\'5cLEO32\'5cDISTRIB directory.
+\par 
+\par These files provide default behaviour and may be modified as required and installed in your own user directory (hence only apply when the specific user directory is in use) or \uldb \b saved\plain\b\fs24 {\v SaveAs_Common}\plain\fs24  as\b  \uldb common files\plain\b\fs24 {\v Common_Macros}\plain\fs24  (hence will apply to all users). (see \uldb \b Search Order\plain\b\fs24 {\v Search_Order_for_macro_execution}\plain\fs24  and \uldb \b Macro Locations\plain\b\fs24 {\v Macro_Locations}\plain\fs24 )
+\par 
+\par These files are:
+\par 
+\par \b Standard.MLC\plain\fs24 
+\par \pard Sets standard conditions, see \uldb Standard\plain\fs24 {\v Standard_Conditions}
+\par 
+\par \b Specimen Change.MLF\plain\fs24  (Leo 1500 only)
+\par Executed from Specimen Exchange button on Airlock Panel.
+\par See comments in macro and \uldb How To\plain\fs24 {\v Contents@how_to.hlp} : automating specimen exchange
+\par 
+\par \b Video Print\plain\fs24 
+\par Executed when Video Printer is selected as output device.
+\par Provides an \uldb \b uncluttered image\plain\b\fs24 {\v Uncluttered_image_for_video_printing}\plain\fs24  for 15 seconds to permit the user to make a video print.
+\par 
+\par \b Resume Exchange.MLF\plain\fs24  (Leo 1500 only)
+\par Executed from Resume Exchange button on Airlock Panel.
+\par \pard See comments in macro and \uldb How To\plain\fs24 {\v Contents@how_to.hlp} : automating specimen exchange
+\par 
+\par \b HV_DETECTOR.MLF\plain\fs24  (Leo 435VP and 438VP only)
+\par Detector selection.
+\par Executed when switching into HV mode. Not used if VPSE Detector fitted.
+\par 
+\par \b VP_DETECTOR.MLF\plain\fs24  (Leo 435VP and 438VP only)
+\par Detector selection.
+\par Executed when switching into VP mode. Not used if VPSE Detector fitted.
+\par 
+\par \b Mouse Stigmation.MLF\plain\fs24 
+\par Executed when the Stigmation button on the \uldb SEM Control Apertures\plain\fs24 {\v 295DOW3@tabmgr.hlp} tab is pressed.
+\par \pard By default selects the \b Stigmation X and Y\plain\fs24  parameters to the Left Mouse button for two dimensional adjustment.
+\par Alternatively may select the \b Stig X Only\plain\fs24  and \b Stig Y only\plain\fs24  parameters to the left and middle buttonsa repectively to permit individual adjustment.
+\par 
+\par \b Mouse Aperture Align.MLF \plain\fs24 (Leo 1500 only)
+\par Executed when the Aperture Align button on the \uldb SEM Control Apertures\plain\fs24 {\v 295DOW3@tabmgr.hlp} tab is pressed.
+\par By default selects the \b Aperture Align X and Y\plain\fs24  parameters to the Left Mouse button for two dimensional adjustment.
+\par \pard Alternatively may select the \b Aper Align X Only\plain\fs24  and \b Aper Align Y only\plain\fs24  parameters to the left and middle buttonsa repectively to permit individual adjustment.
+\par 
+\par \b Toolbar\plain\fs24 
+\par In addition many of the toolbar icons call macros, or they may be modified to call macros. These macros may also be saved in your own macro library or saved as common macros. See \uldb \b Standard Toolbar functions\plain\b\fs24 {\v 4AX50PD@sem.hlp}\plain\fs24  and \uldb \b toolbar editor\plain\b\fs24 {\v Contents@tooledit.hlp}
+\par 
+\par 
+\par \pard See Also
+\par \uldb Macro - contents\plain\b\fs24 {\v Contents}
+\par \uldb Macro - Overview\plain\b\fs24 {\v Macros___Overview}\plain\fs24 
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Set Mouse to Coarse}
+{\up #}{\footnote\pard\plain{\up #} Set_Mouse_to_Coarse}
+\pard \fs36\cf1 Special Function:Set Mouse to Coarse
+\par \plain\fs24 This \uldb special function\plain\fs24 {\v Special_Functions}  Sets the mouse adjustment to Coarse Mode
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Set Mouse to Fine}
+{\up #}{\footnote\pard\plain{\up #} Set_Mouse_to_Fine}
+\pard \fs36\cf1 Special Function:Set Mouse to Fine
+\par \plain\fs24 This \uldb special function\plain\fs24 {\v Special_Functions}  Sets the mouse adjustment to Fine Mode
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Toggle Mouse Coarse/Fine}
+{\up #}{\footnote\pard\plain{\up #} Toggle_Mouse_Coarse_Fine}
+\pard \fs36\cf1 Special Function:Toggle Mouse Coarse/Fine
+\par \plain\fs24 This \uldb special function\plain\fs24 {\v Special_Functions}  Toggles the mouse adjustment mode between Coarse/Fine Mode
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Look up Table Functions}
+{\up #}{\footnote\pard\plain{\up #} Look_up_Table_Functions}
+\pard\keepn \fs36\cf1 Look up Table Functions
+\par \pard \plain\fs24 The following Look Up Tabe \uldb Macro Instructions\plain\fs24 {\v Macro_Instructions} are provided.
+\par 
+\par \ul Display LUT Editor\plain\fs24 {\v Display_LUT_Editor}
+\par \ul Display LUT Reset\plain\fs24 {\v Display_LUT_Reset}
+\par \ul Input LUT Editor\plain\fs24 {\v Input_LUT_Editor}
+\par \ul Input LUT Reset\plain\fs24 {\v Input_LUT_Reset}
+\par \ul Load LUT from File\plain\fs24 {\v Load_LUT_from_File}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Display LUT Editor}
+{\up #}{\footnote\pard\plain{\up #} Display_LUT_Editor}
+\pard {\up K}{\footnote\pard\plain{\up K} Comment dialog;Common Macros;Configuration Conditions;Confirm Configuration;Confirm State dialog;Contents;Continue;Control Structures;Current Line;Current Status;Cursor Off Screen;Customising the Hard Panel;Datazone off;Datazone On;Delay;Delay Dialog;Delete Item;Delete macro}
+\fs36\cf1 Macro Instruction:Display LUT Editor
+\par \plain\fs24 This \uldb Macro Instruction\plain\fs24 {\v Macro_Instructions} displays the\uldb  LUT Editor\plain\fs24 {\v Contents@lutmgr.hlp} which may be used to create User Display LUT Profiles
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Input LUT Editor}
+{\up #}{\footnote\pard\plain{\up #} Input_LUT_Editor}
+\pard {\up K}{\footnote\pard\plain{\up K} Display LUT Editor;Display LUT Reset;Edit Item}
+\fs36\cf1 Macro Instruction:Input LUT Editor
+\par \plain\fs24 This \uldb Macro Instruction\plain\fs24 {\v Macro_Instructions} displays the\uldb  LUT Editor\plain\fs24 {\v Contents@lutmgr.hlp} which may be used to create User Input LUT Profiles
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Display LUT Reset}
+{\up #}{\footnote\pard\plain{\up #} Display_LUT_Reset}
+\pard \fs36\cf1 Macro Instruction: Display LUT Reset
+\par \plain\fs24 This \uldb Macro Instruction\plain\fs24 {\v Macro_Instructions} resets the Display LUT to a Linear Grey
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Input LUT Reset}
+{\up #}{\footnote\pard\plain{\up #} Input_LUT_Reset}
+\pard \fs36\cf1 Macro Instruction: Input LUT Reset
+\par \plain\fs24 This \uldb Macro Instruction\plain\fs24 {\v Macro_Instructions} resets the Input LUT to transparent
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Load LUT from File}
+{\up #}{\footnote\pard\plain{\up #} Load_LUT_from_File}
+\pard {\up K}{\footnote\pard\plain{\up K} Edit Macro;Editor Caption;Editor Menu bar;Editor Menu: Debug}
+\fs36\cf1 Macro Instruction: Load LUT from File
+\par \plain\fs24 This \uldb Macro Instruction\plain\fs24 {\v Macro_Instructions} loads a selected LUT file.
+\par The LUT file may be either a Display LUT File (*.OLT, *.DLU) or an Input LUT File (*.ULU)
+\par 
+\par These LUT files may be created using the \uldb LUT Editor\plain\fs24 {\v Contents@lutmgr.hlp}
+\par 
+\par See also \uldb LUT Editor File Types\plain\fs24 {\v 2ZB2NX@lutmgr.hlp}
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Macro Locations}
+{\up #}{\footnote\pard\plain{\up #} Macro_Locations}
+\pard {\up K}{\footnote\pard\plain{\up K} Editor Menu: Edit;Editor Menu: File;Editor Menu: Generator;Editor Menu: Insert;Editor Menu: Library;Editor Menu: View;Editor Status Bar;Editor Toolbar;Editor Window;Else;End If;End The Macro;End While;Execute Command;Execute program;Execute Program Dialog;Exit;Flag Variables (Semaphores);Full screen mode Off;Full screen mode On;Gun Conditions;Hide Control Panel;Hide Panel;Hide Panels;Hints and Tips;HRRU (photo) dialog;If Then;If Then Constructs;If Then Dialog;Input LUT Editor;Input LUT Reset}
+\fs36\cf1 Macro Locations
+\par \plain\fs24 This menu function displays a list box containing all the macros which are accessible and where they are located.
+\par 
+\par This is particularly useful when you wish to determine how the \uldb search path\plain\fs24 {\v Search_Order_for_macro_execution} functions to select a macro.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Signal Event}
+{\up #}{\footnote\pard\plain{\up #} Signal_Event}
+\pard \fs36\cf1 Special Function:Signal Event
+\par \plain\fs24 This \uldb special function\plain\fs24 {\v Special_Functions}  generates a Macro Event with the associated data code.
+\par The event is fired in the Leo Parameter Manager OCX used in special applications.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Stop All Macros}
+{\up #}{\footnote\pard\plain{\up #} Stop_All_Macros}
+\pard \fs36\cf1 Stop All Macros
+\par \plain\fs24 This menu command stops all currently executing macros.
+\par \page
+{\up $}{\footnote\pard\plain{\up $} Step Up/Down WD}
+{\up #}{\footnote\pard\plain{\up #} Step_Up_Down_WD}
+\pard {\up K}{\footnote\pard\plain{\up K} JPEG Export Dialog;Knob;Last Error;Library Name dialog;Load LUT from File;Load Macro File;Load Standard Library;Load User Library}
+\fs36\cf1 Special Function: Step Up/Down WD
+\par \plain\fs24 These two special functions Step the Working distance up/down by an amount which is magnification compensated. The amount is also affected by the Coarse/Fine state.
+\par 
+\par These instructions are provided so that they may be used in macros attached to \uldb special function keys\plain\fs24 {\v Attaching_macros_to_keys} hence permitting more precise control of Working Distance than using the mouse.
+\par \page
+}

@@ -1,0 +1,89 @@
+﻿=== DIALOG 101 "" (0 controls)
+=== DIALOG 103 "" (0 controls)
+=== DIALOG 207 "About GETHOST Control" (9 controls)
+  1  BUTTON  "OK"
+  -1  STATIC  "Mabry Software, Inc.
+Post Office Box 31926
+Seattle, WA  98103-1926"
+  -1  STATIC  "CompuServe: 71231,2066
+  or GO MABRY
+Internet: mabry@halcyon.com
+Web: http://www.halcyon.com/mabry/"
+  -1  STATIC  "Phone: 206-634-1443
+Toll Free: 800-99-MABRY
+Fax: 206-632-0272"
+  -1  STATIC  "#205"
+  -1  STATIC  ""
+  -1  STATIC  "GETHOST Control - GETHST32.OCX
+
+Copyright © 1995-1996 by Mabry Software, Inc. and Edward B. Toupin"
+  -1  STATIC  "#10"
+  -1  STATIC  "#206"
+=== DIALOG 209 "About GETHOST Control (Shareware)" (14 controls)
+  1  BUTTON  "OK"
+  -1  STATIC  "#10"
+  -1  STATIC  "Mabry Software, Inc.
+Post Office Box 31926
+Seattle, WA  98103-1926"
+  -1  STATIC  ""
+  -1  STATIC  "This is an unregistered version of this control.  It is not crippled in any way.  This message does not appear in the registered version."
+  -1  STATIC  "You can register this control by sending $10 ($15 for international orders).  You can receive this control via e-mail by sending $5."
+  -1  STATIC  "CompuServe: 71231,2066
+  or GO MABRY
+Internet: mabry@halcyon.com
+Web: http://www.halcyon.com/mabry/"
+  -1  STATIC  "Phone: 206-634-1443
+Toll Free: 800-99-MABRY
+Fax: 206-632-0272"
+  -1  STATIC  "Source code is also available for $30 ($35 for international, $25 for e-mail only delivery). This price includes registration."
+  -1  STATIC  "#205"
+  -1  STATIC  "CompuServe members may register this control in the Software Registration forum (GO SWREG).  Register product number 6390 (9057 if you want the source code)."
+  -1  STATIC  ""
+  -1  STATIC  "GETHOST Control - GETHST32.OCX
+
+Copyright © 1995-1996 by Mabry Software, Inc. and Edward B. Toupin"
+  -1  STATIC  "#206"
+=== DIALOG 211 "" (13 controls)
+  -1  STATIC  "#10"
+  -1  STATIC  "Mabry Software, Inc.
+Post Office Box 31926
+Seattle, WA  98103-1926"
+  -1  STATIC  "CompuServe: 71231,2066
+  or GO MABRY
+Internet: mabry@halcyon.com
+Web: http://www.halcyon.com/mabry/"
+  -1  STATIC  "Phone: 206-634-1443
+Toll Free: 800-99-MABRY
+Fax: 206-632-0272"
+  -1  STATIC  "#205"
+  -1  STATIC  ""
+  -1  STATIC  ""
+  -1  STATIC  "This is an unregistered version of this control.  It is not crippled in any way.  This message does not appear in the registered version."
+  -1  STATIC  "You can register this control by sending $10 ($15 for international orders).  You can receive this control via e-mail by sending $5."
+  -1  STATIC  "Source code is also available for $30 ($35 for international, $25 for e-mail only delivery). This price includes registration."
+  -1  STATIC  "CompuServe members may register this control in the Software Registration forum (GO SWREG).  Register product number 6390 (9057 if you want the source code)."
+  -1  STATIC  "GETHOST Control - GETHST32.OCX
+
+Copyright © 1995-1996 by Mabry Software, Inc. and Edward B. Toupin"
+  -1  STATIC  "#206"
+=== DIALOG 212 "GETHOST Control - No License Found" (11 controls)
+  1  BUTTON  "OK"
+  -1  STATIC  "#10"
+  -1  STATIC  "Mabry Software, Inc.
+Post Office Box 31926
+Seattle, WA  98103-1926"
+  -1  STATIC  ""
+  -1  STATIC  "This is a registered version of this control.  The license file for this control was not found in your Windows system directory.   In design mode you cannot run this control without its license file."
+  -1  STATIC  "CompuServe: 71231,2066
+  or GO MABRY
+Internet: mabry@halcyon.com
+Web: http://www.halcyon.com/mabry/"
+  -1  STATIC  "Phone: 206-634-1443
+Toll Free: 800-99-MABRY
+Fax: 206-632-0272"
+  -1  STATIC  "#205"
+  -1  STATIC  ""
+  -1  STATIC  "GETHOST Control - GETHST32.OCX
+
+Copyright © 1995-1996 by Mabry Software, Inc. and Edward B. Toupin"
+  -1  STATIC  "#206"

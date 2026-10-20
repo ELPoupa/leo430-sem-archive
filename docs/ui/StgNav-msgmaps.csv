@@ -1,0 +1,7 @@
+﻿"Map","Message","Kind","Id","LastId","Menu","Handler"
+"0x1003DD80","registered PM_PARAMETER_NOTIFY","","","","","0x10019462"
+"0x1003DD80","WM_TIMER","","","","","0x10019493"
+"0x1003E390","WM_HELP","","","","","0x10033C6A"
+"0x1003E390","WM_HELPHITTEST","","","","","0x10033D20"
+"0x1003E390","0x0366","","","","","0x10033D2F"
+"0x1003E390","WM_COMMAND","command","200","299","","0x100321F0"

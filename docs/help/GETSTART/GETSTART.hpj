@@ -1,0 +1,14 @@
+[OPTIONS]
+TITLE=Getting started
+CONTENTS=Contents
+COPYRIGHT=Copyright ©1998 Leo Electron Microscopy Ltd
+LCID=0x809 0x0 0x0
+CNT=GETSTART.CNT
+COMPRESS=0
+
+[WINDOWS]
+main=,(717,102,306,717),,(255,255,255),(255,255,128),1
+
+[FILES]
+GETSTART.rtf
+

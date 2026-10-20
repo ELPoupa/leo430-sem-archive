@@ -1,0 +1,12 @@
+﻿=== MENU MENUBAR
+  [&File]
+  100  &Open...	Ctrl+O
+  ----
+  200  &Print...	Ctrl+P
+  ----
+  250  Export
+  ----
+  300  E&xit
+=== DIALOG PRINTDLGBOX "" (2 controls)
+  -1  STATIC  "Printing Config Data..."
+  2  BUTTON  "&Cancel"

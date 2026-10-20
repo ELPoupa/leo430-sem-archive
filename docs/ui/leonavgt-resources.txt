@@ -1,0 +1,6 @@
+﻿=== DIALOG 1 "About LEO SEM Navigation Control" (4 controls)
+  -1  STATIC  "#1"
+  -1  STATIC  "LEO SEM Navigation Control, V04.00"
+  -1  STATIC  "Copyright © 1997-2000, Leo Electron Microscopy Ltd"
+  1  BUTTON  "OK"
+=== DIALOG 100 "" (0 controls)

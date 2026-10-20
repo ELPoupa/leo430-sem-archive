@@ -1,0 +1,252 @@
+' speed.exe: Visual Basic 3 p-code, decompiled by tools/vb3-pcode.ps1 (do not edit; regenerate)
+' Names in this file: control and event names come from the exe's form resources and the VB3 / VBX class
+' lists; DLL names from the Declare records; names marked in tools/vb3/speed.names.csv were given by hand.
+' L_xxxx = local, G_xxxx = module variable, K_xxxx = constant, P_xxxx = parameter (operand offsets in hex).
+' Form 'Speed' controls: 0=Speed, 1=Command1, 2=Command2, 4=Command4, 5=CMDialog1, 11=GSPReadWriteExit
+' Form 'Display' controls: 0=Display, 16=Command1, 19=Label1, 20=Label2, 21=Label3, 22=Label4, 23=Label5, 24=Label6, 25=Label7, 26=Label8, 30=Label12, 40=Label17
+' Declare record 0x00C8: GetModuleHandle (library Kernel.)
+' Declare record 0x0100: GetModuleUsage (library Kernel.)
+
+' ---- segment 4 0x0000-0x01AA, procedure record 0x0178, Speed event Click of Command1 (CommandButton, slot 0 of 11)
+Sub Command1_Click()
+  0000  On Error Resume Next
+  0006  ChDir LeoDir
+  0010  Err = 0
+  0016  CMDialog1.DefaultExt = "SPD"
+  002E  CMDialog1.Filename = "HRRU.SPD"
+  004C  CMDialog1.DialogTitle = "Please select a Speed file"
+  007C  CMDialog1.Filter = "All files (*.*)|*.*|Speed File (*.SPD)|*.spd|"
+  00BE  CMDialog1.FilterIndex = 2
+  00CC  CMDialog1.Flags = OFN_FILEMUSTEXIST
+  00DC  CMDialog1.CancelError = True
+  00EA  CMDialog1.Action = 1
+  00F8  If Not (Err = 0) Then GoTo L_10A
+  0104  GoTo L_12E
+L_010A:
+  010A  If Not (Err = cdlCancel) Then GoTo L_12E
+  0116  CMDialog1.Action = 0
+  0124  GoTo L_1A4   ' leave
+L_012E:
+  012E  Open CMDialog1.Filetitle For Binary Access Read 'mode 0x120 As #1
+  0142  L_28 = 0
+L_014C:
+  014C  If Not (L_28 < 10) Then GoTo L_198
+  0158  Get #1, 1 + (L_28 * 4), L_2A   ' 4 bytes
+  0174  SpeedComp(L_28) = L_2A
+  0184  L_28 = L_28 + 1
+  0192  GoTo L_14C
+L_0198:
+  0198  Close #1
+L_01A4:
+  01A4  End Sub
+
+' ---- segment 4 0x01AA-0x01F0, procedure record 0x01B0, Speed event Click of Command2 (CommandButton, slot 0 of 11)
+Sub Command2_Click()
+  01AA  Speed.Hide
+  01C8  Display.Show 1
+  01E8  End Sub
+
+' ---- segment 4 0x01F0-0x0398, procedure record 0x01E8, Speed event Click of Command4 (CommandButton, slot 0 of 11)
+Sub Command4_Click()
+  01F0  On Error Resume Next
+  01F6  ChDir LeoDir
+  0200  Err = 0
+  0206  CMDialog1.DefaultExt = "SPD"
+  021E  CMDialog1.Filename = "HRRU.SPD"
+  023C  CMDialog1.DialogTitle = "Please select a Speed file"
+  026C  CMDialog1.Filter = "All files (*.*)|*.*|Speed File (*.SPD)|*.spd|"
+  02AE  CMDialog1.FilterIndex = 2
+  02BC  CMDialog1.Flags = L_3A
+  02CA  CMDialog1.CancelError = True
+  02D8  CMDialog1.Action = 1
+  02E6  If Not (Err = 0) Then GoTo L_2F8
+  02F2  GoTo L_31C
+L_02F8:
+  02F8  If Not (Err = cdlCancel) Then GoTo L_31C
+  0304  CMDialog1.Action = 0
+  0312  GoTo L_392   ' leave
+L_031C:
+  031C  Open CMDialog1.Filetitle For Binary Access Write 'mode 0x220 As #1
+  0330  L_3E = 0
+L_033A:
+  033A  If Not (L_3E < 10) Then GoTo L_386
+  0346  L_40 = SpeedComp(L_3E)
+  0356  Put #1, 1 + (L_3E * 4), L_40   ' 4 bytes
+  0372  L_3E = L_3E + 1
+  0380  GoTo L_33A
+L_0386:
+  0386  Close #1
+L_0392:
+  0392  End Sub
+
+' ---- segment 4 0x0398-0x0470, procedure record 0x0220, Speed event Load of Speed (Form, slot 6 of 23)
+Sub Speed_Load()
+  0398  Speed.Left = (Screen.Width - Speed.Width) / 2
+  03BC  Speed.Top = (Screen.Height - Speed.Height) / 2
+  03E0  SpeedComp(0) = 10
+  03EC  SpeedComp(1) = &H200
+  03FC  SpeedComp(2) = 5
+  0408  SpeedComp(3) = &H100
+  0418  SpeedComp(4) = 2
+  0424  SpeedComp(5) = 128
+  0434  SpeedComp(6) = -2
+  0444  SpeedComp(7) = 0
+  0450  SpeedComp(8) = 0
+  045C  SpeedComp(9) = 0
+  0468  End Sub
+
+' ---- segment 4 0x0470-0x0480, procedure record 0x0258, Speed event Click of GSPReadWriteExit (CommandButton, slot 0 of 11)
+Sub GSPReadWriteExit_Click()
+  0470  Unload Speed
+  0478  End Sub
+
+' ---- segment 5 0x0000-0x0030, procedure record 0x02D0, Display event Click of Command1 (CommandButton, slot 0 of 11)
+Sub Command1_Click()
+  0000  Unload Display
+  0008  Speed.Show 1
+  0028  End Sub
+
+' ---- segment 5 0x0030-0x01DC, procedure record 0x0308, Display event Load of Display (Form, slot 6 of 23)
+Sub Display_Load()
+  0030  Display!Label4.Caption = ("ASA 50 Brightness = " & Str$(SpeedComp(0))) & " % "
+  005A  Display!Label2.Caption = ("ASA 50 Contrast = " & Str$(SpeedComp(1))) & " % "
+  0084  Display!Label5.Caption = ("ASA 100 Brightness = " & Str$(SpeedComp(2))) & " % "
+  00AE  Display!Label3.Caption = ("ASA 100 Contrast = " & Str$(SpeedComp(3))) & " % "
+  00D8  Display!Label6.Caption = ("ASA 200 Brightness = " & Str$(SpeedComp(4))) & " % "
+  0102  Display!Label12.Caption = ("ASA 200 Contrast = " & Str$(SpeedComp(5))) & " % "
+  012C  Display!Label7.Caption = ("ASA 400 Brightness = " & Str$(SpeedComp(6))) & " % "
+  0156  Display!Label17.Caption = ("ASA 400 Contrast = " & Str$(SpeedComp(7))) & " % "
+  0180  Display!Label8.Caption = ("ASA 800 Brightness = " & Str$(SpeedComp(8))) & " % "
+  01AA  Display!Label1.Caption = ("ASA 800 Contrast = " & Str$(SpeedComp(9))) & " % "
+  01D4  End Sub
+
+' ---- segment 5 0x01DC-0x0270, procedure record 0x0340, Display event Click of Label1 (Label, slot 1 of 12)
+Sub Label1_Click()
+  01DC  L_7A = InputBox$("Film Speed Compensation", "ASA 800 Contrast = ", Str$(SpeedComp(9)))
+  01F8  L_7C = Len(L_7A)
+  0206  If Not (L_7C = 0) Then GoTo L_220
+  0216  GoTo L_26A   ' leave
+L_0220:
+  0220  L_80 = Val(L_7A)
+  022E  SpeedComp(9) = L_80
+  023E  Display!Label1.Caption = ("ASA 800 Contrast = " & Str$(SpeedComp(9))) & " % "
+L_026A:
+  026A  End Sub
+
+' ---- segment 5 0x0270-0x0304, procedure record 0x0378, Display event Click of Label12 (Label, slot 1 of 12)
+Sub Label12_Click()
+  0270  L_82 = InputBox$("Film Speed Compensation", "ASA 200 Contrast = ", Str$(SpeedComp(5)))
+  028C  L_84 = Len(L_82)
+  029A  If Not (L_84 = 0) Then GoTo L_2B4
+  02AA  GoTo L_2FE   ' leave
+L_02B4:
+  02B4  L_88 = Val(L_82)
+  02C2  SpeedComp(5) = L_88
+  02D2  Display!Label12.Caption = ("ASA 200 Contrast = " & Str$(SpeedComp(5))) & " % "
+L_02FE:
+  02FE  End Sub
+
+' ---- segment 5 0x0304-0x0398, procedure record 0x03B0, Display event Click of Label17 (Label, slot 1 of 12)
+Sub Label17_Click()
+  0304  L_8A = InputBox$("Film Speed Compensation", "ASA 400 Contrast = ", Str$(SpeedComp(7)))
+  0320  L_8C = Len(L_8A)
+  032E  If Not (L_8C = 0) Then GoTo L_348
+  033E  GoTo L_392   ' leave
+L_0348:
+  0348  L_90 = Val(L_8A)
+  0356  SpeedComp(7) = L_90
+  0366  Display!Label17.Caption = ("ASA 400 Contrast = " & Str$(SpeedComp(7))) & " % "
+L_0392:
+  0392  End Sub
+
+' ---- segment 5 0x0398-0x042C, procedure record 0x03E8, Display event Click of Label2 (Label, slot 1 of 12)
+Sub Label2_Click()
+  0398  L_92 = InputBox$("Film Speed Compensation", "ASA 50 Contrast = ", Str$(SpeedComp(1)))
+  03B4  L_94 = Len(L_92)
+  03C2  If Not (L_94 = 0) Then GoTo L_3DC
+  03D2  GoTo L_426   ' leave
+L_03DC:
+  03DC  L_98 = Val(L_92)
+  03EA  SpeedComp(1) = L_98
+  03FA  Display!Label2.Caption = ("ASA 50 Contrast = " & Str$(SpeedComp(1))) & " % "
+L_0426:
+  0426  End Sub
+
+' ---- segment 5 0x042C-0x04C0, procedure record 0x0420, Display event Click of Label3 (Label, slot 1 of 12)
+Sub Label3_Click()
+  042C  L_9A = InputBox$("Film Speed Compensation", "ASA 100 Contrast = ", Str$(SpeedComp(3)))
+  0448  L_9C = Len(L_9A)
+  0456  If Not (L_9C = 0) Then GoTo L_470
+  0466  GoTo L_4BA   ' leave
+L_0470:
+  0470  L_A0 = Val(L_9A)
+  047E  SpeedComp(3) = L_A0
+  048E  Display!Label3.Caption = ("ASA 100 Contrast = " & Str$(SpeedComp(3))) & " % "
+L_04BA:
+  04BA  End Sub
+
+' ---- segment 5 0x04C0-0x0554, procedure record 0x0458, Display event Click of Label4 (Label, slot 1 of 12)
+Sub Label4_Click()
+  04C0  L_A4 = InputBox$("Film Speed Compensation : Warning. Excessive amounts of Brightness Compensation can Burn the HRRU Tube.", "ASA 50 Brightness = ", Str$(SpeedComp(0)))
+  04DC  L_A6 = Len(L_A4)
+  04EA  If Not (L_A6 = 0) Then GoTo L_504
+  04FA  GoTo L_54E   ' leave
+L_0504:
+  0504  L_AA = Val(L_A4)
+  0512  SpeedComp(0) = L_AA
+  0522  Display!Label4.Caption = ("ASA 50 Brightness = " & Str$(SpeedComp(0))) & " % "
+L_054E:
+  054E  End Sub
+
+' ---- segment 5 0x0554-0x05E8, procedure record 0x0490, Display event Click of Label5 (Label, slot 1 of 12)
+Sub Label5_Click()
+  0554  L_AC = InputBox$("Film Speed Compensation : Warning. Excessive amounts of Brightness Compensation can Burn the HRRU Tube.", "ASA 100 Brightness = ", Str$(SpeedComp(2)))
+  0570  L_AE = Len(L_AC)
+  057E  If Not (L_AE = 0) Then GoTo L_598
+  058E  GoTo L_5E2   ' leave
+L_0598:
+  0598  L_B2 = Val(L_AC)
+  05A6  SpeedComp(2) = L_B2
+  05B6  Display!Label5.Caption = ("ASA 100 Brightness = " & Str$(SpeedComp(2))) & " % "
+L_05E2:
+  05E2  End Sub
+
+' ---- segment 5 0x05E8-0x067C, procedure record 0x04C8, Display event Click of Label6 (Label, slot 1 of 12)
+Sub Label6_Click()
+  05E8  L_B4 = InputBox$("Film Speed Compensation : Warning. Excessive amounts of Brightness Compensation can Burn the HRRU Tube.", "ASA 200 Brightness = ", Str$(SpeedComp(4)))
+  0604  L_B6 = Len(L_B4)
+  0612  If Not (L_B6 = 0) Then GoTo L_62C
+  0622  GoTo L_676   ' leave
+L_062C:
+  062C  L_BA = Val(L_B4)
+  063A  SpeedComp(4) = L_BA
+  064A  Display!Label6.Caption = ("ASA 200 Brightness = " & Str$(SpeedComp(4))) & " % "
+L_0676:
+  0676  End Sub
+
+' ---- segment 5 0x067C-0x0710, procedure record 0x0500, Display event Click of Label7 (Label, slot 1 of 12)
+Sub Label7_Click()
+  067C  L_BC = InputBox$("Film Speed Compensation : Warning. Excessive amounts of Brightness Compensation can Burn the HRRU Tube.", "ASA 400 Brightness = ", Str$(SpeedComp(6)))
+  0698  L_BE = Len(L_BC)
+  06A6  If Not (L_BE = 0) Then GoTo L_6C0
+  06B6  GoTo L_70A   ' leave
+L_06C0:
+  06C0  L_C2 = Val(L_BC)
+  06CE  SpeedComp(6) = L_C2
+  06DE  Display!Label7.Caption = ("ASA 400 Brightness = " & Str$(SpeedComp(6))) & " % "
+L_070A:
+  070A  End Sub
+
+' ---- segment 5 0x0710-0x07A4, procedure record 0x0538, Display event Click of Label8 (Label, slot 1 of 12)
+Sub Label8_Click()
+  0710  L_C4 = InputBox$("Film Speed Compensation : Warning. Excessive amounts of Brightness Compensation can Burn the HRRU Tube.", "ASA 800 Brightness = ", Str$(SpeedComp(8)))
+  072C  L_C6 = Len(L_C4)
+  073A  If Not (L_C6 = 0) Then GoTo L_754
+  074A  GoTo L_79E   ' leave
+L_0754:
+  0754  L_CA = Val(L_C4)
+  0762  SpeedComp(8) = L_CA
+  0772  Display!Label8.Caption = ("ASA 800 Brightness = " & Str$(SpeedComp(8))) & " % "
+L_079E:
+  079E  End Sub
+

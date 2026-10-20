@@ -1,0 +1,4 @@
+﻿"Map","Name","DispId","Kind","ReturnVt","Params","MethodOrGet","Set"
+"0x1000A650","UserInitialise","-1","method","long","long, long, long","FUN_10005000",""
+"0x1000A650","Enabled","-514","property","BOOL","","FUN_100091a6","FUN_100091a0"
+"0x1000A650","AboutBox","-552","method","void","","FUN_10004830",""

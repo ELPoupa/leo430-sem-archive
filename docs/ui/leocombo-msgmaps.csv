@@ -1,0 +1,6 @@
+﻿"Map","Message","Kind","Id","LastId","Menu","Handler"
+"0x1000A4D0","WM_RBUTTONDOWN","","","","","0x100051B0"
+"0x1000A4D0","0xBD11","","","","","0x10005200"
+"0x1000A5E0","registered PM_PARAMETER_NOTIFY","","","","","0x10004940"
+"0x1000A5E0","registered PM_USER_PREFERENCES_CHANGED","","","","","0x10004990"
+"0x1000A5E0","registered PM_SEM_CLOSE","","","","","0x10004900"

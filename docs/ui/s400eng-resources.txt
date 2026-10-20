@@ -1,0 +1,3015 @@
+﻿=== DIALOG 100 "Button Choices" (15 controls)
+  -1  STATIC  "#501"
+  -1  STATIC  "#502"
+  -1  STATIC  "#503"
+  -1  STATIC  "#101"
+  300  BUTTON  "&OK"
+  301  BUTTON  "&Cancel"
+  102  STATIC  "LEO &Parameter List :"
+  103  LISTBOX  ""
+  104  BUTTON  "&1"
+  105  BUTTON  "&2"
+  106  BUTTON  "&3"
+  107  STATIC  "&Button Choices :"
+  108  LISTBOX  ""
+  109  STATIC  "Double-Click to Add"
+  110  STATIC  "Double-Click to Remove"
+=== DIALOG 200 "Trackerball Buttons" (8 controls)
+  -1  STATIC  "#501"
+  -1  STATIC  "#502"
+  -1  STATIC  "#503"
+  300  BUTTON  "&OK"
+  301  BUTTON  "&Cancel"
+  201  COMBOBOX  ""
+  202  COMBOBOX  ""
+  203  COMBOBOX  ""
+=== DIALOG 102 "" (4 controls)
+  502  EDIT  ""
+  500  STATIC  ""
+  1  BUTTON  "&OK"
+  2  BUTTON  "&Cancel"
+=== DIALOG 107 "" (7 controls)
+  502  EDIT  ""
+  503  EDIT  ""
+  500  STATIC  ""
+  501  STATIC  "Replace with:"
+  1  BUTTON  "&OK"
+  504  BUTTON  "&Replace All"
+  2  BUTTON  "&Cancel"
+=== DIALOG 101 "Error Dialog" (3 controls)
+  1  BUTTON  "&OK"
+  6  BUTTON  "&Debug"
+  500  LISTBOX  ""
+=== DIALOG 104 "" (8 controls)
+  500  COMBOBOX  ""
+  3  STATIC  "Files:"
+  503  LISTBOX  ""
+  3  STATIC  "Directories:"
+  1  BUTTON  "&Open"
+  2  BUTTON  "&Cancel"
+  3  STATIC  "Directory:"
+  501  STATIC  ""
+=== DIALOG HPCONTROL "VP Control" (15 controls)
+  1004  SCROLLBAR  ""
+  910  EDIT  ""
+  903  BUTTON  "Go To HV"
+  904  BUTTON  "Go To VP"
+  908  STATIC  ""
+  919  STATIC  ""
+  -1  STATIC  ""
+  -1  STATIC  ""
+  -1  STATIC  "Pressure"
+  -1  STATIC  "Status"
+  -1  STATIC  "Target"
+  916  STATIC  ""
+  1  BUTTON  "New Target"
+  1003  BUTTON  ""
+  -1  BUTTON  "Sample Chamber"
+STRING 944  SEM Shutdown
+STRING 945  Shutdown: Save Operating Conditions?
+STRING 946  Stage Busy
+STRING 947  Command not executed
+STRING 948  Stage XYZ
+STRING 949  Zone 0 is not frozen
+STRING 950  WARNING
+STRING 951  Select Zone for control
+STRING 952  Select Zone Panel to hide
+STRING 953  When reading file 
+STRING 954  Select item to modify 
+STRING 955  Save as file..
+STRING 956  Copyright © 1995 LEO Electron Microscopy Ltd
+STRING 957  All rights reserved.             Portions Copyright:- 
+STRING 958   © 1992-1995 Leica Cambridge Ltd.
+STRING 959   © 1987-1994 Microsoft Corporation.
+STRING 960   © 1986-1991 The Whitewater Group, Inc.
+STRING 961   © 1988 Texas Instruments
+STRING 962  Co-operation Zeiss . Leica
+STRING 970  Save Display LUT points to file 
+STRING 971  Display Configuration
+STRING 972  Failed to detect minimum configuration
+STRING 973  Inconsistent Dual channel configuration detected
+STRING 974  Inconsistent High Res configuration detected
+STRING 975  Unexpected end of file 
+STRING 2200  Mag
+STRING 2201  WD
+STRING 2202  Scan Rotation
+STRING 2203  Scan Orth corrn
+STRING 2204  Stage Angle
+STRING 2205  Y scale corrn
+STRING 2206  Wobble Amplitude
+STRING 2207  Wobble Period
+STRING 2208  C1 Lens I
+STRING 2209  C2 Lens I
+STRING 2210  Stig Bal Amplitude
+STRING 2211  Stig Bal Period
+STRING 2212  C1 Wobble Amplitude
+STRING 2213  C3 Lens I
+STRING 2214  C1 Wobble Period
+STRING 2215  C2 Wobble Amplitude
+STRING 2216  C2 Wobble Period
+STRING 2217  StigBal Xupper
+STRING 2218  StigBal Xlower
+STRING 2219  StigBal Yupper
+STRING 2220  StigBal Ylower
+STRING 2221  Emission Zoom
+STRING 2222  I Probe
+STRING 2223  Fil I(T)
+STRING 2224  EHT (T)
+STRING 2225  Fil I (Usermax)
+STRING 2226  EHT Target
+STRING 2227  Fil I Target
+STRING 2228  EHT
+STRING 2229  Fil I
+STRING 2230  Brightness
+STRING 2231  Mag.Comp.Amplitude
+STRING 2232  Mag.Comp.Offset
+STRING 2233  C1 Cal
+STRING 2234  C1 Rem
+STRING 2235  C2 Cal
+STRING 2236  C2 Rem
+STRING 2237  C3 Cal
+STRING 2238  C3 Rem
+STRING 2239  Tilt Axis
+STRING 2240  Tilt Angle
+STRING 2241  Stereo Tilt
+STRING 2242  Stereo Merge
+STRING 2243  Stereo Rotation
+STRING 2244  Blanking Period
+STRING 2245  FCF Tilt Angle
+STRING 2246  Line Time
+STRING 2247  Cycle Time
+STRING 2248  Mag Cal Actual Width
+STRING 2249  Mag Cal Actual Height
+STRING 2250  Mag Cal X scale
+STRING 2251  Mag Cal Y scale
+STRING 2252  Gun Shift X
+STRING 2253  Gun Shift Y
+STRING 2254  Gun Tilt X
+STRING 2255  Gun Tilt Y
+STRING 2256  Beam Shift X
+STRING 2257  Beam Shift Y
+STRING 2258  Zoom Posn X
+STRING 2259  Zoom Posn Y
+STRING 2260  Aperture Size
+STRING 2261  Aperture Posn X
+STRING 2262  Aperture Posn Y
+STRING 2263  Stigmation X
+STRING 2264  Stigmation Y
+STRING 2265  Posn min stig X
+STRING 2266  Posn min stig Y
+STRING 2267  Zoom factor
+STRING 2268  Spot at X
+STRING 2269  Spot at Y
+STRING 2270  Line posn X
+STRING 2271  Line posn Y
+STRING 2272  Line length
+STRING 2273  Dual Mag Offset X
+STRING 2274  Dual Mag Offset Y
+STRING 2275  Focus Rotation comp.
+STRING 2276  Red.Raster Posn X
+STRING 2277  Red.Raster Posn Y
+STRING 2278  Red.Raster Width
+STRING 2279  Red.Raster Height
+STRING 2280  Pa 1
+STRING 2281  Pa 2
+STRING 2282  Pa 3
+STRING 2283  Pa 4
+STRING 2284  Pb 1
+STRING 2285  Pb 2
+STRING 2286  Pb 3
+STRING 2287  Pb 4
+STRING 2288  3Da 1
+STRING 2289  3Da 2
+STRING 2290  3Da 3
+STRING 2291  3Da 4
+STRING 2292  3Db 1
+STRING 2293  3Db 2
+STRING 2294  3Db 3
+STRING 2295  3Db 4
+STRING 2296  3Dc 1
+STRING 2297  3Dc 2
+STRING 2298  3Dc 3
+STRING 2299  3Dc 4
+STRING 2300  3De 1
+STRING 2301  3De 2
+STRING 2302  3De 3
+STRING 2303  3De 4
+STRING 2304  3De 1
+STRING 2305  3De 2
+STRING 2306  3De 3
+STRING 2307  3De 4
+STRING 2308  Da 1
+STRING 2309  Da 2
+STRING 2310  Da 3
+STRING 2311  Da 4
+STRING 2312  Aa 1
+STRING 2313  Aa 2
+STRING 2314  Aa 3
+STRING 2315  Aa 4
+STRING 2316  La 1
+STRING 2317  La 2
+STRING 2318  La 3
+STRING 2319  La 4
+STRING 2320  Lb 1
+STRING 2321  Lb 2
+STRING 2322  Lb 3
+STRING 2323  Lb 4
+STRING 2324  Lc 1
+STRING 2325  Lc 2
+STRING 2326  Lc 3
+STRING 2327  Lc 4
+STRING 2328  Pixel Size
+STRING 2329  Beam Current
+STRING 2330  EHT set maximum
+STRING 2331  Profile width
+STRING 2332  Stage at X
+STRING 2333  Stage at Y
+STRING 2334  Stage at Z
+STRING 2335  Stage goto X
+STRING 2336  Stage goto Y
+STRING 2337  Stage goto Z
+STRING 2338  Stage vector X
+STRING 2339  Stage vector Y
+STRING 2340  Stage vector Z
+STRING 2341  Stage scan angle
+STRING 2342  Stage fields X
+STRING 2343  Stage fields Y
+STRING 2344  Stage field size X
+STRING 2345  Stage field size Y
+STRING 2346  Stage goto field X
+STRING 2347  Stage goto field Y
+STRING 2348  Stage at field X
+STRING 2349  Stage at field Y
+STRING 2350  Stage high X
+STRING 2351  Stage high Y
+STRING 2352  Stage high Z
+STRING 2353  Stage low X
+STRING 2354  Stage low Y
+STRING 2355  Stage low Z
+STRING 2356  System Vacuum
+STRING 2357  EDX Vac threshold
+STRING 2358  Gun Vacuum
+STRING 2359  Stage:set X
+STRING 2360  Stage:set Y
+STRING 2361  Stage:set Z
+STRING 2362  backlash distance X
+STRING 2363  backlash distance Y
+STRING 2364  Backlash distance Z
+STRING 2365  backlash speed X
+STRING 2366  backlash speed Y
+STRING 2367  backlash speed Z
+STRING 2368  Stage start speed X
+STRING 2369  Stage start speed Y
+STRING 2370  Stage start speed Z
+STRING 2371  Stage cruise speed X
+STRING 2372  Stage cruise speed Y
+STRING 2373  Stage cruise speed Z
+STRING 2374  Stage speed incr X
+STRING 2375  Stage speed incr Y
+STRING 2376  Stage speed incr Z
+STRING 2377  Stage time incr X
+STRING 2378  Stage time incr Y
+STRING 2379  Stage time incr Z
+STRING 2380  Specimen I
+STRING 2381  Signal
+STRING 2382  Mix Signal
+STRING 2383  Alpha
+STRING 2384  Beta
+STRING 2385  Frames to average
+STRING 2386  Frames to Int.
+STRING 2387  Line int. count
+STRING 2388  Gamma
+STRING 2389  Gain A
+STRING 2390  Offset A
+STRING 2391  Contrast
+STRING 2392  Auto Video Mean
+STRING 2393  Auto Video peak
+STRING 2394  Cal Width
+STRING 2395  Cal Height
+STRING 2396  Collector Bias
+STRING 2397  Mag Z0
+STRING 2398  Mag Z1
+STRING 2399  Mag Z2
+STRING 2400  Mag Z3
+STRING 2401  Mag Z4
+STRING 2402  Mag Z5
+STRING 2403  Mag Z6
+STRING 2404  Mag Z7
+STRING 2405  PM1
+STRING 2406  PM2
+STRING 2407  PM3
+STRING 2408  Crosshair centre X
+STRING 2409  Crosshair centre Y
+STRING 2410  Filament Age
+STRING 2411  HRRU Bright.
+STRING 2412  HRRU Contrast
+STRING 2413  HRRU Focus
+STRING 2414  HRRU Gamma
+STRING 2415  Gain B
+STRING 2416  Offset B
+STRING 2417  Cal Mark X1
+STRING 2418  Cal Mark X2
+STRING 2419  Cal Mark Y1
+STRING 2420  Cal Mark Y2
+STRING 2421  Line Ampl. cal.
+STRING 2422  Frame Ampl Cal.
+STRING 2423  Line/Frame cal
+STRING 2424  Scan X cal.
+STRING 2425  Scan Y cal.
+STRING 2426  Photo No.
+STRING 2427  Line Avg.Count
+STRING 2428  N
+STRING 2429  Spot Size
+STRING 2430  Min Mag
+STRING 2431  Dual Mag Gain X
+STRING 2432  Focus
+STRING 2433  Dual Mag Gain Y
+STRING 2434  Output Dev cal actual
+STRING 2435  Conjugate posn.
+STRING 2436  Width
+STRING 2437  Height
+STRING 2438  Beam Offset X
+STRING 2439  Beam Offset Y
+STRING 2440  HRRU To Do
+STRING 2441  Video Print To Do
+STRING 2442  EHT Cal @1.0A
+STRING 2443  EHT Cal @3.2A
+STRING 2444  Photo Time
+STRING 2445  Xtalk12
+STRING 2446  Xtalk21
+STRING 2447  Differentiate
+STRING 2448  Developing Time
+STRING 2449  Field Overlap
+STRING 2450  Stage Start X
+STRING 2451  Stage Start Y
+STRING 2452  Stage Start Z
+STRING 2453  Stage End X
+STRING 2454  Stage End Y
+STRING 2455  Xray Linetime
+STRING 2456  Range Cal X
+STRING 2457  Range Cal Y
+STRING 2458  Mag Shift Cal X
+STRING 2459  Mag Shift Cal Y
+STRING 2460  EHT Set minimum
+STRING 2461  Black Threshold
+STRING 2462  White Threshold
+STRING 2463  Area Fraction
+STRING 2464  VPrint Copies
+STRING 2465  Focus scan max
+STRING 2466  Focus scan min
+STRING 2467  Sa 1
+STRING 2468  Sa 2
+STRING 2469  Sa 3
+STRING 2470  Sa 4
+STRING 2471  Sb
+STRING 2472  Spot signal
+STRING 2473  Beam Time
+STRING 2474  Stage at R
+STRING 2475  Stage at T
+STRING 2476  Stage goto R
+STRING 2477  Stage goto T
+STRING 2478  Stage vector R
+STRING 2479  Stage vector T 
+STRING 2480  Stage start speed R
+STRING 2481  Stage start speed T
+STRING 2482  Stage cruise speed R
+STRING 2483  Stage cruise speed T
+STRING 2484  Stage speed incr R
+STRING 2485  Stage speed incr T
+STRING 2486  Stage time incr R
+STRING 2487  Stage Time incr T
+STRING 2488  Stage start R
+STRING 2489  Stage start T 
+STRING 2490  Stage: set T
+STRING 2491  Backlash distance T
+STRING 2492  Backlash speed T
+STRING 2493  Stage high T
+STRING 2494  Stage low T
+STRING 2495  EHT Cal Offset
+STRING 2496  Spot data rate
+STRING 2497  Spot Data Duration
+STRING 2498  Spot Data to do
+STRING 2499  Cine rate
+STRING 2500  ABC Brightness
+STRING 2501  ABC Contrast
+STRING 2502  Stage Temperature
+STRING 2503  Extractor V
+STRING 2504  Suppressor V
+STRING 2505  Liner Tube
+STRING 2506  Extractor I
+STRING 2507  Nominal extractor V
+STRING 2508  Nominal Suppressor V
+STRING 2509  Nominal Fil I
+STRING 2510  Extractor Trip Current
+STRING 2511  Gun Tip Radius
+STRING 2512  Gun Angular Intensity
+STRING 2513  Gun Tip Position
+STRING 2514  Nominal Beam Current
+STRING 2515  Beam Blank Cal
+STRING 2516  Gun Upper X
+STRING 2517  Gun Upper Y
+STRING 2518  Gun Lower X
+STRING 2519  Gun Lower Y
+STRING 2520  1st Spray Ap I
+STRING 2521  Version
+STRING 2522  VP Target
+STRING 2523  Chamber
+STRING 2524  Graticule space
+STRING 2525  Gun Align X
+STRING 2526  Gun Align Y
+STRING 2527  Aperture Align X
+STRING 2528  Aperture Align Y
+STRING 2529  Aperture at X
+STRING 2530  Aperture at Y
+STRING 2531  Gun at X
+STRING 2532  Gun at Y
+STRING 2533  Test No.
+STRING 2534  Test Val
+STRING 2535  Extractor V Target
+STRING 2536  Suppressor V Target
+STRING 2537  Liner Target
+STRING 2538  Min Extractor V
+STRING 2539  Profile Top
+STRING 2540  Progress
+STRING 2541  Cursor Width
+STRING 2542  Cursor Height
+STRING 2543  Bakeout Heat
+STRING 2544  Bakeout Cool
+STRING 2545  EHT Cal@0.1KV
+STRING 2546  EHT Cal@10KV
+STRING 2547  EHT Cal@24KV
+STRING 2548  EHT Cal@30KV
+STRING 2549  Max Extractor V
+STRING 2550  Stage at M
+STRING 2551  Stage goto M
+STRING 2552  Stage low M
+STRING 2553  Stage high M
+STRING 2554  Stage Start M
+STRING 2555  Stage Vector M
+STRING 2556  Backlash Distance M
+STRING 2557  Backlash Speed M
+STRING 2558  Stage start speed M
+STRING 2559  Stage cruise speed M
+STRING 2560  Stage Speed incr M
+STRING 2561  Stage time incr M
+STRING 2562  Mag Gain Cal X
+STRING 2563  Mag Gain Cal Y
+STRING 2564  Profile Width 1
+STRING 2565  Profile Width 2
+STRING 2566  Pa 5
+STRING 2567  Pa 6
+STRING 2568  Pa 7
+STRING 2569  Pa 8
+STRING 2570  Pa 9
+STRING 2571  Pa 10
+STRING 2572  Pb 5
+STRING 2573  Pb 6
+STRING 2574  Pb 7
+STRING 2575  Pb 8
+STRING 2576  Pb 9
+STRING 2577  Pb 10
+STRING 2578  H 1
+STRING 2579  H 2
+STRING 2580  H 3
+STRING 2581  H 4
+STRING 2582  H 5
+STRING 2583  H 6
+STRING 2584  H 7
+STRING 2585  H 8
+STRING 2586  H 9
+STRING 2587  H 10
+STRING 2588  V 1
+STRING 2589  V 2
+STRING 2590  V 3
+STRING 2591  V 4
+STRING 2592  V 5
+STRING 2593  V 6
+STRING 2594  V 7
+STRING 2595  V 8
+STRING 2596  V 9
+STRING 2597  V 10
+STRING 2598  FCF Setting
+STRING 2599  Water Temp
+STRING 2600  Water Temp Limit
+STRING 2601  Sample at X
+STRING 2602  Sample at Y
+STRING 2603  Sample Goto X
+STRING 2604  Sample Goto Y
+STRING 2605  Sample Height
+STRING 2606  Stage Centre X
+STRING 2607  Stage Centre Y
+STRING 2608  Spacer Thickness
+STRING 2609  Stage Tilt Cal
+STRING 2610  Stage Delta X
+STRING 2611  Stage Delta Y
+STRING 2612  Stage Delta Z
+STRING 2613  Stage Delta T
+STRING 2614  Stage Delta R
+STRING 2615  Stage Delta M
+STRING 2616  Profile 1 X1
+STRING 2617  Profile 1 X2
+STRING 2618  Profile 2 X1
+STRING 2619  Profile 2 X2
+STRING 2620  Backlash distance R
+STRING 2621  Backlash Speed R
+STRING 2622  User Max EHT
+STRING 2623  Ld 1
+STRING 2624  Ld 2
+STRING 2625  Db 1
+STRING 2626  Db 2
+STRING 2627  Image Pixel Size
+STRING 2628  Stig X Only
+STRING 2629  Stig Y Only
+STRING 2630  Aper Align X Only
+STRING 2631  Aper Align Y Only
+STRING 2632  X-Ray Threshold
+STRING 2633  Compu. Tilt Error
+STRING 2634  X-Ray Line Scale
+STRING 2635  Sample Holder Offset
+STRING 2636  Specimen Height
+STRING 2637  File No
+STRING 2638  Print No.
+STRING 2639  HRRU No.
+STRING 2640  VP LaB6 Limit
+STRING 2641  Auto Sat. Interval (New)
+STRING 2642  Auto Sat. Interval (Old)
+STRING 2643  Db 3
+STRING 2644  Db 4
+STRING 2645  CCD Illumination
+STRING 2646  Spot X Cal
+STRING 2647  Semi Angle
+STRING 2648  Opt. Semi Angle
+STRING 2649  Image Origin X
+STRING 2650  Image Origin Y
+STRING 2651  Safe Z
+STRING 2652  EO Board
+STRING 2653  Dynamic Stig
+STRING 2654  Focus Wobble
+STRING 2655  Liner Wobble
+STRING 2656  Objective Current Wobble
+STRING 2657  Stig Balance
+STRING 2658  Optibeam
+STRING 2659  DLL trace
+STRING 2660  Optibeam Res Mode
+STRING 2661  Optibeam Mode
+STRING 2662  Optibeam Mag.Track
+STRING 2663  Filament Type
+STRING 2664  Anode Spacer
+STRING 2665  New Filament
+STRING 2666  Beam State
+STRING 2667  EHT Comms Fail
+STRING 2668  Cal Mode
+STRING 2669  Scan Speed
+STRING 2670  C3 Cal Mode
+STRING 2671  C1/C2 Cal Mode
+STRING 2672  Beam Blanked
+STRING 2673  Beam Blanking
+STRING 2674  C3 Reversal
+STRING 2675  C3 Hysteresis
+STRING 2676  Dyn.Focus
+STRING 2677  C1/2/3 Hysteresis
+STRING 2678  Aperture No.
+STRING 2679  Opt.Aperture
+STRING 2680  Aperture
+STRING 2681  Cal Scan Rate
+STRING 2682  Operating Mode
+STRING 2683  Zoom
+STRING 2684  Windowing
+STRING 2685  Spot
+STRING 2686  Line Scan
+STRING 2687  Channels
+STRING 2688  Stereo (Acquire)
+STRING 2689  Profile
+STRING 2690  Filament blown
+STRING 2691  EHT tripped
+STRING 2692  EHT spurious reset
+STRING 2693  EHT Vac ready
+STRING 2694  Pix Size state
+STRING 2695  Mag State
+STRING 2696  Output dev
+STRING 2697  Stage Touching
+STRING 2698  Stage Initialised
+STRING 2699  Stage Is
+STRING 2700  Stage XY+Z
+STRING 2701  Stage Scan
+STRING 2702  Stage Scanning
+STRING 2703  Stage Backlash
+STRING 2704  X axis is
+STRING 2705  Y axis is
+STRING 2706  Z axis is
+STRING 2707  X Limit hit
+STRING 2708  Y Limit hit
+STRING 2709  Z Limit hit
+STRING 2710  Vac Status
+STRING 2711  Venting inhibited
+STRING 2712  EDX enable
+STRING 2713  Chamber leak
+STRING 2714  Penning failure
+STRING 2715  Windowless EDX
+STRING 2716  WDX
+STRING 2717  Airlock Monitor
+STRING 2718  Viewing Window
+STRING 2719  Viewing Window is
+STRING 2720  EDX window
+STRING 2721  Airlock is
+STRING 2722  Column Pump
+STRING 2723  Column pumping
+STRING 2724  Gun Chamber valve
+STRING 2725  Column Chamber valve
+STRING 2726  Vent invalid
+STRING 2727  Gun Valve position
+STRING 2728  Chamber valve posn.
+STRING 2729  EDX window posn.
+STRING 2730  Airlock position
+STRING 2731  WDX Gate valve
+STRING 2732  Column Isolation
+STRING 2733  WDX Gate Valve posn
+STRING 2734  Stage Vectored Move
+STRING 2735  Stage Type
+STRING 2736  WDX Gate valve motor.
+STRING 2737  Q1
+STRING 2738  Q2
+STRING 2739  Q3
+STRING 2740  Q4
+STRING 2741  BSD Fast
+STRING 2742  BSD Gain
+STRING 2743  BSD
+STRING 2744  SCM fitted
+STRING 2745  Noise Reduction
+STRING 2746  Vac EHT set inhibit
+STRING 2747  Vac Acc Volt inhibit
+STRING 2748  Vac PM inhibit
+STRING 2749  Vac Scint. Inhibit
+STRING 2750  Stage Tilt
+STRING 2751  Store resolution
+STRING 2752  Zone
+STRING 2753  Signal A
+STRING 2754  Detector
+STRING 2755  SCM mode
+STRING 2756  LUT Destination
+STRING 2757  LUT Source A
+STRING 2758  LUT Source B
+STRING 2759  Mixing
+STRING 2760  window
+STRING 2761  Invert A
+STRING 2762  Auto BC
+STRING 2763  Stage Motor
+STRING 2764  Mixer
+STRING 2765  Connector 9
+STRING 2766  Input Connector
+STRING 2767  All Frozen
+STRING 2768  Right Frozen
+STRING 2769  Display
+STRING 2770  Freeze on
+STRING 2771  Auto Fn
+STRING 2772  Freeze
+STRING 2773  Stage Invalid Command
+STRING 2774  High res
+STRING 2775  Zone 0
+STRING 2776  Zone 1
+STRING 2777  Zone 2
+STRING 2778  Zone 3
+STRING 2779  Zone 4
+STRING 2780  Zone 5
+STRING 2781  Zone 6
+STRING 2782  Zone 7
+STRING 2783  GSP
+STRING 2784  Scint.
+STRING 2785  Vent inh.
+STRING 2786  Stage Tilted
+STRING 2787  PM1 inh.
+STRING 2788  PM2 inh.
+STRING 2789  PM3 inh.
+STRING 2790  Scint. Inh.
+STRING 2791  Collector Inh.
+STRING 2792  Column
+STRING 2793  PM2 fitted
+STRING 2794  PM3 fitted
+STRING 2795  Camera Image
+STRING 2796  Film Speed
+STRING 2797  HRRU Line Rept.
+STRING 2798  Camera Overlay
+STRING 2799  HRRU Camera
+STRING 2800  HRRU
+STRING 2801  Camera status
+STRING 2802  Stage Motors
+STRING 2803  Signal B
+STRING 2804  Invert B
+STRING 2805  Stereo res.
+STRING 2806  Stereo (L)
+STRING 2807  Stereo (R)
+STRING 2808  Touch alarm inh.
+STRING 2809  Tilt Corrn.
+STRING 2810  Scan Rot
+STRING 2811  Scan Orthog
+STRING 2812  C3 Rot Corrn.
+STRING 2813  Stage Angle corrn.
+STRING 2814  Mag Range
+STRING 2815  All Zones
+STRING 2816  Ext.Scan Control
+STRING 2817  Calibration
+STRING 2818  Auto Video Enable
+STRING 2819  SCM range
+STRING 2820  C3 Rotn Sign
+STRING 2821  Column Isolated
+STRING 2822  Best Aperture
+STRING 2823  Control
+STRING 2824  Live Histo
+STRING 2825  Max Scan Speed
+STRING 2826  Image Mode
+STRING 2827  HRRU Configured
+STRING 2828  Optibeam conjugate
+STRING 2829  Wobble Fast
+STRING 2830  Video Printer
+STRING 2831  VPrint Status
+STRING 2832  VPrint paper
+STRING 2833  Output To
+STRING 2834  Monitor
+STRING 2835  Low Mag
+STRING 2836  Photo Fast
+STRING 2837  Photo Fast Time
+STRING 2838  Photo Slow Time
+STRING 2839  Dual Plane
+STRING 2840  Plane A Frozen
+STRING 2841  Plane B Frozen
+STRING 2842  C1 Reversal
+STRING 2843  C2 Reversal
+STRING 2844  Display LUT mode
+STRING 2845  X Ray Acquire
+STRING 2846  Stage Scan Invalid
+STRING 2847  VPrint formfeed
+STRING 2848  EDX Dots
+STRING 2849  Image
+STRING 2850  DDE control
+STRING 2851  Xray Linescan
+STRING 2852  Parallel Port
+STRING 2853  Joystick
+STRING 2854  Keypad
+STRING 2855  Trackball
+STRING 2856  EBBU
+STRING 2857  Feature Scan
+STRING 2858  BSD Type
+STRING 2859  ISIS on top
+STRING 2860  Image Detect
+STRING 2861  Image Filter
+STRING 2862  Copy Zone
+STRING 2863  Input Reduction
+STRING 2864  Output Reduction
+STRING 2865  Static Stereo
+STRING 2866  Semi Dyn.Stereo
+STRING 2867  Focus Scan
+STRING 2868  Focus Dir.
+STRING 2869  Pulse Gen
+STRING 2870  Freeze Blanks
+STRING 2871  Ext. Spot Control
+STRING 2872  R Axis is
+STRING 2873  T Axis is
+STRING 2874  T Limit hit
+STRING 2875  Saturate at
+STRING 2876  Adj.Anode
+STRING 2877  Spot Data
+STRING 2878  Centre Point
+STRING 2879  Image Comparison
+STRING 2880  Cine Reduction
+STRING 2881  Cine Busy
+STRING 2882  HC Stage
+STRING 2883  BSDA
+STRING 2884  Gun Align Posn.
+STRING 2885  Gun Conditioning
+STRING 2886  Extractor Trip
+STRING 2887  Emergency Rundown
+STRING 2888  Optibeam Stereo
+STRING 2889  X Backlash
+STRING 2890  Y Backlash
+STRING 2891  Z Backlash
+STRING 2892  T Backlash
+STRING 2893  R Backlash
+STRING 2894  Macro is
+STRING 2895  IA:User Routine
+STRING 2896  IA:User Dialog
+STRING 2897  IA:Routine
+STRING 2898  ISIS Status
+STRING 2899  VPrint priority
+STRING 2900  Flag 0
+STRING 2901  Flag 1
+STRING 2902  Flag 2
+STRING 2903  Flag 3
+STRING 2904  Flag 4
+STRING 2905  Flag 5
+STRING 2906  Flag 6
+STRING 2907  Flag 7
+STRING 2908  ISIS DDE
+STRING 2909  C1 align position
+STRING 2910  C2 Align position
+STRING 2911  Vac Quality
+STRING 2912  Stage Motors Off
+STRING 2913  Vacuum Mode
+STRING 2914  Turbo isol Valve
+STRING 2915  Foreline Valve
+STRING 2916  VP Status
+STRING 2917  VP Error
+STRING 2918  Fixed Aperture
+STRING 2919  Crosshairs
+STRING 2920  Graticule
+STRING 2921  Gun align Cal No.
+STRING 2922  Leave Gun On at Shutdown
+STRING 2923  IXI Backplate
+STRING 2924  Scan Gen
+STRING 2925  Gun Wobble
+STRING 2926  Aperture Wobble
+STRING 2927  Input LUT Mode
+STRING 2928  Condenser Normal
+STRING 2929  TV Input
+STRING 2930  User Calibration
+STRING 2931  HRRU Gamma
+STRING 2932  In Progress
+STRING 2933  Supervisor
+STRING 2934  Z move on Vent
+STRING 2935  Sem
+STRING 2936  Track Z
+STRING 2937  Gun Off Priviledge
+STRING 2938  Bakeout
+STRING 2939  Bakeout State
+STRING 2940  Mag Cal Mode
+STRING 2941  Partial Vent on Standby
+STRING 2942  M Axis is
+STRING 2943  M Limit hit
+STRING 2944  M Backlash
+STRING 2945  DDE Access
+STRING 2946  Points List
+STRING 2947  Rotate Limit
+STRING 2948  Hard Panel
+STRING 2949  ABCC Bri. Cal
+STRING 2950  ABCC Contr. Cal
+STRING 2951  SCM On
+STRING 2952  SCM Status
+STRING 2953  User
+STRING 2954  Dwell Time
+STRING 2955  Airlock Control
+STRING 2956  Airlock Ready
+STRING 2957  Stage Too Hot
+STRING 2958  EO Too Hot
+STRING 2959  Water OK
+STRING 2960  SEM Overheat
+STRING 2961  Protected Z
+STRING 2962  Registration
+STRING 2963  Compuc. Mode
+STRING 2964  Compucentric Cal.
+STRING 2965  Stage List
+STRING 2966  X-Ray Line
+STRING 2967  Line Colour
+STRING 2968  Stage Undo Goto
+STRING 2969  Joystick Disable
+STRING 2970  Gun Align Privilege
+STRING 2971  EHT Off @ Log Off
+STRING 2972  Video Mix Delay
+STRING 2973  VP OK
+STRING 2974  BSD Auto Range
+STRING 2975  Survey Mode
+STRING 2976  Frame Grabber
+STRING 2977  ScanGen Type
+STRING 2978  Acc Volt Interlock OK
+STRING 2979  Stage Init Privilege
+STRING 2980  Near $Exchange
+STRING 2981  VPSE detector
+STRING 2982  Sample Holder
+STRING 2983  Reference Mag
+STRING 2984  SE Supplies
+STRING 2985  X Axis
+STRING 2986  Y Axis
+STRING 2987  Z Axis
+STRING 2988  T Axis
+STRING 2989  R Axis
+STRING 2990  M Axis
+STRING 2991  X Enabled
+STRING 2992  Y Enabled
+STRING 2993  Z Enabled
+STRING 2994  T Enabled
+STRING 2995  R Enabled
+STRING 2996  M Enabled
+STRING 2997  Cartesian Stage
+STRING 2998  Auto Sat.
+STRING 2999  Electron Counting
+STRING 3000  EBBU In Use
+STRING 3001  Chamberscope
+STRING 3002  Stig Cal N
+STRING 3003  Mouse
+STRING 3004  Shutdown
+STRING 3005  Beam On
+STRING 3006  Gun On
+STRING 3007  EHT On
+STRING 3008  Beam Off
+STRING 3009  EHT Off
+STRING 3010  Standby
+STRING 3011  Load Targets
+STRING 3012  OK
+STRING 3013  Cancel
+STRING 3014  Cal Stig Balance
+STRING 3015  Cal Focus rotation
+STRING 3016  Cal C1/C2
+STRING 3017  Cal C3
+STRING 3018  Cal Scan Orthog
+STRING 3019  Cal Stage Angle
+STRING 3020  Cal Magnification
+STRING 3021  Cal Dual mag
+STRING 3022  Cal Scan rate Mag
+STRING 3023  C1 Cal
+STRING 3024  C1 Rem
+STRING 3025  C2 Cal
+STRING 3026  C2 Rem
+STRING 3027  C3 Cal
+STRING 3028  C3 Rem
+STRING 3029  C3 Normal
+STRING 3030  C3 Reverse
+STRING 3031  C3 Hysteresis
+STRING 3032  C1/2/3 Hysteresis
+STRING 3033  Scan Speed  0
+STRING 3034  Scan Speed  1
+STRING 3035  Scan Speed  2
+STRING 3036  Scan Speed  3
+STRING 3037  Scan Speed  4
+STRING 3038  Scan Speed  5
+STRING 3039  Scan Speed  6
+STRING 3040  Scan Speed  7
+STRING 3041  Scan Speed  8
+STRING 3042  Scan Speed  9
+STRING 3043  Scan Speed 10
+STRING 3044  Scan Speed 11
+STRING 3045  Scan Speed 12
+STRING 3046  Scan Speed 13
+STRING 3047  Scan Speed 14
+STRING 3048  Scan Speed 15
+STRING 3049  Stig Bal X
+STRING 3050  Stig Bal Y
+STRING 3051  Normal
+STRING 3052  Split
+STRING 3053  Quad
+STRING 3054  Small
+STRING 3055  Reduced
+STRING 3056  Emission
+STRING 3057  Stage init.
+STRING 3058  Stage start scan
+STRING 3059  Stage: Next field
+STRING 3060  Stage stop
+STRING 3061  Do Stage Backlash
+STRING 3062  Pump
+STRING 3063  Vent
+STRING 3064  Vac Abort
+STRING 3065  Start Column Pump
+STRING 3066  Stop Column Pump
+STRING 3067  Stage:set position
+STRING 3068  Frame Avg.
+STRING 3069  Frame Int.
+STRING 3070  Line Int.
+STRING 3071  LUT Transparent
+STRING 3072  LUT Gamma
+STRING 3073  LUT Inverse
+STRING 3074  LUT Merge
+STRING 3075  Freeze Zone
+STRING 3076  Unfreeze Zone
+STRING 3077  Freeze Channel
+STRING 3078  Unfreeze Channel
+STRING 3079  Freeze All
+STRING 3080  Unfreeze All
+STRING 3081  Abort Freeze
+STRING 3082  Coarse Focus
+STRING 3083  Fine Focus
+STRING 3084  Coarse Align
+STRING 3085  Standard Align
+STRING 3086  Fine Align
+STRING 3087  Auto Stig
+STRING 3088  Auto Saturate
+STRING 3089  Reserved 2
+STRING 3090  Abort auto
+STRING 3091  SCM Image
+STRING 3092  SCM Measure
+STRING 3093  Scan +
+STRING 3094  Scan -
+STRING 3095  Save HRRU Params
+STRING 3096  Photo
+STRING 3097  StageVac PSU test
+STRING 3098  Cal Line Ampl
+STRING 3099  Cal Frame Ampl
+STRING 3100  Cal Line:Frame
+STRING 3101  Cal Scan Centre
+STRING 3102  Line Avg.
+STRING 3103  Do Dyn stig
+STRING 3104  Cal Dual Mag Slope
+STRING 3105  Cal Output Dev
+STRING 3106  Abort Photo
+STRING 3107  Cal Beamshift
+STRING 3108  Cal Stereo
+STRING 3109  HRRU
+STRING 3110  Display/File
+STRING 3111  Video Printer
+STRING 3112  Find Peak
+STRING 3113  Find Mean
+STRING 3114  Set Plane A
+STRING 3115  Clear Plane A
+STRING 3116  Set Plane B
+STRING 3117  Clear Plane B
+STRING 3118  Set Stereo
+STRING 3119  Clear Stereo
+STRING 3120  Start Develop Timer
+STRING 3121  C1 Reverse
+STRING 3122  C2 reverse
+STRING 3123  C1 Normal
+STRING 3124  C2 Normal
+STRING 3125  X Ray Start
+STRING 3126  X Ray stop
+STRING 3127  X Ray Reset
+STRING 3128  Stage Scan Start Here
+STRING 3129  Stage Scan ends here
+STRING 3130  Stage set start
+STRING 3131  Stage set end
+STRING 3132  Stage calc scan
+STRING 3133  Stage:Prev Field
+STRING 3134  Toggle Freeze
+STRING 3135  BSD:COMPO
+STRING 3136  BSD:TOPO
+STRING 3137  BSD in
+STRING 3138  BSD out
+STRING 3139  Cal MagRange Shift
+STRING 3140  BSD: Set TOPO
+STRING 3141  IA: A+B
+STRING 3142  IA: A - B
+STRING 3143  IA: B - A
+STRING 3144  IA: A min B
+STRING 3145  IA: A max B
+STRING 3146  IA: A to B
+STRING 3147  IA: B to A
+STRING 3148  Histo Equalise:Store
+STRING 3149  Histo Equalise:LUT
+STRING 3150  Calc Area Fraction
+STRING 3151  IA: A Exch B
+STRING 3152  IA:Reset LUT
+STRING 3153  Find Image
+STRING 3154  Auto Focus+Stig
+STRING 3155  Calc St.Stereo Depth
+STRING 3156  Start Spot Acquire
+STRING 3157  Stop Spot Acquire
+STRING 3158  Clear Spot Data Buffer
+STRING 3159  Start/Stop Cine
+STRING 3160  Find ABC
+STRING 3161  Seperate Stereo
+STRING 3162  Make Stereo Pair
+STRING 3163  Gun Align Upper
+STRING 3164  Gun Align Lower
+STRING 3165  Gun Align Normal
+STRING 3166  Emergency Down
+STRING 3167  IA:Get Routine Status
+STRING 3168  ISIS Start
+STRING 3169  ISIS Stop
+STRING 3170  ISIS get status
+STRING 3171  Run ISIS
+STRING 3172  Run QWin
+STRING 3173  Cal Emission centre
+STRING 3174  Cal Gun Align
+STRING 3175  Next Gun Cal
+STRING 3176  Printer
+STRING 3177  Pixel Noise reduction
+STRING 3178  Auto Aperture Align
+STRING 3179  Cal Gun/Aper Align
+STRING 3180  Cal User Magnification
+STRING 3181  Service Runup
+STRING 3182  EHT Reset
+STRING 3183  Reset EO Calibration
+STRING 3184  TV mode
+STRING 3185  Bakeout Start
+STRING 3186  Bakeout Abort
+STRING 3187  Continuous Avg.
+STRING 3188  Open Column Chamber Valve
+STRING 3189  Close Column Chamber Valve
+STRING 3190  Pump Airlock
+STRING 3191  Vent Airlock
+STRING 3192  Cal. Joystick
+STRING 3193  Reset Overheat
+STRING 3194  Start Comp. Cal.
+STRING 3195  Accept Comp. Cal.
+STRING 3196  Exit Comp. Cal.
+STRING 3197  Set Stage Centre
+STRING 3198  Undo Stage Goto
+STRING 3199  Hold Airlock Vacuum
+STRING 3200  Force Stage Initialise
+STRING 3201  Go To HV
+STRING 3202  Go To VP
+STRING 3203  EO Self Test
+STRING 3204  Auto Sat. Undo
+STRING 3205  Absent
+STRING 3206  Auto detect
+STRING 3207  MK1
+STRING 3208  MK 2
+STRING 3209  CAN Bus
+STRING 3210  Serial
+STRING 3211  Off
+STRING 3212  On
+STRING 3213  Off
+STRING 3214  On
+STRING 3215  Off
+STRING 3216  On-X
+STRING 3217  On-Y
+STRING 3218  On
+STRING 3219  manual
+STRING 3220  Resolution
+STRING 3221  Depth
+STRING 3222  Tungsten
+STRING 3223  Denka 
+STRING 3224  Kimball
+STRING 3225  FEI
+STRING 3226  FE FEI
+STRING 3227  High KV
+STRING 3228  Low KV
+STRING 3229  No
+STRING 3230  Yes
+STRING 3231  Shutdown
+STRING 3232  Beam On
+STRING 3233  Running Up
+STRING 3234  Shutting Down
+STRING 3235  Running Down
+STRING 3236  Beam Going Off
+STRING 3237  Restoring Beam
+STRING 3238  Standby
+STRING 3239  EHT going off
+STRING 3240  Beam Off
+STRING 3241  EHT Off
+STRING 3242  Run up
+STRING 3243  Waiting Vac
+STRING 3244  Service Runup
+STRING 3245  Emergency Rundown
+STRING 3246  Conditioning
+STRING 3247  C1/C2
+STRING 3248  C3
+STRING 3249  Scan Orthog
+STRING 3250  Scan rate mag comp
+STRING 3251  Dual Mag Offset
+STRING 3252  Stig Balance
+STRING 3253  Stage angle
+STRING 3254  Focus rotation
+STRING 3255  Magnification
+STRING 3256  Line Ampl
+STRING 3257  Frame Ampl
+STRING 3258  Line:Frame 
+STRING 3259  Scan Centre
+STRING 3260  Dual Mag Slope
+STRING 3261  Output Device
+STRING 3262  Beam Shift
+STRING 3263  Stereo
+STRING 3264  Mag Range Shift
+STRING 3265  Emission centre
+STRING 3266  Gun Align
+STRING 3267  Aperture Align
+STRING 3268  User Magnification
+STRING 3269  0
+STRING 3270  1
+STRING 3271  2
+STRING 3272  3
+STRING 3273  4
+STRING 3274  5
+STRING 3275  6
+STRING 3276  7
+STRING 3277  8
+STRING 3278  9
+STRING 3279  10
+STRING 3280  11
+STRING 3281  12
+STRING 3282  13
+STRING 3283  14
+STRING 3284  15
+STRING 3285  Rem
+STRING 3286  Cal
+STRING 3287  C1 Cal
+STRING 3288  C2 Cal
+STRING 3289  C1 Rem
+STRING 3290  C2 Rem
+STRING 3291  Normal
+STRING 3292  Reverse
+STRING 3293  Reversing
+STRING 3294  Normalising
+STRING 3295  Idle
+STRING 3296  Active
+STRING 3297  1
+STRING 3298  2
+STRING 3299  3
+STRING 3300  4
+STRING 3301  5
+STRING 3302  6
+STRING 3303  Clean
+STRING 3304  Contaminated
+STRING 3305  Split
+STRING 3306  Quad
+STRING 3307  Emission
+STRING 3308  Small
+STRING 3309  Reduced
+STRING 3310  TV
+STRING 3311  1
+STRING 3312  2
+STRING 3313  unknown
+STRING 3314  uncalibrated
+STRING 3315  calibrated
+STRING 3316  120 mm Camera
+STRING 3317  35 mm Camera
+STRING 3318  Polaroid 545
+STRING 3319  Polaroid 550
+STRING 3320  14/15 inch display
+STRING 3321  17 inch display
+STRING 3322  19/21 inch display
+STRING 3323  P68B video print
+STRING 3324  P78B video print
+STRING 3325  CP100B video print
+STRING 3326  CP210U video print
+STRING 3327  CP200BH video print
+STRING 3328  Alden video print
+STRING 3329  P66D video print
+STRING 3330  Video Print
+STRING 3331  Leaving Survey Mode..
+STRING 3332  420
+STRING 3333  440
+STRING 3334  430
+STRING 3335  Phoenix
+STRING 3336  435 VP
+STRING 3337  EBL 50
+STRING 3338  EBL100
+STRING 3339  1550
+STRING 3340  1530
+STRING 3341  1560
+STRING 3342  438VP
+STRING 3343  1450
+STRING 3344  1450VP
+STRING 3345  1460
+STRING 3346  1460VP
+STRING 3347  1420
+STRING 3348  1420VP
+STRING 3349  1430
+STRING 3350  1430VP
+STRING 3351  1525
+STRING 3352  1455
+STRING 3353  1455VP
+STRING 3354  Quick
+STRING 3355  Overnight
+STRING 3356  Weekend
+STRING 3357  User
+STRING 3358  Heating
+STRING 3359  Cooling
+STRING 3360  Local R/O
+STRING 3361  Remote R/O
+STRING 3362  Local R/W
+STRING 3363  Full
+STRING 3364  Empty
+STRING 3365  Not Started
+STRING 3366  In List
+STRING 3367  At End
+STRING 3368  At Start
+STRING 3369  1
+STRING 3370  2
+STRING 3371  3
+STRING 3372  4
+STRING 3373  5
+STRING 3374  6
+STRING 3375  7
+STRING 3376  8
+STRING 3377  9
+STRING 3378  10
+STRING 3379  Over Range
+STRING 3380  Waiting Auto Range
+STRING 3381  Valid
+STRING 3382  Under Range
+STRING 3383  Not Fitted
+STRING 3384  100 ns
+STRING 3385  200 ns
+STRING 3386  400 ns
+STRING 3387  800 ns
+STRING 3388  Too Hot
+STRING 3389  Monitoring
+STRING 3390  Invalid
+STRING 3391  Tilt
+STRING 3392  Rotate
+STRING 3393  Tilt & Rot.
+STRING 3394  Calibrating
+STRING 3395  Stage
+STRING 3396  Reg 1
+STRING 3397  Reg 2
+STRING 3398  Reg 3
+STRING 3399  Reg 4
+STRING 3400  Reg 5
+STRING 3401  Default Printer
+STRING 3402  Busy
+STRING 3403  X Boustrophodon
+STRING 3404  X Raster
+STRING 3405  Y Boustrophodon
+STRING 3406  Y Raster
+STRING 3407  Moving
+STRING 3408  at field
+STRING 3409  end scan
+STRING 3410  None
+STRING 3411  Low outer
+STRING 3412  Low Inner
+STRING 3413  Low user
+STRING 3414  High user
+STRING 3415  high inner
+STRING 3416  high outer
+STRING 3417  At Air
+STRING 3418  Ready
+STRING 3419  Pumping
+STRING 3420  Error
+STRING 3421  Waiting Turbo Speed
+STRING 3422  Waiting Penning
+STRING 3423  Waiting EHT
+STRING 3424  Vent Inhibited
+STRING 3425  Going VP
+STRING 3426  Absent
+STRING 3427  Present
+STRING 3428  Present
+STRING 3429  Closed
+STRING 3430  Open
+STRING 3431  Disconnected
+STRING 3432  Requested
+STRING 3433  OK
+STRING 3434  Wrong
+STRING 3435  Cartesian
+STRING 3436  Eucentric
+STRING 3437  Cartesian 95/98
+STRING 3438  Makro MK1
+STRING 3439  Fjeld 6 in.
+STRING 3440  Fjeld 5 in.
+STRING 3441  Makro MK2
+STRING 3442  Custom
+STRING 3443  Normal
+STRING 3444  Inverted
+STRING 3445  Low
+STRING 3446  Medium
+STRING 3447  High
+STRING 3448  Very High
+STRING 3449  Frame Int. Busy
+STRING 3450  Line Int. Busy
+STRING 3451  Frame Avg
+STRING 3452  Line Int. Done
+STRING 3453  Frame Int. Done
+STRING 3454  Line Avg
+STRING 3455  Pixel Avg.
+STRING 3456  Continuous Avg.
+STRING 3457  in X
+STRING 3458  In Y
+STRING 3459  1024 * 768
+STRING 3460  512 * 384
+STRING 3461  2048 * 1536
+STRING 3462  3072 * 2304
+STRING 3463  0
+STRING 3464  1
+STRING 3465  2
+STRING 3466  3
+STRING 3467  4
+STRING 3468  5
+STRING 3469  6
+STRING 3470  7
+STRING 3471  None
+STRING 3472  INLENS
+STRING 3473  SE2
+STRING 3474  QBSD
+STRING 3475  RBSD
+STRING 3476  SCM
+STRING 3477  Cathodo
+STRING 3478  Trans
+STRING 3479  T.V.
+STRING 3480  Aux 1
+STRING 3481  Aux 2
+STRING 3482  Aux 3
+STRING 3483  Aux 4
+STRING 3484  Aux 5
+STRING 3485  Aux 6
+STRING 3486  Aux 7
+STRING 3487  Aux 8
+STRING 3488  Aux 9
+STRING 3489  Image
+STRING 3490  Measure
+STRING 3491  Zone 0
+STRING 3492  Zone 1
+STRING 3493  Zone 2
+STRING 3494  Zone 3
+STRING 3495  Zone 4
+STRING 3496  Zone 5
+STRING 3497  Zone 6
+STRING 3498  Zone 7
+STRING 3499  User 0
+STRING 3500  User 1
+STRING 3501  User 2
+STRING 3502  User 3
+STRING 3503  User 4
+STRING 3504  User 5
+STRING 3505  User 0
+STRING 3506  User 1
+STRING 3507  User 2
+STRING 3508  User 3
+STRING 3509  User 4
+STRING 3510  User 5
+STRING 3511  Left
+STRING 3512  Right
+STRING 3513  B 
+STRING 3514  C
+STRING 3515  BC 
+STRING 3516  8
+STRING 3517  End Frame
+STRING 3518  End Line
+STRING 3519  Command
+STRING 3520  Focus
+STRING 3521  Gun Align
+STRING 3522  Stigmation
+STRING 3523  Saturate
+STRING 3524  Find Peak
+STRING 3525  Find Mean
+STRING 3526  Find Image
+STRING 3527  Focus Scan
+STRING 3528  Focus+Stig
+STRING 3529  ABC
+STRING 3530  Live
+STRING 3531  Frozen
+STRING 3532  EDX valve not closed
+STRING 3533  WDX valve not closed
+STRING 3534  Airlock not closed
+STRING 3535  Gun Valve not open
+STRING 3536  Gun Valve not closed
+STRING 3537  Col Valve not open
+STRING 3538  Col Valve not closed
+STRING 3539  Stage Tilted
+STRING 3540  Beam Present
+STRING 3541  Pumping error
+STRING 3542  Stage Temperature
+STRING 3543  440
+STRING 3544  420/430
+STRING 3545  450
+STRING 3546  435VP/438VP
+STRING 3547  EBL
+STRING 3548  1400
+STRING 3549  1500
+STRING 3550  1400VP
+STRING 3551  Stored
+STRING 3552  Live Image
+STRING 3553  Cal Bri.
+STRING 3554  Cal Cont.
+STRING 3555  ASA 50
+STRING 3556  ASA 100
+STRING 3557  ASA 200
+STRING 3558  ASA 400
+STRING 3559  ASA 800
+STRING 3560  3
+STRING 3561  4
+STRING 3562  120 mm Camera
+STRING 3563  35 mm Camera
+STRING 3564  Polaroid 545
+STRING 3565  Polaroid 550
+STRING 3566  Mark 1
+STRING 3567  Mark 2
+STRING 3568  Mark 3
+STRING 3569  XY
+STRING 3570  XYZ
+STRING 3571  XYZTR
+STRING 3572  XYZTRM
+STRING 3573  XYZR
+STRING 3574  XYZT
+STRING 3575  Standard
+STRING 3576  Disabled
+STRING 3577  Enabled
+STRING 3578  Track Targets
+STRING 3579  Track Actuals
+STRING 3580  3->10 pA
+STRING 3581  10->30 pA
+STRING 3582  30->100 pA
+STRING 3583  100->300 pA
+STRING 3584  300->1000 pA
+STRING 3585  1->3 nA
+STRING 3586  3->10 nA
+STRING 3587  10->30 nA
+STRING 3588  30->100 nA
+STRING 3589  100->300 nA
+STRING 3590  300->1000 nA
+STRING 3591  1->3 microAmps
+STRING 3592  3->10 microAmps
+STRING 3593  +
+STRING 3594  -
+STRING 3595  Signal A
+STRING 3596  Signal B
+STRING 3597  Full
+STRING 3598  Reduced
+STRING 3599  P78B
+STRING 3600  CP210U
+STRING 3601  CP100B
+STRING 3602  CP200BH
+STRING 3603  Alden
+STRING 3604  P68B
+STRING 3605  P66D
+STRING 3606  UP-D860
+STRING 3607  Standard
+STRING 3608  Large
+STRING 3609  Video Printer
+STRING 3610  HRRU
+STRING 3611  Display/File
+STRING 3612  Default Printer
+STRING 3613  14/15 inch
+STRING 3614  17 inch
+STRING 3615  19/21 inch
+STRING 3616  15 secs
+STRING 3617  30 secs
+STRING 3618  45 secs
+STRING 3619  60 secs
+STRING 3620  Stereo
+STRING 3621  X Ray
+STRING 3622  Pseudo Colour
+STRING 3623  Normalised
+STRING 3624  Single
+STRING 3625  Multiple
+STRING 3626  LPT1
+STRING 3627  LPT2
+STRING 3628  LPT3
+STRING 3629  Com 1
+STRING 3630  Com 2
+STRING 3631  Com 3
+STRING 3632  Com 4
+STRING 3633  MK1 (2 Seg)
+STRING 3634  MK1 (4 seg)
+STRING 3635  MK2 (2 seg)
+STRING 3636  MK2 (4 seg)
+STRING 3637  MK2 (4 seg motorised)
+STRING 3638  Black
+STRING 3639  White
+STRING 3640  Grey
+STRING 3641  Sharpen 1
+STRING 3642  Sharpen 2
+STRING 3643  Horiz. Edge
+STRING 3644  Vert. Edge
+STRING 3645  Laplace 1
+STRING 3646  Laplace 2
+STRING 3647  Prewitt
+STRING 3648  Sobel
+STRING 3649  Average
+STRING 3650  Gaussian
+STRING 3651  5
+STRING 3652  6
+STRING 3653  7
+STRING 3654  8
+STRING 3655  Up
+STRING 3656  Down
+STRING 3657  First Peak
+STRING 3658  Second peak
+STRING 3659  reading..
+STRING 3660  loading..
+STRING 3661  Displaying
+STRING 3662  Stage+Beam
+STRING 3663  Stage only
+STRING 3664  Beam Only
+STRING 3665  Stage only (X)
+STRING 3666  Stage only (Y)
+STRING 3667  2
+STRING 3668  4
+STRING 3669  8
+STRING 3670  BSD
+STRING 3671  Trans
+STRING 3672  Upper
+STRING 3673  Lower
+STRING 3674  Conditioned
+STRING 3675  Conditioning
+STRING 3676  Unconditioned
+STRING 3677  +
+STRING 3678  -
+STRING 3679  + -
+STRING 3680  Failed/Not found
+STRING 3681  Waiting
+STRING 3682  Completed
+STRING 3683  9
+STRING 3684  Error
+STRING 3685  Foreground
+STRING 3686  Background
+STRING 3687  Poor
+STRING 3688  Marginal
+STRING 3689  Good
+STRING 3690  High Vacuum
+STRING 3691  Variable Pressure
+STRING 3692  Error
+STRING 3693  Power Up
+STRING 3694  At Air (VP)
+STRING 3695  At Air (HV)
+STRING 3696  Pumping (HV)
+STRING 3697  Going to VP
+STRING 3698  At VP
+STRING 3699  Ready to Vent
+STRING 3700  Ready to Pump
+STRING 3701  Gun enabled
+STRING 3702  Gun Delay
+STRING 3703  Wait > MCP
+STRING 3704  Wait < MCP
+STRING 3705  Error
+STRING 3706  VP mode error
+STRING 3707  Transparent
+STRING 3708  Gamma
+STRING 3709  Inverse
+STRING 3710  User
+STRING 3711  Normal
+STRING 3712  CCD
+STRING 3713  PAL
+STRING 3714  NTSC
+STRING 3715  Linear
+STRING 3716  Degressive
+STRING 3717  Progressive
+STRING 3718  S Correction
+STRING 3719  Saving..
+STRING 3720  Printing..
+STRING 3721  Running up..
+STRING 3722  HRRU..
+STRING 3723  Integrating..
+STRING 3724  Running down..
+STRING 3725  Stage Initialising..
+STRING 3726  Going to Survey Mode..
+STRING 3727  Going to Resolution Mode..
+STRING 3728  Reg 6
+STRING 3729  Reg 7
+STRING 3730  Reg 8
+STRING 3731  Reg 9
+STRING 3732  Dark Blue
+STRING 3733  Dark Green
+STRING 3734  Turquoise
+STRING 3735  Dark Red
+STRING 3736  Dark Purple
+STRING 3737  Yellow
+STRING 3738  Dark Grey
+STRING 3739  White
+STRING 3740  Blue
+STRING 3741  Green
+STRING 3742  Light Blue
+STRING 3743  Red
+STRING 3744  Purple
+STRING 3745  Mustard
+STRING 3746  Light Grey
+STRING 3747  Invalid
+STRING 3748  Valid
+STRING 3749  VP
+STRING 3750  HV
+STRING 3751  Matrix PC Process
+STRING 3752  Matrox Genesis
+STRING 3753  Matrix Titan
+STRING 3754  Line Buffer
+STRING 3755  ISA
+STRING 3756  Serial
+STRING 3757  L-REM
+STRING 3758  Multi
+STRING 3759  x 1
+STRING 3760  x 2
+STRING 3761  x 4
+STRING 3762  LEO 1500VP
+STRING 3763  LEO 1525VP
+STRING 3764  LEO 1530VP
+STRING 3765  LEO 1550VP
+STRING 3766  1.6 µs
+STRING 3767  3.2 µs
+STRING 3768  6.4 µs
+STRING 3769  12.8 µs
+STRING 3770  25.6 µs
+STRING 3771  51.2 µs
+STRING 3772  102.4 µS
+STRING 3773  204.8 µs
+STRING 3774  409.6 µs
+STRING 3775  819.2 µs
+STRING 3776  1.64 ms
+STRING 3777  CAN Bus MK2
+STRING 3778  Coarse
+STRING 3779  Fine
+STRING 3780  W (Agar A054)
+STRING 3781  W (Zeiss)
+STRING 3782  W (Agar A054-L)
+STRING 992  Suppress Warnings
+STRING 993  GSP-DBUG
+STRING 994  ON-fast
+STRING 995  ON-Slow
+STRING 996  OFF
+STRING 997  Reset
+STRING 998  File
+STRING 999  Panels
+STRING 1000  English Text Issue V02.04    25-Aug-95
+STRING 1001  Stig Balance X
+STRING 1002  Stig Balance Y
+STRING 1003  Mag
+STRING 1004  Time
+STRING 1005  Date
+STRING 1006  Display LUT Mode
+STRING 1007  Normal
+STRING 1392  Best
+STRING 1393  adjust
+STRING 1394  Image to video Printer
+STRING 1395  Portrait
+STRING 1396  Landscape
+STRING 1397  Large Paper
+STRING 1398  Form Feed
+STRING 1399  TIFF File Information
+STRING 1400  Off
+STRING 1401  Select 
+STRING 1406  OK 
+STRING 1407  Cancel
+STRING 1408  Quit
+STRING 1409  Help
+STRING 1410  Dark Green
+STRING 1411  Dark Red
+STRING 1412  Distance on device (mm) = 
+STRING 1413  Import TIFF..
+STRING 1414  Default
+STRING 1415  Clipboard..
+STRING 1416  Export/Photo setup.. 
+STRING 1417  Export/Photo..
+STRING 1418  Default Output Device Magnification
+STRING 1419  Export TIFF
+STRING 1420  Crosshairs
+STRING 1421  Graticule
+STRING 1422  Grat.Spacing
+STRING 1423  FocusArea
+STRING 1440  Measured value range error
+STRING 1441  Measurement cursors too close
+STRING 1442  X-RayNames
+STRING 1443  Add Digital
+STRING 1444  Delete
+STRING 1450  MagTable
+STRING 1451  Red
+STRING 1452  Green
+STRING 1453  Blue
+STRING 1454  Yellow
+STRING 1455  Cyan
+STRING 900  Select position of minimum stigmation
+STRING 901  SEM Interface READ error : 
+STRING 902  SEM Interface WRITE error : 
+STRING 903  SEM Interface COMMAND error : 
+STRING 904  ERROR 
+STRING 905  Incorrect file type! 
+STRING 906  Save Current Selection 
+STRING 907  Not a layout file! 
+STRING 908  Failed to load 
+STRING 909  Reverting to original layout
+STRING 910  Save Current Layout
+STRING 911  Save identities of selected parameters
+STRING 1680  Identity exists - replace?
+STRING 1681  actioned!
+STRING 1682  No source
+STRING 1683  Stored Image
+STRING 1684  Live Linescan
+STRING 1685  X-Ray Linescan
+STRING 1686  Select Y position for trace
+STRING 1687  Select X position for scale
+STRING 1688  Runup
+STRING 1689  No file loaded 
+STRING 1690  Summary
+STRING 1691  Current settings
+STRING 1692  Fetch file
+STRING 1693  Edit
+STRING 1694  LEO UIF application already active
+STRING 1695  FATAL
+STRING 1728  Start Here
+STRING 1729  End Here
+STRING 1730  Calc fields
+STRING 1731  Select Area
+STRING 1732  Start Scan
+STRING 1733  Stage XY+Z
+STRING 1734  Step
+STRING 1735  Stage Scan
+STRING 1736  Stage Scan Area
+STRING 1737  Restriction
+STRING 1738  Stage scan requires scan rotation to be off
+STRING 1739  Select image directory
+STRING 1740  Select point for threshold
+STRING 1741  YES
+STRING 1742  NO
+STRING 1743  No Information Available
+STRING 1840  Your Evaluation Licence has expired
+STRING 1841  Your licences will be reset to the state when the evaluation licence was installed, you will need to reinstall any licences installed during the evaluation period
+STRING 1842  Save Gun Alignment in conditions
+STRING 1843  Image not full size
+STRING 1844  Treat measurements with caution
+STRING 1845  &Restore
+STRING 1846  &Move
+STRING 1847  &Size
+STRING 1848  Mi&nimise
+STRING 1849  Ma&ximise
+STRING 1850  Switch to..	Ctrl+Esc
+STRING 1851  Close	Alt+F4
+STRING 1852  Centre
+STRING 1853  Stage + Beam
+STRING 1854  Stage Only
+STRING 1855  Beam Only
+STRING 1696  Not enough disk space to run LEO
+STRING 1697  LEO Started
+STRING 1698  Waiting for NVRAM data.....
+STRING 1699  LEO may not run with Vacuum utilities
+STRING 1700  Please close Vacuum Utilities
+STRING 1701  LEO may not run with NVRAM utilities
+STRING 1702  Please close NVRAM Utilities
+STRING 1703  LEO initialisation failure
+STRING 1704  Error running SEM_INIT 
+STRING 1705  Define conditions to be saved
+STRING 1706  Select Parameters
+STRING 1707  Cannot find NavBox
+STRING 1708  Cannot find 
+STRING 1709   shutdown
+STRING 1710  licence access error 
+STRING 1711   Serial Number Undefined
+STRING 1808  Trace 
+STRING 1809  Language
+STRING 1810  English
+STRING 1811  French
+STRING 1812  German
+STRING 1813  Italian
+STRING 1814  Spanish
+STRING 1815  Chinese
+STRING 1816  Image Maths..
+STRING 1817  Static Stereo..
+STRING 1818  LEOHELP.HLP
+STRING 1819  LEOCONF.HLP
+STRING 1820  ERRORS.HLP
+STRING 1821  LEO_TKB.HLP
+STRING 1822  LEO UIF HELP
+STRING 1823  LEO Configuration Help
+STRING 1824  LEO Error Help and Release Notes
+STRING 1825  LEO Trackerball Help
+STRING 1826  When Focus Wobble
+STRING 1827  Frame Average (N=1)
+STRING 1828  Fastest scan rate
+STRING 1829  Keep on top
+STRING 1830  ISIS
+STRING 1831  Help On Top - failed to find window
+STRING 1832  Centre
+STRING 1833  More..
+STRING 1834  Restore leaving EHT in standby
+STRING 1836   required for intensity map
+STRING 1837  Find Image
+STRING 1838  Specimen Current..
+STRING 1839  Days before your Evaluation Licence expires =  
+STRING 1856  ADJUSTABLE ANODE
+STRING 1857  Please set to High KV position 
+STRING 1858  Please set to Low KV position 
+STRING 1859  Button &Function Lists
+STRING 1860  &Button Press Functions
+STRING 1861  Defining Aperture
+STRING 1862  Left mm
+STRING 1863  Right mm
+STRING 1864  Film Aperture
+STRING 1865  Full
+STRING 1866  Expert
+STRING 1867  Novice
+STRING 1868  Next Font
+STRING 1869  Next Style
+STRING 1870  SelNavCMD
+STRING 1871  LogOn
+STRING 1872  LogOff
+STRING 1873  Save X-Ray Setup
+STRING 1874  Backlash Correction
+STRING 1875  Image Analysis..
+STRING 1876  Motors Off
+STRING 1877  Select Emission Centre 
+STRING 1878  VP Control..
+STRING 1879  Hole
+STRING 1880  Merge Standard
+STRING 1881  Merge File
+STRING 1882  Print
+STRING 1883  Print Setup..
+STRING 1884  Printing..
+STRING 1885  VP Service Panel
+STRING 1886  Vent Inhibited. Stage is not in safe area.
+ Do you want stage moved to %d,%d ? 
+STRING 1887  HP App is already Running
+STRING 1888  Could not intiate communications
+on SEM comms port COM%d:
+STRING 1889  HP Board Comms Still Active!
+STRING 1890  Failed to set HP target!
+STRING 1891  Requested Target Pressure Out of Range
+STRING 1892  Unknown
+STRING 1893  Power Up
+STRING 1894  At Air VP
+STRING 1895  At Air HV
+STRING 1896  Pumping at HV
+STRING 1897  Pumping at VP
+STRING 1898  Ready to Vent
+STRING 1899  Ready to Pump
+STRING 1900  Going to HV
+STRING 1901  Going to VP
+STRING 1902  HPSEM Error
+STRING 1903  HPAPP Error
+STRING 1424  Zone Data
+STRING 1425  Macro present
+STRING 1426  Parameters to save in TIFF File
+STRING 1427  Add Date
+STRING 1428  Add Time
+STRING 1429  Add Analogue
+STRING 1430  Preview State..
+STRING 1431  Restore Last State!
+STRING 1432  Novice
+STRING 1433  Expert
+STRING 1434  File DEFMAG.LEO not found
+STRING 1435  SEM Standby
+STRING 1436  Info..
+STRING 1437  Reserved
+STRING 1438  File format error 
+STRING 1439  All Functions
+STRING 800  Control
+STRING 801  Adjustment
+STRING 802  Position/Size
+STRING 803  About LEO
+STRING 804  Point-Point
+STRING 805  Escape
+STRING 806  Angular
+STRING 807  Save
+STRING 808  Load
+STRING 809  Lock
+STRING 810  Unlock
+STRING 811  Radial
+STRING 812  3D Point-Point
+STRING 813  Vector Profile
+STRING 814  Annot/meas
+STRING 815  Measure
+STRING 1712  Starting shutdown of 
+STRING 1713  Terminating UIF.....
+STRING 1714  Unsuitable operating mode for stage map
+STRING 1715  Magnification too high for stage map
+STRING 1716  Image move using Beam Shift
+STRING 1717  Mag below LINK value
+STRING 1718  Beyond Beam Shift limit
+STRING 1719  Are you sure?
+STRING 1720  Stage position Marks and labels have not been saved
+STRING 1721  save stage position list 
+STRING 1722  select on image
+STRING 1723  Start Co-ord
+STRING 1724  Field Size
+STRING 1725  Fields
+STRING 1726  End Co-ord
+STRING 1727  At Field
+STRING 1456  Magenta
+STRING 1457  Orange
+STRING 1458  White
+STRING 1459  Transparent
+STRING 1460  Dark Blue
+STRING 1461  Links
+STRING 1462  EHT/I Probe
+STRING 1463  Freeze
+STRING 1464  Unfreeze
+STRING 1465  Collector Bias
+STRING 1470  Goto &Panel..
+STRING 1471  &File
+STRING 768  Select Panel
+STRING 769  Select to remove!
+STRING 770  Exists! - replace?
+STRING 771  User Directory..
+STRING 772  Trace-toggle
+STRING 773  Commands
+STRING 774  Buttons
+STRING 775  Toggles
+STRING 776  Parameters
+STRING 777   (right button for menu)
+STRING 778  Move
+STRING 779  Edit
+STRING 780  Delete
+STRING 781  Edit Panel
+STRING 782  Select link start
+STRING 783  Select link end
+STRING 700  Error while reading 
+STRING 701  Aperture Size range 5 -> 500 
+STRING 702  Standard!
+STRING 703  X range 
+STRING 720  Status
+STRING 721  Select
+STRING 722  File
+STRING 724  Load State..
+STRING 725  Load Panels
+STRING 726  Save Selection
+STRING 727  Load Selection
+STRING 728  &Mag/Foc
+STRING 729  Annot/Meas!
+STRING 730  Print
+STRING 731  Actual value (mm) = 
+STRING 732  Builder
+STRING 733  Panels
+STRING 734  New Panel
+STRING 735  Load Panel
+STRING 1216  Freeze
+STRING 1217  Unfreeze
+STRING 1218  Reduced
+STRING 1219  Grey Dir
+STRING 1220  Planes
+STRING 1221  Windows OFF!
+STRING 1222  Overlay
+STRING 1223  Image
+STRING 1224  Right Overlay
+STRING 1225  Right Image
+STRING 1226  Sa&veState..
+STRING 1227  User Access
+STRING 1230  Control
+STRING 1231  Adjustment
+STRING 704  Y range 
+STRING 705  &View
+STRING 706  Full Screen Image
+STRING 707  DataZone
+STRING 708  Output Device Calibration
+STRING 709  Nav. Box!
+STRING 710  Build Panel
+STRING 711  Optibeam Status
+STRING 712  Layout
+STRING 713  Fonts
+STRING 714  Status!
+STRING 715  Toolbar
+STRING 716  Image
+STRING 717  Configure
+STRING 718  &Tools
+STRING 719  Service
+STRING 1508  Centre Feature
+STRING 1509  Centre Point
+STRING 1510  &Beam
+STRING 1511  Beam On!
+STRING 1512  Beam Off!
+STRING 1513  Gun Setup..
+STRING 1514  Gun Align..
+STRING 1515  Optibeam Auto Resolution
+STRING 1516  Optibeam Depth Mode
+STRING 1517  Optibeam Setup..
+STRING 1518  Wobble
+STRING 1519  Apertures..
+STRING 1520  Stigmation..
+STRING 1521  &Detectors
+STRING 1522  Select Signal A..
+STRING 1523  Select Signal B..
+STRING 1524  Control Signal A
+STRING 1525  Configure..
+STRING 1526  BSD Setup..
+STRING 1529  Distance on specimen 
+STRING 1530  &Image
+STRING 1531  Signal Adjust..
+STRING 1532  Noise Reduction..
+STRING 1533  Gamma/Diff..
+STRING 1534  Signal Mixing..
+STRING 1360  Zone 7
+STRING 1361  Copy-Link
+STRING 1362  Xscale
+STRING 1363  Yscale
+STRING 1364  Active
+STRING 1365  PC Plane
+STRING 1366  As Seen
+STRING 1367  Threshold
+STRING 1368  R=
+STRING 1369  G=
+STRING 1370  X-ray
+STRING 1371  set up (advanced)
+STRING 1372  Acquire
+STRING 1373  Key
+STRING 1374  Colours
+STRING 1375  set up
+STRING 1312  Call
+STRING 1313  From TIFF
+STRING 1314  Mouse (L) 
+STRING 1315  Mouse (R) 
+STRING 1320  Histogram
+STRING 1321  BinWidth
+STRING 1322  1
+STRING 1323  2
+STRING 1324  3
+STRING 1325  4
+STRING 1326  Height
+STRING 1327  Start
+STRING 1328  Sample!
+STRING 1329  Stop
+STRING 1330  Ymod
+STRING 1331  X scale
+STRING 1332  Y scale
+STRING 1333  Ampl.Scale
+STRING 1334  Line Incr.
+STRING 1335  Threshold
+STRING 1336  Coloured
+STRING 1337  Superimpose
+STRING 1338  TransparentBG
+STRING 1339  Options
+STRING 1340  Profile
+STRING 1341  SizeToLine
+STRING 1342  FullSize
+STRING 1343  Active
+STRING 1472  &Edit
+STRING 1473  Probe Table
+STRING 1474  mBar
+STRING 1475  Torr
+STRING 1476  Pascals
+STRING 1477  Probe Current
+STRING 1478  Stig X
+STRING 1479  Stig Y
+STRING 1480  Beam delta X
+STRING 1481  Beam delta Y
+STRING 1482  Save
+STRING 1483  Load
+STRING 1484  Start
+STRING 1485  Stop
+STRING 1486  Intensity
+STRING 1487  Presence
+STRING 1152  Left  Button
+STRING 1153  Right Button
+STRING 1154  Command
+STRING 1155  Panel
+STRING 1156  NewToggle
+STRING 1157  IconSize
+STRING 1158  Prev
+STRING 1159  36*36
+STRING 1160  Display LUT..
+STRING 1161  Bright:Contr
+STRING 1162  Invert
+STRING 1163  Grey Wedge
+STRING 1164  Gamma
+STRING 1165  Brightness
+STRING 1166  Contrast
+STRING 1167  Colour
+STRING 1008  Stereo
+STRING 1009  X-Ray
+STRING 1010  Detectors present
+STRING 1011  Secondary Electron  No.1      (INLENS)
+STRING 1012  Secondary Electron  No.2      (SE2)
+STRING 1013  Backscattered Detector        (QBSD)
+STRING 1014  Robinson Backscattered        (RBSD)
+STRING 1015  Specimen Current Monitor      (SCM)
+STRING 1016  Cathodoluminescence           (Cathodo)
+STRING 1017  Transmission                  (Trans)
+STRING 1018  Video input                   (TV)
+STRING 1019  Auxiliary 1                   (Aux1)
+STRING 1020  Auxiliary 2                   (Aux2)
+STRING 1021  Auxiliary 3                   (Aux3)
+STRING 1022  Auxiliary 4                   (Aux4)
+STRING 1023  Auxiliary 5                   (Aux5)
+STRING 832  Line Profile brightness
+STRING 833  Resolution
+STRING 834  Split
+STRING 835  Copy-Link
+STRING 836  Trace 1 (L)
+STRING 837  Trace 2 (R)
+STRING 838  Windowing
+STRING 839  Reset
+STRING 840  Invert
+STRING 841  New
+STRING 842  Input LUT..
+STRING 843  Add
+STRING 844  Del
+STRING 845  Reset
+STRING 846  Move
+STRING 847  Save
+STRING 1136  Image ->
+STRING 1137  Width  =
+STRING 1138  Height =
+STRING 1139  64*64
+STRING 1140  Tool Bar..
+STRING 1141  Tool Bar Editor
+STRING 1142  Reset
+STRING 1143  Load
+STRING 1144  Save
+STRING 1145  Install
+STRING 1146  Fetch
+STRING 1147  Icon Actions
+STRING 1148  Next
+STRING 1149  NewButton
+STRING 1150  Delete
+STRING 1151  Edit
+STRING 1488  Grey Backed
+STRING 1489  Max Intensity
+STRING 1490  Linescan
+STRING 1491  Priority
+STRING 1492  Clear
+STRING 1493  Help
+STRING 1500  Leo Help	F1
+STRING 1501  Keys Help	F9
+STRING 1502  Pressure Units
+STRING 1503  &Release Notes
+STRING 880  Font2
+STRING 881  Font3
+STRING 882  Font4
+STRING 883  Font5
+STRING 884  Font6
+STRING 885  Condition Table
+STRING 886  Working Distance
+STRING 887  Mag
+STRING 888  Ann-Fonts
+STRING 889  Beam Position
+STRING 1539  Emission
+STRING 1540  &Scanning
+STRING 1541  Speeds..
+STRING 1542  Normal
+STRING 1543  Reduced
+STRING 1544  Split
+STRING 1545  Quad
+STRING 1546  Dual Mag
+STRING 1547  Window Mode
+STRING 1548  Line
+STRING 1549  Spot
+STRING 1550  Rotate/Tilt..
+STRING 1551  Dynamic Focus..
+STRING 1376  X-Ray Linescan
+STRING 1377  Superimpose
+STRING 1378  Help
+STRING 1379  Copy-Link
+STRING 1380  Default
+STRING 1381  B=
+STRING 1382  Paste
+STRING 1383   0,0
+STRING 1384  TIFF file export
+STRING 1385  Description
+STRING 1386  Save Binary
+STRING 1387  Save Grey
+STRING 1388  Save Colour
+STRING 1389  SaveState
+STRING 1390  Compression
+STRING 1391  Whole image
+STRING 1552  Sta&ge/Vac
+STRING 1553  Vacuum Status..
+STRING 1554  Specimen Change..
+STRING 1555  Stage Initialise..
+STRING 1556  Stage Move..
+STRING 1557  Stage Map..
+STRING 1558  Stage Scan..
+STRING 1559  Centre Point
+STRING 1560  Centre Feature
+STRING 1561  Backlash
+STRING 1562  Execute
+STRING 1563  Dynamic Stereo..
+STRING 1564  Prev Win onTop
+STRING 1565  Prev Win Not onTop
+STRING 1566  Remote Control
+STRING 1567  Clipboard copy/paste
+STRING 1248  Image
+STRING 1249  Overlay
+STRING 1250  Macro
+STRING 1251  Macro Editor
+STRING 1252  Macro
+STRING 1253  New
+STRING 1254  Fetch
+STRING 1255  Load
+STRING 1256  Install
+STRING 1257  Save
+STRING 1258  Rename
+STRING 1259  Reset
+STRING 1260  Record
+STRING 1261  Insert
+STRING 1262  Edit
+STRING 1263  Delete
+STRING 784  Edit Micron Marker
+STRING 785  Grid
+STRING 786  Mode
+STRING 787  X-RayTraces
+STRING 788  &Help
+STRING 789  Help on Help
+STRING 790  Annotation
+STRING 791  Text
+STRING 792  Analogue
+STRING 793  Digital
+STRING 794  Outer
+STRING 795  Panel
+STRING 796  Pin
+STRING 797  Link
+STRING 798  Micron
+STRING 799  Line Width
+STRING 1760  Mouse
+STRING 1761  Left= 
+STRING 1762  Right= 
+STRING 1763  Select Command
+STRING 1764  Select Function
+STRING 1765  Select Macro
+STRING 1766  Select Mouse Parameter
+STRING 1767  Select Toggle
+STRING 1768  State
+STRING 1769  Icon Create
+STRING 1770  TOO MANY ICONS
+STRING 1771  File exists - cannot archive
+STRING 1772  Log File archived
+STRING 1773  undefined panel called by menu
+STRING 1774  Menu code=
+STRING 1775  Panel not found 
+STRING 1776  Library Macro STANDARD not found
+STRING 1777  Replace Annotation font 
+STRING 1778  Will delete existing annotation
+STRING 1779  Calibration still in progress
+STRING 1780  EHT conditions will not be saved, continue?
+STRING 1781  Save Conditions : Beam is not operational
+STRING 1782  User requested shutdown initiated.
+STRING 1783  Please wait..
+STRING 1784  Failed to start S400
+STRING 1785   ABORT will follow!
+STRING 1786  Graticule Spacing
+STRING 1787  Enter pixel spacing 50..512
+STRING 1788  Select directory for images
+STRING 1789  Logging system closedown
+STRING 1790  : Units 
+STRING 1791   is outside valid range
+STRING 1632  HRRU still busy
+STRING 1633  HRRU Not configured
+STRING 1634  Photo to Video Printer
+STRING 1635  Printer still busy
+STRING 1636  Not permitted while in small Image mode
+STRING 1637   File not found
+STRING 1638  Substitute Library Macro STANDARD not found
+STRING 1639  Macro not installed
+STRING 1640  Define Filename to save user function LUT
+STRING 1641  Raster Control
+STRING 1642   select window to Invert 
+STRING 1643  Windowing control 
+STRING 1644  User   Directory 
+STRING 1645  Images Directory
+STRING 1646  Toolbar loaded from
+STRING 1647  Layout  loaded from 
+STRING 1648  Information
+STRING 1649  Not loaded from file
+STRING 1650  Clear Error Queue
+STRING 1651  Save Macro Library
+STRING 1652  Period in seconds
+STRING 1653  Saved State
+STRING 1654  Timeout period in seconds, if required
+STRING 1655   Executing
+STRING 1656  Waiting
+STRING 1657  paused
+STRING 1658  Macro Error in 
+STRING 1659  Macro stack limit calling 
+STRING 1660   Failed on line 
+STRING 1661  DEBUG?
+STRING 1662  Timed out running macro 
+STRING 1663  Unmatched End While
+STRING 1664  Unmatched Else
+STRING 1665  Unmatched End If
+STRING 1666  If without EndIf
+STRING 1667  Else without If
+STRING 1668  If Then Else without matching EndIf
+STRING 1669  While without EndWhile
+STRING 1670  LOW
+STRING 1671  Export/Photo Setup
+STRING 1672  Calibrate
+STRING 1673  Setup
+STRING 1674  ADD
+STRING 1675  DEL
+STRING 1676  Undo
+STRING 1677  Identity
+STRING 1678  current value(s) will be identified by:
+STRING 1679  current
+STRING 1232  Raster
+STRING 1233  Windowing
+STRING 1234  Annotation
+STRING 1235  Left Channel
+STRING 1236  Position
+STRING 1237  Size
+STRING 1238  point
+STRING 1239  Feature
+STRING 1240  Change Dir
+STRING 1241  Grey Backed
+STRING 1242  Clear other bits
+STRING 1243  Keep  other bits
+STRING 1244  ->Binary Plane 
+STRING 1245  Copy Grey
+STRING 1246  Copy Binary
+STRING 1247  Whole screen
+STRING 1568  Focus area (RButton cancels)
+STRING 1569  Image Import/Export 
+STRING 1570  select Image (RButton cancels)
+STRING 1571  Datazone is undefined 
+STRING 1572  Grid X
+STRING 1573  Grid Y
+STRING 1574  enter grid size
+STRING 1575  Fixed size Micron Marker
+STRING 1576  Enter size in Microns
+STRING 1577  STYLE 
+STRING 1578  Font 
+STRING 1579  Invalid Count
+STRING 1580  save annotation
+STRING 1581  [select panel for Datazone]
+STRING 1582  Select parameter
+STRING 1583  Annotation Text
+STRING 1344  Static
+STRING 1345  5
+STRING 1346  6
+STRING 1350  Source
+STRING 1351  Stored Image
+STRING 1352  Current Zone
+STRING 1353  Zone 0
+STRING 1354  Zone 1
+STRING 1355  Zone 2
+STRING 1356  Zone 3
+STRING 1357  Zone 4
+STRING 1358  Zone 5
+STRING 1359  Zone 6
+STRING 1792  Not an valid customisation file
+STRING 1793  X-Ray Dotmap Set Up
+STRING 1794  Not Used
+STRING 1795  Not an X-Ray settings file
+STRING 1796  X-Ray setup undefined!
+STRING 1797  Error reading X-Ray input description file - using default
+STRING 1798  X-Ray Linescan Set up
+STRING 1799  Black
+STRING 1800  Filter ->
+STRING 1801  Background ->
+STRING 1802  Scale Max
+STRING 1803  Move trace
+STRING 1804  Auto scale
+STRING 1805  Acquire
+STRING 1806  trace
+STRING 1807  traces
+STRING 1168  SavePoints
+STRING 1169  loadPoints
+STRING 1170  Grey
+STRING 1171  Gradient:Offset
+STRING 1172  Gradient
+STRING 1173  Offset
+STRING 1174  Plot
+STRING 1175  Points
+STRING 1176  Reset
+STRING 1177  Add
+STRING 1178  Move
+STRING 1179  Delete
+STRING 1180  Steps
+STRING 1181  Amplitude
+STRING 1182  Offset
+STRING 1183  Period
+STRING 1184  Reset 
+STRING 1185  Reset
+STRING 1186  Red
+STRING 1187  Green
+STRING 1188  Blue
+STRING 1189  Reset
+STRING 1190  Amplitude
+STRING 1191  Offset
+STRING 1192  Period
+STRING 1193  Add
+STRING 1194  Move
+STRING 1195  Delete
+STRING 1196  Reset
+STRING 1197  Level
+STRING 1198  Threshold
+STRING 1199  Level
+STRING 848  Load
+STRING 849  Sawtooth
+STRING 850  Step
+STRING 851  Scale
+STRING 852  Period
+STRING 853  Offset
+STRING 854  Amplitude
+STRING 855  Options
+STRING 856  Detectors
+STRING 857  Aux
+STRING 858  Connections
+STRING 859  Engineer
+STRING 860  UserPassword
+STRING 861  EngPassword
+STRING 862  Factory
+STRING 863  Stage
+STRING 1200  Threshold
+STRING 1201  LoadLUT
+STRING 1202  SaveLUT
+STRING 1203  atPoint
+STRING 1204  Reset
+STRING 1205  1
+STRING 1206  2
+STRING 1207  Help
+STRING 1208  Help
+STRING 1209  1
+STRING 1210  2
+STRING 1211  Reduced=
+STRING 1212  First
+STRING 1213  Second
+STRING 1214   0,0
+STRING 1215  Pallette
+STRING 1616  Histogram Close
+STRING 1617  Profile Close
+STRING 1618  PC (Windows) Plane On/Off
+STRING 1619  Signal not connected =
+STRING 1620   -> Left Display LUT
+STRING 1621   -> Right Display LUT
+STRING 1622  Select point for grey level
+STRING 1623  Profile width
+STRING 1624   Panel is undefined
+STRING 1625  Create File Directory
+STRING 1626  New File Name
+STRING 1627  OFF
+STRING 1628       Amplitude
+STRING 1629  Fast
+STRING 1630  Image not Frozen
+STRING 1631  Photo to HRRU
+STRING 1744  Macro present
+STRING 1745  Grey Image
+STRING 1746  Colour Image
+STRING 1747  Binary Image
+STRING 1748  Colour Pallette Image
+STRING 1749  Compressed Binary Image
+STRING 1750  Reduced Grey Image
+STRING 1751  Unknown image Type
+STRING 1752  8 bit Grey Image
+STRING 1753  24 bit Colour
+STRING 1754  4 bit Grey Image
+STRING 1755  4 bit Grey planes
+STRING 1756  Unknown data type
+STRING 1757  File name numeric field 
+STRING 1758  This field must be blank or numeric
+STRING 1759  Default Name 
+STRING 752  Mode
+STRING 753  Execute
+STRING 754  Move
+STRING 755  Edit
+STRING 756  Delete
+STRING 757  Reset
+STRING 758  Load Layout
+STRING 759  Save Layout
+STRING 760  Clear Layout
+STRING 761  LEO Messages 
+STRING 762  UIF Trace
+STRING 763  DataZone
+STRING 764  Mnemonics->file
+STRING 765  ANON
+STRING 766  New Panel Title
+STRING 767  New Panel Reference
+STRING 816  ZPanel
+STRING 817  Hide
+STRING 818  Show
+STRING 819  Zone Mag
+STRING 820  Bitmap
+STRING 821  Tag
+STRING 822  Fixed micron
+STRING 823  Suppress Aperture Warning
+STRING 824  Line Profile
+STRING 825  DataZone
+STRING 826  Install
+STRING 827  Edit
+STRING 828  TIFF data
+STRING 829  Profile
+STRING 830  Line Scan brightness
+STRING 831  White
+STRING 1072  Zone 0
+STRING 1073  Zone 1
+STRING 1074  Zone 2
+STRING 1075  Zone 3
+STRING 1076  Zone 4
+STRING 1077  Zone 5
+STRING 1078  Zone 6
+STRING 1079  Zone 7
+STRING 1080  Zone 0
+STRING 1081  Zone 1
+STRING 1082  Zone 2
+STRING 1083  Zone 3
+STRING 1084  Zone 4
+STRING 1085  Zone 5
+STRING 1086  Zone 6
+STRING 1087  Zone 7
+STRING 1040  AUX5
+STRING 1041  AUX6
+STRING 1042  AUX7
+STRING 1043  AUX8
+STRING 1044  AUX9
+STRING 1045  LogFile
+STRING 1046  Flush
+STRING 1047  Archive
+STRING 1049  Attributes
+STRING 1050  50 mV Unipolar
+STRING 1051  100 mV Bipolar
+STRING 1052  700 mV Unipolar
+STRING 1053  1.0 Volt Unipolar
+STRING 1054  Undefined
+STRING 1055  Link selection
+STRING 1088  Jan
+STRING 1089  Feb
+STRING 1090  Mar
+STRING 1091  Apr
+STRING 1092  May
+STRING 1093  Jun
+STRING 1094  Jul
+STRING 1095  Aug
+STRING 1096  Sep
+STRING 1097  Oct
+STRING 1098  Nov
+STRING 1099  Dec
+STRING 1100  Defaults
+STRING 1101  Font
+STRING 1103  Text FG
+STRING 1104  Text BG
+STRING 1105  Text Style
+STRING 1106  Panel Colour
+STRING 1107  Line Style
+STRING 1108  Line Width
+STRING 1109  Line Colour
+STRING 1110  Transparent
+STRING 1111  Set Pixel Averaging Rate
+STRING 1112  Inhibit Beam shift below Mag
+STRING 1113  Aperture data
+STRING 1114  No. 
+STRING 1115  Dia. 
+STRING 1116  Carrier Position
+STRING 1117  Inner
+STRING 1118  Contaminated
+STRING 1119  Middle
+STRING 1120  Modify Item
+STRING 1121  Modify All
+STRING 1122  Recommended Aperture = 
+STRING 1123  Tables
+STRING 1124  Calibration Enable
+STRING 1125  Override User Password
+STRING 1126  Cancel User Password
+STRING 1127  Save NVRAM on exit
+STRING 1128  Save Output Calibration
+STRING 1129  C1 polepiece =
+STRING 1130  C2 polepiece =
+STRING 1131  X-Ray Input Definition
+STRING 1132  Cable-pin
+STRING 1133  X-Ray Name
+STRING 1134  TIFF file selection
+STRING 1135  Info..
+STRING 912  Invalid item type! 
+STRING 913  Disabled - 
+STRING 914  Enter new value :
+STRING 915  Select Directory for own files 
+STRING 916  Select point for adjustment
+STRING 917  Select panel/overlay to save
+STRING 918  Not an Annotation file!
+STRING 919   Format Error! 
+STRING 920  Integer expected! 
+STRING 921   Unrecognised item 
+STRING 922  Select panel to lock
+STRING 923  Select panel to unlock
+STRING 924  Exceeded number of permitted items 
+STRING 925  is not optimum
+STRING 926  SEM is still running and inhibits close.
+STRING 927  First Shutdown SEM from Leo System Menu 
+STRING 864  Joystick
+STRING 865  Goto
+STRING 866  Re-Map
+STRING 867  Record
+STRING 868  Clear
+STRING 869  Mark
+STRING 870  Labels..
+STRING 871  Plot
+STRING 872  Hide
+STRING 873  First
+STRING 874  Next
+STRING 875  Save..
+STRING 876  Load..
+STRING 877  Stage Map
+STRING 878  CloseMap
+STRING 879  Mag Table
+STRING 1264  Modify
+STRING 1265  Stop
+STRING 1266  Execute
+STRING 1267  Remove
+STRING 1268  Command
+STRING 1269  Digital
+STRING 1270  Analogue
+STRING 1271  Co-ord
+STRING 1272  StageGoto
+STRING 1273  Wait For
+STRING 1274  Confirm
+STRING 1275  Message
+STRING 1276  Comment
+STRING 1277  Config
+STRING 1278  Setup
+STRING 1279  Gun Conditions
+STRING 1280  App Conditions
+STRING 1281  Input LUT
+STRING 1282  Display LUT
+STRING 1283  Delay
+STRING 1284  ShowPanel
+STRING 1285  HidePanel
+STRING 1286  Library
+STRING 1287  Load
+STRING 1288  Save
+STRING 1289  Load Standard
+STRING 1290  Continue
+STRING 1291  Help
+STRING 1292  Function
+STRING 1293  Save As Text
+STRING 1294  ControlStructures..
+STRING 1295  While 
+STRING 1296  End While
+STRING 1297  If then
+STRING 1298  Else
+STRING 1299  End If
+STRING 1300  Macro
+STRING 1301  Stop
+STRING 1302  Do Installed
+STRING 1303  Do File
+STRING 1304  Save conditions
+STRING 1305  Define
+STRING 1306  While Not 
+STRING 1307  If Not Then 
+STRING 1308  Instructions
+STRING 1309  Pause
+STRING 1310  Sel ?
+STRING 1311  Macro
+STRING 1056  Reduced raster
+STRING 1057  Beam Blank when All Frozen
+STRING 1058  When Emission imaging
+STRING 1059  Auto Level (Peak)
+STRING 1060  Signal
+STRING 1061  Requirements
+STRING 1062  None
+STRING 1063  Any PM
+STRING 1064  PM 1
+STRING 1065  PM 2
+STRING 1066  PM 3
+STRING 1067  BSD Amp.
+STRING 1068  SCM Amp.
+STRING 1069  Cross Hairs
+STRING 1070  Connector 
+STRING 1024  Auxiliary 6                   (Aux6)
+STRING 1025  Auxiliary 7                   (Aux7)
+STRING 1026  Auxiliary 8                   (Aux8)
+STRING 1027  Auxiliary 9                   (Aux9)
+STRING 1028  InLens
+STRING 1029  SE2
+STRING 1030  QBSD
+STRING 1031  RBSD
+STRING 1032  SCM
+STRING 1033  CATHODO
+STRING 1034  TRANS
+STRING 1035  TV
+STRING 1036  AUX1
+STRING 1037  AUX2
+STRING 1038  AUX3
+STRING 1039  AUX4
+STRING 736  Save Panel
+STRING 737  SaveAs Panel
+STRING 738  Install Panel
+STRING 739  Edit Panel
+STRING 740  Rename Panel
+STRING 741  Remove Panel
+STRING 742  Functions
+STRING 743  EO
+STRING 744  Nav Box
+STRING 745  SelNav
+STRING 746  SelShare
+STRING 747  ShareScroll
+STRING 748  Text
+STRING 749  Size
+STRING 750  Parameters
+STRING 751  Panel Buttons
+STRING 1584   Select corner 2:Rbutton=undo
+STRING 1585   Select corner 1:Rbutton=Cancel
+STRING 1586  :Rbutton=Cancel
+STRING 1587  Goto
+STRING 1588  Preview conditions
+STRING 1589  Stage Move Window
+STRING 1590  Histogram
+STRING 1591  Ymod
+STRING 1592  Profile
+STRING 1593  Mouse Mag/Focus
+STRING 1594  Mouse Brightness/Contrast
+STRING 1595  Centre Point
+STRING 1596  EHT/Probe current
+STRING 1597  Restore Conditions
+STRING 1598  Take Photo 
+STRING 1599  Photo Set up
+STRING 1600  TIFF import
+STRING 1601  TIFF export
+STRING 1602  TIFF import setup
+STRING 1603  X-Ray setup
+STRING 1604  Centre Feature
+STRING 1605  Spot Mode
+STRING 1606  Frame Average
+STRING 1607  Line Average
+STRING 1608  Nav. Box
+STRING 1609  Stage Map Window
+STRING 1610  Stage:Mark Position
+STRING 1611  Stage:Goto First mark
+STRING 1612  Stage:Goto Next mark
+STRING 1613  Wait for centre function
+STRING 1614  Preview conditions
+STRING 1615  Wait for Import/Export dialog 
+STRING 976  Enter new Name
+STRING 977  Macro has been modified, changes will be lost
+STRING 978  Condition incorrect, Proceed?
+STRING 979  Conditions file not found 
+STRING 980  File for Left Display LUT
+STRING 981  File for Right Display LUT
+STRING 982  Select point to be centred
+STRING 983  Select first corner (Right button cancels)
+STRING 984  Select other corner (Right button cancels)
+STRING 985  Rbutton cancels
+STRING 986  Refresh Errors
+STRING 987  Refresh Warnings
+STRING 988  Clear message window
+STRING 989  Popup on Warning
+STRING 990  Help
+STRING 991  Acknowledge on event
+STRING 928  SEM Closing Down
+STRING 929  Detector not configured
+STRING 930  Detector output =
+STRING 931  Connector in use
+STRING 932  Connector signal undefined
+STRING 933   is not used by detector
+STRING 934  Undefined requirements
+STRING 935  User Password
+STRING 936  Enter new password
+STRING 937  Engineer Password
+STRING 938  Enter password
+STRING 939  Password Failure
+STRING 940  You will be restricted
+STRING 941  Factory Password
+STRING 942   Serial Number 
+STRING 943   Undefined 
+STRING 1905  Do you wish to vent even though the stage is not in a safe position for opening chamber door?
+ If you vent use extreme caution in opening chamber door.  
+STRING 1906  Compucentric Stage Movement
+STRING 1907   %d mm contravenes X High Limit
+STRING 1908   %d mm contravenes X Low Limit
+STRING 1909   %d mm contravenes Y High Limit
+STRING 1910   %d mm contravenes Y Low Limit
+STRING 1911   %d mm contravenes Z High Limit
+STRING 1912   %d mm contravenes Z Low Limit
+STRING 1913   %d Deg contravenes T High Limit
+STRING 1914   %d Deg contravenes T Low Limit
+STRING 1915  Requested stage movement ignored.
+
+STRING 1916  Stage is not initialised and may not be in a safe position for opening chamber door.
+ Do you wish to abort venting to initialise the stage.
+
+STRING 1917  If you vent use extreme caution in opening chamber door.  
+STRING 400  Invalid Identifier or READ ONLY 
+STRING 401  CANNOT SET THIS STATE IN THIS CONTEXT
+STRING 402  INVALID STATE VALUE
+STRING 403  Action not permitted -  currently disabled
+STRING 404   ACTION ALREADY TAKEN
+STRING 405  Command not recognised as given by UIF
+STRING 406  Interface is not active
+STRING 407  Timer not available - shut down another application
+STRING 408  EHT comms failed to open/close
+STRING 410  Configuration file read error - using default
+STRING 411  Configuration file write error ,
+STRING 412  Configuration of detectors to connectors inconsistent
+STRING 413  NVRAM data faulty, read from data.vac
+STRING 414  DATA.VAC file faulty, DEFAULT.VAC used
+STRING 415  DEFAULT.VAC faulty, proceed with caution
+STRING 416  Failed to load Overlay Manager
+STRING 417  Failed to load Vac RLM
+STRING 418  Failed to load Stage RLM
+STRING 419  Failed to load Acquire RLM
+STRING 420  Failed to load EO RLM
+STRING 421  Failed to load EHT RLM
+STRING 422  Failed to activate Vac Process
+STRING 423  Failed to activate Stage Process
+STRING 424  Failed to activate Acquire Process
+STRING 425  Failed to activate EO Process
+STRING 426  Failed to activate EHT Process
+STRING 427  Failed to load DSP RLM 
+STRING 428  Failed to activate DSP Process
+STRING 429  Failed to Write NVRAM 
+STRING 430  Failed to write DATA.VAC
+STRING 431  Failed to write NVRAM and DATA.VAC
+STRING 432  Failed to load IMEX RLM
+STRING 433  EHT - Filament Blown
+STRING 434  EHT - Set Tripped
+STRING 435  EHT - Inhibited by Vac System
+STRING 436  EHT - Spurious Reset
+STRING 437  Vacuum Command error
+STRING 438  Vacuum Board -12V failed
+STRING 439  Vacuum Board +12V failed
+STRING 440  Vacuum Board -5V failed
+STRING 441  Vacuum Board +5V failed
+STRING 442  Invalid Stage Command
+STRING 443  Stage Command Error
+STRING 444  Stage X -15V failed
+STRING 445  Stage X +15V failed
+STRING 446  Stage Y -15V failed
+STRING 447  Stage Y +15V failed
+STRING 448  Stage Z -15V failed
+STRING 449  Stage Z +15V failed
+STRING 450  Brightness RLM failed to load
+STRING 451  Brightness RLM failed to initialise
+STRING 452  Acquire command error
+STRING 453  Imex failed to initialise
+STRING 454  HRRU command error
+STRING 455  Vacuum System Leak detected
+STRING 456  Vacuum system Penning Gauge Failure
+STRING 457  Write TIFF header Error
+STRING 458  Write TIFF Directory Error
+STRING 459  Write TIFF Image Error
+STRING 460  Read TIFF header Error
+STRING 461  Read TIFF directory Error
+STRING 462  Read TIFF image Error
+STRING 463  TIFF file error
+STRING 464  TIFF image select error
+STRING 465  TIFF parameter memory lock/size error
+STRING 466  Clipboard conversion memory error
+STRING 467  Clipboard bitmap create error
+STRING 468  Open clipboard error
+STRING 469  No bitmap in clipboard
+STRING 470  Clipboard fetch failed
+STRING 471  Clipboard - unknown bitmap type
+STRING 472  Clipboard - bitmap data error
+STRING 473  Image Import/export - get context failed
+STRING 474  Invalid Parameter received by EHT set
+STRING 475  Parameter range error from EHT set
+STRING 476  EHT set internal fault
+STRING 477  EHT set comms timeout
+STRING 478  Unknown command received by EHT set
+STRING 479  Vacuum subsystem is in local mode
+STRING 480  Cannot print Colour TIFF file
+STRING 481  HRRU photo completed
+STRING 482  Stage X axis low outer limit hit
+STRING 483  Stage X axis low inner limit hit
+STRING 484  Stage X axis low user limit hit
+STRING 485  Stage X axis high user limit hit
+STRING 486  Stage X axis high inner limit hit
+STRING 487  Stage X axis high outer limit hit
+STRING 488  Stage Y axis low outer limit hit
+STRING 489  Stage Y axis low inner limit hit
+STRING 490  Stage Y axis low user limit hit
+STRING 491  Stage Y axis high user limit hit
+STRING 492  Stage Y axis high inner limit hit
+STRING 493  Stage Y axis high outer limit hit
+STRING 494  Stage Z axis low outer limit hit
+STRING 495  Stage Z axis low inner limit hit
+STRING 496  Stage Z axis low user limit hit
+STRING 497  Stage Z axis high user limit hit
+STRING 498  Stage Z axis high inner limit hit
+STRING 499  Stage Z axis high outer limit hit
+STRING 501  Stage Touching
+STRING 502  Gun Valve position incorrect
+STRING 503  Chamber column valve position incorrect
+STRING 504  EDX system window position incorrect
+STRING 505  Airlock Gate valve position incorrect
+STRING 506  WDX system gate valve position incorrect
+STRING 507  Disk space is low - housekeeping required
+STRING 508  Disk space is critical - free some space immediately
+STRING 509  Stage T axis low outer limit hit
+STRING 510  Stage T axis low inner limit hit
+STRING 511  Stage T axis low user limit hit
+STRING 512  Stage T axis high user limit hit
+STRING 513  Stage T axis high inner limit hit
+STRING 514  Stage T axis high outer limit hit
+STRING 515  Stage Tilt -15V failed
+STRING 516  Stage Tilt +15V failed
+STRING 517  Stage Rotate -15V failed
+STRING 518  Stage Rotate +15V failed
+STRING 519  EHT Set Extractor Trip
+STRING 520  EHT Set Emergency Rundown
+STRING 521  Failure in setting C1 table
+STRING 522  VACC reset to VACC_PANIC
+STRING 523  VEXT reset to VEXT_PANIC
+STRING 524  Tip position calibration lost
+STRING 525  ZTIP reset to ZTIP_PANIC
+STRING 526  No possible focus voltage
+STRING 527  No possible focus position (VHIGH)
+STRING 528  No possible focus position (VLOW)
+STRING 529  conjugate beam-blanking impossible
+STRING 530  Invalid gun align mode
+STRING 531  Invalid calibration mode
+STRING 532  Invalid Optibeam event
+STRING 533  Limit on stored messages reached
+STRING 534  No terms in polynomial
+STRING 535  There is no possible position for C1 crossover
+STRING 536  There is no possible position for C2 crossover
+STRING 537  Error in setting lenses for gun alignment
+STRING 538  Error in IP_X1_X2
+STRING 539  Error 1 in CALC_NEW_EXC
+STRING 540  Error 2 in CALC_NEW_EXC
+STRING 541  Error 1 in SET_LIMITS
+STRING 542  Error 2 in SET_LIMITS
+STRING 543  Failure in setting up for lens calibration
+STRING 544  Invalid parameters at initialisation
+STRING 545  Default Printer: Out of memory
+STRING 546  Default Printer: General print error
+STRING 547  Default Printer: Out of disk space
+STRING 548  Default Printer: Not configured
+STRING 549  EHT Set spurious status 
+STRING 550  HPApp failed to start
+STRING 551  HPApp Response Error
+STRING 552  HPApp Closed Unexpectedly
+STRING 553  HPApp Hung Up Error
+STRING 554  VP Control Spurious Reset
+STRING 555  VP Control Comms Error
+STRING 556  VP Turbo Isolation Valve Error 1
+STRING 557  VP Turbo Isolation Valve Opening Timeout
+STRING 558  VP Turbo Isolation Valve Closing Timeout
+STRING 559  VP Turbo Isolation Valve Error 4
+STRING 560  VP Foreline Valve Error 1
+STRING 561  VP Foreline Valve Opening Timeout
+STRING 562  VP Foreline Valve Closing Timeout
+STRING 563  VP Foreline Valve Error 4
+STRING 564  VP Target Pressure Timeout
+STRING 565  VP Monitor Fault 1
+STRING 566  VP Monitor Fault 2
+STRING 567  VP Mode Transition Timeout
+STRING 568  VP Pirani gauge Error
+STRING 569  VP Hardware Reverse Error
+STRING 570  VP Control Unknown Error
+STRING 571  Image Access - memory error
+STRING 572  Image Access - error writing temporary file
+STRING 573  Image Access - error reading temporary file
+STRING 574  Image Import/Export - error creating temporary file
+STRING 575  Image Import/Export - error writing temporary file
+STRING 576  Image Import/Export - error reading temporary file
+STRING 577  Image Import/Export - Unsupported bitmap format
+STRING 578  CAN BUS Buffer overflow - Notify Leo Software Department
+STRING 579  CAN BUS bus error
+STRING 580  CAN BUS message error
+STRING 581  The Stage is not initialised.
+ Unable to move to lower Z position.
+STRING 582  Stage Command Overrun Error
+STRING 583  Stage Board Too Hot
+STRING 584  Stage Board Temperature returned to Normal
+STRING 585  Stage M +15V failed
+STRING 586  Stage M -15V failed
+STRING 587  Stage M axis low outer limit hit
+STRING 588  Stage M axis low inner limit hit
+STRING 589  Stage M axis low user limit hit
+STRING 590  Stage M axis high user limit hit
+STRING 591  Stage M axis high inner limit hit
+STRING 592  Stage M axis high outer limit hit
+STRING 593  Water flow has failed
+STRING 594  Water flow resumed
+STRING 595  Electron Optics Board Too Hot
+STRING 596  Electron Optics Board Temperature returned to Normal
+STRING 597  JPEG Initialisation failed
+STRING 598  JPEG Conversion failed
+STRING 599  JPEG internal error
+STRING 600  LEO recommends that chamber pressures should not exceed 275 Pa with Column Pumping is use.
+ Using higher pressures for an extended period may seriously reduce the life of LaB6 filaments.
+ High pressures may also reduce the life of the ion pump.

@@ -1,0 +1,163 @@
+' leosync.exe: Visual Basic 3 p-code, decompiled by tools/vb3-pcode.ps1 (do not edit; regenerate)
+' Names in this file: control and event names come from the exe's form resources and the VB3 / VBX class
+' lists; DLL names from the Declare records; names marked in tools/vb3/leosync.names.csv were given by hand.
+' L_xxxx = local, G_xxxx = module variable, K_xxxx = constant, P_xxxx = parameter (operand offsets in hex).
+' Form 'Form1' controls: 0=Form1, 1=Quit, 2=Frame3D1, 3=HSyncSpin, 4=HSyncLabel, 5=Frame3D2, 6=VSyncLabel, 7=VSyncSpin
+' Declare record 0x0170: TunePCtoTiga (library C:\WINDOWS\SYSTEM\TIGASEM.DLL.DLL)
+' Declare record 0x01A8: ReadHcnt (library C:\WINDOWS\SYSTEM\TIGASEM.DLL.DLL)
+' Declare record 0x01E0: ReadVcnt (library C:\WINDOWS\SYSTEM\TIGASEM.DLL.DLL)
+' Declare record 0x0218: GetState (library C:\WINDOWS\SYSTEM\M007.DLL)
+' Declare record 0x0250: GetSystemDirectory (library Kernel.)
+' Declare record 0x0288: WinExec (library Kernel.)
+' Declare record 0x02C0: GetModuleHandle (library Kernel.)
+' Declare record 0x02F8: GetModuleUsage (library Kernel.)
+
+' ---- segment 4 0x0000-0x037E, procedure record 0x00C8
+Function CheckUI() As Integer  ' named by hand: asks M007.GetState; if it fails, offers to start \LEO\LEO.EXE; result in L_3E (True = UI answers)
+  0000  L_40 = GetState(G_22, G_30)
+  001A  If Not (L_40 <> 0) Then GoTo L_36A
+  0028  If Not (G_38 = G_20) Then GoTo L_208
+  003A  Beep
+  003E  If Not (MsgBox("The LEO User Interface is not active!" & Chr$(10) & Chr$(10) & Chr$(13) & "Click OK to load the User Interface...", 17, "LEO 400 Series PC Plane Sync (" & AppVersion & ")") = G_1C) Then GoTo L_114
+  0102  CheckUI = 0
+  010A  GoTo L_378   ' leave
+L_0114:
+  0114  If Not (WinExec(G_32 & "\LEO\LEO.EXE " & G_32 & "\LEO\LEO.IMA", G_2C) < 32) Then GoTo L_1F4
+  017C  Beep
+  0180  MsgBox "Failed to load LEO User Interface!", 16, "LEO 400 Series PC Plane Sync (" & AppVersion & ")"
+  01EE  GoTo L_202
+L_01F4:
+  01F4  G_38 = G_1E
+L_0202:
+  0202  GoTo L_35C
+L_0208:
+  0208  If Not (G_38 = G_1E) Then GoTo L_2E0
+  021A  Beep
+  021E  MsgBox "The User Interface is not yet loaded!" & Chr$(10) & Chr$(10) & Chr$(13) & "Please wait for the User Interface to load...", 16, "LEO 400 Series PC Plane Sync (" & AppVersion & ")"
+  02DA  GoTo L_358
+L_02E0:
+  02E0  Beep
+  02E4  MsgBox "The User Interface is not responding!", 16, "LEO 400 Series PC Plane Sync (" & AppVersion & ")"
+L_0358:
+L_035C:
+  035C  CheckUI = 0
+  0364  GoTo L_376
+L_036A:
+  036A  CheckUI = True
+L_0376:
+L_0378:
+  0378  End Function
+
+' ---- segment 4 0x037E-0x045C, procedure record 0x0100
+Sub AdjustH(Delta As Integer)  ' named by hand: adds Delta to the H offset with wrap-around 0..&HFFFF, shows it in hex, sends both offsets with TunePCtoTiga
+  037E  L_44 = "0000"
+  0392  L_46 = HOffset
+  039E  L_46 = L_46 + Delta
+  03B0  If Not (L_46 > &HFFFF&) Then GoTo L_3D2
+  03C4  HOffset = 0
+  03CC  GoTo L_40A
+L_03D2:
+  03D2  If Not (L_46 = -1) Then GoTo L_3F6
+  03E6  HOffset = -1
+  03F0  GoTo L_406
+L_03F6:
+  03F6  HOffset = L_46
+L_0406:
+L_040A:
+  040A  L_44 = L_44 & Hex$(HOffset)
+  041C  L_44 = Right$(L_44, 4)
+  042C  Form1!HSyncLabel.Caption = L_44
+  0440  Call TunePCtoTiga(HOffset, VOffset)
+  0454  End Sub
+
+' ---- segment 4 0x045C-0x053A, procedure record 0x0138
+Sub AdjustV(Delta As Integer)  ' named by hand: same for the V offset
+  045C  L_4E = "0000"
+  0470  L_50 = VOffset
+  047C  L_50 = L_50 + Delta
+  048E  If Not (L_50 > &HFFFF&) Then GoTo L_4B0
+  04A2  VOffset = 0
+  04AA  GoTo L_4E8
+L_04B0:
+  04B0  If Not (L_50 = -1) Then GoTo L_4D4
+  04C4  VOffset = -1
+  04CE  GoTo L_4E4
+L_04D4:
+  04D4  VOffset = L_50
+L_04E4:
+L_04E8:
+  04E8  L_4E = L_4E & Hex$(VOffset)
+  04FA  L_4E = Right$(L_4E, 4)
+  050A  Form1!VSyncLabel.Caption = L_4E
+  051E  Call TunePCtoTiga(HOffset, VOffset)
+  0532  End Sub
+
+' ---- segment 5 0x0000-0x0082, procedure record 0x0370, Form1 event Load of Form1 (Form, slot 6 of 23)
+Sub Form1_Load()
+  0000  Form1.Caption = Form1.Caption + G_20
+  0012  If Not (CheckUI() = True) Then GoTo L_6E
+  0024  HOffset = 0
+  002C  VOffset = 0
+  0034  Call AdjustH(ReadHcnt())
+  004E  Call AdjustV(ReadVcnt())
+  0068  GoTo L_7A
+L_006E:
+  006E  Unload Form1
+L_007A:
+  007A  End Sub
+
+' ---- segment 5 0x0082-0x014E, procedure record 0x03A8, Form1 event Click of HSyncLabel (Label, slot 1 of 12)
+Sub HSyncLabel_Click()
+  0082  L_32 = InputBox$("Enter New Value in Hex", "H-Count Register", Form1!HSyncLabel.Caption)
+  00D4  If Not (Len(L_32) > 0) Then GoTo L_146
+  00E8  L_32 = "&H" & L_32
+  0100  L_30 = Val(L_32)
+  010E  If Not (L_30 < &HFFFF&) Then GoTo L_142
+  0122  HOffset = 0
+  012A  Call AdjustH(L_30)
+L_0142:
+L_0146:
+  0146  End Sub
+
+' ---- segment 5 0x014E-0x016C, procedure record 0x03E0, Form1 event SpinDown of HSyncSpin (SpinButton, slot 2 of 4)
+Sub HSyncSpin_SpinDown()
+  014E  Call AdjustH(-1)
+  0160  DoEvents
+  0164  End Sub
+
+' ---- segment 5 0x016C-0x0188, procedure record 0x0418, Form1 event SpinUp of HSyncSpin (SpinButton, slot 3 of 4)
+Sub HSyncSpin_SpinUp()
+  016C  Call AdjustH(1)
+  017C  DoEvents
+  0180  End Sub
+
+' ---- segment 5 0x0188-0x0198, procedure record 0x0450, Form1 event Click of Quit (CommandButton, slot 0 of 11)
+Sub Quit_Click()
+  0188  Unload Form1
+  0190  End Sub
+
+' ---- segment 5 0x0198-0x0264, procedure record 0x0488, Form1 event Click of VSyncLabel (Label, slot 1 of 12)
+Sub VSyncLabel_Click()
+  0198  L_36 = InputBox$("Enter New Value in Hex", "V-Count Register", Form1!VSyncLabel.Caption)
+  01EA  If Not (Len(L_36) > 0) Then GoTo L_25C
+  01FE  L_36 = "&H" & L_36
+  0216  L_34 = Val(L_36)
+  0224  If Not (L_34 < &HFFFF&) Then GoTo L_258
+  0238  VOffset = 0
+  0240  Call AdjustV(L_34)
+L_0258:
+L_025C:
+  025C  End Sub
+
+' ---- segment 5 0x0264-0x0282, procedure record 0x04C0, Form1 event SpinDown of VSyncSpin (SpinButton, slot 2 of 4)
+Sub VSyncSpin_SpinDown()
+  0264  Call AdjustV(-1)
+  0276  DoEvents
+  027A  End Sub
+
+' ---- segment 5 0x0282-0x029E, procedure record 0x04F8, Form1 event SpinUp of VSyncSpin (SpinButton, slot 3 of 4)
+Sub VSyncSpin_SpinUp()
+  0282  Call AdjustV(1)
+  0292  DoEvents
+  0296  End Sub
+

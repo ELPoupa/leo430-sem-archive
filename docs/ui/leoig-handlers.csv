@@ -1,0 +1,6 @@
+﻿"Message","Kind","Id","Menu","Handler","Function","ServerCalls","Imports","Text"
+"PM_PARAMETER_NOTIFY","registered","","","0x1001593D","FUN_1001593d","","",""
+"PM_USER_PREFERENCES_CHANGED","registered","","","0x1001594C","FUN_1001594c","","","IMAGE GALLERY | FILENAME FILTER | French | German | ???????"
+"PM_SEM_CLOSE","registered","","","0x10015B99","FUN_10015b99","","",""
+"LEOIG_CONTEXT_HELP","registered","","","0x1001B861","FUN_1001b861","","",""
+"WM_HELPHITTEST","","","","0x1001B87B","FUN_1001b87b","","",""

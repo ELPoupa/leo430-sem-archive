@@ -1,0 +1,493 @@
+﻿=== MENU 211 (lang 0809)
+  [&Import/Export]
+  [Annotation]
+    316  &Select All Seen
+    ----
+    332  &Delete All Seen
+    ----
+    [Hide]
+      330  Selected Objects	Ctrl+H
+      322  Standard Annotation
+      323  Measurement Annotation
+      338  Data Zone Annotation
+      324  Image Selection Area(s)
+      352  Selection Handles
+      351  Results Panels
+      325  All
+    [Unhide]
+      326  Standard Annotation
+      327  Measurement Annotation
+      328  Image Selection Area(s)
+      339  Data Zone Annotation
+      354  Selection Handles
+      353  Results Panels
+      329  All	Ctrl+U
+    ----
+    331  Recover All Off-Screen
+    ----
+    395  Annotation Options...
+  ----
+  [Send to]
+    302  &TIFF File...
+    629  BMP File..
+    630  JPEG File...
+    334  &Clipboard...
+    303  &Printer...
+    337  &HRRU...
+    640  Video Printer
+  301  &Import TIFF...
+  ----
+  347  User Calibration Enable
+  ----
+  631  Reset Display LUT
+=== MENU 212 (lang 0809)
+  [&Edit]
+  [Properties]
+  260  (None)
+=== MENU 213 (lang 0809)
+  [&Utilities]
+  [Commands]
+    501  &Normal
+    502  &Reduced
+    503  &Split
+    504  &Quad
+  ----
+  [Send to]
+    302  &TIFF File...
+    629  BMP File...
+    630  JPEG File...
+    334  &Clipboard...
+    303  &Printer...
+    337  &HRRU...
+    640  Video Printer
+    643  &2nd Image Window
+  301  &Import TIFF...
+  ----
+  347  User Calibration Enable
+  ----
+  631  Reset Display LUT
+=== DIALOG 1 "About Image Manager" (4 controls)
+  -1  STATIC  "#1"
+  201  STATIC  "Version inserted by software"
+  -1  STATIC  "Copyright © 1997-1999,  LEO Electron Microscopy Ltd"
+  1  BUTTON  "OK"
+=== DIALOG 100 "" (0 controls)
+=== DIALOG 104 "Save" (26 controls)
+  241  BUTTON  "Whole"
+  242  BUTTON  "Centre"
+  244  BUTTON  "Annotation"
+  245  BUTTON  "Overlay"
+  340  BUTTON  "Colour Merge"
+  247  EDIT  ""
+  248  LISTBOX  ""
+  249  BUTTON  "Save"
+  -1  BUTTON  "User Text"
+  -1  BUTTON  "Area"
+  -1  BUTTON  "Merge"
+  -1  BUTTON  "File Name"
+  243  EDIT  ""
+  357  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  -1  STATIC  "X"
+  -1  STATIC  "Y"
+  370  EDIT  ""
+  371  EDIT  ""
+  -1  BUTTON  "Dimensions"
+  -1  STATIC  "W"
+  -1  STATIC  "H"
+  372  EDIT  ""
+  373  EDIT  ""
+  246  BUTTON  "Set"
+  388  BUTTON  "Change Directory"
+  389  BUTTON  "Wide File List"
+=== DIALOG 105 "Settings" (17 controls)
+  -1  BUTTON  "Image"
+  250  BUTTON  "Grey"
+  251  BUTTON  "24 Bit Colour *"
+  252  BUTTON  "As Seen"
+  253  BUTTON  "Pallette"
+  -1  STATIC  "Reduction"
+  254  COMBOBOX  ""
+  -1  BUTTON  "Filename"
+  -1  STATIC  "Format"
+  256  COMBOBOX  ""
+  -1  STATIC  "No. Digits"
+  255  COMBOBOX  ""
+  -1  STATIC  "Next"
+  257  EDIT  ""
+  -1  STATIC  "* N.B : This format cannot be loaded back into the SEM Image Store"
+  -1  BUTTON  "JPEG Quality"
+  385  EDIT  ""
+=== DIALOG 106 "Data" (4 controls)
+  259  BUTTON  "Add"
+  260  BUTTON  "Remove"
+  -1  STATIC  "Current Selection :"
+  258  LISTBOX  ""
+=== DIALOG 112 "Load" (28 controls)
+  263  LISTBOX  ""
+  -1  BUTTON  "File information"
+  -1  STATIC  "Type"
+  -1  STATIC  "Width"
+  -1  STATIC  "Height"
+  266  STATIC  "Grey"
+  267  STATIC  "0"
+  268  STATIC  "0"
+  -1  BUTTON  "Load at"
+  271  BUTTON  "Centre"
+  272  BUTTON  "Origin"
+  -1  STATIC  "X"
+  -1  STATIC  "Y"
+  269  EDIT  ""
+  270  EDIT  ""
+  -1  BUTTON  "User Text"
+  -1  BUTTON  "Image Reduction"
+  254  COMBOBOX  ""
+  264  BUTTON  "Load"
+  276  BUTTON  "X,Y"
+  343  BUTTON  "Step Frame"
+  357  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  273  BUTTON  "Image Gallery"
+  386  BUTTON  "Fit to image"
+  393  BUTTON  "Image Store"
+  387  BUTTON  "Change Directory"
+  389  BUTTON  "Wide File List"
+  265  EDIT  ""
+=== DIALOG 113 "Standard Data" (6 controls)
+  275  STATIC  "Operating Mode = Normal"
+  -1  STATIC  "Zone 0"
+  273  LISTBOX  ""
+  -1  STATIC  "Zone 1"
+  274  LISTBOX  ""
+  345  STATIC  "File Not Selected"
+=== DIALOG 114 "User Data" (2 controls)
+  272  LISTBOX  ""
+  346  STATIC  "File Not Selected"
+=== DIALOG 116 "Copy" (23 controls)
+  282  BUTTON  "Copy"
+  -1  BUTTON  "Image"
+  288  BUTTON  "As seen"
+  -1  STATIC  "Reduction"
+  289  COMBOBOX  ""
+  -1  BUTTON  "Merge"
+  285  BUTTON  "Annotation"
+  286  BUTTON  "Overlay"
+  339  BUTTON  "Colour Merge"
+  -1  BUTTON  "Area"
+  283  BUTTON  "Whole"
+  284  BUTTON  "Centre"
+  357  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  -1  STATIC  "X"
+  -1  STATIC  "Y"
+  375  EDIT  ""
+  376  EDIT  ""
+  -1  BUTTON  "Dimensions"
+  -1  STATIC  "W"
+  -1  STATIC  "H"
+  377  EDIT  ""
+  378  EDIT  ""
+  374  BUTTON  "Set"
+=== DIALOG 117 "Paste" (20 controls)
+  290  BUTTON  "Paste"
+  -1  BUTTON  "File information"
+  -1  STATIC  "Type"
+  -1  STATIC  "Width"
+  -1  STATIC  "Height"
+  -1  BUTTON  "Image Reduction"
+  299  COMBOBOX  ""
+  -1  BUTTON  "Load at"
+  291  BUTTON  "Centre"
+  292  BUTTON  "Origin"
+  293  BUTTON  "X,Y"
+  -1  STATIC  "X"
+  -1  STATIC  "Y"
+  294  EDIT  ""
+  295  EDIT  ""
+  298  STATIC  "Grey"
+  297  STATIC  "0"
+  296  STATIC  "0"
+  342  BUTTON  "Step Frame"
+  357  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+=== DIALOG 119 "Photo" (10 controls)
+  300  BUTTON  "Photo"
+  323  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  324  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  325  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  322  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+  306  msctls_progress32  "Progress1"
+  327  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  307  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  -1  BUTTON  "Timer"
+  357  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+=== DIALOG 120 "Selection" (7 controls)
+  308  BUTTON  "Overlay"
+  309  BUTTON  "Annotation"
+  323  {F8BEBA63-8E0A-11CF-BBF2-0020AF71E433}  ""
+  324  {F8BEBA63-8E0A-11CF-BBF2-0020AF71E433}  ""
+  325  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  -1  BUTTON  "Exposure"
+  380  BUTTON  "As Seen"
+=== DIALOG 121 "Settings" (7 controls)
+  326  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  327  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  328  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  329  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  330  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  309  {EF2ED2A4-893C-11CF-A9A8-00608C5D307B}  ""
+  435  {A53617E4-86FC-11CF-A9A8-00608C5D307B}  ""
+=== DIALOG 204 "" (0 controls)
+=== DIALOG 213 "Annotation Caption" (23 controls)
+  353  EDIT  ""
+  203  EDIT  ""
+  3  BUTTON  "Undo"
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  204  BUTTON  "µ"
+  205  BUTTON  "±"
+  210  BUTTON  "°"
+  206  BUTTON  "º"
+  207  BUTTON  "¹"
+  208  BUTTON  "²"
+  209  BUTTON  "³"
+  211  BUTTON  "©"
+  212  BUTTON  "®"
+  213  BUTTON  "Time Now"
+  214  BUTTON  "Date Now"
+  356  BUTTON  "User Name"
+  354  msctls_trackbar32  "Slider1"
+  351  BUTTON  "Enabled"
+  4294967295  BUTTON  "Word Wrap"
+  4294967295  BUTTON  "Caption"
+  4294967295  BUTTON  "Insert into Caption"
+  4  BUTTON  "Insert New"
+=== DIALOG 214 "Line Settings" (10 controls)
+  211  EDIT  ""
+  210  msctls_updown32  "Spin2"
+  212  COMBOBOX  ""
+  4294967295  BUTTON  "Line"
+  4294967295  STATIC  "Width"
+  4294967295  STATIC  "Style"
+  4294967295  STATIC  "Colour"
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  217  STATIC  ""
+=== DIALOG 216 "Brush Settings" (7 controls)
+  4294967295  BUTTON  "Brush"
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  4294967295  STATIC  "Colour"
+  218  STATIC  ""
+  219  COMBOBOX  ""
+  4294967295  STATIC  "Style"
+=== DIALOG 220 "Annotation SEM Parameter" (6 controls)
+  262  STATIC  "Please Select an SEM Parameter"
+  221  COMBOBOX  ""
+  261  LISTBOX  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  394  STATIC  "N.B: Double Click a Parameter to Create it Immediately"
+=== DIALOG 221 "Annotation Micron Measurement" (4 controls)
+  203  EDIT  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  4294967295  BUTTON  "Value in Microns"
+=== DIALOG 222 "Print Setup" (23 controls)
+  2  BUTTON  "Cancel"
+  4294967295  STATIC  "Printer:"
+  238  STATIC  "Identity"
+  4294967295  BUTTON  "Print"
+  341  BUTTON  "Colour Merge"
+  226  BUTTON  "SEM Overlay"
+  227  BUTTON  "Annotation and Measurement"
+  228  BUTTON  "Top"
+  229  BUTTON  "Middle"
+  230  BUTTON  "Bottom"
+  232  COMBOBOX  ""
+  233  STATIC  "Magnification"
+  234  BUTTON  "Printer"
+  235  BUTTON  "Print"
+  236  BUTTON  "Close"
+  237  BUTTON  "Help"
+  4294967295  BUTTON  "Position"
+  4294967295  BUTTON  "Size"
+  239  BUTTON  "Fit to Page"
+  240  BUTTON  "Zoom"
+  4294967295  STATIC  "Printer Mag  ="
+  4294967295  BUTTON  "Print No."
+  434  EDIT  ""
+=== DIALOG 228 "Grid Settings" (9 controls)
+  4294967295  BUTTON  "Options"
+  277  BUTTON  "Snap to Grid"
+  4294967295  BUTTON  "Spacing"
+  4294967295  STATIC  "Width"
+  4294967295  STATIC  "Height"
+  279  EDIT  ""
+  280  EDIT  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+=== DIALOG 237 "Colour" (6 controls)
+  -1  STATIC  "&Basic colours:"
+  720  STATIC  ""
+  -1  STATIC  "&Solid colours:"
+  721  STATIC  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Close"
+=== DIALOG 238 "Font" (18 controls)
+  1088  STATIC  "&Font:"
+  1136  COMBOBOX  ""
+  1089  STATIC  "Font st&yle:"
+  1137  COMBOBOX  ""
+  1090  STATIC  "&Size:"
+  1138  COMBOBOX  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  1072  BUTTON  "Effects"
+  1040  BUTTON  "Stri&keout"
+  1041  BUTTON  "&Underline"
+  1091  STATIC  "&Color:"
+  1139  COMBOBOX  ""
+  1073  BUTTON  "Sample"
+  1092  STATIC  "AaBbYyZz"
+  1093  STATIC  ""
+  1094  STATIC  "Sc&ript:"
+  1140  COMBOBOX  ""
+=== DIALOG 245 "Annotation SEM TIFF Parameter" (7 controls)
+  347  STATIC  "Please Select an SEM TIFF Parameter"
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  221  COMBOBOX  ""
+  5  BUTTON  "&Add All"
+  6  BUTTON  "&Remove"
+  7  BUTTON  "&Remove All"
+=== DIALOG 246 "" (1 controls)
+  349  BUTTON  "Save Selected Annotation Only"
+=== DIALOG 247 "Reset Properties" (4 controls)
+  350  BUTTON  "Reset Drawing Properties to User Settings"
+  351  BUTTON  "Reset Drawing Properties to Default Settings"
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+=== DIALOG 255 "Measurement Object Results Panel Parameters" (10 controls)
+  368  LISTBOX  ""
+  369  LISTBOX  ""
+  366  BUTTON  "Add"
+  367  BUTTON  "Remove"
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+  4294967295  STATIC  "Current Selection"
+  4294967295  STATIC  "Available Parameters"
+  4294967295  STATIC  "Reduced Display Mode Parameter"
+  384  COMBOBOX  ""
+=== DIALOG 256 "Image Gallery" (1 controls)
+  379  {4FDE2DA3-B63F-11D0-BBF4-0020AF71E433}  ""
+=== DIALOG 262 "Update Frequency" (7 controls)
+  382  EDIT  ""
+  381  msctls_updown32  "Spin2"
+  4294967295  BUTTON  "Update (ms)"
+  4294967295  STATIC  "Interval (ms)"
+  383  BUTTON  "Enabled"
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+=== DIALOG 263 "Save" (26 controls)
+  241  BUTTON  "Whole"
+  242  BUTTON  "Centre"
+  244  BUTTON  "Annotation"
+  245  BUTTON  "Overlay"
+  340  BUTTON  "Colour Merge"
+  247  EDIT  ""
+  248  LISTBOX  ""
+  249  BUTTON  "Save"
+  -1  BUTTON  "User Text"
+  -1  BUTTON  "Area"
+  -1  BUTTON  "Merge"
+  -1  BUTTON  "File Name"
+  243  EDIT  ""
+  357  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  -1  STATIC  "X"
+  -1  STATIC  "Y"
+  370  EDIT  ""
+  371  EDIT  ""
+  -1  BUTTON  "Dimensions"
+  -1  STATIC  "W"
+  -1  STATIC  "H"
+  372  EDIT  ""
+  373  EDIT  ""
+  246  BUTTON  "Set"
+  388  BUTTON  "Change Directory"
+  389  BUTTON  "Wide File List"
+=== DIALOG 264 "Load" (28 controls)
+  263  LISTBOX  ""
+  -1  BUTTON  "File information"
+  -1  STATIC  "Type"
+  -1  STATIC  "Width"
+  -1  STATIC  "Height"
+  266  STATIC  "Grey"
+  267  STATIC  "0"
+  268  STATIC  "0"
+  -1  BUTTON  "Load at"
+  271  BUTTON  "Centre"
+  272  BUTTON  "Origin"
+  -1  STATIC  "X"
+  -1  STATIC  "Y"
+  269  EDIT  ""
+  270  EDIT  ""
+  -1  BUTTON  "User Text"
+  265  STATIC  "None"
+  -1  BUTTON  "Image Reduction"
+  254  COMBOBOX  ""
+  264  BUTTON  "Load"
+  276  BUTTON  "X,Y"
+  343  BUTTON  "Step Frame"
+  357  {E6D6CD83-775B-11CF-A9A8-00608C5D307B}  ""
+  273  BUTTON  "Image Gallery"
+  386  BUTTON  "Fit to image"
+  393  BUTTON  "Image Store"
+  387  BUTTON  "Change Directory"
+  389  BUTTON  "Wide File List"
+=== DIALOG 266 "Standard" (13 controls)
+  421  BUTTON  "Current Standard Annotation Settings"
+  404  BUTTON  "Font..."
+  405  BUTTON  "Line..."
+  423  BUTTON  "Text Background"
+  408  BUTTON  "Transparent"
+  409  BUTTON  "Solid"
+  407  BUTTON  "Colour..."
+  424  BUTTON  "Object Background"
+  412  BUTTON  "Transparent"
+  413  BUTTON  "Solid"
+  411  BUTTON  "Colour..."
+  402  BUTTON  "Reset"
+  -1  STATIC  "Note : These settings do not apply to Measurement Objects or Results Panels"
+=== DIALOG 267 "General" (14 controls)
+  -1  BUTTON  "Automatic Object Settings"
+  396  BUTTON  "Enter Select Mode on New Object"
+  397  BUTTON  "Select Objects on Creation"
+  400  BUTTON  "Apply Object Settings to All Objects"
+  -1  BUTTON  "Snap to Grid"
+  398  BUTTON  "Enable Snap to Grid"
+  399  BUTTON  "Settings"
+  425  BUTTON  "Raster Lines"
+  408  BUTTON  "Line..."
+  -1  BUTTON  "Annotation Options"
+  401  BUTTON  "Load"
+  403  BUTTON  "Save"
+  -1  BUTTON  "Results (Sig.Figs)"
+  436  COMBOBOX  ""
+=== DIALOG 268 "Measurement && Results" (18 controls)
+  426  BUTTON  "Measurement Objects"
+  415  BUTTON  "Font..."
+  409  BUTTON  "Line..."
+  423  BUTTON  "Text Background"
+  410  BUTTON  "Transparent"
+  411  BUTTON  "Solid"
+  428  BUTTON  "Colour..."
+  431  BUTTON  "Reset"
+  427  BUTTON  "Results Panels"
+  414  BUTTON  "Font..."
+  418  BUTTON  "Colour..."
+  424  BUTTON  "Text Background"
+  412  BUTTON  "Transparent"
+  413  BUTTON  "Solid"
+  429  BUTTON  "Colour..."
+  416  BUTTON  "Transparent Background"
+  417  BUTTON  "Solid Background"
+  430  BUTTON  "Reset"
+=== DIALOG 269 "Enter X-Ray Amplitude Scale Factor" (1 controls)
+  433  {F8BEBA63-8E0A-11CF-BBF2-0020AF71E433}  ""

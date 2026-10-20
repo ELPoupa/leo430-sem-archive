@@ -1,0 +1,2 @@
+﻿STRING 0  SEM_INIT
+STRING 1  SEM Init 

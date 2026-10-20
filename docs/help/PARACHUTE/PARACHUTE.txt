@@ -1,0 +1,206 @@
+﻿$#KAbout LEO Parachute
+
+LEO Parachute is a utility designed to facilitate the process of saving and restoring critical files within the LEO-32 operating software. Backing up files on a regular basis ensures that crucial data, including system calibration and user settings, can be recovered in the event of an unforeseen failure.
+
+LEO Parachute provides an easy method for backing up files because the critical files are already defined within the program. It is not necessary to know which files need to be saved, although it is recommended that you do familiarize yourself with these files and their respective locations (paths).
+
+The files (File Set) that get saved are:
+
+access.leo
+config.leo
+data.vac
+L500.ini
+account.mdb (you must have the User Accounting license)
+leo_user.mdb
+system.mda
+
+
+LEO Parachute utilizes a date-based system for saving files during a backup. With each backup the files are saved in folder named with the date the backup occurred. 
+
+For example, a backup taking place on August 12, 1999, would create a folder named “08_12_99”. This permits easy identification of when backups are done and which folder in which to restore from.
+
+You can also save a User directory, which contains user-specific toolbars, macros and saved states.
+
+$#Close all LEO Programs
+
+To preserve file integrity during backups or restores, it is necessary that all LEO-32 programs be closed prior to launching Parachute. This is to protect files that might be opened at the time a backup or restore is taking place.
+
+As a precautionary measure Parachute will scan Windows searching for open LEO applications. If any are found, a warning message will be displayed instructing the user to close the LEO programs and restart Parachute.
+
+Warning Message
+
+{bmc bm0.wmf}
+$#Log On
+
+To start using LEO Parachute you must first enter a user name and password. 
+
+Access to Parachute is restricted to service personnel and SEM users with Supervisor privileges only. User names and passwords are checked against the existing Users list in the LEO Administrator. Logon attempts by unauthorized users will result in a warning message, and after the 3rd failed attempt, will exit the program.
+
+
+{bmc bm1.wmf}
+
+
+$#User Names and Passwords
+
+The responsibility for backing up files should fall upon the SEM owner (administrator), SEM users with Supervisor privileges, or the LEO service representative. This is to ensure some level of consistency over the backup/restore processes and maintain the integrity of the LEO-32 software. For these reasons it is not possible to set up user names and passwords from within LEO Parachute. 
+
+To add an authorized user for Parachute, it is necessary for this user to be given Supervisor privileges in the LEO Administrator. It is recommended that the number of authorized users be limited to as small a number as possible.
+$#KAdding Comments to a Backup
+
+It is strongly suggested that you add comments to a backup. Examples might be
+
+·	Added users A, B and C to the LEO Administrator.
+·	Set up new owner or user for the LEO User Accounting
+·	Completed work for customer XYZ (saved in the User Accounting database).
+·	System Calibration completed by service representative. 
+
+To add comments to a backup
+
+·	In the Backup window click the Add Comments icon.
+·	Enter your comments in the text box.
+·	Once you have finished adding comments, click OK.
+
+The comments will be saved as a text file (comments.txt) in the same folder as the backed up files, for all backup locations that you choose. 
+
+Note: You must add your comments prior to clicking the Back Up Now button in order for the comments to be saved with the backup. $#KCopy Files to the Local Hard Drive
+
+By default, LEO Parachute will always copy a file set to the local hard drive as this will be the easiest location from which to retrieve files when a restore is required. The default folder path is:
+
+C:\Backups.
+
+With each backup the files are saved in folder named with the date the backup occurred. 
+
+For example, a backup done on August 12, 1999, would create a folder named “08_12_99”.  The full path to the saved files would be:
+
+C:\Backups\08_12_99\
+
+Saving only to the local hard drive is not the most secure method for backing up files. In the event of a failure or disk crash, all files could be lost.
+
+For that reason LEO Parachute provides means for copying files to additional locations, either a removable disk such as a floppy or ZIP disk, or to a network location. It is strongly recommended that you back up files to one of these locations in addition to saving to the hard drive.
+
+Copy Files to a Removable DiskCopy Files to a Removable Disk
+Copy Files to a Network DriveCopy Files to a Network Drive
+$#Copy Files to a Removable Disk
+
+You can copy a file set to a floppy disk, ZIP disk (or any other drive that you choose). In order to save a file set to a removable disk you must define the device and path. To define a path for the removable device:
+
+·	In the Backup section of the toolbar click the Removable Location icon.
+·	In the dialog box, choose the device and path that you want to save the files to. 
+·	Choose the drive letter and folder (if desired) that you wish to save the file set to and click OK.
+·	The device and path you have selected will be displayed in the Removable Device text box and the Enable Save to Removable Device check box automatically be will be selected.
+
+Once the Removable Location has been selected (and the check box enabled), clicking the Back Up Now button will save a file set to the removable disk, the default local drive location and a network location (if also enabled).
+
+Copy Files to a Network DriveCopy Files to a Network Drive
+Copy Files to the Local Hard DriveCopy Files to the Local Hard Drive
+
+$#Copy Files to a Network Drive
+
+You can copy a file set to a network drive by selecting the correct path to the device. In order to set a path and to save files to a network drive you must define the network drive and path. To define a path for the network drive:
+
+·	In the Backup toolbar, click the Network Location icon.
+·	In the dialog box, choose the device and path that you want to save the files to. If necessary you can also map (connect to) a network drive.
+·	Choose the drive letter and folder (if desired) that you wish to save the file set to and click OK.
+
+Once the Network Location has been selected (and the check box enabled), clicking the Back Up Now button will save a file set to the network location, the default local drive location and a removable device (if also selected).
+
+
+Note: In order for this function to work you must be connected to a network, have access to the network drive and be mapped to the network drive.
+
+
+Mapping a Network DriveMapping a Network Drive
+
+Copy Files to a Removable DiskCopy Files to a Removable Disk
+Copy Files to the Local Hard DriveCopy Files to the Local Hard Drive
+
+$#Saving a LEO User Directory
+
+In addition to backing up LEO files, you can also backup LEO User Directory files. These files might consist of customized data zones, annotation files, macros or toolbars. The files are saved IN ADDITION to the LEO files, not saved separately.
+
+To include a User Directory to be saved during a backup, click the User Directory icon in the toolbar then define the User Directory to be saved. Once you have selected the directory, click OK.
+
+The path that you have selected will now be displayed in the Backup window and the User Directory check box will be enabled.
+
+Once you have selected all desired backup options, click the ‘Back Up Now’ button to execute the save.
+
+The User Directory will be saved within a sub folder of that backup. For example, if the Service User Directory is included in the backup, the location would be:
+
+C:\Backups\08_12_99\Service$#Mapping a Network Drive
+
+To assign (map) a drive letter to a network computer or folder from within the Parachute Backup window, 
+
+·	Click the Network Location checkbox then choose Set Path/Change Path.  If no path has been defined in the text box, the command button will display Set Path. 
+·	In the Set Network Path window select Map Drive.
+·	In the Drive box, select the drive letter than you want to assign the mapped drive.
+·	Click the Path box, and then type the path to the resource you want. For example:
+	
+\\ComputerName\DriveLetter\FolderName
+	
+Windows 95 Example
+
+{bmc bm2.wmf}
+
+If a password is required, Windows prompts you. 
+
+Tip
+
+To map to a computer or folder you've used recently, click the arrow to the right of Path, and then click the one you want from the list.
+$#The Restore Function
+
+The Restore function copies a saved file set back to the original location within the LEO-32 software. This process should only be carried out if you have reason to believe one of the original files has been damaged. If you suspect that you have a damaged file, it is recommended that you first contact your LEO service representative before carrying out a Restore.
+
+Selecting Restore from the Toolbar will open the Restore window. Depending on the backup type selected, the Restore window displays the path to the most recent backup saved to the hard drive, to a removable device or to a network location. Also displayed is the most recent backup of a User Directory. It is assumed that the last backup was a good set of files. If you choose, you can change the restore path to another location or to an earlier backup file set. 
+
+To restore from the default local hard drive location simply click on the Restore Now button. 
+
+As mentioned in the About LEO Parachute section of this help file, each backup file set is saved to a folder named with the date the backup occurred. You can search for earlier versions by noting the folder names.
+
+NOTE: Copying a damaged or corrupted file set to the LEO-32 operating system will compromise system performance. You should always restore known good file sets (backups).
+
+Restoring from Removable MediaRestoring from Removable Media
+Restoring from a Network DriveRestoring from a Network Drive
+Restoring a LEO User DirectoryRestoring a LEO User Directory$#Restoring from Removable Media
+
+To restore from removable media
+
+·	Ensure that the disk is inserted into the drive.
+·	Select ‘Restore from Removable Device’. This sets the path to the LAST saved file set saved on the removable media. 
+·	Click the Restore Now button to copy the files back to the LEO-32 locations.
+
+The Restore Now button will be grayed out once the restore function is finished.
+
+Note: If you would not like to use the most recent backup file set, then you will need to manually set the new path by clicking the Removable Device icon in the toolbar.$#Restoring from a Network Drive
+
+To restore from a network drive
+
+·	Ensure that the computer is connected to the network and that the drive is accessible.
+·	Select ‘Restore from Network Location’. This sets the path to the LAST saved file set saved on the network drive. 
+·	Click the Restore Now button to copy the files back to the LEO-32 locations.
+
+The Restore Now button will be grayed out once the restore function is finished.
+ 
+Note: If you would not like to use the most recent backup file set, then you will need to manually set the new path by clicking the Network Location icon in the toolbar.$#Restoring a LEO User Directory
+
+Like the other restore functions, the User Directory restore is carried out as a separate function and is not included as a part of any other restore functions.
+
+To restore a User Directory, you must select the ‘Restore User Directory’ option. The last directory backup will be displayed along with the original location within the LEO-32 software. To accept and restore the last backup, click ‘Restore Now’.
+
+To chose an alternative backup directory to restore, click the ‘Get User Files’ icon in the toolbar.
+
+To choose an alternative LEO-32 User directory in which to restore the files, click the ‘Save User Files to’ icon in the toobar.
+$#Viewing Comments
+
+Within the Restore window is a text box for displaying any associated comments with the selected backup. For any backup folder that you select, whether it is the most recent or from a older backup, if a comments file was saved during that backup then the comments will be displayed.
+
+This of course will not be the case if a comments file doesn’t exist or has been deleted.
+$#KBackup and Restore History
+
+To provide an efficient method for tracking backup and restore events, each backup and restore is recorded within Parachute and are displayed in the History window.
+
+LEO Files Activity
+
+The LEO Files Activity window displays the user who carried out the backup or restore, the date, the time, the type (backup or restore) and whether or not any comments were included (backup only).
+
+User Directory Activity
+
+The User Directory Activity window displays the name of the LEO User Directory, the date, the time, the type (backup or restore) and whether or not any comments were included (backup only).

@@ -1,0 +1,5 @@
+﻿"Map","Name","DispId","Kind","ReturnVt","Params","MethodOrGet","Set"
+"0x1000A590","UserInitialise","-1","method","long","long, LPCSTR, long, long","FUN_10004920",""
+"0x1000A590","SetButtonText","-1","method","void","LPCSTR","FUN_10004cb0",""
+"0x1000A590","IsMacroRunning","-1","method","BOOL","","FUN_10004e10",""
+"0x1000A590","AboutBox","-552","method","void","","FUN_10004680",""

@@ -1,0 +1,4 @@
+﻿=== DIALOG 101 "" (3 controls)
+  2  BUTTON  "Cancel"
+  -1  STATIC  "Waiting for Printer to Finish"
+  -1  STATIC  "#104"

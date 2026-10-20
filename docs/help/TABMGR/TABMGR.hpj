@@ -1,0 +1,94 @@
+[OPTIONS]
+TITLE=SEM Control
+CONTENTS=125PDUJ
+COPYRIGHT=Copyright © LEO Electron Microscopy Ltd.
+LCID=0x809 0x0 0x0
+CNT=TABMGR.CNT
+COMPRESS=0
+
+[WINDOWS]
+main="SEM Control",(51,51,922,922),,,(255,255,128)
+
+[ALIAS]
+Auto_Initialise_Stage=TKXDWU
+Backlash_On=IMYGA.
+_4T2L6=Beam_Only
+Contents=125PDUJ
+03XULX=125PDUJ
+Do_Backlash=IMYG6_
+Go_To_Next_Position=E9SIP1
+5GU354=Go_To_Previous_Point
+LHXS1D=Goto_First_Position
+22HQZF4=Label_Position
+49LR_R2=Limits
+0.ODB1=List_Clear
+1MBOEHI=List_Clear
+List_Load=BTD8CX
+List_Save_As=A_DDWQ
+4F62PF=Mark_Position
+Position_List=1VN.AKF
+CTR6GG=12.YVUF
+SEM_Control_Apertures=12.YVUF
+EL5M6Z=AV1BXI
+SEM_Control_Detectors=AV1BXI
+SEM_Control_Gun=C24WBL
+29E6BCE=C24WBL
+COJ7PR=114J566
+SEM_Control_Scanning=114J566
+6F2GMZ=SEM_Control_Stage
+RIZKZ9=SEM_Control_Vacuum
+1GLM_ZO=SEM_Control_Vacuum
+SEM_Control_X_Ray=B2XQVU
+Set_Magnification=F7V98E
+L5V96Q=Set_Working_Distance
+Stage_And_Beam=1T90SV4
+Stage_Only=2FBT1MP
+UJ4LE8=Stage_Popup_Menu
+OHA1S7=User_Defined_Label
+User_defined_Points_List_File=A06PWO
+63RJYR0=SEM_Control_Signal
+
+[FILES]
+TABMGR.rtf
+
+[MAP]
+1VN.AKF 98314
+114J566 131183
+E9SIP1 98316
+IMYGA. 98306
+F7V98E 98318
+Mark_Position 98312
+125PDUJ 131173
+1T90SV4 98309
+Stage_Popup_Menu 131284
+C24WBL 131185
+IMYG6_ 98307
+12.YVUF 131186
+SEM_Control_Vacuum 131295
+BTD8CX 98321
+125PDUJ 131172
+21KSYK4 131308
+A_DDWQ 98322
+TKXDWU 98304
+List_Clear 98320
+2FBT1MP 98310
+Survey_Settings_Dialog 131277
+Go_To_Previous_Point 98317
+C24WBL 131288
+SEM_Control_Vacuum 131184
+114J566 131290
+12.YVUF 131296
+List_Clear 98323
+AV1BXI 131303
+Set_Working_Distance 98319
+Beam_Only 98311
+Label_Position 98313
+AV1BXI 131182
+Goto_First_Position 98315
+User_Defined_Label 131285
+A06PWO 131286
+SEM_Control_Stage 131187
+B2XQVU 131287
+SEM_Control_Signal 131298
+Limits 98308
+

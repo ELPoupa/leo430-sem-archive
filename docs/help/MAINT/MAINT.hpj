@@ -1,0 +1,14 @@
+[OPTIONS]
+TITLE=Leo 400 maintenance
+CONTENTS=Contents
+COPYRIGHT=Copyright ©Leo Electron Microscopy
+LCID=0x409 0x0 0x0
+CNT=maint.cnt
+COMPRESS=0
+
+[WINDOWS]
+main=,(72,51,870,891),,,
+
+[FILES]
+MAINT.rtf
+

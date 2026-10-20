@@ -1,0 +1,4 @@
+﻿"Map","Message","Kind","Id","LastId","Menu","Handler"
+"0x1000B640","registered PM_PARAMETER_NOTIFY","","","","","0x10004650"
+"0x1000B640","registered PM_USER_PREFERENCES_CHANGED","","","","","0x100048B0"
+"0x1000B640","registered PM_SEM_CLOSE","","","","","0x100048D0"

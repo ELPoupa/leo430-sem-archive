@@ -1,0 +1,4 @@
+﻿"Class","Dialog","Title","Vtable","Parameters","Functions","NameId","Licence","UserLevels","MachineTypes"
+"CLeoDialog","138","Aperture Wobble","0x0041D4D8","DP_WOBBLE_SPEED DP_APER_WOBBLE AP_C3WOBBLEAMP","FUN_00404963","138","","",""
+"CLeoDialog","134","Focus Wobble","0x0041D860","DP_WOBBLE DP_WOBBLE_SPEED AP_C3WOBBLEAMP","FUN_00406dd7","134","","",""
+"CLeoDialog","136","Gun Wobble","0x0041D958","DP_WOBBLE_SPEED DP_GAWOBBLE AP_C3WOBBLEAMP","FUN_00408f63","136","","",""

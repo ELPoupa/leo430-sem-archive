@@ -1,0 +1,6 @@
+﻿=== DIALOG 1 "About Api Control" (4 controls)
+  -1  STATIC  "#1"
+  -1  STATIC  "LEO SEM API Control, Version 2.01"
+  -1  STATIC  "Copyright © 1997-2000, "
+  1  BUTTON  "OK"
+=== DIALOG 100 "" (0 controls)

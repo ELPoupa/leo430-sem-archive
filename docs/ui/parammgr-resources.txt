@@ -1,0 +1,18 @@
+﻿=== DIALOG 1 "About Parameter Manager" (4 controls)
+  -1  STATIC  "#1"
+  201  STATIC  "Version inserted by software"
+  -1  STATIC  "Copyright © 1997-2000,  LEO Electron Microscopy Ltd"
+  1  BUTTON  "OK"
+=== DIALOG 100 "" (0 controls)
+=== DIALOG 202 "Enter New Parameter Value" (4 controls)
+  202  EDIT  ""
+  205  STATIC  "Name"
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+=== DIALOG 208 " Select" (3 controls)
+  216  LISTBOX  ""
+  1  BUTTON  "OK"
+  2  BUTTON  "Cancel"
+=== DIALOG 210 "Auto Level In Progress..." (2 controls)
+  2  BUTTON  "Abort"
+  1057  msctls_progress32  "Progress1"

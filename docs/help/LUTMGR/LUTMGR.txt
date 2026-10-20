@@ -1,0 +1,702 @@
+﻿$#>K{bmc bm0.bmp}  Add/Delete Point
+
+{bmc bm1.bmp}	ClicKkCLICK@SEM.HLP on the Add/Delete icon in the tool bar to actiKvate the function
+or 
+
+{bmc bm2.bmp}	Click in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu Edit Mode and Add/Delete.
+
+Add a Point:
+
+{bmc bm3.bmp}	Point to the position where you want to place the point and click. The function will add a point to Kthe trace at the position of the mouse cursor. The point may be draggedDRAG@SEM.HLP to the desired position.
+
+{bmc bm4.bmp}	Note that no two points may share the same X position.
+
+Delete a Point:
+
+{bmc bm5.bmp}	Point to the point you want to delete and click with the middle button. The function will select the nearest point on the trace and delete it.
+
+{bmc bm4.bmp}	Note that a minimum of two points must remain.
+
+Call the Pop-Up Menu:
+
+{bmc bm2.bmp}	Click with the right mouse button in the LUT Editor Window
+$#>{bmc bm6.bmp}   Blue LUT
+
+The display LUT comprises three LUTs, one for each colour gun in the display monitor (Red, Green, Blue).
+
+In Blue LUT the red LUT is set to it's own pattern thus giving a palette from black (no colour) to peak Blue.
+
+Changes in the LUT affect the blue colour only.
+
+{bmc bm7.bmp}
+$#>K{bmc bm8.bmp}  Brightness & Contrast
+
+{bmc bm1.bmp}	ClickCLICK@SEM.HLP on the Brightness & Contrast icon in the tool bar to activate the function
+or 
+{bmc bm2.bmp}	Click in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu LUT Functions and Brightness & Contrast.
+
+In this mode the LUT contents are determined by the Brightness and Contrast values which may be selected and adjusted using the sliders at Adjust LUT window.
+
+{bmc bm9.bmp} Adjust Contrast (steepness of the curve) with the  Slider6C_DYB@SEM.HLP.  {bmc bm9.bmp} Adjust Brightness (shift the curve left/right) with the slider.  {bmc bm9.bmp} Close the Adjust LUT window by clicking on {bmc bm10.bmp}.  {bmc bm4.bmp} Note that the LUT Editor accepts no other input whilst this dialog is being displayed.   {bmc bm9.bmp} Selecting the UndoUndo_Function function at this point  will restore the LUT to that prior to opening the brightness and contrast dialog.	{bmc bm11.bmp}	{bmc bm12.bmp}	
+
+$#>K{bmc bm13.bmp}  Colour Selection
+   
+{bmc bm1.bmp} ClickCLICK@SEM.HLP on the Level icon in the tool bar to activate the function or  {bmc bm2.bmp} Click in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu LUT Functions and Level.  {bmc bm14.bmp} If none of the points is selected, the Colour Selection shows a reference level horizontal line of either Grey, Red, Green or Blue values .  {bmc bm14.bmp} If a point is selected (red), the Colour Selection shows the level of either Grey, Red, Green or Blue of that dot with the slider6C_DYB@SEM.HLP.   Moving the slider up and down also moves the dot in the LUT Editor Window accordingly.		{bmc bm15.bmp}	
+ {bmc bm14.bmp} If Level ModeLevel_Mode is selected additionally, clicking on a range field or on a point opens a Colour Selection PanelColour_Selection_Panel.		{bmc bm16.bmp}	
+
+
+$#>Colour Selection Panel
+
+The Colour Selection Panel is used to select user defined colours for the LUT.
+
+{bmc bm9.bmp} In the LUT Editor Window double clickCLICK@Leo_1500.HLP to the field for which you want to select the colour or select the rightmost point and then Colour Selection. The Colour Selection Panel opens.  {bmc bm9.bmp} Select one of the Basic Colours, Solid Colours, or click to the colour matrix.  {bmc bm9.bmp} Fine tune the colour with the RGB model (Red, Green, Blue) or with the HLS model (Hue, Luminance, Saturation).  {bmc bm9.bmp} Click to OK to accept the colour selection.  {bmc bm9.bmp} Close or clicking to {bmc bm17.bmp} closes the panel without any change. 		{bmc bm18.bmp}	
+
+$#Contents
+
+The LEO-32 LUT Editor is a convenient way of altering the contents of the Input or Display Look Up Tables.
+
+	What is the LUT EditorWhat_is_the_LUT_Editor?
+
+	Look Up Table EditorLook_Up_Table_Editor overview
+
+	Starting and Terminating the LUT EditorStarting_and_Terminating_the_LUT_Editor
+
+	ToolbarsShow_Toolbar
+
+	The File MenuMenu_File
+
+	The Functions List Popup MenuFunctions_List
+
+	LUT Editor WindowLUT_Editor_Window
+
+	Input LUT FunctionsInput_LUT_Functions
+
+	Display LUT FunctionsDisplay_LUT_Functions
+
+	LUT Editor File TypesLUT_Editor_File_Types
+$#>Display LUT
+
+The Display LUT is used to perform a translation on the output signal from the image store into Red, Green and Blue signals for the display monitor as defined by the pattern loaded into the LUT.
+
+The user defined pattern is a list of points which may be manipulated in the 
+
+	Edit ModeEdit_Mode 
+
+using the 	Add/Delete PointAdd_Delete_Point and Move PointSelect_Mode functions.
+
+In addition patterns of points may be created using the 
+
+	Display LUT FunctionsDisplay_LUT_Functions 
+
+		 Reset LUTReset_LUT, Invert LUTInvert_LUT, Step LUTStep_LUT, Brightness&ContrastBrightness_Contrast, GammaGamma, LevelLevel_Mode, Colour SelectionColour_Selection and Grey WedgeGrey_Wedge.
+
+The list of points may be saved with Save LUT AsSave_LUT_As or loaded from file with Open LUTOpen_LUT.
+
+To reverse false editing steps there is an Undo FunctionUndo_Function.
+
+For ease of selecting editing functions a Toolbar can be switched on (Show ToolbarShow_Toolbar) or off (Hide ToolbarHide_Toolbar).
+
+{bmc bm2.bmp}	ClickingCLICK@Leo_1500.HLP with the right mouse button in the LUT Editor WindowLUT_Editor_Window opens the list with above functions.
+$#>Display LUT Functions
+
+{bmc bm2.bmp}	ClickingCLICK@SEM.HLP with the right mouse button in the LUT Editor WindowLUT_Editor_Window opens the Display LUT Functions list which can be also presented as a Tool Bar.
+
+ The available functions are:
+
+{bmc bm19.bmp}	 Reset LUTReset_LUT		and	{bmc bm20.bmp}	 Invert LUTInvert_LUT 	and 	{bmc bm21.bmp}	Step LUTStep_LUT 		and	{bmc bm8.bmp}	 Brightness&ContrastBrightness_Contrast 
+
+and
+
+{bmc bm22.bmp}	 GammaGamma 		and 	{bmc bm23.bmp}	Level ModeLevel_Mode 	and	{bmc bm13.bmp}	 Colour SelectionColour_Selection 	and	{bmc bm24.bmp}	 Grey WedgeGrey_Wedge.
+
+Besides the Display LUT Functions list there are additional functions available from the Tool Bar:
+
+{bmc bm25.bmp}	Undo Last EditUndo_Function 	and 	{bmc bm26.bmp}	Open LUTOpen_LUT 	and	{bmc bm27.bmp}	Save LUT AsSave_LUT_As 
+
+and
+
+{bmc bm28.bmp}	Grey (RGB) LUTGrey__RGB__LUT 	and	{bmc bm29.bmp}	Red LUTRed_LUT 	and	{bmc bm30.bmp}	Green LUTGreen_LUT 		and 	{bmc bm6.bmp}	Blue LUTBlue_LUT 
+
+
+{bmc bm9.bmp}	Select the function by either clicking on the tool bar icon or on the item on the functions list.
+$#>Edit Mode
+
+The LUT pattern is represented by a set of lines connecting points.
+
+Each point has as its co-ordinates the input grey level (X in the range 0..255) and the output grey level (Y in the range 0..255).
+The minimum definition is two points at X=0 and X=255. Other points may be added at other X values, only one point may reside at a specific X value.
+
+In Edit Mode there are two functions available:
+
+{bmc bm0.bmp}		Add/Delete PointAdd_Delete_Point 
+
+and
+
+{bmc bm31.bmp}		Select ModeSelect_Mode
+
+$#>Functions List
+
+The menu will reflect either the available Input LUT or Display LUT functions.
+
+		Input LUT functions:			Display LUT Functions
+
+		Edit ModeEdit_Mode					Edit Mode
+			MoveSelect_Mode						Move
+			Add/DeleteAdd_Delete_Point					Add/Delete
+
+		LUT FunctionsInput_LUT_Functions				LUT FunctionsDisplay_LUT_Functions
+			Reset LUTReset_LUT					Reset LUT
+			Invert LUTInvert_LUT					Invert LUT
+			Step LUTStep_LUT					Step LUT
+				Step						Step
+				SettingsLUT_Step_Settings					Settings
+									Brightness & ContrastBrightness_Contrast
+									GammaGamma
+									Level ModeLevel_Mode
+									Colour SelectionColour_Selection
+									Grey WedgeGrey_Wedge
+		Show ToolbarShow_Toolbar				Show Toolbar
+		Hide ToolbarHide_Toolbar				Hide Toolbar
+
+		Open LUTOpen_LUT					Open LUT
+		Save LUT AsSave_LUT_As				Save LUT As
+
+		UndoUndo_Function						Undo
+
+Remark: If functions are the same for Input and display LUT they are shown as jumps only once.
+$#>{bmc bm22.bmp}  Gamma
+
+{bmc bm32.bmp}	ClickCLICK@SEM.HLP on the Gamma icon in the tool bar to activate the function
+or 
+{bmc bm2.bmp}	Click in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu LUT Functions and Gamma.
+
+In this mode the LUT contents are determined by the Gamma value which may be selected and adjusted using the slider at Adjust LUT window.
+
+ {bmc bm9.bmp} Adjust Gamma with the slider6C_DYB@Sem.HLP.  {bmc bm9.bmp} Close the Adjust LUT window by clicking on {bmc bm10.bmp}.  {bmc bm4.bmp} Note that the LUT Editor accepts no other input whilst this dialog is being displayed.  {bmc bm9.bmp} Selecting the UndoUndo_Function function at this point  will restore the LUT to that prior to opening the gamma dialog.	{bmc bm33.bmp}	{bmc bm34.bmp}	
+
+$#>{bmc bm30.bmp}  Green LUT
+
+The display LUT comprises three LUTs, one for each colour gun in the display monitor (Red, Green, Blue).
+
+In Green LUT the red LUT is set to it's own pattern thus giving a palette from black (no colour) to peak Green.
+
+Changes in the LUT affect the green colour only.
+
+{bmc bm35.bmp}
+$#>{bmc bm28.bmp}   Grey (RGB) LUT
+
+Each point in the LUT Display Window, represents an equal Red, Green and Blue entry and thus an grey intensity value.
+
+Changes in the LUT affect all three colours together.
+
+When this mode is selected, it is possible also to select Level ModeLevel_Mode.
+
+Points can be modified by using the Select ModeSelect_Mode or Add/Delete PointAdd_Delete_Point functions.
+
+Each of the Red, Green and Blue LUT components can however be edited separately, as each has a dedicated LUT associated with it. To access these LUTs, one of the Red LUTRed_LUT, Green LUTGreen_LUT or Blue LUTBlue_LUT modes has first to be selected.
+
+{bmc bm36.bmp}
+$#>{bmc bm24.bmp}  Grey Wedge
+
+{bmc bm1.bmp}	ClickCLICK@SEM.HLP on the Grey Wedge icon in the tool bar to activate the function
+or 
+
+{bmc bm2.bmp}	Click in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu LUT Functions and Grey Wedge.
+
+Grey Wedge is used for setting up and testing LUT data.
+
+{bmc bm37.bmp} This function writes a grey wedge pattern to the image store (0 at the extreme left, 255 at the extreme right) and this destroys any image data present in the image store. 
+
+{bmc bm4.bmp}	Note that if the image is not frozen it will be overwritten by the live scan data.
+
+There is no UndoUndo_Function option for this function.
+$#>Hide Toolbar
+
+{bmc bm2.bmp}	ClickCLICK@SEM.HLP in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu Hide Toolbar.
+
+The mode will be checked {bmc bm38.bmp}.
+
+There is a Toolbar for the Input LUT and an extended Toolbar for the Display LUT: Both Toolbars will be hidden.
+$#>Input LUT
+
+The Input LUT is used to perform a translation on the input signal as defined by the pattern loaded into the LUT.
+
+The pattern may be transparent (no transformation), a gamma transformation, inverted or a user defined pattern created in the Input LUT Window. The pattern is selected in the SEM Control Panel under SEM Control Detectors1WE3854@TabMgr.HLP.
+
+The User defined pattern is a list of points which may be manipulated in the 
+
+	Edit ModeEdit_Mode 
+
+using the 	Add/Delete PointAdd_Delete_Point and Select ModeSelect_Mode functions.
+
+In addition patterns of points may be created using the 
+
+	Input LUT FunctionsInput_LUT_Functions 
+
+		 Reset LUTReset_LUT, Invert LUTInvert_LUT and Step LUTStep_LUT.
+
+The list of points may be saved with Save LUT AsSave_LUT_As or loaded from file with Open LUTOpen_LUT.
+
+To reverse false editing steps there is an Undo FunctionUndo_Function.
+
+For ease of selecting editing functions a Toolbar can be switched on (Show ToolbarShow_Toolbar) or off (Hide ToolbarHide_Toolbar).
+
+{bmc bm2.bmp}	ClickingCLICK@SEM.HLP with the right mouse button in the LUT Editor WindowLUT_Editor_Window opens the list with above functions.
+
+$#>Input LUT Functions
+
+{bmc bm2.bmp}	ClickingCLICK@SEM.HLP with the right mouse button in the LUT Editor WindowLUT_Editor_Window opens the Input LUT Functions list which can be also presented as a Tool Bar.
+ The available functions are:
+
+{bmc bm19.bmp}	 Reset LUTReset_LUT 		and 	{bmc bm20.bmp}	 Invert LUTInvert_LUT 		and 	{bmc bm21.bmp}	Step LUTStep_LUT.
+
+Besides the Input LUT Functions list there are additional functions available from the Tool Bar:
+
+{bmc bm25.bmp}	Undo Last EditUndo_Function 	and 	{bmc bm26.bmp}	Open LUTOpen_LUT 	and	{bmc bm27.bmp}	Save LUT AsSave_LUT_As 
+
+
+{bmc bm9.bmp}	Select the function by either clicking on the tool bar icon or on the item on the functions list.
+$#>{bmc bm20.bmp}  Invert LUT
+
+{bmc bm1.bmp}	ClickCLICK@SEM.HLP on the Invert LUT icon in the tool bar to activate the function
+or 
+
+{bmc bm2.bmp}	Click in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu LUT Functions and Invert LUT.
+
+This function causes all points to be inverted in intensity (Y-scale). This means contrast inversion in the image (e.g. black becomes white).
+
+Use the UndoUndo_Function function if you choose this function by mistake, or simply choose this function again.
+
+$#>LUT Editor File Types
+
+There are 3 different types of file associated with the LUT Editor. 
+
+There are two formats for the Display LUT and one format for the Input LUT:
+
+Input LUT Files (.ULU)
+
+	Input LUT files have the extension .ULU. The current working file will be called CURRENT.ULU. Files saved in this format can only be used when the LUT Editor is in Input LUT mode.
+
+Display LUT Files (.OLT, .DLU)
+
+	The reason for the display LUT having two file formats is that if the user wishes to load in a special user defined LUT, then the definition for the LUT can be saved in ASCII format and edited by the user in a text editor such as Notepad.
+
+	.OLT files are in a binary format and cannot be modified by the user.
+
+	.DLU files are in ASCII format and can be modified by the user. See Sample .DLU FileSample_.DLU_File
+$#>LUT Editor Window
+
+The window represents the input grey level in the X direction and the output of the LUT in the Y direction.
+
+{bmc bm39.bmp}	The contents is represented by points which can be draggedDRAG@SEM.HLP with the mouse and manipulate the LUT.
+
+{bmc bm2.bmp}	ClickingCLICK@SEM.HLP with the right mouse button opens the Functions ListFunctions_List the functions of which can be also presented as a Tool BarShow_Toolbar.
+
+{bmc bm40.bmp}
+$#>{bmc bm41.bmp}  LUT Step Settings
+
+{bmc bm1.bmp}	ClickCLICK@SEM.HLP on the Adjust Step icon in the tool bar to activate the function
+or 
+{bmc bm2.bmp}	Click in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu LUT Functions and Step LUT and Settings.
+
+{bmc bm42.bmp}		{bmc bm43.bmp}
+
+{bmc bm9.bmp}	If you want to see the result of the settings directly check Apply Directly to Current LUT {bmc bm44.bmp}.
+{bmc bm9.bmp}	Adjust Amplitude (Y direction step height) with the Slider6C_DYB@SEM.HLP.
+{bmc bm9.bmp}	Adjust Period (X direction step width) with the slider.
+{bmc bm9.bmp}	Adjust Offset (starting height of the trace at X = 0) with the slider.
+$#>{bmc bm23.bmp}  Level Mode
+
+{bmc bm1.bmp}	ClickCLICK@SEM.HLP on the Level icon in the tool bar to activate the function
+or 
+{bmc bm2.bmp}	Click in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu LUT Functions and Level.
+
+   
+This function will select the nearest pair of adjacent points on the trace to the mouse cursor to create a horizontal level.  {bmc bm9.bmp} Select Add/Delete PointAdd_Delete_Point to set or remove a level.  {bmc bm9.bmp} Select Move PointSelect_Mode and dragDRAG@SEM.HLP up/down to the desired value. This adjusts the intensity of a band of grey levels.  {bmc bm4.bmp} Note that no two points may share the same X position.  {bmc bm9.bmp} Close the LUT Editor window by clicking on {bmc bm10.bmp}.  {bmc bm9.bmp} For a band of grey you can assign a Colour SelectionColour_Selection  and thus create a Pseudo Colour DisplayPseudo_Colour_Display		{bmc bm45.bmp} 	
+
+$#>KLook Up Table Editor
+
+Input Look Up Table1QUPBH3@SEM.HLP and Display Look Up Table can be loaded, edited, and saved with the Look Up Table Editor PanelLook_Up_Table_Editor_Panel.
+
+Input LUT:
+The Input LUTInput_LUT is used to perform a translation on the input signal as defined by the pattern loaded into the LUT.
+
+The pattern may be transparent (no transformation), a gamma transformation or a user defined pattern created in the Input LUT Editor Window.
+
+The pattern is defined as points which may be manipulated using the add, move and delete functions.
+
+Display LUT:
+
+The Display LUTDisplay_LUT translates the pixelPIXEL@Leo_1500.HLP values in the image store into Red, Green and Blue signals for the display monitor.
+
+The window represents the grey level in the X direction and the monitor gun intensity in the Y direction. The window Y size is determined by the scale function.
+
+There are several modes of operation which affect the Display LUT: Stereo, X-Ray dot mapping and user defined. 
+This window of the LUT Editor controls the user defined setting.
+
+In this window the LUT may be used in grey or in colour modes.
+
+For test purposes a grey wedge may be generated.
+
+Setup of the LUTs is done through the LUT Editor WindowLUT_Editor_Window
+
+For additional information about signal routing in the instrument see Signal PathM6O594@SEM.HLP
+
+$#>Look Up Table Editor Panel
+
+The LUT Editor Panel contains an interactive window which allows to set up LUTs in a graphic mode with the aid of the mouse.
+
+The panel is composed of a Menu BarMenu_Bar with the menus FileMenu_File and HelpMenu_Help and the Input WindowLUT_Editor_Window for setting up the LUT.  At the bottom of the panel there is a Status Line giving feedback about the status of the editor.  In the Top WindowTop_Window you find the caption of the editor and the control buttons to iconise, maximise and close {bmc bm46.bmp} the editor.  The panel can be scaled by draggingDRAG@SEM.HLP the edges or the corners with the mouse.		{bmc bm40.bmp}	
+
+{bmc bm47.bmp}	When the Editor Panel is open the file selection can be done with shortcuts from the keyboard:
+
+	Input LUTInput_LUT		<CTRL + I>
+
+	Display LUT	Display_LUT	<CTRL + D>
+
+	Open LUTOpen_LUT 		<CTRL + O>
+
+	Save LUT AsSave_LUT_As	<CTRL + S>
+
+{bmc bm48.bmp}	The short cuts only apply when the Editor Panel is open. The codes are used otherwise on the SEM when the Editor Panel is not active.
+$#>KMenu Bar
+
+Underneath the Caption bar in the Top WindowTop_Window the Menu Bar is arranged. In the Menu Bar all accessible functions of the LUT Editor software are displayed in the usual drop-down menus.
+
+Menus in the Menu Bar can be called in various ways:
+
+{bmc bm49.bmp}	Put the cursor on the menu, click with the left mouse button.
+
+{bmc bm47.bmp}	Type <ALT> + the underlined character. To navigate use the codes from the Menu Keys6XSU8Z@SEM.HLP list.
+
+The available menus are:
+
+		FileMenu_File 					HelpMenu_Help
+
+with sub menus	Input LUTMenu_File_Input_LUT				AboutMenu_Help_About
+
+			Display LUTMenu_File_Display_LUT	
+
+			Open LUTMenu_File_Open_LUT
+
+			Save LUT AsMenu_File_Save_LUT_As
+
+			ExitMenu_File_Exit
+$#>Menu File
+
+The menu allows the user to load or save LUTs or to create new LUTs.
+
+The menu File is called
+
+{bmc bm50.bmp}	Point to the Menu BarMenu_Bar, File and clickCLICK@SEM.HLP, the menu opens.
+
+or
+
+{bmc bm47.bmp}	Type <ALT+F>, the menu opens.
+
+
+It displays following functions:
+
+Input LUTMenu_File_Input_LUT
+
+Display LUTMenu_File_Display_LUT 
+
+Open LUTMenu_File_Open_LUT
+
+Save LUT AsMenu_File_Save_LUT_As
+
+ExitMenu_File_Exit
+$#>KMenu File Display LUT
+
+The sub menu Display LUT is called from
+
+{bmc bm51.bmp}	Call File from the Menu Bar with <ALT + F>, then call Display LUT with <D>.
+
+{bmc bm47.bmp}	Call Display LUT directly with the short cut <CTRL + D>.
+
+The Display Look Up Table WindowDisplay_LUT opens.
+$#>Menu File Exit
+
+The Exit function is called from
+
+{bmc bm51.bmp}	Call File from the Menu Bar with <ALT + F>, then call Exit with <X>.
+
+{bmc bm47.bmp}	Call Exit directly with the short cut <ALT + F4>
+
+{bmc bm9.bmp} If the LUT has been changed and not yet saved you are reminded of that and can now save the LUT if so desired before you terminate the LUT Editor.  {bmc bm9.bmp} The LUT Editor can also be closed by clicking on {bmc bm52.bmp}. 		{bmc bm53.bmp}	
+
+$#>KMenu File Input LUT
+
+The sub menu Input LUT is called from
+
+{bmc bm51.bmp}	Call File from the Menu Bar with <ALT + F>, then call Input LUT with <I>.
+
+{bmc bm47.bmp}	Call Input LUT directly with the short cut <CTRL + I>.
+
+The Input Look Up Table WindowInput_LUT opens.
+$#>Menu File Open LUT
+
+The sub menu Open LUT is called from
+
+{bmc bm51.bmp}	Call File from the Menu Bar with <ALT + F>, then call Open LUT with <O>.
+
+{bmc bm47.bmp}	Call Open LUT directly with the short cut <CTRL + O>.
+
+See Open LUTOpen_LUT for dialog.
+$#>KMenu File Save LUT As
+
+The sub menu Save LUT As is called from
+
+{bmc bm51.bmp}	Call File from the Menu Bar with <ALT + F>, then call Save LUT As with <S>.
+
+{bmc bm47.bmp}	Call Save LUT As directly with the short cut <CTRL + S>
+
+See Save LUT AsSave_LUT_As for dialog.
+$#>Menu Help
+
+The menu Help is called
+
+{bmc bm54.bmp}	Point to the Menu BarMenu_Bar, Help and clickCLICK@SEM.HLP, the menu opens.
+
+or
+
+{bmc bm47.bmp}	Type <ALT+H>, the menu opens.
+
+It displays following functions:
+
+	About LEO LUT EditorMenu_Help_About
+
+$#>KMenu Help About
+
+The About Box is called from
+
+{bmc bm55.bmp}	Call Help from the Menu Bar with <ALT + H>, then call About LEO LUT Editor with <A>.
+
+The About Box displays copyright and version number information.
+
+{bmc bm9.bmp}	Leave the About Box with OK or by clickingCLICK@SEM.HLP on {bmc bm52.bmp}.
+$#>K{bmc bm26.bmp}  Open LUT
+
+This function is used to load LUT Data from a file.
+
+{bmc bm56.bmp}	Open LUT icon calls a standard Load File Dialog.
+or 
+{bmc bm2.bmp}	ClickCLICK@Sem.HLP in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu Open LUT.
+
+ LUT files are loaded by default from the User Directory and have the extension *.ULU (User defined Look Up Table, Input LUT) or *.OLT (Output Look Up Table, Output LUT) or *.DLU (Defined Look Up Table).  {bmc bm9.bmp} You are prompted to enter a file name or to select one from the file name list.  {bmc bm9.bmp} Click on Open to load the file.  {bmc bm9.bmp} Click on Cancel to break off the function.	{bmc bm57.bmp}	
+
+
+$#>Pseudo Colour Display
+
+This feature allows a LUT to be easily divided up into colour bands for example to highlight chosen ranges of pixel values.
+
+{bmc bm9.bmp} Select Step LUTStep_LUT and set the number of grey levels (steps)  {bmc bm9.bmp} Use Select ModeSelect_Mode to equalise the steps.  {bmc bm9.bmp} Adjust a band of grey (in the example in the white region) and double clickCLICK@Sem.HLP on it to open the Colour Selection PanelColour_Selection_Panel  {bmc bm9.bmp} Select the color (Red in the example). The image is displayed in pseudo colour.  {bmc bm9.bmp} Save the LUT with Save LUT AsSave_LUT_As	{bmc bm58.bmp}	  {bmc bm59.bmp}	
+
+$#>K{bmc bm29.bmp}   Red LUT
+
+The display LUT comprises three LUTs, one for each colour gun in the display monitor (Red, Green, Blue).
+
+In RED LUT the red LUT is set to it's own pattern thus giving a palette from black (no colour) to peak Red.
+
+Changes in the LUT affect the red colour only.
+
+{bmc bm60.bmp}
+
+$#>{bmc bm19.bmp}  Reset LUT
+
+{bmc bm1.bmp}	ClickCLICK@SEM.HLP on the Reset LUT icon in the tool bar to activate the function
+or 
+
+{bmc bm2.bmp}	Click in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu LUT Functions and Reset LUT.
+
+This function loads the LUT with a linear pattern (i.e. no translation).
+
+Use the UndoUndo_Function function if you choose this function by mistake.
+$#>KSample .DLU File
+
+Below is a sample .DLU file used to define a LUT Editor Display LUT. 
+
+{bmc bm4.bmp} Note that the Red LUT has three points at (0,0), (529,245) and (1023,1023). 
+
+The Grey LUT has an extra hexadecimal number following the point co-ordinates, this refers to the Level mode RGB values associated with the Grey LUT. The data format is a 32 bit hexadecimal number representing R (00..ff), G (00..ff) and B (00..ff).
+
+{bmc bm48.bmp} Warning
+If a user defined .DLU file is created or modified, be sure not to alter the format of this data, as unforseen results may occur in attempting to read in the file.
+
+X01.00: LUT Manager Data File
+
+Points are defined on an x=0..1023 by y=0..1023 grid
+
+Data Format (Start Point through to End Point):
+Point X
+Point Y
+Level Mode Fill-Colour in BGR hex format (Grey Display LUTs Only)
+
+LUT Type :
+1
+
+
+Red LUT Total Points :
+3
+
+0
+0
+
+529
+245
+
+1023
+1023
+
+
+Green LUT Total Points :
+3
+
+0
+0
+
+279
+494
+
+1023
+1023
+
+
+Blue LUT Total Points :
+3
+
+0
+0
+
+504
+727
+
+1023
+1023
+
+
+Grey LUT Total Points :
+2
+
+0
+0
+000000
+
+1023
+1023
+ffffff
+$#>{bmc bm27.bmp}  Save LUT As
+
+This function is used to save LUT Data to file.
+
+{bmc bm61.bmp}	ClickingCLICK@SEM.HLP on the Save LUT AS icon calls a standard Save File Dialog.
+
+or 
+
+{bmc bm2.bmp}	Click in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu Save LUT As.
+
+LUT files are saved by default to the User Directory and have the extension *.ULU (User defined Look Up Table, Input LUT) or *.OLT (Output Look Up Table, Output LUT).  {bmc bm9.bmp} You are prompted to enter a file name. Depending on the LUT file type, the LUT Editor will automatically choose an appropriate file extension to append to the LUT file name.  {bmc bm9.bmp} If a filename is already present the user is asked whether or not the previously saved file should be overwritten with the file to be saved.  {bmc bm9.bmp} When the Save Points as ASCII check-box is checked {bmc bm44.bmp}the filename extension will change from .OLT to .DLU, this is to signify that the data format of the files are different.	{bmc bm62.bmp}	
+
+$#>{bmc bm31.bmp}  Select Mode
+
+
+{bmc bm63.bmp}	ClickCLICK@SEM.HLP on the Select Mode icon in the tool bar to activate the function
+or 
+
+{bmc bm2.bmp}	Click in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu Edit Mode and Move.
+
+Move Point:
+
+{bmc bm64.bmp}	This function will select the nearest point on the trace to the mouse cursor when the left button is pressed. The point may be draggedDRAG@SEM.HLP to the desired position. The point is constrained to lie between the two adjacent points.
+
+{bmc bm4.bmp}	Note that no two points may share the same X position.
+
+Delete a Point:
+
+{bmc bm5.bmp}	Point to the point you want to delete and click with the middle button. The function will select the nearest point on the trace and delete it.
+
+{bmc bm4.bmp}	Note that a minimum of two points must remain.
+
+Call the Pop-Up Menu:
+
+{bmc bm2.bmp}	Click with the right mouse button in the LUT Editor Window
+$#>KShow Toolbar
+
+{bmc bm2.bmp}	ClickCLICK@SEM.HLP in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu Show Toolbar.
+
+The mode will be checked {bmc bm38.bmp}.
+
+There is an Input LUT ToolbarInput_LUT_Functions and an extended Display LUT ToolbarDisplay_LUT_Functions:
+
+		{bmc bm65.bmp}				{bmc bm66.bmp}
+
+{bmc bm67.bmp}	Click on an icon to start the function.
+
+{bmc bm4.bmp}	There are Tool TipsTool_Tips available.
+$#>Starting and Terminating the LUT Editor
+
+{bmc bm68.bmp} From the SEM Main Menu select {bmc bm1.bmp} Edit and either Input LUT... or Display LUT...
+
+{bmc bm47.bmp} Type <ALT + E> and then <E> or <D> to open the Editor Panel.
+
+{bmc bm9.bmp} The Editor Panel also opens when you select the User Radio Button2R6X4F@Sem.HLP from Input LUT selected by Tools and Goto Panel and Input LUT  or   {bmc bm9.bmp} in a similar manner by selecting User from Detectors Tab selected by Tools and Goto Control Panel in the Input LUT Mode section.  {bmc bm9.bmp} Terminate the LUT Editor Panel with {bmc bm10.bmp} or select annother mode or choose Close from the LUT Editor System Menu.	  {bmc bm69.bmp}	
+
+In each case, when the LUT Editor closes, it stores the current LUT definition file in the User Directory. 
+
+See also the section on LUT Editor File TypesLUT_Editor_File_Types.
+$#>K{bmc bm21.bmp}  Step LUT
+
+{bmc bm1.bmp}	ClickCLICK@SEM.HLP on the Step LUT icon in the tool bar to activate the function
+or 
+
+{bmc bm2.bmp}	Click in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu LUT Functions and Step LUT and STEP.
+
+This function generates a set of points forming steps.
+
+The amplitude, period and offset of the steps may be selected and adjusted using the LUT Step SettingsLUT_Step_Settings function
+
+Use the UndoUndo_Function function if you choose this function by mistake.
+$#>Tool Tips
+   
+ {bmc bm9.bmp} Put the cursor on an icon.   {bmc bm9.bmp} When the cursor is not moved for approximately one second a short explanation of what the tool will do (Tool Tip) pops up. (Save LUT in this example).		{bmc bm70.bmp} 	
+
+
+.
+$#>KTop Window
+
+The Top Window provides the container in which the other windows reside. 
+
+It contains:
+	The Caption bar which displays the icon (1) and the name of the software (2).
+
+{bmc bm71.bmp}
+On the right side of the Caption bar the usual Windows95 buttons are displayed:
+
+{bmc bm14.bmp}	The minimize button (3) which enables the application to be iconised.
+{bmc bm14.bmp}	The reduce or maximize button (4) to bring back the window to reduced size or full size (for better precision of the input setting).
+{bmc bm14.bmp}	The close button (5) to terminate the application.
+
+Double clicking on the LUT icon {bmc bm72.bmp} also terminates the application like the close button (5).
+
+Underneath the Caption bar the Menu BarMenu_Bar is arranged. In the Menu Bar all accessible functions of the LUT Editor software are displayed in the usual drop-down menus.
+$#>{bmc bm25.bmp}  Undo Function
+
+{bmc bm1.bmp}	ClickCLICK@SEM.HLP on the Undo icon in the tool bar to activate the function
+or 
+
+{bmc bm2.bmp}	Click in the LUT Editor WindowLUT_Editor_Window with the right button and select from the pop-up menu Undo.
+
+The Undo Last Edit function reverts the latest edit to the state before this edit function was called.
+
+{bmc bm4.bmp} The Undo icon will be greyed if undo is not available.
+$#>KWhat is the LUT Editor
+
+The LEO-32 LUT Editor is a pop-up application or applet that allows the SEM operator to modify either the Input or Display Look Up Tables1QUPBH3@Sem.HLP (LUTs). These LUTs allow the user to highlight specific areas of interest on the specimen by modifying the colour values (grey values only for Input LUTs) used to represent the stored image data.
+
+Both the input and display LUTs are described as a set of points that define the profile of the selected LUT in graphical format. The X-axis of a LUT represents the LUT colour entry in ascending order. The Y-axis of the LUT represents the intensity of the colour entry from minimum to maximum.
+
+As each LUT is described by a set of points, the lines between adjacent points define a gradient of intensity for the range of LUT entries between these adjacent points. Thus for a linear LUT, it is only necessary to have two points one at (Xmin,Ymin) and the other at (Xmax, Ymax), which define a 1:1 mapping between LUT entries and intensity.
+
+The LUT Editor is controlled mainly by a simple 'selection and execution' process using the mouse. The user 'selects' a toolbar function and 'executes' its features by clickingCLICK@Sem.HLP and draggingDRAG@Sem.HLP the LUT points.
+
+All changes with the exception of the Step LUT function that are made to the Input or Display LUTs are applied immediately to the image store. After each operation, an Undo feature is available that restores the last set of LUT values.
