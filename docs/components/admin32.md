@@ -111,6 +111,8 @@ The window lists the user profiles (`List1`: name, user directory, image directo
 | `about` | About Leo Adminstrator | version |
 | `GetKey` | Please Enter Keycode | leftover: stores the typed number in `0x0049B0AC`, which nothing reads |
 
+The forms marked "Key Code" require the daily code; the [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) generates it and gives the procedure for each form.
+
 Modules and classes without a window: `Module1`, `detData` (detector table), `LeoHelper`, `DK2DEMO1` and `Dongle`
 (the DK2WIN32 `Declare` statements and wrappers, from DES's demo code), `Hash`, `Machines` (machine type → series name,
 "MachineAsSeries Unknown machine").

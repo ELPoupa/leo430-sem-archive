@@ -295,6 +295,8 @@ decompiled code, because the stack variables are reused *?*.
   USB-to-parallel adapters do not provide those I/O ports.
 
 ### Moving a disk image to another LEO 430: "Rescue Serial Number"
+Guided procedure for this case, including the Key Code: [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/).
+
 A disk image restored on another LEO 430 (with that machine's own key) fails at step 6 (`0xEF86`): the key
 holds the target machine's serial string, but `DATA.VAC` and `leo_user.mdb` still hold the source machine's serial
 (for example `1234`). LEO's own tool for this case is in
@@ -345,6 +347,8 @@ Factory → Serial Number…, set the boxes to `56` and `78`,
 leave Omit Dongle Check unticked, OK, then restart LEO-32.
 
 #### Key Code formula (`FUN_004981C0`)
+Codes for all five dialogs below can be generated with the [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) (English and French).
+
 Arguments: text `T` (the key text, or the serial string being written), date `D` (`Now` on the PC), number `n`
 (a value from the form, e.g. a duration in days), mode `m`. Integer arithmetic, overflow-checked.
 

@@ -53,7 +53,7 @@ continue privately. Requests are handled case by case, with no guarantee.
 - Nobody involved in this project is liable for any damage, loss or injury resulting from the use of this information.
 
 ## Key Recovery Helper
-The Key Recovery Helper (the guided web page) reproduces the documented service procedures of LEO-32. Use it only on an
+The [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) (the guided web page; its code is in [`site/`](site/)) reproduces the documented service procedures of LEO-32. Use it only on an
 instrument you own or are authorised to maintain, and only to restore functions that instrument is entitled to.
 Enabling options that were never licensed for an instrument may infringe the rights of the software's owner.
 

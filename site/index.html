@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guided LEO 430 maintenance and daily Key Code generator. Available in English and French.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>Key Recovery Helper · LEO 430</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skipContent">Skip to content</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="./" aria-label="LEO 430 Key Recovery Helper">
+      <!-- line drawing of an SEM column above its specimen chamber -->
+      <svg class="brand-mark" width="26" height="30" viewBox="0 0 26 30" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="9" y="1.5" width="8" height="5" rx="1"/><path d="M8 6.5h10v11l-2 3h-6l-2-3z"/><path d="M11 20.5v2h4v-2"/><rect x="2.5" y="22.5" width="21" height="6" rx="1.5"/></svg>
+      <span class="brand-text"><span class="brand-name"><span class="leo">LEO</span> 430</span><span class="brand-description" data-i18n="utility">Key Recovery Helper</span></span>
+    </a>
+    <div class="header-actions">
+    <a id="repo-link" class="repo-link" href="https://github.com/ELPoupa/leo430-sem-archive" rel="noopener" aria-label="LEO 430 archive on GitHub"><svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span data-i18n="repo">GitHub</span></a>
+    <button id="change-language" class="language-button" type="button" hidden><img id="header-flag" src="./flag-en.svg" alt="" width="22" height="15"><span id="header-language">English</span><span aria-hidden="true">▾</span></button>
+    </div>
+  </div></header>
+  <noscript><p class="load-notice">Enable JavaScript to use this utility. / Activez JavaScript pour utiliser cet outil.</p></noscript>
+  <p id="load-message" class="load-notice">Loading… / Chargement…</p>
+  <main id="main" tabindex="-1">
+    <section id="language-screen" class="language-screen" hidden aria-labelledby="language-title">
+      <div class="language-heading"><h1 id="language-title" tabindex="-1">Choose your language</h1><p lang="fr">Choisissez votre langue</p></div>
+      <form id="language-form"><fieldset><legend class="sr-only">Language / Langue</legend>
+        <label class="language-choice"><input type="radio" name="language" value="en" checked><img src="./flag-en.svg" alt="" width="42" height="28"><span lang="en">English</span><span class="choice-indicator" aria-hidden="true"></span></label>
+        <label class="language-choice"><input type="radio" name="language" value="fr"><img src="./flag-fr.svg" alt="" width="42" height="28"><span lang="fr">Français</span><span class="choice-indicator" aria-hidden="true"></span></label>
+      </fieldset><button id="language-continue" class="primary-button" type="submit">Continue</button></form>
+    </section>
+    <div id="workbench" class="workbench" hidden>
+      <div class="work-toolbar"><button id="back" type="button" class="back-button"><span aria-hidden="true">←</span> <span data-i18n="back">Back</span></button><button id="switch-mode" class="text-button" type="button" data-i18n="skipGenerator">Straight to the code generator</button></div>
+      <section id="question-screen" class="screen" hidden aria-labelledby="question-title"><form id="question-form" novalidate><fieldset aria-describedby="question-description question-error"><legend><h1 id="question-title" tabindex="-1"></h1></legend><p id="question-description" class="lead"></p><div id="question-options" class="choices"></div><p id="question-error" class="field-error" role="alert" hidden></p></fieldset><div class="form-actions"><button type="submit" class="primary-button"><span data-i18n="continue">Continue</span></button></div></form></section>
+      <section id="details-screen" class="screen" hidden aria-labelledby="details-title">
+        <h1 id="details-title" tabindex="-1" data-i18n="detailsTitle">Enter the machine details</h1><p class="lead" id="details-description"></p>
+        <form id="calculator" novalidate autocomplete="off">
+          <div id="operation-field" class="field"><label for="operation" data-i18n="leoScreen">LEO window</label><select id="operation" name="operation" aria-describedby="operation-path operation-error"></select><p id="operation-error" class="field-error" hidden></p></div>
+          <div id="selected-operation" class="selected-operation"><div><span class="field-label" data-i18n="selectedScreen">LEO window</span><strong id="selected-title"></strong></div><button id="change-task" class="text-button" type="button" data-i18n="change">Change</button></div>
+          <p id="operation-path" class="menu-path"></p>
+          <section class="context-details" aria-labelledby="login-heading"><h2 id="login-heading" data-i18n="accessRequirements">Before you start</h2><p id="preparation-note" class="preparation-note" hidden></p><p id="operation-account"></p></section>
+          <p id="operation-note" class="operation-note"></p>
+          <div class="field serial-field"><label id="serial-label" for="serial"></label><p id="serial-hint" class="field-hint"></p><div class="serial-control"><span id="serial-prefix">LEO 430-</span><input id="serial" name="serial" type="text" inputmode="numeric" placeholder="12-34" spellcheck="false" maxlength="64" aria-describedby="serial-prefix serial-hint serial-format serial-error" required></div><p id="serial-format" class="field-hint small" data-i18n="serialFormat">Four digits: 5678 for LEO 430-56-78. Keep leading zeros.</p><p id="serial-error" class="field-error" hidden></p></div>
+          <div class="date-duration"><div class="field"><div class="label-row"><label for="date" data-i18n="pcDate">Date on the microscope PC</label><button id="use-today" type="button" class="text-button" data-i18n="today">Set to today</button></div><input id="date" name="date" type="date" min="0100-01-01" max="9999-12-31" aria-describedby="date-hint date-error" required><p id="date-hint" class="field-hint" data-i18n="dateHint">By that PC’s clock, even if it is wrong.</p><p id="date-error" class="field-error" hidden></p></div><div id="duration-field" class="field" hidden><label for="duration" data-i18n="duration">Duration in days</label><input id="duration" name="duration" type="text" inputmode="numeric" maxlength="5" placeholder="3" aria-describedby="duration-hint duration-error" disabled><p id="duration-hint" class="field-hint" data-i18n="durationHint">The same number of days as in the LEO window.</p><p id="duration-error" class="field-error" hidden></p></div></div>
+          <div class="form-actions"><button type="submit" class="primary-button"><span data-i18n="generate">Get the code</span></button><button type="reset" class="text-button" data-i18n="clear">Clear</button></div>
+        </form>
+      </section>
+      <section id="result-screen" class="screen" hidden aria-labelledby="result-heading">
+        <h1 id="result-heading" tabindex="-1" data-i18n="resultTitle">Your Key Code</h1><p id="code-validity" class="lead"></p>
+        <div class="code-line"><div class="code-value"><span id="code-label" class="code-label"></span><output id="key-code" tabindex="-1" aria-label="Key Code" aria-describedby="code-validity"></output></div><button id="copy-code" class="secondary-button" type="button" data-i18n="copy">Copy</button></div><p id="copy-status" class="copy-status" role="status"></p>
+        <dl class="result-details"><div><dt data-i18n="leoScreen">LEO window</dt><dd id="result-operation"></dd></div><div><dt data-i18n="serial">Serial</dt><dd id="result-serial" class="mono"></dd></div><div><dt data-i18n="pcDate">Date on the microscope PC</dt><dd id="result-date"></dd></div><div id="result-duration-row" hidden><dt data-i18n="duration">Duration in days</dt><dd id="result-duration"></dd></div><div class="edit-row"><dt class="sr-only" data-i18n="editDetails">Edit</dt><dd><button id="edit-details" class="text-button" type="button" data-i18n="editDetails">Edit</button></dd></div></dl>
+        <div class="result-instructions"><h2 data-i18n="nextSteps">On the microscope PC</h2><ol id="operation-steps" class="instruction-list"></ol><p id="result-server" class="server-note" hidden></p><p id="result-note" class="operation-note"></p><p class="operation-note" data-i18n="midnight">The code changes at midnight on the microscope PC.</p></div>
+        <div class="form-actions"><button id="new-task" class="secondary-button" type="button" data-i18n="anotherTask">Start again</button></div>
+      </section>
+      <section id="info-screen" class="screen" hidden aria-labelledby="info-title"><h1 id="info-title" tabindex="-1"></h1><p id="info-description" class="lead"></p><ol id="info-steps" class="instruction-list"></ol><p id="info-server" class="server-note" hidden></p><p id="info-note" class="operation-note"></p><div class="form-actions"><button id="info-action" class="primary-button" type="button"></button></div></section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="footer-text"><p data-i18n="privacy">Runs in your browser. Nothing is sent or saved.</p><p data-i18n="disclaimer">Independent preservation project, not affiliated with LEO or ZEISS. Use at your own risk.</p></div><div class="footer-links"><a id="legal-link" href="./legal.html" data-i18n="legal">Legal notice</a><a href="https://github.com/ELPoupa/leo430-sem-archive/blob/main/docs/troubleshooting.md" data-i18n="documentation">Documentation ↗</a></div></footer>
+  <p id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+</body>
+</html>

@@ -7,6 +7,8 @@ software works rather than on recorded repairs, so treat them as a starting poin
 
 **[Fix guides](fixes/README.md):** step-by-step procedures for the problems that need one: what the message means, what the fix changes, the logins required, and how to check it worked.
 
+**[Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/):** a guided version of the serial, dongle and licence cases below, logins included; it also generates the daily Key Code for the LEO dialogs that ask for one.
+
 Follow the questions; each green box corresponds to a section below.
 
 ```mermaid
@@ -51,11 +53,11 @@ flowchart TD
 | Message at server start | Meaning | Fix | More |
 |---|---|---|---|
 | "The Leo_User Database version is incorrect" | registry `DB Version` ≠ database version | run Upgrade User Database, or restore the matching database | **[Fix guide](fixes/database-version.md)** · [DESkey](components/deskey.md) |
-| "Serial Number in Data.Vac does not agree with Serial Number in Database" | DATA.VAC and `leo_user.mdb` disagree (e.g. an old database restored) | set the serial with LEO Administrator | **[Fix guide](fixes/serial-mismatch.md)** · [DESkey](components/deskey.md#moving-a-disk-image-to-another-leo-430-rescue-serial-number) |
-| "DK2 Driver not Installed" | dongle driver `DK2WN95.386` not loaded | driver files and registry entry; Windows 98 | **[Fix guide](fixes/dongle-not-found.md)** · [DESkey](components/deskey.md) |
-| "Dongle not found" / "Error reading dongle" | dongle missing or port not usable | dongle on LPT1; a **real** parallel port at `0x378` (USB adapters do not work) | **[Fix guide](fixes/dongle-not-found.md)** · [DESkey](components/deskey.md) |
-| "Serial Number read from dongle does not agree with Data.Vac" | disk image from another machine, or wrong dongle | Factory → Serial Number or **Rescue Serial Number** in LEO Administrator | **[Fix guide](fixes/serial-mismatch.md)** · [DESkey → Moving a disk image](components/deskey.md#moving-a-disk-image-to-another-leo-430-rescue-serial-number) |
-| no message, but one function grey | situation rule (spot mode, auto function …) or access level | leave that mode; check the user level | **[Fix guide](fixes/licences-missing.md)** · [Rules and licences](subsystems/core-rules-accessories.md) |
+| "Serial Number in Data.Vac does not agree with Serial Number in Database" | DATA.VAC and `leo_user.mdb` disagree (e.g. an old database restored) | set the serial with LEO Administrator | **[Fix guide](fixes/serial-mismatch.md)** · [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) · [DESkey](components/deskey.md#moving-a-disk-image-to-another-leo-430-rescue-serial-number) |
+| "DK2 Driver not Installed" | dongle driver `DK2WN95.386` not loaded | driver files and registry entry; Windows 98 | **[Fix guide](fixes/dongle-not-found.md)** · [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) · [DESkey](components/deskey.md) |
+| "Dongle not found" / "Error reading dongle" | dongle missing or port not usable | dongle on LPT1; a **real** parallel port at `0x378` (USB adapters do not work) | **[Fix guide](fixes/dongle-not-found.md)** · [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) · [DESkey](components/deskey.md) |
+| "Serial Number read from dongle does not agree with Data.Vac" | disk image from another machine, or wrong dongle | Factory → Serial Number or **Rescue Serial Number** in LEO Administrator | **[Fix guide](fixes/serial-mismatch.md)** · [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) · [DESkey → Moving a disk image](components/deskey.md#moving-a-disk-image-to-another-leo-430-rescue-serial-number) |
+| no message, but one function grey | situation rule (spot mode, auto function …) or access level | leave that mode; check the user level | **[Fix guide](fixes/licences-missing.md)** · [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) · [Rules and licences](subsystems/core-rules-accessories.md) |
 
 ## 3. Configuration and calibration lost
 
@@ -110,10 +112,10 @@ interlock. The message list (also saved in `…\LEO-32\LOG\leolog.leo`) usually 
 
 | Symptom | Likely cause | Check | More |
 |---|---|---|---|
-| messages 408 "EHT comms failed to open/close" / 477 "EHT set comms timeout" | the EHT unit does not answer on its serial link | EHT unit switched on; its cable to the image processor board | [EHT and gun](subsystems/eht-gun.md) · [Error codes](error-codes.md) |
-| messages 437 "Vacuum Command error" / 443 "Stage Command Error" | the stage / vacuum controller does not answer (request codes below 0x40 are communication failures) | controller switched on; its cable to the board | [Serial protocols](firmware/serial-protocols.md) · [Error codes](error-codes.md) |
+| messages 408 "EHT comms failed to open/close" / 477 "EHT set comms timeout" | the EHT unit does not answer on its serial link | EHT unit switched on; its cable to the image processor board | [EHT and gun](subsystems/eht-gun.md) · [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) · [Error codes](error-codes.md) |
+| messages 437 "Vacuum Command error" / 443 "Stage Command Error" | the stage / vacuum controller does not answer (request codes below 0x40 are communication failures) | controller switched on; its cable to the board | [Serial protocols](firmware/serial-protocols.md) · [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) · [Error codes](error-codes.md) |
 | one action waits: beam "Waiting Vac", vent refused, stage will not move | an interlock | sections 4 to 6 above | [Vacuum](subsystems/vacuum.md) · [EHT and gun](subsystems/eht-gun.md) · [Stage](subsystems/stage.md) |
-| nothing reacts at all and there is no message | registry `Gsp` ≠ 1 or `ScanGen` ≠ 0: LEO-32 does not start its controller modules, so the interface drives nothing | `regedit`, `HKLM\Software\LEO Electron Microscopy Ltd\LEO-32`: `Gsp` = 1, `ScanGen` = 0, `Machine` = 2, `M600` = 6; restart | [Registry](registry-config.md) · [Error codes → board firmware start-up](error-codes.md#board-firmware-start-up) |
+| nothing reacts at all and there is no message | registry `Gsp` ≠ 1 or `ScanGen` ≠ 0: LEO-32 does not start its controller modules, so the interface drives nothing | `regedit`, `HKLM\Software\LEO Electron Microscopy Ltd\LEO-32`: `Gsp` = 1, `ScanGen` = 0, `Machine` = 2, `M600` = 6; restart | [Registry](registry-config.md) · [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) · [Error codes → board firmware start-up](error-codes.md#board-firmware-start-up) |
 
 ---
 [Home](../README.md)

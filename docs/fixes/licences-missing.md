@@ -6,6 +6,8 @@
 > check failed and a message says why. If only **one** function is grey and there is no message, it is usually not
 > a licence at all but a rule of the current mode or the user's level. This guide sorts out which case you have.
 
+**Guided version:** the [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) covers the serial-number comparison, Restore Licences and the related fixes, and generates the Key Code for All Licences (Temporary).
+
 ## Which case?
 ```mermaid
 flowchart TD

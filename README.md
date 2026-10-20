@@ -1,5 +1,7 @@
 # LEO 430 SEM: control software, reverse engineered
 
+**[Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/):** a guided page for serial-number, dongle and licence problems; it also generates the daily Key Code that some LEO service dialogs ask for.
+
 > ## [Troubleshooting guide](docs/troubleshooting.md)
 > Look up your symptom (start-up errors, greyed-out functions, licence messages, vacuum, high voltage, stage, imaging)
 > to find the likely cause, what to check, and a step-by-step fix where there is one.
@@ -75,6 +77,7 @@ LEO firmware. Details: [Architecture](docs/architecture.md) · [Hardware interfa
 | The DESkey dongle and the licence check | [DESkey](docs/components/deskey.md) |
 | Transferring a disk image to another LEO 430 (serial and licence correction) | [DESkey → Moving a disk image](docs/components/deskey.md#moving-a-disk-image-to-another-leo-430-rescue-serial-number) |
 | Service, Factory and Development accounts | [Service accounts](docs/components/service-accounts.md) |
+| Guided diagnosis of serial, dongle and licence faults; daily Key Code | [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) |
 
 ### Board, firmware and links
 | Topic | Page |

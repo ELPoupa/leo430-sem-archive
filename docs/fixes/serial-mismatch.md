@@ -8,6 +8,8 @@
 > The fix is to write the right serial into DATA.VAC and the database with **LEO Administrator**. Nothing is written
 > to the dongle and nothing else changes.
 
+**Guided version:** the [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) covers both routes below and generates the Key Code for Route 2.
+
 ## What you see
 One of these messages in the server's message list when LEO-32 starts (and grey buttons for options such as split
 screen, scan rotation, dynamic focus, stage store/recall, spot mode, RemCon32):
@@ -78,6 +80,7 @@ Use this only if you cannot log on as Factory or Development.
 3. Enter **today's Key Code**. It is a number derived from the dongle text and the **PC's date** (so it changes every
    day). LEO service used to supply it; how it is calculated is described in
    [Key Code formula](../components/deskey.md#key-code-formula-fun_004981c0) (mode 2).
+   The [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) computes it from the dongle serial and the PC's date.
    "Key Code not Valid or Incorrect Serial Number read from Dongle" means the number does not match.
 4. On success the program says **"Serial Numbers rescued"**: it has written the dongle's serial into the database,
    DATA.VAC and `oeminfo.ini`.

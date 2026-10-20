@@ -6,6 +6,8 @@
 > means, which fix to use, **what it changes**, what you need (login, password, files), the steps, and how to check it
 > worked. The technical background is linked at the end of each guide.
 
+**[Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/):** the same serial-number, dongle and licence procedures as a guided page, logins included; it also generates the daily Key Code (Rescue SN, Write Dongle, temporary licences or calibration).
+
 ```mermaid
 flowchart TD
     S(["A message at LEO-32 start-up,<br/>or options greyed out"]) --> Q1{"What does the<br/>message say?"}
@@ -20,11 +22,11 @@ flowchart TD
 
 | Message or symptom | Guide |
 |---|---|
-| "Serial Number read from dongle does not agree with Data.Vac" · "Serial Number in Data.Vac does not agree with Serial Number in Database" · after restoring a disk image on another LEO 430 | [Serial number mismatch](serial-mismatch.md) |
-| "DK2 Driver not Installed" · "Dongle not found" · "Error reading dongle" | [Dongle not found or not read](dongle-not-found.md) |
+| "Serial Number read from dongle does not agree with Data.Vac" · "Serial Number in Data.Vac does not agree with Serial Number in Database" · after restoring a disk image on another LEO 430 | [Serial number mismatch](serial-mismatch.md) · [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) |
+| "DK2 Driver not Installed" · "Dongle not found" · "Error reading dongle" | [Dongle not found or not read](dongle-not-found.md) · [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) |
 | "The Leo_User Database version is incorrect" | [Database version is incorrect](database-version.md) |
 | message 414 "DATA.VAC file faulty, DEFAULT.VAC used" · 415 "DEFAULT.VAC faulty" · magnification and focus values wrong | [Restoring the machine configuration](restore-configuration.md) |
-| no message, but some options greyed out | [Licensed options missing](licences-missing.md) |
+| no message, but some options greyed out | [Licensed options missing](licences-missing.md) · [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) |
 
 **Before any fix:** make a backup of the machine files (Parachute, or copy `C:\LEO\data.vac` and
 `…\LEO-32\SYSTEM\leo_user.mdb` to a USB stick or another folder). See

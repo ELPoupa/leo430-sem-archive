@@ -7,6 +7,8 @@
 > microscope works, but **all licensed options stay off**. The fix is on the PC side: key, port, driver. No login and
 > no LEO software setting is involved.
 
+**Guided version:** the [Key Recovery Helper](https://elpoupa.github.io/leo430-sem-archive/) covers these checks and, when no dongle is available, the procedure for running LEO-32 without one (Omit Dongle Check).
+
 ## What you see
 | Message at LEO-32 start-up | Meaning |
 |---|---|
